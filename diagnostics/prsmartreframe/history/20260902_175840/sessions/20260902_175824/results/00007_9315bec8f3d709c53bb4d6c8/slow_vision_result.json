@@ -1,0 +1,84 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.23-schema-contract-hotfix-v1",
+  "createdAt": "2026-09-02T17:58:27",
+  "status": "SLOW_VISION_READY",
+  "packId": "a7c6a42b810b2b4bd4095c86",
+  "clipInstanceId": "9315bec8f3d709c53bb4d6c8",
+  "frameSetId": "674098c948d3be6652f92de2",
+  "visionCacheKey": "674098c948d3be6652f92de2",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.23\\sessions\\phase4c4\\20260902_175824\\results\\00007_9315bec8f3d709c53bb4d6c8\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "SUBJECT_COUNT_UNCERTAIN",
+      "WEAK_SUBJECT_EVIDENCE"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 2,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "MODERATE",
+      "multiPersonAmbiguityScore": 0.47,
+      "weakSubjectEvidenceFrames": 2
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V1",
+    "promptVersion": "SLOW_VISION_PROMPT_V2",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": true,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.23\\cache\\phase4c5\\slow_vision\\4b295ba3795dc0541514\\53383c00c75979927b8e293312fdd4758fc131ad.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.23\\sessions\\phase4c5\\20260902_175824\\requests\\00007_9315bec8f3d709c53bb4d6c8\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V1",
+    "status": "UNRESOLVED",
+    "subjectCount": {
+      "estimate": 1,
+      "confidence": "LOW"
+    },
+    "subjects": [
+      {
+        "personId": "p1",
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "UNRESOLVED",
+    "needsHumanReview": true,
+    "notes": "The scene contains a single primary subject (p1) consistently identified across frames. Multiple candidate IDs (p2-p6) appear as transient, overlapping, or duplicate bounding boxes due to camera motion and pose changes, leading to subject count uncertainty.",
+    "mustNotDriveComposition": true
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.23\\sessions\\phase4c5\\20260902_175824\\results\\00007_9315bec8f3d709c53bb4d6c8\\slow_vision_result.json"
+}
