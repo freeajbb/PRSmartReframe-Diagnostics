@@ -1,0 +1,137 @@
+{
+  "phase": "4C-6",
+  "resultSchema": 1,
+  "fusionVersion": "0.4.26-subject-fusion-preview-v1",
+  "policy": "SUBJECT_FUSION_V1",
+  "outputContract": "FUSED_SUBJECT_EVIDENCE_V1",
+  "createdAt": "2026-09-02T20:29:10",
+  "status": "SUBJECT_FUSION_READY",
+  "ordinal": 15,
+  "clipInstanceId": "b2472701cfd87cb2c62e0880",
+  "packId": "39d8dcba689c3b8a1100afa4",
+  "visionCacheKey": "eff1bd95788ed86aedc6b9c8",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00015_b2472701cfd87cb2c62e0880\\fast_vision_result.json",
+  "slowVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\results\\00015_b2472701cfd87cb2c62e0880\\slow_vision_result.json",
+  "evidence": {
+    "policy": "FUSED_SUBJECT_EVIDENCE_V1",
+    "fusionPolicy": "SUBJECT_FUSION_V1",
+    "status": "PARTIAL",
+    "fusionMode": "SLOW_VISION_ENRICHED",
+    "subjects": [
+      {
+        "fusedSubjectId": "fs1",
+        "semanticSubjectId": "s1",
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p1",
+            "frozenPersonRef": "EARLY:p1"
+          },
+          {
+            "frameRole": "MIDDLE",
+            "personId": "p1",
+            "frozenPersonRef": "MIDDLE:p1"
+          },
+          {
+            "frameRole": "LATE",
+            "personId": "p1",
+            "frozenPersonRef": "LATE:p1"
+          }
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH",
+        "faceEvidenceRefs": [
+          "MIDDLE:f1",
+          "LATE:f1"
+        ],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": "SLOW_VISION_EVIDENCE_V2",
+          "semanticSubjectId": "s1"
+        }
+      },
+      {
+        "fusedSubjectId": "fs2",
+        "semanticSubjectId": "s2",
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p2",
+            "frozenPersonRef": "EARLY:p2"
+          },
+          {
+            "frameRole": "MIDDLE",
+            "personId": "p3",
+            "frozenPersonRef": "MIDDLE:p3"
+          },
+          {
+            "frameRole": "LATE",
+            "personId": "p3",
+            "frozenPersonRef": "LATE:p3"
+          }
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": "SLOW_VISION_EVIDENCE_V2",
+          "semanticSubjectId": "s2"
+        }
+      }
+    ],
+    "primarySubjectDecision": {
+      "status": "MULTIPLE_PRIMARY",
+      "fusedSubjectIds": [
+        "fs1",
+        "fs2"
+      ]
+    },
+    "allFrozenPersonRefs": [
+      "EARLY:p1",
+      "EARLY:p2",
+      "MIDDLE:p1",
+      "MIDDLE:p2",
+      "MIDDLE:p3",
+      "LATE:p1",
+      "LATE:p2",
+      "LATE:p3"
+    ],
+    "assignedFrozenPersonRefs": [
+      "EARLY:p1",
+      "EARLY:p2",
+      "MIDDLE:p1",
+      "MIDDLE:p3",
+      "LATE:p1",
+      "LATE:p3"
+    ],
+    "unassignedFrozenPersonRefs": [
+      "MIDDLE:p2",
+      "LATE:p2"
+    ],
+    "unresolvedFaceEvidenceRefs": [],
+    "representedPersonAssessment": "ASSESSED",
+    "capabilityGaps": [],
+    "humanReview": {
+      "needed": true,
+      "reasons": [
+        "DUPLICATE_GROUP_CONFLICT",
+        "UNASSIGNED_FROZEN_PERSON_REF"
+      ],
+      "sourceSlowVisionDecision": "NEEDS_HUMAN_REVIEW"
+    },
+    "mustNotDriveComposition": true
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C6_0.4.26\\sessions\\phase4c6\\20260902_202910\\results\\00015_b2472701cfd87cb2c62e0880\\subject_fusion_result.json"
+}

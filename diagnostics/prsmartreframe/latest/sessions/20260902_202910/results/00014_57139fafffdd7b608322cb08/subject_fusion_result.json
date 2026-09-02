@@ -1,0 +1,147 @@
+{
+  "phase": "4C-6",
+  "resultSchema": 1,
+  "fusionVersion": "0.4.26-subject-fusion-preview-v1",
+  "policy": "SUBJECT_FUSION_V1",
+  "outputContract": "FUSED_SUBJECT_EVIDENCE_V1",
+  "createdAt": "2026-09-02T20:29:10",
+  "status": "SUBJECT_FUSION_READY",
+  "ordinal": 14,
+  "clipInstanceId": "57139fafffdd7b608322cb08",
+  "packId": "ba7b69587ca34edfb7af1f91",
+  "visionCacheKey": "60c6ed581e3187c2cdc9ccc7",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00014_57139fafffdd7b608322cb08\\fast_vision_result.json",
+  "slowVisionResultPath": null,
+  "evidence": {
+    "policy": "FUSED_SUBJECT_EVIDENCE_V1",
+    "fusionPolicy": "SUBJECT_FUSION_V1",
+    "status": "PARTIAL",
+    "fusionMode": "FRAME_LOCAL_ONLY",
+    "subjects": [
+      {
+        "fusedSubjectId": "fs1",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p1",
+            "frozenPersonRef": "EARLY:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "PRIMARY",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs2",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "MIDDLE",
+            "personId": "p1",
+            "frozenPersonRef": "MIDDLE:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "PRIMARY",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs3",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "LATE",
+            "personId": "p1",
+            "frozenPersonRef": "LATE:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs4",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "LATE",
+            "personId": "p2",
+            "frozenPersonRef": "LATE:p2"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      }
+    ],
+    "primarySubjectDecision": {
+      "status": "MULTIPLE_PRIMARY",
+      "fusedSubjectIds": [
+        "fs1",
+        "fs2"
+      ]
+    },
+    "allFrozenPersonRefs": [
+      "EARLY:p1",
+      "MIDDLE:p1",
+      "LATE:p1",
+      "LATE:p2"
+    ],
+    "assignedFrozenPersonRefs": [
+      "EARLY:p1",
+      "MIDDLE:p1",
+      "LATE:p1",
+      "LATE:p2"
+    ],
+    "unassignedFrozenPersonRefs": [],
+    "unresolvedFaceEvidenceRefs": [],
+    "representedPersonAssessment": "UNRESOLVED",
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED",
+      "CROSS_FRAME_SEMANTIC_IDENTITY_UNRESOLVED"
+    ],
+    "humanReview": {
+      "needed": true,
+      "reasons": [
+        "NO_CROSS_FRAME_SEMANTIC_IDENTITY"
+      ],
+      "sourceSlowVisionDecision": null
+    },
+    "mustNotDriveComposition": true
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C6_0.4.26\\sessions\\phase4c6\\20260902_202910\\results\\00014_57139fafffdd7b608322cb08\\subject_fusion_result.json"
+}
