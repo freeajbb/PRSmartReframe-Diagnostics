@@ -1,13 +1,13 @@
 # GPT Analysis Bridge
 
-- App: `PRSmartReframe 0.4.11`
+- App: `PRSmartReframe 0.4.13`
 - Goal: avoid deep GitHub blob traversal/cache misses.
 - Start with `manifest.json`, then read the single shallow `GPT_ANALYSIS_BUNDLE.json`.
 - For visual QA, inspect the shallow contact sheets below; each panel is labeled with the result ordinal and frame role.
 
 ## Shallow analysis artifacts
 
-- `GPT_ANALYSIS_BUNDLE.json` — sanitized runtime state + desktop log + batch JSON + all pose result JSONs
+- `GPT_ANALYSIS_BUNDLE.json` — sanitized runtime state + desktop log + available Pose/FastVision batch and result JSONs
 - `GPT_OVERLAY_CONTACT_SHEET_EARLY.jpg`
 - `GPT_OVERLAY_CONTACT_SHEET_MIDDLE.jpg`
 - `GPT_OVERLAY_CONTACT_SHEET_LATE.jpg`
