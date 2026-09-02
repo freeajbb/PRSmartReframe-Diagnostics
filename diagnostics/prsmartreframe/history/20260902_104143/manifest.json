@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedAt": "2026-09-02T02:41:43.482725+00:00",
   "stamp": "20260902_104143",
   "app": {
@@ -339,11 +339,131 @@
       "path": "sessions/20260902_103043/results/00015_b2472701cfd87cb2c62e0880/pose_benchmark_result.json",
       "source": "sessions/phase4c3/20260902_103043/results/00015_b2472701cfd87cb2c62e0880/pose_benchmark_result.json",
       "size": 181604
+    },
+    {
+      "path": "GPT_ANALYSIS_BUNDLE.json",
+      "source": "generated_gpt_bridge_repair",
+      "size": 2148946
+    },
+    {
+      "path": "GPT_ANALYSIS_INDEX.md",
+      "source": "generated_gpt_bridge_repair",
+      "size": 871
+    },
+    {
+      "path": "GPT_OVERLAY_CONTACT_SHEET_EARLY.jpg",
+      "source": "generated_gpt_bridge_repair",
+      "size": 230813
+    },
+    {
+      "path": "GPT_OVERLAY_CONTACT_SHEET_MIDDLE.jpg",
+      "source": "generated_gpt_bridge_repair",
+      "size": 235609
+    },
+    {
+      "path": "GPT_OVERLAY_CONTACT_SHEET_LATE.jpg",
+      "source": "generated_gpt_bridge_repair",
+      "size": 236785
     }
   ],
   "bundle": {
     "zipFile": "PRSmartReframe_Diagnostic_20260902_104143.zip",
     "historyRelativePath": "history/20260902_104143",
     "latestRelativePath": "latest"
+  },
+  "gptBridge": {
+    "enabled": true,
+    "strategy": "SHALLOW_SINGLE_JSON_PLUS_CONTACT_SHEETS_V1",
+    "generatedByAppVersion": "0.4.11",
+    "index": "GPT_ANALYSIS_INDEX.md",
+    "analysisBundle": "GPT_ANALYSIS_BUNDLE.json",
+    "contactSheets": [
+      "GPT_OVERLAY_CONTACT_SHEET_EARLY.jpg",
+      "GPT_OVERLAY_CONTACT_SHEET_MIDDLE.jpg",
+      "GPT_OVERLAY_CONTACT_SHEET_LATE.jpg"
+    ],
+    "poseBatchSummaries": [
+      {
+        "sessionId": "20260902_103043",
+        "summary": {
+          "selectedCount": 15,
+          "eligibleCount": 15,
+          "packsBuilt": 15,
+          "upstreamFailed": 0,
+          "skippedCount": 0,
+          "poseBenchmarkReady": 15,
+          "poseBenchmarkFailed": 0,
+          "uniqueVisionInputs": 15,
+          "poseProviderCalls": 15,
+          "poseVisionCacheHitsUnique": 0,
+          "personProviderCalls": 15,
+          "personVisionCacheHitsUnique": 0,
+          "personStageBypassedByPoseCache": 0,
+          "reusedVisionAcrossPackInstances": 0,
+          "syntheticProvider": false,
+          "realModelInferenceExecuted": true,
+          "readOnlyPremiere": true,
+          "measuredPoseAttempts": 180,
+          "poseInferenceAttempts": 180,
+          "poseAccepted": 49,
+          "poseUsable": 41,
+          "poseWeak": 8,
+          "poseRejected": 33,
+          "rotationRecoveryTriggeredPersons": 49,
+          "rotationRecoverySelectedPersons": 11,
+          "rotationRecoveryRecoveredPersons": 8,
+          "possibleDuplicatePersonRoiPairs": 23,
+          "meanPoseInferenceMs": 6.309,
+          "p95PoseInferenceMs": 6.833
+        },
+        "provider": {
+          "providerId": "OPENCV_MEDIAPIPE_POSE",
+          "providerVersion": "1.1-opencv-dnn-dfine-roi-rotation-evidence",
+          "modelId": "opencv/opencv_zoo/pose_estimation_mediapipe_2023mar.onnx",
+          "modelRevision": "opencv_zoo@39a1451",
+          "modelWeightsSha256": "9d89c599319a18fb7d2e28451a883476164543182bafca5f09eb2cf767ed2f3f",
+          "synthetic": false,
+          "realModel": true,
+          "confidenceThreshold": 0.8,
+          "deviceRequested": "AUTO",
+          "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+          "roiEnlargeFactor": 1.25,
+          "keypointVisibilityThreshold": 0.8,
+          "keypointPresenceThreshold": 0.8,
+          "rotationRecoveryEnabled": true,
+          "rotationRecoveryAngles": [
+            90,
+            -90
+          ],
+          "rotationRecoveryTrigger": "BASE_NOT_POSE_USABLE",
+          "rotationRecoveryPolicyVersion": 1,
+          "evidenceQualityPolicy": "TORSO_SPATIAL_GATE_V1",
+          "evidenceQualityPolicyVersion": 1,
+          "evidenceMinReliableTorso": 3,
+          "evidenceMinReliableBody": 4,
+          "evidenceMinTorsoSpanRatio": 0.08,
+          "evidenceMinBodySpanRatio": 0.15,
+          "evidenceMinPosePersonAreaRatio": 0.04,
+          "duplicateRoiIouThreshold": 0.65,
+          "duplicateRoiContainmentThreshold": 0.85,
+          "upstreamPersonProvider": {
+            "providerId": "DFINE_HF_COCO",
+            "providerVersion": "1.0-transformers",
+            "modelId": "ustc-community/dfine-medium-coco",
+            "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+            "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+            "synthetic": false,
+            "realModel": true,
+            "confidenceThreshold": 0.3,
+            "deviceRequested": "AUTO",
+            "contractVersion": "1.0"
+          },
+          "contractVersion": "1.0",
+          "licenseStatus": "APACHE_2_0_MODEL_DIRECTORY"
+        },
+        "resultCount": 15
+      }
+    ],
+    "note": "Shallow bridge generated from an existing sanitized diagnostic snapshot; benchmark data was not rerun or modified."
   }
 }
