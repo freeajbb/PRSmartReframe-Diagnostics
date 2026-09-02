@@ -1,0 +1,89 @@
+{
+  "phase": "4C-6",
+  "resultSchema": 1,
+  "fusionVersion": "0.4.26-subject-fusion-preview-v1",
+  "policy": "SUBJECT_FUSION_V1",
+  "outputContract": "FUSED_SUBJECT_EVIDENCE_V1",
+  "createdAt": "2026-09-02T21:04:37",
+  "status": "SUBJECT_FUSION_READY",
+  "ordinal": 10,
+  "clipInstanceId": "45cd4f6c605ea12543b1ed23",
+  "packId": "f157e389c0b7888ef8ef5eff",
+  "visionCacheKey": "9cd31ae2cb2e13e3ab4fd30c",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00010_45cd4f6c605ea12543b1ed23\\fast_vision_result.json",
+  "slowVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\results\\00010_45cd4f6c605ea12543b1ed23\\slow_vision_result.json",
+  "evidence": {
+    "policy": "FUSED_SUBJECT_EVIDENCE_V1",
+    "fusionPolicy": "SUBJECT_FUSION_V1",
+    "status": "RESOLVED",
+    "fusionMode": "SLOW_VISION_ENRICHED",
+    "subjects": [
+      {
+        "fusedSubjectId": "fs1",
+        "semanticSubjectId": "s1",
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p1",
+            "frozenPersonRef": "EARLY:p1"
+          },
+          {
+            "frameRole": "MIDDLE",
+            "personId": "p1",
+            "frozenPersonRef": "MIDDLE:p1"
+          },
+          {
+            "frameRole": "LATE",
+            "personId": "p1",
+            "frozenPersonRef": "LATE:p1"
+          }
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": "SLOW_VISION_EVIDENCE_V2",
+          "semanticSubjectId": "s1"
+        }
+      }
+    ],
+    "primarySubjectDecision": {
+      "status": "SINGLE_PRIMARY",
+      "fusedSubjectIds": [
+        "fs1"
+      ]
+    },
+    "allFrozenPersonRefs": [
+      "EARLY:p1",
+      "MIDDLE:p1",
+      "LATE:p1"
+    ],
+    "assignedFrozenPersonRefs": [
+      "EARLY:p1",
+      "MIDDLE:p1",
+      "LATE:p1"
+    ],
+    "unassignedFrozenPersonRefs": [],
+    "unresolvedFaceEvidenceRefs": [],
+    "representedPersonAssessment": "ASSESSED",
+    "capabilityGaps": [],
+    "humanReview": {
+      "needed": false,
+      "reasons": [],
+      "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+    },
+    "mustNotDriveComposition": true
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C6_0.4.27\\sessions\\phase4c6\\20260902_210437\\results\\00010_45cd4f6c605ea12543b1ed23\\subject_fusion_result.json"
+}
