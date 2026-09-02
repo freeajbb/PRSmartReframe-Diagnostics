@@ -1,0 +1,103 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "createdAt": "2026-09-02T19:29:44",
+  "status": "SLOW_VISION_READY",
+  "packId": "c224bf3320db776efa9f2da6",
+  "clipInstanceId": "1beb7ff5685b2156ed986377",
+  "frameSetId": "75724e199d5b7e275fc91a07",
+  "visionCacheKey": "75724e199d5b7e275fc91a07",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00013_1beb7ff5685b2156ed986377\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "SUBJECT_COUNT_UNCERTAIN"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 2,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "MODERATE",
+      "multiPersonAmbiguityScore": 0.35,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": true,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\cache\\phase4c5\\slow_vision\\3b6c5742e13049763106\\cd03525609e3da724b9b27ec5596df95613c524b.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\requests\\00013_1beb7ff5685b2156ed986377\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 1,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "EARLY",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "MIDDLE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "The sequence depicts a single individual in a consistent setting. Multiple person IDs in MIDDLE and LATE frames are identified as duplicate detections of the same physical subject.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": false,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "AUTO_ACCEPTABLE",
+      "reasons": [],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\results\\00013_1beb7ff5685b2156ed986377\\slow_vision_result.json"
+}

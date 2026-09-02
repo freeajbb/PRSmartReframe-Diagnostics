@@ -1,0 +1,117 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "createdAt": "2026-09-02T19:29:44",
+  "status": "SLOW_VISION_READY",
+  "packId": "39d8dcba689c3b8a1100afa4",
+  "clipInstanceId": "b2472701cfd87cb2c62e0880",
+  "frameSetId": "eff1bd95788ed86aedc6b9c8",
+  "visionCacheKey": "eff1bd95788ed86aedc6b9c8",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00015_b2472701cfd87cb2c62e0880\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "SUBJECT_COUNT_UNCERTAIN",
+      "DUPLICATE_GROUP_CONFLICT"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 1,
+      "duplicateConflictGroups": 1,
+      "multiPersonAmbiguityLevel": "MODERATE",
+      "multiPersonAmbiguityScore": 0.57,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": true,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\cache\\phase4c5\\slow_vision\\3b6c5742e13049763106\\e9a07acdff7df1f041504b2b484832711c725293.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\requests\\00015_b2472701cfd87cb2c62e0880\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 2,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      },
+      {
+        "subjectId": "s2",
+        "members": [
+          "EARLY:p2",
+          "MIDDLE:p3",
+          "LATE:p3"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "MIDDLE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "LATE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "The scene depicts two real physical persons in an embrace. The subject count uncertainty in the fast-vision pass was due to overlapping bounding boxes and pose-based duplicate detection, which are resolved here as two distinct individuals.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": true,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "NEEDS_HUMAN_REVIEW",
+      "reasons": [
+        "DUPLICATE_GROUP_CONFLICT"
+      ],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\results\\00015_b2472701cfd87cb2c62e0880\\slow_vision_result.json"
+}

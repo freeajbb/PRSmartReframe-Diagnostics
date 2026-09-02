@@ -1,0 +1,96 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "createdAt": "2026-09-02T19:29:44",
+  "status": "SLOW_VISION_READY",
+  "packId": "5887eeddb41b59708f0f7b01",
+  "clipInstanceId": "c0bd7bf3da9928bd3dd72cfd",
+  "frameSetId": "3c07141b997d408f1078c5f7",
+  "visionCacheKey": "3c07141b997d408f1078c5f7",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00002_c0bd7bf3da9928bd3dd72cfd\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "WEAK_SUBJECT_EVIDENCE"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 0,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "LOW",
+      "multiPersonAmbiguityScore": 0.08,
+      "weakSubjectEvidenceFrames": 1
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": true,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\cache\\phase4c5\\slow_vision\\3b6c5742e13049763106\\14ffc912766cb5de15572345be06e094dee42a9f.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\requests\\00002_c0bd7bf3da9928bd3dd72cfd\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 1,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "EARLY",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "The subject is a real physical person appearing in all frames. No evidence of represented person status.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": false,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "AUTO_ACCEPTABLE",
+      "reasons": [],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c5\\20260902_192941\\results\\00002_c0bd7bf3da9928bd3dd72cfd\\slow_vision_result.json"
+}
