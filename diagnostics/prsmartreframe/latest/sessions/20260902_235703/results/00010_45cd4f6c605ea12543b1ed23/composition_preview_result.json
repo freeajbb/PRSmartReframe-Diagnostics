@@ -1,0 +1,135 @@
+{
+  "phase": "4D-1",
+  "resultSchema": 1,
+  "previewVersion": "0.4.30-composition-preview-v1",
+  "policy": "COMPOSITION_STRATEGY_V1",
+  "outputContract": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+  "createdAt": "2026-09-02T23:57:03",
+  "status": "COMPOSITION_PREVIEW_READY",
+  "decision": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+  "ordinal": 10,
+  "clipInstanceId": "45cd4f6c605ea12543b1ed23",
+  "sourceReadinessResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C7_0.4.29\\sessions\\phase4c7\\20260902_222820\\results\\00010_45cd4f6c605ea12543b1ed23\\composition_readiness_result.json",
+  "sourceReadinessDecision": "READY_FOR_COMPOSITION_PREVIEW",
+  "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C6_0.4.27\\sessions\\phase4c6\\20260902_210437\\results\\00010_45cd4f6c605ea12543b1ed23\\subject_fusion_result.json",
+  "sourceFastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4c4\\20260902_192941\\results\\00010_45cd4f6c605ea12543b1ed23\\fast_vision_result.json",
+  "sourceFramePaths": {
+    "EARLY": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4a\\phase4c4_20260902_192941\\packs\\00010_f157e389c0b7888ef8ef5eff\\frames\\early.jpg",
+    "MIDDLE": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4a\\phase4c4_20260902_192941\\packs\\00010_f157e389c0b7888ef8ef5eff\\frames\\middle.jpg",
+    "LATE": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.25\\sessions\\phase4a\\phase4c4_20260902_192941\\packs\\00010_f157e389c0b7888ef8ef5eff\\frames\\late.jpg"
+  },
+  "compositionComputed": true,
+  "strategyEvidence": {
+    "policy": "COMPOSITION_STRATEGY_V1",
+    "outputContract": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+    "targetCanvas": {
+      "policy": "FIXED_1080X1920_V1",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "pixelAspect": 1.0
+    },
+    "sourceGeometry": {
+      "width": 1728.0,
+      "height": 1080.0
+    },
+    "cropWindow": {
+      "policy": "MAX_INSCRIBED_TARGET_ASPECT",
+      "width": 607.5,
+      "height": 1080.0
+    },
+    "focus": {
+      "policy": "PRIMARY_BBOX_CENTER_MEDIAN",
+      "frameFocusPoints": {
+        "EARLY": {
+          "x": 895.7637329101562,
+          "y": 532.1296157836914
+        },
+        "MIDDLE": {
+          "x": 884.2992248535156,
+          "y": 451.8280448913574
+        },
+        "LATE": {
+          "x": 922.1392517089844,
+          "y": 581.4554443359375
+        }
+      },
+      "clipFocusPoint": {
+        "x": 895.7637329101562,
+        "y": 532.1296157836914
+      }
+    },
+    "cropCenter": {
+      "policy": "FOCUS_CENTER_THEN_CLAMP",
+      "desired": {
+        "x": 895.7637329101562,
+        "y": 532.1296157836914
+      },
+      "final": {
+        "x": 895.7637329101562,
+        "y": 540.0
+      },
+      "clampApplied": true,
+      "clampDeltaX": 0.0,
+      "clampDeltaY": 7.870384216308594
+    },
+    "finalCropWindow": {
+      "left": 592.0137329101562,
+      "top": 0.0,
+      "right": 1199.5137329101562,
+      "bottom": 1080.0
+    },
+    "coverage": {
+      "policy": "COMPOSITION_COVERAGE_GATE_V1",
+      "frames": {
+        "EARLY": {
+          "coverageRatio": 1.0,
+          "fullyContained": true
+        },
+        "MIDDLE": {
+          "coverageRatio": 1.0,
+          "fullyContained": true
+        },
+        "LATE": {
+          "coverageRatio": 0.9273774823164416,
+          "fullyContained": false
+        }
+      },
+      "minCoverage": 0.9273774823164416,
+      "medianCoverage": 1.0,
+      "fullyContainedFrameCount": 2,
+      "quality": "PREVIEW_NEEDS_REVIEW"
+    },
+    "motion": {
+      "policy": "STATIC_COMPOSITION_MOTION_GATE_V1",
+      "centerXSpan": 37.84002685546875,
+      "centerYSpan": 129.62739944458008,
+      "motionXRatio": 0.06228811005015432,
+      "motionYRatio": 0.12002536985609266,
+      "motionScore": 0.12002536985609266,
+      "quality": "STATIC_STABLE"
+    },
+    "qualityDecision": {
+      "coverageQuality": "PREVIEW_NEEDS_REVIEW",
+      "motionQuality": "STATIC_STABLE",
+      "finalQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+      "reasons": [
+        "PREVIEW_NEEDS_REVIEW"
+      ]
+    },
+    "warnings": [
+      "SUBJECT_PARTIALLY_OUTSIDE_CROP",
+      "SUBJECT_WIDER_THAN_TARGET_CROP",
+      "EDGE_CLAMP_APPLIED"
+    ]
+  },
+  "mustNotDrivePremiereWrite": true,
+  "downstreamGate": {
+    "premierePositionComputed": false,
+    "compositionApplyAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D1_0.4.31\\sessions\\phase4d1\\20260902_235703\\results\\00010_45cd4f6c605ea12543b1ed23\\composition_preview_result.json"
+}
