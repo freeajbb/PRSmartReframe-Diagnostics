@@ -10,6 +10,7 @@
   "gptBridge": {
     "enabled": true,
     "strategy": "SHALLOW_SINGLE_JSON_PLUS_CONTACT_SHEETS_V1",
+    "generatedByAppVersion": "0.4.13",
     "index": "GPT_ANALYSIS_INDEX.md",
     "analysisBundle": "GPT_ANALYSIS_BUNDLE.json",
     "contactSheets": [],
@@ -21,7 +22,7 @@
         "resultCount": 0
       }
     ],
-    "note": "These shallow artifacts duplicate sanitized diagnostic evidence specifically to avoid deep GitHub blob/cache traversal failures."
+    "note": "Shallow bridge generated from an existing sanitized diagnostic snapshot; benchmark data was not rerun or modified."
   },
   "privacy": {
     "sanitized": true,
@@ -133,12 +134,12 @@
     },
     {
       "path": "GPT_ANALYSIS_BUNDLE.json",
-      "source": "generated_gpt_bridge",
+      "source": "generated_gpt_bridge_repair",
       "size": 2446994
     },
     {
       "path": "GPT_ANALYSIS_INDEX.md",
-      "source": "generated_gpt_bridge",
+      "source": "generated_gpt_bridge_repair",
       "size": 762
     }
   ],
