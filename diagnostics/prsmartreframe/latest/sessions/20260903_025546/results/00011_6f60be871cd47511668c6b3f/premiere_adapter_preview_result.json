@@ -1,0 +1,328 @@
+{
+  "phase": "4D-2",
+  "resultSchema": 1,
+  "previewVersion": "0.4.33-premiere-adapter-preview-v1",
+  "policy": "PREMIERE_POSITION_ADAPTER_V1",
+  "outputContract": "PREMIERE_ADAPTER_PREVIEW_EVIDENCE_V1",
+  "createdAt": "2026-09-03T02:55:46",
+  "status": "PREMIERE_ADAPTER_PREVIEW_REVIEW",
+  "ordinal": 11,
+  "clipInstanceId": "6f60be871cd47511668c6b3f",
+  "primaryReason": "HOST_CONTRACT_UNVERIFIED",
+  "reasonCodes": [
+    "HOST_CONTRACT_UNVERIFIED"
+  ],
+  "sourcePhase4D1": {
+    "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D1_0.4.31\\sessions\\phase4d1\\20260902_235703\\results\\00011_6f60be871cd47511668c6b3f\\composition_preview_result.json",
+    "resultSha256": "46bb6cbfb0e746569e0f99eb578ec3d145ecec0945102b4c464e37fe7f596f5f",
+    "status": "COMPOSITION_PREVIEW_READY",
+    "compositionQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW"
+  },
+  "canonicalAdapter": {
+    "status": "VALID",
+    "evidence": {
+      "status": "VALID",
+      "policy": "CANONICAL_CENTER_ANCHOR_TRANSFORM",
+      "coordinateContract": "NORMALIZED_SEQUENCE_POINT_WITH_PIXEL_DIAGNOSTIC",
+      "scaleContract": "DIMENSIONLESS_SCALE_FACTOR_WITH_PERCENT_DIAGNOSTIC",
+      "sourceGeometry": {
+        "width": 1728.0,
+        "height": 1080.0,
+        "coordinateSpace": "4D1_CANONICAL_SOURCE_RASTER"
+      },
+      "virtualTargetSequence": {
+        "policy": "VIRTUAL_FIXED_1080X1920",
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0
+      },
+      "sourceAnchor": {
+        "policy": "SOURCE_CENTER",
+        "xPixels": 864.0,
+        "yPixels": 540.0
+      },
+      "cropCenter": {
+        "xPixels": 918.571662902832,
+        "yPixels": 540.0
+      },
+      "cropGeometry": {
+        "width": 607.5,
+        "height": 1080.0
+      },
+      "cropWindow": {
+        "left": 614.821662902832,
+        "top": 0.0,
+        "right": 1222.321662902832,
+        "bottom": 1080.0
+      },
+      "scale": {
+        "canonicalAdapterScaleFactor": 1.7777777777777777,
+        "scalePercentDiagnostic": 177.77777777777777,
+        "percentIsHostParameterValue": false
+      },
+      "position": {
+        "sequencePixelsDiagnostic": {
+          "x": 442.98371039496527,
+          "y": 960.0
+        },
+        "normalizedSequencePoint": {
+          "x": 0.41017010221756045,
+          "y": 0.5
+        },
+        "normalizedPositionClamped": false,
+        "normalizedPositionMayBeOutsideUnitRange": true
+      },
+      "canonicalInputSnapshot": {
+        "geometryAuthority": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+        "sourceGeometry": {
+          "width": 1728.0,
+          "height": 1080.0
+        },
+        "cropGeometry": {
+          "width": 607.5,
+          "height": 1080.0
+        },
+        "crop": {
+          "finalCropCenter": {
+            "x": 918.571662902832,
+            "y": 540.0
+          },
+          "finalCropWindow": {
+            "left": 614.821662902832,
+            "top": 0.0,
+            "right": 1222.321662902832,
+            "bottom": 1080.0
+          }
+        }
+      },
+      "roundTrip": {
+        "policy": "CANONICAL_ADAPTER_ROUND_TRIP_GATE_V1",
+        "tolerance": 1e-06,
+        "expectedTargetCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "mappedCropCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "error": {
+          "xPixels": 0.0,
+          "yPixels": 0.0,
+          "maxNormalizedEquivalent": 0.0
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      }
+    }
+  },
+  "hostVerification": {
+    "status": "HOST_CONTRACT_UNVERIFIED",
+    "hostContract": {
+      "status": "HOST_CONTRACT_UNVERIFIED",
+      "hostIdentity": {
+        "name": "premierepro",
+        "version": "26.0.1",
+        "locale": "zh_CN"
+      },
+      "motionComponent": {
+        "componentIndex": 1,
+        "matchName": "AE.ADBE Motion",
+        "displayNameDiagnostic": "运动",
+        "paramCount": 11,
+        "params": [
+          {
+            "paramIndex": 0,
+            "displayNameDiagnostic": "位置",
+            "rawStartValue": {
+              "value": [
+                0.5,
+                0.5
+              ]
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 1,
+            "displayNameDiagnostic": "缩放",
+            "rawStartValue": {
+              "value": 100
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 2,
+            "displayNameDiagnostic": "缩放宽度",
+            "rawStartValue": {
+              "value": 100
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 3,
+            "displayNameDiagnostic": " ",
+            "rawStartValue": {
+              "value": true
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 4,
+            "displayNameDiagnostic": "旋转",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 5,
+            "displayNameDiagnostic": "锚点",
+            "rawStartValue": {
+              "value": [
+                0.5,
+                0.5
+              ]
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 6,
+            "displayNameDiagnostic": "防闪烁滤镜",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 7,
+            "displayNameDiagnostic": "裁剪左侧",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 8,
+            "displayNameDiagnostic": "裁剪顶部",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 9,
+            "displayNameDiagnostic": "裁剪右侧",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          },
+          {
+            "paramIndex": 10,
+            "displayNameDiagnostic": "裁剪底部",
+            "rawStartValue": {
+              "value": 0
+            },
+            "valueReadStatus": "READ_OK",
+            "timeVarying": false,
+            "timeVaryingReadStatus": "READ_OK",
+            "keyframes": [],
+            "keyframeReadStatus": "READ_OK"
+          }
+        ]
+      },
+      "signature": {
+        "hostVersion": "26.0.1",
+        "matchName": "AE.ADBE Motion",
+        "paramCount": 11,
+        "valueShapes": [
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict",
+          "dict"
+        ]
+      },
+      "parameterMapping": {},
+      "resolutionMethod": "NO_VERIFIED_SIGNATURE"
+    },
+    "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.33\\sessions\\phase4d2\\20260903_025546\\premiere_transform_host_probe.json"
+  },
+  "evidenceAxes": {
+    "canonicalMathStatus": "VALID",
+    "roundTripStatus": "ROUND_TRIP_VERIFIED",
+    "hostVerificationStatus": "UNVERIFIED",
+    "geometryVerificationStatus": "NOT_EVALUATED",
+    "transformCompatibility": "NOT_EVALUATED",
+    "hostTargetedPreviewStatus": "NOT_EVALUATED"
+  },
+  "mustNotDrivePremiereWrite": true,
+  "downstreamGate": {
+    "phase4d2PreviewOnly": true,
+    "premiereReadOnly": true,
+    "sequenceWriteAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "applyAllowed": false,
+    "requiresIndependentApplyPhase": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.33\\sessions\\phase4d2\\20260903_025546\\results\\00011_6f60be871cd47511668c6b3f\\premiere_adapter_preview_result.json",
+  "clipBinding": {
+    "status": "BOUND_UNIQUE",
+    "source": "CURRENT_TIMELINE_FINGERPRINT_INVENTORY_V1",
+    "fingerprint": {
+      "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+      "trackIndex": 0,
+      "startTicks": "557234899200000",
+      "endTicks": "557531251200000",
+      "sourceInTicks": "56848780800000",
+      "sourceOutTicks": "57145132800000",
+      "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
+    }
+  }
+}
