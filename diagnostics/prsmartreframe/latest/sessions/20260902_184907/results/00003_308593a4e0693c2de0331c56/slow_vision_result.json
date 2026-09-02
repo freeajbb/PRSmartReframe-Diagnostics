@@ -1,0 +1,147 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.24-slowvision-evidence-v2-v1",
+  "createdAt": "2026-09-02T18:49:15",
+  "status": "SLOW_VISION_READY",
+  "packId": "85d00984b2cefd1851bc4959",
+  "clipInstanceId": "308593a4e0693c2de0331c56",
+  "frameSetId": "761542afb3c0e7878204e8c4",
+  "visionCacheKey": "761542afb3c0e7878204e8c4",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.24\\sessions\\phase4c4\\20260902_184907\\results\\00003_308593a4e0693c2de0331c56\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "UNRESOLVED_FACE_ASSOCIATION",
+      "DUPLICATE_GROUP_CONFLICT",
+      "MULTI_PERSON_AMBIGUITY_HIGH"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 1,
+      "subjectCountUncertainFrames": 0,
+      "duplicateConflictGroups": 1,
+      "multiPersonAmbiguityLevel": "HIGH",
+      "multiPersonAmbiguityScore": 0.62,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V3",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": true,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.24\\cache\\phase4c5\\slow_vision\\8fd308848775d6211f95\\3b1cc30ded2a37209aae4064aa15160de9ab0025.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.24\\sessions\\phase4c5\\20260902_184907\\requests\\00003_308593a4e0693c2de0331c56\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 2,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      },
+      {
+        "subjectId": "s2",
+        "members": [
+          "EARLY:p2",
+          "MIDDLE:p2",
+          "LATE:p3"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "EARLY",
+        "faceId": "f1",
+        "personId": "p2",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "EARLY",
+        "faceId": "f2",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "MIDDLE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "MIDDLE",
+        "faceId": "f2",
+        "personId": null,
+        "status": "UNRESOLVED",
+        "confidence": "LOW"
+      },
+      {
+        "frameRole": "LATE",
+        "faceId": "f1",
+        "personId": "p3",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "LATE",
+        "faceId": "f2",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "Two real physical subjects are consistently present across all frames. The mirror reflection is identified as a physical subject, not a represented person.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": true,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "NEEDS_HUMAN_REVIEW",
+      "reasons": [
+        "FACE_PERSON_UNRESOLVED",
+        "DUPLICATE_GROUP_CONFLICT"
+      ],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4C5_0.4.24\\sessions\\phase4c5\\20260902_184907\\results\\00003_308593a4e0693c2de0331c56\\slow_vision_result.json"
+}
