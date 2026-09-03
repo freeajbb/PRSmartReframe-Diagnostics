@@ -1,0 +1,350 @@
+{
+  "contract": "FRAME_SIZE_SCALING_GROUND_TRUTH_CALIBRATION_V1",
+  "fingerprint": {
+    "endTicks": "4259001600000",
+    "projectItemId": "8f217bb3-d040-4ee4-bad9-95aeed507bd0",
+    "sequenceGuid": "325a7d1b-8ef0-4bf2-8d4e-eceafe74baa4",
+    "sourceInTicks": "0",
+    "sourceOutTicks": "508032000000",
+    "startTicks": "3750969600000",
+    "trackIndex": 0
+  },
+  "groundTruth": "FIT_TO_FRAME",
+  "normalizedEvidenceHash": "dc9be16b5ffcf975c7e9238ea76f4544f490d4319cc275793c8b5c2a2ab895fb",
+  "pass": "P2_AFTER_REOPEN",
+  "programWriteCalls": 0,
+  "rawEvidence": {
+    "frameSizeScaling": {
+      "scaleToFrameSize": {
+        "evidenceSource": "NONE",
+        "readStatus": "UNAVAILABLE",
+        "value": null
+      }
+    },
+    "frameSizeScalingDiscoveryRaw": {
+      "contract": "FRAME_SIZE_SCALING_FACT_DISCOVERY_RAW_V1",
+      "mutationInvocationCount": 0,
+      "projectItemComponentEvidence": {
+        "candidateSignals": [],
+        "componentChainDiagnosticType": "object",
+        "componentChainStatus": "READ_OK",
+        "components": [],
+        "invokedUnknownReaderCount": 0,
+        "mutationInvocationCount": 0,
+        "policy": "PREMIERE_PROJECT_ITEM_FRAME_SCALING_DISCOVERY_V1",
+        "readOnly": true,
+        "runtimeSurfaces": [
+          {
+            "invokedMemberCount": 0,
+            "label": "ProjectItem",
+            "members": [],
+            "mutationInvocationCount": 0,
+            "readOnly": true
+          },
+          {
+            "invokedMemberCount": 0,
+            "label": "ClipProjectItem",
+            "members": [
+              {
+                "callable": true,
+                "descriptorKind": "DATA",
+                "getterPresent": false,
+                "memberName": "createSetScaleToFrameSizeAction",
+                "mutationLike": true,
+                "ownerDepth": 1,
+                "setterPresent": false,
+                "valueType": "function"
+              },
+              {
+                "callable": true,
+                "descriptorKind": "DATA",
+                "getterPresent": false,
+                "memberName": "createSetOverrideFrameRateAction",
+                "mutationLike": true,
+                "ownerDepth": 1,
+                "setterPresent": false,
+                "valueType": "function"
+              }
+            ],
+            "mutationInvocationCount": 0,
+            "readOnly": true
+          }
+        ]
+      },
+      "runtimeApiSurface": [
+        {
+          "invokedMemberCount": 0,
+          "label": "ProjectItem",
+          "members": [],
+          "mutationInvocationCount": 0,
+          "readOnly": true
+        },
+        {
+          "invokedMemberCount": 0,
+          "label": "ClipProjectItem",
+          "members": [
+            {
+              "callable": true,
+              "descriptorKind": "DATA",
+              "getterPresent": false,
+              "memberName": "createSetScaleToFrameSizeAction",
+              "mutationLike": true,
+              "ownerDepth": 1,
+              "setterPresent": false,
+              "valueType": "function"
+            },
+            {
+              "callable": true,
+              "descriptorKind": "DATA",
+              "getterPresent": false,
+              "memberName": "createSetOverrideFrameRateAction",
+              "mutationLike": true,
+              "ownerDepth": 1,
+              "setterPresent": false,
+              "valueType": "function"
+            }
+          ],
+          "mutationInvocationCount": 0,
+          "readOnly": true
+        }
+      ],
+      "verifiedReaderObservations": []
+    },
+    "projectItemGeometry": {
+      "capabilities": {
+        "createSetScaleToFrameSizeAction": true,
+        "getFootageInterpretation": true
+      },
+      "footageInterpretation": {
+        "fieldType": -1,
+        "frameRate": 30,
+        "pixelAspectRatio": 1
+      },
+      "sourceFrameSize": {
+        "height": null,
+        "readStatus": "UNAVAILABLE",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_SEMANTICS_UNVERIFIED",
+        "width": null
+      }
+    },
+    "rawInventory": {
+      "additionalTransformComponentIndexes": [],
+      "components": [
+        {
+          "componentIndex": 0,
+          "displayNameDiagnostic": "不透明度",
+          "matchName": "AE.ADBE Opacity",
+          "paramCount": 3,
+          "params": [
+            {
+              "displayNameDiagnostic": "不透明度",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 0,
+              "rawStartValue": {
+                "value": 100
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "混合模式",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 1,
+              "rawStartValue": {
+                "value": 18
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "混合模式",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 2,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            }
+          ]
+        },
+        {
+          "componentIndex": 1,
+          "displayNameDiagnostic": "运动",
+          "matchName": "AE.ADBE Motion",
+          "paramCount": 11,
+          "params": [
+            {
+              "displayNameDiagnostic": "位置",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 0,
+              "rawStartValue": {
+                "value": [
+                  0.5,
+                  0.5
+                ]
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "缩放",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 1,
+              "rawStartValue": {
+                "value": 50
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "缩放宽度",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 2,
+              "rawStartValue": {
+                "value": 50
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": " ",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 3,
+              "rawStartValue": {
+                "value": true
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "旋转",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 4,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "锚点",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 5,
+              "rawStartValue": {
+                "value": [
+                  0.5,
+                  0.5
+                ]
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "防闪烁滤镜",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 6,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "裁剪左侧",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 7,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "裁剪顶部",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 8,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "裁剪右侧",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 9,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            },
+            {
+              "displayNameDiagnostic": "裁剪底部",
+              "keyframeReadStatus": "READ_OK",
+              "keyframes": [],
+              "paramIndex": 10,
+              "rawStartValue": {
+                "value": 0
+              },
+              "timeVarying": false,
+              "timeVaryingReadStatus": "READ_OK",
+              "valueReadStatus": "READ_OK"
+            }
+          ]
+        }
+      ],
+      "intrinsicMotionComponentIndexes": [
+        1
+      ]
+    },
+    "sequenceGeometry": {
+      "frameSize": {
+        "height": 1080,
+        "width": 1920,
+        "x": null,
+        "y": null
+      },
+      "settings": {
+        "videoFieldType": 0,
+        "videoFrameRect": {
+          "height": 1080,
+          "width": 1920,
+          "x": null,
+          "y": null
+        },
+        "videoPixelAspectRatio": "1:1"
+      },
+      "timebase": "8467200000"
+    }
+  },
+  "readOnly": true,
+  "slot": "B"
+}
