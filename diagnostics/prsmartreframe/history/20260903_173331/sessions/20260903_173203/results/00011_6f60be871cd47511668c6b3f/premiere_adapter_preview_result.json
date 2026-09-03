@@ -1,0 +1,605 @@
+{
+  "phase": "4D-2",
+  "resultSchema": 1,
+  "previewVersion": "0.4.44-premiere-adapter-preview-v1",
+  "policy": "PREMIERE_POSITION_ADAPTER_V1",
+  "outputContract": "PREMIERE_ADAPTER_PREVIEW_EVIDENCE_V1",
+  "createdAt": "2026-09-03T17:32:03",
+  "status": "PREMIERE_ADAPTER_PREVIEW_REVIEW",
+  "ordinal": 11,
+  "clipInstanceId": "6f60be871cd47511668c6b3f",
+  "primaryReason": "NONCANONICAL_STATIC_TRANSFORM",
+  "reasonCodes": [
+    "NONCANONICAL_STATIC_TRANSFORM",
+    "TARGET_TRANSFORM_ALREADY_PRESENT"
+  ],
+  "sourcePhase4D1": {
+    "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.44\\sessions\\upstream_snapshots\\phase4d1\\20260902_235703\\results\\00011_6f60be871cd47511668c6b3f\\composition_preview_result.json",
+    "resultSha256": "1d085a2ad7f560b7df502866ac9b2c36e409c09fd5aadd473546b0797be0d0ac",
+    "status": "COMPOSITION_PREVIEW_READY",
+    "compositionQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW"
+  },
+  "canonicalAdapter": {
+    "status": "VALID",
+    "evidence": {
+      "status": "VALID",
+      "policy": "CANONICAL_CENTER_ANCHOR_TRANSFORM",
+      "coordinateContract": "NORMALIZED_SEQUENCE_POINT_WITH_PIXEL_DIAGNOSTIC",
+      "scaleContract": "DIMENSIONLESS_SCALE_FACTOR_WITH_PERCENT_DIAGNOSTIC",
+      "sourceGeometry": {
+        "width": 1728.0,
+        "height": 1080.0,
+        "coordinateSpace": "4D1_CANONICAL_SOURCE_RASTER"
+      },
+      "virtualTargetSequence": {
+        "policy": "VIRTUAL_FIXED_1080X1920",
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0
+      },
+      "sourceAnchor": {
+        "policy": "SOURCE_CENTER",
+        "xPixels": 864.0,
+        "yPixels": 540.0
+      },
+      "cropCenter": {
+        "xPixels": 918.571662902832,
+        "yPixels": 540.0
+      },
+      "cropGeometry": {
+        "width": 607.5,
+        "height": 1080.0
+      },
+      "cropWindow": {
+        "left": 614.821662902832,
+        "top": 0.0,
+        "right": 1222.321662902832,
+        "bottom": 1080.0
+      },
+      "scale": {
+        "canonicalAdapterScaleFactor": 1.7777777777777777,
+        "scalePercentDiagnostic": 177.77777777777777,
+        "percentIsHostParameterValue": false
+      },
+      "position": {
+        "sequencePixelsDiagnostic": {
+          "x": 442.98371039496527,
+          "y": 960.0
+        },
+        "normalizedSequencePoint": {
+          "x": 0.41017010221756045,
+          "y": 0.5
+        },
+        "normalizedPositionClamped": false,
+        "normalizedPositionMayBeOutsideUnitRange": true
+      },
+      "canonicalInputSnapshot": {
+        "geometryAuthority": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+        "sourceGeometry": {
+          "width": 1728.0,
+          "height": 1080.0
+        },
+        "cropGeometry": {
+          "width": 607.5,
+          "height": 1080.0
+        },
+        "crop": {
+          "finalCropCenter": {
+            "x": 918.571662902832,
+            "y": 540.0
+          },
+          "finalCropWindow": {
+            "left": 614.821662902832,
+            "top": 0.0,
+            "right": 1222.321662902832,
+            "bottom": 1080.0
+          }
+        }
+      },
+      "roundTrip": {
+        "policy": "CANONICAL_ADAPTER_ROUND_TRIP_GATE_V1",
+        "tolerance": 1e-06,
+        "expectedTargetCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "mappedCropCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "error": {
+          "xPixels": 0.0,
+          "yPixels": 0.0,
+          "maxNormalizedEquivalent": 0.0
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      }
+    }
+  },
+  "hostVerification": {
+    "status": "VERIFIED",
+    "hostContractStatus": "HOST_CONTRACT_VERIFIED",
+    "geometry2HostContractStatus": "GEOMETRY2_HOST_CONTRACT_VERIFIED",
+    "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.44\\sessions\\phase4d2\\20260903_173203\\premiere_transform_host_probe.json",
+    "sourceGeometryVerification": {
+      "policy": "SOURCE_SEQUENCE_HOST_GEOMETRY_AUTHORITY_V1",
+      "canonical": {
+        "width": 1728.0,
+        "height": 1080.0
+      },
+      "host": {
+        "readStatus": "READ_OK",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+        "width": 1728,
+        "height": 1080,
+        "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+      },
+      "comparison": "HOST_SOURCE_GEOMETRY_VERIFIED",
+      "factSource": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+      "uxpSourceFrameSize": {
+        "readStatus": "UNAVAILABLE",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_SEMANTICS_UNVERIFIED",
+        "width": null,
+        "height": null
+      },
+      "linkedMediaRaster": {
+        "policy": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+        "status": "LINKED_MEDIA_RASTER_READY",
+        "mediaPath": "E:\\视频\\三金说\\03 《我的恐怖妻子》第二期 极致的恐惧和失败，往往能催生出最快的成长 幸平，一个从最开始被妻子耍得团团转的男人，在经历了这一系列的事件后，开始学习观察和揣摩人心.mp4",
+        "fileExists": true,
+        "ffprobeExecutable": "C:\\Program Files\\FFmpeg\\ffprobe.EXE",
+        "codedFrameSize": {
+          "width": 1728,
+          "height": 1080
+        },
+        "rotationDegrees": 0.0,
+        "sampleAspectRatio": "1:1",
+        "sourceFrameSize": {
+          "readStatus": "READ_OK",
+          "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+          "width": 1728,
+          "height": 1080,
+          "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+        },
+        "returnCode": 0
+      }
+    },
+    "targetTransformOwnership": {
+      "policy": "TARGET_TRANSFORM_OWNERSHIP_V1",
+      "targetMatchName": "AE.ADBE Geometry2",
+      "geometry2Count": 1,
+      "status": "TARGET_TRANSFORM_PRESENT_UNIQUE",
+      "ownership": "EXISTING_USER_ASSET",
+      "animationState": "STATIC_CONFIRMED",
+      "overwriteAllowed": false,
+      "componentIndex": 2,
+      "foreignTransformCount": 0
+    },
+    "targetTransform": {
+      "status": "TARGET_TRANSFORM_ALREADY_PRESENT",
+      "componentIndex": 2,
+      "matchName": "AE.ADBE Geometry2",
+      "signatureStatus": "VERIFIED",
+      "animationState": "STATIC_CONFIRMED",
+      "overwriteAllowed": false
+    },
+    "frameSizeScaling": {
+      "scaleToFrameSize": {
+        "readStatus": "UNAVAILABLE",
+        "value": null,
+        "evidenceSource": "NONE"
+      }
+    },
+    "frameSizeScalingDiscovery": {
+      "contract": "FRAME_SIZE_SCALING_FACT_DISCOVERY_V1",
+      "status": "DISCOVERY_COMPLETED",
+      "authorityDecision": "DIAGNOSTIC_HINT_ONLY",
+      "liveHost": {
+        "runtimeApiSurface": {
+          "runtimeApiSurface": [
+            {
+              "label": "ProjectItem",
+              "readOnly": true,
+              "members": [],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            },
+            {
+              "label": "ClipProjectItem",
+              "readOnly": true,
+              "members": [
+                {
+                  "memberName": "createSetScaleToFrameSizeAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                },
+                {
+                  "memberName": "createSetOverrideFrameRateAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                }
+              ],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            }
+          ],
+          "verifiedReaderObservations": []
+        },
+        "projectItemComponentEvidence": {
+          "policy": "PREMIERE_PROJECT_ITEM_FRAME_SCALING_DISCOVERY_V1",
+          "readOnly": true,
+          "runtimeSurfaces": [
+            {
+              "label": "ProjectItem",
+              "readOnly": true,
+              "members": [],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            },
+            {
+              "label": "ClipProjectItem",
+              "readOnly": true,
+              "members": [
+                {
+                  "memberName": "createSetScaleToFrameSizeAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                },
+                {
+                  "memberName": "createSetOverrideFrameRateAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                }
+              ],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            }
+          ],
+          "componentChainStatus": "READ_OK",
+          "componentChainDiagnosticType": "object",
+          "components": [],
+          "candidateSignals": [],
+          "invokedUnknownReaderCount": 0,
+          "mutationInvocationCount": 0
+        }
+      },
+      "crossChecks": {
+        "timelineEvidence": {
+          "policy": "CURRENT_TIMELINE_FRAME_SCALING_CROSSCHECK_V1",
+          "motionScale": {
+            "value": 100
+          },
+          "sourceGeometry": {
+            "readStatus": "READ_OK",
+            "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+            "width": 1728,
+            "height": 1080,
+            "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+          },
+          "sequenceGeometry": {
+            "frameSize": {
+              "width": 1920,
+              "height": 1080,
+              "x": null,
+              "y": null
+            },
+            "timebase": "8467200000",
+            "settings": {
+              "videoFrameRect": {
+                "width": 1920,
+                "height": 1080,
+                "x": null,
+                "y": null
+              },
+              "videoPixelAspectRatio": "1:1",
+              "videoFieldType": 0
+            }
+          },
+          "footageInterpretation": {
+            "frameRate": 30,
+            "pixelAspectRatio": 1,
+            "fieldType": -1
+          },
+          "playback": {
+            "speed": 1,
+            "reversed": false,
+            "duration": {
+              "ticks": "296352000000",
+              "seconds": 1.1666666666666667
+            }
+          },
+          "semanticAuthority": "CORRELATED_DIAGNOSTIC_ONLY"
+        },
+        "savedProjectSnapshot": {
+          "policy": "PRPROJ_FRAME_SIZE_SCALING_DIAGNOSTIC_V1",
+          "status": "PRPROJ_DIAGNOSTIC_READY",
+          "projectPath": "\\\\?\\E:\\2026解说\\我的恐怖妻子\\我的恐怖妻子.prproj",
+          "fileExists": true,
+          "mtime": 1788412742.198392,
+          "size": 845104,
+          "parseStatus": "PARSED_GZIP_XML",
+          "candidateFieldCount": 0,
+          "candidateValues": [],
+          "candidates": [],
+          "authorityTier": "TIER_1",
+          "liveStateEquivalenceAssumed": false
+        }
+      },
+      "candidates": [
+        {
+          "candidateId": "timeline_crosscheck:motion_scale",
+          "source": "TIMELINE_CROSSCHECK",
+          "semanticClaim": "SCALE_TO_FRAME_SIZE_STATE",
+          "observedValue": {
+            "value": 100
+          },
+          "evidenceTier": "TIER_1",
+          "readOnly": true,
+          "clipSpecific": true,
+          "liveState": true,
+          "deterministic": true,
+          "repeatable": null,
+          "promotionEligible": false,
+          "blockingReasons": [
+            "CORRELATION_ONLY",
+            "UNRELATED_PARAMETER_INFERENCE_FORBIDDEN"
+          ]
+        }
+      ],
+      "blockingReasons": [],
+      "recommendedNextStep": "KEEP_UNKNOWN"
+    },
+    "effectiveFrameMapping": {
+      "contract": "EFFECTIVE_FRAME_MAPPING_V1",
+      "authority": "EFFECTIVE_FRAME_MAPPING_AUTHORITY_V1",
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED",
+      "reasonCodes": [],
+      "workflowProfile": {
+        "contract": "FRAME_SCALING_WORKFLOW_PROFILE_V1",
+        "profileId": "FIT_OR_NONE_NO_HIDDEN_FRAME_SCALING_V1",
+        "scope": "PROJECT_GUID",
+        "status": "WORKFLOW_PROFILE_CONFIRMED",
+        "confirmed": true,
+        "hostVersion": "26.0.1",
+        "projectGuidHash": "e1f2131bddf0f8eece6a5acd",
+        "hostFact": false
+      },
+      "hiddenFrameScalingRisk": {
+        "status": "EXCLUDED_BY_CONFIRMED_WORKFLOW_PROFILE",
+        "hostFact": false
+      },
+      "safeForFutureCompatibilityEvaluation": true,
+      "productionUseAllowed": false,
+      "mapping": {
+        "observedMotionScalePercent": 100.0,
+        "observedMotionScaleFactor": 1.0,
+        "effectiveFrameSize": {
+          "width": 1728.0,
+          "height": 1080.0
+        },
+        "offsetPixels": {
+          "x": 96.0,
+          "y": 0.0
+        }
+      },
+      "fitDiagnostic": {
+        "expectedFitScaleFactor": 1.0,
+        "expectedFitScalePercent": 100.0,
+        "relation": "MATCHES_EXPECTED_FIT",
+        "provesFitToFrameCommand": false
+      },
+      "roundTrip": {
+        "contract": "EFFECTIVE_FRAME_MAPPING_ROUND_TRIP_V1",
+        "status": "VERIFIED",
+        "maxAbsoluteSourceErrorPixels": 0.0
+      },
+      "sourceGeometryEvidence": {
+        "factSource": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+        "linkedMediaRasterStatus": "LINKED_MEDIA_RASTER_READY"
+      }
+    },
+    "frameMappingPrerequisite": {
+      "contract": "EFFECTIVE_MAPPING_COMPATIBILITY_PREREQUISITE_V1",
+      "integrationContract": "EFFECTIVE_MAPPING_COMPATIBILITY_INTEGRATION_V1",
+      "status": "FRAME_MAPPING_PREREQUISITE_SATISFIED",
+      "authority": "EFFECTIVE_FRAME_MAPPING",
+      "compatibilityUseAllowed": true,
+      "reasonCodes": [],
+      "hostScaleToFrameFact": {
+        "readStatus": "UNAVAILABLE",
+        "value": null,
+        "evidenceSource": "NONE"
+      }
+    },
+    "targetCanvasBinding": {
+      "contract": "HOST_TARGET_CANVAS_BINDING_V1",
+      "canonicalTarget": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0,
+        "policy": "VIRTUAL_FIXED_1080X1920"
+      },
+      "hostTarget": {
+        "width": 1920.0,
+        "height": 1080.0,
+        "pixelAspect": 1.0,
+        "evidenceSource": "PREMIERE_SEQUENCE_GEOMETRY_READONLY"
+      },
+      "hostVersion": "26.0.1",
+      "hostTargetMathUseAllowed": false,
+      "productionUseAllowed": false,
+      "status": "HOST_TARGET_CANVAS_MISMATCH",
+      "reasonCodes": [
+        "HOST_TARGET_SIZE_MISMATCH"
+      ]
+    },
+    "geometry2ParameterSemantics": {
+      "contract": "GEOMETRY2_HOST_PARAMETER_SEMANTICS_CALIBRATION_V1",
+      "status": "GEOMETRY2_PARAMETER_SEMANTICS_INCOMPLETE",
+      "reasonCodes": [
+        "GEOMETRY2_PARAMETER_SEMANTICS_CALIBRATION_NOT_AVAILABLE"
+      ],
+      "productionUseAllowed": false
+    },
+    "hostTargetMath": {
+      "contract": "GEOMETRY2_HOST_TARGET_MATH_V1",
+      "status": "HOST_TARGET_MATH_BLOCKED",
+      "mathematicalTargetTransform": null,
+      "proposedHostParameters": null,
+      "roundTrip": {
+        "contract": "GEOMETRY2_HOST_TARGET_ROUND_TRIP_V1",
+        "status": "NOT_RUN"
+      },
+      "reasonCodes": [
+        "HOST_TARGET_CANVAS_NOT_BOUND_EXACT"
+      ],
+      "hostTargetMathUseAllowed": false,
+      "productionUseAllowed": false
+    },
+    "cleanTargetTransformPreview": {
+      "contract": "CLEAN_TARGET_TRANSFORM_PREVIEW_V1",
+      "status": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW",
+      "checks": {
+        "upstreamReady": true,
+        "canonicalValid": true,
+        "canonicalRoundTripVerified": true,
+        "hostContractVerified": true,
+        "geometry2HostContractVerified": true,
+        "sourceGeometryVerified": true,
+        "effectiveMappingVerified": true,
+        "frameMappingPrerequisiteSatisfied": true,
+        "targetTransformAbsent": false,
+        "foreignTransformAbsent": true,
+        "canonicalTransformCompatible": false,
+        "targetCanvasBoundExact": false,
+        "parameterSemanticsVerified": false,
+        "hostTargetMathVerified": false,
+        "hostTargetRoundTripVerified": false
+      },
+      "reasonCodes": [
+        "TARGET_TRANSFORM_NOT_ABSENT",
+        "CANONICAL_TRANSFORM_NOT_COMPATIBLE",
+        "TARGET_CANVAS_NOT_BOUND_EXACT",
+        "GEOMETRY2_PARAMETER_SEMANTICS_UNVERIFIED",
+        "HOST_TARGET_MATH_UNVERIFIED",
+        "HOST_TARGET_ROUND_TRIP_UNVERIFIED"
+      ],
+      "hostTargetMathApplyEligible": false,
+      "productionUseAllowed": false,
+      "applyAllowed": false
+    },
+    "transformProbe": {
+      "status": "PER_CLIP_TRANSFORM_PROBE_READY",
+      "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.44\\sessions\\phase4d2\\20260903_173203\\results\\00011_6f60be871cd47511668c6b3f\\premiere_transform_probe.json",
+      "probeSha256": "92cab9fb58b84e8cd552a86252796396b581cbaf584fdf898ad9af1f16587354"
+    },
+    "transformCompatibility": {
+      "status": "NONCANONICAL_STATIC_TRANSFORM",
+      "primaryReason": "NONCANONICAL_STATIC_TRANSFORM",
+      "reasonCodes": [
+        "NONCANONICAL_STATIC_TRANSFORM",
+        "TARGET_TRANSFORM_ALREADY_PRESENT"
+      ]
+    },
+    "hostTargetedPreview": {
+      "status": "NOT_VERIFIED",
+      "usesCanonicalAdapterEvidence": true,
+      "premiereWritePerformed": false,
+      "applyAllowed": false
+    }
+  },
+  "evidenceAxes": {
+    "canonicalMathStatus": "VALID",
+    "roundTripStatus": "ROUND_TRIP_VERIFIED",
+    "hostVerificationStatus": "VERIFIED",
+    "geometryVerificationStatus": "HOST_SOURCE_GEOMETRY_VERIFIED",
+    "transformCompatibility": "NONCANONICAL_STATIC_TRANSFORM",
+    "hostTargetedPreviewStatus": "NOT_VERIFIED",
+    "targetCanvasBindingStatus": "HOST_TARGET_CANVAS_MISMATCH",
+    "geometry2ParameterSemanticsStatus": "GEOMETRY2_PARAMETER_SEMANTICS_INCOMPLETE",
+    "hostTargetMathStatus": "HOST_TARGET_MATH_BLOCKED",
+    "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW"
+  },
+  "mustNotDrivePremiereWrite": true,
+  "downstreamGate": {
+    "phase4d2PreviewOnly": true,
+    "premiereReadOnly": true,
+    "sequenceWriteAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "applyAllowed": false,
+    "requiresIndependentApplyPhase": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.44\\sessions\\phase4d2\\20260903_173203\\results\\00011_6f60be871cd47511668c6b3f\\premiere_adapter_preview_result.json",
+  "clipBinding": {
+    "status": "BOUND_UNIQUE",
+    "source": "CURRENT_TIMELINE_FINGERPRINT_INVENTORY_V1",
+    "fingerprint": {
+      "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+      "trackIndex": 0,
+      "startTicks": "557234899200000",
+      "endTicks": "557531251200000",
+      "sourceInTicks": "56848780800000",
+      "sourceOutTicks": "57145132800000",
+      "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
+    },
+    "clip": {
+      "name": "03 《我的恐怖妻子》第二期 极致的恐惧和失败，往往能催生出最快的成长 幸平，一个从最开始被妻子耍得团团转的男人，在经历了这一系列的事件后，开始学习观察和揣摩人心.mp4",
+      "trackIndex": 0,
+      "disabled": false,
+      "timelineStart": {
+        "ticks": "557234899200000",
+        "seconds": 2193.7
+      },
+      "timelineEnd": {
+        "ticks": "557531251200000",
+        "seconds": 2194.866666666667
+      },
+      "sourceIn": {
+        "ticks": "56848780800000",
+        "seconds": 223.8
+      },
+      "sourceOut": {
+        "ticks": "57145132800000",
+        "seconds": 224.96666666666667
+      },
+      "projectItem": {
+        "id": "95bbb2fe-9481-4891-b544-04bf86db9c86",
+        "name": "03 《我的恐怖妻子》第二期 极致的恐惧和失败，往往能催生出最快的成长 幸平，一个从最开始被妻子耍得团团转的男人，在经历了这一系列的事件后，开始学习观察和揣摩人心.mp4",
+        "colorLabelIndex": 1
+      },
+      "mediaPath": "E:\\视频\\三金说\\03 《我的恐怖妻子》第二期 极致的恐惧和失败，往往能催生出最快的成长 幸平，一个从最开始被妻子耍得团团转的男人，在经历了这一系列的事件后，开始学习观察和揣摩人心.mp4",
+      "fingerprint": {
+        "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+        "trackIndex": 0,
+        "startTicks": "557234899200000",
+        "endTicks": "557531251200000",
+        "sourceInTicks": "56848780800000",
+        "sourceOutTicks": "57145132800000",
+        "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
+      }
+    }
+  },
+  "transformProbePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.44\\sessions\\phase4d2\\20260903_173203\\results\\00011_6f60be871cd47511668c6b3f\\premiere_transform_probe.json",
+  "transformProbeSha256": "92cab9fb58b84e8cd552a86252796396b581cbaf584fdf898ad9af1f16587354"
+}
