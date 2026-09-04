@@ -1,0 +1,102 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "createdAt": "2026-09-04T23:09:58",
+  "status": "SLOW_VISION_READY",
+  "packId": "3c00052e947e6f80ab68116c",
+  "clipInstanceId": "6fb2456f6121bef19c8054e6",
+  "frameSetId": "8d247b072a5282f5f62495dc",
+  "visionCacheKey": "8d247b072a5282f5f62495dc",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c4\\20260904_230944\\results\\00001_6fb2456f6121bef19c8054e6\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "FAST_VISION_CONFIDENT",
+    "reasons": [],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 0,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "LOW",
+      "multiPersonAmbiguityScore": 0.08,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "requestPurpose": "ACCEPTANCE_SEMANTIC_EVIDENCE_COMPLETION",
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": false,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\cache\\phase4c5\\slow_vision\\3b6c5742e13049763106\\75863bfa519c4f441b399f79ffa5f4b42b49b6cd.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_230944\\requests\\00001_6fb2456f6121bef19c8054e6\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 1,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "MIDDLE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      },
+      {
+        "frameRole": "LATE",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "The subject is a single real physical person appearing consistently across all frames. No evidence of represented person status.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": false,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "AUTO_ACCEPTABLE",
+      "reasons": [],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_230944\\results\\00001_6fb2456f6121bef19c8054e6\\slow_vision_result.json"
+}
