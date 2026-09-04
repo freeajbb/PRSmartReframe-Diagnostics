@@ -1,6 +1,27 @@
 {
   "applyAllowed": false,
-  "batchApplyAllowed": false,
+  "authorityEvidence": {
+    "groundTruthGitBlobSha": "be9767ea52f87b08a9e286f701754e1a65765c5e",
+    "historyId": "20260903_214605",
+    "hostTargetMathGitBlobSha": "119d6c79c7beae99bc85f6c1446b5e508834cb02",
+    "sessionId": "20260903_214229"
+  },
+  "authorityScope": {
+    "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+    "geometry2ContractId": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_V1",
+    "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+    "premiereVersion": "26.0.1",
+    "sequenceRaster": {
+      "height": 1920.0,
+      "pixelAspect": 1.0,
+      "width": 1080.0
+    },
+    "sourceRaster": {
+      "height": 1080.0,
+      "pixelAspect": 1.0,
+      "width": 1728.0
+    }
+  },
   "beforeComponentSignatures": [
     {
       "componentIndex": 0,
@@ -177,6 +198,7 @@
       ]
     }
   ],
+  "beforeInventoryDigest": "455e03810c663379f65f3ee35370e9f03b7488566f90b5dfe49095151f4625d8",
   "clipFingerprint": {
     "endTicks": "556498252800000",
     "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86",
@@ -187,14 +209,10 @@
     "trackIndex": 0
   },
   "clipInstanceId": "0b23aeccd29faeb68eb26d7c",
-  "contract": "PHASE4D3_GENERALIZED_DISPOSABLE_SINGLE_CLIP_GEOMETRY2_WRITE_SESSION_V1",
-  "createdComponentIdentity": {
-    "componentIndex": 2,
-    "matchName": "AE.ADBE Geometry2",
-    "ownership": "CREATED_BY_TRANSACTION_VERIFIED_V1",
-    "transactionId": "45046e06c3cd3d4ac48ce9f662d817acc6e67a59c07478fce4e41eb9565b3332"
-  },
-  "dedicatedRollbackAvailable": false,
+  "confirm": true,
+  "contract": "PHASE4D3_DISPOSABLE_SINGLE_CLIP_GEOMETRY2_WRITE_V1",
+  "disposableSingleClipHostWriteAllowed": true,
+  "expectedGeometry2ContractId": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_V1",
   "expectedStaticParameters": {
     "anchor": [
       0.5,
@@ -215,69 +233,21 @@
     "skew": 0.0,
     "uniformScale": true
   },
-  "explicitRollbackStatus": "PHASE4D3_SINGLE_CLIP_ROLLBACK_VERIFIED",
+  "generalizedEligibilityContract": "PHASE4D3_GENERALIZED_DISPOSABLE_SINGLE_CLIP_ELIGIBILITY_V1",
   "generalizedEligibilityStatus": "SAFE_DISPOSABLE_SINGLE_CLIP_WRITE_ELIGIBLE",
-  "ordinal": 9,
+  "hostMutationAllowed": true,
   "productionUseAllowed": false,
-  "programWriteCalls": 2,
-  "pythonPostWriteVerification": {
-    "actual": {
-      "anchor": [
-        0.5,
-        0.5
-      ],
-      "position": [
-        0.4845280051231384,
-        0.5
-      ],
-      "positionUIPixels": {
-        "x": 837.2643928527832,
-        "y": 540.0
-      },
-      "rotation": 0.0,
-      "scalePrimaryPercent": 177.77777099609375,
-      "skew": 0.0,
-      "uniformScale": true
-    },
-    "applyAllowed": false,
-    "contract": "PHASE4D3_GEOMETRY2_POST_WRITE_READBACK_V1",
-    "createdComponentIdentity": {
-      "componentIndex": 2,
-      "matchName": "AE.ADBE Geometry2",
-      "ownership": "CREATED_BY_TRANSACTION_INFERRED_V1",
-      "transactionId": "45046e06c3cd3d4ac48ce9f662d817acc6e67a59c07478fce4e41eb9565b3332"
-    },
-    "expected": {
-      "anchor": [
-        0.5,
-        0.5
-      ],
-      "position": [
-        0.4845279960475341,
-        0.5
-      ],
-      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
-      "positionNormalizationBasis": {
-        "coordinateSpace": "SOURCE_RASTER",
-        "height": 1080.0,
-        "width": 1728.0
-      },
-      "rotation": 0.0,
-      "scalePrimaryPercent": 177.77777777777777,
-      "skew": 0.0,
-      "uniformScale": true
-    },
-    "hostMutationAllowed": false,
-    "productionUseAllowed": false,
-    "reasonCodes": [],
-    "rollbackSafe": true,
-    "status": "POST_WRITE_READBACK_VERIFIED",
-    "transactionId": "45046e06c3cd3d4ac48ce9f662d817acc6e67a59c07478fce4e41eb9565b3332",
-    "writeExecutionAllowed": false
+  "project": {
+    "guid": "b68cf192-a229-4631-862e-a1a0b00762e3",
+    "name": "我的恐怖妻子_0.4.44_DomainB校准副本.prproj"
   },
   "reasonCodes": [],
   "requestMode": "GENERALIZED_DISPOSABLE_SINGLE_CLIP_V1",
-  "sessionDir": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.58\\sessions\\phase4d3_single_clip_write\\20260904_140524",
-  "status": "PHASE4D3_SINGLE_CLIP_WRITE_VERIFIED",
-  "transactionId": "45046e06c3cd3d4ac48ce9f662d817acc6e67a59c07478fce4e41eb9565b3332"
+  "sequence": {
+    "guid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+    "name": "我的kb妻子测试"
+  },
+  "status": "PHASE4D3_SINGLE_CLIP_WRITE_REQUEST_READY",
+  "transactionId": "45046e06c3cd3d4ac48ce9f662d817acc6e67a59c07478fce4e41eb9565b3332",
+  "writeExecutionAllowed": true
 }
