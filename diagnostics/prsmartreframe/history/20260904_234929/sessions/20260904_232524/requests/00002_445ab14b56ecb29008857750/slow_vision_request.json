@@ -1,0 +1,492 @@
+{
+  "schema": "SLOW_VISION_REQUEST_V2",
+  "promptVersion": "SLOW_VISION_PROMPT_V4",
+  "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1",
+  "requestPurpose": "STANDARD_ESCALATION",
+  "packId": "346571a95c5bbc975cc6222e",
+  "clipInstanceId": "445ab14b56ecb29008857750",
+  "frameSetId": "39ade7472be6cf34e0720a1a",
+  "visionCacheKey": "39ade7472be6cf34e0720a1a",
+  "gate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "SUBJECT_COUNT_UNCERTAIN"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 1,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "MODERATE",
+      "multiPersonAmbiguityScore": 0.3,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "allowedPersonRefs": [
+    "EARLY:p1",
+    "LATE:p1",
+    "MIDDLE:p1",
+    "MIDDLE:p2"
+  ],
+  "allowedFaceRefs": [
+    "EARLY:f1"
+  ],
+  "frames": [
+    {
+      "role": "EARLY",
+      "rawPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4a\\phase4c4_20260904_232524\\packs\\00002_346571a95c5bbc975cc6222e\\frames\\early.jpg",
+      "overlayPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_232524\\requests\\00002_445ab14b56ecb29008857750\\early_candidate_overlay.jpg",
+      "allowedPersonIds": [
+        "p1"
+      ],
+      "allowedFaceIds": [
+        "f1"
+      ],
+      "evidence": {
+        "role": "EARLY",
+        "persons": [
+          {
+            "id": "p1",
+            "confidence": 0.943859
+          }
+        ],
+        "faces": [
+          {
+            "id": "f1",
+            "confidence": 0.765028
+          }
+        ],
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": [
+            {
+              "faceId": "f1",
+              "status": "MATCHED",
+              "baseStatus": "MATCHED",
+              "personId": "p1",
+              "candidatePersonIds": [
+                "p1"
+              ],
+              "candidateContainment": [
+                1.0
+              ],
+              "tieBreak": {
+                "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+                "attempted": false,
+                "resolved": false,
+                "winnerPersonId": null,
+                "reason": "BASE_NOT_AMBIGUOUS"
+              }
+            }
+          ]
+        },
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 1,
+          "duplicatePairCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        },
+        "poseEvidence": [
+          {
+            "personId": "p1",
+            "confidence": 0.874945,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.868841,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 8,
+              "torsoSpanRatio": 0.136052,
+              "bodySpanRatio": 0.617708,
+              "posePersonAreaRatio": 0.330538,
+              "reasons": []
+            },
+            "detectionOrientation": -90
+          }
+        ]
+      }
+    },
+    {
+      "role": "MIDDLE",
+      "rawPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4a\\phase4c4_20260904_232524\\packs\\00002_346571a95c5bbc975cc6222e\\frames\\middle.jpg",
+      "overlayPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_232524\\requests\\00002_445ab14b56ecb29008857750\\middle_candidate_overlay.jpg",
+      "allowedPersonIds": [
+        "p1",
+        "p2"
+      ],
+      "allowedFaceIds": [],
+      "evidence": {
+        "role": "MIDDLE",
+        "persons": [
+          {
+            "id": "p1",
+            "confidence": 0.955507
+          },
+          {
+            "id": "p2",
+            "confidence": 0.376063
+          }
+        ],
+        "faces": [],
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": []
+        },
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 2,
+          "duplicatePairCount": 1,
+          "duplicateGroupCount": 1,
+          "collapseEligibleDuplicateGroupCount": 1,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 2,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "LOW",
+          "subjectCountUncertain": true,
+          "spatiallySeparatedFaceCount": 0,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [
+            {
+              "groupId": "dg1",
+              "memberPersonIds": [
+                "p1",
+                "p2"
+              ],
+              "memberCount": 2,
+              "pairCount": 1,
+              "maxIou": 0.204561,
+              "maxContainment": 1.0,
+              "matchedFacePersonIds": [],
+              "poseUsablePersonIds": [
+                "p1"
+              ],
+              "poseHeadClusterCount": 1,
+              "poseHeadSeparationThreshold": 0.08,
+              "independentEvidenceConflict": false,
+              "collapseEligible": true,
+              "collapseReason": "NO_INDEPENDENT_EVIDENCE_CONFLICT",
+              "diagnosticOnly": true,
+              "doesNotSuppressFrozenPersonCandidates": true
+            }
+          ],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.3,
+          "level": "MODERATE",
+          "rawPersonCount": 2,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 2,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "LOW",
+          "subjectCountUncertain": true,
+          "spatiallySeparatedFaceCount": 0,
+          "duplicateGroupCount": 1,
+          "collapseEligibleDuplicateGroupCount": 1,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SUBJECT_COUNT_RANGE_INCLUDES_MULTIPLE"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        },
+        "poseEvidence": [
+          {
+            "personId": "p1",
+            "confidence": 0.816721,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.722876,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 4,
+              "torsoSpanRatio": 0.190988,
+              "bodySpanRatio": 0.23667,
+              "posePersonAreaRatio": 0.152989,
+              "reasons": []
+            },
+            "detectionOrientation": 90
+          }
+        ]
+      }
+    },
+    {
+      "role": "LATE",
+      "rawPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4a\\phase4c4_20260904_232524\\packs\\00002_346571a95c5bbc975cc6222e\\frames\\late.jpg",
+      "overlayPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_232524\\requests\\00002_445ab14b56ecb29008857750\\late_candidate_overlay.jpg",
+      "allowedPersonIds": [
+        "p1"
+      ],
+      "allowedFaceIds": [],
+      "evidence": {
+        "role": "LATE",
+        "persons": [
+          {
+            "id": "p1",
+            "confidence": 0.95726
+          }
+        ],
+        "faces": [],
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": []
+        },
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 1,
+          "duplicatePairCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 0,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        },
+        "poseEvidence": [
+          {
+            "personId": "p1",
+            "confidence": 0.871803,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.619191,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 4,
+              "torsoSpanRatio": 0.10139,
+              "bodySpanRatio": 0.168634,
+              "posePersonAreaRatio": 0.129669,
+              "reasons": []
+            },
+            "detectionOrientation": -90
+          }
+        ]
+      }
+    }
+  ],
+  "clipEvidence": {
+    "multiPersonAmbiguityV2": {
+      "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+      "score": 0.3,
+      "level": "MODERATE",
+      "highFrameCount": 0,
+      "independentSubjectCountMax": 1,
+      "subjectCountLowerBoundMax": 1,
+      "subjectCountUpperBoundMax": 2,
+      "subjectCountUncertainFrameCount": 1,
+      "subjectCountConfidence": "LOW",
+      "frames": [
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "EARLY"
+        },
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.3,
+          "level": "MODERATE",
+          "rawPersonCount": 2,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 2,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "LOW",
+          "subjectCountUncertain": true,
+          "spatiallySeparatedFaceCount": 0,
+          "duplicateGroupCount": 1,
+          "collapseEligibleDuplicateGroupCount": 1,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SUBJECT_COUNT_RANGE_INCLUDES_MULTIPLE"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "MIDDLE"
+        },
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "LATE"
+        }
+      ],
+      "vlmTriggerReasons": [],
+      "legacyVlmTriggerReasons": [
+        "MULTI_PERSON_AMBIGUITY"
+      ],
+      "legacy": {
+        "score": 0.82,
+        "vlmTriggerReasons": [
+          "MULTI_PERSON_AMBIGUITY"
+        ]
+      },
+      "authority": "DIAGNOSTIC_ONLY",
+      "mustNotDriveComposition": true
+    },
+    "representedPersonAssessment": {
+      "status": "NOT_ASSESSED"
+    }
+  },
+  "constraints": {
+    "mayModifyFrozenGeometry": false,
+    "mayDriveComposition": false,
+    "mayOutputFinalPosition": false
+  }
+}
