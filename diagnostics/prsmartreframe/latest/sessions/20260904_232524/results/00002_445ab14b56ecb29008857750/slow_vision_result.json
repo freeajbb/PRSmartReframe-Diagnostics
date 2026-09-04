@@ -1,0 +1,106 @@
+{
+  "phase": "4C-5",
+  "resultSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "createdAt": "2026-09-04T23:25:41",
+  "status": "SLOW_VISION_READY",
+  "packId": "346571a95c5bbc975cc6222e",
+  "clipInstanceId": "445ab14b56ecb29008857750",
+  "frameSetId": "39ade7472be6cf34e0720a1a",
+  "visionCacheKey": "39ade7472be6cf34e0720a1a",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c4\\20260904_232524\\results\\00002_445ab14b56ecb29008857750\\fast_vision_result.json",
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "NEEDS_SLOW_VISION",
+    "reasons": [
+      "SUBJECT_COUNT_UNCERTAIN"
+    ],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 1,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "MODERATE",
+      "multiPersonAmbiguityScore": 0.3,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "requestPurpose": "STANDARD_ESCALATION",
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "slowVisionCacheHit": false,
+  "slowVisionCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\cache\\phase4c5\\slow_vision\\3b6c5742e13049763106\\58657b49b6083e678b01033eb03ffd263fb2e951.json",
+  "slowVisionRequestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_232524\\requests\\00002_445ab14b56ecb29008857750\\slow_vision_request.json",
+  "evidence": {
+    "policy": "SLOW_VISION_EVIDENCE_V2",
+    "status": "RESOLVED",
+    "subjectCount": {
+      "estimate": 2,
+      "confidence": "HIGH"
+    },
+    "semanticSubjects": [
+      {
+        "subjectId": "s1",
+        "members": [
+          "EARLY:p1",
+          "MIDDLE:p1",
+          "LATE:p1"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "PRIMARY",
+        "confidence": "HIGH"
+      },
+      {
+        "subjectId": "s2",
+        "members": [
+          "MIDDLE:p2"
+        ],
+        "physicality": "REAL_PHYSICAL_PERSON",
+        "visualImportance": "SECONDARY",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "facePersonResolutions": [
+      {
+        "frameRole": "EARLY",
+        "faceId": "f1",
+        "personId": "p1",
+        "status": "RESOLVED",
+        "confidence": "HIGH"
+      }
+    ],
+    "representedPersonAssessment": "ASSESSED",
+    "notes": "The scene depicts two individuals in an embrace. MIDDLE:p2 is identified as a secondary subject partially obscured by the primary subject (p1). All subjects are assessed as real physical persons.",
+    "mustNotDriveComposition": true,
+    "needsHumanReview": false,
+    "humanReviewGate": {
+      "policy": "HUMAN_REVIEW_GATE_V1",
+      "decision": "AUTO_ACCEPTABLE",
+      "reasons": [],
+      "authority": "DETERMINISTIC_EVIDENCE_GATE",
+      "mustNotDriveComposition": true
+    }
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.67\\sessions\\phase4c5\\20260904_232524\\results\\00002_445ab14b56ecb29008857750\\slow_vision_result.json"
+}
