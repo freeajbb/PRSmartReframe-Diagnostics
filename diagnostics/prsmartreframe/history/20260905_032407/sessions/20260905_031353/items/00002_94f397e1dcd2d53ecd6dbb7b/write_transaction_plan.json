@@ -1,0 +1,67 @@
+{
+  "applyAllowed": false,
+  "authorityEvidence": {
+    "groundTruthGitBlobSha": "be9767ea52f87b08a9e286f701754e1a65765c5e",
+    "historyId": "20260903_214605",
+    "hostTargetMathGitBlobSha": "119d6c79c7beae99bc85f6c1446b5e508834cb02",
+    "sessionId": "20260903_214229"
+  },
+  "beforeInventoryDigest": "455e03810c663379f65f3ee35370e9f03b7488566f90b5dfe49095151f4625d8",
+  "clipFingerprint": {
+    "endTicks": "615802521600000",
+    "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86",
+    "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+    "sourceInTicks": "216438566400000",
+    "sourceOutTicks": "217996531200000",
+    "startTicks": "614244556800000",
+    "trackIndex": 0
+  },
+  "clipInstanceId": "94f397e1dcd2d53ecd6dbb7b",
+  "contract": "PHASE4D3_GEOMETRY2_WRITE_TRANSACTION_PLAN_V1",
+  "executionAllowed": false,
+  "expectedStaticParameters": {
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "position": [
+      0.5699930230285896,
+      0.5
+    ],
+    "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+    "positionNormalizationBasis": {
+      "coordinateSpace": "SOURCE_RASTER",
+      "height": 1080.0,
+      "width": 1728.0
+    },
+    "rotation": 0.0,
+    "scalePrimaryPercent": 177.77777777777777,
+    "skew": 0.0,
+    "uniformScale": true
+  },
+  "forbiddenOperations": [
+    "OVERWRITE_EXISTING_GEOMETRY2",
+    "DELETE_USER_EFFECT",
+    "WRITE_KEYFRAMES",
+    "ALTER_INTRINSIC_MOTION",
+    "ALTER_FRAME_SCALING_STATE"
+  ],
+  "futureWriteSequence": [
+    "FRESH_PREFLIGHT",
+    "CREATE_EXACTLY_ONE_GEOMETRY2",
+    "SET_STATIC_PARAMETERS",
+    "FRESH_READBACK_PROBE",
+    "VERIFY_POST_WRITE_READBACK",
+    "COMMIT_TRANSACTION_EVIDENCE",
+    "ROLLBACK_CREATED_COMPONENT_ONLY_ON_FAILURE"
+  ],
+  "hostMutationAllowed": false,
+  "hostMutationPerformed": false,
+  "operation": "CREATE_GEOMETRY2_AND_SET_STATIC_PARAMETERS",
+  "productionUseAllowed": false,
+  "reasonCodes": [],
+  "rollbackPolicy": "REMOVE_CREATED_GEOMETRY2_ONLY_IF_TRANSACTION_IDENTITY_VERIFIED",
+  "status": "WRITE_TRANSACTION_PLAN_READY",
+  "targetMatchName": "AE.ADBE Geometry2",
+  "transactionId": "f881a79c4d88da472c04e0278ef38dbf80c030b28043b412b3c59bae455c580b"
+}
