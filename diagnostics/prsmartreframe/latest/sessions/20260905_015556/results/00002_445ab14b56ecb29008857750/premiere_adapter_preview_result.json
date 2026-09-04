@@ -4,15 +4,12 @@
   "previewVersion": "0.4.70-premiere-adapter-preview-v1",
   "policy": "PREMIERE_POSITION_ADAPTER_V1",
   "outputContract": "PREMIERE_ADAPTER_PREVIEW_EVIDENCE_V1",
-  "createdAt": "2026-09-05T01:49:09",
-  "status": "PREMIERE_ADAPTER_PREVIEW_REVIEW",
+  "createdAt": "2026-09-05T01:55:56",
+  "status": "PREMIERE_ADAPTER_PREVIEW_READY",
   "ordinal": 2,
   "clipInstanceId": "445ab14b56ecb29008857750",
-  "primaryReason": "TRANSFORM_STATE_UNKNOWN",
-  "reasonCodes": [
-    "TRANSFORM_STATE_UNKNOWN",
-    "FRAME_SIZE_SCALING_VERIFICATION_INCOMPLETE"
-  ],
+  "primaryReason": null,
+  "reasonCodes": [],
   "sourcePhase4D1": {
     "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\upstream_snapshots\\phase4d1\\20260904_234320\\results\\00002_445ab14b56ecb29008857750\\composition_preview_result.json",
     "resultSha256": "ace4db4345951c0fac737184d82e3a00709507b5a4e9b5914d1d520991c3a546",
@@ -120,7 +117,7 @@
     "status": "VERIFIED",
     "hostContractStatus": "HOST_CONTRACT_VERIFIED",
     "geometry2HostContractStatus": "GEOMETRY2_HOST_CONTRACT_VERIFIED",
-    "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_014909\\premiere_transform_host_probe.json",
+    "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_015556\\premiere_transform_host_probe.json",
     "sourceGeometryVerification": {
       "policy": "SOURCE_SEQUENCE_HOST_GEOMETRY_AUTHORITY_V1",
       "canonical": {
@@ -372,25 +369,23 @@
     "effectiveFrameMapping": {
       "contract": "EFFECTIVE_FRAME_MAPPING_V1",
       "authority": "EFFECTIVE_FRAME_MAPPING_AUTHORITY_V1",
-      "status": "EFFECTIVE_FRAME_MAPPING_REVIEW",
-      "reasonCodes": [
-        "WORKFLOW_PROFILE_UNCONFIRMED"
-      ],
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED",
+      "reasonCodes": [],
       "workflowProfile": {
         "contract": "FRAME_SCALING_WORKFLOW_PROFILE_V1",
         "profileId": "FIT_OR_NONE_NO_HIDDEN_FRAME_SCALING_V1",
         "scope": "PROJECT_GUID",
-        "status": "WORKFLOW_PROFILE_UNCONFIRMED",
-        "confirmed": false,
+        "status": "WORKFLOW_PROFILE_CONFIRMED",
+        "confirmed": true,
         "hostVersion": "26.0.1",
         "projectGuidHash": "e1f2131bddf0f8eece6a5acd",
         "hostFact": false
       },
       "hiddenFrameScalingRisk": {
-        "status": "PROFILE_UNCONFIRMED",
+        "status": "EXCLUDED_BY_CONFIRMED_WORKFLOW_PROFILE",
         "hostFact": false
       },
-      "safeForFutureCompatibilityEvaluation": false,
+      "safeForFutureCompatibilityEvaluation": true,
       "productionUseAllowed": false,
       "mapping": {
         "observedMotionScalePercent": 100.0,
@@ -423,15 +418,10 @@
     "frameMappingPrerequisite": {
       "contract": "EFFECTIVE_MAPPING_COMPATIBILITY_PREREQUISITE_V1",
       "integrationContract": "EFFECTIVE_MAPPING_COMPATIBILITY_INTEGRATION_V1",
-      "status": "FRAME_MAPPING_PREREQUISITE_UNKNOWN",
-      "authority": "NONE",
-      "compatibilityUseAllowed": false,
-      "reasonCodes": [
-        "FRAME_MAPPING_EFFECTIVE_MAPPING_NOT_VERIFIED",
-        "FRAME_MAPPING_WORKFLOW_PROFILE_UNCONFIRMED",
-        "FRAME_MAPPING_HIDDEN_SCALING_RISK_NOT_EXCLUDED",
-        "FRAME_MAPPING_SAFE_FOR_COMPATIBILITY_FALSE"
-      ],
+      "status": "FRAME_MAPPING_PREREQUISITE_SATISFIED",
+      "authority": "EFFECTIVE_FRAME_MAPPING",
+      "compatibilityUseAllowed": true,
+      "reasonCodes": [],
       "hostScaleToFrameFact": {
         "readStatus": "UNAVAILABLE",
         "value": null,
@@ -732,22 +722,118 @@
     },
     "hostTargetMath": {
       "contract": "GEOMETRY2_HOST_TARGET_MATH_V1",
-      "status": "HOST_TARGET_MATH_BLOCKED",
-      "mathematicalTargetTransform": null,
-      "proposedHostParameters": null,
+      "status": "HOST_TARGET_MATH_VERIFIED",
+      "mathematicalTargetTransform": {
+        "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+        "desiredTotalScaleFactor": 1.7777777777777777,
+        "baseEffectiveScaleFactor": 1.0,
+        "geometry2ExtraScaleFactor": 1.7777777777777777,
+        "anchorPixels": {
+          "x": 864.0,
+          "y": 540.0
+        },
+        "positionPixels": {
+          "x": 586.1360134548611,
+          "y": 540.0
+        },
+        "targetCanvasCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "targetCenterInEffectSpacePixels": {
+          "x": 864.0,
+          "y": 540.0
+        },
+        "baseMappedCropCenterPixels": {
+          "x": 696.2984924316406,
+          "y": 960.0
+        }
+      },
+      "proposedHostParameters": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "position": [
+          0.339199081860452,
+          0.5
+        ],
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionNormalizationBasis": {
+          "width": 1728.0,
+          "height": 1080.0,
+          "coordinateSpace": "SOURCE_RASTER"
+        },
+        "positionClamped": false,
+        "uniformScale": true,
+        "scalePrimaryPercent": 177.77777777777777,
+        "scaleWidthRole": "DIAGNOSTIC_ONLY_IN_UNIFORM_MODE"
+      },
       "roundTrip": {
         "contract": "GEOMETRY2_HOST_TARGET_ROUND_TRIP_V1",
-        "status": "NOT_RUN"
+        "status": "HOST_TARGET_ROUND_TRIP_VERIFIED",
+        "tolerance": 1e-06,
+        "maxErrorPixels": 0.0,
+        "mappedPoints": {
+          "CENTER": {
+            "target": {
+              "x": 540.0,
+              "y": 960.0
+            },
+            "inverseSource": {
+              "x": 1020.2984924316406,
+              "y": 540.0
+            }
+          },
+          "LT": {
+            "target": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "inverseSource": {
+              "x": 716.5484924316406,
+              "y": 0.0
+            }
+          },
+          "RT": {
+            "target": {
+              "x": 1080.0,
+              "y": 0.0
+            },
+            "inverseSource": {
+              "x": 1324.0484924316406,
+              "y": 0.0
+            }
+          },
+          "LB": {
+            "target": {
+              "x": 0.0,
+              "y": 1920.0
+            },
+            "inverseSource": {
+              "x": 716.5484924316406,
+              "y": 1080.0
+            }
+          },
+          "RB": {
+            "target": {
+              "x": 1080.0,
+              "y": 1920.0
+            },
+            "inverseSource": {
+              "x": 1324.0484924316406,
+              "y": 1080.0
+            }
+          }
+        }
       },
-      "reasonCodes": [
-        "EFFECTIVE_FRAME_MAPPING_UNVERIFIED"
-      ],
-      "hostTargetMathUseAllowed": false,
+      "reasonCodes": [],
+      "hostTargetMathUseAllowed": true,
       "productionUseAllowed": false
     },
     "cleanTargetTransformPreview": {
       "contract": "CLEAN_TARGET_TRANSFORM_PREVIEW_V1",
-      "status": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW",
+      "status": "CLEAN_TARGET_TRANSFORM_PREVIEW_READY",
       "checks": {
         "upstreamReady": true,
         "canonicalValid": true,
@@ -755,42 +841,33 @@
         "hostContractVerified": true,
         "geometry2HostContractVerified": true,
         "sourceGeometryVerified": true,
-        "effectiveMappingVerified": false,
-        "frameMappingPrerequisiteSatisfied": false,
+        "effectiveMappingVerified": true,
+        "frameMappingPrerequisiteSatisfied": true,
         "targetTransformAbsent": true,
         "foreignTransformAbsent": true,
-        "canonicalTransformCompatible": false,
+        "canonicalTransformCompatible": true,
         "targetCanvasBoundExact": true,
         "parameterSemanticsVerified": true,
-        "hostTargetMathVerified": false,
-        "hostTargetRoundTripVerified": false
+        "hostTargetMathVerified": true,
+        "hostTargetRoundTripVerified": true
       },
-      "reasonCodes": [
-        "EFFECTIVE_FRAME_MAPPING_UNVERIFIED",
-        "FRAME_MAPPING_PREREQUISITE_UNSATISFIED",
-        "CANONICAL_TRANSFORM_NOT_COMPATIBLE",
-        "HOST_TARGET_MATH_UNVERIFIED",
-        "HOST_TARGET_ROUND_TRIP_UNVERIFIED"
-      ],
+      "reasonCodes": [],
       "hostTargetMathApplyEligible": false,
       "productionUseAllowed": false,
       "applyAllowed": false
     },
     "transformProbe": {
       "status": "PER_CLIP_TRANSFORM_PROBE_READY",
-      "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_014909\\results\\00002_445ab14b56ecb29008857750\\premiere_transform_probe.json",
-      "probeSha256": "b691c73ed7a8d8c2603c4547023cdb5116557dbc181c1804465a454ceb1df042"
+      "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_015556\\results\\00002_445ab14b56ecb29008857750\\premiere_transform_probe.json",
+      "probeSha256": "4eb7564bf8342af3e68d915e982043a8c5f9c9e923756a6516062143be76e7e7"
     },
     "transformCompatibility": {
-      "status": "TRANSFORM_STATE_UNKNOWN",
-      "primaryReason": "TRANSFORM_STATE_UNKNOWN",
-      "reasonCodes": [
-        "TRANSFORM_STATE_UNKNOWN",
-        "FRAME_SIZE_SCALING_VERIFICATION_INCOMPLETE"
-      ]
+      "status": "CANONICAL_COMPATIBLE",
+      "primaryReason": null,
+      "reasonCodes": []
     },
     "hostTargetedPreview": {
-      "status": "NOT_VERIFIED",
+      "status": "HOST_TARGETED_PREVIEW_VERIFIED",
       "usesCanonicalAdapterEvidence": true,
       "premiereWritePerformed": false,
       "applyAllowed": false
@@ -801,12 +878,12 @@
     "roundTripStatus": "ROUND_TRIP_VERIFIED",
     "hostVerificationStatus": "VERIFIED",
     "geometryVerificationStatus": "HOST_SOURCE_GEOMETRY_VERIFIED",
-    "transformCompatibility": "TRANSFORM_STATE_UNKNOWN",
-    "hostTargetedPreviewStatus": "NOT_VERIFIED",
+    "transformCompatibility": "CANONICAL_COMPATIBLE",
+    "hostTargetedPreviewStatus": "HOST_TARGETED_PREVIEW_VERIFIED",
     "targetCanvasBindingStatus": "HOST_TARGET_CANVAS_BOUND_EXACT",
     "geometry2ParameterSemanticsStatus": "GEOMETRY2_PARAMETER_SEMANTICS_VERIFIED",
-    "hostTargetMathStatus": "HOST_TARGET_MATH_BLOCKED",
-    "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW"
+    "hostTargetMathStatus": "HOST_TARGET_MATH_VERIFIED",
+    "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_READY"
   },
   "mustNotDrivePremiereWrite": true,
   "downstreamGate": {
@@ -818,7 +895,7 @@
     "applyAllowed": false,
     "requiresIndependentApplyPhase": true
   },
-  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_014909\\results\\00002_445ab14b56ecb29008857750\\premiere_adapter_preview_result.json",
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_015556\\results\\00002_445ab14b56ecb29008857750\\premiere_adapter_preview_result.json",
   "clipBinding": {
     "status": "BOUND_UNIQUE",
     "source": "CURRENT_TIMELINE_FINGERPRINT_INVENTORY_V1",
@@ -868,6 +945,6 @@
       }
     }
   },
-  "transformProbePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_014909\\results\\00002_445ab14b56ecb29008857750\\premiere_transform_probe.json",
-  "transformProbeSha256": "b691c73ed7a8d8c2603c4547023cdb5116557dbc181c1804465a454ceb1df042"
+  "transformProbePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.70\\sessions\\phase4d2\\20260905_015556\\results\\00002_445ab14b56ecb29008857750\\premiere_transform_probe.json",
+  "transformProbeSha256": "4eb7564bf8342af3e68d915e982043a8c5f9c9e923756a6516062143be76e7e7"
 }
