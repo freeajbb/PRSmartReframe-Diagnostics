@@ -1,0 +1,73 @@
+{
+  "phase": "4C-5",
+  "batchSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "capturedAt": "2026-09-04T22:20:49",
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.20-openai-compatible-chat-completions-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "summary": {
+    "fastVisionReady": 2,
+    "fastVisionConfidentClips": 2,
+    "needsSlowVisionClips": 0,
+    "slowVisionEligible": 0,
+    "slowVisionSkippedFastConfident": 2,
+    "slowVisionReady": 0,
+    "slowVisionFailed": 0,
+    "slowVisionProviderCalls": 0,
+    "slowVisionProviderSucceeded": 0,
+    "slowVisionProviderFailed": 0,
+    "slowVisionCacheHits": 0,
+    "slowVisionResolved": 0,
+    "slowVisionPartial": 0,
+    "slowVisionUnresolved": 0,
+    "needsHumanReviewCount": 0,
+    "autoAcceptableCount": 0,
+    "representedPersonAssessedCount": 0,
+    "representedPersonPartialCount": 0,
+    "representedPersonUnresolvedCount": 0,
+    "readOnlyPremiere": true
+  },
+  "contract": {
+    "input": "Phase 4C-4 fast_vision_batch + FAST_VISION_ESCALATION_GATE_V1",
+    "output": "SlowVisionEvidence V2 + HUMAN_REVIEW_GATE_V1",
+    "slowVisionRunsOnlyFor": "NEEDS_SLOW_VISION",
+    "fastVisionConfidentSubmitted": false,
+    "slowVisionCacheIndependent": true,
+    "frameScopedFrozenIds": true,
+    "semanticSubjectGrouping": true,
+    "humanReviewGate": "HUMAN_REVIEW_GATE_V1",
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "premiereReadOnly": true
+  },
+  "results": [],
+  "slowVisionFailures": [],
+  "fastVisionBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.66\\sessions\\phase4c4\\20260904_222048\\fast_vision_batch.json",
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.66\\sessions\\phase4c5\\20260904_222048\\slow_vision_batch.json",
+  "slowVisionVisualQa": {
+    "schemaVersion": 1,
+    "status": "C4C5R01_VISUAL_QA_READY",
+    "createdAt": "2026-09-04T22:20:49",
+    "selectionPolicy": "HUMAN_REVIEW_UNRESOLVED_REPRESENTED_RESOLUTION_PRIORITY_V2",
+    "selectedClipCount": 0,
+    "selectedOrdinals": [],
+    "overlayCount": 0,
+    "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.66\\sessions\\phase4c5\\20260904_222048\\C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+    "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.66\\sessions\\phase4c5\\20260904_222048\\slow_vision_visual_qa",
+    "warnings": [],
+    "rows": [],
+    "representedPersonQa": {
+      "policy": "REPRESENTED_PERSON_QA_PRIORITY_V1",
+      "selectedOrdinals": []
+    },
+    "mustNotDriveComposition": true,
+    "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.66\\sessions\\phase4c5\\20260904_222048\\C4C5R01_SLOW_VISION_EVIDENCE_QA_MANIFEST.json"
+  }
+}
