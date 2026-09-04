@@ -1,241 +1,14 @@
 {
   "schemaVersion": 1,
-  "contract": "PREMIERE_TRANSFORM_HOST_PROBE_V1",
+  "contract": "PREMIERE_PER_CLIP_TRANSFORM_EVIDENCE_V1",
+  "phase": "4D-2",
+  "ordinal": 2,
+  "clipInstanceId": "445ab14b56ecb29008857750",
   "readOnly": true,
-  "hostIdentity": {
-    "application": "premierepro",
-    "hostVersion": "26.0.1",
-    "locale": "zh_CN",
-    "uxpVersion": null
-  },
-  "representative": {
-    "ordinal": 1,
-    "clipInstanceId": "6fb2456f6121bef19c8054e6"
-  },
-  "calibration": {
-    "policy": "PREMIERE_26_0_1_MOTION_SIGNATURE_CALIBRATION_V1",
-    "requiredProbeCount": 4,
-    "providedProbeCount": 2,
-    "usableProbeCount": 2,
-    "consistentSignature": true,
-    "signatures": [
-      {
-        "hostVersion": "26.0.1",
-        "matchName": "AE.ADBE Motion",
-        "paramCount": 11,
-        "valueShapes": [
-          "POINT_2D",
-          "NUMBER",
-          "NUMBER",
-          "BOOLEAN",
-          "NUMBER",
-          "POINT_2D",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER"
-        ]
-      },
-      {
-        "hostVersion": "26.0.1",
-        "matchName": "AE.ADBE Motion",
-        "paramCount": 11,
-        "valueShapes": [
-          "POINT_2D",
-          "NUMBER",
-          "NUMBER",
-          "BOOLEAN",
-          "NUMBER",
-          "POINT_2D",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER",
-          "NUMBER"
-        ]
-      }
-    ],
-    "unusableStatuses": [],
-    "status": "UNVERIFIED"
-  },
-  "hostContract": {
-    "status": "HOST_CONTRACT_UNVERIFIED",
-    "hostIdentity": {
-      "name": "premierepro",
-      "version": "26.0.1",
-      "locale": "zh_CN"
-    },
-    "motionComponent": {
-      "componentIndex": 1,
-      "matchName": "AE.ADBE Motion",
-      "displayNameDiagnostic": "运动",
-      "paramCount": 11,
-      "params": [
-        {
-          "paramIndex": 0,
-          "displayNameDiagnostic": "位置",
-          "rawStartValue": {
-            "value": [
-              0.5,
-              0.5
-            ]
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 1,
-          "displayNameDiagnostic": "缩放",
-          "rawStartValue": {
-            "value": 100
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 2,
-          "displayNameDiagnostic": "缩放宽度",
-          "rawStartValue": {
-            "value": 100
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 3,
-          "displayNameDiagnostic": " ",
-          "rawStartValue": {
-            "value": true
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 4,
-          "displayNameDiagnostic": "旋转",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 5,
-          "displayNameDiagnostic": "锚点",
-          "rawStartValue": {
-            "value": [
-              0.5,
-              0.5
-            ]
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 6,
-          "displayNameDiagnostic": "防闪烁滤镜",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 7,
-          "displayNameDiagnostic": "裁剪左侧",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 8,
-          "displayNameDiagnostic": "裁剪顶部",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 9,
-          "displayNameDiagnostic": "裁剪右侧",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        },
-        {
-          "paramIndex": 10,
-          "displayNameDiagnostic": "裁剪底部",
-          "rawStartValue": {
-            "value": 0
-          },
-          "valueReadStatus": "READ_OK",
-          "timeVarying": false,
-          "timeVaryingReadStatus": "READ_OK",
-          "keyframes": [],
-          "keyframeReadStatus": "READ_OK"
-        }
-      ]
-    },
-    "signature": {
-      "hostVersion": "26.0.1",
-      "matchName": "AE.ADBE Motion",
-      "paramCount": 11,
-      "valueShapes": [
-        "POINT_2D",
-        "NUMBER",
-        "NUMBER",
-        "BOOLEAN",
-        "NUMBER",
-        "POINT_2D",
-        "NUMBER",
-        "NUMBER",
-        "NUMBER",
-        "NUMBER",
-        "NUMBER"
-      ]
-    },
-    "parameterMapping": {},
-    "resolutionMethod": "CALIBRATION_INSUFFICIENT"
-  },
+  "executionStatus": "OK",
   "rawProbe": {
     "phase4d2ProbeSchema": 1,
-    "capturedAt": "2026-09-04T17:23:11.142Z",
+    "capturedAt": "2026-09-04T17:49:12.131Z",
     "readOnly": true,
     "host": {
       "name": "premierepro",
@@ -275,10 +48,10 @@
       "fingerprint": {
         "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
         "trackIndex": 0,
-        "startTicks": "585633888000000",
-        "endTicks": "585981043200000",
-        "sourceInTicks": "121732934400000",
-        "sourceOutTicks": "122080089600000",
+        "startTicks": "586260460800000",
+        "endTicks": "586887033600000",
+        "sourceInTicks": "279671616000000",
+        "sourceOutTicks": "280298188800000",
         "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
       }
     },
@@ -287,20 +60,20 @@
       "trackIndex": 0,
       "disabled": false,
       "timelineStart": {
-        "ticks": "585633888000000",
-        "seconds": 2305.5
+        "ticks": "586260460800000",
+        "seconds": 2307.9666666666667
       },
       "timelineEnd": {
-        "ticks": "585981043200000",
-        "seconds": 2306.866666666667
+        "ticks": "586887033600000",
+        "seconds": 2310.4333333333334
       },
       "sourceIn": {
-        "ticks": "121732934400000",
-        "seconds": 479.23333333333335
+        "ticks": "279671616000000",
+        "seconds": 1101
       },
       "sourceOut": {
-        "ticks": "122080089600000",
-        "seconds": 480.6
+        "ticks": "280298188800000",
+        "seconds": 1103.4666666666667
       },
       "projectItem": {
         "id": "95bbb2fe-9481-4891-b544-04bf86db9c86",
@@ -311,10 +84,10 @@
       "fingerprint": {
         "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
         "trackIndex": 0,
-        "startTicks": "585633888000000",
-        "endTicks": "585981043200000",
-        "sourceInTicks": "121732934400000",
-        "sourceOutTicks": "122080089600000",
+        "startTicks": "586260460800000",
+        "endTicks": "586887033600000",
+        "sourceInTicks": "279671616000000",
+        "sourceOutTicks": "280298188800000",
         "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
       }
     },
@@ -322,8 +95,8 @@
       "speed": 1,
       "reversed": false,
       "duration": {
-        "ticks": "347155200000",
-        "seconds": 1.3666666666666667
+        "ticks": "626572800000",
+        "seconds": 2.466666666666667
       }
     },
     "projectItemGeometry": {
@@ -636,31 +409,140 @@
         "value": null,
         "evidenceSource": "NONE"
       }
+    },
+    "desktopLinkedMediaRaster": {
+      "policy": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+      "status": "LINKED_MEDIA_RASTER_READY",
+      "mediaPath": "E:\\视频\\三金说\\03 《我的恐怖妻子》第二期 极致的恐惧和失败，往往能催生出最快的成长 幸平，一个从最开始被妻子耍得团团转的男人，在经历了这一系列的事件后，开始学习观察和揣摩人心.mp4",
+      "fileExists": true,
+      "ffprobeExecutable": "C:\\Program Files\\FFmpeg\\ffprobe.EXE",
+      "codedFrameSize": {
+        "width": 1728,
+        "height": 1080
+      },
+      "rotationDegrees": 0.0,
+      "sampleAspectRatio": "1:1",
+      "sourceFrameSize": {
+        "readStatus": "READ_OK",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+        "width": 1728,
+        "height": 1080,
+        "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+      },
+      "returnCode": 0
     }
   },
-  "geometry2Calibration": {
-    "policy": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_CALIBRATION_V1",
-    "requiredProbeCount": 4,
-    "providedProbeCount": 2,
-    "usableProbeCount": 0,
-    "consistentSignature": false,
-    "signatures": [],
-    "unusableStatuses": [
-      "GEOMETRY2_COMPONENT_NOT_FOUND",
-      "GEOMETRY2_COMPONENT_NOT_FOUND"
-    ],
-    "status": "UNVERIFIED"
-  },
-  "geometry2HostContract": {
-    "status": "GEOMETRY2_HOST_CONTRACT_UNVERIFIED",
-    "hostIdentity": {
-      "name": "premierepro",
-      "version": "26.0.1",
-      "locale": "zh_CN"
+  "error": null,
+  "resolvedTransformEvidence": {
+    "frameSizeScaling": {
+      "scaleToFrameSize": {
+        "readStatus": "UNAVAILABLE",
+        "value": null,
+        "evidenceSource": "NONE"
+      }
     },
-    "geometry2Component": null,
-    "signature": null,
-    "parameterMapping": {},
-    "resolutionMethod": "CALIBRATION_INSUFFICIENT"
-  }
+    "targetTransformOwnership": {
+      "policy": "TARGET_TRANSFORM_OWNERSHIP_V1",
+      "targetMatchName": "AE.ADBE Geometry2",
+      "geometry2Count": 0,
+      "overwriteAllowed": false,
+      "foreignTransformEffects": [],
+      "status": "TARGET_TRANSFORM_ABSENT",
+      "ownership": "NONE",
+      "animationState": "NOT_APPLICABLE",
+      "component": null,
+      "reasonCodes": []
+    },
+    "foreignTransformEffects": [],
+    "additionalTransformEffects": [],
+    "rawInventoryPresent": true,
+    "probeStatus": "PER_CLIP_TRANSFORM_PROBE_READY",
+    "mappingStatus": "VERIFIED",
+    "parameters": {
+      "POSITION": {
+        "semantic": "POSITION",
+        "paramIndex": 0,
+        "displayNameDiagnostic": "位置",
+        "rawStartValue": {
+          "value": [
+            0.5,
+            0.5
+          ]
+        },
+        "valueReadStatus": "READ_OK",
+        "timeVarying": false,
+        "timeVaryingReadStatus": "READ_OK",
+        "keyframes": [],
+        "keyframeReadStatus": "READ_OK"
+      },
+      "SCALE": {
+        "semantic": "SCALE",
+        "paramIndex": 1,
+        "displayNameDiagnostic": "缩放",
+        "rawStartValue": {
+          "value": 100
+        },
+        "valueReadStatus": "READ_OK",
+        "timeVarying": false,
+        "timeVaryingReadStatus": "READ_OK",
+        "keyframes": [],
+        "keyframeReadStatus": "READ_OK"
+      },
+      "ANCHOR": {
+        "semantic": "ANCHOR",
+        "paramIndex": 5,
+        "displayNameDiagnostic": "锚点",
+        "rawStartValue": {
+          "value": [
+            0.5,
+            0.5
+          ]
+        },
+        "valueReadStatus": "READ_OK",
+        "timeVarying": false,
+        "timeVaryingReadStatus": "READ_OK",
+        "keyframes": [],
+        "keyframeReadStatus": "READ_OK"
+      },
+      "ROTATION": {
+        "semantic": "ROTATION",
+        "paramIndex": 4,
+        "displayNameDiagnostic": "旋转",
+        "rawStartValue": {
+          "value": 0
+        },
+        "valueReadStatus": "READ_OK",
+        "timeVarying": false,
+        "timeVaryingReadStatus": "READ_OK",
+        "keyframes": [],
+        "keyframeReadStatus": "READ_OK"
+      }
+    },
+    "canonicalDefaults": {
+      "POSITION": [
+        0.5,
+        0.5
+      ],
+      "SCALE": 100.0,
+      "ANCHOR": [
+        0.5,
+        0.5
+      ],
+      "ROTATION": 0.0
+    },
+    "intrinsicMotion": {
+      "status": "PENDING_COMPATIBILITY_CLASSIFICATION",
+      "reasonCodes": []
+    },
+    "reasonCodes": []
+  },
+  "transformCompatibility": {
+    "status": "TRANSFORM_STATE_UNKNOWN",
+    "primaryReason": "TRANSFORM_STATE_UNKNOWN",
+    "reasonCodes": [
+      "TRANSFORM_STATE_UNKNOWN",
+      "FRAME_SIZE_SCALING_VERIFICATION_INCOMPLETE"
+    ]
+  },
+  "mustNotDrivePremiereWrite": true
 }
