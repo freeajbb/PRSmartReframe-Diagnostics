@@ -1,0 +1,88 @@
+{
+  "phase": "5A-1",
+  "resultSchema": 1,
+  "candidateVersion": "0.4.75-candidate-queue-v1",
+  "policy": "UNIFIED_ELIGIBILITY_GATE_V1",
+  "outputContract": "CANDIDATE_QUEUE_EVIDENCE_V1",
+  "createdAt": "2026-09-05T12:55:33+08:00",
+  "ordinal": 1,
+  "clipInstanceId": "356daf090349fa3b01400d97",
+  "finalStatus": "FAILED",
+  "primaryReason": "CHAIN_INTEGRITY_FAILED",
+  "reasonCodes": [
+    "CHAIN_INTEGRITY_FAILED",
+    "UPSTREAM_HASH_MISMATCH",
+    "SNAPSHOT_ORIGIN_UNRESOLVED"
+  ],
+  "identity": {
+    "clipInstanceId": "356daf090349fa3b01400d97",
+    "fingerprint": {
+      "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+      "trackIndex": 0,
+      "startTicks": "613753459200000",
+      "endTicks": "614244556800000",
+      "sourceInTicks": "125534707200000",
+      "sourceOutTicks": "126025804800000",
+      "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
+    }
+  },
+  "chain": {
+    "freshness": "BROKEN",
+    "integrityValid": false,
+    "conservationVerified": true,
+    "snapshotProvenanceVerified": false,
+    "reasonCodes": [
+      "UPSTREAM_HASH_MISMATCH",
+      "SNAPSHOT_ORIGIN_UNRESOLVED"
+    ]
+  },
+  "upstreamEvidence": {
+    "phase4c7": {
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "humanReviewNeeded": false,
+      "representedPersonAssessment": "ASSESSED",
+      "lostFrozenRefCount": 0,
+      "unassignedFrozenRefCount": 0
+    },
+    "phase4d1": {
+      "status": "COMPOSITION_PREVIEW_READY",
+      "decision": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+      "compositionComputed": true,
+      "premierePositionComputed": false
+    },
+    "phase4d2": {
+      "status": "PREMIERE_ADAPTER_PREVIEW_READY",
+      "canonicalMathStatus": "VALID",
+      "roundTripStatus": "ROUND_TRIP_VERIFIED",
+      "hostVerificationStatus": "VERIFIED",
+      "transformCompatibility": "CANONICAL_COMPATIBLE",
+      "targetCanvasBindingStatus": "HOST_TARGET_CANVAS_BOUND_EXACT",
+      "geometry2ParameterSemanticsStatus": "GEOMETRY2_PARAMETER_SEMANTICS_VERIFIED",
+      "hostTargetMathStatus": "HOST_TARGET_MATH_VERIFIED",
+      "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_READY"
+    }
+  },
+  "safety": {
+    "clipDisabled": false,
+    "manualPositionDetected": false,
+    "positionKeyframesPresent": false,
+    "existingGeometry2Present": false,
+    "geometry2OwnershipAmbiguous": false,
+    "fingerprintUnique": true,
+    "bindingAmbiguous": false,
+    "hostGeometryMismatch": false,
+    "specialAnimation": false,
+    "humanReviewRequired": true,
+    "safetySnapshotOnly": true
+  },
+  "downstream": {
+    "reviewQueueEligible": true,
+    "reanalysisRequired": false,
+    "requiresFreshPreflight": false,
+    "executionReady": false,
+    "writeAllowed": false,
+    "recommendedNextAction": "INVESTIGATE_FAILURE"
+  },
+  "mustNotDrivePremiereWrite": true,
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.75\\sessions\\phase5a1\\20260905_125533\\results\\00001_356daf090349fa3b01400d97\\candidate_queue_result.json"
+}
