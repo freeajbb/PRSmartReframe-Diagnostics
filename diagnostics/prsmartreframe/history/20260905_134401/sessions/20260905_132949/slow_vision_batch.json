@@ -1,0 +1,240 @@
+{
+  "phase": "4C-5",
+  "batchSchema": 1,
+  "batchVersion": "0.4.25-evidence-v2-contract-hardening-v1",
+  "capturedAt": "2026-09-05T13:30:15",
+  "provider": {
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.4.73-openai-compatible-schema-repair-hardening-v1",
+    "model": "gemini-3.1-flash-lite",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "requestSchema": "SLOW_VISION_REQUEST_V2",
+    "promptVersion": "SLOW_VISION_PROMPT_V4",
+    "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+  },
+  "summary": {
+    "fastVisionReady": 2,
+    "fastVisionConfidentClips": 2,
+    "needsSlowVisionClips": 0,
+    "slowVisionEligible": 2,
+    "slowVisionSkippedFastConfident": 0,
+    "acceptanceSemanticEvidenceEligible": 2,
+    "acceptanceSemanticEvidenceReady": 2,
+    "slowVisionReady": 2,
+    "slowVisionFailed": 0,
+    "slowVisionProviderCalls": 2,
+    "slowVisionProviderSucceeded": 2,
+    "slowVisionProviderFailed": 0,
+    "slowVisionCacheHits": 0,
+    "slowVisionResolved": 2,
+    "slowVisionPartial": 0,
+    "slowVisionUnresolved": 0,
+    "needsHumanReviewCount": 1,
+    "autoAcceptableCount": 1,
+    "representedPersonAssessedCount": 1,
+    "representedPersonPartialCount": 1,
+    "representedPersonUnresolvedCount": 0,
+    "readOnlyPremiere": true
+  },
+  "contract": {
+    "input": "Phase 4C-4 fast_vision_batch + FAST_VISION_ESCALATION_GATE_V1",
+    "output": "SlowVisionEvidence V2 + HUMAN_REVIEW_GATE_V1",
+    "slowVisionRunsOnlyFor": "NEEDS_SLOW_VISION_OR_ACCEPTANCE_SEMANTIC_EVIDENCE_COMPLETION",
+    "fastVisionConfidentSubmitted": true,
+    "acceptanceSemanticEvidenceCompletion": true,
+    "slowVisionCacheIndependent": true,
+    "frameScopedFrozenIds": true,
+    "semanticSubjectGrouping": true,
+    "humanReviewGate": "HUMAN_REVIEW_GATE_V1",
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "premiereReadOnly": true
+  },
+  "results": [
+    {
+      "ordinal": 1,
+      "status": "SLOW_VISION_READY",
+      "packId": "0685688f57696a3f7ef16641",
+      "clipInstanceId": "356daf090349fa3b01400d97",
+      "visionCacheKey": "79746ff46bdcc5893dfe7745",
+      "slowVisionCacheHit": false,
+      "requestPurpose": "ACCEPTANCE_SEMANTIC_EVIDENCE_COMPLETION",
+      "evidenceStatus": "RESOLVED",
+      "subjectCountEstimate": 2,
+      "subjectCountConfidence": "HIGH",
+      "representedPersonAssessment": "ASSESSED",
+      "semanticSubjectCount": 2,
+      "humanReviewDecision": "AUTO_ACCEPTABLE",
+      "humanReviewReasons": [],
+      "needsHumanReview": false,
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\results\\00001_356daf090349fa3b01400d97\\slow_vision_result.json"
+    },
+    {
+      "ordinal": 2,
+      "status": "SLOW_VISION_READY",
+      "packId": "1c050c7b6e401d1fa2c8e5c2",
+      "clipInstanceId": "94f397e1dcd2d53ecd6dbb7b",
+      "visionCacheKey": "db0c1299dfd70093f060389e",
+      "slowVisionCacheHit": false,
+      "requestPurpose": "ACCEPTANCE_SEMANTIC_EVIDENCE_COMPLETION",
+      "evidenceStatus": "RESOLVED",
+      "subjectCountEstimate": 3,
+      "subjectCountConfidence": "HIGH",
+      "representedPersonAssessment": "PARTIAL",
+      "semanticSubjectCount": 3,
+      "humanReviewDecision": "NEEDS_HUMAN_REVIEW",
+      "humanReviewReasons": [
+        "REPRESENTED_PERSON_PARTIAL"
+      ],
+      "needsHumanReview": true,
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\results\\00002_94f397e1dcd2d53ecd6dbb7b\\slow_vision_result.json"
+    }
+  ],
+  "slowVisionFailures": [],
+  "fastVisionBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c4\\20260905_132949\\fast_vision_batch.json",
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_batch.json",
+  "slowVisionVisualQa": {
+    "schemaVersion": 1,
+    "status": "C4C5R01_VISUAL_QA_READY",
+    "createdAt": "2026-09-05T13:30:15",
+    "selectionPolicy": "HUMAN_REVIEW_UNRESOLVED_REPRESENTED_RESOLUTION_PRIORITY_V2",
+    "selectedClipCount": 2,
+    "selectedOrdinals": [
+      2,
+      1
+    ],
+    "overlayCount": 6,
+    "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+    "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa",
+    "warnings": [],
+    "rows": [
+      {
+        "ordinal": 2,
+        "status": "RESOLVED",
+        "subjectCount": {
+          "estimate": 3,
+          "confidence": "HIGH"
+        },
+        "representedPersonAssessment": "PARTIAL",
+        "needsHumanReview": true,
+        "humanReviewGate": {
+          "policy": "HUMAN_REVIEW_GATE_V1",
+          "decision": "NEEDS_HUMAN_REVIEW",
+          "reasons": [
+            "REPRESENTED_PERSON_PARTIAL"
+          ],
+          "authority": "DETERMINISTIC_EVIDENCE_GATE",
+          "mustNotDriveComposition": true
+        },
+        "semanticSubjects": [
+          {
+            "subjectId": "s1",
+            "members": [
+              "EARLY:p1",
+              "MIDDLE:p1",
+              "LATE:p1"
+            ],
+            "physicality": "REAL_PHYSICAL_PERSON",
+            "visualImportance": "PRIMARY",
+            "confidence": "HIGH"
+          },
+          {
+            "subjectId": "s2",
+            "members": [
+              "EARLY:p2",
+              "MIDDLE:p2",
+              "LATE:p2"
+            ],
+            "physicality": "REAL_PHYSICAL_PERSON",
+            "visualImportance": "SECONDARY",
+            "confidence": "HIGH"
+          },
+          {
+            "subjectId": "s3",
+            "members": [
+              "EARLY:p3"
+            ],
+            "physicality": "REAL_PHYSICAL_PERSON",
+            "visualImportance": "BACKGROUND",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00002_early_slow_vision_panel.jpg"
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00002_middle_slow_vision_panel.jpg"
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00002_late_slow_vision_panel.jpg"
+          }
+        ]
+      },
+      {
+        "ordinal": 1,
+        "status": "RESOLVED",
+        "subjectCount": {
+          "estimate": 2,
+          "confidence": "HIGH"
+        },
+        "representedPersonAssessment": "ASSESSED",
+        "needsHumanReview": false,
+        "humanReviewGate": {
+          "policy": "HUMAN_REVIEW_GATE_V1",
+          "decision": "AUTO_ACCEPTABLE",
+          "reasons": [],
+          "authority": "DETERMINISTIC_EVIDENCE_GATE",
+          "mustNotDriveComposition": true
+        },
+        "semanticSubjects": [
+          {
+            "subjectId": "s1",
+            "members": [
+              "EARLY:p1",
+              "MIDDLE:p1",
+              "LATE:p1"
+            ],
+            "physicality": "REAL_PHYSICAL_PERSON",
+            "visualImportance": "PRIMARY",
+            "confidence": "HIGH"
+          },
+          {
+            "subjectId": "s2",
+            "members": [
+              "LATE:p2"
+            ],
+            "physicality": "REAL_PHYSICAL_PERSON",
+            "visualImportance": "SECONDARY",
+            "confidence": "HIGH"
+          }
+        ],
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00001_early_slow_vision_panel.jpg"
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00001_middle_slow_vision_panel.jpg"
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\slow_vision_visual_qa\\00001_late_slow_vision_panel.jpg"
+          }
+        ]
+      }
+    ],
+    "representedPersonQa": {
+      "policy": "REPRESENTED_PERSON_QA_PRIORITY_V1",
+      "selectedOrdinals": [
+        2
+      ]
+    },
+    "mustNotDriveComposition": true,
+    "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4c5\\20260905_132949\\C4C5R01_SLOW_VISION_EVIDENCE_QA_MANIFEST.json"
+  }
+}
