@@ -1,0 +1,107 @@
+{
+  "contract": "PHASE4D2_ACCEPTANCE_CALIBRATION_PROBE_POOL_V1",
+  "acceptanceOnly": true,
+  "readOnly": true,
+  "candidateCount": 1,
+  "inventoryCount": 605,
+  "uniqueProbeRpcCount": 4,
+  "cacheHitCount": 4,
+  "hostReadRetryCount": 0,
+  "complete": true,
+  "reasonCodes": [],
+  "motion": {
+    "required": 4,
+    "selected": 4,
+    "candidateContributed": 1,
+    "supplementalContributed": 3,
+    "selectedClipInstanceIds": [
+      "356daf090349fa3b01400d97",
+      "b6f35493406762ef22366eb1",
+      "e6213e6453ec1775a715c181",
+      "f61e6f0e0a3af48ead8f39f8"
+    ]
+  },
+  "geometry2": {
+    "required": 4,
+    "liveRequired": 3,
+    "liveSelected": 3,
+    "cleanRequired": 1,
+    "cleanSelected": 1,
+    "selectedRoles": [
+      {
+        "role": "GEOMETRY2_LIVE_1",
+        "clipInstanceId": "b6f35493406762ef22366eb1"
+      },
+      {
+        "role": "GEOMETRY2_LIVE_2",
+        "clipInstanceId": "e6213e6453ec1775a715c181"
+      },
+      {
+        "role": "GEOMETRY2_LIVE_3",
+        "clipInstanceId": "f61e6f0e0a3af48ead8f39f8"
+      },
+      {
+        "role": "GEOMETRY2_CLEAN",
+        "clipInstanceId": "356daf090349fa3b01400d97"
+      }
+    ]
+  },
+  "selectedProbes": [
+    {
+      "clipInstanceId": "356daf090349fa3b01400d97",
+      "fingerprintHash": "356daf090349fa3b01400d97",
+      "adapterCandidate": true,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION",
+        "GEOMETRY2_CLEAN"
+      ]
+    },
+    {
+      "clipInstanceId": "b6f35493406762ef22366eb1",
+      "fingerprintHash": "b6f35493406762ef22366eb1",
+      "adapterCandidate": false,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION",
+        "GEOMETRY2_LIVE_1"
+      ]
+    },
+    {
+      "clipInstanceId": "e6213e6453ec1775a715c181",
+      "fingerprintHash": "e6213e6453ec1775a715c181",
+      "adapterCandidate": false,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION",
+        "GEOMETRY2_LIVE_2"
+      ]
+    },
+    {
+      "clipInstanceId": "f61e6f0e0a3af48ead8f39f8",
+      "fingerprintHash": "f61e6f0e0a3af48ead8f39f8",
+      "adapterCandidate": false,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION",
+        "GEOMETRY2_LIVE_3"
+      ]
+    }
+  ],
+  "rejectedProbes": [],
+  "premiereWriteCalls": 0,
+  "mutationAuthorityGranted": false,
+  "reservationAuthorityGranted": false
+}
