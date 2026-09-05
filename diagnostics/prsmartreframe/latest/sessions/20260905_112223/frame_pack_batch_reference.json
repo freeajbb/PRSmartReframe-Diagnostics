@@ -1,0 +1,72 @@
+{
+  "phase": "4A",
+  "batchSchema": 1,
+  "batchVersion": "0.4.0-frame-pack-contract-v1",
+  "framePackContractVersion": "1.0",
+  "capturedAt": "2026-09-05T11:22:25",
+  "readOnlyPremiere": true,
+  "aiInferenceExecuted": false,
+  "summary": {
+    "selectedCount": 2,
+    "eligibleCount": 2,
+    "packsBuilt": 2,
+    "packBuildFailed": 0,
+    "upstreamFailed": 0,
+    "skippedCount": 0,
+    "uniqueFrameSets": 2,
+    "reusedFrameSetsAcrossTimelineInstances": 0,
+    "aiInferenceExecuted": false,
+    "readOnlyPremiere": true,
+    "underlyingDecode": {
+      "batchDecodedFrames": 12,
+      "ffmpegProcessCount": 1,
+      "sourceFrameCacheHitsUnique": 0,
+      "elapsedSeconds": 1.4233063000001493
+    }
+  },
+  "contract": {
+    "purpose": "Stable local input boundary between Premiere/decode pipeline and the future AI Worker.",
+    "frameRoles": [
+      "EARLY",
+      "MIDDLE",
+      "LATE"
+    ],
+    "visionCacheSemantics": "Selected source-frame identity only; Timeline position is excluded.",
+    "compositionCacheSemantics": "Frame set + Transform/sequence composition context.",
+    "geometryAuthority": "Geometry Safety Engine remains authoritative for Final Position.",
+    "missingTransformReadOnlyEligibility": "ENABLED_FOR_ANALYSIS_ONLY"
+  },
+  "safetyContract": {
+    "premiereReadOnly": true,
+    "hostMutationAllowed": false,
+    "missingTransformDoesNotGrantWriteEligibility": true
+  },
+  "packs": [
+    {
+      "ordinal": 1,
+      "packId": "0685688f57696a3f7ef16641",
+      "clipInstanceId": "356daf090349fa3b01400d97",
+      "frameSetId": "79746ff46bdcc5893dfe7745",
+      "logicalInputDigest": "7076e229ad3742eedcc50a24cc3b704fd9c620eddd005cba525054394d52f668",
+      "warnings": [],
+      "packPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.73\\sessions\\phase4a\\phase4c4_20260905_112223\\packs\\00001_0685688f57696a3f7ef16641\\frame_pack.json"
+    },
+    {
+      "ordinal": 2,
+      "packId": "1c050c7b6e401d1fa2c8e5c2",
+      "clipInstanceId": "94f397e1dcd2d53ecd6dbb7b",
+      "frameSetId": "db0c1299dfd70093f060389e",
+      "logicalInputDigest": "55a0b4bf962151437e961ab193b2431a418d73fcc04f74e178da43d52ec90579",
+      "warnings": [],
+      "packPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.73\\sessions\\phase4a\\phase4c4_20260905_112223\\packs\\00002_1c050c7b6e401d1fa2c8e5c2\\frame_pack.json"
+    }
+  ],
+  "packFailures": [],
+  "upstreamFailures": [],
+  "skipped": [],
+  "decodeReference": {
+    "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.73\\sessions\\phase3e\\phase4a_phase4c4_20260905_112223\\decode_hardening.json",
+    "localCopy": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.73\\sessions\\phase4a\\phase4c4_20260905_112223\\decode_hardening_reference.json"
+  },
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase4D2_0.4.73\\sessions\\phase4a\\phase4c4_20260905_112223\\frame_pack_batch.json"
+}
