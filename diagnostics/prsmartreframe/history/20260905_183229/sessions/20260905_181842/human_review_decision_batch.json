@@ -1,0 +1,73 @@
+{
+  "phase": "5A-2",
+  "decisionBatchSchema": 1,
+  "batchVersion": "0.4.77-human-review-state-v1",
+  "status": "PHASE5A2_REVIEW_STATE_CURRENT",
+  "capturedAt": "2026-09-05T18:31:39+08:00",
+  "source": {
+    "humanReviewQueueBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A2_0.4.78\\sessions\\phase5a2\\20260905_181842\\human_review_queue_batch.json",
+    "humanReviewQueueBatchSha256": "a9b99a81454910510d7dd64929727810180377e44fc8ed38f9589816622f9d2a"
+  },
+  "summary": {
+    "queueItemCount": 2,
+    "pendingReview": 0,
+    "decisionRecorded": 2,
+    "stale": 0,
+    "superseded": 0,
+    "invalid": 0,
+    "approvedForNextStage": 1,
+    "rejected": 0,
+    "needsReanalysis": 1,
+    "deferred": 0,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "premiereReadOnly": true
+  },
+  "results": [
+    {
+      "ordinal": 1,
+      "queueItemId": "hrq_5787160a3f18657dc09a939c",
+      "clipInstanceId": "356daf090349fa3b01400d97",
+      "queueItemStatus": "DECISION_RECORDED",
+      "latestValidDecision": "APPROVE_FOR_NEXT_STAGE",
+      "latestValidDecisionId": "hrd_95c4cfd4bf362b4308675e88",
+      "latestValidRevision": 1,
+      "historicalLatestDecision": "APPROVE_FOR_NEXT_STAGE",
+      "historicalLatestDecisionId": "hrd_95c4cfd4bf362b4308675e88",
+      "historicalLatestRevision": 1,
+      "isCurrentEffectiveDecision": true,
+      "requiresRereview": false,
+      "nextStageEligible": true,
+      "queueItemPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A2_0.4.78\\sessions\\phase5a2\\20260905_181842\\results\\00001_356daf090349fa3b01400d97\\human_review_queue_item.json",
+      "stateReasonCodes": []
+    },
+    {
+      "ordinal": 2,
+      "queueItemId": "hrq_095b87cb41f1de799340080e",
+      "clipInstanceId": "94f397e1dcd2d53ecd6dbb7b",
+      "queueItemStatus": "DECISION_RECORDED",
+      "latestValidDecision": "NEEDS_REANALYSIS",
+      "latestValidDecisionId": "hrd_e7aa30450564dd46c287a609",
+      "latestValidRevision": 1,
+      "historicalLatestDecision": "NEEDS_REANALYSIS",
+      "historicalLatestDecisionId": "hrd_e7aa30450564dd46c287a609",
+      "historicalLatestRevision": 1,
+      "isCurrentEffectiveDecision": true,
+      "requiresRereview": false,
+      "nextStageEligible": false,
+      "queueItemPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A2_0.4.78\\sessions\\phase5a2\\20260905_181842\\results\\00002_94f397e1dcd2d53ecd6dbb7b\\human_review_queue_item.json",
+      "stateReasonCodes": []
+    }
+  ],
+  "contract": {
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "executionReady": false,
+    "writeAllowed": false,
+    "applyAllowed": false,
+    "batchReviewAllowed": false,
+    "singleClipReviewOnly": true
+  },
+  "mustNotDrivePremiereWrite": true
+}
