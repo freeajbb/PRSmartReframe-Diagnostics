@@ -1,10 +1,8 @@
 {
-  "confirm": true,
-  "contract": "PHASE5B3_SINGLE_CLIP_CANARY_WRITE_REQUEST_V1",
-  "requestMode": "PHASE5B3_SINGLE_CLIP_CANARY_V1",
-  "buildIdentity": "0.4.92-phase5b4b-transaction-rollback-negative-safety-matrix-v1",
-  "sourceReservationSha256": "057b34b2fb26b26a6593613280746254d757310eca40b5aa97484d1d713fe982",
-  "sourceReservationStatus": "PHASE5B2_RESERVED_FOR_FUTURE_CANARY",
+  "phase": "5B-3",
+  "schemaVersion": 1,
+  "buildId": "0.4.92-phase5b4b-transaction-rollback-negative-safety-matrix-v1",
+  "status": "PHASE5B3_CANARY_WRITE_VERIFIED",
   "transactionId": "63b8463071a10ed54673b18aac704a2f3399e9c813b6d2258cb0bf7dfe63eec0",
   "clipInstanceId": "e3b17e741b72965a8b9e9a05",
   "clipFingerprint": {
@@ -16,8 +14,11 @@
     "startTicks": "626987692800000",
     "trackIndex": 0
   },
-  "expectedBeforeStateDigest": "747da785d6ce4eb2a59640255b9d6cd73d0a07e91868cfab7a1028ab0cab3964",
-  "expectedBeforeComponentSignatures": [
+  "sourceReservationPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B4B_0.4.92\\sessions\\phase5b2\\20260907_003313\\results\\00001_e3b17e741b72965a8b9e9a05\\transaction_reservation.json",
+  "sourceReservationSha256": "057b34b2fb26b26a6593613280746254d757310eca40b5aa97484d1d713fe982",
+  "preWriteHostSnapshotSha256": "057182d31b507a277e2774fd1f717e6536d0e2fd5f15d99c109da9880e711a8a",
+  "beforeStateDigest": "747da785d6ce4eb2a59640255b9d6cd73d0a07e91868cfab7a1028ab0cab3964",
+  "beforeComponentSignatures": [
     {
       "componentIndex": 0,
       "matchName": "AE.ADBE Opacity",
@@ -194,7 +195,11 @@
     }
   ],
   "mutationIntent": "CREATE_TRANSFORM",
-  "expectedGeometry2ContractId": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_V1",
+  "targetScale": 177.90277777777777,
+  "targetPosition": {
+    "x": 1350.1113416883682,
+    "y": 540.0
+  },
   "expectedStaticParameters": {
     "anchor": {
       "x": 0.5,
@@ -214,5 +219,23 @@
     "scalePrimaryPercent": 177.77777777777777,
     "skew": 0.0,
     "rotation": 0.0
-  }
+  },
+  "premiereWriteCalls": 2,
+  "providerCalls": 0,
+  "createdComponentIdentity": {
+    "transactionId": "63b8463071a10ed54673b18aac704a2f3399e9c813b6d2258cb0bf7dfe63eec0",
+    "componentIndex": 2,
+    "matchName": "AE.ADBE Geometry2",
+    "ownership": "CREATED_BY_TRANSACTION_VERIFIED_V1"
+  },
+  "componentIndex": 2,
+  "ownership": "CREATED_BY_TRANSACTION_VERIFIED_V1",
+  "postWriteHostSnapshotSha256": "ffe7cb82350123d19b54c197990980c407f2b4cce8d96866156f18585c3ab30e",
+  "postWriteStateDigest": "95e85be11a8eb9aafb1d9a2c0888d3b4c5026af825a1812d8eb013ff84804e60",
+  "writeVerificationStatus": "PHASE5B3_CANARY_WRITE_VERIFIED",
+  "reservationAttempted": true,
+  "reservationConsumed": true,
+  "reservationRetired": true,
+  "rollbackAvailable": true,
+  "rollbackAuthorityStatus": "PHASE5B3_RECEIPT_ROLLBACK_AUTHORITY_READY"
 }
