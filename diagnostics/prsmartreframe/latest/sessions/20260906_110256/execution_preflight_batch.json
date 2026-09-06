@@ -1,6 +1,6 @@
 {
-  "batchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.81\\sessions\\phase5b1\\20260906_102846\\execution_preflight_batch.json",
-  "capturedAt": "20260906_102846",
+  "batchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.82\\sessions\\phase5b1\\20260906_110256\\execution_preflight_batch.json",
+  "capturedAt": "20260906_110256",
   "contract": {
     "applyAllowed": false,
     "batchMutationAllowed": false,
@@ -28,24 +28,24 @@
       "executionPlanPath": null,
       "executionPlanSha256": null,
       "executionReady": false,
-      "hostSnapshotSha256": "eea3655bcd3e9804494ccbc1775d65f227d8bbb04563e26ce9a775ab5f77db66",
+      "hostSnapshotSha256": "2eee07781c96ce622544a6cc48ba79486dfaacf937418739b92e2f6d6472c6a4",
       "mutationIntent": null,
       "ordinal": 1,
       "phase": "5B-1",
       "premiereWriteCalls": 0,
-      "primaryReason": "CANDIDATE_EVIDENCE_STALE",
+      "primaryReason": "EVIDENCE_SHA_MISMATCH",
       "projectIdentity": null,
       "providerCalls": 0,
       "reasonCodes": [
-        "CANDIDATE_EVIDENCE_STALE"
+        "EVIDENCE_SHA_MISMATCH"
       ],
       "reviewDecisionSha256": "66313b5cbf7376f33cbe07131204d2405e93dcc0a24a2a29d11152395f81f10c",
       "schemaVersion": 1,
       "sequenceGeometry": null,
       "sequenceIdentity": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
-      "sessionId": "phase5b1_20260906_102846",
+      "sessionId": "phase5b1_20260906_110256",
       "sourceGeometry": null,
-      "status": "EXECUTION_PREFLIGHT_STALE",
+      "status": "EXECUTION_PREFLIGHT_INVALID",
       "targetPosition": null,
       "targetScale": null,
       "writeAllowed": false
@@ -76,7 +76,7 @@
       "schemaVersion": 1,
       "sequenceGeometry": null,
       "sequenceIdentity": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
-      "sessionId": "phase5b1_20260906_102846",
+      "sessionId": "phase5b1_20260906_110256",
       "sourceGeometry": null,
       "status": "EXECUTION_PREFLIGHT_BLOCKED",
       "targetPosition": null,
@@ -85,11 +85,15 @@
     }
   ],
   "schemaVersion": 1,
-  "sessionId": "phase5b1_20260906_102846",
+  "sessionId": "phase5b1_20260906_110256",
   "source": {
     "candidateQueueBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase5a1\\20260905_134317\\candidate_queue_batch.json",
     "candidateQueueBatchSha256": "427af296b73ae2105576cdac919b1a6f3b325048931a120964738e9133380616",
-    "humanReviewDecisionRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.80\\sessions\\phase5a2\\20260906_010438"
+    "humanReviewDecisionRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.80\\sessions\\phase5a2\\20260906_010438",
+    "legacyGeometryAuthorityEvidencePaths": [
+      "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4d1\\20260905_133524\\composition_preview_batch.json",
+      "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5A1_0.4.76\\sessions\\phase4d2\\20260905_133928\\premiere_adapter_preview_batch.json"
+    ]
   },
   "status": "EXECUTION_PREFLIGHT_BATCH_COMPLETE",
   "summary": {
@@ -97,12 +101,12 @@
     "executionReady": 0,
     "failed": 0,
     "inputCount": 2,
-    "invalid": 0,
+    "invalid": 1,
     "premiereReadOnly": true,
     "premiereWriteCalls": 0,
     "providerCalls": 0,
     "ready": 0,
     "resultCount": 2,
-    "stale": 1
+    "stale": 0
   }
 }
