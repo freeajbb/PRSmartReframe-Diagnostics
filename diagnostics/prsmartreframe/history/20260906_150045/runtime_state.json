@@ -1,0 +1,417 @@
+{
+  "phase": "Phase 5B-1 Fresh Execution Preflight / Execution Eligibility Preview",
+  "version": "0.4.86",
+  "hostRenderAuthority": {
+    "contract": "PHASE4D2_HOST_RENDER_AUTHORITY_FREEZE_V1",
+    "status": "HOST_RENDER_AUTHORITY_FROZEN",
+    "evidence": {
+      "historyId": "20260903_214605",
+      "sessionId": "20260903_214229",
+      "groundTruthGitBlobSha": "be9767ea52f87b08a9e286f701754e1a65765c5e",
+      "hostTargetMathGitBlobSha": "119d6c79c7beae99bc85f6c1446b5e508834cb02"
+    },
+    "scope": {
+      "premiereVersion": "26.0.1",
+      "geometry2ContractId": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_V1",
+      "sourceRaster": {
+        "width": 1728.0,
+        "height": 1080.0,
+        "pixelAspect": 1.0
+      },
+      "sequenceRaster": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0
+      },
+      "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT"
+    },
+    "proposedHostParameters": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0.1748899922939976,
+        0.5
+      ],
+      "positionClamped": false,
+      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+      "positionNormalizationBasis": {
+        "coordinateSpace": "SOURCE_RASTER",
+        "width": 1728.0,
+        "height": 1080.0
+      },
+      "scalePrimaryPercent": 177.77777777777777,
+      "uniformScale": true
+    },
+    "mathematicalTargetTransform": {
+      "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+      "positionPixels": {
+        "x": 302.2099066840278,
+        "y": 540.0
+      }
+    },
+    "groundTruthSummary": {
+      "frameCount": 3,
+      "frameVerifiedCount": 3,
+      "frameReviewCount": 0,
+      "frameFailedCount": 0,
+      "readbackStatus": "PREMIERE_HOST_RENDER_READBACK_VERIFIED",
+      "comparisons": {
+        "FRAME_A": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "metrics": {
+            "translationXPixels": 0.02134891940230994,
+            "translationYPixels": 0.028492974737954313,
+            "uniformScaleErrorPercent": 0.002071294075089991,
+            "rotationErrorDegrees": 0.00023703374844411974,
+            "unexpectedBlackBorderPixels": 0.0,
+            "contentCoverageDeltaPercent": 0.028742283950617287
+          }
+        },
+        "FRAME_B": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "metrics": {
+            "translationXPixels": 0.03574365079827658,
+            "translationYPixels": 0.015610430923958142,
+            "uniformScaleErrorPercent": 0.001229626851428911,
+            "rotationErrorDegrees": 0.0004996586949208569,
+            "unexpectedBlackBorderPixels": 0.0,
+            "contentCoverageDeltaPercent": 0.10151427469135799
+          }
+        },
+        "FRAME_C": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "metrics": {
+            "translationXPixels": 0.01851394935356939,
+            "translationYPixels": 0.059812115481194084,
+            "uniformScaleErrorPercent": 0.003715251744262904,
+            "rotationErrorDegrees": 0.00014385357949666213,
+            "unexpectedBlackBorderPixels": 0.0,
+            "contentCoverageDeltaPercent": 0.04918981481481488
+          }
+        }
+      }
+    },
+    "reasonCodes": [],
+    "futureHostWriteDesignAllowed": true,
+    "hostMutationAllowed": false,
+    "writeExecutionAllowed": false,
+    "applyAllowed": false,
+    "productionUseAllowed": false
+  },
+  "safeWriteDesignEligibility": {},
+  "phase4d3GeneralizedEligibility": {},
+  "phase4d3FoundationSummary": {
+    "contract": "PHASE4D3_SAFE_WRITE_FOUNDATION_SUMMARY_V1",
+    "authorityState": "FROZEN",
+    "safeWriteDesignState": "WAITING ADAPTER RESULT",
+    "hostWriteExecutionState": "OFF",
+    "applyState": "OFF",
+    "displayText": "Host Render Authority: FROZEN · Safe Write Design: WAITING ADAPTER RESULT · Host Write Execution: OFF · Apply: OFF",
+    "reasonCodes": [],
+    "hostWriteExecutionAllowed": false,
+    "hostMutationAllowed": false,
+    "applyAllowed": false,
+    "productionUseAllowed": false
+  },
+  "phase4d3VersionInterlock": {
+    "contract": "PHASE4D3_DESKTOP_UXP_VERSION_INTERLOCK_V1",
+    "desktopIdentity": "0.4.86-phase5b1-fresh-mutation-intent-resolution-hotfix-v1",
+    "uxpIdentity": "0.4.86-phase5b1-fresh-mutation-intent-resolution-hotfix-v1",
+    "desktopReleaseVersion": "0.4.86",
+    "uxpReleaseVersion": "0.4.86",
+    "verified": true,
+    "mutationAllowed": true,
+    "reasonCodes": [],
+    "status": "PHASE4D3_VERSION_INTERLOCK_VERIFIED"
+  },
+  "phase4d3TransactionLedger": {
+    "contract": "PHASE4D3_TRANSACTION_LEDGER_V1",
+    "status": "PHASE4D3_TRANSACTION_LEDGER_READY",
+    "healthy": true,
+    "reasonCodes": [],
+    "entries": []
+  },
+  "phase4d3TransactionLedgerMigration": {
+    "contract": "PHASE4D3_TRANSACTION_LEDGER_MIGRATION_V1",
+    "status": "PHASE4D3_TRANSACTION_LEDGER_MIGRATION_NOT_APPLICABLE",
+    "sourceVersion": "0.4.65",
+    "targetVersion": "0.4.66",
+    "legacyRoot": "",
+    "migratedCount": 0,
+    "reasonCodes": []
+  },
+  "lastPhase4D3WriteSessionDir": "",
+  "lastPhase4D3WriteSummary": {},
+  "lastPhase4D4PreflightSessionDir": "",
+  "lastPhase4D4PreflightSummary": {},
+  "lastPhase4D5BatchExecutionSessionDir": "",
+  "lastPhase4D5BatchExecutionSummary": {},
+  "phase4d5BatchExecutionLedger": {
+    "contract": "PHASE4D5_BATCH_EXECUTION_LEDGER_V1",
+    "status": "PHASE4D5_BATCH_EXECUTION_LEDGER_READY",
+    "healthy": true,
+    "reasonCodes": [],
+    "entries": [],
+    "updatedAt": ""
+  },
+  "phase4d5RecoverySummary": {
+    "total": 0,
+    "noAction": 0,
+    "revalidation": 0,
+    "blocked": 0
+  },
+  "phase4d6LastWrite": {},
+  "phase4d6LastRollback": {},
+  "phase4d6FingerprintBindingSummary": {},
+  "phase4d6MutationSafety": {
+    "fingerprintBindingRequired": true,
+    "selectionAuthority": false,
+    "nClipExecutionAllowed": false,
+    "batchApplyAllowed": false,
+    "productionUseAllowed": false,
+    "versionInterlockVerified": true
+  },
+  "phase5b1SourceBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.85\\sessions\\phase5a1\\20260906_123204\\candidate_queue_batch.json",
+  "phase5b1ReviewDecisionBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.85\\sessions\\phase5a2\\20260906_123233\\human_review_decision_batch.json",
+  "phase5b1LastPreflightSessionDir": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B1_0.4.86\\sessions\\phase5b1\\20260906_150037",
+  "phase5b1LastPreflightSummary": {
+    "inputCount": 3,
+    "resultCount": 3,
+    "ready": 1,
+    "blocked": 2,
+    "stale": 0,
+    "invalid": 0,
+    "failed": 0,
+    "executionReady": 1,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "premiereReadOnly": true
+  },
+  "phase5b1Safety": {
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "writeAllowed": false,
+    "applyAllowed": false
+  },
+  "phase5a2LastReviewSessionDir": "",
+  "phase5a2LastReviewSummary": {},
+  "phase5a2ExternalSourceBatchPath": "",
+  "phase5a2Safety": {
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "executionReady": false,
+    "writeAllowed": false,
+    "applyAllowed": false,
+    "batchReviewAllowed": false
+  },
+  "phase5a1ExternalPhase4D2BatchPath": "",
+  "phase5a1ExternalAuthority": {},
+  "phase5a1LastCandidateQueueSessionDir": "",
+  "phase5a1LastCandidateQueueSummary": {},
+  "phase5a1Safety": {
+    "premiereReadOnly": true,
+    "providerCalls": 0,
+    "premiereWriteCalls": 0,
+    "applyAllowed": false,
+    "batchApplyAllowed": false,
+    "productionUseAllowed": false,
+    "autoReadyRequiresFreshPreflight": true,
+    "writeAllowed": false
+  },
+  "phase4d7ExecutionLedger": {
+    "contract": "PHASE4D7_EXECUTION_LEDGER_V1",
+    "status": "PHASE4D7_EXECUTION_LEDGER_READY",
+    "healthy": true,
+    "reasonCodes": [],
+    "entries": [],
+    "updatedAt": ""
+  },
+  "phase4d7RecoveryPreview": {
+    "contract": "PHASE4D7_BATCH_RECOVERY_V1",
+    "status": "NO_ACTION_REQUIRED",
+    "reasonCodes": [],
+    "resumable": false,
+    "resumeRequiresExplicitUserAction": false,
+    "recommendedRepairs": [],
+    "counts": {
+      "sessions": 0
+    },
+    "hostMutationPerformed": false,
+    "automaticResumePerformed": false,
+    "batchApplyAllowed": false,
+    "productionUseAllowed": false,
+    "unattendedResumeAllowed": false
+  },
+  "phase4d7LastExecutionSummary": {},
+  "phase4d7AcceptancePrep": {
+    "contract": "PHASE4D7_ACCEPTANCE_PREP_V2",
+    "source": {
+      "sourceKind": "UNRESOLVED",
+      "resolvedBatchPath": "",
+      "originBatchPath": "",
+      "sourceSessionId": "",
+      "isFrozenSnapshot": false
+    },
+    "phase4c5": {
+      "batchPath": "",
+      "present": false,
+      "usableCandidates": 0
+    },
+    "phase4c6": {
+      "batchPath": "",
+      "present": false,
+      "chainMatchesLatest": false,
+      "usableCandidates": 0
+    },
+    "phase4c7": {
+      "batchPath": "",
+      "present": false,
+      "chainMatchesLatest": false,
+      "selectedCount": 0,
+      "gateReady": 0,
+      "gateBlocked": 0,
+      "gateFailed": 0,
+      "usableCandidates": 0
+    },
+    "phase4d1": {
+      "batchPath": "",
+      "chainMatchesLatest": false,
+      "selectedCount": 0,
+      "previewReady": 0,
+      "previewSkipped": 0,
+      "previewFailed": 0
+    },
+    "phase4d2": {
+      "batchPath": "",
+      "chainMatchesSource": false,
+      "selectedCount": 0,
+      "adapterReady": 0,
+      "adapterReview": 0
+    },
+    "phase4d4": {
+      "planPath": "",
+      "chainMatchesLatest": false,
+      "planReady": 0,
+      "blocked": 0
+    },
+    "phase4d5": {
+      "manifestPath": "",
+      "chainMatchesLatest": false,
+      "freshReserved": 0,
+      "manifestBuildIdentity": ""
+    },
+    "freshBatch": false,
+    "nextAction": "RUN_PHASE4C5_CURRENT",
+    "reasonCodes": [
+      "PHASE4D1_SOURCE_UNRESOLVED",
+      "PHASE4C5_BATCH_MISSING",
+      "PHASE4C6_BATCH_MISSING",
+      "PHASE4C7_BATCH_MISSING",
+      "PHASE4D2_BATCH_MISSING",
+      "PHASE4D4_PREFLIGHT_MISSING",
+      "PHASE4D5_MANIFEST_MISSING",
+      "FRESH_RESERVATIONS_LT_2"
+    ],
+    "productionUseAllowed": false,
+    "batchApplyAllowed": false,
+    "hostMutationPerformed": false
+  },
+  "acceptanceCurrentOnlyMode": true,
+  "phase4d7MutationSafety": {
+    "fingerprintBindingRequired": true,
+    "selectionAuthority": false,
+    "perClipTransactionIsolation": true,
+    "failContinue": true,
+    "sequentialOnly": true,
+    "parallelHostMutationAllowed": false,
+    "batchApplyAllowed": false,
+    "productionUseAllowed": false,
+    "unattendedResumeAllowed": false,
+    "newPremiereMutationRpcCount": 0,
+    "versionInterlockVerified": true
+  },
+  "slowVisionConfig": {
+    "baseUrl": "",
+    "model": "",
+    "timeoutSeconds": 120,
+    "apiKeySource": "ENV:PRSMART_SLOWVISION_API_KEY",
+    "apiKeyConfigured": true
+  },
+  "premiereConnected": true,
+  "bridgeStatus": "plugin=0.4.86-phase5b1-fresh-mutation-intent-resolution-hotfix-v1 host=26.0.1",
+  "lockedSnapshotPath": "",
+  "snapshotSummary": {},
+  "lastQualitySessionDir": "",
+  "lastQualitySummary": {},
+  "lastSubjectFusionSessionDir": "",
+  "lastSubjectFusionSummary": {},
+  "lastCompositionReadinessSessionDir": "",
+  "lastCompositionReadinessSummary": {},
+  "lastCompositionPreviewSessionDir": "",
+  "lastCompositionPreviewSummary": {},
+  "lastPremiereAdapterSessionDir": "",
+  "lastPremiereAdapterSummary": {},
+  "lastGeometry2SemanticsSessionDir": "",
+  "lastGeometry2SemanticsStatus": "",
+  "lastHostRenderCalibrationSessionDir": "",
+  "lastHostRenderGroundTruthStatus": "",
+  "lastGitPushTelemetry": {
+    "gitPushTransportPolicy": "GIT_PUSH_PROXY_AWARE_TRANSPORT_V3",
+    "gitPushAttempts": 3,
+    "gitPushRetryCount": 2,
+    "gitPushLastErrorClass": "CONNECTION_RESET",
+    "gitPushFinalState": "REMOTE_PUSH_SUCCEEDED",
+    "gitHttpVersion": "HTTP/1.1",
+    "gitFallbackActivated": true,
+    "gitFailureStage": "NONE",
+    "gitAttemptDurationMs": 4969,
+    "gitPushAttemptDurationsMs": [
+      19938,
+      39890,
+      4969
+    ],
+    "gitReachabilityProbe": "SKIPPED",
+    "gitReachabilityProbeErrorClass": "NONE",
+    "gitDirectProbe": "FAILED",
+    "gitDirectProbeErrorClass": "CONNECTION_TIMEOUT",
+    "gitProxyDetectionAttempted": true,
+    "gitProxyDetected": true,
+    "gitProxySource": "WINDOWS_SYSTEM_PROXY",
+    "gitProxyFallbackActivated": true,
+    "gitProxyType": "HTTP",
+    "gitProxyAddressRedacted": "http://127.0.0.1:****",
+    "gitProxyProbe": "SUCCEEDED",
+    "gitProxyProbeErrorClass": "NONE",
+    "gitDirectProbeDetails": "fatal: unable to access 'https://github.com/freeajbb/PRSmartReframe-Diagnostics.git/': Failed to connect to github.com port 443 after 21091 ms: Could not connect to server",
+    "recordedAt": "2026-09-06T06:56:09.619991+00:00",
+    "branch": "main"
+  },
+  "safety": {
+    "premiereReadOnly": false,
+    "phase4d2PremiereReadOnly": true,
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "batchApplyAllowed": false,
+    "productionUseAllowed": false,
+    "disposableSingleClipMutationTestEnabled": true,
+    "disposableSingleClipHostWriteAllowed": false,
+    "hostWriteExecutionAllowed": false,
+    "hostMutationAllowed": false,
+    "faceIdentityEnabled": false,
+    "subjectFusionEnabled": true,
+    "subjectFusionPreviewOnly": true,
+    "compositionReadinessGateEnabled": true,
+    "compositionReadinessPreviewOnly": true,
+    "compositionPreviewEnabled": true,
+    "compositionPreviewOnly": true,
+    "premierePositionComputed": false
+  }
+}

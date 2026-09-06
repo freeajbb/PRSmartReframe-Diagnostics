@@ -2,9 +2,9 @@
 
 - Version: `0.4.86`
 - Phase: `Phase 5B-1 Fresh Execution Preflight / Execution Eligibility Preview`
-- Generated: `20260906_145431`
+- Generated: `20260906_150045`
 - Sanitized: `YES`
-- Redactions: `73`
+- Redactions: `74`
 - Included files: `25`
 
 ## GPT analysis request
