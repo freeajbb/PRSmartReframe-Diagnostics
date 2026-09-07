@@ -1,0 +1,41 @@
+{
+  "phase": "5B-4B",
+  "caseId": "B4B-04",
+  "sourceRollbackResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B4B_0.4.94\\sessions\\phase5b3\\phase5b4b_20260907_093357_b4b04\\rollback_result.json",
+  "sourceRollbackResultSha256": "26d01fe206d21a7d5acaa7d70e1963e904cc94f88003ed7f0154c0023a5c701b",
+  "mutationRpcDispatched": true,
+  "mutationRpcMethod": "phase5b3_rollback_single_clip_transaction_canary",
+  "premiereWriteCalls": 0,
+  "providerCalls": 0,
+  "primaryReason": "ROLLBACK_IDENTITY_DRIFT",
+  "hostError": {
+    "executionStatus": "RESPONSE_ERROR",
+    "code": "ROLLBACK_IDENTITY_DRIFT",
+    "message": "Transaction Geometry2 is no longer uniquely identifiable.",
+    "details": {
+      "expectedComponentIndex": 2,
+      "geometry2ComponentIndexes": [
+        2,
+        3
+      ],
+      "structuralComponents": [
+        {
+          "componentIndex": 0,
+          "matchName": "AE.ADBE Opacity"
+        },
+        {
+          "componentIndex": 1,
+          "matchName": "AE.ADBE Motion"
+        },
+        {
+          "componentIndex": 2,
+          "matchName": "AE.ADBE Geometry2"
+        },
+        {
+          "componentIndex": 3,
+          "matchName": "AE.ADBE Geometry2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "phase": "5B-4B",
+  "schemaVersion": 1,
+  "buildId": "0.4.94-phase5b4b-authority-manifest-createdat-hotfix-v1",
+  "caseId": "B4B-03",
+  "caseName": "Rollback Target-State Drift",
+  "status": "PHASE5B4B_NEGATIVE_STATE_REJECTED",
+  "primaryReason": "ROLLBACK_TARGET_STATE_DRIFT",
+  "reasonCodes": [
+    "ROLLBACK_TARGET_STATE_DRIFT"
+  ],
+  "mutationRpcDispatched": true,
+  "mutationRpcMethod": "phase5b3_rollback_single_clip_transaction_canary",
+  "premiereWriteCalls": 0,
+  "providerCalls": 0,
+  "observationObserved": true,
+  "observationExclusive": true,
+  "observationCode": "PHASE5B4B_SELECTED_ABNORMALITY_OBSERVED",
+  "differences": [
+    "components",
+    "ownedComponent"
+  ],
+  "originalReceiptShaUnchanged": true,
+  "rollbackResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B4B_0.4.94\\sessions\\phase5b3\\phase5b4b_20260907_093357_b4b03\\rollback_result.json",
+  "rollbackResultSha256": "548c04b7d15d29e51067244d7a7ad7cfe47a7da2ed920254d7a405e19fec822c",
+  "restoreStatus": "PENDING",
+  "caseStatus": "PHASE5B4B_NEGATIVE_STATE_REJECTED",
+  "final": "INCOMPLETE",
+  "writeAllowed": false,
+  "applyAllowed": false,
+  "hostMutationAllowed": false,
+  "hostError": {
+    "executionStatus": "RESPONSE_ERROR",
+    "code": "ROLLBACK_TARGET_STATE_DRIFT",
+    "message": "Transaction Geometry2 was modified after write.",
+    "details": null
+  }
+}
