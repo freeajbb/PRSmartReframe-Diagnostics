@@ -1,0 +1,3567 @@
+{
+  "phase": "4C-4",
+  "resultSchema": 1,
+  "batchVersion": "0.4.19-fast-vision-escalation-gate-v1",
+  "fastVisionContractVersion": "1.0",
+  "createdAt": "2026-09-07T20:03:13",
+  "readOnlyPremiere": true,
+  "underlyingEvidenceProducedByRealModels": true,
+  "modelInferenceExecutedThisRun": true,
+  "syntheticProvider": false,
+  "status": "FAST_VISION_READY",
+  "packId": "3e6badd0a2529fbb0825e43c",
+  "clipInstanceId": "5050128fea1005c39dc978f2",
+  "frameSetId": "b9692f3bd8f504c13f5c30f2",
+  "visionCacheKey": "b9692f3bd8f504c13f5c30f2",
+  "compositionCacheKey": "0308c1152d022a35de7909ac",
+  "provider": {
+    "providerId": "REAL_FROZEN_FAST_VISION",
+    "providerVersion": "0.4.18-frozen-stack-subject-count-uncertainty-v1",
+    "modelId": "FROZEN_DFINE_YUNET_MEDIAPIPE_STACK",
+    "synthetic": false,
+    "contractVersion": "1.0",
+    "frozenPersonProvider": {
+      "providerId": "DFINE_HF_COCO",
+      "providerVersion": "1.0-transformers",
+      "modelId": "ustc-community/dfine-medium-coco",
+      "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+      "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+      "synthetic": false,
+      "realModel": true,
+      "confidenceThreshold": 0.3,
+      "deviceRequested": "AUTO",
+      "contractVersion": "1.0"
+    },
+    "frozenFaceProvider": {
+      "providerId": "OPENCV_YUNET",
+      "providerVersion": "1.2-opencv5-rotation-fallback-hybrid-dedup",
+      "modelId": "opencv/opencv_zoo/face_detection_yunet_2026may.onnx",
+      "modelRevision": "opencv_zoo@47534e2",
+      "modelWeightsSha256": "ebafce4e3c118d6554634be5c27ab333b4c047a9a8c3faf1d7cf93101c22f0f0",
+      "synthetic": false,
+      "realModel": true,
+      "confidenceThreshold": 0.65,
+      "nmsThreshold": 0.3,
+      "topK": 5000,
+      "deviceRequested": "AUTO",
+      "rotationFallbackEnabled": true,
+      "rotationFallbackAngles": [
+        90,
+        -90
+      ],
+      "rotationFallbackTrigger": "BASE_FACE_COUNT_ZERO",
+      "crossRotationNmsThreshold": 0.3,
+      "fallbackDedupPolicy": "HYBRID_IOU_IOMIN",
+      "fallbackDedupIouThreshold": 0.3,
+      "fallbackDedupContainmentThreshold": 0.85,
+      "fallbackDedupPolicyVersion": 1,
+      "contractVersion": "1.0"
+    },
+    "frozenPoseProvider": {
+      "providerId": "OPENCV_MEDIAPIPE_POSE",
+      "providerVersion": "1.1-opencv-dnn-dfine-roi-rotation-evidence",
+      "modelId": "opencv/opencv_zoo/pose_estimation_mediapipe_2023mar.onnx",
+      "modelRevision": "opencv_zoo@39a1451",
+      "modelWeightsSha256": "9d89c599319a18fb7d2e28451a883476164543182bafca5f09eb2cf767ed2f3f",
+      "synthetic": false,
+      "realModel": true,
+      "confidenceThreshold": 0.8,
+      "deviceRequested": "AUTO",
+      "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+      "roiEnlargeFactor": 1.25,
+      "keypointVisibilityThreshold": 0.8,
+      "keypointPresenceThreshold": 0.8,
+      "rotationRecoveryEnabled": true,
+      "rotationRecoveryAngles": [
+        90,
+        -90
+      ],
+      "rotationRecoveryTrigger": "BASE_NOT_POSE_USABLE",
+      "rotationRecoveryPolicyVersion": 1,
+      "evidenceQualityPolicy": "TORSO_SPATIAL_GATE_V1",
+      "evidenceQualityPolicyVersion": 1,
+      "evidenceMinReliableTorso": 3,
+      "evidenceMinReliableBody": 4,
+      "evidenceMinTorsoSpanRatio": 0.08,
+      "evidenceMinBodySpanRatio": 0.15,
+      "evidenceMinPosePersonAreaRatio": 0.04,
+      "duplicateRoiIouThreshold": 0.65,
+      "duplicateRoiContainmentThreshold": 0.85,
+      "upstreamPersonProvider": {
+        "providerId": "DFINE_HF_COCO",
+        "providerVersion": "1.0-transformers",
+        "modelId": "ustc-community/dfine-medium-coco",
+        "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+        "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+        "synthetic": false,
+        "realModel": true,
+        "confidenceThreshold": 0.3,
+        "deviceRequested": "AUTO",
+        "contractVersion": "1.0"
+      },
+      "contractVersion": "1.0"
+    },
+    "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+    "associationBasePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+    "associationContainmentThreshold": 0.85,
+    "associationTieBreak": {
+      "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+      "maxHeadDistanceRatio": 0.75,
+      "minHeadDistanceMargin": 0.2,
+      "poseWeakCanResolve": false,
+      "baseMatchedAndUnmatchedAreImmutable": true
+    },
+    "duplicatePersonPolicy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+    "duplicatePersonGrouping": {
+      "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+      "poseHeadSeparationThreshold": 0.08,
+      "doesNotSuppressFrozenPersonCandidates": true
+    },
+    "subjectCountPolicy": {
+      "policy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+      "faceCenterSeparationThreshold": 0.08,
+      "uncertainCollapsePreservesRawUpperBound": true
+    },
+    "multiPersonAmbiguityPolicy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+    "subjectEvidencePolicy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+  },
+  "visionResultCacheHit": false,
+  "providerCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\cache\\phase4c4\\real_fast_vision\\365a1ac68f8919dc3a75\\b9692f3bd8f504c13f5c30f2.json",
+  "framePackPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase4a\\phase4c4_20260907_200249\\packs\\00001_3e6badd0a2529fbb0825e43c\\frame_pack.json",
+  "analysis": {
+    "fastVisionSchema": 1,
+    "fastVisionContractVersion": "1.0",
+    "phase4c4Schema": 1,
+    "provider": {
+      "providerId": "REAL_FROZEN_FAST_VISION",
+      "providerVersion": "0.4.18-frozen-stack-subject-count-uncertainty-v1",
+      "modelId": "FROZEN_DFINE_YUNET_MEDIAPIPE_STACK",
+      "synthetic": false,
+      "contractVersion": "1.0",
+      "frozenPersonProvider": {
+        "providerId": "DFINE_HF_COCO",
+        "providerVersion": "1.0-transformers",
+        "modelId": "ustc-community/dfine-medium-coco",
+        "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+        "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+        "synthetic": false,
+        "realModel": true,
+        "confidenceThreshold": 0.3,
+        "deviceRequested": "AUTO",
+        "contractVersion": "1.0"
+      },
+      "frozenFaceProvider": {
+        "providerId": "OPENCV_YUNET",
+        "providerVersion": "1.2-opencv5-rotation-fallback-hybrid-dedup",
+        "modelId": "opencv/opencv_zoo/face_detection_yunet_2026may.onnx",
+        "modelRevision": "opencv_zoo@47534e2",
+        "modelWeightsSha256": "ebafce4e3c118d6554634be5c27ab333b4c047a9a8c3faf1d7cf93101c22f0f0",
+        "synthetic": false,
+        "realModel": true,
+        "confidenceThreshold": 0.65,
+        "nmsThreshold": 0.3,
+        "topK": 5000,
+        "deviceRequested": "AUTO",
+        "rotationFallbackEnabled": true,
+        "rotationFallbackAngles": [
+          90,
+          -90
+        ],
+        "rotationFallbackTrigger": "BASE_FACE_COUNT_ZERO",
+        "crossRotationNmsThreshold": 0.3,
+        "fallbackDedupPolicy": "HYBRID_IOU_IOMIN",
+        "fallbackDedupIouThreshold": 0.3,
+        "fallbackDedupContainmentThreshold": 0.85,
+        "fallbackDedupPolicyVersion": 1,
+        "contractVersion": "1.0"
+      },
+      "frozenPoseProvider": {
+        "providerId": "OPENCV_MEDIAPIPE_POSE",
+        "providerVersion": "1.1-opencv-dnn-dfine-roi-rotation-evidence",
+        "modelId": "opencv/opencv_zoo/pose_estimation_mediapipe_2023mar.onnx",
+        "modelRevision": "opencv_zoo@39a1451",
+        "modelWeightsSha256": "9d89c599319a18fb7d2e28451a883476164543182bafca5f09eb2cf767ed2f3f",
+        "synthetic": false,
+        "realModel": true,
+        "confidenceThreshold": 0.8,
+        "deviceRequested": "AUTO",
+        "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+        "roiEnlargeFactor": 1.25,
+        "keypointVisibilityThreshold": 0.8,
+        "keypointPresenceThreshold": 0.8,
+        "rotationRecoveryEnabled": true,
+        "rotationRecoveryAngles": [
+          90,
+          -90
+        ],
+        "rotationRecoveryTrigger": "BASE_NOT_POSE_USABLE",
+        "rotationRecoveryPolicyVersion": 1,
+        "evidenceQualityPolicy": "TORSO_SPATIAL_GATE_V1",
+        "evidenceQualityPolicyVersion": 1,
+        "evidenceMinReliableTorso": 3,
+        "evidenceMinReliableBody": 4,
+        "evidenceMinTorsoSpanRatio": 0.08,
+        "evidenceMinBodySpanRatio": 0.15,
+        "evidenceMinPosePersonAreaRatio": 0.04,
+        "duplicateRoiIouThreshold": 0.65,
+        "duplicateRoiContainmentThreshold": 0.85,
+        "upstreamPersonProvider": {
+          "providerId": "DFINE_HF_COCO",
+          "providerVersion": "1.0-transformers",
+          "modelId": "ustc-community/dfine-medium-coco",
+          "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+          "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+          "synthetic": false,
+          "realModel": true,
+          "confidenceThreshold": 0.3,
+          "deviceRequested": "AUTO",
+          "contractVersion": "1.0"
+        },
+        "contractVersion": "1.0"
+      },
+      "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+      "associationBasePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+      "associationContainmentThreshold": 0.85,
+      "associationTieBreak": {
+        "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+        "maxHeadDistanceRatio": 0.75,
+        "minHeadDistanceMargin": 0.2,
+        "poseWeakCanResolve": false,
+        "baseMatchedAndUnmatchedAreImmutable": true
+      },
+      "duplicatePersonPolicy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+      "duplicatePersonGrouping": {
+        "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+        "poseHeadSeparationThreshold": 0.08,
+        "doesNotSuppressFrozenPersonCandidates": true
+      },
+      "subjectCountPolicy": {
+        "policy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+        "faceCenterSeparationThreshold": 0.08,
+        "uncertainCollapsePreservesRawUpperBound": true
+      },
+      "multiPersonAmbiguityPolicy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+      "subjectEvidencePolicy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+    },
+    "createdAt": "2026-09-07T20:03:13",
+    "visionCacheKey": "b9692f3bd8f504c13f5c30f2",
+    "frameSetId": "b9692f3bd8f504c13f5c30f2",
+    "inputContract": {
+      "framePackContractVersion": "1.0",
+      "inputImageSemantics": "Raw source-media frames before Premiere Motion/Transform rendering; compare content/time identity, not Program Monitor pixels.",
+      "coordinateSystem": "RAW_SOURCE_FRAME_NORMALIZED_AND_PIXELS"
+    },
+    "frames": [
+      {
+        "role": "EARLY",
+        "sourceFrameIndex": 15445,
+        "sha256": "ea7bfa0bdd403232a3b982efb04443dcf6a9aed450771d7731ff3d8219210800",
+        "imageSize": {
+          "width": 1728,
+          "height": 1080
+        },
+        "persons": [
+          {
+            "id": "p1",
+            "bboxPixels": {
+              "x": 521,
+              "y": 1,
+              "w": 854,
+              "h": 972
+            },
+            "bboxNormalized": {
+              "x": 0.30179242734555844,
+              "y": 0.0007494091987609863,
+              "w": 0.4942084418402778,
+              "h": 0.9004513444723906
+            },
+            "confidence": 0.929572
+          }
+        ],
+        "faces": [
+          {
+            "id": "f1",
+            "bboxPixels": {
+              "x": 767,
+              "y": 121,
+              "w": 362,
+              "h": 450
+            },
+            "bboxNormalized": {
+              "x": 0.44390703130651404,
+              "y": 0.11197360003436053,
+              "w": 0.2092127799987793,
+              "h": 0.4164545694986979
+            },
+            "confidence": 0.899352,
+            "landmarksPixels": [
+              {
+                "name": "rightEye",
+                "x": 886.837,
+                "y": 283.59
+              },
+              {
+                "name": "leftEye",
+                "x": 1047.826,
+                "y": 280.895
+              },
+              {
+                "name": "noseTip",
+                "x": 981.857,
+                "y": 376.025
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 903.43,
+                "y": 456.481
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 1037.878,
+                "y": 454.514
+              }
+            ],
+            "landmarksNormalized": [
+              {
+                "name": "rightEye",
+                "x": 0.5132160186767578,
+                "y": 0.26258318865740743
+              },
+              {
+                "name": "leftEye",
+                "x": 0.6063806039315683,
+                "y": 0.26008823536060477
+              },
+              {
+                "name": "noseTip",
+                "x": 0.5682045265480324,
+                "y": 0.34817160147207754
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 0.5228185300473813,
+                "y": 0.4226673550075955
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 0.6006235899748625,
+                "y": 0.42084672715928817
+              }
+            ],
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true
+          }
+        ],
+        "pose": [
+          {
+            "id": "pose1",
+            "personId": "p1",
+            "confidence": 0.910372,
+            "bboxPixels": {
+              "x": 717,
+              "y": 314,
+              "w": 406,
+              "h": 363
+            },
+            "bboxNormalized": {
+              "x": 0.4151886574074074,
+              "y": 0.29045740740740744,
+              "w": 0.23512847222222225,
+              "h": 0.3358638888888889
+            },
+            "keypointsPixels": [
+              {
+                "name": "nose",
+                "x": 939.225,
+                "y": 359.19,
+                "z": -1439.692662,
+                "visibility": 0.999165,
+                "presence": 0.996403
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 964.305,
+                "y": 318.269,
+                "z": -1456.224328,
+                "visibility": 0.999174,
+                "presence": 0.996053
+              },
+              {
+                "name": "leftEye",
+                "x": 981.045,
+                "y": 317.025,
+                "z": -1456.461575,
+                "visibility": 0.99908,
+                "presence": 0.995283
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 997.752,
+                "y": 315.838,
+                "z": -1456.629878,
+                "visibility": 0.998936,
+                "presence": 0.993616
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 923.241,
+                "y": 317.95,
+                "z": -1439.595764,
+                "visibility": 0.999259,
+                "presence": 0.99658
+              },
+              {
+                "name": "rightEye",
+                "x": 908.285,
+                "y": 316.384,
+                "z": -1440.29809,
+                "visibility": 0.999174,
+                "presence": 0.996367
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 892.886,
+                "y": 314.873,
+                "z": -1440.49623,
+                "visibility": 0.999116,
+                "presence": 0.995779
+              },
+              {
+                "name": "leftEar",
+                "x": 1028.645,
+                "y": 315.639,
+                "z": -1298.189603,
+                "visibility": 0.99911,
+                "presence": 0.994186
+              },
+              {
+                "name": "rightEar",
+                "x": 879.968,
+                "y": 313.694,
+                "z": -1221.321221,
+                "visibility": 0.999435,
+                "presence": 0.996807
+              },
+              {
+                "name": "mouthLeft",
+                "x": 969.254,
+                "y": 386.035,
+                "z": -1355.561458,
+                "visibility": 0.997286,
+                "presence": 0.990011
+              },
+              {
+                "name": "mouthRight",
+                "x": 916.726,
+                "y": 385.469,
+                "z": -1334.053983,
+                "visibility": 0.996974,
+                "presence": 0.991788
+              },
+              {
+                "name": "leftShoulder",
+                "x": 1093.306,
+                "y": 393.442,
+                "z": -1047.655947,
+                "visibility": 0.999001,
+                "presence": 0.993256
+              },
+              {
+                "name": "rightShoulder",
+                "x": 828.762,
+                "y": 394.501,
+                "z": -911.618833,
+                "visibility": 0.999807,
+                "presence": 0.998186
+              },
+              {
+                "name": "leftElbow",
+                "x": 1123.748,
+                "y": 510.934,
+                "z": -799.515253,
+                "visibility": 0.669824,
+                "presence": 0.924873
+              },
+              {
+                "name": "rightElbow",
+                "x": 717.446,
+                "y": 488.693,
+                "z": -893.857047,
+                "visibility": 0.751346,
+                "presence": 0.972612
+              },
+              {
+                "name": "leftWrist",
+                "x": 1061.524,
+                "y": 544.704,
+                "z": -604.377953,
+                "visibility": 0.523742,
+                "presence": 0.948547
+              },
+              {
+                "name": "rightWrist",
+                "x": 740.824,
+                "y": 443.544,
+                "z": -1066.806163,
+                "visibility": 0.730777,
+                "presence": 0.973177
+              },
+              {
+                "name": "leftPinky",
+                "x": 1056.935,
+                "y": 559.633,
+                "z": -622.723116,
+                "visibility": 0.426477,
+                "presence": 0.936041
+              },
+              {
+                "name": "rightPinky",
+                "x": 738.422,
+                "y": 436.103,
+                "z": -1125.899071,
+                "visibility": 0.690789,
+                "presence": 0.959372
+              },
+              {
+                "name": "leftIndex",
+                "x": 1046.282,
+                "y": 540.19,
+                "z": -635.838675,
+                "visibility": 0.428853,
+                "presence": 0.940572
+              },
+              {
+                "name": "rightIndex",
+                "x": 756.196,
+                "y": 411.311,
+                "z": -1134.120801,
+                "visibility": 0.690374,
+                "presence": 0.964677
+              },
+              {
+                "name": "leftThumb",
+                "x": 1041.517,
+                "y": 536.159,
+                "z": -602.81807,
+                "visibility": 0.43198,
+                "presence": 0.953016
+              },
+              {
+                "name": "rightThumb",
+                "x": 764.6,
+                "y": 417.242,
+                "z": -1073.504473,
+                "visibility": 0.659778,
+                "presence": 0.969759
+              },
+              {
+                "name": "leftHip",
+                "x": 1025.767,
+                "y": 588.753,
+                "z": -46.087621,
+                "visibility": 0.985162,
+                "presence": 0.970362
+              },
+              {
+                "name": "rightHip",
+                "x": 898.259,
+                "y": 580.525,
+                "z": 46.204393,
+                "visibility": 0.99452,
+                "presence": 0.993718
+              },
+              {
+                "name": "leftKnee",
+                "x": 963.854,
+                "y": 600.552,
+                "z": 580.494968,
+                "visibility": 0.144138,
+                "presence": 0.907026
+              },
+              {
+                "name": "rightKnee",
+                "x": 808.823,
+                "y": 618.29,
+                "z": 744.525062,
+                "visibility": 0.076566,
+                "presence": 0.960084
+              },
+              {
+                "name": "leftAnkle",
+                "x": 934.625,
+                "y": 562.695,
+                "z": 1412.002142,
+                "visibility": 0.046524,
+                "presence": 0.951507
+              },
+              {
+                "name": "rightAnkle",
+                "x": 842.485,
+                "y": 619.986,
+                "z": 1393.87116,
+                "visibility": 0.050406,
+                "presence": 0.943518
+              },
+              {
+                "name": "leftHeel",
+                "x": 940.276,
+                "y": 546.11,
+                "z": 1510.035744,
+                "visibility": 0.074713,
+                "presence": 0.949778
+              },
+              {
+                "name": "rightHeel",
+                "x": 863.669,
+                "y": 613.722,
+                "z": 1466.341352,
+                "visibility": 0.072752,
+                "presence": 0.938862
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 879.303,
+                "y": 618.653,
+                "z": 1532.823744,
+                "visibility": 0.055385,
+                "presence": 0.921815
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 831.092,
+                "y": 676.427,
+                "z": 1408.524696,
+                "visibility": 0.061346,
+                "presence": 0.890969
+              }
+            ],
+            "keypointsNormalized": [
+              {
+                "name": "nose",
+                "x": 0.5435332284412451,
+                "y": 0.33258287440295575,
+                "z": -0.8331554755568504,
+                "visibility": 0.999165,
+                "presence": 0.996403
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 0.5580467871493764,
+                "y": 0.2946937551652944,
+                "z": -0.842722412198782,
+                "visibility": 0.999174,
+                "presence": 0.996053
+              },
+              {
+                "name": "leftEye",
+                "x": 0.5677342136493988,
+                "y": 0.2935413105344331,
+                "z": -0.8428597077727318,
+                "visibility": 0.99908,
+                "presence": 0.995283
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 0.577402864686317,
+                "y": 0.2924429794704473,
+                "z": -0.8429571054875851,
+                "visibility": 0.998936,
+                "presence": 0.993616
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 0.5342831486939557,
+                "y": 0.29439787398333905,
+                "z": -0.8330994006246328,
+                "visibility": 0.999259,
+                "presence": 0.99658
+              },
+              {
+                "name": "rightEye",
+                "x": 0.5256276182933814,
+                "y": 0.29294810648317693,
+                "z": -0.8335058391094208,
+                "visibility": 0.999174,
+                "presence": 0.996367
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 0.5167166074841387,
+                "y": 0.29154909978862165,
+                "z": -0.8336205035448074,
+                "visibility": 0.999116,
+                "presence": 0.995779
+              },
+              {
+                "name": "leftEar",
+                "x": 0.5952809193275042,
+                "y": 0.29225854407306073,
+                "z": -0.7512671314179897,
+                "visibility": 0.99911,
+                "presence": 0.994186
+              },
+              {
+                "name": "rightEar",
+                "x": 0.5092406623168952,
+                "y": 0.2904574071919477,
+                "z": -0.7067831140011549,
+                "visibility": 0.999435,
+                "presence": 0.996807
+              },
+              {
+                "name": "mouthLeft",
+                "x": 0.5609109253726072,
+                "y": 0.35744017939324735,
+                "z": -0.7844684366136789,
+                "visibility": 0.997286,
+                "presence": 0.990011
+              },
+              {
+                "name": "mouthRight",
+                "x": 0.530512759099818,
+                "y": 0.35691577400322316,
+                "z": -0.7720219809561968,
+                "visibility": 0.996974,
+                "presence": 0.991788
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.6327003334752388,
+                "y": 0.36429788376446126,
+                "z": -0.6062823766842484,
+                "visibility": 0.999001,
+                "presence": 0.993256
+              },
+              {
+                "name": "rightShoulder",
+                "x": 0.4796074285275406,
+                "y": 0.3652787340735948,
+                "z": -0.5275571951642632,
+                "visibility": 0.999807,
+                "presence": 0.998186
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.6503173337421484,
+                "y": 0.47308700735922216,
+                "z": -0.46268243808299303,
+                "visibility": 0.669824,
+                "presence": 0.924873
+              },
+              {
+                "name": "rightElbow",
+                "x": 0.4151886679335601,
+                "y": 0.4524938112055814,
+                "z": -0.5172783834859729,
+                "visibility": 0.751346,
+                "presence": 0.972612
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.6143079233459301,
+                "y": 0.504355864778713,
+                "z": -0.3497557598166168,
+                "visibility": 0.523742,
+                "presence": 0.948547
+              },
+              {
+                "name": "rightWrist",
+                "x": 0.42871752065709895,
+                "y": 0.4106891697203672,
+                "z": -0.6173646776005626,
+                "visibility": 0.730777,
+                "presence": 0.973177
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.6116519915974803,
+                "y": 0.518178293660835,
+                "z": -0.3603721735998988,
+                "visibility": 0.426477,
+                "presence": 0.936041
+              },
+              {
+                "name": "rightPinky",
+                "x": 0.4273273610613412,
+                "y": 0.4037986418163335,
+                "z": -0.6515619624406099,
+                "visibility": 0.690789,
+                "presence": 0.959372
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.6054873113623924,
+                "y": 0.5001757761394536,
+                "z": -0.36796219646930695,
+                "visibility": 0.428853,
+                "presence": 0.940572
+              },
+              {
+                "name": "rightIndex",
+                "x": 0.4376132764025695,
+                "y": 0.3808431906556642,
+                "z": -0.6563199078664184,
+                "visibility": 0.690374,
+                "presence": 0.964677
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.6027295813999243,
+                "y": 0.49644361640568135,
+                "z": -0.3488530497997999,
+                "visibility": 0.43198,
+                "presence": 0.953016
+              },
+              {
+                "name": "rightThumb",
+                "x": 0.44247672903454965,
+                "y": 0.3863353824173963,
+                "z": -0.6212410144507885,
+                "visibility": 0.659778,
+                "presence": 0.969759
+              },
+              {
+                "name": "leftHip",
+                "x": 0.5936150160721607,
+                "y": 0.5451420715009725,
+                "z": -0.026671077066566795,
+                "visibility": 0.985162,
+                "presence": 0.970362
+              },
+              {
+                "name": "rightHip",
+                "x": 0.5198258116013474,
+                "y": 0.5375227874075925,
+                "z": 0.02673865354154259,
+                "visibility": 0.99452,
+                "presence": 0.993718
+              },
+              {
+                "name": "leftKnee",
+                "x": 0.5577856489560671,
+                "y": 0.5560671111499822,
+                "z": 0.33593458821997046,
+                "visibility": 0.144138,
+                "presence": 0.907026
+              },
+              {
+                "name": "rightKnee",
+                "x": 0.4680687539382941,
+                "y": 0.5724908133899724,
+                "z": 0.4308594111353159,
+                "visibility": 0.076566,
+                "presence": 0.960084
+              },
+              {
+                "name": "leftAnkle",
+                "x": 0.5408709683559008,
+                "y": 0.5210141932522809,
+                "z": 0.8171308692544699,
+                "visibility": 0.046524,
+                "presence": 0.951507
+              },
+              {
+                "name": "rightAnkle",
+                "x": 0.48754909318975276,
+                "y": 0.5740607103263891,
+                "z": 0.806638402864337,
+                "visibility": 0.050406,
+                "presence": 0.943518
+              },
+              {
+                "name": "leftHeel",
+                "x": 0.5441410631044872,
+                "y": 0.5056570043718374,
+                "z": 0.8738632779568434,
+                "visibility": 0.074713,
+                "presence": 0.949778
+              },
+              {
+                "name": "rightHeel",
+                "x": 0.4998083390398986,
+                "y": 0.5682607686078107,
+                "z": 0.8485771715641022,
+                "visibility": 0.072752,
+                "presence": 0.938862
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 0.5088557443685002,
+                "y": 0.5728272965108907,
+                "z": 0.8870507776737213,
+                "visibility": 0.055385,
+                "presence": 0.921815
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 0.4809562862954206,
+                "y": 0.6263212731039083,
+                "z": 0.815118458122015,
+                "visibility": 0.061346,
+                "presence": 0.890969
+              }
+            ],
+            "worldKeypoints": [
+              {
+                "name": "nose",
+                "x": -0.03366398811340332,
+                "y": -0.22496825456619263,
+                "z": -0.6223926544189453
+              },
+              {
+                "name": "leftEyeInner",
+                "x": -0.01700878143310547,
+                "y": -0.26139116287231445,
+                "z": -0.6394929885864258
+              },
+              {
+                "name": "leftEye",
+                "x": -0.017304301261901855,
+                "y": -0.2611539363861084,
+                "z": -0.6412143707275391
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": -0.016322851181030273,
+                "y": -0.2610046863555908,
+                "z": -0.6394596099853516
+              },
+              {
+                "name": "rightEyeInner",
+                "x": -0.049372196197509766,
+                "y": -0.2623710632324219,
+                "z": -0.6341242790222168
+              },
+              {
+                "name": "rightEye",
+                "x": -0.04727029800415039,
+                "y": -0.26295948028564453,
+                "z": -0.6341729164123535
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": -0.04810786247253418,
+                "y": -0.2619037628173828,
+                "z": -0.6296424865722656
+              },
+              {
+                "name": "leftEar",
+                "x": 0.06292104721069336,
+                "y": -0.28444957733154297,
+                "z": -0.5859966278076172
+              },
+              {
+                "name": "rightEar",
+                "x": -0.06732511520385742,
+                "y": -0.2759075164794922,
+                "z": -0.5386943817138672
+              },
+              {
+                "name": "mouthLeft",
+                "x": -0.008474871516227722,
+                "y": -0.21223938465118408,
+                "z": -0.6007628440856934
+              },
+              {
+                "name": "mouthRight",
+                "x": -0.04476022720336914,
+                "y": -0.20873868465423584,
+                "z": -0.5889177322387695
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.1603412628173828,
+                "y": -0.19113540649414062,
+                "z": -0.4866297245025635
+              },
+              {
+                "name": "rightShoulder",
+                "x": -0.1404857635498047,
+                "y": -0.1963062286376953,
+                "z": -0.41683128476142883
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.19635272026062012,
+                "y": -0.0899972915649414,
+                "z": -0.35319948196411133
+              },
+              {
+                "name": "rightElbow",
+                "x": -0.27626991271972656,
+                "y": -0.14623165130615234,
+                "z": -0.4145667552947998
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.14836648106575012,
+                "y": -0.04720020294189453,
+                "z": -0.2615940272808075
+              },
+              {
+                "name": "rightWrist",
+                "x": -0.2688469886779785,
+                "y": -0.23526954650878906,
+                "z": -0.49773335456848145
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.1333005428314209,
+                "y": -0.0328216552734375,
+                "z": -0.26451319456100464
+              },
+              {
+                "name": "rightPinky",
+                "x": -0.26773983240127563,
+                "y": -0.2582969665527344,
+                "z": -0.5273160934448242
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.12253713607788086,
+                "y": -0.06070899963378906,
+                "z": -0.27629798650741577
+              },
+              {
+                "name": "rightIndex",
+                "x": -0.24760174751281738,
+                "y": -0.2972373962402344,
+                "z": -0.532395601272583
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.1369650810956955,
+                "y": -0.058890342712402344,
+                "z": -0.2653295695781708
+              },
+              {
+                "name": "rightThumb",
+                "x": -0.25370436906814575,
+                "y": -0.2523031234741211,
+                "z": -0.5031177997589111
+              },
+              {
+                "name": "leftHip",
+                "x": 0.0907888412475586,
+                "y": 0.005933523178100586,
+                "z": -0.01860785484313965
+              },
+              {
+                "name": "rightHip",
+                "x": -0.09245777130126953,
+                "y": -0.006455659866333008,
+                "z": 0.01971268653869629
+              },
+              {
+                "name": "leftKnee",
+                "x": -0.013720512390136719,
+                "y": 0.059165000915527344,
+                "z": 0.2785968780517578
+              },
+              {
+                "name": "rightKnee",
+                "x": -0.22209835052490234,
+                "y": 0.09497356414794922,
+                "z": 0.33982229232788086
+              },
+              {
+                "name": "leftAnkle",
+                "x": -0.02695751190185547,
+                "y": -0.017584800720214844,
+                "z": 0.6549551486968994
+              },
+              {
+                "name": "rightAnkle",
+                "x": -0.1820085048675537,
+                "y": 0.08646535873413086,
+                "z": 0.6493005156517029
+              },
+              {
+                "name": "leftHeel",
+                "x": -0.024558544158935547,
+                "y": -0.015663623809814453,
+                "z": 0.6961488723754883
+              },
+              {
+                "name": "rightHeel",
+                "x": -0.1772252321243286,
+                "y": 0.09067869186401367,
+                "z": 0.6846833229064941
+              },
+              {
+                "name": "leftFootIndex",
+                "x": -0.05592203140258789,
+                "y": 0.056265830993652344,
+                "z": 0.6995487213134766
+              },
+              {
+                "name": "rightFootIndex",
+                "x": -0.21422886848449707,
+                "y": 0.172196626663208,
+                "z": 0.6639008522033691
+              }
+            ],
+            "keypointCount": 33,
+            "visibleKeypointCount": 15,
+            "presentKeypointCount": 33,
+            "roiSource": "FROZEN_DFINE_PERSON_BBOX",
+            "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+            "roiPixels": {
+              "x": 340.5,
+              "y": -120.5,
+              "side": 1215.0
+            },
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.722166,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 4,
+              "torsoSpanRatio": 0.147364,
+              "bodySpanRatio": 0.30977,
+              "posePersonAreaRatio": 0.177545,
+              "reasons": []
+            },
+            "rotationRecoveryUsed": false,
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE"
+          }
+        ],
+        "personCount": 1,
+        "poseCount": 1,
+        "poseUsableCount": 1,
+        "poseWeakCount": 0,
+        "poseRejectedCount": 0,
+        "poseAttemptedPersons": 1,
+        "poseRejectedLowConfidence": 0,
+        "poseInvalidRoi": 0,
+        "unposedPersonIds": [],
+        "personPoseDiagnostics": [
+          {
+            "personId": "p1",
+            "rotationRecoveryTriggered": false,
+            "rotationRecoveryAnglesAttempted": [],
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE",
+            "selectedEvidenceStatus": "POSE_USABLE",
+            "selectedOrientation": 0,
+            "passes": [
+              {
+                "orientation": 0,
+                "modelConfidence": 0.910372,
+                "modelAccepted": true,
+                "evidenceStatus": "POSE_USABLE",
+                "qualityScore": 0.722166,
+                "inferenceMs": 13.566
+              }
+            ]
+          }
+        ],
+        "personRoiOverlapDiagnostics": {
+          "policy": "DIAGNOSTIC_ONLY_IOU_OR_CONTAINMENT_V1",
+          "iouThreshold": 0.65,
+          "containmentThreshold": 0.85,
+          "overlapPairCount": 0,
+          "possibleDuplicatePairCount": 0,
+          "pairs": [],
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "inferenceMs": 13.566,
+        "poseInferenceAttempts": 1,
+        "originalFrameCoordinates": true,
+        "faceCount": 1,
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": [
+            {
+              "faceId": "f1",
+              "status": "MATCHED",
+              "baseStatus": "MATCHED",
+              "personId": "p1",
+              "candidatePersonIds": [
+                "p1"
+              ],
+              "candidateContainment": [
+                1.0
+              ],
+              "tieBreak": {
+                "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+                "attempted": false,
+                "resolved": false,
+                "winnerPersonId": null,
+                "reason": "BASE_NOT_AMBIGUOUS"
+              }
+            }
+          ]
+        },
+        "faceAssociationSummary": {
+          "matched": 1,
+          "ambiguous": 0,
+          "unmatched": 0,
+          "resolvedByTieBreak": 0
+        },
+        "subjectEvidence": [
+          {
+            "personId": "p1",
+            "personConfidence": 0.929572,
+            "faceEvidence": {
+              "status": "MATCHED",
+              "faceIds": [
+                "f1"
+              ],
+              "confidence": 0.899352,
+              "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2"
+            },
+            "poseEvidence": {
+              "status": "POSE_USABLE",
+              "confidence": 0.910372,
+              "selectedOrientation": 0,
+              "recovered": false
+            },
+            "duplicatePersonSuspicion": false,
+            "representedPersonAssessment": {
+              "status": "NOT_ASSESSED"
+            },
+            "evidenceCompleteness": {
+              "personPresent": true,
+              "facePresent": true,
+              "posePresent": true
+            },
+            "physicalPersonEvidenceScore": 0.871289,
+            "physicalPersonEvidenceScoreAuthority": "DIAGNOSTIC_ONLY",
+            "policy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+          }
+        ],
+        "duplicatePersonEvidence": [],
+        "duplicatePersonGroups": [],
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 1,
+          "duplicatePairCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        }
+      },
+      {
+        "role": "MIDDLE",
+        "sourceFrameIndex": 15457,
+        "sha256": "a13da51a4ff030080298e75e152eb296f856c36ae2d5553681032ac1e99684db",
+        "imageSize": {
+          "width": 1728,
+          "height": 1080
+        },
+        "persons": [
+          {
+            "id": "p1",
+            "bboxPixels": {
+              "x": 532,
+              "y": 1,
+              "w": 838,
+              "h": 972
+            },
+            "bboxNormalized": {
+              "x": 0.307848506503635,
+              "y": 0.0007793903350830078,
+              "w": 0.4848604202270508,
+              "h": 0.9001389627103452
+            },
+            "confidence": 0.95065
+          }
+        ],
+        "faces": [
+          {
+            "id": "f1",
+            "bboxPixels": {
+              "x": 757,
+              "y": 117,
+              "w": 365,
+              "h": 436
+            },
+            "bboxNormalized": {
+              "x": 0.4378761715359158,
+              "y": 0.1086098141140408,
+              "w": 0.21118056332623517,
+              "h": 0.4033845406991464
+            },
+            "confidence": 0.901564,
+            "landmarksPixels": [
+              {
+                "name": "rightEye",
+                "x": 882.565,
+                "y": 287.22
+              },
+              {
+                "name": "leftEye",
+                "x": 1042.049,
+                "y": 287.463
+              },
+              {
+                "name": "noseTip",
+                "x": 979.449,
+                "y": 381.608
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 895.776,
+                "y": 451.404
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 1026.473,
+                "y": 451.98
+              }
+            ],
+            "landmarksNormalized": [
+              {
+                "name": "rightEye",
+                "x": 0.5107434590657552,
+                "y": 0.2659446716308594
+              },
+              {
+                "name": "leftEye",
+                "x": 0.6030376575611256,
+                "y": 0.26616976702654804
+              },
+              {
+                "name": "noseTip",
+                "x": 0.5668107845165111,
+                "y": 0.3533410531503183
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 0.5183886068838613,
+                "y": 0.4179670263219763
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 0.5940235985649956,
+                "y": 0.41850032099971063
+              }
+            ],
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true
+          }
+        ],
+        "pose": [
+          {
+            "id": "pose1",
+            "personId": "p1",
+            "confidence": 0.998731,
+            "bboxPixels": {
+              "x": 703,
+              "y": 318,
+              "w": 461,
+              "h": 391
+            },
+            "bboxNormalized": {
+              "x": 0.40708391203703703,
+              "y": 0.29484166666666667,
+              "w": 0.26653587962962966,
+              "h": 0.36190185185185186
+            },
+            "keypointsPixels": [
+              {
+                "name": "nose",
+                "x": 949.477,
+                "y": 373.869,
+                "z": -1457.422149,
+                "visibility": 0.999477,
+                "presence": 0.997453
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 975.973,
+                "y": 329.523,
+                "z": -1469.615734,
+                "visibility": 0.999285,
+                "presence": 0.997192
+              },
+              {
+                "name": "leftEye",
+                "x": 994.058,
+                "y": 328.144,
+                "z": -1469.763325,
+                "visibility": 0.999504,
+                "presence": 0.996687
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 1012.114,
+                "y": 326.841,
+                "z": -1469.948575,
+                "visibility": 0.999114,
+                "presence": 0.995337
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 929.528,
+                "y": 328.556,
+                "z": -1456.41233,
+                "visibility": 0.99927,
+                "presence": 0.997414
+              },
+              {
+                "name": "rightEye",
+                "x": 912.707,
+                "y": 326.279,
+                "z": -1456.98459,
+                "visibility": 0.999465,
+                "presence": 0.997296
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 895.468,
+                "y": 324.047,
+                "z": -1457.064976,
+                "visibility": 0.999065,
+                "presence": 0.996531
+              },
+              {
+                "name": "leftEar",
+                "x": 1042.015,
+                "y": 323.235,
+                "z": -1286.783799,
+                "visibility": 0.99944,
+                "presence": 0.994653
+              },
+              {
+                "name": "rightEar",
+                "x": 876.284,
+                "y": 318.429,
+                "z": -1227.178087,
+                "visibility": 0.999536,
+                "presence": 0.99678
+              },
+              {
+                "name": "mouthLeft",
+                "x": 979.586,
+                "y": 400.09,
+                "z": -1364.279625,
+                "visibility": 0.996484,
+                "presence": 0.988709
+              },
+              {
+                "name": "mouthRight",
+                "x": 922.179,
+                "y": 398.581,
+                "z": -1347.969273,
+                "visibility": 0.995444,
+                "presence": 0.990572
+              },
+              {
+                "name": "leftShoulder",
+                "x": 1104.669,
+                "y": 401.074,
+                "z": -1016.017688,
+                "visibility": 0.999102,
+                "presence": 0.994183
+              },
+              {
+                "name": "rightShoulder",
+                "x": 821.81,
+                "y": 393.217,
+                "z": -897.617799,
+                "visibility": 0.999708,
+                "presence": 0.996941
+              },
+              {
+                "name": "leftElbow",
+                "x": 1164.015,
+                "y": 516.26,
+                "z": -730.619984,
+                "visibility": 0.799156,
+                "presence": 0.924896
+              },
+              {
+                "name": "rightElbow",
+                "x": 729.031,
+                "y": 477.369,
+                "z": -735.903142,
+                "visibility": 0.872058,
+                "presence": 0.971004
+              },
+              {
+                "name": "leftWrist",
+                "x": 1123.918,
+                "y": 574.815,
+                "z": -508.375541,
+                "visibility": 0.478699,
+                "presence": 0.848778
+              },
+              {
+                "name": "rightWrist",
+                "x": 718.741,
+                "y": 470.785,
+                "z": -728.26229,
+                "visibility": 0.821802,
+                "presence": 0.958858
+              },
+              {
+                "name": "leftPinky",
+                "x": 1128.101,
+                "y": 594.5,
+                "z": -515.547258,
+                "visibility": 0.370555,
+                "presence": 0.823695
+              },
+              {
+                "name": "rightPinky",
+                "x": 703.441,
+                "y": 465.882,
+                "z": -756.063467,
+                "visibility": 0.783373,
+                "presence": 0.939134
+              },
+              {
+                "name": "leftIndex",
+                "x": 1114.052,
+                "y": 575.711,
+                "z": -531.285459,
+                "visibility": 0.382142,
+                "presence": 0.836151
+              },
+              {
+                "name": "rightIndex",
+                "x": 721.141,
+                "y": 452.067,
+                "z": -781.787214,
+                "visibility": 0.794547,
+                "presence": 0.946671
+              },
+              {
+                "name": "leftThumb",
+                "x": 1105.108,
+                "y": 569.375,
+                "z": -507.023249,
+                "visibility": 0.382973,
+                "presence": 0.866852
+              },
+              {
+                "name": "rightThumb",
+                "x": 735.478,
+                "y": 456.792,
+                "z": -737.39419,
+                "visibility": 0.771861,
+                "presence": 0.956051
+              },
+              {
+                "name": "leftHip",
+                "x": 1028.514,
+                "y": 591.779,
+                "z": -39.796468,
+                "visibility": 0.982834,
+                "presence": 0.981603
+              },
+              {
+                "name": "rightHip",
+                "x": 891.267,
+                "y": 580.621,
+                "z": 40.033031,
+                "visibility": 0.991081,
+                "presence": 0.993918
+              },
+              {
+                "name": "leftKnee",
+                "x": 969.498,
+                "y": 623.232,
+                "z": 603.341374,
+                "visibility": 0.289963,
+                "presence": 0.933309
+              },
+              {
+                "name": "rightKnee",
+                "x": 831.221,
+                "y": 629.646,
+                "z": 740.094139,
+                "visibility": 0.204256,
+                "presence": 0.965605
+              },
+              {
+                "name": "leftAnkle",
+                "x": 950.916,
+                "y": 582.509,
+                "z": 1410.317371,
+                "visibility": 0.10757,
+                "presence": 0.902064
+              },
+              {
+                "name": "rightAnkle",
+                "x": 850.355,
+                "y": 638.629,
+                "z": 1398.463869,
+                "visibility": 0.148527,
+                "presence": 0.932085
+              },
+              {
+                "name": "leftHeel",
+                "x": 950.135,
+                "y": 562.421,
+                "z": 1507.005417,
+                "visibility": 0.151739,
+                "presence": 0.888026
+              },
+              {
+                "name": "rightHeel",
+                "x": 864.785,
+                "y": 628.64,
+                "z": 1474.740728,
+                "visibility": 0.155848,
+                "presence": 0.924546
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 916.243,
+                "y": 648.402,
+                "z": 1525.25647,
+                "visibility": 0.114293,
+                "presence": 0.776196
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 849.336,
+                "y": 709.283,
+                "z": 1435.223501,
+                "visibility": 0.15127,
+                "presence": 0.828677
+              }
+            ],
+            "keypointsNormalized": [
+              {
+                "name": "nose",
+                "x": 0.5494656974656714,
+                "y": 0.34617503564114926,
+                "z": -0.8434155955910683,
+                "visibility": 0.999477,
+                "presence": 0.997453
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 0.5647990482134951,
+                "y": 0.30511413718815206,
+                "z": -0.8504720684140921,
+                "visibility": 0.999285,
+                "presence": 0.997192
+              },
+              {
+                "name": "leftEye",
+                "x": 0.5752651116086377,
+                "y": 0.30383673514480947,
+                "z": -0.85055748000741,
+                "visibility": 0.999504,
+                "presence": 0.996687
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 0.5857143273784055,
+                "y": 0.3026309816097772,
+                "z": -0.850664684548974,
+                "visibility": 0.999114,
+                "presence": 0.995337
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 0.5379211345894469,
+                "y": 0.3042181117391145,
+                "z": -0.8428312093019485,
+                "visibility": 0.99927,
+                "presence": 0.997414
+              },
+              {
+                "name": "rightEye",
+                "x": 0.5281871047077907,
+                "y": 0.30211036483998654,
+                "z": -0.8431623782962561,
+                "visibility": 0.999465,
+                "presence": 0.997296
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 0.5182104396840764,
+                "y": 0.3000434545731103,
+                "z": -0.8432088978588581,
+                "visibility": 0.999065,
+                "presence": 0.996531
+              },
+              {
+                "name": "leftEar",
+                "x": 0.6030181797428263,
+                "y": 0.2992914972757852,
+                "z": -0.744666550308466,
+                "visibility": 0.99944,
+                "presence": 0.994653
+              },
+              {
+                "name": "rightEar",
+                "x": 0.5071089442094995,
+                "y": 0.2948419472133672,
+                "z": -0.7101725041866302,
+                "visibility": 0.999536,
+                "presence": 0.99678
+              },
+              {
+                "name": "mouthLeft",
+                "x": 0.566890081597699,
+                "y": 0.3704535869812524,
+                "z": -0.7895136717706919,
+                "visibility": 0.996484,
+                "presence": 0.988709
+              },
+              {
+                "name": "mouthRight",
+                "x": 0.5336684502868189,
+                "y": 0.3690563572501695,
+                "z": -0.7800748106092215,
+                "visibility": 0.995444,
+                "presence": 0.990572
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.6392758621109856,
+                "y": 0.3713648339664495,
+                "z": -0.5879731988534331,
+                "visibility": 0.999102,
+                "presence": 0.994183
+              },
+              {
+                "name": "rightShoulder",
+                "x": 0.4755844806527926,
+                "y": 0.3640900460934198,
+                "z": -0.5194547446444631,
+                "visibility": 0.999708,
+                "presence": 0.996941
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.6736199978945984,
+                "y": 0.47801871801967977,
+                "z": -0.42281249072402716,
+                "visibility": 0.799156,
+                "presence": 0.924896
+              },
+              {
+                "name": "rightElbow",
+                "x": 0.42189296355677974,
+                "y": 0.44200798328276036,
+                "z": -0.42586987372487783,
+                "visibility": 0.872058,
+                "presence": 0.971004
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.6504154952449931,
+                "y": 0.5322364216601407,
+                "z": -0.294198808260262,
+                "visibility": 0.478699,
+                "presence": 0.848778
+              },
+              {
+                "name": "rightWrist",
+                "x": 0.41593812426759136,
+                "y": 0.43591222743745206,
+                "z": -0.421448084525764,
+                "visibility": 0.821802,
+                "presence": 0.958858
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.6528362307904495,
+                "y": 0.550462970689491,
+                "z": -0.2983491076156497,
+                "visibility": 0.370555,
+                "presence": 0.823695
+              },
+              {
+                "name": "rightPinky",
+                "x": 0.4070837332142724,
+                "y": 0.4313722198760068,
+                "z": -0.4375367285683751,
+                "visibility": 0.783373,
+                "presence": 0.939134
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.6447060780806674,
+                "y": 0.533065492466644,
+                "z": -0.3074568626470864,
+                "visibility": 0.382142,
+                "presence": 0.836151
+              },
+              {
+                "name": "rightIndex",
+                "x": 0.4173272151706947,
+                "y": 0.4185807986115968,
+                "z": -0.45242315623909235,
+                "visibility": 0.794547,
+                "presence": 0.946671
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.639529917596115,
+                "y": 0.5271994342958486,
+                "z": -0.29341623187065125,
+                "visibility": 0.382973,
+                "presence": 0.866852
+              },
+              {
+                "name": "rightThumb",
+                "x": 0.4256240420250429,
+                "y": 0.4229559509014642,
+                "z": -0.42673274874687195,
+                "visibility": 0.771861,
+                "presence": 0.956051
+              },
+              {
+                "name": "leftHip",
+                "x": 0.5952047372443808,
+                "y": 0.547943504706577,
+                "z": -0.023030363372527063,
+                "visibility": 0.982834,
+                "presence": 0.981603
+              },
+              {
+                "name": "rightHip",
+                "x": 0.5157797296738459,
+                "y": 0.5376121049677884,
+                "z": 0.02316726342542097,
+                "visibility": 0.991081,
+                "presence": 0.993918
+              },
+              {
+                "name": "leftKnee",
+                "x": 0.5610522955863012,
+                "y": 0.5770663937484777,
+                "z": 0.34915588796138763,
+                "visibility": 0.289963,
+                "presence": 0.933309
+              },
+              {
+                "name": "rightKnee",
+                "x": 0.4810306641480161,
+                "y": 0.5830057432806051,
+                "z": 0.4282952193170786,
+                "visibility": 0.204256,
+                "presence": 0.965605
+              },
+              {
+                "name": "leftAnkle",
+                "x": 0.550298397636248,
+                "y": 0.5393601005827939,
+                "z": 0.8161558862775564,
+                "visibility": 0.10757,
+                "presence": 0.902064
+              },
+              {
+                "name": "rightAnkle",
+                "x": 0.49210384974463117,
+                "y": 0.5913228711044347,
+                "z": 0.8092962205410004,
+                "visibility": 0.148527,
+                "presence": 0.932085
+              },
+              {
+                "name": "leftHeel",
+                "x": 0.5498466968743337,
+                "y": 0.5207600539481199,
+                "z": 0.8721096161752939,
+                "visibility": 0.151739,
+                "presence": 0.888026
+              },
+              {
+                "name": "rightHeel",
+                "x": 0.5004541321864558,
+                "y": 0.5820742120897329,
+                "z": 0.8534379210323095,
+                "visibility": 0.155848,
+                "presence": 0.924546
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 0.5302330853624476,
+                "y": 0.6003717726027524,
+                "z": 0.8826715685427189,
+                "visibility": 0.114293,
+                "presence": 0.776196
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 0.4915138266256286,
+                "y": 0.6567432900821721,
+                "z": 0.8305691555142403,
+                "visibility": 0.15127,
+                "presence": 0.828677
+              }
+            ],
+            "worldKeypoints": [
+              {
+                "name": "nose",
+                "x": -0.01435995101928711,
+                "y": -0.23812192678451538,
+                "z": -0.6174182891845703
+              },
+              {
+                "name": "leftEyeInner",
+                "x": -0.000622868537902832,
+                "y": -0.2738935947418213,
+                "z": -0.6320643424987793
+              },
+              {
+                "name": "leftEye",
+                "x": -0.0011276006698608398,
+                "y": -0.2735013961791992,
+                "z": -0.6339387893676758
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": -0.0003647804260253906,
+                "y": -0.2733652591705322,
+                "z": -0.632026195526123
+              },
+              {
+                "name": "rightEyeInner",
+                "x": -0.034705162048339844,
+                "y": -0.27555012702941895,
+                "z": -0.6287150382995605
+              },
+              {
+                "name": "rightEye",
+                "x": -0.03272581100463867,
+                "y": -0.27623820304870605,
+                "z": -0.628413200378418
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": -0.03393840789794922,
+                "y": -0.27533555030822754,
+                "z": -0.6234641075134277
+              },
+              {
+                "name": "leftEar",
+                "x": 0.07486248016357422,
+                "y": -0.30572032928466797,
+                "z": -0.5633273124694824
+              },
+              {
+                "name": "rightEar",
+                "x": -0.06299781799316406,
+                "y": -0.2978096008300781,
+                "z": -0.5234150886535645
+              },
+              {
+                "name": "mouthLeft",
+                "x": 0.009855449199676514,
+                "y": -0.2292475700378418,
+                "z": -0.5896639823913574
+              },
+              {
+                "name": "mouthRight",
+                "x": -0.028666257858276367,
+                "y": -0.22545719146728516,
+                "z": -0.580446720123291
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.16267776489257812,
+                "y": -0.21072673797607422,
+                "z": -0.4523043632507324
+              },
+              {
+                "name": "rightShoulder",
+                "x": -0.13828754425048828,
+                "y": -0.22878170013427734,
+                "z": -0.3911978602409363
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.2277984619140625,
+                "y": -0.11517047882080078,
+                "z": -0.3100607395172119
+              },
+              {
+                "name": "rightElbow",
+                "x": -0.24729442596435547,
+                "y": -0.1992359161376953,
+                "z": -0.3060036897659302
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.20056810975074768,
+                "y": -0.04712390899658203,
+                "z": -0.21252870559692383
+              },
+              {
+                "name": "rightWrist",
+                "x": -0.2958705425262451,
+                "y": -0.23623943328857422,
+                "z": -0.2851715087890625
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.19406789541244507,
+                "y": -0.03385734558105469,
+                "z": -0.2211705446243286
+              },
+              {
+                "name": "rightPinky",
+                "x": -0.30770206451416016,
+                "y": -0.2504301071166992,
+                "z": -0.3020815849304199
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.17377972602844238,
+                "y": -0.063232421875,
+                "z": -0.23328545689582825
+              },
+              {
+                "name": "rightIndex",
+                "x": -0.29071688652038574,
+                "y": -0.28234195709228516,
+                "z": -0.313274621963501
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.186348557472229,
+                "y": -0.057518959045410156,
+                "z": -0.220341295003891
+              },
+              {
+                "name": "rightThumb",
+                "x": -0.28360515832901,
+                "y": -0.2494525909423828,
+                "z": -0.2905147075653076
+              },
+              {
+                "name": "leftHip",
+                "x": 0.0955495834350586,
+                "y": 0.008251547813415527,
+                "z": -0.012730121612548828
+              },
+              {
+                "name": "rightHip",
+                "x": -0.09674644470214844,
+                "y": -0.008741617202758789,
+                "z": 0.01365041732788086
+              },
+              {
+                "name": "leftKnee",
+                "x": -0.018677711486816406,
+                "y": 0.07127857208251953,
+                "z": 0.29699277877807617
+              },
+              {
+                "name": "rightKnee",
+                "x": -0.19440031051635742,
+                "y": 0.0845041275024414,
+                "z": 0.33672213554382324
+              },
+              {
+                "name": "leftAnkle",
+                "x": -0.013271331787109375,
+                "y": -0.012819766998291016,
+                "z": 0.6745214462280273
+              },
+              {
+                "name": "rightAnkle",
+                "x": -0.15525197982788086,
+                "y": 0.09692192077636719,
+                "z": 0.659968912601471
+              },
+              {
+                "name": "leftHeel",
+                "x": -0.009274959564208984,
+                "y": -0.012346744537353516,
+                "z": 0.7158243656158447
+              },
+              {
+                "name": "rightHeel",
+                "x": -0.15205740928649902,
+                "y": 0.1029815673828125,
+                "z": 0.6998711824417114
+              },
+              {
+                "name": "leftFootIndex",
+                "x": -0.012042522430419922,
+                "y": 0.07971334457397461,
+                "z": 0.7171955108642578
+              },
+              {
+                "name": "rightFootIndex",
+                "x": -0.16508233547210693,
+                "y": 0.21173667907714844,
+                "z": 0.6896994113922119
+              }
+            ],
+            "keypointCount": 33,
+            "visibleKeypointCount": 17,
+            "presentKeypointCount": 32,
+            "roiSource": "FROZEN_DFINE_PERSON_BBOX",
+            "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+            "roiPixels": {
+              "x": 343.5,
+              "y": -120.5,
+              "side": 1215.0
+            },
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.826385,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 6,
+              "torsoSpanRatio": 0.147335,
+              "bodySpanRatio": 0.460535,
+              "posePersonAreaRatio": 0.221293,
+              "reasons": []
+            },
+            "rotationRecoveryUsed": false,
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE"
+          }
+        ],
+        "personCount": 1,
+        "poseCount": 1,
+        "poseUsableCount": 1,
+        "poseWeakCount": 0,
+        "poseRejectedCount": 0,
+        "poseAttemptedPersons": 1,
+        "poseRejectedLowConfidence": 0,
+        "poseInvalidRoi": 0,
+        "unposedPersonIds": [],
+        "personPoseDiagnostics": [
+          {
+            "personId": "p1",
+            "rotationRecoveryTriggered": false,
+            "rotationRecoveryAnglesAttempted": [],
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE",
+            "selectedEvidenceStatus": "POSE_USABLE",
+            "selectedOrientation": 0,
+            "passes": [
+              {
+                "orientation": 0,
+                "modelConfidence": 0.998731,
+                "modelAccepted": true,
+                "evidenceStatus": "POSE_USABLE",
+                "qualityScore": 0.826385,
+                "inferenceMs": 6.214
+              }
+            ]
+          }
+        ],
+        "personRoiOverlapDiagnostics": {
+          "policy": "DIAGNOSTIC_ONLY_IOU_OR_CONTAINMENT_V1",
+          "iouThreshold": 0.65,
+          "containmentThreshold": 0.85,
+          "overlapPairCount": 0,
+          "possibleDuplicatePairCount": 0,
+          "pairs": [],
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "inferenceMs": 6.214,
+        "poseInferenceAttempts": 1,
+        "originalFrameCoordinates": true,
+        "faceCount": 1,
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": [
+            {
+              "faceId": "f1",
+              "status": "MATCHED",
+              "baseStatus": "MATCHED",
+              "personId": "p1",
+              "candidatePersonIds": [
+                "p1"
+              ],
+              "candidateContainment": [
+                1.0
+              ],
+              "tieBreak": {
+                "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+                "attempted": false,
+                "resolved": false,
+                "winnerPersonId": null,
+                "reason": "BASE_NOT_AMBIGUOUS"
+              }
+            }
+          ]
+        },
+        "faceAssociationSummary": {
+          "matched": 1,
+          "ambiguous": 0,
+          "unmatched": 0,
+          "resolvedByTieBreak": 0
+        },
+        "subjectEvidence": [
+          {
+            "personId": "p1",
+            "personConfidence": 0.95065,
+            "faceEvidence": {
+              "status": "MATCHED",
+              "faceIds": [
+                "f1"
+              ],
+              "confidence": 0.901564,
+              "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2"
+            },
+            "poseEvidence": {
+              "status": "POSE_USABLE",
+              "confidence": 0.998731,
+              "selectedOrientation": 0,
+              "recovered": false
+            },
+            "duplicatePersonSuspicion": false,
+            "representedPersonAssessment": {
+              "status": "NOT_ASSESSED"
+            },
+            "evidenceCompleteness": {
+              "personPresent": true,
+              "facePresent": true,
+              "posePresent": true
+            },
+            "physicalPersonEvidenceScore": 0.907725,
+            "physicalPersonEvidenceScoreAuthority": "DIAGNOSTIC_ONLY",
+            "policy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+          }
+        ],
+        "duplicatePersonEvidence": [],
+        "duplicatePersonGroups": [],
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 1,
+          "duplicatePairCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        }
+      },
+      {
+        "role": "LATE",
+        "sourceFrameIndex": 15470,
+        "sha256": "719e80f9767e6234446608b6cfcfe701553ae98f2fc4108f3f7936874846c72d",
+        "imageSize": {
+          "width": 1728,
+          "height": 1080
+        },
+        "persons": [
+          {
+            "id": "p1",
+            "bboxPixels": {
+              "x": 420,
+              "y": 1,
+              "w": 953,
+              "h": 974
+            },
+            "bboxNormalized": {
+              "x": 0.24310844915884514,
+              "y": 0.0006885528564453125,
+              "w": 0.551247861650255,
+              "h": 0.9020908073142723
+            },
+            "confidence": 0.843698
+          }
+        ],
+        "faces": [
+          {
+            "id": "f1",
+            "bboxPixels": {
+              "x": 764,
+              "y": 136,
+              "w": 349,
+              "h": 446
+            },
+            "bboxNormalized": {
+              "x": 0.44184451633029515,
+              "y": 0.12588376645688656,
+              "w": 0.20180779916268807,
+              "h": 0.41289362024377896
+            },
+            "confidence": 0.90354,
+            "landmarksPixels": [
+              {
+                "name": "rightEye",
+                "x": 871.439,
+                "y": 292.806
+              },
+              {
+                "name": "leftEye",
+                "x": 1034.164,
+                "y": 292.36
+              },
+              {
+                "name": "noseTip",
+                "x": 962.451,
+                "y": 390.716
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 884.743,
+                "y": 461.795
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 1020.259,
+                "y": 461.916
+              }
+            ],
+            "landmarksNormalized": [
+              {
+                "name": "rightEye",
+                "x": 0.5043049211855288,
+                "y": 0.27111686423972803
+              },
+              {
+                "name": "leftEye",
+                "x": 0.5984745025634766,
+                "y": 0.270704029224537
+              },
+              {
+                "name": "noseTip",
+                "x": 0.5569741284405744,
+                "y": 0.3617740207248264
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 0.5120043224758573,
+                "y": 0.42758834273726853
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 0.5904278931794343,
+                "y": 0.427700353551794
+              }
+            ],
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true
+          }
+        ],
+        "pose": [
+          {
+            "id": "pose1",
+            "personId": "p1",
+            "confidence": 0.98522,
+            "bboxPixels": {
+              "x": 696,
+              "y": 324,
+              "w": 426,
+              "h": 432
+            },
+            "bboxNormalized": {
+              "x": 0.40282523148148147,
+              "y": 0.29987407407407407,
+              "w": 0.24659201388888888,
+              "h": 0.40026759259259265
+            },
+            "keypointsPixels": [
+              {
+                "name": "nose",
+                "x": 920.671,
+                "y": 380.811,
+                "z": -953.884128,
+                "visibility": 0.999448,
+                "presence": 0.997421
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 949.432,
+                "y": 342.166,
+                "z": -958.259438,
+                "visibility": 0.999145,
+                "presence": 0.995883
+              },
+              {
+                "name": "leftEye",
+                "x": 967.294,
+                "y": 341.921,
+                "z": -958.291441,
+                "visibility": 0.999078,
+                "presence": 0.994537
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 985.122,
+                "y": 341.76,
+                "z": -958.405156,
+                "visibility": 0.998524,
+                "presence": 0.992026
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 904.915,
+                "y": 338.034,
+                "z": -943.619655,
+                "visibility": 0.999313,
+                "presence": 0.996918
+              },
+              {
+                "name": "rightEye",
+                "x": 889.532,
+                "y": 334.669,
+                "z": -944.240625,
+                "visibility": 0.999314,
+                "presence": 0.996793
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 873.705,
+                "y": 331.38,
+                "z": -944.347011,
+                "visibility": 0.999098,
+                "presence": 0.996261
+              },
+              {
+                "name": "leftEar",
+                "x": 1019.62,
+                "y": 339.071,
+                "z": -815.786123,
+                "visibility": 0.999058,
+                "presence": 0.990332
+              },
+              {
+                "name": "rightEar",
+                "x": 859.761,
+                "y": 323.864,
+                "z": -751.132604,
+                "visibility": 0.99958,
+                "presence": 0.996606
+              },
+              {
+                "name": "mouthLeft",
+                "x": 950.417,
+                "y": 408.022,
+                "z": -883.810021,
+                "visibility": 0.997358,
+                "presence": 0.990448
+              },
+              {
+                "name": "mouthRight",
+                "x": 897.318,
+                "y": 402.945,
+                "z": -865.785056,
+                "visibility": 0.997796,
+                "presence": 0.995013
+              },
+              {
+                "name": "leftShoulder",
+                "x": 1081.476,
+                "y": 405.904,
+                "z": -675.644222,
+                "visibility": 0.99686,
+                "presence": 0.987498
+              },
+              {
+                "name": "rightShoulder",
+                "x": 807.896,
+                "y": 393.676,
+                "z": -534.888861,
+                "visibility": 0.999758,
+                "presence": 0.997513
+              },
+              {
+                "name": "leftElbow",
+                "x": 1121.812,
+                "y": 515.217,
+                "z": -730.131308,
+                "visibility": 0.747417,
+                "presence": 0.901833
+              },
+              {
+                "name": "rightElbow",
+                "x": 696.082,
+                "y": 497.314,
+                "z": -694.562289,
+                "visibility": 0.900047,
+                "presence": 0.942195
+              },
+              {
+                "name": "leftWrist",
+                "x": 1109.093,
+                "y": 549.824,
+                "z": -803.646766,
+                "visibility": 0.802822,
+                "presence": 0.875581
+              },
+              {
+                "name": "rightWrist",
+                "x": 713.871,
+                "y": 469.866,
+                "z": -983.682052,
+                "visibility": 0.915821,
+                "presence": 0.980677
+              },
+              {
+                "name": "leftPinky",
+                "x": 1122.193,
+                "y": 557.933,
+                "z": -845.771999,
+                "visibility": 0.657656,
+                "presence": 0.821729
+              },
+              {
+                "name": "rightPinky",
+                "x": 700.926,
+                "y": 452.934,
+                "z": -1057.86906,
+                "visibility": 0.838683,
+                "presence": 0.973879
+              },
+              {
+                "name": "leftIndex",
+                "x": 1103.94,
+                "y": 540.94,
+                "z": -840.039946,
+                "visibility": 0.671889,
+                "presence": 0.856158
+              },
+              {
+                "name": "rightIndex",
+                "x": 732.031,
+                "y": 437.149,
+                "z": -1032.663499,
+                "visibility": 0.840289,
+                "presence": 0.98105
+              },
+              {
+                "name": "leftThumb",
+                "x": 1091.144,
+                "y": 541.76,
+                "z": -802.975578,
+                "visibility": 0.665602,
+                "presence": 0.887744
+              },
+              {
+                "name": "rightThumb",
+                "x": 747.352,
+                "y": 447.021,
+                "z": -982.486338,
+                "visibility": 0.816887,
+                "presence": 0.985005
+              },
+              {
+                "name": "leftHip",
+                "x": 1005.962,
+                "y": 584.178,
+                "z": -38.372681,
+                "visibility": 0.985531,
+                "presence": 0.940285
+              },
+              {
+                "name": "rightHip",
+                "x": 877.608,
+                "y": 578.415,
+                "z": 38.602978,
+                "visibility": 0.995449,
+                "presence": 0.983248
+              },
+              {
+                "name": "leftKnee",
+                "x": 926.324,
+                "y": 586.265,
+                "z": 441.352582,
+                "visibility": 0.139237,
+                "presence": 0.920966
+              },
+              {
+                "name": "rightKnee",
+                "x": 793.098,
+                "y": 629.26,
+                "z": 580.735415,
+                "visibility": 0.110994,
+                "presence": 0.970432
+              },
+              {
+                "name": "leftAnkle",
+                "x": 900.805,
+                "y": 610.058,
+                "z": 1108.355509,
+                "visibility": 0.05927,
+                "presence": 0.928672
+              },
+              {
+                "name": "rightAnkle",
+                "x": 796.075,
+                "y": 680.22,
+                "z": 1085.79152,
+                "visibility": 0.11475,
+                "presence": 0.941
+              },
+              {
+                "name": "leftHeel",
+                "x": 899.574,
+                "y": 600.259,
+                "z": 1186.56391,
+                "visibility": 0.076732,
+                "presence": 0.913463
+              },
+              {
+                "name": "rightHeel",
+                "x": 810.739,
+                "y": 679.466,
+                "z": 1139.782526,
+                "visibility": 0.101338,
+                "presence": 0.921081
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 870.636,
+                "y": 694.768,
+                "z": 1192.982607,
+                "visibility": 0.099426,
+                "presence": 0.824827
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 783.675,
+                "y": 756.153,
+                "z": 1069.374893,
+                "visibility": 0.161829,
+                "presence": 0.81573
+              }
+            ],
+            "keypointsNormalized": [
+              {
+                "name": "nose",
+                "x": 0.5327954366285768,
+                "y": 0.3526028268729095,
+                "z": -0.5520162780562209,
+                "visibility": 0.999448,
+                "presence": 0.997421
+              },
+              {
+                "name": "leftEyeInner",
+                "x": 0.5494399899616838,
+                "y": 0.3168203653698718,
+                "z": -0.5545482857808195,
+                "visibility": 0.999145,
+                "presence": 0.995883
+              },
+              {
+                "name": "leftEye",
+                "x": 0.5597764877602458,
+                "y": 0.3165938570957493,
+                "z": -0.5545668059063179,
+                "visibility": 0.999078,
+                "presence": 0.994537
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": 0.5700937095098197,
+                "y": 0.31644465459717647,
+                "z": -0.5546326132456737,
+                "visibility": 0.998524,
+                "presence": 0.992026
+              },
+              {
+                "name": "rightEyeInner",
+                "x": 0.5236779074529531,
+                "y": 0.3129946197900507,
+                "z": -0.5460761892781766,
+                "visibility": 0.999313,
+                "presence": 0.996918
+              },
+              {
+                "name": "rightEye",
+                "x": 0.5147754805059068,
+                "y": 0.30987863597218634,
+                "z": -0.5464355469060441,
+                "visibility": 0.999314,
+                "presence": 0.996793
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": 0.5056163965362228,
+                "y": 0.30683347378615977,
+                "z": -0.5464971126747076,
+                "visibility": 0.999098,
+                "presence": 0.996261
+              },
+              {
+                "name": "leftEar",
+                "x": 0.5900580688310718,
+                "y": 0.31395501218460226,
+                "z": -0.47209845088353314,
+                "visibility": 0.999058,
+                "presence": 0.990332
+              },
+              {
+                "name": "rightEar",
+                "x": 0.49754661931311367,
+                "y": 0.2998738709975172,
+                "z": -0.4346832198401292,
+                "visibility": 0.99958,
+                "presence": 0.996606
+              },
+              {
+                "name": "mouthLeft",
+                "x": 0.5500099142771904,
+                "y": 0.3777976895923968,
+                "z": -0.511464132513437,
+                "visibility": 0.997358,
+                "presence": 0.990448
+              },
+              {
+                "name": "mouthRight",
+                "x": 0.5192810364791917,
+                "y": 0.3730974917196565,
+                "z": -0.5010330182914104,
+                "visibility": 0.997796,
+                "presence": 0.995013
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.6258543217382221,
+                "y": 0.3758368576566378,
+                "z": -0.39099781342816575,
+                "visibility": 0.99686,
+                "presence": 0.987498
+              },
+              {
+                "name": "rightShoulder",
+                "x": 0.4675321732044082,
+                "y": 0.36451440045127165,
+                "z": -0.30954216490499675,
+                "visibility": 0.999758,
+                "presence": 0.997513
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.6491965671690801,
+                "y": 0.4770525939762592,
+                "z": -0.4225296919510044,
+                "visibility": 0.747417,
+                "presence": 0.901833
+              },
+              {
+                "name": "rightElbow",
+                "x": 0.40282510148568285,
+                "y": 0.4604760317614785,
+                "z": -0.40194576933842013,
+                "visibility": 0.900047,
+                "presence": 0.942195
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.641836098153834,
+                "y": 0.509096224302495,
+                "z": -0.4650733599232303,
+                "visibility": 0.802822,
+                "presence": 0.875581
+              },
+              {
+                "name": "rightWrist",
+                "x": 0.41311970852418906,
+                "y": 0.43506070815578657,
+                "z": -0.5692604466996811,
+                "visibility": 0.915821,
+                "presence": 0.980677
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.6494171288450835,
+                "y": 0.5166047955276789,
+                "z": -0.48945138851801556,
+                "visibility": 0.657656,
+                "presence": 0.821729
+              },
+              {
+                "name": "rightPinky",
+                "x": 0.4056286537260921,
+                "y": 0.4193836277005849,
+                "z": -0.6121927433371268,
+                "visibility": 0.838683,
+                "presence": 0.973879
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.6388539379911015,
+                "y": 0.5008702984838574,
+                "z": -0.4861342282620845,
+                "visibility": 0.671889,
+                "presence": 0.856158
+              },
+              {
+                "name": "rightIndex",
+                "x": 0.42362927080614976,
+                "y": 0.4047671918929727,
+                "z": -0.5976061917048086,
+                "visibility": 0.840289,
+                "presence": 0.98105
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.6314492894474555,
+                "y": 0.5016298504063377,
+                "z": -0.4646849412367576,
+                "visibility": 0.665602,
+                "presence": 0.887744
+              },
+              {
+                "name": "rightThumb",
+                "x": 0.43249509845756823,
+                "y": 0.41390849066277347,
+                "z": -0.5685684827363325,
+                "visibility": 0.816887,
+                "presence": 0.985005
+              },
+              {
+                "name": "leftHip",
+                "x": 0.5821538808479629,
+                "y": 0.5409059551027086,
+                "z": -0.022206412643383914,
+                "visibility": 0.985531,
+                "presence": 0.940285
+              },
+              {
+                "name": "rightHip",
+                "x": 0.50787507492566,
+                "y": 0.5355695384244125,
+                "z": 0.022339686154198176,
+                "visibility": 0.995449,
+                "presence": 0.983248
+              },
+              {
+                "name": "leftKnee",
+                "x": 0.536066947504878,
+                "y": 0.542837759576462,
+                "z": 0.25541237361418706,
+                "visibility": 0.139237,
+                "presence": 0.920966
+              },
+              {
+                "name": "rightKnee",
+                "x": 0.4589689459255034,
+                "y": 0.5826477142395796,
+                "z": 0.33607373553052267,
+                "visibility": 0.110994,
+                "presence": 0.970432
+              },
+              {
+                "name": "leftAnkle",
+                "x": 0.5212993102010202,
+                "y": 0.5648683937611403,
+                "z": 0.641409438189671,
+                "visibility": 0.05927,
+                "presence": 0.928672
+              },
+              {
+                "name": "rightAnkle",
+                "x": 0.46069161156709826,
+                "y": 0.6298333991732862,
+                "z": 0.6283515738323331,
+                "visibility": 0.11475,
+                "presence": 0.941
+              },
+              {
+                "name": "leftHeel",
+                "x": 0.5205869782991983,
+                "y": 0.5557950273156166,
+                "z": 0.686668929281748,
+                "visibility": 0.076732,
+                "presence": 0.913463
+              },
+              {
+                "name": "rightHeel",
+                "x": 0.46917794462879775,
+                "y": 0.6291347914823779,
+                "z": 0.6595963694120722,
+                "visibility": 0.101338,
+                "presence": 0.921081
+              },
+              {
+                "name": "leftFootIndex",
+                "x": 0.5038405222801009,
+                "y": 0.643303955760267,
+                "z": 0.6903834533187803,
+                "visibility": 0.099426,
+                "presence": 0.824827
+              },
+              {
+                "name": "rightFootIndex",
+                "x": 0.4535156508769702,
+                "y": 0.7001418765496324,
+                "z": 0.6188512114049108,
+                "visibility": 0.161829,
+                "presence": 0.81573
+              }
+            ],
+            "worldKeypoints": [
+              {
+                "name": "nose",
+                "x": -0.03680896759033203,
+                "y": -0.1936720609664917,
+                "z": -0.48508739471435547
+              },
+              {
+                "name": "leftEyeInner",
+                "x": -0.020498991012573242,
+                "y": -0.23012065887451172,
+                "z": -0.5015640258789062
+              },
+              {
+                "name": "leftEye",
+                "x": -0.02102971076965332,
+                "y": -0.2300105094909668,
+                "z": -0.5031290054321289
+              },
+              {
+                "name": "leftEyeOuter",
+                "x": -0.02015054225921631,
+                "y": -0.22975850105285645,
+                "z": -0.5010886192321777
+              },
+              {
+                "name": "rightEyeInner",
+                "x": -0.05240941047668457,
+                "y": -0.23593950271606445,
+                "z": -0.4958324432373047
+              },
+              {
+                "name": "rightEye",
+                "x": -0.05028176307678223,
+                "y": -0.23662257194519043,
+                "z": -0.49574851989746094
+              },
+              {
+                "name": "rightEyeOuter",
+                "x": -0.05115795135498047,
+                "y": -0.23578834533691406,
+                "z": -0.4914698600769043
+              },
+              {
+                "name": "leftEar",
+                "x": 0.06072711944580078,
+                "y": -0.25034332275390625,
+                "z": -0.4466249942779541
+              },
+              {
+                "name": "rightEar",
+                "x": -0.06570768356323242,
+                "y": -0.26629066467285156,
+                "z": -0.40099185705184937
+              },
+              {
+                "name": "mouthLeft",
+                "x": -0.01129809021949768,
+                "y": -0.17889654636383057,
+                "z": -0.46334266662597656
+              },
+              {
+                "name": "mouthRight",
+                "x": -0.04667353630065918,
+                "y": -0.18210482597351074,
+                "z": -0.4508848190307617
+              },
+              {
+                "name": "leftShoulder",
+                "x": 0.15528106689453125,
+                "y": -0.18483257293701172,
+                "z": -0.3613872528076172
+              },
+              {
+                "name": "rightShoulder",
+                "x": -0.12578201293945312,
+                "y": -0.1990976333618164,
+                "z": -0.29884764552116394
+              },
+              {
+                "name": "leftElbow",
+                "x": 0.20283269882202148,
+                "y": -0.0981893539428711,
+                "z": -0.3516666889190674
+              },
+              {
+                "name": "rightElbow",
+                "x": -0.24378681182861328,
+                "y": -0.16649341583251953,
+                "z": -0.3747981786727905
+              },
+              {
+                "name": "leftWrist",
+                "x": 0.23199698328971863,
+                "y": -0.05608654022216797,
+                "z": -0.40132588148117065
+              },
+              {
+                "name": "rightWrist",
+                "x": -0.2249741554260254,
+                "y": -0.2332448959350586,
+                "z": -0.5060415267944336
+              },
+              {
+                "name": "leftPinky",
+                "x": 0.23851782083511353,
+                "y": -0.05663585662841797,
+                "z": -0.4212297797203064
+              },
+              {
+                "name": "rightPinky",
+                "x": -0.2221648097038269,
+                "y": -0.2612428665161133,
+                "z": -0.5578787326812744
+              },
+              {
+                "name": "leftIndex",
+                "x": 0.22431927919387817,
+                "y": -0.08323287963867188,
+                "z": -0.4243762195110321
+              },
+              {
+                "name": "rightIndex",
+                "x": -0.19721150398254395,
+                "y": -0.3002967834472656,
+                "z": -0.5451323986053467
+              },
+              {
+                "name": "leftThumb",
+                "x": 0.2233692705631256,
+                "y": -0.06750965118408203,
+                "z": -0.40560388565063477
+              },
+              {
+                "name": "rightThumb",
+                "x": -0.20736926794052124,
+                "y": -0.2484273910522461,
+                "z": -0.5078387260437012
+              },
+              {
+                "name": "leftHip",
+                "x": 0.08370590209960938,
+                "y": 0.0007679462432861328,
+                "z": -0.013349294662475586
+              },
+              {
+                "name": "rightHip",
+                "x": -0.0851297378540039,
+                "y": -0.0013828277587890625,
+                "z": 0.014248847961425781
+              },
+              {
+                "name": "leftKnee",
+                "x": -0.03922271728515625,
+                "y": 0.024308204650878906,
+                "z": 0.23012113571166992
+              },
+              {
+                "name": "rightKnee",
+                "x": -0.20119190216064453,
+                "y": 0.08040904998779297,
+                "z": 0.2764129638671875
+              },
+              {
+                "name": "leftAnkle",
+                "x": -0.040452003479003906,
+                "y": 0.03986310958862305,
+                "z": 0.5744814872741699
+              },
+              {
+                "name": "rightAnkle",
+                "x": -0.215523362159729,
+                "y": 0.139068603515625,
+                "z": 0.5615392327308655
+              },
+              {
+                "name": "leftHeel",
+                "x": -0.036295413970947266,
+                "y": 0.05395984649658203,
+                "z": 0.6099803447723389
+              },
+              {
+                "name": "rightHeel",
+                "x": -0.21779155731201172,
+                "y": 0.15275096893310547,
+                "z": 0.5921878218650818
+              },
+              {
+                "name": "leftFootIndex",
+                "x": -0.03850269317626953,
+                "y": 0.17341232299804688,
+                "z": 0.5847673416137695
+              },
+              {
+                "name": "rightFootIndex",
+                "x": -0.24411630630493164,
+                "y": 0.24764060974121094,
+                "z": 0.5440760850906372
+              }
+            ],
+            "keypointCount": 33,
+            "visibleKeypointCount": 21,
+            "presentKeypointCount": 33,
+            "roiSource": "FROZEN_DFINE_PERSON_BBOX",
+            "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+            "roiPixels": {
+              "x": 287.75,
+              "y": -120.75,
+              "side": 1217.5
+            },
+            "detectionOrientation": 0,
+            "originalFrameCoordinates": true,
+            "evidenceQuality": {
+              "status": "POSE_USABLE",
+              "qualityScore": 0.880338,
+              "policy": "TORSO_SPATIAL_GATE_V1",
+              "policyVersion": 1,
+              "reliableTorsoCount": 4,
+              "reliableShoulderCount": 2,
+              "reliableHipCount": 2,
+              "reliableBodyKeypointCount": 10,
+              "torsoSpanRatio": 0.133216,
+              "bodySpanRatio": 0.43338,
+              "posePersonAreaRatio": 0.198263,
+              "reasons": []
+            },
+            "rotationRecoveryUsed": false,
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE"
+          }
+        ],
+        "personCount": 1,
+        "poseCount": 1,
+        "poseUsableCount": 1,
+        "poseWeakCount": 0,
+        "poseRejectedCount": 0,
+        "poseAttemptedPersons": 1,
+        "poseRejectedLowConfidence": 0,
+        "poseInvalidRoi": 0,
+        "unposedPersonIds": [],
+        "personPoseDiagnostics": [
+          {
+            "personId": "p1",
+            "rotationRecoveryTriggered": false,
+            "rotationRecoveryAnglesAttempted": [],
+            "rotationRecoverySelected": false,
+            "rotationRecoveryRecovered": false,
+            "baseEvidenceStatus": "POSE_USABLE",
+            "selectedEvidenceStatus": "POSE_USABLE",
+            "selectedOrientation": 0,
+            "passes": [
+              {
+                "orientation": 0,
+                "modelConfidence": 0.98522,
+                "modelAccepted": true,
+                "evidenceStatus": "POSE_USABLE",
+                "qualityScore": 0.880338,
+                "inferenceMs": 6.085
+              }
+            ]
+          }
+        ],
+        "personRoiOverlapDiagnostics": {
+          "policy": "DIAGNOSTIC_ONLY_IOU_OR_CONTAINMENT_V1",
+          "iouThreshold": 0.65,
+          "containmentThreshold": 0.85,
+          "overlapPairCount": 0,
+          "possibleDuplicatePairCount": 0,
+          "pairs": [],
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "inferenceMs": 6.085,
+        "poseInferenceAttempts": 1,
+        "originalFrameCoordinates": true,
+        "faceCount": 1,
+        "facePersonAssociations": {
+          "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "basePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "containmentThreshold": 0.85,
+          "tieBreakPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "faces": [
+            {
+              "faceId": "f1",
+              "status": "MATCHED",
+              "baseStatus": "MATCHED",
+              "personId": "p1",
+              "candidatePersonIds": [
+                "p1"
+              ],
+              "candidateContainment": [
+                1.0
+              ],
+              "tieBreak": {
+                "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+                "attempted": false,
+                "resolved": false,
+                "winnerPersonId": null,
+                "reason": "BASE_NOT_AMBIGUOUS"
+              }
+            }
+          ]
+        },
+        "faceAssociationSummary": {
+          "matched": 1,
+          "ambiguous": 0,
+          "unmatched": 0,
+          "resolvedByTieBreak": 0
+        },
+        "subjectEvidence": [
+          {
+            "personId": "p1",
+            "personConfidence": 0.843698,
+            "faceEvidence": {
+              "status": "MATCHED",
+              "faceIds": [
+                "f1"
+              ],
+              "confidence": 0.90354,
+              "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2"
+            },
+            "poseEvidence": {
+              "status": "POSE_USABLE",
+              "confidence": 0.98522,
+              "selectedOrientation": 0,
+              "recovered": false
+            },
+            "duplicatePersonSuspicion": false,
+            "representedPersonAssessment": {
+              "status": "NOT_ASSESSED"
+            },
+            "evidenceCompleteness": {
+              "personPresent": true,
+              "facePresent": true,
+              "posePresent": true
+            },
+            "physicalPersonEvidenceScore": 0.855938,
+            "physicalPersonEvidenceScoreAuthority": "DIAGNOSTIC_ONLY",
+            "policy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+          }
+        ],
+        "duplicatePersonEvidence": [],
+        "duplicatePersonGroups": [],
+        "subjectCountDiagnostics": {
+          "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "rawPersonCount": 1,
+          "duplicatePairCount": 0,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "faceCenterSeparationThreshold": 0.08,
+          "groups": [],
+          "diagnosticOnly": true,
+          "doesNotSuppressFrozenPersonCandidates": true
+        },
+        "multiPersonAmbiguityV2": {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true
+        },
+        "representedPersonAssessment": {
+          "status": "NOT_ASSESSED"
+        }
+      }
+    ],
+    "subjectCandidates": [],
+    "multiPersonAmbiguityScore": 0.08,
+    "multiPersonAmbiguityLegacy": {
+      "score": 0.08,
+      "vlmTriggerReasons": []
+    },
+    "multiPersonAmbiguityV2": {
+      "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+      "score": 0.08,
+      "level": "LOW",
+      "highFrameCount": 0,
+      "independentSubjectCountMax": 1,
+      "subjectCountLowerBoundMax": 1,
+      "subjectCountUpperBoundMax": 1,
+      "subjectCountUncertainFrameCount": 0,
+      "subjectCountConfidence": "HIGH",
+      "frames": [
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "EARLY"
+        },
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "MIDDLE"
+        },
+        {
+          "policy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "score": 0.08,
+          "level": "LOW",
+          "rawPersonCount": 1,
+          "duplicateAdjustedSubjectCount": 1,
+          "independentSubjectCount": 1,
+          "subjectCountPolicy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "subjectCountLowerBound": 1,
+          "subjectCountUpperBound": 1,
+          "subjectCountEstimate": 1,
+          "subjectCountConfidence": "HIGH",
+          "subjectCountUncertain": false,
+          "spatiallySeparatedFaceCount": 1,
+          "duplicateGroupCount": 0,
+          "collapseEligibleDuplicateGroupCount": 0,
+          "independentEvidenceConflictGroupCount": 0,
+          "unresolvedFaceAssociationCount": 0,
+          "reasons": [
+            "SINGLE_INDEPENDENT_SUBJECT"
+          ],
+          "authority": "DIAGNOSTIC_ONLY",
+          "mustNotDriveComposition": true,
+          "role": "LATE"
+        }
+      ],
+      "vlmTriggerReasons": [],
+      "legacyVlmTriggerReasons": [],
+      "legacy": {
+        "score": 0.08,
+        "vlmTriggerReasons": []
+      },
+      "authority": "DIAGNOSTIC_ONLY",
+      "mustNotDriveComposition": true
+    },
+    "vlmTriggerReasons": [],
+    "legacyVlmTriggerReasons": [],
+    "analysisUsability": "SUBJECT_EVIDENCE_PREVIEW_ONLY",
+    "underlyingEvidenceProducedByRealModels": true,
+    "modelInferenceExecutedThisRun": true,
+    "realModelInferenceExecuted": true,
+    "syntheticProvider": false,
+    "mustNotDriveComposition": true,
+    "representedPersonAssessment": {
+      "status": "NOT_ASSESSED"
+    },
+    "downstreamGate": {
+      "compositionAllowed": false,
+      "applyAllowed": false,
+      "faceIdentityAllowed": false,
+      "finalPositionAllowed": false,
+      "transformWriteAllowed": false,
+      "keyframeWriteAllowed": false,
+      "geometrySafetyStillRequired": true
+    },
+    "sourceStageCache": {
+      "poseVisionCacheHit": false,
+      "faceVisionCacheHit": false,
+      "personVisionCacheHit": false,
+      "poseCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\cache\\phase4c3\\pose_vision\\0b87a0a95d0550fd980f\\b9692f3bd8f504c13f5c30f2.json",
+      "faceCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\cache\\phase4c2b\\face_vision\\5f45b9df8cc9ff88dc72\\b9692f3bd8f504c13f5c30f2.json",
+      "personCachePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\cache\\phase4c1\\person_vision\\65809b89cbbef1a17265\\b9692f3bd8f504c13f5c30f2.json"
+    },
+    "currentRun": {
+      "phase4c4VisionCacheHit": false,
+      "underlyingStagesBypassedByPhase4c4Cache": false
+    },
+    "summary": {
+      "personDetections": 3,
+      "faceDetections": 3,
+      "poseDetections": 3,
+      "poseUsable": 3,
+      "poseWeak": 0,
+      "faceAssociationsMatched": 3,
+      "faceAssociationsAmbiguous": 0,
+      "faceAssociationsUnmatched": 0,
+      "faceAssociationsResolvedByTieBreak": 0,
+      "possibleDuplicatePersonRoiPairs": 0,
+      "duplicatePersonGroups": 0,
+      "collapseEligibleDuplicateGroups": 0,
+      "independentEvidenceConflictGroups": 0,
+      "duplicateAdjustedSubjectCountTotal": 3,
+      "independentSubjectCountMax": 1,
+      "subjectCountLowerBoundMax": 1,
+      "subjectCountUpperBoundMax": 1,
+      "subjectCountUncertainFrames": 0,
+      "multiPersonAmbiguityV2HighFrames": 0,
+      "multiPersonAmbiguityV2Score": 0.08,
+      "multiPersonAmbiguityV2Level": "LOW"
+    },
+    "note": "Phase 4C-4 integrates frozen Person/Face/Pose evidence only. Subject Evidence is diagnostic preview; Composition and Apply remain disabled."
+  },
+  "fastVisionEscalationGate": {
+    "policy": "FAST_VISION_ESCALATION_GATE_V1",
+    "decision": "FAST_VISION_CONFIDENT",
+    "reasons": [],
+    "evidence": {
+      "unresolvedFaceAssociations": 0,
+      "subjectCountUncertainFrames": 0,
+      "duplicateConflictGroups": 0,
+      "multiPersonAmbiguityLevel": "LOW",
+      "multiPersonAmbiguityScore": 0.08,
+      "weakSubjectEvidenceFrames": 0
+    },
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED"
+    ],
+    "slowVisionExecuted": false,
+    "authority": "ESCALATION_ONLY",
+    "mustNotDriveComposition": true
+  },
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "faceIdentityAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "geometrySafetyStillRequired": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase4c4\\20260907_200249\\results\\00001_5050128fea1005c39dc978f2\\fast_vision_result.json"
+}
