@@ -1,0 +1,63 @@
+{
+  "phase": "4A",
+  "batchSchema": 1,
+  "batchVersion": "0.4.0-frame-pack-contract-v1",
+  "framePackContractVersion": "1.0",
+  "capturedAt": "2026-09-07T22:18:16",
+  "readOnlyPremiere": true,
+  "aiInferenceExecuted": false,
+  "summary": {
+    "selectedCount": 1,
+    "eligibleCount": 1,
+    "packsBuilt": 1,
+    "packBuildFailed": 0,
+    "upstreamFailed": 0,
+    "skippedCount": 0,
+    "uniqueFrameSets": 1,
+    "reusedFrameSetsAcrossTimelineInstances": 0,
+    "aiInferenceExecuted": false,
+    "readOnlyPremiere": true,
+    "underlyingDecode": {
+      "batchDecodedFrames": 7,
+      "ffmpegProcessCount": 1,
+      "sourceFrameCacheHitsUnique": 0,
+      "elapsedSeconds": 0.7042370999988634
+    }
+  },
+  "contract": {
+    "purpose": "Stable local input boundary between Premiere/decode pipeline and the future AI Worker.",
+    "frameRoles": [
+      "EARLY",
+      "MIDDLE",
+      "LATE"
+    ],
+    "visionCacheSemantics": "Selected source-frame identity only; Timeline position is excluded.",
+    "compositionCacheSemantics": "Frame set + Transform/sequence composition context.",
+    "geometryAuthority": "Geometry Safety Engine remains authoritative for Final Position.",
+    "missingTransformReadOnlyEligibility": "ENABLED_FOR_ANALYSIS_ONLY"
+  },
+  "safetyContract": {
+    "premiereReadOnly": true,
+    "hostMutationAllowed": false,
+    "missingTransformDoesNotGrantWriteEligibility": true
+  },
+  "packs": [
+    {
+      "ordinal": 1,
+      "packId": "02d3b7b98b2a0a5788c1ea01",
+      "clipInstanceId": "d706194979f46e7688cf9e35",
+      "frameSetId": "0f778e4954e35891bac0fc46",
+      "logicalInputDigest": "ff74d997fd10cb1f8d1e7b2700eeeffcb24493396dcb0bb69871cba558fccb12",
+      "warnings": [],
+      "packPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase4a\\phase4c4_20260907_221815\\packs\\00001_02d3b7b98b2a0a5788c1ea01\\frame_pack.json"
+    }
+  ],
+  "packFailures": [],
+  "upstreamFailures": [],
+  "skipped": [],
+  "decodeReference": {
+    "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase3e\\phase4a_phase4c4_20260907_221815\\decode_hardening.json",
+    "localCopy": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase4a\\phase4c4_20260907_221815\\decode_hardening_reference.json"
+  },
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.4.99\\sessions\\phase4a\\phase4c4_20260907_221815\\frame_pack_batch.json"
+}
