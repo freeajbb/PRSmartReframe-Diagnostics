@@ -1,0 +1,100 @@
+{
+  "phase": "5A-1",
+  "resultSchema": 1,
+  "candidateVersion": "0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1",
+  "policy": "UNIFIED_ELIGIBILITY_GATE_V1",
+  "outputContract": "CANDIDATE_QUEUE_EVIDENCE_V1",
+  "createdAt": "2026-09-08T10:30:05+08:00",
+  "ordinal": 1,
+  "clipInstanceId": "f7508f7ff73bdbf37601733b",
+  "finalStatus": "HUMAN_REVIEW",
+  "primaryReason": "COMPOSITION_NEEDS_REVIEW",
+  "reasonCodes": [
+    "COMPOSITION_NEEDS_REVIEW"
+  ],
+  "identity": {
+    "clipInstanceId": "f7508f7ff73bdbf37601733b",
+    "fingerprint": {
+      "sequenceGuid": "34cb00d6-b15a-4e22-aa0a-57bf23dac98d",
+      "trackIndex": 0,
+      "startTicks": "724563705600000",
+      "endTicks": "725029401600000",
+      "sourceInTicks": "290535033600000",
+      "sourceOutTicks": "291000729600000",
+      "projectItemId": "95bbb2fe-9481-4891-b544-04bf86db9c86"
+    }
+  },
+  "chain": {
+    "freshness": "FRESH",
+    "integrityValid": true,
+    "conservationVerified": true,
+    "snapshotProvenanceVerified": true,
+    "reasonCodes": []
+  },
+  "upstreamEvidence": {
+    "phase4c7": {
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "humanReviewNeeded": false,
+      "representedPersonAssessment": "ASSESSED",
+      "lostFrozenRefCount": 0,
+      "unassignedFrozenRefCount": 0
+    },
+    "phase4d1": {
+      "status": "COMPOSITION_PREVIEW_READY",
+      "decision": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+      "compositionComputed": true,
+      "premierePositionComputed": false
+    },
+    "phase4d2": {
+      "status": "PREMIERE_ADAPTER_PREVIEW_READY",
+      "canonicalMathStatus": "VALID",
+      "roundTripStatus": "ROUND_TRIP_VERIFIED",
+      "hostVerificationStatus": "VERIFIED",
+      "transformCompatibility": "CANONICAL_COMPATIBLE",
+      "targetCanvasBindingStatus": "HOST_TARGET_CANVAS_BOUND_EXACT",
+      "geometry2ParameterSemanticsStatus": "GEOMETRY2_PARAMETER_SEMANTICS_VERIFIED",
+      "hostTargetMathStatus": "HOST_TARGET_MATH_VERIFIED",
+      "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_READY"
+    }
+  },
+  "safety": {
+    "clipDisabled": false,
+    "manualPositionDetected": false,
+    "positionKeyframesPresent": false,
+    "existingGeometry2Present": false,
+    "geometry2OwnershipAmbiguous": false,
+    "fingerprintUnique": true,
+    "bindingAmbiguous": false,
+    "hostGeometryMismatch": false,
+    "specialAnimation": false,
+    "humanReviewRequired": true,
+    "safetySnapshotOnly": true
+  },
+  "downstream": {
+    "reviewQueueEligible": true,
+    "reanalysisRequired": false,
+    "requiresFreshPreflight": false,
+    "executionReady": false,
+    "writeAllowed": false,
+    "recommendedNextAction": "OPEN_HUMAN_REVIEW"
+  },
+  "mustNotDrivePremiereWrite": true,
+  "executionGeometryAuthority": {
+    "contract": "PHASE5A1_EXECUTION_GEOMETRY_AUTHORITY_V2",
+    "status": "BOUND_SELF_CONTAINED",
+    "phase4d1": {
+      "originalSourcePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\upstream_snapshots\\phase4d1\\20260908_102948\\results\\00001_f7508f7ff73bdbf37601733b\\composition_preview_result.json",
+      "originalSourceSha256": "39c2b425722411c79e1af3b08489f4e17a483cdd8e2a882d56b86feeebc1646f",
+      "snapshotRelativePath": "authority_snapshots/00001_f7508f7ff73bdbf37601733b/composition_preview_result.json",
+      "snapshotSha256": "39c2b425722411c79e1af3b08489f4e17a483cdd8e2a882d56b86feeebc1646f"
+    },
+    "phase4d2": {
+      "originalSourcePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d2\\20260908_102956\\results\\00001_f7508f7ff73bdbf37601733b\\premiere_adapter_preview_result.json",
+      "originalSourceSha256": "5e3dc16dec5b0cb1fc037caf57da6fd3f8218e7742b66d041de438192e7c2d83",
+      "snapshotRelativePath": "authority_snapshots/00001_f7508f7ff73bdbf37601733b/premiere_adapter_preview_result.json",
+      "snapshotSha256": "5e3dc16dec5b0cb1fc037caf57da6fd3f8218e7742b66d041de438192e7c2d83"
+    },
+    "snapshotManifestRelativePath": "authority_snapshots/00001_f7508f7ff73bdbf37601733b/authority_snapshot_manifest.json"
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase5a1\\20260908_103005\\results\\00001_f7508f7ff73bdbf37601733b\\candidate_queue_result.json"
+}
