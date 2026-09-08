@@ -1,0 +1,2516 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-08T02:15:20.663624+00:00",
+  "stamp": "20260908_101513",
+  "app": {
+    "name": "PRSmartReframe",
+    "version": "0.5.00",
+    "phase": "Phase 5B-5 Multi-Clip Transactional Apply Pilot"
+  },
+  "gptBridge": {
+    "enabled": true,
+    "strategy": "SHALLOW_SINGLE_JSON_PLUS_CONTACT_SHEETS_V1",
+    "index": "GPT_ANALYSIS_INDEX.md",
+    "analysisBundle": "GPT_ANALYSIS_BUNDLE.json",
+    "frameScalingCalibrationBundle": null,
+    "contactSheets": [
+      "GPT_C4D2R01_PREMIERE_ADAPTER_OVERVIEW_CONTACT_SHEET.jpg",
+      "GPT_C4D2R01_PREMIERE_ADAPTER_DETAIL_CONTACT_SHEET.jpg",
+      "GPT_C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "GPT_C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "GPT_C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+      "GPT_C4C6R01_SUBJECT_FUSION_CONTACT_SHEET.jpg",
+      "GPT_C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+      "GPT_C4C4R05_SLOW_VISION_GATE_CONTACT_SHEET.jpg",
+      "GPT_C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_CONTACT_SHEET.jpg",
+      "GPT_C4C4R03B_ASSOCIATION_V2_CONTACT_SHEET.jpg"
+    ],
+    "poseBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      }
+    ],
+    "fastVisionBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": {
+          "selectedCount": 1,
+          "eligibleCount": 1,
+          "packsBuilt": 1,
+          "upstreamFailed": 0,
+          "skippedCount": 0,
+          "fastVisionReady": 1,
+          "fastVisionFailed": 0,
+          "uniqueVisionInputs": 1,
+          "fastVisionProviderCalls": 1,
+          "visionCacheHitsUnique": 0,
+          "modelInferenceExecutedUnique": 1,
+          "reusedVisionAcrossPackInstances": 0,
+          "underlyingEvidenceProducedByRealModels": true,
+          "readOnlyPremiere": true,
+          "personDetections": 3,
+          "faceDetections": 3,
+          "poseDetections": 3,
+          "poseUsable": 3,
+          "poseWeak": 0,
+          "faceAssociationsMatched": 3,
+          "faceAssociationsAmbiguous": 0,
+          "faceAssociationsUnmatched": 0,
+          "faceAssociationsResolvedByTieBreak": 0,
+          "possibleDuplicatePersonRoiPairs": 0,
+          "duplicatePersonGroups": 0,
+          "collapseEligibleDuplicateGroups": 0,
+          "independentEvidenceConflictGroups": 0,
+          "duplicateAdjustedSubjectCountTotal": 3,
+          "independentSubjectCountMax": 1,
+          "subjectCountLowerBoundMax": 1,
+          "subjectCountUpperBoundMax": 1,
+          "subjectCountUncertainFrames": 0,
+          "subjectCountUncertainClips": 0,
+          "multiPersonAmbiguityV2HighFrames": 0,
+          "multiPersonAmbiguityV2HighClips": 0,
+          "fastVisionConfidentClips": 1,
+          "needsSlowVisionClips": 0,
+          "slowVisionReasonCounts": {
+            "UNRESOLVED_FACE_ASSOCIATION": 0,
+            "SUBJECT_COUNT_UNCERTAIN": 0,
+            "DUPLICATE_GROUP_CONFLICT": 0,
+            "MULTI_PERSON_AMBIGUITY_HIGH": 0,
+            "WEAK_SUBJECT_EVIDENCE": 0
+          }
+        },
+        "provider": {
+          "providerId": "REAL_FROZEN_FAST_VISION",
+          "providerVersion": "0.4.18-frozen-stack-subject-count-uncertainty-v1",
+          "modelId": "FROZEN_DFINE_YUNET_MEDIAPIPE_STACK",
+          "synthetic": false,
+          "contractVersion": "1.0",
+          "frozenPersonProvider": {
+            "providerId": "DFINE_HF_COCO",
+            "providerVersion": "1.0-transformers",
+            "modelId": "ustc-community/dfine-medium-coco",
+            "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+            "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+            "synthetic": false,
+            "realModel": true,
+            "confidenceThreshold": 0.3,
+            "deviceRequested": "AUTO",
+            "contractVersion": "1.0"
+          },
+          "frozenFaceProvider": {
+            "providerId": "OPENCV_YUNET",
+            "providerVersion": "1.2-opencv5-rotation-fallback-hybrid-dedup",
+            "modelId": "opencv/opencv_zoo/face_detection_yunet_2026may.onnx",
+            "modelRevision": "opencv_zoo@47534e2",
+            "modelWeightsSha256": "ebafce4e3c118d6554634be5c27ab333b4c047a9a8c3faf1d7cf93101c22f0f0",
+            "synthetic": false,
+            "realModel": true,
+            "confidenceThreshold": 0.65,
+            "nmsThreshold": 0.3,
+            "topK": 5000,
+            "deviceRequested": "AUTO",
+            "rotationFallbackEnabled": true,
+            "rotationFallbackAngles": [
+              90,
+              -90
+            ],
+            "rotationFallbackTrigger": "BASE_FACE_COUNT_ZERO",
+            "crossRotationNmsThreshold": 0.3,
+            "fallbackDedupPolicy": "HYBRID_IOU_IOMIN",
+            "fallbackDedupIouThreshold": 0.3,
+            "fallbackDedupContainmentThreshold": 0.85,
+            "fallbackDedupPolicyVersion": 1,
+            "contractVersion": "1.0"
+          },
+          "frozenPoseProvider": {
+            "providerId": "OPENCV_MEDIAPIPE_POSE",
+            "providerVersion": "1.1-opencv-dnn-dfine-roi-rotation-evidence",
+            "modelId": "opencv/opencv_zoo/pose_estimation_mediapipe_2023mar.onnx",
+            "modelRevision": "opencv_zoo@39a1451",
+            "modelWeightsSha256": "9d89c599319a18fb7d2e28451a883476164543182bafca5f09eb2cf767ed2f3f",
+            "synthetic": false,
+            "realModel": true,
+            "confidenceThreshold": 0.8,
+            "deviceRequested": "AUTO",
+            "roiAdapter": "DFINE_BBOX_SQUARE_1P25_ROTATION_RECOVERY_V2",
+            "roiEnlargeFactor": 1.25,
+            "keypointVisibilityThreshold": 0.8,
+            "keypointPresenceThreshold": 0.8,
+            "rotationRecoveryEnabled": true,
+            "rotationRecoveryAngles": [
+              90,
+              -90
+            ],
+            "rotationRecoveryTrigger": "BASE_NOT_POSE_USABLE",
+            "rotationRecoveryPolicyVersion": 1,
+            "evidenceQualityPolicy": "TORSO_SPATIAL_GATE_V1",
+            "evidenceQualityPolicyVersion": 1,
+            "evidenceMinReliableTorso": 3,
+            "evidenceMinReliableBody": 4,
+            "evidenceMinTorsoSpanRatio": 0.08,
+            "evidenceMinBodySpanRatio": 0.15,
+            "evidenceMinPosePersonAreaRatio": 0.04,
+            "duplicateRoiIouThreshold": 0.65,
+            "duplicateRoiContainmentThreshold": 0.85,
+            "upstreamPersonProvider": {
+              "providerId": "DFINE_HF_COCO",
+              "providerVersion": "1.0-transformers",
+              "modelId": "ustc-community/dfine-medium-coco",
+              "modelRevision": "babd397b88f548ae6f221e3ae697b7ad51d2fa92",
+              "modelWeightsSha256": "5a53154fb87af91ad1ca3081599f21423a5681c46b613e15f2ff556837b02634",
+              "synthetic": false,
+              "realModel": true,
+              "confidenceThreshold": 0.3,
+              "deviceRequested": "AUTO",
+              "contractVersion": "1.0"
+            },
+            "contractVersion": "1.0"
+          },
+          "associationPolicy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "associationBasePolicy": "FACE_WITHIN_PERSON_IOMIN_V1",
+          "associationContainmentThreshold": 0.85,
+          "associationTieBreak": {
+            "policy": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+            "maxHeadDistanceRatio": 0.75,
+            "minHeadDistanceMargin": 0.2,
+            "poseWeakCanResolve": false,
+            "baseMatchedAndUnmatchedAreImmutable": true
+          },
+          "duplicatePersonPolicy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "duplicatePersonGrouping": {
+            "policy": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+            "poseHeadSeparationThreshold": 0.08,
+            "doesNotSuppressFrozenPersonCandidates": true
+          },
+          "subjectCountPolicy": {
+            "policy": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+            "faceCenterSeparationThreshold": 0.08,
+            "uncertainCollapsePreservesRawUpperBound": true
+          },
+          "multiPersonAmbiguityPolicy": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "subjectEvidencePolicy": "SUBJECT_EVIDENCE_PREVIEW_V1"
+        },
+        "resultCount": 1,
+        "associationVisualQa": {
+          "schemaVersion": 1,
+          "status": "C4C4R03B_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:00",
+          "selectionPolicy": "V2_RESOLVED_OR_AMBIGUOUS_FACE_OR_DUPLICATE_PERSON_ROI_V1",
+          "maxClips": 6,
+          "selectedClipCount": 0,
+          "selectedOrdinals": [],
+          "overlayCount": 0,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\C4C4R03B_ASSOCIATION_V2_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\association_visual_qa",
+          "warnings": [],
+          "rows": [],
+          "analysisAuthority": "HUMAN_VISUAL_QA_ONLY",
+          "associationPolicyUnderReview": "FACE_PERSON_GEOMETRY_POSE_TIEBREAK_V2",
+          "mustNotRecomputeFrozenEvidence": true,
+          "mustNotDriveComposition": true,
+          "compositionAllowed": false,
+          "applyAllowed": false,
+          "note": "C4C4R-03B only visualizes existing Phase 4C-4 evidence. It visualizes Association V2 results without rerunning Person/Face/Pose, recalibrating weights, or driving Composition."
+        },
+        "duplicateGroupVisualQa": {
+          "schemaVersion": 1,
+          "status": "C4C4R04_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:00",
+          "selectionPolicy": "DUPLICATE_CONFLICT_OR_ASSOCIATION_AMBIGUITY_OR_MPA_V2_V1",
+          "selectedClipCount": 0,
+          "selectedOrdinals": [],
+          "overlayCount": 0,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\duplicate_group_visual_qa",
+          "warnings": [],
+          "rows": [],
+          "analysisAuthority": "HUMAN_VISUAL_QA_ONLY",
+          "duplicateGroupingPolicyUnderReview": "DUPLICATE_PERSON_CONNECTED_COMPONENT_EVIDENCE_GUARD_V2",
+          "subjectCountPolicyUnderReview": "SUBJECT_COUNT_UNCERTAINTY_GUARD_V1",
+          "multiPersonAmbiguityPolicyUnderReview": "MULTI_PERSON_AMBIGUITY_SUBJECT_COUNT_UNCERTAINTY_V3",
+          "mustNotSuppressFrozenPersonCandidates": true,
+          "mustNotDriveComposition": true,
+          "compositionAllowed": false,
+          "applyAllowed": false
+        },
+        "slowVisionGateVisualQa": {
+          "schemaVersion": 1,
+          "status": "C4C4R05_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:00",
+          "selectionPolicy": "NEEDS_SLOW_VISION_REASON_PRIORITY_V1",
+          "selectedClipCount": 0,
+          "selectedOrdinals": [],
+          "overlayCount": 0,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\C4C4R05_SLOW_VISION_GATE_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c4\\20260908_095858\\slow_vision_gate_visual_qa",
+          "warnings": [],
+          "rows": [],
+          "analysisAuthority": "HUMAN_VISUAL_QA_ONLY",
+          "policyUnderReview": "FAST_VISION_ESCALATION_GATE_V1",
+          "slowVisionExecutionEnabled": false,
+          "mustNotDriveComposition": true,
+          "compositionAllowed": false,
+          "applyAllowed": false
+        }
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      }
+    ],
+    "slowVisionBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": {
+          "fastVisionReady": 1,
+          "fastVisionConfidentClips": 1,
+          "needsSlowVisionClips": 0,
+          "slowVisionEligible": 1,
+          "slowVisionSkippedFastConfident": 0,
+          "acceptanceSemanticEvidenceEligible": 1,
+          "acceptanceSemanticEvidenceReady": 1,
+          "slowVisionReady": 1,
+          "slowVisionFailed": 0,
+          "slowVisionProviderCalls": 1,
+          "slowVisionProviderSucceeded": 1,
+          "slowVisionProviderFailed": 0,
+          "slowVisionCacheHits": 0,
+          "slowVisionResolved": 1,
+          "slowVisionPartial": 0,
+          "slowVisionUnresolved": 0,
+          "needsHumanReviewCount": 0,
+          "autoAcceptableCount": 1,
+          "representedPersonAssessedCount": 1,
+          "representedPersonPartialCount": 0,
+          "representedPersonUnresolvedCount": 0,
+          "readOnlyPremiere": true
+        },
+        "provider": {
+          "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+          "providerVersion": "0.4.73-openai-compatible-schema-repair-hardening-v1",
+          "model": "gemini-3.1-flash-lite",
+          "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+          "requestSchema": "SLOW_VISION_REQUEST_V2",
+          "promptVersion": "SLOW_VISION_PROMPT_V4",
+          "gatePolicy": "FAST_VISION_ESCALATION_GATE_V1"
+        },
+        "resultCount": 1,
+        "slowVisionVisualQa": {
+          "schemaVersion": 1,
+          "status": "C4C5R01_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:05",
+          "selectionPolicy": "HUMAN_REVIEW_UNRESOLVED_REPRESENTED_RESOLUTION_PRIORITY_V2",
+          "selectedClipCount": 1,
+          "selectedOrdinals": [
+            1
+          ],
+          "overlayCount": 3,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c5\\20260908_095858\\C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c5\\20260908_095858\\slow_vision_visual_qa",
+          "warnings": [],
+          "rows": [
+            {
+              "ordinal": 1,
+              "status": "RESOLVED",
+              "subjectCount": {
+                "estimate": 1,
+                "confidence": "HIGH"
+              },
+              "representedPersonAssessment": "ASSESSED",
+              "needsHumanReview": false,
+              "humanReviewGate": {
+                "policy": "HUMAN_REVIEW_GATE_V1",
+                "decision": "AUTO_ACCEPTABLE",
+                "reasons": [],
+                "authority": "DETERMINISTIC_EVIDENCE_GATE",
+                "mustNotDriveComposition": true
+              },
+              "semanticSubjects": [
+                {
+                  "subjectId": "s1",
+                  "members": [
+                    "EARLY:p1",
+                    "MIDDLE:p1",
+                    "LATE:p1"
+                  ],
+                  "physicality": "REAL_PHYSICAL_PERSON",
+                  "visualImportance": "PRIMARY",
+                  "confidence": "HIGH"
+                }
+              ],
+              "frames": [
+                {
+                  "role": "EARLY",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c5\\20260908_095858\\slow_vision_visual_qa\\00001_early_slow_vision_panel.jpg"
+                },
+                {
+                  "role": "MIDDLE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c5\\20260908_095858\\slow_vision_visual_qa\\00001_middle_slow_vision_panel.jpg"
+                },
+                {
+                  "role": "LATE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c5\\20260908_095858\\slow_vision_visual_qa\\00001_late_slow_vision_panel.jpg"
+                }
+              ]
+            }
+          ],
+          "representedPersonQa": {
+            "policy": "REPRESENTED_PERSON_QA_PRIORITY_V1",
+            "selectedOrdinals": []
+          },
+          "mustNotDriveComposition": true
+        }
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      }
+    ],
+    "subjectFusionBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": {
+          "selectedCount": 1,
+          "fusionReady": 1,
+          "fusionFailed": 0,
+          "fusionResolved": 1,
+          "fusionPartial": 0,
+          "fusionUnresolved": 0,
+          "slowVisionEnrichedClips": 1,
+          "fastSingleSubjectDeterministicClips": 0,
+          "frameLocalOnlyClips": 0,
+          "humanReviewCount": 0,
+          "singlePrimaryCount": 1,
+          "multiplePrimaryCount": 0,
+          "noPrimaryCount": 0,
+          "unresolvedPrimaryCount": 0,
+          "unassignedFrozenRefCount": 0,
+          "lostFrozenRefCount": 0,
+          "invalidFrozenRefFailures": 0,
+          "readOnlyPremiere": true
+        },
+        "policy": "SUBJECT_FUSION_V1",
+        "outputContract": "FUSED_SUBJECT_EVIDENCE_V1",
+        "resultCount": 1,
+        "subjectFusionVisualQa": {
+          "schemaVersion": 2,
+          "sourceResolverPolicy": "FAST_RESULT_FRAMEPACK_SOURCE_V1",
+          "status": "C4C6R01_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:07",
+          "selectionPolicy": "FAILURE_REVIEW_UNASSIGNED_MULTIPLE_PRIMARY_FRAME_LOCAL_MULTI_SUBJECT_V1",
+          "selectedClipCount": 1,
+          "selectedOrdinals": [
+            1
+          ],
+          "overlayCount": 3,
+          "sourceFrameRequested": 3,
+          "sourceFrameResolved": 3,
+          "sourceFrameFailed": 0,
+          "blankPanelCount": 0,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c6\\20260908_095907\\C4C6R01_SUBJECT_FUSION_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c6\\20260908_095907\\subject_fusion_visual_qa",
+          "warnings": [],
+          "rows": [
+            {
+              "ordinal": 1,
+              "status": "SUBJECT_FUSION_READY",
+              "fusionStatus": "RESOLVED",
+              "fusionMode": "SLOW_VISION_ENRICHED",
+              "primarySubjectDecision": "SINGLE_PRIMARY",
+              "representedPersonAssessment": "ASSESSED",
+              "humanReview": {
+                "needed": false,
+                "reasons": [],
+                "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+              },
+              "unassignedFrozenRefCount": 0,
+              "frozenPersonRefs": [
+                "EARLY:p1",
+                "MIDDLE:p1",
+                "LATE:p1"
+              ],
+              "geometryAuthority": "FROZEN_FAST_VISION",
+              "newGeometryCreated": false,
+              "frames": [
+                {
+                  "role": "EARLY",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c6\\20260908_095907\\subject_fusion_visual_qa\\00001_early_subject_fusion_panel.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "MIDDLE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c6\\20260908_095907\\subject_fusion_visual_qa\\00001_middle_subject_fusion_panel.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "LATE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c6\\20260908_095907\\subject_fusion_visual_qa\\00001_late_subject_fusion_panel.jpg",
+                  "sourceFrameResolved": true
+                }
+              ]
+            }
+          ],
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "newGeometryCreated": false,
+          "mustNotDriveComposition": true
+        }
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      }
+    ],
+    "compositionReadinessBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": {
+          "selectedCount": 1,
+          "gateReady": 1,
+          "gateBlocked": 0,
+          "gateFailed": 0,
+          "humanReviewBlockedCount": 0,
+          "multiplePrimaryBlockedCount": 0,
+          "noPrimaryBlockedCount": 0,
+          "frameLocalBlockedCount": 0,
+          "representedPersonNotAssessedCount": 0,
+          "unassignedFrozenRefBlockedCount": 0,
+          "unresolvedFaceEvidenceBlockedCount": 0,
+          "capabilityGapBlockedCount": 0,
+          "lostFrozenRefBlockedCount": 0,
+          "invalidFusionEvidenceCount": 0,
+          "providerCalls": 0,
+          "readOnlyPremiere": true,
+          "blockReasonCounts": {}
+        },
+        "policy": "COMPOSITION_READINESS_GATE_V1",
+        "outputContract": "COMPOSITION_READINESS_EVIDENCE_V1",
+        "resultCount": 1,
+        "compositionReadinessVisualQa": {
+          "schemaVersion": 1,
+          "sourceResolverPolicy": "FAST_RESULT_FRAMEPACK_SOURCE_V1",
+          "status": "C4C7R01_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:08",
+          "selectionPolicy": "CATEGORY_COVERAGE_DEDUP_FILL_V2",
+          "selectedClipCount": 1,
+          "selectedOrdinals": [
+            1
+          ],
+          "overlayCount": 3,
+          "sourceFrameRequested": 3,
+          "sourceFrameResolved": 3,
+          "sourceFrameFailed": 0,
+          "blankPanelCount": 0,
+          "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c7\\20260908_095908\\C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c7\\20260908_095908\\composition_readiness_visual_qa",
+          "warnings": [],
+          "rows": [
+            {
+              "ordinal": 1,
+              "status": "COMPOSITION_READINESS_READY",
+              "decision": "READY_FOR_COMPOSITION_PREVIEW",
+              "blockReasons": [],
+              "fusionStatus": "RESOLVED",
+              "fusionMode": "SLOW_VISION_ENRICHED",
+              "primarySubjectDecision": "SINGLE_PRIMARY",
+              "representedPersonAssessment": "ASSESSED",
+              "humanReview": {
+                "needed": false,
+                "reasons": [],
+                "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+              },
+              "unassignedFrozenRefCount": 0,
+              "lostFrozenRefCount": 0,
+              "geometryAuthority": "FROZEN_FAST_VISION",
+              "newGeometryCreated": false,
+              "frames": [
+                {
+                  "role": "EARLY",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c7\\20260908_095908\\composition_readiness_visual_qa\\00001_early_composition_readiness_panel.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "MIDDLE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c7\\20260908_095908\\composition_readiness_visual_qa\\00001_middle_composition_readiness_panel.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "LATE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4c7\\20260908_095908\\composition_readiness_visual_qa\\00001_late_composition_readiness_panel.jpg",
+                  "sourceFrameResolved": true
+                }
+              ]
+            }
+          ],
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "newGeometryCreated": false,
+          "mustNotDriveComposition": true
+        }
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      }
+    ],
+    "compositionPreviewBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": {
+          "selectedCount": 1,
+          "previewReady": 1,
+          "previewSkipped": 0,
+          "previewFailed": 0,
+          "previewAcceptable": 0,
+          "previewWarning": 0,
+          "previewNeedsReview": 1,
+          "providerCalls": 0,
+          "readOnlyPremiere": true,
+          "premierePositionComputed": false
+        },
+        "policy": "COMPOSITION_STRATEGY_V1",
+        "outputContract": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+        "resultCount": 1,
+        "compositionPreviewVisualQa": {
+          "schemaVersion": 1,
+          "sourceResolverPolicy": "FAST_RESULT_FRAMEPACK_SOURCE_V1",
+          "status": "C4D1R01_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:11",
+          "overviewSelectedClipCount": 1,
+          "overviewFrameRequested": 1,
+          "overviewFrameResolved": 1,
+          "overviewFrameFailed": 0,
+          "overviewContactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+          "overviewRows": [
+            {
+              "ordinal": 1,
+              "status": "COMPOSITION_PREVIEW_READY",
+              "label": "COMPOSITION_PREVIEW_READY",
+              "sourceFrameRole": "MIDDLE",
+              "sourceFrameResolved": true,
+              "cropOverlayRendered": true,
+              "panelPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\composition_preview_visual_qa\\overview_00001.jpg"
+            }
+          ],
+          "readyDetailClipCount": 1,
+          "readyDetailFrameRequested": 3,
+          "readyDetailFrameResolved": 3,
+          "readyDetailFrameFailed": 0,
+          "readyDetailContactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+          "readyDetailRows": [
+            {
+              "ordinal": 1,
+              "status": "COMPOSITION_PREVIEW_READY",
+              "finalPreviewQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+              "focusPolicy": "PRIMARY_BBOX_CENTER_MEDIAN",
+              "cropPolicy": "MAX_INSCRIBED_TARGET_ASPECT",
+              "cropCenterPolicy": "FOCUS_CENTER_THEN_CLAMP",
+              "coverageQuality": "PREVIEW_NEEDS_REVIEW",
+              "motionQuality": "STATIC_STABLE",
+              "premierePositionComputed": false,
+              "frames": [
+                {
+                  "role": "EARLY",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\composition_preview_visual_qa\\ready_00001_early.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "MIDDLE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\composition_preview_visual_qa\\ready_00001_middle.jpg",
+                  "sourceFrameResolved": true
+                },
+                {
+                  "role": "LATE",
+                  "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\composition_preview_visual_qa\\ready_00001_late.jpg",
+                  "sourceFrameResolved": true
+                }
+              ]
+            }
+          ],
+          "blankPanelCount": 0,
+          "warnings": [],
+          "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d1\\20260908_095911\\composition_preview_visual_qa",
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "targetCanvasPolicy": "FIXED_1080X1920_V1",
+          "cropPolicy": "MAX_INSCRIBED_TARGET_ASPECT",
+          "focusPolicy": "PRIMARY_BBOX_CENTER_MEDIAN",
+          "cropCenterPolicy": "FOCUS_CENTER_THEN_CLAMP",
+          "premierePositionComputed": false,
+          "premiereWriteAllowed": false
+        }
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      }
+    ],
+    "premiereAdapterBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": {
+          "selectedCount": 1,
+          "resultCount": 1,
+          "adapterReady": 1,
+          "adapterReview": 0,
+          "adapterSkipped": 0,
+          "adapterFailed": 0,
+          "canonicalMathValid": 1,
+          "canonicalMathFailed": 0,
+          "roundTripVerified": 1,
+          "roundTripFailed": 0,
+          "clipBindingInventoryRuns": 1,
+          "clipBindingInventoryStatus": "VERIFIED",
+          "hostContractProbeRuns": 1,
+          "hostContractRepresentativeAttempts": 1,
+          "hostContractCalibrationProbeCount": 4,
+          "geometry2CalibrationProbeCount": 3,
+          "geometry2ContractVerified": true,
+          "perClipHostProbeAttempted": 1,
+          "perClipHostProbeSucceeded": 1,
+          "perClipHostProbeFailed": 0,
+          "hostReadRetryCount": 0,
+          "disabledClipCount": 0,
+          "bindingAmbiguousCount": 0,
+          "hostGeometryVerified": 1,
+          "linkedMediaRasterReady": 1,
+          "hostGeometryMismatch": 0,
+          "targetTransformAbsent": 1,
+          "targetTransformPresentUnique": 0,
+          "targetTransformAlreadyPresent": 0,
+          "targetTransformAnimated": 0,
+          "targetTransformAmbiguous": 0,
+          "targetTransformUnknown": 0,
+          "foreignTransformPresent": 0,
+          "canonicalCompatible": 1,
+          "noncanonicalStatic": 0,
+          "specialAnimation": 0,
+          "transformUnknown": 0,
+          "frameSizeScalingDiscoveryAttempted": 1,
+          "frameSizeScalingDiscoveryCompleted": 1,
+          "frameSizeScalingLiveFactCandidate": 0,
+          "frameSizeScalingCorrelatedCandidate": 0,
+          "frameSizeScalingDiagnosticHintOnly": 1,
+          "frameSizeScalingDiscoveryIncomplete": 0,
+          "effectiveMappingAttempted": 1,
+          "effectiveMappingVerified": 1,
+          "effectiveMappingReview": 0,
+          "effectiveMappingUnavailable": 0,
+          "workflowProfileConfirmed": 1,
+          "workflowProfileUnconfirmed": 0,
+          "fitEquivalentGeometry": 0,
+          "fitNonEquivalentGeometry": 1,
+          "effectiveMappingRoundTripVerified": 1,
+          "effectiveMappingRoundTripFailed": 0,
+          "frameMappingPrerequisiteAttempted": 1,
+          "frameMappingPrerequisiteSatisfied": 1,
+          "frameMappingPrerequisiteBlocked": 0,
+          "frameMappingPrerequisiteUnknown": 0,
+          "frameMappingAuthorityHostFact": 0,
+          "frameMappingAuthorityEffectiveMapping": 1,
+          "hostTargetCanvasBindingAttempted": 1,
+          "hostTargetCanvasBoundExact": 1,
+          "hostTargetCanvasMismatch": 0,
+          "hostTargetCanvasUnavailable": 0,
+          "geometry2ParameterSemanticsVerified": 1,
+          "geometry2ParameterSemanticsIncomplete": 0,
+          "hostTargetMathAttempted": 1,
+          "hostTargetMathVerified": 1,
+          "hostTargetMathReview": 0,
+          "hostTargetMathBlocked": 0,
+          "hostTargetRoundTripVerified": 1,
+          "hostTargetRoundTripFailed": 0,
+          "cleanTargetPreviewAttempted": 1,
+          "cleanTargetPreviewReady": 1,
+          "cleanTargetPreviewReview": 0,
+          "cleanTargetPreviewSkipped": 0,
+          "cleanTargetPreviewFailed": 0,
+          "acceptanceCalibrationPoolUsed": true,
+          "acceptanceCalibrationProbeRpcCount": 4,
+          "motionCalibrationCandidateProbeCount": 1,
+          "motionCalibrationSupplementalProbeCount": 3,
+          "geometry2CalibrationLiveProbeCount": 3,
+          "geometry2CalibrationCleanProbeCount": 1,
+          "providerCalls": 0,
+          "premiereReadOnly": true,
+          "premiereWriteCalls": 0
+        },
+        "policy": "PREMIERE_POSITION_ADAPTER_V1",
+        "outputContract": "PREMIERE_ADAPTER_PREVIEW_EVIDENCE_V1",
+        "resultCount": 1,
+        "premiereAdapterVisualQa": {
+          "schemaVersion": 1,
+          "status": "C4D2R01_VISUAL_QA_READY",
+          "createdAt": "2026-09-08T09:59:27",
+          "sourceResolverPolicy": "PHASE4D1_SNAPSHOT_QA_OR_CURRENT_LINKED_MEDIA_V1",
+          "canonicalTargetRenderPolicy": "FINAL_SOURCE_CROP_TO_FIXED_VIRTUAL_SEQUENCE",
+          "targetSequencePolicy": "VIRTUAL_FIXED_1080X1920",
+          "premiereRenderPerformed": false,
+          "premiereWritePerformed": false,
+          "overviewSelectedClipCount": 1,
+          "overviewFrameRequested": 1,
+          "overviewFrameResolved": 1,
+          "overviewFrameFailed": 0,
+          "overviewCanonicalOverlayCount": 1,
+          "detailEligibleClipCount": 1,
+          "detailSourceFrameRequested": 3,
+          "detailSourceFrameResolved": 3,
+          "detailSourceFrameFailed": 0,
+          "detailTargetFrameRequested": 3,
+          "detailTargetFrameRendered": 3,
+          "detailTargetFrameFailed": 0,
+          "evidenceCardRequested": 1,
+          "evidenceCardRendered": 1,
+          "adapterReadyCount": 1,
+          "adapterReviewCount": 0,
+          "adapterSkippedCount": 0,
+          "adapterFailedCount": 0,
+          "invalidAdapterMathClipCount": 0,
+          "cleanTargetPreviewReadyCount": 1,
+          "hostTargetMathVerifiedCount": 1,
+          "offlineTargetMathRenderRequested": 3,
+          "offlineTargetMathRenderResolved": 3,
+          "offlineTargetMathRenderFailed": 0,
+          "blankPanelCount": 0,
+          "warnings": [],
+          "overviewContactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d2\\20260908_095925\\C4D2R01_PREMIERE_ADAPTER_OVERVIEW_CONTACT_SHEET.jpg",
+          "detailContactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase4d2\\20260908_095925\\C4D2R01_PREMIERE_ADAPTER_DETAIL_CONTACT_SHEET.jpg"
+        }
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      }
+    ],
+    "candidateQueueBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": {
+          "selectedCount": 1,
+          "resultCount": 1,
+          "autoReady": 0,
+          "humanReview": 1,
+          "skipped": 0,
+          "failed": 0,
+          "freshChain": 1,
+          "staleChain": 0,
+          "brokenChain": 0,
+          "reanalysisRequired": 0,
+          "freshPreflightRequired": 0,
+          "specialAnimation": 0,
+          "manualPosition": 0,
+          "existingGeometry2": 0,
+          "fingerprintAmbiguous": 0,
+          "premiereWriteCalls": 0,
+          "providerCalls": 0,
+          "premiereReadOnly": true
+        },
+        "policy": "UNIFIED_ELIGIBILITY_GATE_V1",
+        "outputContract": "CANDIDATE_QUEUE_EVIDENCE_V1",
+        "resultCount": 1,
+        "executionGeometryAuthorityContracts": [
+          "PHASE5A1_EXECUTION_GEOMETRY_AUTHORITY_V2"
+        ],
+        "executionGeometryAuthorityStatuses": [
+          "BOUND_SELF_CONTAINED"
+        ]
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      }
+    ],
+    "humanReviewBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095858",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095907",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095908",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095911",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095925",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095938",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_095944",
+        "queueSummary": {
+          "sourceSelectedCount": 1,
+          "humanReviewSourceCount": 1,
+          "queueItemCount": 1,
+          "pendingReview": 1,
+          "decisionRecorded": 0,
+          "stale": 0,
+          "superseded": 0,
+          "invalid": 0,
+          "providerCalls": 0,
+          "premiereWriteCalls": 0,
+          "premiereReadOnly": true
+        },
+        "decisionSummary": {
+          "queueItemCount": 1,
+          "pendingReview": 0,
+          "decisionRecorded": 1,
+          "stale": 0,
+          "superseded": 0,
+          "invalid": 0,
+          "approvedForNextStage": 1,
+          "rejected": 0,
+          "needsReanalysis": 0,
+          "deferred": 0,
+          "premiereWriteCalls": 0,
+          "providerCalls": 0,
+          "premiereReadOnly": true
+        },
+        "queueItemCount": 1,
+        "revisionCount": 1
+      },
+      {
+        "sessionId": "20260908_100002",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_100014",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "phase5b5",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      }
+    ],
+    "executionPreflightBatchSummaries": [
+      {
+        "sessionId": "00001_a7fef2d4481aff9343fe0597",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095858",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095907",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095908",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095911",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095925",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095938",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_095944",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_100002",
+        "summary": {
+          "blocked": 0,
+          "executionReady": 1,
+          "failed": 0,
+          "inputCount": 1,
+          "invalid": 0,
+          "premiereReadOnly": true,
+          "premiereWriteCalls": 0,
+          "providerCalls": 0,
+          "ready": 1,
+          "resultCount": 1,
+          "stale": 0
+        },
+        "resultCount": 1,
+        "planCount": 1
+      },
+      {
+        "sessionId": "20260908_100014",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "20260908_100325_179964_phase5b5_next",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "phase5b5",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      }
+    ],
+    "phase5b5Latest": {
+      "sessionId": "20260908_100311_004735",
+      "relativePath": "sessions/phase5b5/20260908_100311_004735",
+      "pilotSummary": {
+        "phase": "5B-5",
+        "schemaVersion": 1,
+        "authority": "DIAGNOSTIC_AUDIT_ONLY",
+        "phase5b5Verified": false,
+        "buildId": "0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1",
+        "pilotId": "b53633a0bb7db95545bc0b5c0e65ac9f56b45e3583fa776e3238b124fcea0946",
+        "pilotStatus": "STOPPED_ON_ITEM_FAILURE",
+        "executionOrder": [
+          "0773c62b9a0d3a536b610f504554ff533f4995c2232d50c5b9b3f43b228cb225",
+          "94372e272175400495c87116b5c79bb5b7348c8063e90bfef960ccc874ad405c",
+          "565b0ddee74c730fc6e1569f352ab509f48777bfde28b7308cd68fff26d72310"
+        ],
+        "itemCount": 3,
+        "committedCount": 1,
+        "recoveryRequiredCount": 0,
+        "executionOrderChangedCount": 0,
+        "duplicateDispatchCount": 0,
+        "receiptlessCommittedCount": 0,
+        "parallelMutationCount": 0,
+        "laterDispatchAfterStopCount": 0,
+        "laterDispatchAfterCancelCount": 0,
+        "unverifiedItemExecutedCount": 0,
+        "restartReconciliationPremiereWriteCalls": 0,
+        "restartReconciliationMutationRpcDispatchCount": 0,
+        "negativePremiereWriteCalls": 0,
+        "totalControlledPremiereWriteCalls": 2,
+        "providerCalls": 0,
+        "ledgerUnhealthyCount": 0,
+        "items": [
+          {
+            "ordinal": 1,
+            "transactionId": "0773c62b9a0d3a536b610f504554ff533f4995c2232d50c5b9b3f43b228cb225",
+            "clipInstanceId": "a7fef2d4481aff9343fe0597",
+            "state": "COMMITTED",
+            "dispatchGeneration": 1,
+            "dispatchIntentPersisted": true,
+            "mutationRpcDispatchCount": 1,
+            "receiptPresent": true,
+            "premiereWriteCalls": 2,
+            "providerCalls": 0
+          },
+          {
+            "ordinal": 2,
+            "transactionId": "94372e272175400495c87116b5c79bb5b7348c8063e90bfef960ccc874ad405c",
+            "clipInstanceId": "ef6cb754d25aca8f281a52fa",
+            "state": "BLOCKED_NO_WRITE",
+            "dispatchGeneration": 0,
+            "dispatchIntentPersisted": false,
+            "mutationRpcDispatchCount": 0,
+            "receiptPresent": false,
+            "premiereWriteCalls": 0,
+            "providerCalls": 0
+          },
+          {
+            "ordinal": 3,
+            "transactionId": "565b0ddee74c730fc6e1569f352ab509f48777bfde28b7308cd68fff26d72310",
+            "clipInstanceId": "f422c43ce7bfee0304ab2c7a",
+            "state": "PENDING",
+            "dispatchGeneration": 0,
+            "dispatchIntentPersisted": false,
+            "mutationRpcDispatchCount": 0,
+            "receiptPresent": false,
+            "premiereWriteCalls": 0,
+            "providerCalls": 0
+          }
+        ]
+      },
+      "safetyInvariants": {
+        "phase": "5B-5",
+        "schemaVersion": 1,
+        "authority": "DIAGNOSTIC_AUDIT_ONLY",
+        "scope": "SAFETY_INVARIANTS_ONLY",
+        "phase5b5Verified": false,
+        "pilotId": "b53633a0bb7db95545bc0b5c0e65ac9f56b45e3583fa776e3238b124fcea0946",
+        "pilotStatus": "STOPPED_ON_ITEM_FAILURE",
+        "verified": true,
+        "reasonCodes": [],
+        "executionOrderChangedCount": 0,
+        "duplicateDispatchCount": 0,
+        "receiptlessCommittedCount": 0,
+        "parallelMutationCount": 0,
+        "laterDispatchAfterStopCount": 0,
+        "laterDispatchAfterCancelCount": 0,
+        "unverifiedItemExecutedCount": 0,
+        "restartReconciliationPremiereWriteCalls": 0,
+        "restartReconciliationMutationRpcDispatchCount": 0,
+        "negativePremiereWriteCalls": 0,
+        "totalControlledPremiereWriteCalls": 2,
+        "providerCalls": 0,
+        "ledgerUnhealthyCount": 0
+      },
+      "authority": "DIAGNOSTIC_AUDIT_ONLY",
+      "phase5b5Verified": false
+    },
+    "note": "These shallow artifacts duplicate sanitized diagnostic evidence specifically to avoid deep GitHub blob/cache traversal failures."
+  },
+  "privacy": {
+    "sanitized": true,
+    "redactionCount": 387,
+    "windowsUsernameRedacted": true,
+    "credentialsStored": false,
+    "note": "Secrets are pattern-redacted before export. Review before publishing if logs may contain unusual private data."
+  },
+  "files": [
+    {
+      "path": "desktop_log.txt",
+      "source": "ui_log",
+      "size": 26481071
+    },
+    {
+      "path": "runtime_state.json",
+      "source": "desktop_state",
+      "size": 24703
+    },
+    {
+      "path": "snapshot/locked_targets.json",
+      "source": "C:\\Users\\XBS\\Desktop\\PRSmartReframe_Phase5B5_0.5.00\\sessions\\phase1b\\locked_targets_20260908_095858.json",
+      "size": 3601
+    },
+    {
+      "path": "sessions/authority/phase4d2_host_render_authority_freeze_0.4.50.json",
+      "source": "authority/phase4d2_host_render_authority_freeze_0.4.50.json",
+      "size": 3300
+    },
+    {
+      "path": "sessions/authority/phase4d2_host_render_authority_seed_0.4.49.json",
+      "source": "authority/phase4d2_host_render_authority_seed_0.4.49.json",
+      "size": 3420
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/fresh_host_snapshot.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/fresh_host_snapshot.json",
+      "size": 1459909
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_execution_plan_snapshot.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_execution_plan_snapshot.json",
+      "size": 1797
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_host_snapshot.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_host_snapshot.json",
+      "size": 1459909
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_preflight_result_snapshot.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/source_preflight_result_snapshot.json",
+      "size": 1747
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/transaction_authorization.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/transaction_authorization.json",
+      "size": 3327
+    },
+    {
+      "path": "sessions/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/transaction_reservation.json",
+      "source": "sessions/phase5b2/20260908_100014/results/00001_a7fef2d4481aff9343fe0597/transaction_reservation.json",
+      "size": 1610
+    },
+    {
+      "path": "sessions/20260908_100014/transaction_authorization_batch.json",
+      "source": "sessions/phase5b2/20260908_100014/transaction_authorization_batch.json",
+      "size": 4912
+    },
+    {
+      "path": "sessions/20260908_100002/execution_preflight_batch.json",
+      "source": "sessions/phase5b1/20260908_100002/execution_preflight_batch.json",
+      "size": 4158
+    },
+    {
+      "path": "sessions/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/execution_plan.json",
+      "source": "sessions/phase5b1/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/execution_plan.json",
+      "size": 1797
+    },
+    {
+      "path": "sessions/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/execution_preflight_result.json",
+      "source": "sessions/phase5b1/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/execution_preflight_result.json",
+      "size": 1747
+    },
+    {
+      "path": "sessions/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/host_snapshot.json",
+      "source": "sessions/phase5b1/20260908_100002/results/00001_a7fef2d4481aff9343fe0597/host_snapshot.json",
+      "size": 1459909
+    },
+    {
+      "path": "sessions/20260908_095944/human_review_decision_batch.json",
+      "source": "sessions/phase5a2/20260908_095944/human_review_decision_batch.json",
+      "size": 1994
+    },
+    {
+      "path": "sessions/20260908_095944/human_review_queue_batch.json",
+      "source": "sessions/phase5a2/20260908_095944/human_review_queue_batch.json",
+      "size": 1812
+    },
+    {
+      "path": "sessions/20260908_095944/results/00001_a7fef2d4481aff9343fe0597/human_review_queue_item.json",
+      "source": "sessions/phase5a2/20260908_095944/results/00001_a7fef2d4481aff9343fe0597/human_review_queue_item.json",
+      "size": 6324
+    },
+    {
+      "path": "sessions/20260908_095944/review_decisions/a7fef2d4481aff9343fe0597/revision_0001_hrd_fdc957120b530ea173e5848d.json",
+      "source": "sessions/phase5a2/20260908_095944/review_decisions/a7fef2d4481aff9343fe0597/revision_0001_hrd_fdc957120b530ea173e5848d.json",
+      "size": 1946
+    },
+    {
+      "path": "sessions/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/authority_snapshot_manifest.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/authority_snapshot_manifest.json",
+      "size": 1261
+    },
+    {
+      "path": "sessions/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "size": 5216
+    },
+    {
+      "path": "sessions/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "size": 33207
+    },
+    {
+      "path": "sessions/20260908_095938/candidate_queue_batch.json",
+      "source": "sessions/phase5a1/20260908_095938/candidate_queue_batch.json",
+      "size": 2882
+    },
+    {
+      "path": "sessions/20260908_095938/results/00001_a7fef2d4481aff9343fe0597/candidate_queue_result.json",
+      "source": "sessions/phase5a1/20260908_095938/results/00001_a7fef2d4481aff9343fe0597/candidate_queue_result.json",
+      "size": 4354
+    },
+    {
+      "path": "sessions/20260908_095925/C4D2R01_PREMIERE_ADAPTER_DETAIL_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4d2/20260908_095925/C4D2R01_PREMIERE_ADAPTER_DETAIL_CONTACT_SHEET.jpg",
+      "size": 186735
+    },
+    {
+      "path": "sessions/20260908_095925/C4D2R01_PREMIERE_ADAPTER_OVERVIEW_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4d2/20260908_095925/C4D2R01_PREMIERE_ADAPTER_OVERVIEW_CONTACT_SHEET.jpg",
+      "size": 32317
+    },
+    {
+      "path": "sessions/20260908_095925/C4D2R01_PREMIERE_ADAPTER_QA_MANIFEST.json",
+      "source": "sessions/phase4d2/20260908_095925/C4D2R01_PREMIERE_ADAPTER_QA_MANIFEST.json",
+      "size": 1611
+    },
+    {
+      "path": "sessions/20260908_095925/phase4d2_acceptance_calibration_probe_pool.json",
+      "source": "sessions/phase4d2/20260908_095925/phase4d2_acceptance_calibration_probe_pool.json",
+      "size": 2989
+    },
+    {
+      "path": "sessions/20260908_095925/premiere_adapter_preview_batch.json",
+      "source": "sessions/phase4d2/20260908_095925/premiere_adapter_preview_batch.json",
+      "size": 5975
+    },
+    {
+      "path": "sessions/20260908_095925/premiere_transform_host_probe.json",
+      "source": "sessions/phase4d2/20260908_095925/premiere_transform_host_probe.json",
+      "size": 31503
+    },
+    {
+      "path": "sessions/20260908_095925/results/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "source": "sessions/phase4d2/20260908_095925/results/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "size": 33207
+    },
+    {
+      "path": "sessions/20260908_095925/results/00001_a7fef2d4481aff9343fe0597/premiere_transform_probe.json",
+      "source": "sessions/phase4d2/20260908_095925/results/00001_a7fef2d4481aff9343fe0597/premiere_transform_probe.json",
+      "size": 17608
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "size": 22397
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_QA_MANIFEST.json",
+      "source": "sessions/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_QA_MANIFEST.json",
+      "size": 3013
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "size": 100873
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_batch.json",
+      "source": "sessions/phase4d1/20260908_095911/composition_preview_batch.json",
+      "size": 6170
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/overview_00001.jpg",
+      "source": "sessions/phase4d1/20260908_095911/composition_preview_visual_qa/overview_00001.jpg",
+      "size": 19757
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_early.jpg",
+      "source": "sessions/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_early.jpg",
+      "size": 35464
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_late.jpg",
+      "source": "sessions/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_late.jpg",
+      "size": 34655
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_middle.jpg",
+      "source": "sessions/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_middle.jpg",
+      "size": 36187
+    },
+    {
+      "path": "sessions/20260908_095911/results/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "source": "sessions/phase4d1/20260908_095911/results/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "size": 4938
+    },
+    {
+      "path": "sessions/20260908_095908/C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c7/20260908_095908/C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+      "size": 89836
+    },
+    {
+      "path": "sessions/20260908_095908/C4C7R01_COMPOSITION_READINESS_QA_MANIFEST.json",
+      "source": "sessions/phase4c7/20260908_095908/C4C7R01_COMPOSITION_READINESS_QA_MANIFEST.json",
+      "size": 2413
+    },
+    {
+      "path": "sessions/20260908_095908/composition_readiness_batch.json",
+      "source": "sessions/phase4c7/20260908_095908/composition_readiness_batch.json",
+      "size": 6117
+    },
+    {
+      "path": "sessions/20260908_095908/composition_readiness_visual_qa/00001_early_composition_readiness_panel.jpg",
+      "source": "sessions/phase4c7/20260908_095908/composition_readiness_visual_qa/00001_early_composition_readiness_panel.jpg",
+      "size": 31637
+    },
+    {
+      "path": "sessions/20260908_095908/composition_readiness_visual_qa/00001_late_composition_readiness_panel.jpg",
+      "source": "sessions/phase4c7/20260908_095908/composition_readiness_visual_qa/00001_late_composition_readiness_panel.jpg",
+      "size": 30521
+    },
+    {
+      "path": "sessions/20260908_095908/composition_readiness_visual_qa/00001_middle_composition_readiness_panel.jpg",
+      "source": "sessions/phase4c7/20260908_095908/composition_readiness_visual_qa/00001_middle_composition_readiness_panel.jpg",
+      "size": 32369
+    },
+    {
+      "path": "sessions/20260908_095908/results/00001_a7fef2d4481aff9343fe0597/composition_readiness_result.json",
+      "source": "sessions/phase4c7/20260908_095908/results/00001_a7fef2d4481aff9343fe0597/composition_readiness_result.json",
+      "size": 2314
+    },
+    {
+      "path": "sessions/20260908_095907/C4C6R01_SUBJECT_FUSION_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c6/20260908_095907/C4C6R01_SUBJECT_FUSION_CONTACT_SHEET.jpg",
+      "size": 80926
+    },
+    {
+      "path": "sessions/20260908_095907/C4C6R01_SUBJECT_FUSION_QA_MANIFEST.json",
+      "source": "sessions/phase4c6/20260908_095907/C4C6R01_SUBJECT_FUSION_QA_MANIFEST.json",
+      "size": 2380
+    },
+    {
+      "path": "sessions/20260908_095907/results/00001_a7fef2d4481aff9343fe0597/subject_fusion_result.json",
+      "source": "sessions/phase4c6/20260908_095907/results/00001_a7fef2d4481aff9343fe0597/subject_fusion_result.json",
+      "size": 3048
+    },
+    {
+      "path": "sessions/20260908_095907/subject_fusion_batch.json",
+      "source": "sessions/phase4c6/20260908_095907/subject_fusion_batch.json",
+      "size": 7716
+    },
+    {
+      "path": "sessions/20260908_095907/subject_fusion_visual_qa/00001_early_subject_fusion_panel.jpg",
+      "source": "sessions/phase4c6/20260908_095907/subject_fusion_visual_qa/00001_early_subject_fusion_panel.jpg",
+      "size": 28480
+    },
+    {
+      "path": "sessions/20260908_095907/subject_fusion_visual_qa/00001_late_subject_fusion_panel.jpg",
+      "source": "sessions/phase4c6/20260908_095907/subject_fusion_visual_qa/00001_late_subject_fusion_panel.jpg",
+      "size": 27380
+    },
+    {
+      "path": "sessions/20260908_095907/subject_fusion_visual_qa/00001_middle_subject_fusion_panel.jpg",
+      "source": "sessions/phase4c6/20260908_095907/subject_fusion_visual_qa/00001_middle_subject_fusion_panel.jpg",
+      "size": 29233
+    },
+    {
+      "path": "sessions/20260908_095858/C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c5/20260908_095858/C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+      "size": 68846
+    },
+    {
+      "path": "sessions/20260908_095858/C4C5R01_SLOW_VISION_EVIDENCE_QA_MANIFEST.json",
+      "source": "sessions/phase4c5/20260908_095858/C4C5R01_SLOW_VISION_EVIDENCE_QA_MANIFEST.json",
+      "size": 2277
+    },
+    {
+      "path": "sessions/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/early_candidate_overlay.jpg",
+      "source": "sessions/phase4c5/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/early_candidate_overlay.jpg",
+      "size": 155296
+    },
+    {
+      "path": "sessions/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/late_candidate_overlay.jpg",
+      "source": "sessions/phase4c5/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/late_candidate_overlay.jpg",
+      "size": 148724
+    },
+    {
+      "path": "sessions/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/middle_candidate_overlay.jpg",
+      "source": "sessions/phase4c5/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/middle_candidate_overlay.jpg",
+      "size": 164947
+    },
+    {
+      "path": "sessions/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/slow_vision_request.json",
+      "source": "sessions/phase4c5/20260908_095858/requests/00001_a7fef2d4481aff9343fe0597/slow_vision_request.json",
+      "size": 18293
+    },
+    {
+      "path": "sessions/20260908_095858/results/00001_a7fef2d4481aff9343fe0597/slow_vision_result.json",
+      "source": "sessions/phase4c5/20260908_095858/results/00001_a7fef2d4481aff9343fe0597/slow_vision_result.json",
+      "size": 3984
+    },
+    {
+      "path": "sessions/20260908_095858/slow_vision_batch.json",
+      "source": "sessions/phase4c5/20260908_095858/slow_vision_batch.json",
+      "size": 5730
+    },
+    {
+      "path": "sessions/20260908_095858/slow_vision_visual_qa/00001_early_slow_vision_panel.jpg",
+      "source": "sessions/phase4c5/20260908_095858/slow_vision_visual_qa/00001_early_slow_vision_panel.jpg",
+      "size": 24277
+    },
+    {
+      "path": "sessions/20260908_095858/slow_vision_visual_qa/00001_late_slow_vision_panel.jpg",
+      "source": "sessions/phase4c5/20260908_095858/slow_vision_visual_qa/00001_late_slow_vision_panel.jpg",
+      "size": 23393
+    },
+    {
+      "path": "sessions/20260908_095858/slow_vision_visual_qa/00001_middle_slow_vision_panel.jpg",
+      "source": "sessions/phase4c5/20260908_095858/slow_vision_visual_qa/00001_middle_slow_vision_panel.jpg",
+      "size": 25086
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "size": 22397
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_QA_MANIFEST.json",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_QA_MANIFEST.json",
+      "size": 3013
+    },
+    {
+      "path": "sessions/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "size": 100873
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_batch.json",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/composition_preview_batch.json",
+      "size": 6468
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/overview_00001.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/composition_preview_visual_qa/overview_00001.jpg",
+      "size": 19757
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_early.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_early.jpg",
+      "size": 35464
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_late.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_late.jpg",
+      "size": 34655
+    },
+    {
+      "path": "sessions/20260908_095911/composition_preview_visual_qa/ready_00001_middle.jpg",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/composition_preview_visual_qa/ready_00001_middle.jpg",
+      "size": 36187
+    },
+    {
+      "path": "sessions/20260908_095911/results/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/results/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "size": 5216
+    },
+    {
+      "path": "sessions/20260908_095911/snapshot_manifest.json",
+      "source": "sessions/upstream_snapshots/phase4d1/20260908_095911/snapshot_manifest.json",
+      "size": 2456
+    },
+    {
+      "path": "sessions/00001_a7fef2d4481aff9343fe0597/authority_snapshot_manifest.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/authority_snapshot_manifest.json",
+      "size": 1261
+    },
+    {
+      "path": "sessions/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/composition_preview_result.json",
+      "size": 5216
+    },
+    {
+      "path": "sessions/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "source": "sessions/phase5a1/20260908_095938/authority_snapshots/00001_a7fef2d4481aff9343fe0597/premiere_adapter_preview_result.json",
+      "size": 33207
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/canary_apply_batch.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/canary_apply_batch.json",
+      "size": 1279
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/host_write_result.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/host_write_result.json",
+      "size": 21684
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/mutation_attempt.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/mutation_attempt.json",
+      "size": 339
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/mutation_request.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/mutation_request.json",
+      "size": 6361
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/post_write_host_snapshot.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/post_write_host_snapshot.json",
+      "size": 1465172
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/post_write_verification.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/post_write_verification.json",
+      "size": 201
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/pre_write_host_snapshot.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/pre_write_host_snapshot.json",
+      "size": 1459909
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_execution_plan_snapshot.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_execution_plan_snapshot.json",
+      "size": 1797
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_transaction_authorization_snapshot.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_transaction_authorization_snapshot.json",
+      "size": 3327
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_transaction_reservation_snapshot.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/source_transaction_reservation_snapshot.json",
+      "size": 1610
+    },
+    {
+      "path": "sessions/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/transaction_receipt.json",
+      "source": "sessions/phase5b3/20260908_100325_179964_phase5b5_next/results/00001_a7fef2d4481aff9343fe0597/transaction_receipt.json",
+      "size": 7400
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R03B_ASSOCIATION_V2_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R03B_ASSOCIATION_V2_CONTACT_SHEET.jpg",
+      "size": 3119
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R03B_ASSOCIATION_V2_QA_MANIFEST.json",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R03B_ASSOCIATION_V2_QA_MANIFEST.json",
+      "size": 1067
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_CONTACT_SHEET.jpg",
+      "size": 3119
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_QA_MANIFEST.json",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_QA_MANIFEST.json",
+      "size": 1078
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R05_SLOW_VISION_GATE_CONTACT_SHEET.jpg",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R05_SLOW_VISION_GATE_CONTACT_SHEET.jpg",
+      "size": 3119
+    },
+    {
+      "path": "sessions/20260908_095858/C4C4R05_SLOW_VISION_GATE_QA_MANIFEST.json",
+      "source": "sessions/phase4c4/20260908_095858/C4C4R05_SLOW_VISION_GATE_QA_MANIFEST.json",
+      "size": 823
+    },
+    {
+      "path": "sessions/20260908_095858/fast_vision_batch.json",
+      "source": "sessions/phase4c4/20260908_095858/fast_vision_batch.json",
+      "size": 11419
+    },
+    {
+      "path": "sessions/20260908_095858/frame_pack_batch_reference.json",
+      "source": "sessions/phase4c4/20260908_095858/frame_pack_batch_reference.json",
+      "size": 2508
+    },
+    {
+      "path": "sessions/20260908_095858/results/00001_a7fef2d4481aff9343fe0597/fast_vision_result.json",
+      "source": "sessions/phase4c4/20260908_095858/results/00001_a7fef2d4481aff9343fe0597/fast_vision_result.json",
+      "size": 122360
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000001_PILOT_READY.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000001_PILOT_READY.json",
+      "size": 4133
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000002_PILOT_RUNNING.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000002_PILOT_RUNNING.json",
+      "size": 4210
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000003_ITEM01_REVALIDATING.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000003_ITEM01_REVALIDATING.json",
+      "size": 4221
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000004_ITEM01_READY_VERIFIED.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000004_ITEM01_READY_VERIFIED.json",
+      "size": 4225
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000005_ITEM01_DISPATCH_INTENT.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000005_ITEM01_DISPATCH_INTENT.json",
+      "size": 4236
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000006_ITEM01_RECONCILING.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000006_ITEM01_RECONCILING.json",
+      "size": 4461
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000007_ITEM01_COMMITTED.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000007_ITEM01_COMMITTED.json",
+      "size": 4457
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000008_PILOT_READY_FOR_NEXT.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000008_PILOT_READY_FOR_NEXT.json",
+      "size": 4468
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000009_PILOT_RUNNING.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000009_PILOT_RUNNING.json",
+      "size": 4454
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000010_ITEM02_REVALIDATING.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000010_ITEM02_REVALIDATING.json",
+      "size": 4466
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000011_ITEM02_BLOCKED_NO_WRITE.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000011_ITEM02_BLOCKED_NO_WRITE.json",
+      "size": 4560
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000012_PILOT_STOPPED_ON_ITEM_FAILURE.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/ledger_revisions/000012_PILOT_STOPPED_ON_ITEM_FAILURE.json",
+      "size": 4582
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/pilot_execution_ledger.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/pilot_execution_ledger.json",
+      "size": 4582
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/pilot_reservation_set.json",
+      "source": "sessions/phase5b5/20260908_100311_004735/pilot_reservation_set.json",
+      "size": 3568
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/pilot_summary.json",
+      "source": "generated_phase5b5_diagnostic_audit",
+      "size": 2391
+    },
+    {
+      "path": "sessions/phase5b5/20260908_100311_004735/phase5b5_invariants.json",
+      "source": "generated_phase5b5_diagnostic_audit",
+      "size": 810
+    },
+    {
+      "path": "GPT_ANALYSIS_BUNDLE.json",
+      "source": "generated_gpt_bridge",
+      "size": 30091338
+    },
+    {
+      "path": "GPT_ANALYSIS_INDEX.md",
+      "source": "generated_gpt_bridge",
+      "size": 10838
+    },
+    {
+      "path": "GPT_C4D2R01_PREMIERE_ADAPTER_OVERVIEW_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 32317
+    },
+    {
+      "path": "GPT_C4D2R01_PREMIERE_ADAPTER_DETAIL_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 186735
+    },
+    {
+      "path": "GPT_C4D1R01_COMPOSITION_PREVIEW_OVERVIEW_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 22397
+    },
+    {
+      "path": "GPT_C4D1R01_COMPOSITION_PREVIEW_READY_DETAIL_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 100873
+    },
+    {
+      "path": "GPT_C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 89836
+    },
+    {
+      "path": "GPT_C4C6R01_SUBJECT_FUSION_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 80926
+    },
+    {
+      "path": "GPT_C4C5R01_SLOW_VISION_EVIDENCE_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 68846
+    },
+    {
+      "path": "GPT_C4C4R05_SLOW_VISION_GATE_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 3119
+    },
+    {
+      "path": "GPT_C4C4R04_DUPLICATE_GROUP_AMBIGUITY_V2_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 3119
+    },
+    {
+      "path": "GPT_C4C4R03B_ASSOCIATION_V2_CONTACT_SHEET.jpg",
+      "source": "generated_gpt_bridge",
+      "size": 3119
+    }
+  ],
+  "bundle": {
+    "zipFile": "PRSmartReframe_Diagnostic_20260908_101513.zip",
+    "historyRelativePath": "history/20260908_101513",
+    "latestRelativePath": "latest"
+  }
+}
