@@ -1,0 +1,136 @@
+{
+  "phase": "4D-1",
+  "resultSchema": 1,
+  "previewVersion": "0.4.30-composition-preview-v1",
+  "policy": "COMPOSITION_STRATEGY_V1",
+  "outputContract": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+  "createdAt": "2026-09-11T23:26:11",
+  "status": "COMPOSITION_PREVIEW_READY",
+  "decision": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+  "ordinal": 4,
+  "clipInstanceId": "34fad278b992e2d139f869f7",
+  "sourceReadinessResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00004_34fad278b992e2d139f869f7\\composition_readiness_result.json",
+  "sourceReadinessDecision": "READY_FOR_COMPOSITION_PREVIEW",
+  "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00004_34fad278b992e2d139f869f7\\subject_fusion_result.json",
+  "sourceFastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c4\\20260911_232306\\results\\00004_34fad278b992e2d139f869f7\\fast_vision_result.json",
+  "sourceFramePaths": {
+    "EARLY": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4a\\phase4c4_20260911_232306\\packs\\00004_a0d483c4a9ec4a66ed9d56ae\\frames\\early.jpg",
+    "MIDDLE": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4a\\phase4c4_20260911_232306\\packs\\00004_a0d483c4a9ec4a66ed9d56ae\\frames\\middle.jpg",
+    "LATE": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4a\\phase4c4_20260911_232306\\packs\\00004_a0d483c4a9ec4a66ed9d56ae\\frames\\late.jpg"
+  },
+  "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+  "compositionComputed": true,
+  "strategyEvidence": {
+    "policy": "COMPOSITION_STRATEGY_V1",
+    "outputContract": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+    "targetCanvas": {
+      "policy": "FIXED_1080X1920_V1",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "pixelAspect": 1.0
+    },
+    "sourceGeometry": {
+      "width": 1920.0,
+      "height": 1200.0
+    },
+    "cropWindow": {
+      "policy": "MAX_INSCRIBED_TARGET_ASPECT",
+      "width": 675.0,
+      "height": 1200.0
+    },
+    "focus": {
+      "policy": "PRIMARY_BBOX_CENTER_MEDIAN",
+      "frameFocusPoints": {
+        "EARLY": {
+          "x": 1066.7378692626953,
+          "y": 633.9457244873047
+        },
+        "MIDDLE": {
+          "x": 996.3905639648438,
+          "y": 613.6680450439453
+        },
+        "LATE": {
+          "x": 916.2046966552734,
+          "y": 625.4870491027832
+        }
+      },
+      "clipFocusPoint": {
+        "x": 996.3905639648438,
+        "y": 625.4870491027832
+      }
+    },
+    "cropCenter": {
+      "policy": "FOCUS_CENTER_THEN_CLAMP",
+      "desired": {
+        "x": 996.3905639648438,
+        "y": 625.4870491027832
+      },
+      "final": {
+        "x": 996.3905639648438,
+        "y": 600.0
+      },
+      "clampApplied": true,
+      "clampDeltaX": 0.0,
+      "clampDeltaY": -25.487049102783203
+    },
+    "finalCropWindow": {
+      "left": 658.8905639648438,
+      "top": 0.0,
+      "right": 1333.8905639648438,
+      "bottom": 1200.0
+    },
+    "coverage": {
+      "policy": "COMPOSITION_COVERAGE_GATE_V1",
+      "frames": {
+        "EARLY": {
+          "coverageRatio": 0.5208553732673212,
+          "fullyContained": false
+        },
+        "MIDDLE": {
+          "coverageRatio": 0.5260641797157621,
+          "fullyContained": false
+        },
+        "LATE": {
+          "coverageRatio": 0.538194093398662,
+          "fullyContained": false
+        }
+      },
+      "minCoverage": 0.5208553732673212,
+      "medianCoverage": 0.5260641797157621,
+      "fullyContainedFrameCount": 0,
+      "quality": "PREVIEW_NEEDS_REVIEW"
+    },
+    "motion": {
+      "policy": "STATIC_COMPOSITION_MOTION_GATE_V1",
+      "centerXSpan": 150.53317260742188,
+      "centerYSpan": 20.277679443359375,
+      "motionXRatio": 0.22301210756655093,
+      "motionYRatio": 0.01689806620279948,
+      "motionScore": 0.22301210756655093,
+      "quality": "STATIC_STABLE"
+    },
+    "qualityDecision": {
+      "coverageQuality": "PREVIEW_NEEDS_REVIEW",
+      "motionQuality": "STATIC_STABLE",
+      "finalQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW",
+      "reasons": [
+        "PREVIEW_NEEDS_REVIEW"
+      ]
+    },
+    "warnings": [
+      "SUBJECT_PARTIALLY_OUTSIDE_CROP",
+      "SUBJECT_WIDER_THAN_TARGET_CROP",
+      "EDGE_CLAMP_APPLIED"
+    ]
+  },
+  "mustNotDrivePremiereWrite": true,
+  "downstreamGate": {
+    "premierePositionComputed": false,
+    "compositionApplyAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4d1\\20260911_232611\\results\\00004_34fad278b992e2d139f869f7\\composition_preview_result.json"
+}

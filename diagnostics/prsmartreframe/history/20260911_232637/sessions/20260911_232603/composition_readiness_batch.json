@@ -1,0 +1,775 @@
+{
+  "phase": "4C-7",
+  "batchSchema": 1,
+  "batchVersion": "0.5.52-composition-readiness-preview-hotfix-v1",
+  "capturedAt": "2026-09-11T23:26:03",
+  "policy": "COMPOSITION_READINESS_GATE_V1",
+  "outputContract": "COMPOSITION_READINESS_EVIDENCE_V1",
+  "summary": {
+    "selectedCount": 20,
+    "gateReady": 6,
+    "gateBlocked": 14,
+    "gateFailed": 0,
+    "humanReviewBlockedCount": 14,
+    "multiplePrimaryBlockedCount": 1,
+    "noPrimaryBlockedCount": 5,
+    "frameLocalBlockedCount": 8,
+    "representedPersonNotAssessedCount": 10,
+    "unassignedFrozenRefBlockedCount": 5,
+    "unresolvedFaceEvidenceBlockedCount": 0,
+    "capabilityGapBlockedCount": 10,
+    "lostFrozenRefBlockedCount": 0,
+    "invalidFusionEvidenceCount": 0,
+    "providerCalls": 0,
+    "readOnlyPremiere": true,
+    "blockReasonCounts": {
+      "CAPABILITY_GAP_PRESENT": 10,
+      "FRAME_LOCAL_IDENTITY_ONLY": 8,
+      "FUSION_NOT_RESOLVED": 13,
+      "MULTIPLE_PRIMARY": 1,
+      "NO_PRIMARY": 5,
+      "PRIMARY_CONFIDENCE_LOW": 3,
+      "PRIMARY_PHYSICALITY_UNKNOWN": 3,
+      "PRIMARY_UNRESOLVED": 1,
+      "REPRESENTED_PERSON_NOT_ASSESSED": 10,
+      "UNASSIGNED_FROZEN_PERSON_REF": 5,
+      "UPSTREAM_HUMAN_REVIEW_REQUIRED": 14
+    }
+  },
+  "contract": {
+    "input": "Accepted Phase 4C-6 subject_fusion_batch",
+    "output": "COMPOSITION_READINESS_EVIDENCE_V1",
+    "providerCallsAllowed": false,
+    "fastVisionRerunAllowed": false,
+    "slowVisionRerunAllowed": false,
+    "subjectFusionRerunAllowed": false,
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "premiereReadOnly": true
+  },
+  "source": {
+    "subjectFusionBatchPath": "<USER_HOME>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\subject_fusion_batch.json",
+    "subjectFusionBatchSha256": "6034665810b419d375eb2beb4ffc0bb9ce0f08e6ceb9d437e36b6ce4b7d2a7fe",
+    "subjectFusionSummary": {
+      "selectedCount": 20,
+      "fusionReady": 20,
+      "fusionFailed": 0,
+      "fusionResolved": 7,
+      "fusionPartial": 12,
+      "fusionUnresolved": 1,
+      "slowVisionEnrichedClips": 0,
+      "middleFrameBatchClips": 6,
+      "fastSingleSubjectDeterministicClips": 6,
+      "frameLocalOnlyClips": 8,
+      "humanReviewCount": 14,
+      "singlePrimaryCount": 13,
+      "multiplePrimaryCount": 1,
+      "noPrimaryCount": 5,
+      "unresolvedPrimaryCount": 1,
+      "unassignedFrozenRefCount": 21,
+      "lostFrozenRefCount": 0,
+      "invalidFrozenRefFailures": 0,
+      "readOnlyPremiere": true
+    }
+  },
+  "results": [
+    {
+      "ordinal": 1,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "aa9ffcb4a5475e2cb8578805",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00001_aa9ffcb4a5475e2cb8578805\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00001_aa9ffcb4a5475e2cb8578805\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 2,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "5a66f8af7b9f63f6692a6382",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "NO_PRIMARY",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "NO_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00002_5a66f8af7b9f63f6692a6382\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00002_5a66f8af7b9f63f6692a6382\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 3,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "f693901ebe7f88e2e380deef",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "UNASSIGNED_FROZEN_PERSON_REF"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "ASSESSED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 2,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00003_f693901ebe7f88e2e380deef\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00003_f693901ebe7f88e2e380deef\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 4,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "34fad278b992e2d139f869f7",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00004_34fad278b992e2d139f869f7\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00004_34fad278b992e2d139f869f7\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 5,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "41bfc84d0692f9fb7f0d74ab",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00005_41bfc84d0692f9fb7f0d74ab\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00005_41bfc84d0692f9fb7f0d74ab\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 6,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "41d7f6799bd86d4c77a86946",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "UNASSIGNED_FROZEN_PERSON_REF"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "ASSESSED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 1,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00006_41d7f6799bd86d4c77a86946\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00006_41d7f6799bd86d4c77a86946\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 7,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "9515627e029edbd1381ada25",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00007_9515627e029edbd1381ada25\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00007_9515627e029edbd1381ada25\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 8,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "a829d10f8bed232839cfde04",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "PRIMARY_PHYSICALITY_UNKNOWN",
+        "PRIMARY_CONFIDENCE_LOW",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00008_a829d10f8bed232839cfde04\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00008_a829d10f8bed232839cfde04\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 9,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "7771bca84a514d9b4bb55376",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "NO_PRIMARY",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "NO_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00009_7771bca84a514d9b4bb55376\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00009_7771bca84a514d9b4bb55376\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 10,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "54f4d6ff340ed4900cb6899c",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED"
+      ],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "ASSESSED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00010_54f4d6ff340ed4900cb6899c\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00010_54f4d6ff340ed4900cb6899c\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 11,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "2ef6a113bb2a9de7727acc18",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "NO_PRIMARY",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "NO_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00011_2ef6a113bb2a9de7727acc18\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00011_2ef6a113bb2a9de7727acc18\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 12,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "234cb62149fdeb72503af1e4",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00012_234cb62149fdeb72503af1e4\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00012_234cb62149fdeb72503af1e4\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 13,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "230dc7554cef1f1e366bc1fa",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "NO_PRIMARY",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "NO_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00013_230dc7554cef1f1e366bc1fa\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00013_230dc7554cef1f1e366bc1fa\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 14,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "c7431d93cc494ec6ef61d3f3",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "UNASSIGNED_FROZEN_PERSON_REF",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "PARTIAL",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 14,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00014_c7431d93cc494ec6ef61d3f3\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00014_c7431d93cc494ec6ef61d3f3\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 15,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "865c329d5c06047231c20360",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "PRIMARY_PHYSICALITY_UNKNOWN",
+        "PRIMARY_CONFIDENCE_LOW",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00015_865c329d5c06047231c20360\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00015_865c329d5c06047231c20360\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 16,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "38c436d89a85922b13795921",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "PRIMARY_UNRESOLVED",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "UNASSIGNED_FROZEN_PERSON_REF",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "UNRESOLVED",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "UNRESOLVED",
+      "representedPersonAssessment": "NOT_ASSESSED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 1,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00016_38c436d89a85922b13795921\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00016_38c436d89a85922b13795921\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 17,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "1bdb41c22b7825efc4c8fdef",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "MULTIPLE_PRIMARY",
+        "UNASSIGNED_FROZEN_PERSON_REF"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "MIDDLE_FRAME_BATCH",
+      "primarySubjectDecision": "MULTIPLE_PRIMARY",
+      "representedPersonAssessment": "ASSESSED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 3,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00017_1bdb41c22b7825efc4c8fdef\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00017_1bdb41c22b7825efc4c8fdef\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 18,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "dc81133b914aaea100373acf",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "NO_PRIMARY",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "NO_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00018_dc81133b914aaea100373acf\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00018_dc81133b914aaea100373acf\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 19,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "1c2ede40c415bcf942204a9a",
+      "decision": "READY_FOR_COMPOSITION_PREVIEW",
+      "blockReasons": [],
+      "fusionStatus": "RESOLVED",
+      "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": false,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00019_1c2ede40c415bcf942204a9a\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00019_1c2ede40c415bcf942204a9a\\composition_readiness_result.json"
+    },
+    {
+      "ordinal": 20,
+      "status": "COMPOSITION_READINESS_READY",
+      "clipInstanceId": "940685dceb271d8b180ae1ef",
+      "decision": "BLOCKED_FOR_REVIEW",
+      "blockReasons": [
+        "FUSION_NOT_RESOLVED",
+        "FRAME_LOCAL_IDENTITY_ONLY",
+        "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+        "PRIMARY_PHYSICALITY_UNKNOWN",
+        "PRIMARY_CONFIDENCE_LOW",
+        "REPRESENTED_PERSON_NOT_ASSESSED",
+        "CAPABILITY_GAP_PRESENT"
+      ],
+      "fusionStatus": "PARTIAL",
+      "fusionMode": "FRAME_LOCAL_ONLY",
+      "primarySubjectDecision": "SINGLE_PRIMARY",
+      "representedPersonAssessment": "UNRESOLVED",
+      "humanReviewNeeded": true,
+      "unassignedFrozenRefCount": 0,
+      "lostFrozenRefCount": 0,
+      "sourceFusionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00020_940685dceb271d8b180ae1ef\\subject_fusion_result.json",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\results\\00020_940685dceb271d8b180ae1ef\\composition_readiness_result.json"
+    }
+  ],
+  "failures": [],
+  "batchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_batch.json",
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_batch.json",
+  "mustNotDriveComposition": true,
+  "compositionReadinessVisualQa": {
+    "schemaVersion": 1,
+    "sourceResolverPolicy": "FAST_RESULT_FRAMEPACK_SOURCE_V1",
+    "status": "C4C7R01_VISUAL_QA_READY",
+    "createdAt": "2026-09-11T23:26:04",
+    "selectionPolicy": "CATEGORY_COVERAGE_DEDUP_FILL_V2",
+    "selectedClipCount": 6,
+    "selectedOrdinals": [
+      2,
+      17,
+      8,
+      3,
+      6,
+      1
+    ],
+    "overlayCount": 18,
+    "sourceFrameRequested": 18,
+    "sourceFrameResolved": 18,
+    "sourceFrameFailed": 0,
+    "blankPanelCount": 0,
+    "contactSheetPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\C4C7R01_COMPOSITION_READINESS_CONTACT_SHEET.jpg",
+    "qaRoot": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa",
+    "warnings": [],
+    "rows": [
+      {
+        "ordinal": 2,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "BLOCKED_FOR_REVIEW",
+        "blockReasons": [
+          "FUSION_NOT_RESOLVED",
+          "FRAME_LOCAL_IDENTITY_ONLY",
+          "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+          "NO_PRIMARY",
+          "REPRESENTED_PERSON_NOT_ASSESSED",
+          "CAPABILITY_GAP_PRESENT"
+        ],
+        "fusionStatus": "PARTIAL",
+        "fusionMode": "FRAME_LOCAL_ONLY",
+        "primarySubjectDecision": "NO_PRIMARY",
+        "representedPersonAssessment": "UNRESOLVED",
+        "humanReview": {
+          "needed": true,
+          "reasons": [
+            "NO_CROSS_FRAME_SEMANTIC_IDENTITY"
+          ],
+          "sourceSlowVisionDecision": null
+        },
+        "unassignedFrozenRefCount": 0,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00002_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00002_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00002_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      },
+      {
+        "ordinal": 17,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "BLOCKED_FOR_REVIEW",
+        "blockReasons": [
+          "FUSION_NOT_RESOLVED",
+          "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+          "MULTIPLE_PRIMARY",
+          "UNASSIGNED_FROZEN_PERSON_REF"
+        ],
+        "fusionStatus": "PARTIAL",
+        "fusionMode": "MIDDLE_FRAME_BATCH",
+        "primarySubjectDecision": "MULTIPLE_PRIMARY",
+        "representedPersonAssessment": "ASSESSED",
+        "humanReview": {
+          "needed": true,
+          "reasons": [
+            "UNASSIGNED_FROZEN_PERSON_REF",
+            "CROSS_FRAME_CONTEXT_REQUIRES_REVIEW"
+          ],
+          "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+        },
+        "unassignedFrozenRefCount": 3,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00017_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00017_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00017_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      },
+      {
+        "ordinal": 8,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "BLOCKED_FOR_REVIEW",
+        "blockReasons": [
+          "FUSION_NOT_RESOLVED",
+          "FRAME_LOCAL_IDENTITY_ONLY",
+          "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+          "PRIMARY_PHYSICALITY_UNKNOWN",
+          "PRIMARY_CONFIDENCE_LOW",
+          "REPRESENTED_PERSON_NOT_ASSESSED",
+          "CAPABILITY_GAP_PRESENT"
+        ],
+        "fusionStatus": "PARTIAL",
+        "fusionMode": "FRAME_LOCAL_ONLY",
+        "primarySubjectDecision": "SINGLE_PRIMARY",
+        "representedPersonAssessment": "UNRESOLVED",
+        "humanReview": {
+          "needed": true,
+          "reasons": [
+            "NO_CROSS_FRAME_SEMANTIC_IDENTITY"
+          ],
+          "sourceSlowVisionDecision": null
+        },
+        "unassignedFrozenRefCount": 0,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00008_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00008_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00008_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      },
+      {
+        "ordinal": 3,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "BLOCKED_FOR_REVIEW",
+        "blockReasons": [
+          "FUSION_NOT_RESOLVED",
+          "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+          "UNASSIGNED_FROZEN_PERSON_REF"
+        ],
+        "fusionStatus": "PARTIAL",
+        "fusionMode": "MIDDLE_FRAME_BATCH",
+        "primarySubjectDecision": "SINGLE_PRIMARY",
+        "representedPersonAssessment": "ASSESSED",
+        "humanReview": {
+          "needed": true,
+          "reasons": [
+            "UNASSIGNED_FROZEN_PERSON_REF",
+            "CROSS_FRAME_CONTEXT_REQUIRES_REVIEW"
+          ],
+          "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+        },
+        "unassignedFrozenRefCount": 2,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00003_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00003_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00003_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      },
+      {
+        "ordinal": 6,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "BLOCKED_FOR_REVIEW",
+        "blockReasons": [
+          "FUSION_NOT_RESOLVED",
+          "UPSTREAM_HUMAN_REVIEW_REQUIRED",
+          "UNASSIGNED_FROZEN_PERSON_REF"
+        ],
+        "fusionStatus": "PARTIAL",
+        "fusionMode": "MIDDLE_FRAME_BATCH",
+        "primarySubjectDecision": "SINGLE_PRIMARY",
+        "representedPersonAssessment": "ASSESSED",
+        "humanReview": {
+          "needed": true,
+          "reasons": [
+            "UNASSIGNED_FROZEN_PERSON_REF",
+            "CROSS_FRAME_CONTEXT_REQUIRES_REVIEW"
+          ],
+          "sourceSlowVisionDecision": "AUTO_ACCEPTABLE"
+        },
+        "unassignedFrozenRefCount": 1,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00006_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00006_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00006_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      },
+      {
+        "ordinal": 1,
+        "status": "COMPOSITION_READINESS_READY",
+        "decision": "READY_FOR_COMPOSITION_PREVIEW",
+        "blockReasons": [],
+        "fusionStatus": "RESOLVED",
+        "fusionMode": "FAST_SINGLE_SUBJECT_DETERMINISTIC",
+        "primarySubjectDecision": "SINGLE_PRIMARY",
+        "representedPersonAssessment": "UNRESOLVED",
+        "humanReview": {
+          "needed": false,
+          "reasons": [],
+          "sourceSlowVisionDecision": null
+        },
+        "unassignedFrozenRefCount": 0,
+        "lostFrozenRefCount": 0,
+        "geometryAuthority": "FROZEN_FAST_VISION",
+        "newGeometryCreated": false,
+        "frames": [
+          {
+            "role": "EARLY",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00001_early_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "MIDDLE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00001_middle_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          },
+          {
+            "role": "LATE",
+            "path": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\composition_readiness_visual_qa\\00001_late_composition_readiness_panel.jpg",
+            "sourceFrameResolved": true
+          }
+        ]
+      }
+    ],
+    "geometryAuthority": "FROZEN_FAST_VISION",
+    "newGeometryCreated": false,
+    "mustNotDriveComposition": true,
+    "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c7\\20260911_232603\\C4C7R01_COMPOSITION_READINESS_QA_MANIFEST.json"
+  }
+}
