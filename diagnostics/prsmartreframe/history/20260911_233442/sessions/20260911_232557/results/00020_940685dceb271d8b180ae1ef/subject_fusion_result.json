@@ -1,0 +1,168 @@
+{
+  "phase": "4C-6",
+  "resultSchema": 1,
+  "fusionVersion": "0.4.26-subject-fusion-preview-v1",
+  "policy": "SUBJECT_FUSION_V1",
+  "outputContract": "FUSED_SUBJECT_EVIDENCE_V1",
+  "createdAt": "2026-09-11T23:25:57",
+  "status": "SUBJECT_FUSION_READY",
+  "ordinal": 20,
+  "clipInstanceId": "940685dceb271d8b180ae1ef",
+  "packId": "4c28c3e620d36610e7ab024e",
+  "visionCacheKey": "5dce6a97440cc51e3a0fd115",
+  "fastVisionResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c4\\20260911_232306\\results\\00020_940685dceb271d8b180ae1ef\\fast_vision_result.json",
+  "slowVisionResultPath": null,
+  "evidence": {
+    "policy": "FUSED_SUBJECT_EVIDENCE_V1",
+    "fusionPolicy": "SUBJECT_FUSION_V1",
+    "status": "PARTIAL",
+    "fusionMode": "FRAME_LOCAL_ONLY",
+    "subjects": [
+      {
+        "fusedSubjectId": "fs1",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p1",
+            "frozenPersonRef": "EARLY:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs2",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "EARLY",
+            "personId": "p2",
+            "frozenPersonRef": "EARLY:p2"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs3",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "MIDDLE",
+            "personId": "p1",
+            "frozenPersonRef": "MIDDLE:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "PRIMARY",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs4",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "LATE",
+            "personId": "p1",
+            "frozenPersonRef": "LATE:p1"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      },
+      {
+        "fusedSubjectId": "fs5",
+        "semanticSubjectId": null,
+        "frameMembers": [
+          {
+            "frameRole": "LATE",
+            "personId": "p2",
+            "frozenPersonRef": "LATE:p2"
+          }
+        ],
+        "physicality": "UNKNOWN",
+        "visualImportance": "UNKNOWN",
+        "confidence": "LOW",
+        "faceEvidenceRefs": [],
+        "provenance": {
+          "geometryAuthority": "FROZEN_FAST_VISION",
+          "semanticAuthority": null,
+          "semanticSubjectId": null
+        }
+      }
+    ],
+    "primarySubjectDecision": {
+      "status": "SINGLE_PRIMARY",
+      "fusedSubjectIds": [
+        "fs3"
+      ]
+    },
+    "allFrozenPersonRefs": [
+      "EARLY:p1",
+      "EARLY:p2",
+      "MIDDLE:p1",
+      "LATE:p1",
+      "LATE:p2"
+    ],
+    "assignedFrozenPersonRefs": [
+      "EARLY:p1",
+      "EARLY:p2",
+      "MIDDLE:p1",
+      "LATE:p1",
+      "LATE:p2"
+    ],
+    "unassignedFrozenPersonRefs": [],
+    "unresolvedFaceEvidenceRefs": [],
+    "representedPersonAssessment": "UNRESOLVED",
+    "capabilityGaps": [
+      "REPRESENTED_PERSON_NOT_ASSESSED",
+      "CROSS_FRAME_SEMANTIC_IDENTITY_UNRESOLVED"
+    ],
+    "humanReview": {
+      "needed": true,
+      "reasons": [
+        "NO_CROSS_FRAME_SEMANTIC_IDENTITY"
+      ],
+      "sourceSlowVisionDecision": null
+    },
+    "mustNotDriveComposition": true
+  },
+  "mustNotDriveComposition": true,
+  "downstreamGate": {
+    "compositionAllowed": false,
+    "applyAllowed": false,
+    "finalPositionAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "premiereReadOnly": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4c6\\20260911_232557\\results\\00020_940685dceb271d8b180ae1ef\\subject_fusion_result.json"
+}

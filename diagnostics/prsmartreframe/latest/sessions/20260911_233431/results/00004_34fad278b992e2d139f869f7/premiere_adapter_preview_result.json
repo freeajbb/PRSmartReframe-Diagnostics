@@ -1,0 +1,601 @@
+{
+  "phase": "4D-2",
+  "resultSchema": 1,
+  "previewVersion": "0.4.76-premiere-adapter-preview-v1",
+  "policy": "PREMIERE_POSITION_ADAPTER_V1",
+  "outputContract": "PREMIERE_ADAPTER_PREVIEW_EVIDENCE_V1",
+  "createdAt": "2026-09-11T23:34:31",
+  "status": "PREMIERE_ADAPTER_PREVIEW_REVIEW",
+  "ordinal": 4,
+  "clipInstanceId": "34fad278b992e2d139f869f7",
+  "primaryReason": "ACCEPTANCE_CALIBRATION_POOL_INCOMPLETE",
+  "reasonCodes": [
+    "ACCEPTANCE_CALIBRATION_POOL_INCOMPLETE",
+    "GEOMETRY2_CALIBRATION_LIVE_PROBES_LT_3"
+  ],
+  "sourcePhase4D1": {
+    "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\upstream_snapshots\\phase4d1\\20260911_232611\\results\\00004_34fad278b992e2d139f869f7\\composition_preview_result.json",
+    "resultSha256": "a779f886b012bb8219e197a540ed56ae6ea1559ea75718e66e134b64b0d182bb",
+    "status": "COMPOSITION_PREVIEW_READY",
+    "compositionQuality": "COMPOSITION_PREVIEW_NEEDS_REVIEW"
+  },
+  "canonicalAdapter": {
+    "status": "VALID",
+    "evidence": {
+      "status": "VALID",
+      "policy": "CANONICAL_CENTER_ANCHOR_TRANSFORM",
+      "coordinateContract": "NORMALIZED_SEQUENCE_POINT_WITH_PIXEL_DIAGNOSTIC",
+      "scaleContract": "DIMENSIONLESS_SCALE_FACTOR_WITH_PERCENT_DIAGNOSTIC",
+      "sourceGeometry": {
+        "width": 1920.0,
+        "height": 1200.0,
+        "coordinateSpace": "4D1_CANONICAL_SOURCE_RASTER"
+      },
+      "virtualTargetSequence": {
+        "policy": "VIRTUAL_FIXED_1080X1920",
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0
+      },
+      "sourceAnchor": {
+        "policy": "SOURCE_CENTER",
+        "xPixels": 960.0,
+        "yPixels": 600.0
+      },
+      "cropCenter": {
+        "xPixels": 996.3905639648438,
+        "yPixels": 600.0
+      },
+      "cropGeometry": {
+        "width": 675.0,
+        "height": 1200.0
+      },
+      "cropWindow": {
+        "left": 658.8905639648438,
+        "top": 0.0,
+        "right": 1333.8905639648438,
+        "bottom": 1200.0
+      },
+      "scale": {
+        "canonicalAdapterScaleFactor": 1.6,
+        "scalePercentDiagnostic": 160.0,
+        "percentIsHostParameterValue": false
+      },
+      "position": {
+        "sequencePixelsDiagnostic": {
+          "x": 481.77509765625,
+          "y": 960.0
+        },
+        "normalizedSequencePoint": {
+          "x": 0.4460880533854167,
+          "y": 0.5
+        },
+        "normalizedPositionClamped": false,
+        "normalizedPositionMayBeOutsideUnitRange": true
+      },
+      "canonicalInputSnapshot": {
+        "geometryAuthority": "COMPOSITION_STRATEGY_EVIDENCE_V1",
+        "sourceGeometry": {
+          "width": 1920.0,
+          "height": 1200.0
+        },
+        "cropGeometry": {
+          "width": 675.0,
+          "height": 1200.0
+        },
+        "crop": {
+          "finalCropCenter": {
+            "x": 996.3905639648438,
+            "y": 600.0
+          },
+          "finalCropWindow": {
+            "left": 658.8905639648438,
+            "top": 0.0,
+            "right": 1333.8905639648438,
+            "bottom": 1200.0
+          }
+        }
+      },
+      "roundTrip": {
+        "policy": "CANONICAL_ADAPTER_ROUND_TRIP_GATE_V1",
+        "tolerance": 1e-06,
+        "expectedTargetCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "mappedCropCenterPixels": {
+          "x": 540.0,
+          "y": 960.0
+        },
+        "error": {
+          "xPixels": 0.0,
+          "yPixels": 0.0,
+          "maxNormalizedEquivalent": 0.0
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      }
+    }
+  },
+  "hostVerification": {
+    "status": "VERIFIED",
+    "hostContractStatus": "HOST_CONTRACT_VERIFIED",
+    "geometry2HostContractStatus": "GEOMETRY2_HOST_CONTRACT_UNVERIFIED",
+    "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4d2\\20260911_233431\\premiere_transform_host_probe.json",
+    "sourceGeometryVerification": {
+      "policy": "SOURCE_SEQUENCE_HOST_GEOMETRY_AUTHORITY_V1",
+      "canonical": {
+        "width": 1920.0,
+        "height": 1200.0
+      },
+      "host": {
+        "readStatus": "READ_OK",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+        "width": 1920,
+        "height": 1200,
+        "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+      },
+      "comparison": "HOST_SOURCE_GEOMETRY_VERIFIED",
+      "factSource": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+      "uxpSourceFrameSize": {
+        "readStatus": "UNAVAILABLE",
+        "semanticStatus": "HOST_SOURCE_GEOMETRY_SEMANTICS_UNVERIFIED",
+        "width": null,
+        "height": null
+      },
+      "linkedMediaRaster": {
+        "policy": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+        "status": "LINKED_MEDIA_RASTER_READY",
+        "mediaPath": "C:\\Users\\<USER>\\Downloads\\虎虎看剧\\01 苍井优、中岛步2026年夏季档.mp4",
+        "fileExists": true,
+        "ffprobeExecutable": "C:\\Program Files\\FFmpeg\\ffprobe.EXE",
+        "codedFrameSize": {
+          "width": 1920,
+          "height": 1200
+        },
+        "rotationDegrees": 0.0,
+        "sampleAspectRatio": "1:1",
+        "sourceFrameSize": {
+          "readStatus": "READ_OK",
+          "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+          "width": 1920,
+          "height": 1200,
+          "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+        },
+        "returnCode": 0
+      }
+    },
+    "targetTransformOwnership": {
+      "policy": "TARGET_TRANSFORM_OWNERSHIP_V1",
+      "targetMatchName": "AE.ADBE Geometry2",
+      "geometry2Count": 0,
+      "status": "TARGET_TRANSFORM_ABSENT",
+      "ownership": "NONE",
+      "animationState": "NOT_APPLICABLE",
+      "overwriteAllowed": false,
+      "componentIndex": null,
+      "foreignTransformCount": 0
+    },
+    "targetTransform": {
+      "status": "TARGET_TRANSFORM_ABSENT",
+      "componentIndex": null,
+      "matchName": "AE.ADBE Geometry2",
+      "signatureStatus": "UNVERIFIED",
+      "animationState": "NOT_APPLICABLE",
+      "overwriteAllowed": false
+    },
+    "frameSizeScaling": {
+      "scaleToFrameSize": {
+        "readStatus": "UNAVAILABLE",
+        "value": null,
+        "evidenceSource": "NONE"
+      }
+    },
+    "frameSizeScalingDiscovery": {
+      "contract": "FRAME_SIZE_SCALING_FACT_DISCOVERY_V1",
+      "status": "DISCOVERY_COMPLETED",
+      "authorityDecision": "DIAGNOSTIC_HINT_ONLY",
+      "liveHost": {
+        "runtimeApiSurface": {
+          "runtimeApiSurface": [
+            {
+              "label": "ProjectItem",
+              "readOnly": true,
+              "members": [],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            },
+            {
+              "label": "ClipProjectItem",
+              "readOnly": true,
+              "members": [
+                {
+                  "memberName": "createSetScaleToFrameSizeAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                },
+                {
+                  "memberName": "createSetOverrideFrameRateAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                }
+              ],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            }
+          ],
+          "verifiedReaderObservations": []
+        },
+        "projectItemComponentEvidence": {
+          "policy": "PREMIERE_PROJECT_ITEM_FRAME_SCALING_DISCOVERY_V1",
+          "readOnly": true,
+          "runtimeSurfaces": [
+            {
+              "label": "ProjectItem",
+              "readOnly": true,
+              "members": [],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            },
+            {
+              "label": "ClipProjectItem",
+              "readOnly": true,
+              "members": [
+                {
+                  "memberName": "createSetScaleToFrameSizeAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                },
+                {
+                  "memberName": "createSetOverrideFrameRateAction",
+                  "ownerDepth": 1,
+                  "descriptorKind": "DATA",
+                  "valueType": "function",
+                  "callable": true,
+                  "getterPresent": false,
+                  "setterPresent": false,
+                  "mutationLike": true
+                }
+              ],
+              "invokedMemberCount": 0,
+              "mutationInvocationCount": 0
+            }
+          ],
+          "componentChainStatus": "READ_OK",
+          "componentChainDiagnosticType": "object",
+          "components": [],
+          "candidateSignals": [],
+          "invokedUnknownReaderCount": 0,
+          "mutationInvocationCount": 0
+        }
+      },
+      "crossChecks": {
+        "timelineEvidence": {
+          "policy": "CURRENT_TIMELINE_FRAME_SCALING_CROSSCHECK_V1",
+          "motionScale": {
+            "value": 100
+          },
+          "sourceGeometry": {
+            "readStatus": "READ_OK",
+            "semanticStatus": "HOST_SOURCE_GEOMETRY_COMPARABLE",
+            "width": 1920,
+            "height": 1200,
+            "evidenceSource": "LINKED_MEDIA_FFPROBE_ORIENTED_RASTER_V1"
+          },
+          "sequenceGeometry": {
+            "frameSize": {
+              "width": 1920,
+              "height": 1080,
+              "x": null,
+              "y": null
+            },
+            "timebase": "8467200000",
+            "settings": {
+              "videoFrameRect": {
+                "width": 1920,
+                "height": 1080,
+                "x": null,
+                "y": null
+              },
+              "videoPixelAspectRatio": "1:1",
+              "videoFieldType": 0
+            }
+          },
+          "footageInterpretation": {
+            "frameRate": 30,
+            "pixelAspectRatio": 1,
+            "fieldType": -1
+          },
+          "playback": {
+            "speed": 1,
+            "reversed": false,
+            "duration": {
+              "ticks": "474163200000",
+              "seconds": 1.8666666666666667
+            }
+          },
+          "semanticAuthority": "CORRELATED_DIAGNOSTIC_ONLY"
+        },
+        "savedProjectSnapshot": {
+          "policy": "PRPROJ_FRAME_SIZE_SCALING_DIAGNOSTIC_V1",
+          "status": "PRPROJ_DIAGNOSTIC_READY",
+          "projectPath": "\\\\?\\E:\\2026解说\\PRSmartReframe_0549_TrueMachine_Test01\\PRSmartReframe_0549_TrueMachine_Test01.prproj",
+          "fileExists": true,
+          "mtime": 1789117679.2698684,
+          "size": 194702,
+          "parseStatus": "PARSED_GZIP_XML",
+          "candidateFieldCount": 0,
+          "candidateValues": [],
+          "candidates": [],
+          "authorityTier": "TIER_1",
+          "liveStateEquivalenceAssumed": false
+        }
+      },
+      "candidates": [
+        {
+          "candidateId": "timeline_crosscheck:motion_scale",
+          "source": "TIMELINE_CROSSCHECK",
+          "semanticClaim": "SCALE_TO_FRAME_SIZE_STATE",
+          "observedValue": {
+            "value": 100
+          },
+          "evidenceTier": "TIER_1",
+          "readOnly": true,
+          "clipSpecific": true,
+          "liveState": true,
+          "deterministic": true,
+          "repeatable": null,
+          "promotionEligible": false,
+          "blockingReasons": [
+            "CORRELATION_ONLY",
+            "UNRELATED_PARAMETER_INFERENCE_FORBIDDEN"
+          ]
+        }
+      ],
+      "blockingReasons": [],
+      "recommendedNextStep": "KEEP_UNKNOWN"
+    },
+    "effectiveFrameMapping": {
+      "contract": "EFFECTIVE_FRAME_MAPPING_V1",
+      "authority": "EFFECTIVE_FRAME_MAPPING_AUTHORITY_V1",
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED",
+      "reasonCodes": [],
+      "workflowProfile": {
+        "contract": "FRAME_SCALING_WORKFLOW_PROFILE_V1",
+        "profileId": "FIT_OR_NONE_NO_HIDDEN_FRAME_SCALING_V1",
+        "scope": "PROJECT_GUID",
+        "status": "WORKFLOW_PROFILE_CONFIRMED",
+        "confirmed": true,
+        "hostVersion": "26.0.1",
+        "projectGuidHash": "680d5b691b6873c27449c24c",
+        "hostFact": false
+      },
+      "hiddenFrameScalingRisk": {
+        "status": "EXCLUDED_BY_CONFIRMED_WORKFLOW_PROFILE",
+        "hostFact": false
+      },
+      "safeForFutureCompatibilityEvaluation": true,
+      "productionUseAllowed": false,
+      "mapping": {
+        "observedMotionScalePercent": 100.0,
+        "observedMotionScaleFactor": 1.0,
+        "effectiveFrameSize": {
+          "width": 1920.0,
+          "height": 1200.0
+        },
+        "offsetPixels": {
+          "x": 0.0,
+          "y": -60.0
+        }
+      },
+      "fitDiagnostic": {
+        "expectedFitScaleFactor": 0.9,
+        "expectedFitScalePercent": 90.0,
+        "relation": "DOES_NOT_MATCH_EXPECTED_FIT",
+        "provesFitToFrameCommand": false
+      },
+      "roundTrip": {
+        "contract": "EFFECTIVE_FRAME_MAPPING_ROUND_TRIP_V1",
+        "status": "VERIFIED",
+        "maxAbsoluteSourceErrorPixels": 0.0
+      },
+      "sourceGeometryEvidence": {
+        "factSource": "HOST_LINKED_MEDIA_RASTER_VERIFICATION_V1",
+        "linkedMediaRasterStatus": "LINKED_MEDIA_RASTER_READY"
+      }
+    },
+    "frameMappingPrerequisite": {
+      "contract": "EFFECTIVE_MAPPING_COMPATIBILITY_PREREQUISITE_V1",
+      "integrationContract": "EFFECTIVE_MAPPING_COMPATIBILITY_INTEGRATION_V1",
+      "status": "FRAME_MAPPING_PREREQUISITE_SATISFIED",
+      "authority": "EFFECTIVE_FRAME_MAPPING",
+      "compatibilityUseAllowed": true,
+      "reasonCodes": [],
+      "hostScaleToFrameFact": {
+        "readStatus": "UNAVAILABLE",
+        "value": null,
+        "evidenceSource": "NONE"
+      }
+    },
+    "targetCanvasBinding": {
+      "contract": "HOST_TARGET_CANVAS_BINDING_V1",
+      "canonicalTarget": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "pixelAspect": 1.0,
+        "policy": "VIRTUAL_FIXED_1080X1920"
+      },
+      "hostTarget": {
+        "width": 1920.0,
+        "height": 1080.0,
+        "pixelAspect": 1.0,
+        "evidenceSource": "PREMIERE_SEQUENCE_GEOMETRY_READONLY"
+      },
+      "hostVersion": "26.0.1",
+      "hostTargetMathUseAllowed": false,
+      "productionUseAllowed": false,
+      "status": "HOST_TARGET_CANVAS_MISMATCH",
+      "reasonCodes": [
+        "HOST_TARGET_SIZE_MISMATCH"
+      ]
+    },
+    "geometry2ParameterSemantics": {
+      "contract": "GEOMETRY2_HOST_PARAMETER_SEMANTICS_CALIBRATION_V1",
+      "status": "GEOMETRY2_PARAMETER_SEMANTICS_INCOMPLETE",
+      "reasonCodes": [
+        "GEOMETRY2_PARAMETER_SEMANTICS_CALIBRATION_NOT_AVAILABLE"
+      ],
+      "productionUseAllowed": false
+    },
+    "hostTargetMath": {
+      "contract": "GEOMETRY2_HOST_TARGET_MATH_V1",
+      "status": "HOST_TARGET_MATH_BLOCKED",
+      "mathematicalTargetTransform": null,
+      "proposedHostParameters": null,
+      "roundTrip": {
+        "contract": "GEOMETRY2_HOST_TARGET_ROUND_TRIP_V1",
+        "status": "NOT_RUN"
+      },
+      "reasonCodes": [
+        "HOST_TARGET_CANVAS_NOT_BOUND_EXACT"
+      ],
+      "hostTargetMathUseAllowed": false,
+      "productionUseAllowed": false
+    },
+    "cleanTargetTransformPreview": {
+      "contract": "CLEAN_TARGET_TRANSFORM_PREVIEW_V1",
+      "status": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW",
+      "checks": {
+        "upstreamReady": true,
+        "canonicalValid": true,
+        "canonicalRoundTripVerified": true,
+        "hostContractVerified": true,
+        "geometry2HostContractVerified": false,
+        "sourceGeometryVerified": true,
+        "effectiveMappingVerified": true,
+        "frameMappingPrerequisiteSatisfied": true,
+        "targetTransformAbsent": true,
+        "foreignTransformAbsent": true,
+        "canonicalTransformCompatible": true,
+        "targetCanvasBoundExact": false,
+        "parameterSemanticsVerified": false,
+        "hostTargetMathVerified": false,
+        "hostTargetRoundTripVerified": false
+      },
+      "reasonCodes": [
+        "GEOMETRY2_HOST_CONTRACT_UNVERIFIED",
+        "TARGET_CANVAS_NOT_BOUND_EXACT",
+        "GEOMETRY2_PARAMETER_SEMANTICS_UNVERIFIED",
+        "HOST_TARGET_MATH_UNVERIFIED",
+        "HOST_TARGET_ROUND_TRIP_UNVERIFIED"
+      ],
+      "hostTargetMathApplyEligible": false,
+      "productionUseAllowed": false,
+      "applyAllowed": false
+    },
+    "transformProbe": {
+      "status": "PER_CLIP_TRANSFORM_PROBE_READY",
+      "probePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4d2\\20260911_233431\\results\\00004_34fad278b992e2d139f869f7\\premiere_transform_probe.json",
+      "probeSha256": "547a09cde5f8d14731d3ccca912747b14b9cd1c1a6af8127c2658de3391348c8"
+    },
+    "transformCompatibility": {
+      "status": "CANONICAL_COMPATIBLE",
+      "primaryReason": null,
+      "reasonCodes": []
+    },
+    "hostTargetedPreview": {
+      "status": "HOST_TARGETED_PREVIEW_VERIFIED",
+      "usesCanonicalAdapterEvidence": true,
+      "premiereWritePerformed": false,
+      "applyAllowed": false
+    }
+  },
+  "evidenceAxes": {
+    "canonicalMathStatus": "VALID",
+    "roundTripStatus": "ROUND_TRIP_VERIFIED",
+    "hostVerificationStatus": "VERIFIED",
+    "geometryVerificationStatus": "HOST_SOURCE_GEOMETRY_VERIFIED",
+    "transformCompatibility": "CANONICAL_COMPATIBLE",
+    "hostTargetedPreviewStatus": "HOST_TARGETED_PREVIEW_VERIFIED",
+    "targetCanvasBindingStatus": "HOST_TARGET_CANVAS_MISMATCH",
+    "geometry2ParameterSemanticsStatus": "GEOMETRY2_PARAMETER_SEMANTICS_INCOMPLETE",
+    "hostTargetMathStatus": "HOST_TARGET_MATH_BLOCKED",
+    "cleanTargetTransformPreviewStatus": "CLEAN_TARGET_TRANSFORM_PREVIEW_REVIEW"
+  },
+  "mustNotDrivePremiereWrite": true,
+  "downstreamGate": {
+    "phase4d2PreviewOnly": true,
+    "premiereReadOnly": true,
+    "sequenceWriteAllowed": false,
+    "transformWriteAllowed": false,
+    "keyframeWriteAllowed": false,
+    "applyAllowed": false,
+    "requiresIndependentApplyPhase": true
+  },
+  "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4d2\\20260911_233431\\results\\00004_34fad278b992e2d139f869f7\\premiere_adapter_preview_result.json",
+  "clipBinding": {
+    "status": "BOUND_UNIQUE",
+    "source": "CURRENT_TIMELINE_FINGERPRINT_INVENTORY_V1",
+    "fingerprint": {
+      "sequenceGuid": "55960898-c02d-4a95-a044-f7b11aa482cc",
+      "trackIndex": 0,
+      "startTicks": "2142201600000",
+      "endTicks": "2616364800000",
+      "sourceInTicks": "2142201600000",
+      "sourceOutTicks": "2616364800000",
+      "projectItemId": "2ff06c60-78ee-4c3e-9640-a25f4c9f02f3"
+    },
+    "clip": {
+      "name": "01 苍井优、中岛步2026年夏季档.mp4",
+      "trackIndex": 0,
+      "disabled": false,
+      "timelineStart": {
+        "ticks": "2142201600000",
+        "seconds": 8.433333333333334
+      },
+      "timelineEnd": {
+        "ticks": "2616364800000",
+        "seconds": 10.3
+      },
+      "sourceIn": {
+        "ticks": "2142201600000",
+        "seconds": 8.433333333333334
+      },
+      "sourceOut": {
+        "ticks": "2616364800000",
+        "seconds": 10.3
+      },
+      "projectItem": {
+        "id": "2ff06c60-78ee-4c3e-9640-a25f4c9f02f3",
+        "name": "01 苍井优、中岛步2026年夏季档.mp4",
+        "colorLabelIndex": 1
+      },
+      "mediaPath": "C:\\Users\\<USER>\\Downloads\\虎虎看剧\\01 苍井优、中岛步2026年夏季档.mp4",
+      "fingerprint": {
+        "sequenceGuid": "55960898-c02d-4a95-a044-f7b11aa482cc",
+        "trackIndex": 0,
+        "startTicks": "2142201600000",
+        "endTicks": "2616364800000",
+        "sourceInTicks": "2142201600000",
+        "sourceOutTicks": "2616364800000",
+        "projectItemId": "2ff06c60-78ee-4c3e-9640-a25f4c9f02f3"
+      }
+    }
+  },
+  "transformProbePath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.55_SCHEMA_REPAIR_HOTFIX_CANDIDATE\\sessions\\phase4d2\\20260911_233431\\results\\00004_34fad278b992e2d139f869f7\\premiere_transform_probe.json",
+  "transformProbeSha256": "547a09cde5f8d14731d3ccca912747b14b9cd1c1a6af8127c2658de3391348c8"
+}

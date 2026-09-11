@@ -1,0 +1,95 @@
+{
+  "contract": "PHASE4D2_ACCEPTANCE_CALIBRATION_PROBE_POOL_V1",
+  "acceptanceOnly": true,
+  "readOnly": true,
+  "candidateCount": 6,
+  "inventoryCount": 20,
+  "uniqueProbeRpcCount": 20,
+  "cacheHitCount": 4,
+  "hostReadRetryCount": 0,
+  "complete": false,
+  "reasonCodes": [
+    "ACCEPTANCE_CALIBRATION_POOL_INCOMPLETE",
+    "GEOMETRY2_CALIBRATION_LIVE_PROBES_LT_3"
+  ],
+  "motion": {
+    "required": 4,
+    "selected": 4,
+    "candidateContributed": 4,
+    "supplementalContributed": 0,
+    "selectedClipInstanceIds": [
+      "aa9ffcb4a5475e2cb8578805",
+      "34fad278b992e2d139f869f7",
+      "41bfc84d0692f9fb7f0d74ab",
+      "9515627e029edbd1381ada25"
+    ]
+  },
+  "geometry2": {
+    "required": 4,
+    "liveRequired": 3,
+    "liveSelected": 0,
+    "cleanRequired": 1,
+    "cleanSelected": 1,
+    "selectedRoles": [
+      {
+        "role": "GEOMETRY2_CLEAN",
+        "clipInstanceId": "aa9ffcb4a5475e2cb8578805"
+      }
+    ]
+  },
+  "selectedProbes": [
+    {
+      "clipInstanceId": "aa9ffcb4a5475e2cb8578805",
+      "fingerprintHash": "aa9ffcb4a5475e2cb8578805",
+      "adapterCandidate": true,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION",
+        "GEOMETRY2_CLEAN"
+      ]
+    },
+    {
+      "clipInstanceId": "34fad278b992e2d139f869f7",
+      "fingerprintHash": "34fad278b992e2d139f869f7",
+      "adapterCandidate": true,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION"
+      ]
+    },
+    {
+      "clipInstanceId": "41bfc84d0692f9fb7f0d74ab",
+      "fingerprintHash": "41bfc84d0692f9fb7f0d74ab",
+      "adapterCandidate": true,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION"
+      ]
+    },
+    {
+      "clipInstanceId": "9515627e029edbd1381ada25",
+      "fingerprintHash": "9515627e029edbd1381ada25",
+      "adapterCandidate": true,
+      "authorityRole": "CALIBRATION_ONLY_READONLY",
+      "reservationEligible": false,
+      "mutationAuthorityEligible": false,
+      "phase4d7ExecutionEligible": false,
+      "roles": [
+        "MOTION"
+      ]
+    }
+  ],
+  "rejectedProbes": [],
+  "premiereWriteCalls": 0,
+  "mutationAuthorityGranted": false,
+  "reservationAuthorityGranted": false
+}
