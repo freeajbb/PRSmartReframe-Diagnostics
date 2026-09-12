@@ -1,0 +1,57 @@
+{
+  "automaticApplyStarted": false,
+  "config": {
+    "clips_per_request": 10,
+    "image_max_long_edge": 768,
+    "jpeg_quality": 75,
+    "max_concurrency": 4,
+    "mode": "API_MIDDLE_FRAME_COMPOSITION",
+    "model": "gemini-3-flash-preview",
+    "provider": "https://misusuli.freeajbb.top:8443/v1"
+  },
+  "forceReprocessExistingPosition": false,
+  "geometry2HostContractDigest": "3a826578658a8b6d1e994ce57890554ec67dfb702b22054a27fcdbbf6d9b870a",
+  "hostContractDigest": "97fc58b4ca37a2e102606c4ec5210ee218cf03b3cf28e0652668b3647891f708",
+  "mutationDispatches": 0,
+  "parameterSemanticsDigest": "8ba28fa7febd19e6b6510b89fd3e0313f2eb4fb57a3d204bd9b2573387c9c760",
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "productionAuthorityConsumptions": 0,
+  "providerCapabilities": {
+    "max_images_per_request": null
+  },
+  "providerConfig": {
+    "apiKeySource": "ENV:PRSMART_COMPOSITION_API_KEY",
+    "baseUrl": "https://misusuli.freeajbb.top:8443/v1",
+    "model": "gemini-3-flash-preview",
+    "supportsStructuredOutput": false,
+    "timeoutSeconds": 120
+  },
+  "providerIdentity": {
+    "apiKeySource": "ENV:PRSMART_COMPOSITION_API_KEY",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "model": "gemini-3-flash-preview",
+    "promptVersion": "API_MIDDLE_FRAME_COMPOSITION_PROMPT_V2",
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL_COMPOSITION",
+    "providerVersion": "0.5.67-api-middle-frame-composition-provider-flexibility-v1",
+    "requestSchema": "api_middle_frame_composition.request.v1",
+    "responseSchema": "api_middle_frame_composition.response.v1",
+    "structuredOutput": false
+  },
+  "qualityGateIdentity": {
+    "bodyRetentionPolicy": "SEMANTIC_BODY_RETENTION_V1",
+    "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+    "faceDetector": "YUNET_2026MAY_FROZEN_REUSE",
+    "faceSafety": "YUNET_LANDMARKS_V1",
+    "mustNotDriveComposition": true,
+    "personDetector": "DFINE_M_COCO_FROZEN_REUSE",
+    "policyVersion": "0.5.70-evidence-tiered-quality-gate-v2",
+    "poseDetector": "MEDIAPIPE_POSE_2023MAR_FROZEN_REUSE",
+    "relationshipPolicy": "SALIENT_FACE_RELATIONSHIP_V1",
+    "reviewOnly": true,
+    "semanticIntent": "HAND_CONTEXT_V1"
+  },
+  "runId": "api0570_20260913_022340_990590",
+  "schemaVersion": "api_middle_frame_composition.run_config.v1",
+  "workflowProfileDigest": "5610c5b6a330059b38ea3a76900cca57b408f8378f4b9b592206564dd3fe98cc"
+}
