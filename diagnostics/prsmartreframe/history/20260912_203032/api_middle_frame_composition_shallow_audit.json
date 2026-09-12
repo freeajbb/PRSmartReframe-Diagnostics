@@ -1,0 +1,95 @@
+{
+  "analysis": {
+    "cacheHits": 0,
+    "logicalBatchCount": 0,
+    "providerCalls": 0,
+    "reviewOrFailedClips": 2,
+    "status": "WAITING_APPLY",
+    "transportRetries": 0,
+    "verifiedPositions": 0
+  },
+  "applyBatchId": "",
+  "authority": "DIAGNOSTIC_AUDIT_ONLY",
+  "batching": {
+    "effectiveClipsPerRequest": 10,
+    "requestedClipsPerRequest": 10
+  },
+  "clips": [
+    {
+      "aiRawCrop": {},
+      "cacheHit": false,
+      "canonicalCrop": {},
+      "clipInstanceId": "aa9ffcb4a5475e2cb8578805",
+      "confidence": null,
+      "geometryDigest": "",
+      "middleFrameSha256": "",
+      "mutationReasonCodes": [],
+      "mutationStatus": "NOT_APPLIED",
+      "ordinal": 1,
+      "reason": "Source media must pass ffprobe before middle frame extraction.",
+      "reasonCodes": [
+        "Source media must pass ffprobe before middle frame extraction."
+      ],
+      "requiredCropWindowDigest": "",
+      "status": "API_COMPOSITION_RESULT_REVIEW",
+      "targetPosition": []
+    },
+    {
+      "aiRawCrop": {},
+      "cacheHit": false,
+      "canonicalCrop": {},
+      "clipInstanceId": "5a66f8af7b9f63f6692a6382",
+      "confidence": null,
+      "geometryDigest": "",
+      "middleFrameSha256": "",
+      "mutationReasonCodes": [],
+      "mutationStatus": "NOT_APPLIED",
+      "ordinal": 2,
+      "reason": "Source media must pass ffprobe before middle frame extraction.",
+      "reasonCodes": [
+        "Source media must pass ffprobe before middle frame extraction."
+      ],
+      "requiredCropWindowDigest": "",
+      "status": "API_COMPOSITION_RESULT_REVIEW",
+      "targetPosition": []
+    }
+  ],
+  "concurrency": {
+    "effectiveFinal": null,
+    "min": null,
+    "peak": 0,
+    "requested": 4
+  },
+  "contract": "API_MIDDLE_FRAME_COMPOSITION_DIAGNOSTIC_AUDIT_V1",
+  "imagePolicy": {
+    "jpegQuality": 75,
+    "maxLongEdge": 768
+  },
+  "mode": "API_MIDDLE_FRAME_COMPOSITION",
+  "mutation": {
+    "applyDispatches": 0,
+    "applyWrites": 0,
+    "hardStop": false,
+    "hardStopReason": null,
+    "rollbackDispatches": 0,
+    "rollbackWrites": 0,
+    "status": "NOT_STARTED"
+  },
+  "mutationAuthorityGranted": false,
+  "provider": {
+    "model": "gemini-3.1-flash-lite",
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL_COMPOSITION"
+  },
+  "runId": "api0561_20260912_202909_560387",
+  "safety": {
+    "automaticApplyAllowed": false,
+    "automaticResumeAllowed": false,
+    "batchApplyAllowed": false,
+    "parallelHostMutationAllowed": false,
+    "productionUseAllowed": false
+  },
+  "sourceEvidenceTimeNs": {
+    "analysis": 1789216149631189900,
+    "apply": 0
+  }
+}
