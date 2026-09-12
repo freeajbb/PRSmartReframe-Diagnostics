@@ -1,0 +1,36 @@
+{
+  "batchId": "batch_0001",
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "providerAttempts": 1,
+  "rawResponses": [
+    "{\n  \"schemaVersion\": \"api_middle_frame_composition.response.v1\",\n  \"batchId\": \"batch_0001\",\n  \"results\": [\n    {\n      \"clipInstanceId\": \"14c47947191cf7d50a252581\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.35,\n        \"top\": 0.05,\n        \"right\": 0.7847826086956522,\n        \"bottom\": 0.441304347826087\n      },\n      \"confidence\": 0.95,\n      \"primarySubject\": \"Woman holding a pastry\",\n      \"compositionReason\": \"Focused on the woman's face and the pastry she is holding, maintaining a natural portrait framing while respecting the required aspect ratio.\"\n    },\n    {\n      \"clipInstanceId\": \"7d9a96a5f2ff1549eb7220f9\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.3,\n        \"right\": 0.6847826086956522,\n        \"bottom\": 0.691304347826087\n      },\n      \"confidence\": 0.9,\n      \"primarySubject\": \"Woman sitting at the counter\",\n      \"compositionReason\": \"Prioritized the woman as the primary subject in the foreground, cropping out the man on the left to maintain a clean, focused composition on her expression.\"\n    }\n  ]\n}"
+  ],
+  "results": [
+    {
+      "clipInstanceId": "14c47947191cf7d50a252581",
+      "compositionReason": "Focused on the woman's face and the pastry she is holding, maintaining a natural portrait framing while respecting the required aspect ratio.",
+      "confidence": 0.95,
+      "cropBoxNormalized": {
+        "bottom": 0.441304347826087,
+        "left": 0.35,
+        "right": 0.7847826086956522,
+        "top": 0.05
+      },
+      "primarySubject": "Woman holding a pastry"
+    },
+    {
+      "clipInstanceId": "7d9a96a5f2ff1549eb7220f9",
+      "compositionReason": "Prioritized the woman as the primary subject in the foreground, cropping out the man on the left to maintain a clean, focused composition on her expression.",
+      "confidence": 0.9,
+      "cropBoxNormalized": {
+        "bottom": 0.691304347826087,
+        "left": 0.25,
+        "right": 0.6847826086956522,
+        "top": 0.3
+      },
+      "primarySubject": "Woman sitting at the counter"
+    }
+  ],
+  "schemaRepairs": 0
+}
