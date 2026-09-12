@@ -1,0 +1,93 @@
+{
+  "batchSchema": 1,
+  "batchVersion": "0.5.50-phase4c5-middle-frame-batch-v1",
+  "contract": {
+    "applyAllowed": false,
+    "compositionAllowed": false,
+    "crossFrameIdentityAuthority": "NONE",
+    "geometryAuthority": "FROZEN_FAST_VISION",
+    "input": "Phase 4C-4 fast_vision_batch + FAST_VISION_ESCALATION_GATE_V1",
+    "output": "MIDDLE_FRAME_SLOW_VISION_EVIDENCE_V1",
+    "premiereReadOnly": true,
+    "semanticAuthority": "MIDDLE_ONLY"
+  },
+  "fastVisionBatchPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.58_MIDDLE_POSITION_SINGLE_CLIP_CANARY_V1\\sessions\\phase4c4\\20260912_122717\\fast_vision_batch.json",
+  "manifestPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.58_MIDDLE_POSITION_SINGLE_CLIP_CANARY_V1\\sessions\\phase4c5\\20260912_122717\\slow_vision_batch.json",
+  "mode": "MIDDLE_FRAME_BATCH",
+  "phase": "4C-5",
+  "provider": {
+    "apiKeySource": "ENV:PRSMART_SLOWVISION_API_KEY",
+    "endpointIdentity": "https://misusuli.freeajbb.top:8443/v1",
+    "model": "gemini-3.1-flash-lite",
+    "promptVersion": "PHASE4C5_MIDDLE_BATCH_PROMPT_V1",
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL",
+    "providerVersion": "0.5.50-phase4c5-middle-batch-v1",
+    "requestSchemaVersion": "phase4c5.middle_batch.request.v1",
+    "responseSchemaVersion": "phase4c5.middle_batch.response.v1"
+  },
+  "results": [
+    {
+      "clipInstanceId": "f693901ebe7f88e2e380deef",
+      "evidenceStatus": "RESOLVED",
+      "humanReviewReasons": [],
+      "needsHumanReview": false,
+      "ordinal": 3,
+      "representedPersonAssessment": "ASSESSED",
+      "resultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_Phase5B8_0.5.58_MIDDLE_POSITION_SINGLE_CLIP_CANARY_V1\\sessions\\phase4c5\\20260912_122717\\middle_batch\\clips\\f693901ebe7f88e2e380deef\\slow_vision_result.json",
+      "semanticSubjectCount": 3,
+      "slowVisionCacheHit": false,
+      "status": "SLOW_VISION_READY"
+    }
+  ],
+  "slowVisionFailures": [],
+  "summary": {
+    "averageImageBytes": 117425.0,
+    "base64PayloadBytes": 313182,
+    "cacheHits": 0,
+    "cacheMisses": 1,
+    "cancelledPendingClips": 0,
+    "clipRepairs": 0,
+    "concurrencyReductions": 0,
+    "effectiveMaxConcurrency": 4,
+    "eligibleClips": 1,
+    "estimatedImageReductionPct": 66.6666666667,
+    "estimatedRequestReductionPct": 0.0,
+    "failedBatches": 0,
+    "failedClips": 0,
+    "imagesSent": 2,
+    "legacyEquivalent": {
+      "imageInputs": 6,
+      "logicalRequests": 1
+    },
+    "logicalBatches": 1,
+    "middleActual": {
+      "imageInputs": 2,
+      "logicalRequests": 1
+    },
+    "mutationDispatchCount": 0,
+    "partialBatches": 0,
+    "peakObservedConcurrency": 1,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "preparedImages": 2,
+    "primaryProviderRequests": 1,
+    "productionAuthorityConsumptions": 0,
+    "providerAttempts": 1,
+    "providerReportedUsage": {
+      "completion_tokens": 426,
+      "prompt_tokens": 2737,
+      "total_tokens": 3163
+    },
+    "rawPreparedBytes": 234850,
+    "repairImagesSent": 0,
+    "requestedMaxConcurrency": 4,
+    "reviewClips": 0,
+    "schemaRepairs": 0,
+    "selectedClips": 7,
+    "successfulBatches": 1,
+    "successfulClips": 1,
+    "tokenUsageStatus": "REPORTED",
+    "totalImageBytesSent": 234850,
+    "transportRetries": 0
+  }
+}
