@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-12T13:00:55.339018+00:00",
+  "stamp": "20260912_210055",
+  "app": {
+    "name": "PRSmartReframe",
+    "version": "0.5.00",
+    "phase": "Phase 5B-5 Multi-Clip Transactional Apply Pilot"
+  },
+  "gptBridge": {
+    "enabled": true,
+    "strategy": "SHALLOW_SINGLE_JSON_PLUS_CONTACT_SHEETS_V1",
+    "index": "GPT_ANALYSIS_INDEX.md",
+    "analysisBundle": "GPT_ANALYSIS_BUNDLE.json",
+    "frameScalingCalibrationBundle": null,
+    "contactSheets": [],
+    "poseBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0
+      }
+    ],
+    "fastVisionBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "associationVisualQa": null,
+        "duplicateGroupVisualQa": null,
+        "slowVisionGateVisualQa": null
+      }
+    ],
+    "slowVisionBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "provider": null,
+        "resultCount": 0,
+        "slowVisionVisualQa": null
+      }
+    ],
+    "subjectFusionBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "subjectFusionVisualQa": null
+      }
+    ],
+    "compositionReadinessBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionReadinessVisualQa": null
+      }
+    ],
+    "compositionPreviewBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "compositionPreviewVisualQa": null
+      }
+    ],
+    "premiereAdapterBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "premiereAdapterVisualQa": null
+      }
+    ],
+    "candidateQueueBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "policy": null,
+        "outputContract": null,
+        "resultCount": 0,
+        "executionGeometryAuthorityContracts": [],
+        "executionGeometryAuthorityStatuses": []
+      }
+    ],
+    "humanReviewBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "queueSummary": null,
+        "decisionSummary": null,
+        "queueItemCount": 0,
+        "revisionCount": 0
+      }
+    ],
+    "executionPreflightBatchSummaries": [
+      {
+        "sessionId": "api_middle_frame_composition",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      },
+      {
+        "sessionId": "authority",
+        "summary": null,
+        "resultCount": 0,
+        "planCount": 0
+      }
+    ],
+    "phase5b7Lineages": [],
+    "apiMiddleFrameCompositionLatest": {
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_DIAGNOSTIC_AUDIT_V1",
+      "authority": "DIAGNOSTIC_AUDIT_ONLY",
+      "mutationAuthorityGranted": false,
+      "runId": "api0562_20260912_205931_334434",
+      "applyBatchId": "",
+      "mode": "API_MIDDLE_FRAME_COMPOSITION",
+      "provider": {
+        "providerId": "OPENAI_COMPATIBLE_MULTIMODAL_COMPOSITION",
+        "model": "gemini-3.1-flash-lite"
+      },
+      "imagePolicy": {
+        "maxLongEdge": 768,
+        "jpegQuality": 75
+      },
+      "batching": {
+        "requestedClipsPerRequest": 10,
+        "effectiveClipsPerRequest": 10
+      },
+      "concurrency": {
+        "requested": 4,
+        "effectiveFinal": null,
+        "min": null,
+        "peak": 0
+      },
+      "analysis": {
+        "status": "WAITING_APPLY",
+        "logicalBatchCount": 0,
+        "providerCalls": 0,
+        "transportRetries": 0,
+        "cacheHits": 0,
+        "verifiedPositions": 0,
+        "reviewOrFailedClips": 2
+      },
+      "clips": [
+        {
+          "ordinal": 1,
+          "clipInstanceId": "aa9ffcb4a5475e2cb8578805",
+          "status": "API_COMPOSITION_RESULT_REVIEW",
+          "middleFrameSha256": "52c558959269404afc172933a3927990370a0184bec45c4e55f5f623dc928216",
+          "geometryDigest": "",
+          "requiredCropWindowDigest": "",
+          "aiRawCrop": {},
+          "canonicalCrop": {},
+          "targetPosition": [],
+          "confidence": null,
+          "reason": "EFFECTIVE_FRAME_MAPPING_UNVERIFIED",
+          "cacheHit": false,
+          "reasonCodes": [
+            "EFFECTIVE_FRAME_MAPPING_UNVERIFIED"
+          ],
+          "mutationStatus": "NOT_APPLIED",
+          "mutationReasonCodes": []
+        },
+        {
+          "ordinal": 2,
+          "clipInstanceId": "5a66f8af7b9f63f6692a6382",
+          "status": "API_COMPOSITION_RESULT_REVIEW",
+          "middleFrameSha256": "5feb519fc51f2bcff44d16e5eb265aef85886633ca9d1bc49c32bf86d6364f03",
+          "geometryDigest": "",
+          "requiredCropWindowDigest": "",
+          "aiRawCrop": {},
+          "canonicalCrop": {},
+          "targetPosition": [],
+          "confidence": null,
+          "reason": "EFFECTIVE_FRAME_MAPPING_UNVERIFIED",
+          "cacheHit": false,
+          "reasonCodes": [
+            "EFFECTIVE_FRAME_MAPPING_UNVERIFIED"
+          ],
+          "mutationStatus": "NOT_APPLIED",
+          "mutationReasonCodes": []
+        }
+      ],
+      "mutation": {
+        "status": "NOT_STARTED",
+        "applyDispatches": 0,
+        "applyWrites": 0,
+        "rollbackDispatches": 0,
+        "rollbackWrites": 0,
+        "hardStop": false,
+        "hardStopReason": null
+      },
+      "safety": {
+        "productionUseAllowed": false,
+        "batchApplyAllowed": false,
+        "parallelHostMutationAllowed": false,
+        "automaticResumeAllowed": false,
+        "automaticApplyAllowed": false
+      },
+      "sourceEvidenceTimeNs": {
+        "analysis": 1789217971683153800,
+        "apply": 0
+      }
+    },
+    "phase5b6Latest": null,
+    "phase5b5Latest": null,
+    "note": "These shallow artifacts duplicate sanitized diagnostic evidence specifically to avoid deep GitHub blob/cache traversal failures."
+  },
+  "privacy": {
+    "sanitized": true,
+    "redactionCount": 20,
+    "windowsUsernameRedacted": true,
+    "credentialsStored": false,
+    "note": "Secrets are pattern-redacted before export. Review before publishing if logs may contain unusual private data."
+  },
+  "files": [
+    {
+      "path": "desktop_log.txt",
+      "source": "ui_log",
+      "size": 3604
+    },
+    {
+      "path": "runtime_state.json",
+      "source": "desktop_state",
+      "size": 13568
+    },
+    {
+      "path": "snapshot/locked_targets.json",
+      "source": "C:\\Users\\XBS\\Desktop\\PRSmartReframe_0.5.62_A0_True_Machine_Input_Contract_Hotfix\\sessions\\phase1b\\locked_targets_20260912_205913.json",
+      "size": 30512
+    },
+    {
+      "path": "sessions/authority/phase4d2_host_render_authority_freeze_0.4.50.json",
+      "source": "authority/phase4d2_host_render_authority_freeze_0.4.50.json",
+      "size": 3300
+    },
+    {
+      "path": "sessions/authority/phase4d2_host_render_authority_seed_0.4.49.json",
+      "source": "authority/phase4d2_host_render_authority_seed_0.4.49.json",
+      "size": 3420
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/api_middle_frame_composition_batch.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/api_middle_frame_composition_batch.json",
+      "size": 1688
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00001_aa9ffcb4a5475e2cb8578805/aa9ffcb4a5475e2cb8578805_middle_raw_evidence.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00001_aa9ffcb4a5475e2cb8578805/aa9ffcb4a5475e2cb8578805_middle_raw_evidence.json",
+      "size": 1684
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00001_aa9ffcb4a5475e2cb8578805/middle_raw.jpg",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00001_aa9ffcb4a5475e2cb8578805/middle_raw.jpg",
+      "size": 203920
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00002_5a66f8af7b9f63f6692a6382/5a66f8af7b9f63f6692a6382_middle_raw_evidence.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00002_5a66f8af7b9f63f6692a6382/5a66f8af7b9f63f6692a6382_middle_raw_evidence.json",
+      "size": 1720
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00002_5a66f8af7b9f63f6692a6382/middle_raw.jpg",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/images/00002_5a66f8af7b9f63f6692a6382/middle_raw.jpg",
+      "size": 174881
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/results/00001_aa9ffcb4a5475e2cb8578805/api_composition_result.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/results/00001_aa9ffcb4a5475e2cb8578805/api_composition_result.json",
+      "size": 407
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/results/00002_5a66f8af7b9f63f6692a6382/api_composition_result.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/results/00002_5a66f8af7b9f63f6692a6382/api_composition_result.json",
+      "size": 407
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/run_config.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/run_config.json",
+      "size": 1863
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/run_state.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/run_state.json",
+      "size": 1144
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00001_aa9ffcb4a5475e2cb8578805/source_evidence.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00001_aa9ffcb4a5475e2cb8578805/source_evidence.json",
+      "size": 4065
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00001_aa9ffcb4a5475e2cb8578805/source_media_probe.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00001_aa9ffcb4a5475e2cb8578805/source_media_probe.json",
+      "size": 1401
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00002_5a66f8af7b9f63f6692a6382/source_evidence.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00002_5a66f8af7b9f63f6692a6382/source_evidence.json",
+      "size": 4102
+    },
+    {
+      "path": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00002_5a66f8af7b9f63f6692a6382/source_media_probe.json",
+      "source": "sessions/api_middle_frame_composition/api0562_20260912_205931_334434/sources/00002_5a66f8af7b9f63f6692a6382/source_media_probe.json",
+      "size": 1401
+    },
+    {
+      "path": "api_middle_frame_composition_shallow_audit.json",
+      "source": "generated_api_middle_frame_composition_diagnostic_audit",
+      "size": 2699
+    },
+    {
+      "path": "GPT_ANALYSIS_BUNDLE.json",
+      "source": "generated_gpt_bridge",
+      "size": 28467
+    },
+    {
+      "path": "GPT_ANALYSIS_INDEX.md",
+      "source": "generated_gpt_bridge",
+      "size": 9036
+    }
+  ],
+  "bundle": {
+    "zipFile": "PRSmartReframe_Diagnostic_20260912_210055.zip",
+    "historyRelativePath": "history/20260912_210055",
+    "latestRelativePath": "latest"
+  }
+}

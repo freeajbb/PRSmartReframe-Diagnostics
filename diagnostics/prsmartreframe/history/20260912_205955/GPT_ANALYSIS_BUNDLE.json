@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Shallow single-file GPT bridge for PRSmartReframe diagnostics. Contains sanitized runtime state, desktop log, latest Phase5B6 admission/preflight audit when present, frozen Phase5B5 diagnostic audit summary/invariants, and available upstream batch JSON so analysis does not depend on deep GitHub blob traversal.",
+  "app": {
+    "name": "PRSmartReframe",
+    "version": "0.5.00",
+    "phase": "Phase 5B-5 Multi-Clip Transactional Apply Pilot"
+  },
+  "runtimeState": {
+    "phase": "Phase 5B-5 Multi-Clip Transactional Apply Pilot",
+    "version": "0.5.00",
+    "hostRenderAuthority": {
+      "contract": "PHASE4D2_HOST_RENDER_AUTHORITY_FREEZE_V1",
+      "status": "HOST_RENDER_AUTHORITY_FROZEN",
+      "evidence": {
+        "historyId": "20260903_214605",
+        "sessionId": "20260903_214229",
+        "groundTruthGitBlobSha": "be9767ea52f87b08a9e286f701754e1a65765c5e",
+        "hostTargetMathGitBlobSha": "119d6c79c7beae99bc85f6c1446b5e508834cb02"
+      },
+      "scope": {
+        "premiereVersion": "26.0.1",
+        "geometry2ContractId": "PREMIERE_26_0_1_GEOMETRY2_SIGNATURE_V1",
+        "sourceRaster": {
+          "width": 1728.0,
+          "height": 1080.0,
+          "pixelAspect": 1.0
+        },
+        "sequenceRaster": {
+          "width": 1080.0,
+          "height": 1920.0,
+          "pixelAspect": 1.0
+        },
+        "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT"
+      },
+      "proposedHostParameters": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "position": [
+          0.1748899922939976,
+          0.5
+        ],
+        "positionClamped": false,
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionNormalizationBasis": {
+          "coordinateSpace": "SOURCE_RASTER",
+          "width": 1728.0,
+          "height": 1080.0
+        },
+        "scalePrimaryPercent": 177.77777777777777,
+        "uniformScale": true
+      },
+      "mathematicalTargetTransform": {
+        "compositionOrder": "GEOMETRY2_EFFECT_SPACE_THEN_INTRINSIC_MOTION_V1",
+        "positionPixels": {
+          "x": 302.2099066840278,
+          "y": 540.0
+        }
+      },
+      "groundTruthSummary": {
+        "frameCount": 3,
+        "frameVerifiedCount": 3,
+        "frameReviewCount": 0,
+        "frameFailedCount": 0,
+        "readbackStatus": "PREMIERE_HOST_RENDER_READBACK_VERIFIED",
+        "comparisons": {
+          "FRAME_A": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "metrics": {
+              "translationXPixels": 0.02134891940230994,
+              "translationYPixels": 0.028492974737954313,
+              "uniformScaleErrorPercent": 0.002071294075089991,
+              "rotationErrorDegrees": 0.00023703374844411974,
+              "unexpectedBlackBorderPixels": 0.0,
+              "contentCoverageDeltaPercent": 0.028742283950617287
+            }
+          },
+          "FRAME_B": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "metrics": {
+              "translationXPixels": 0.03574365079827658,
+              "translationYPixels": 0.015610430923958142,
+              "uniformScaleErrorPercent": 0.001229626851428911,
+              "rotationErrorDegrees": 0.0004996586949208569,
+              "unexpectedBlackBorderPixels": 0.0,
+              "contentCoverageDeltaPercent": 0.10151427469135799
+            }
+          },
+          "FRAME_C": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "metrics": {
+              "translationXPixels": 0.01851394935356939,
+              "translationYPixels": 0.059812115481194084,
+              "uniformScaleErrorPercent": 0.003715251744262904,
+              "rotationErrorDegrees": 0.00014385357949666213,
+              "unexpectedBlackBorderPixels": 0.0,
+              "contentCoverageDeltaPercent": 0.04918981481481488
+            }
+          }
+        }
+      },
+      "reasonCodes": [],
+      "futureHostWriteDesignAllowed": true,
+      "hostMutationAllowed": false,
+      "writeExecutionAllowed": false,
+      "applyAllowed": false,
+      "productionUseAllowed": false
+    },
+    "safeWriteDesignEligibility": {},
+    "phase4d3GeneralizedEligibility": {},
+    "phase4d3FoundationSummary": {
+      "contract": "PHASE4D3_SAFE_WRITE_FOUNDATION_SUMMARY_V1",
+      "authorityState": "FROZEN",
+      "safeWriteDesignState": "WAITING ADAPTER RESULT",
+      "hostWriteExecutionState": "OFF",
+      "applyState": "OFF",
+      "displayText": "Host Render Authority: FROZEN · Safe Write Design: WAITING ADAPTER RESULT · Host Write Execution: OFF · Apply: OFF",
+      "reasonCodes": [],
+      "hostWriteExecutionAllowed": false,
+      "hostMutationAllowed": false,
+      "applyAllowed": false,
+      "productionUseAllowed": false
+    },
+    "phase4d3VersionInterlock": {
+      "contract": "PHASE4D3_DESKTOP_UXP_VERSION_INTERLOCK_V1",
+      "desktopIdentity": "0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1",
+      "uxpIdentity": "0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1",
+      "desktopReleaseVersion": "0.5.00",
+      "uxpReleaseVersion": "0.5.00",
+      "verified": true,
+      "mutationAllowed": true,
+      "reasonCodes": [],
+      "status": "PHASE4D3_VERSION_INTERLOCK_VERIFIED"
+    },
+    "phase4d3TransactionLedger": {
+      "contract": "PHASE4D3_TRANSACTION_LEDGER_V1",
+      "status": "PHASE4D3_TRANSACTION_LEDGER_READY",
+      "healthy": true,
+      "reasonCodes": [],
+      "entries": []
+    },
+    "phase4d3TransactionLedgerMigration": {
+      "contract": "PHASE4D3_TRANSACTION_LEDGER_MIGRATION_V1",
+      "status": "PHASE4D3_TRANSACTION_LEDGER_MIGRATION_NOT_APPLICABLE",
+      "sourceVersion": "0.4.65",
+      "targetVersion": "0.4.66",
+      "legacyRoot": "",
+      "migratedCount": 0,
+      "reasonCodes": []
+    },
+    "lastPhase4D3WriteSessionDir": "",
+    "lastPhase4D3WriteSummary": {},
+    "lastPhase4D4PreflightSessionDir": "",
+    "lastPhase4D4PreflightSummary": {},
+    "lastPhase4D5BatchExecutionSessionDir": "",
+    "lastPhase4D5BatchExecutionSummary": {},
+    "phase4d5BatchExecutionLedger": {
+      "contract": "PHASE4D5_BATCH_EXECUTION_LEDGER_V1",
+      "status": "PHASE4D5_BATCH_EXECUTION_LEDGER_READY",
+      "healthy": true,
+      "reasonCodes": [],
+      "entries": [],
+      "updatedAt": ""
+    },
+    "phase4d5RecoverySummary": {
+      "total": 0,
+      "noAction": 0,
+      "revalidation": 0,
+      "blocked": 0
+    },
+    "phase4d6LastWrite": {},
+    "phase4d6LastRollback": {},
+    "phase4d6FingerprintBindingSummary": {},
+    "phase4d6MutationSafety": {
+      "fingerprintBindingRequired": true,
+      "selectionAuthority": false,
+      "nClipExecutionAllowed": false,
+      "batchApplyAllowed": false,
+      "productionUseAllowed": false,
+      "versionInterlockVerified": true
+    },
+    "phase5b4bLastMatrixSessionDir": "",
+    "phase5b4bLastMatrixSummary": {},
+    "phase5b4bSafety": {
+      "fixtureReady": false,
+      "matrixActive": false,
+      "currentCaseId": "B4B-01",
+      "cleanupAvailable": false,
+      "cleanupVerified": false,
+      "negativeWriteCount": 0,
+      "providerCalls": 0,
+      "matrixStatus": ""
+    },
+    "phase5b4aLastMatrixSessionDir": "",
+    "phase5b4aLastMatrixSummary": {},
+    "phase5b4aSafety": {
+      "readOnlyMatrix": true,
+      "premiereWriteCalls": 0,
+      "providerCalls": 0,
+      "hostMutationAllowed": false,
+      "writeAllowed": false,
+      "applyAllowed": false,
+      "rollbackAllowed": false
+    },
+    "phase5b2SourceBatchPath": "",
+    "phase5b2LastAuthorizationSessionDir": "",
+    "phase5b2LastAuthorizationSummary": {},
+    "phase5b2Safety": {
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "providerCalls": 0,
+      "hostExecutionAllowed": false,
+      "writeAllowed": false,
+      "applyAllowed": false,
+      "hostMutationAllowed": false,
+      "batchApplyAllowed": false,
+      "authorizationIsApply": false
+    },
+    "phase5b1SourceBatchPath": "",
+    "phase5b1ReviewDecisionBatchPath": "",
+    "phase5b1LastPreflightSessionDir": "",
+    "phase5b1LastPreflightSummary": {},
+    "phase5b1Safety": {
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "providerCalls": 0,
+      "writeAllowed": false,
+      "applyAllowed": false
+    },
+    "phase5a2LastReviewSessionDir": "",
+    "phase5a2LastReviewSummary": {},
+    "phase5a2ExternalSourceBatchPath": "",
+    "phase5a2Safety": {
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "providerCalls": 0,
+      "executionReady": false,
+      "writeAllowed": false,
+      "applyAllowed": false,
+      "batchReviewAllowed": false
+    },
+    "phase5a1ExternalPhase4D2BatchPath": "",
+    "phase5a1ExternalAuthority": {},
+    "phase5a1LastCandidateQueueSessionDir": "",
+    "phase5a1LastCandidateQueueSummary": {},
+    "phase5a1Safety": {
+      "premiereReadOnly": true,
+      "providerCalls": 0,
+      "premiereWriteCalls": 0,
+      "applyAllowed": false,
+      "batchApplyAllowed": false,
+      "productionUseAllowed": false,
+      "autoReadyRequiresFreshPreflight": true,
+      "writeAllowed": false
+    },
+    "phase4d7ExecutionLedger": {
+      "contract": "PHASE4D7_EXECUTION_LEDGER_V1",
+      "status": "PHASE4D7_EXECUTION_LEDGER_READY",
+      "healthy": true,
+      "reasonCodes": [],
+      "entries": [],
+      "updatedAt": ""
+    },
+    "phase4d7RecoveryPreview": {
+      "contract": "PHASE4D7_BATCH_RECOVERY_V1",
+      "status": "NO_ACTION_REQUIRED",
+      "reasonCodes": [],
+      "resumable": false,
+      "resumeRequiresExplicitUserAction": false,
+      "recommendedRepairs": [],
+      "counts": {
+        "sessions": 0
+      },
+      "hostMutationPerformed": false,
+      "automaticResumePerformed": false,
+      "batchApplyAllowed": false,
+      "productionUseAllowed": false,
+      "unattendedResumeAllowed": false
+    },
+    "phase4d7LastExecutionSummary": {},
+    "phase4d7AcceptancePrep": {
+      "contract": "PHASE4D7_ACCEPTANCE_PREP_V2",
+      "source": {
+        "sourceKind": "UNRESOLVED",
+        "resolvedBatchPath": "",
+        "originBatchPath": "",
+        "sourceSessionId": "",
+        "isFrozenSnapshot": false
+      },
+      "phase4c5": {
+        "batchPath": "",
+        "present": false,
+        "usableCandidates": 0
+      },
+      "phase4c6": {
+        "batchPath": "",
+        "present": false,
+        "chainMatchesLatest": false,
+        "usableCandidates": 0
+      },
+      "phase4c7": {
+        "batchPath": "",
+        "present": false,
+        "chainMatchesLatest": false,
+        "selectedCount": 0,
+        "gateReady": 0,
+        "gateBlocked": 0,
+        "gateFailed": 0,
+        "usableCandidates": 0
+      },
+      "phase4d1": {
+        "batchPath": "",
+        "chainMatchesLatest": false,
+        "selectedCount": 0,
+        "previewReady": 0,
+        "previewSkipped": 0,
+        "previewFailed": 0
+      },
+      "phase4d2": {
+        "batchPath": "",
+        "chainMatchesSource": false,
+        "selectedCount": 0,
+        "adapterReady": 0,
+        "adapterReview": 0
+      },
+      "phase4d4": {
+        "planPath": "",
+        "chainMatchesLatest": false,
+        "planReady": 0,
+        "blocked": 0
+      },
+      "phase4d5": {
+        "manifestPath": "",
+        "chainMatchesLatest": false,
+        "freshReserved": 0,
+        "manifestBuildIdentity": ""
+      },
+      "freshBatch": false,
+      "nextAction": "RUN_PHASE4C5_CURRENT",
+      "reasonCodes": [
+        "PHASE4D1_SOURCE_UNRESOLVED",
+        "PHASE4C5_BATCH_MISSING",
+        "PHASE4C6_BATCH_MISSING",
+        "PHASE4C7_BATCH_MISSING",
+        "PHASE4D2_BATCH_MISSING",
+        "PHASE4D4_PREFLIGHT_MISSING",
+        "PHASE4D5_MANIFEST_MISSING",
+        "FRESH_RESERVATIONS_LT_2"
+      ],
+      "productionUseAllowed": false,
+      "batchApplyAllowed": false,
+      "hostMutationPerformed": false
+    },
+    "acceptanceCurrentOnlyMode": true,
+    "phase4d7MutationSafety": {
+      "fingerprintBindingRequired": true,
+      "selectionAuthority": false,
+      "perClipTransactionIsolation": true,
+      "failContinue": true,
+      "sequentialOnly": true,
+      "parallelHostMutationAllowed": false,
+      "batchApplyAllowed": false,
+      "productionUseAllowed": false,
+      "unattendedResumeAllowed": false,
+      "newPremiereMutationRpcCount": 0,
+      "versionInterlockVerified": true
+    },
+    "slowVisionConfig": {
+      "baseUrl": "",
+      "model": "",
+      "timeoutSeconds": 120,
+      "apiKeySource": "ENV:PRSMART_SLOWVISION_API_KEY",
+      "apiKeyConfigured": true
+    },
+    "premiereConnected": true,
+    "bridgeStatus": "plugin=0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1 host=26.0.1",
+    "lockedSnapshotPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_0.5.62_A0_True_Machine_Input_Contract_Hotfix\\sessions\\phase1b\\locked_targets_20260912_205913.json",
+    "snapshotSummary": {
+      "NORMAL": 2,
+      "SPECIAL_ANIMATION": 0,
+      "MISSING_TRANSFORM": 0,
+      "MULTIPLE_TRANSFORM_EFFECTS": 0,
+      "CLIP_DISABLED": 0,
+      "SOURCE_MEDIA_ERROR": 0,
+      "OTHER_ERROR": 0
+    },
+    "lastQualitySessionDir": "",
+    "lastQualitySummary": {},
+    "lastSubjectFusionSessionDir": "",
+    "lastSubjectFusionSummary": {},
+    "lastCompositionReadinessSessionDir": "",
+    "lastCompositionReadinessSummary": {},
+    "lastCompositionPreviewSessionDir": "",
+    "lastCompositionPreviewSummary": {},
+    "lastPremiereAdapterSessionDir": "",
+    "lastPremiereAdapterSummary": {},
+    "lastGeometry2SemanticsSessionDir": "",
+    "lastGeometry2SemanticsStatus": "",
+    "lastHostRenderCalibrationSessionDir": "",
+    "lastHostRenderGroundTruthStatus": "",
+    "lastGitPushTelemetry": {},
+    "safety": {
+      "premiereReadOnly": false,
+      "phase4d2PremiereReadOnly": true,
+      "compositionAllowed": false,
+      "applyAllowed": false,
+      "batchApplyAllowed": false,
+      "productionUseAllowed": false,
+      "disposableSingleClipMutationTestEnabled": true,
+      "disposableSingleClipHostWriteAllowed": false,
+      "hostWriteExecutionAllowed": false,
+      "hostMutationAllowed": false,
+      "faceIdentityEnabled": false,
+      "subjectFusionEnabled": true,
+      "subjectFusionPreviewOnly": true,
+      "compositionReadinessGateEnabled": true,
+      "compositionReadinessPreviewOnly": true,
+      "compositionPreviewEnabled": true,
+      "compositionPreviewOnly": true,
+      "premierePositionComputed": false
+    }
+  },
+  "desktopLog": "0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1 desktop started. Phase 5B-5 controlled 2–3 Clip operator-stepped Pilot. Batch Apply=OFF; Production Apply=OFF; Production Use=OFF; Parallel Host Mutation=OFF.\n0.5.01 Phase 5B-6 Desktop admission layer started. Frozen UXP/Bridge runtime identity remains 0.5.00. Production Apply=OFF; Production Use=OFF; Batch Apply=OFF.\n0.5.17 Phase 5B-7 Explicit Limited Single-Clip Canary Activation Gate UI started. Frozen UXP/Bridge/Phase 5B-3 runtime remains 0.5.00. General Production Use=OFF; Global Production Apply=OFF; no automatic resume.\nPRIMARY_PERSON_PROVIDER=D-FINE-M is frozen. FACE_PROVIDER=OpenCV YuNet 0.65 + conditional +90/-90 fallback + Hybrid IoU+IoMin 0.30/0.85 is frozen. POSE_PROVIDER=OpenCV Zoo MediaPipe Pose 2023mar 0.80 + conditional +90/-90 recovery + TORSO_SPATIAL_GATE_V1 is frozen. Composition OFF. Apply OFF.\nShared runtime enabled. Phase 4D-2 is PREVIEW ONLY and Premiere READ ONLY. Apply OFF; Transform/Keyframe Write OFF. Phase 4D-1 remains a frozen deterministic input.  Phase 4C-7 Composition Readiness and Phase 4C-6 Subject Fusion are frozen inputs only. TARGET=1080x1920, CROP=MAX_INSCRIBED_TARGET_ASPECT, FOCUS=PRIMARY_BBOX_CENTER_MEDIAN, CENTER=FOCUS_CENTER_THEN_CLAMP, Auto Zoom OFF. Premiere Position NOT COMPUTED; Composition Apply, Transform Write and Keyframe Write are OFF. Premiere remains READ ONLY. Open the UXP panel, paste the Session Token, then Connect.\nBridge listening on ws://127.0.0.1:8765\nSession Token copied.\nPremiere UXP connected (plugin=0.5.00-phase4c5-optional-frozen-ref-sentinel-normalization-hotfix-v1 host=26.0.1)\n→ list_phase4d2_clip_fingerprints [858a2f02]\n\n← response [858a2f02] list_phase4d2_clip_fingerprints (compact)\n{\n  \"readOnly\": true,\n  \"project\": \"PRSmartReframe_0549_TrueMachine_Test01.prproj\",\n  \"sequence\": \"序列 01\",\n  \"videoTrackCount\": 3,\n  \"itemCount\": 9\n}\n\nFrame Scaling Workflow Profile: {'contract': 'FRAME_SCALING_WORKFLOW_PROFILE_V1', 'profileId': 'FIT_OR_NONE_NO_HIDDEN_FRAME_SCALING_V1', 'scope': 'PROJECT_GUID', 'status': 'WORKFLOW_PROFILE_UNCONFIRMED', 'confirmed': False, 'hostVersion': '26.0.1', 'projectGuidHash': '680d5b691b6873c27449c24c', 'hostFact': False, 'projectNameDiagnostic': 'PRSmartReframe_0549_TrueMachine_Test01.prproj', 'action': 'STATUS'}\n→ snapshot_selected_video_clips [38799025]\n\n← response [38799025] snapshot_selected_video_clips (compact)\n{\n  \"selectedCount\": 2,\n  \"summary\": {\n    \"NORMAL\": 2,\n    \"SPECIAL_ANIMATION\": 0,\n    \"MISSING_TRANSFORM\": 0,\n    \"MULTIPLE_TRANSFORM_EFFECTS\": 0,\n    \"CLIP_DISABLED\": 0,\n    \"SOURCE_MEDIA_ERROR\": 0,\n    \"OTHER_ERROR\": 0\n  },\n  \"project\": \"PRSmartReframe_0549_TrueMachine_Test01.prproj\",\n  \"sequence\": \"序列 01\"\n}\n\nLocked target snapshot saved: C:\\Users\\<USER>\\Desktop\\PRSmartReframe_0.5.62_A0_True_Machine_Input_Contract_Hotfix\\sessions\\phase1b\\locked_targets_20260912_205913.json\nDiagnostic GitHub settings saved: repo=C:/Users/XBS/Documents/GitHub/PRSmartReframe-Diagnostics subdir=diagnostics/prsmartreframe",
+  "phase5b6Latest": null,
+  "phase5b5Latest": null,
+  "middlePositionReframeBatch": null,
+  "middlePositionReframeResults": [],
+  "middlePositionAdapterBatch": null,
+  "middlePositionAdapterResults": [],
+  "middlePositionVisualQaManifest": null,
+  "sessions": [
+    {
+      "sessionId": "api_middle_frame_composition",
+      "poseBenchmarkBatchPath": null,
+      "poseBenchmarkBatch": null,
+      "fastVisionBatchPath": null,
+      "fastVisionBatch": null,
+      "slowVisionBatchPath": null,
+      "slowVisionBatch": null,
+      "subjectFusionBatchPath": null,
+      "subjectFusionBatch": null,
+      "compositionReadinessBatchPath": null,
+      "compositionReadinessBatch": null,
+      "compositionPreviewBatchPath": null,
+      "compositionPreviewBatch": null,
+      "premiereAdapterBatchPath": null,
+      "premiereAdapterBatch": null,
+      "candidateQueueBatchPath": null,
+      "candidateQueueBatch": null,
+      "humanReviewQueueBatchPath": null,
+      "humanReviewQueueBatch": null,
+      "humanReviewQueueItems": [],
+      "humanReviewDecisionBatchPath": null,
+      "humanReviewDecisionBatch": null,
+      "humanReviewDecisionRevisions": [],
+      "executionPreflightBatchPath": null,
+      "safetyMatrixManifestPath": null,
+      "safetyMatrixManifest": null,
+      "executionPreflightBatch": null,
+      "executionPreflightResults": [],
+      "executionPreflightHostSnapshots": [],
+      "executionPlans": [],
+      "premiereTransformHostProbePath": null,
+      "premiereTransformHostProbe": null,
+      "geometry2HostContract": {},
+      "geometry2Calibration": {},
+      "geometry2ParameterSemanticsCalibrationPath": null,
+      "geometry2ParameterSemanticsCalibration": null,
+      "targetTransformOwnershipSummary": {
+        "absent": 0,
+        "presentUnique": 0,
+        "alreadyPresent": 0,
+        "animated": 0,
+        "ambiguous": 0,
+        "unknown": 0,
+        "foreignTransformPresent": 0
+      },
+      "framePackBatchPath": null,
+      "framePackBatch": null,
+      "associationVisualQaManifestPath": null,
+      "associationVisualQaManifest": null,
+      "duplicateGroupVisualQaManifestPath": null,
+      "duplicateGroupVisualQaManifest": null,
+      "slowVisionGateVisualQaManifestPath": null,
+      "slowVisionGateVisualQaManifest": null,
+      "slowVisionVisualQaManifestPath": null,
+      "slowVisionVisualQaManifest": null,
+      "subjectFusionVisualQaManifestPath": null,
+      "subjectFusionVisualQaManifest": null,
+      "compositionReadinessVisualQaManifestPath": null,
+      "compositionReadinessVisualQaManifest": null,
+      "compositionPreviewVisualQaManifestPath": null,
+      "compositionPreviewVisualQaManifest": null,
+      "premiereAdapterVisualQaManifestPath": null,
+      "premiereAdapterVisualQaManifest": null,
+      "hostRenderGroundTruthPath": null,
+      "hostRenderGroundTruth": null,
+      "hostRenderVisualQaManifestPath": null,
+      "hostRenderVisualQaManifest": null,
+      "poseResults": [],
+      "fastVisionResults": [],
+      "slowVisionResults": [],
+      "subjectFusionResults": [],
+      "compositionReadinessResults": [],
+      "compositionPreviewResults": [],
+      "premiereAdapterResults": [],
+      "candidateQueueResults": [],
+      "effectiveFrameMappingSummaries": [],
+      "frameMappingPrerequisiteSummaries": [],
+      "targetCanvasBindingSummaries": [],
+      "geometry2ParameterSemanticsSummaries": [],
+      "hostTargetMathSummaries": [],
+      "cleanTargetTransformPreviewSummaries": [],
+      "transformProbeSummaries": []
+    },
+    {
+      "sessionId": "authority",
+      "poseBenchmarkBatchPath": null,
+      "poseBenchmarkBatch": null,
+      "fastVisionBatchPath": null,
+      "fastVisionBatch": null,
+      "slowVisionBatchPath": null,
+      "slowVisionBatch": null,
+      "subjectFusionBatchPath": null,
+      "subjectFusionBatch": null,
+      "compositionReadinessBatchPath": null,
+      "compositionReadinessBatch": null,
+      "compositionPreviewBatchPath": null,
+      "compositionPreviewBatch": null,
+      "premiereAdapterBatchPath": null,
+      "premiereAdapterBatch": null,
+      "candidateQueueBatchPath": null,
+      "candidateQueueBatch": null,
+      "humanReviewQueueBatchPath": null,
+      "humanReviewQueueBatch": null,
+      "humanReviewQueueItems": [],
+      "humanReviewDecisionBatchPath": null,
+      "humanReviewDecisionBatch": null,
+      "humanReviewDecisionRevisions": [],
+      "executionPreflightBatchPath": null,
+      "safetyMatrixManifestPath": null,
+      "safetyMatrixManifest": null,
+      "executionPreflightBatch": null,
+      "executionPreflightResults": [],
+      "executionPreflightHostSnapshots": [],
+      "executionPlans": [],
+      "premiereTransformHostProbePath": null,
+      "premiereTransformHostProbe": null,
+      "geometry2HostContract": {},
+      "geometry2Calibration": {},
+      "geometry2ParameterSemanticsCalibrationPath": null,
+      "geometry2ParameterSemanticsCalibration": null,
+      "targetTransformOwnershipSummary": {
+        "absent": 0,
+        "presentUnique": 0,
+        "alreadyPresent": 0,
+        "animated": 0,
+        "ambiguous": 0,
+        "unknown": 0,
+        "foreignTransformPresent": 0
+      },
+      "framePackBatchPath": null,
+      "framePackBatch": null,
+      "associationVisualQaManifestPath": null,
+      "associationVisualQaManifest": null,
+      "duplicateGroupVisualQaManifestPath": null,
+      "duplicateGroupVisualQaManifest": null,
+      "slowVisionGateVisualQaManifestPath": null,
+      "slowVisionGateVisualQaManifest": null,
+      "slowVisionVisualQaManifestPath": null,
+      "slowVisionVisualQaManifest": null,
+      "subjectFusionVisualQaManifestPath": null,
+      "subjectFusionVisualQaManifest": null,
+      "compositionReadinessVisualQaManifestPath": null,
+      "compositionReadinessVisualQaManifest": null,
+      "compositionPreviewVisualQaManifestPath": null,
+      "compositionPreviewVisualQaManifest": null,
+      "premiereAdapterVisualQaManifestPath": null,
+      "premiereAdapterVisualQaManifest": null,
+      "hostRenderGroundTruthPath": null,
+      "hostRenderGroundTruth": null,
+      "hostRenderVisualQaManifestPath": null,
+      "hostRenderVisualQaManifest": null,
+      "poseResults": [],
+      "fastVisionResults": [],
+      "slowVisionResults": [],
+      "subjectFusionResults": [],
+      "compositionReadinessResults": [],
+      "compositionPreviewResults": [],
+      "premiereAdapterResults": [],
+      "candidateQueueResults": [],
+      "effectiveFrameMappingSummaries": [],
+      "frameMappingPrerequisiteSummaries": [],
+      "targetCanvasBindingSummaries": [],
+      "geometry2ParameterSemanticsSummaries": [],
+      "hostTargetMathSummaries": [],
+      "cleanTargetTransformPreviewSummaries": [],
+      "transformProbeSummaries": []
+    }
+  ],
+  "apiMiddleFrameCompositionLatest": {
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_DIAGNOSTIC_AUDIT_V1",
+    "authority": "DIAGNOSTIC_AUDIT_ONLY",
+    "mutationAuthorityGranted": false,
+    "runId": "api0562_20260912_205931_334434",
+    "applyBatchId": "",
+    "mode": "API_MIDDLE_FRAME_COMPOSITION",
+    "provider": {
+      "providerId": "OPENAI_COMPATIBLE_MULTIMODAL_COMPOSITION",
+      "model": "gemini-3.1-flash-lite"
+    },
+    "imagePolicy": {
+      "maxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "batching": {
+      "requestedClipsPerRequest": 10,
+      "effectiveClipsPerRequest": 10
+    },
+    "concurrency": {
+      "requested": 4,
+      "effectiveFinal": null,
+      "min": null,
+      "peak": 0
+    },
+    "analysis": {
+      "status": "WAITING_APPLY",
+      "logicalBatchCount": 0,
+      "providerCalls": 0,
+      "transportRetries": 0,
+      "cacheHits": 0,
+      "verifiedPositions": 0,
+      "reviewOrFailedClips": 2
+    },
+    "clips": [
+      {
+        "ordinal": 1,
+        "clipInstanceId": "aa9ffcb4a5475e2cb8578805",
+        "status": "API_COMPOSITION_RESULT_REVIEW",
+        "middleFrameSha256": "52c558959269404afc172933a3927990370a0184bec45c4e55f5f623dc928216",
+        "geometryDigest": "",
+        "requiredCropWindowDigest": "",
+        "aiRawCrop": {},
+        "canonicalCrop": {},
+        "targetPosition": [],
+        "confidence": null,
+        "reason": "EFFECTIVE_FRAME_MAPPING_UNVERIFIED",
+        "cacheHit": false,
+        "reasonCodes": [
+          "EFFECTIVE_FRAME_MAPPING_UNVERIFIED"
+        ],
+        "mutationStatus": "NOT_APPLIED",
+        "mutationReasonCodes": []
+      },
+      {
+        "ordinal": 2,
+        "clipInstanceId": "5a66f8af7b9f63f6692a6382",
+        "status": "API_COMPOSITION_RESULT_REVIEW",
+        "middleFrameSha256": "5feb519fc51f2bcff44d16e5eb265aef85886633ca9d1bc49c32bf86d6364f03",
+        "geometryDigest": "",
+        "requiredCropWindowDigest": "",
+        "aiRawCrop": {},
+        "canonicalCrop": {},
+        "targetPosition": [],
+        "confidence": null,
+        "reason": "EFFECTIVE_FRAME_MAPPING_UNVERIFIED",
+        "cacheHit": false,
+        "reasonCodes": [
+          "EFFECTIVE_FRAME_MAPPING_UNVERIFIED"
+        ],
+        "mutationStatus": "NOT_APPLIED",
+        "mutationReasonCodes": []
+      }
+    ],
+    "mutation": {
+      "status": "NOT_STARTED",
+      "applyDispatches": 0,
+      "applyWrites": 0,
+      "rollbackDispatches": 0,
+      "rollbackWrites": 0,
+      "hardStop": false,
+      "hardStopReason": null
+    },
+    "safety": {
+      "productionUseAllowed": false,
+      "batchApplyAllowed": false,
+      "parallelHostMutationAllowed": false,
+      "automaticResumeAllowed": false,
+      "automaticApplyAllowed": false
+    },
+    "sourceEvidenceTimeNs": {
+      "analysis": 1789217971683153800,
+      "apply": 0
+    }
+  }
+}
