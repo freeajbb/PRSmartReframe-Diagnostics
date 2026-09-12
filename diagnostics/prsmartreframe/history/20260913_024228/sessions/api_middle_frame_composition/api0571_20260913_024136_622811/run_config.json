@@ -1,0 +1,58 @@
+{
+  "automaticApplyStarted": false,
+  "config": {
+    "clips_per_request": 10,
+    "image_max_long_edge": 768,
+    "jpeg_quality": 75,
+    "max_concurrency": 4,
+    "mode": "API_MIDDLE_FRAME_COMPOSITION",
+    "model": "deepseek-flash",
+    "provider": "https://api.deepseek.com"
+  },
+  "forceReprocessExistingPosition": false,
+  "geometry2HostContractDigest": "3a826578658a8b6d1e994ce57890554ec67dfb702b22054a27fcdbbf6d9b870a",
+  "hostContractDigest": "97fc58b4ca37a2e102606c4ec5210ee218cf03b3cf28e0652668b3647891f708",
+  "mutationDispatches": 0,
+  "parameterSemanticsDigest": "8ba28fa7febd19e6b6510b89fd3e0313f2eb4fb57a3d204bd9b2573387c9c760",
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "productionAuthorityConsumptions": 0,
+  "providerCapabilities": {
+    "max_images_per_request": null
+  },
+  "providerConfig": {
+    "apiKeySource": "ENV:PRSMART_COMPOSITION_API_KEY",
+    "baseUrl": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "supportsStructuredOutput": false,
+    "timeoutSeconds": 120
+  },
+  "providerIdentity": {
+    "apiKeySource": "ENV:PRSMART_COMPOSITION_API_KEY",
+    "endpointIdentity": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "promptVersion": "API_MIDDLE_FRAME_COMPOSITION_PROMPT_V2",
+    "providerId": "OPENAI_COMPATIBLE_MULTIMODAL_COMPOSITION",
+    "providerVersion": "0.5.67-api-middle-frame-composition-provider-flexibility-v1",
+    "requestSchema": "api_middle_frame_composition.request.v1",
+    "responseSchema": "api_middle_frame_composition.response.v1",
+    "structuredOutput": false
+  },
+  "qualityGateIdentity": {
+    "bodyRetentionPolicy": "SEMANTIC_BODY_RETENTION_V1",
+    "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+    "faceDetector": "YUNET_2026MAY_FROZEN_REUSE",
+    "faceSafety": "YUNET_LANDMARKS_V1",
+    "multiPersonEvidencePolicy": "SEMANTIC_MULTI_PERSON_FAIL_CLOSED_V1",
+    "mustNotDriveComposition": true,
+    "personDetector": "DFINE_M_COCO_FROZEN_REUSE",
+    "policyVersion": "0.5.71-semantic-multi-person-evidence-fail-closed-v1",
+    "poseDetector": "MEDIAPIPE_POSE_2023MAR_FROZEN_REUSE",
+    "relationshipPolicy": "SALIENT_FACE_RELATIONSHIP_V1",
+    "reviewOnly": true,
+    "semanticIntent": "HAND_CONTEXT_V1"
+  },
+  "runId": "api0571_20260913_024136_622811",
+  "schemaVersion": "api_middle_frame_composition.run_config.v1",
+  "workflowProfileDigest": "dbae2660d15b38f1fc568807713b04eab6b3183e84a0568d6c82e5a1a0ab4be7"
+}
