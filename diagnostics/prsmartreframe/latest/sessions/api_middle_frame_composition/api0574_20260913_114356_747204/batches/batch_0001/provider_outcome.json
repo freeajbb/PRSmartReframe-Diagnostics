@@ -1,0 +1,36 @@
+{
+  "batchId": "batch_0001",
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "providerAttempts": 1,
+  "rawResponses": [
+    "{\n  \"schemaVersion\": \"api_middle_frame_composition.response.v1\",\n  \"batchId\": \"batch_0001\",\n  \"results\": [\n    {\n      \"clipInstanceId\": \"b25d304dd3d8ecdc86cf539f\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.05,\n        \"top\": 0.05,\n        \"right\": 0.55,\n        \"bottom\": 0.5\n      },\n      \"confidence\": 0.9,\n      \"primarySubject\": \"laundry machine with hanging green bag\",\n      \"compositionReason\": \"Focuses on the washing machine door and the hanging bag in the laundromat setting.\"\n    },\n    {\n      \"clipInstanceId\": \"83de15e380517b131041f02a\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.0,\n        \"right\": 0.75,\n        \"bottom\": 0.45\n      },\n      \"confidence\": 0.95,\n      \"primarySubject\": \"man looking down at the washing machine\",\n      \"compositionReason\": \"Frames the man's head, face, and upper body as he interacts with the laundry machine.\"\n    }\n  ]\n}"
+  ],
+  "results": [
+    {
+      "clipInstanceId": "b25d304dd3d8ecdc86cf539f",
+      "compositionReason": "Focuses on the washing machine door and the hanging bag in the laundromat setting.",
+      "confidence": 0.9,
+      "cropBoxNormalized": {
+        "bottom": 0.5,
+        "left": 0.05,
+        "right": 0.55,
+        "top": 0.05
+      },
+      "primarySubject": "laundry machine with hanging green bag"
+    },
+    {
+      "clipInstanceId": "83de15e380517b131041f02a",
+      "compositionReason": "Frames the man's head, face, and upper body as he interacts with the laundry machine.",
+      "confidence": 0.95,
+      "cropBoxNormalized": {
+        "bottom": 0.45,
+        "left": 0.25,
+        "right": 0.75,
+        "top": 0.0
+      },
+      "primarySubject": "man looking down at the washing machine"
+    }
+  ],
+  "schemaRepairs": 0
+}
