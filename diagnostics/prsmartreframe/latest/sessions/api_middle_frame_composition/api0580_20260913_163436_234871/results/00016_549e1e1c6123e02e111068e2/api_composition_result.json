@@ -1,0 +1,623 @@
+{
+  "cacheHit": false,
+  "cacheKey": "7d979bbb70f74eef0be913b2cc2f486d09bf82b9c1b48f03b573018c321f65ff",
+  "canonicalCrop": {
+    "aiCenterNormalized": [
+      0.4,
+      0.375
+    ],
+    "aiCropBoxNormalized": {
+      "bottom": 0.6,
+      "left": 0.15,
+      "right": 0.65,
+      "top": 0.15
+    },
+    "canonicalCenterNormalized": [
+      0.4,
+      0.375
+    ],
+    "canonicalCropBoxNormalized": {
+      "bottom": 0.6,
+      "left": 0.15000000000000002,
+      "right": 0.65,
+      "top": 0.15
+    },
+    "canonicalCropDigest": "7554e28d2ddfb96272bb94b22c499429be0dd2f5e02113d8dff8b885af63a601",
+    "canonicalHeightNormalized": 0.45,
+    "canonicalWidthNormalized": 0.5,
+    "centerClampDeltaNormalized": [
+      0.0,
+      0.0
+    ],
+    "clipInstanceId": "549e1e1c6123e02e111068e2",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_CANONICAL_CROP_V1",
+    "geometryContextDigest": "f2d7b272cd16758f9d45e29b8f3be3ca648d2d2b104ebd39c3ff9c938871d40c",
+    "mappingDigest": "dfcbe3abbd9ee921562968075462f3e5d02c29c7ad8e90be0343048f0c03abc1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "secondApiCallRequired": false,
+    "sizeDeviationNormalized": {
+      "height": 5.551115123125783e-17,
+      "width": 0.0
+    },
+    "status": "API_COMPOSITION_CROP_CANONICAL_VERIFIED"
+  },
+  "clipInstanceId": "549e1e1c6123e02e111068e2",
+  "geometryContext": {
+    "clipInstanceId": "549e1e1c6123e02e111068e2",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_GEOMETRY_CONTEXT_V1",
+    "effectiveMapping": {
+      "observedMotionScaleFactor": 1.0,
+      "offsetPixels": {
+        "x": 0.0,
+        "y": -60.0
+      },
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED"
+    },
+    "geometryContextDigest": "f2d7b272cd16758f9d45e29b8f3be3ca648d2d2b104ebd39c3ff9c938871d40c",
+    "mappingDigest": "dfcbe3abbd9ee921562968075462f3e5d02c29c7ad8e90be0343048f0c03abc1",
+    "motion": {
+      "rotationDegrees": 0.0,
+      "scalePercent": 100.0
+    },
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "requiredCropWindowSource": {
+      "geometryFactor": 2.0,
+      "height": 540.0,
+      "heightNormalized": 0.45,
+      "observedMotionScaleFactor": 1.0,
+      "transformScaleFactor": 2.0,
+      "width": 960.0,
+      "widthNormalized": 0.5
+    },
+    "sequence": {
+      "height": 1080.0,
+      "pixelAspect": "1:1",
+      "width": 1920.0
+    },
+    "source": {
+      "height": 1200.0,
+      "pixelAspect": "1:1",
+      "width": 1920.0
+    },
+    "status": "API_COMPOSITION_GEOMETRY_CONTEXT_VERIFIED",
+    "transform": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 200.0,
+      "uniformScale": true
+    }
+  },
+  "multiPersonRetainSetAudit": {
+    "auditCacheKey": "0ae67efbe1cc537c46e292572654c0f51b4d7cec99f4927a2082f3418ec3552e",
+    "candidatePersonIds": [
+      "p1",
+      "p2"
+    ],
+    "comparisonContract": "CURRENT_CROP_VS_RETAIN_SET_AUDIT_V1",
+    "comparisonStatus": "EXACT_MATCH",
+    "contract": "API_COMPOSITION_MULTI_PERSON_RETAIN_SET_AUDIT_V1",
+    "currentCropRelevantRetainedCount": 1,
+    "currentCropSafelyRetainedPersonIds": [
+      "p1"
+    ],
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "feasibilityContract": "FIXED_WINDOW_RETAIN_SET_FEASIBILITY_V1",
+    "maxRetainableRelevantCount": 1,
+    "mustNotDriveQualityGateStatus": true,
+    "personImportance": [
+      {
+        "importanceRank": 1,
+        "importanceScore": 0.95,
+        "narrativeRelevant": true,
+        "personId": "p1",
+        "reason": "Clear facial expression, facing the camera directly, and is the primary subject reacting or speaking in this conversation frame.",
+        "role": "PRIMARY"
+      },
+      {
+        "importanceRank": 2,
+        "importanceScore": 0.45,
+        "narrativeRelevant": true,
+        "personId": "p2",
+        "reason": "Shown from behind/profile framing part of the dialogue dyad, but secondary in visual emphasis compared to the speaking face.",
+        "role": "SECONDARY"
+      }
+    ],
+    "policy": "MULTI_PERSON_RETAIN_SET_PLANNER_V1",
+    "providerPrimaryComparison": "MATCH",
+    "rankingAmbiguous": false,
+    "recommendedRetainSetPersonIds": [
+      "p1"
+    ],
+    "relevantPersonIds": [
+      "p1",
+      "p2"
+    ],
+    "selectionConfidence": "HIGH",
+    "status": "PLANNED"
+  },
+  "mutationDispatches": 0,
+  "ordinal": 16,
+  "positionResult": {
+    "adapterResult": {
+      "anchorWriteAllowed": false,
+      "contract": "MIDDLE_POSITION_ADAPTER_V2",
+      "effectiveMappingEcho": {
+        "observedMotionScaleFactor": 1.0,
+        "offsetPixels": {
+          "x": 0.0,
+          "y": -60.0
+        }
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 200.0,
+        "uniformScale": true
+      },
+      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.7,
+          0.75
+        ]
+      },
+      "reasonCodes": [],
+      "rotationWriteAllowed": false,
+      "roundTrip": {
+        "maxErrorPixels": 0.0,
+        "predictedSequencePosition": {
+          "x": 1344.0,
+          "y": 840.0
+        },
+        "recommendedSequencePosition": {
+          "x": 1344.0,
+          "y": 840.0
+        },
+        "status": "POSITION_ROUND_TRIP_VERIFIED",
+        "tolerancePixels": 1e-06
+      },
+      "scaleWriteAllowed": false,
+      "sequenceGeometryEcho": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sourceGeometryEcho": {
+        "height": 1200,
+        "width": 1920
+      },
+      "status": "POSITION_ADAPTER_VERIFIED",
+      "writesPerformed": 0
+    },
+    "anchorSource": {
+      "x": 960.0,
+      "y": 600.0
+    },
+    "anchorWriteAllowed": false,
+    "canonicalCropDigest": "7554e28d2ddfb96272bb94b22c499429be0dd2f5e02113d8dff8b885af63a601",
+    "clipInstanceId": "549e1e1c6123e02e111068e2",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+    "cropCenterSource": {
+      "x": 768.0,
+      "y": 450.0
+    },
+    "frozenInputEcho": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "currentPositionRaw": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 200.0,
+      "uniformScale": true
+    },
+    "geometryFactor": 2.0,
+    "mappingDigest": "dfcbe3abbd9ee921562968075462f3e5d02c29c7ad8e90be0343048f0c03abc1",
+    "positionWriteAllowed": false,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "proposedHostParameters": {
+      "POSITION": [
+        0.7,
+        0.75
+      ]
+    },
+    "reasonCodes": [],
+    "recommendedSequencePosition": {
+      "x": 1344.0,
+      "y": 840.0
+    },
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "rotationWriteAllowed": false,
+    "scaleWriteAllowed": false,
+    "status": "API_COMPOSITION_POSITION_VERIFIED"
+  },
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "productionAuthorityConsumptions": 0,
+  "productionUseAllowed": false,
+  "providerResult": {
+    "clipInstanceId": "549e1e1c6123e02e111068e2",
+    "compositionReason": "Highlights the smiling woman talking to the man in the foreground.",
+    "confidence": 0.95,
+    "cropBoxNormalized": {
+      "bottom": 0.6,
+      "left": 0.15,
+      "right": 0.65,
+      "top": 0.15
+    },
+    "primarySubject": "Smiling woman talking"
+  },
+  "qualityGate": {
+    "associationDiagnostics": {
+      "facePrimaryAssociationStatus": "MATCH",
+      "faceToPersonAssociation": [
+        {
+          "associatedPersonId": "p1",
+          "faceIndex": 0,
+          "status": "ASSOCIATED"
+        },
+        {
+          "associatedPersonId": "p2",
+          "faceIndex": 1,
+          "status": "ASSOCIATED"
+        }
+      ],
+      "personRetentionCandidates": [
+        {
+          "centerInsideCrop": true,
+          "personId": "p1",
+          "retention": 0.427192
+        },
+        {
+          "centerInsideCrop": false,
+          "personId": "p2",
+          "retention": 0.121114
+        }
+      ],
+      "primaryPersonCandidate": "p1"
+    },
+    "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+    "detectors": {
+      "face": "YUNET_2026MAY_FROZEN_REUSE",
+      "person": "DFINE_M_COCO_FROZEN_REUSE"
+    },
+    "faceReviewAttribution": {
+      "classification": "MULTI_REQUIRED_RELATIONSHIP_FAILURE",
+      "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+      "decisionImpact": "NONE",
+      "diagnosticCodes": [],
+      "faces": [
+        {
+          "associatedPersonId": "p1",
+          "associatedWithPrimaryPerson": true,
+          "associationStatus": "ASSOCIATED",
+          "bboxRetention": 1.0,
+          "centerInsideCrop": true,
+          "contributesFaceCenterOutside": false,
+          "contributesFaceClipped": false,
+          "contributesRelationshipLoss": false,
+          "faceIndex": 0,
+          "landmarkCount": 5,
+          "landmarkEvidenceComplete": true,
+          "landmarksSafe": true,
+          "retainedLandmarkCount": 5,
+          "salient": true
+        },
+        {
+          "associatedPersonId": "p2",
+          "associatedWithPrimaryPerson": false,
+          "associationStatus": "ASSOCIATED",
+          "bboxRetention": 0.457854,
+          "centerInsideCrop": true,
+          "contributesFaceCenterOutside": false,
+          "contributesFaceClipped": true,
+          "contributesRelationshipLoss": false,
+          "faceIndex": 1,
+          "landmarkCount": 5,
+          "landmarkEvidenceComplete": true,
+          "landmarksSafe": false,
+          "retainedLandmarkCount": 4,
+          "salient": true
+        }
+      ],
+      "mustNotDriveQualityGateStatus": true,
+      "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+      "primaryPersonId": "p1",
+      "reasonCodesObserved": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "semanticMultiPersonRequired": true
+    },
+    "inferenceMs": {
+      "face": 39.912,
+      "person": 30.128
+    },
+    "metrics": {
+      "faceCentersRetained": 2,
+      "faceCount": 2,
+      "faceLandmarkCount": 10,
+      "facesWithCompleteLandmarks": 2,
+      "facesWithSafeLandmarks": 1,
+      "localMultiPersonEvidenceCount": 2,
+      "maxPersonRetention": 0.427192,
+      "minFaceRetention": 0.457854,
+      "personCount": 2,
+      "primaryPersonId": "p1",
+      "primaryPersonRetention": 0.427192,
+      "retainedFaceLandmarkCount": 9,
+      "salientFaceCentersRetained": 2,
+      "salientFaceCount": 2,
+      "semanticMultiPersonRequired": true
+    },
+    "multiPersonRetainSetCandidateEvidence": {
+      "candidateEvidenceDigest": "59b4f5df932cd26c642f4c1d9ee4e1e1e765bbf998cfc8dd2315aa48d0fb2fa1",
+      "canonicalCropBoxNormalized": {
+        "bottom": 0.6,
+        "left": 0.15000000000000002,
+        "right": 0.65,
+        "top": 0.15
+      },
+      "contract": "MULTI_PERSON_RETAIN_SET_CANDIDATE_EVIDENCE_V1",
+      "diagnosticCodes": [],
+      "persons": [
+        {
+          "associatedFaceIndices": [
+            0
+          ],
+          "associatedSalientFaceIndices": [
+            0
+          ],
+          "faces": [
+            {
+              "associatedPersonId": "p1",
+              "associationStatus": "ASSOCIATED",
+              "faceBoxNormalized": {
+                "bottom": 0.5517181905110677,
+                "left": 0.20115880966186522,
+                "right": 0.34737958908081057,
+                "top": 0.23270116170247396
+              },
+              "faceCenterNormalized": [
+                0.274269199,
+                0.392209676
+              ],
+              "faceIndex": 0,
+              "landmarkEvidenceComplete": true,
+              "landmarksNormalized": [
+                {
+                  "name": "rightEye",
+                  "x": 0.22681018511454265,
+                  "y": 0.34347427368164063
+                },
+                {
+                  "name": "leftEye",
+                  "x": 0.29031327565511067,
+                  "y": 0.34632395426432294
+                },
+                {
+                  "name": "noseTip",
+                  "x": 0.24457653363545737,
+                  "y": 0.4074611155192057
+                },
+                {
+                  "name": "rightMouthCorner",
+                  "x": 0.22967899640401204,
+                  "y": 0.46058497111002605
+                },
+                {
+                  "name": "leftMouthCorner",
+                  "x": 0.28676586151123046,
+                  "y": 0.46151514689127604
+                }
+              ],
+              "salient": true
+            }
+          ],
+          "personBoxNormalized": {
+            "bottom": 0.9920890299479167,
+            "left": 0.06510895490646362,
+            "right": 0.49278074900309243,
+            "top": 0.15251993815104167
+          },
+          "personCenterNormalized": [
+            0.278944852,
+            0.572304484
+          ],
+          "personDetectionConfidence": 0.948947,
+          "personId": "p1"
+        },
+        {
+          "associatedFaceIndices": [
+            1
+          ],
+          "associatedSalientFaceIndices": [
+            1
+          ],
+          "faces": [
+            {
+              "associatedPersonId": "p2",
+              "associationStatus": "ASSOCIATED",
+              "faceBoxNormalized": {
+                "bottom": 0.4860360972086588,
+                "left": 0.5654691696166992,
+                "right": 0.7270922183990478,
+                "top": 0.10217760721842448
+              },
+              "faceCenterNormalized": [
+                0.646280694,
+                0.294106852
+              ],
+              "faceIndex": 1,
+              "landmarkEvidenceComplete": true,
+              "landmarksNormalized": [
+                {
+                  "name": "rightEye",
+                  "x": 0.5880181630452473,
+                  "y": 0.2256590270996094
+                },
+                {
+                  "name": "leftEye",
+                  "x": 0.6484328587849935,
+                  "y": 0.21769040425618488
+                },
+                {
+                  "name": "noseTip",
+                  "x": 0.6045537312825521,
+                  "y": 0.31267603556315104
+                },
+                {
+                  "name": "rightMouthCorner",
+                  "x": 0.5971564610799154,
+                  "y": 0.39797442118326826
+                },
+                {
+                  "name": "leftMouthCorner",
+                  "x": 0.6532516479492188,
+                  "y": 0.39460177103678384
+                }
+              ],
+              "salient": true
+            }
+          ],
+          "personBoxNormalized": {
+            "bottom": 0.9918310546875,
+            "left": 0.5230734507242839,
+            "right": 0.9994536717732747,
+            "top": 0.0018698573112487793
+          },
+          "personCenterNormalized": [
+            0.761263561,
+            0.496850456
+          ],
+          "personDetectionConfidence": 0.948945,
+          "personId": "p2"
+        }
+      ],
+      "requiredCropWindowNormalized": {
+        "height": 0.45,
+        "width": 0.5
+      },
+      "sourceRaster": {
+        "height": 1200.0,
+        "width": 1920.0
+      },
+      "status": "APPLICABLE"
+    },
+    "mutationDispatches": 0,
+    "policyVersion": "0.5.74-interaction-target-and-hand-action-hotfix-v1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "reasonCodes": [
+      "FACE_CLIPPED_BY_CROP"
+    ],
+    "secondaryAssociatedFaceRelaxation": {
+      "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "contract": "API_COMPOSITION_SECONDARY_FACE_RELAXATION_V1",
+      "decisionChanged": false,
+      "diagnosticCodes": [],
+      "eligible": false,
+      "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "originalReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "policy": "SECONDARY_ASSOCIATED_FACE_ONLY_RELAXATION_V1",
+      "primaryFaceIndex": null,
+      "removedReasonCodes": [],
+      "retainedReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "secondaryContributorFaceIndices": [],
+      "status": "NOT_ELIGIBLE",
+      "warningCodesAdded": []
+    },
+    "secondaryAssociatedRelationshipLossRelaxation": {
+      "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "contract": "API_COMPOSITION_SECONDARY_RELATIONSHIP_LOSS_RELAXATION_V1",
+      "decisionChanged": false,
+      "diagnosticCodes": [],
+      "eligible": false,
+      "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "originalReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "policy": "SECONDARY_ASSOCIATED_RELATIONSHIP_LOSS_RELAXATION_V1",
+      "primaryFaceIndex": null,
+      "removedReasonCodes": [],
+      "retainedReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "secondaryContributorFaceIndices": [],
+      "status": "NOT_ELIGIBLE",
+      "warningCodesAdded": []
+    },
+    "semanticIntent": {
+      "actionableLabels": [],
+      "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+      "labels": [
+        "MULTI_PERSON_RELATIONSHIP"
+      ],
+      "metrics": {
+        "poseEvidenceStatus": null,
+        "retainedUsableWristCount": 0,
+        "usableWristCount": 0
+      },
+      "reasonCodes": [],
+      "sourceTextDigest": "307b166577c9e79d2239332a4ba406a7a5d8a733eea80776d092be33d46c6d99",
+      "status": "NOT_ACTIONABLE"
+    },
+    "status": "QUALITY_GATE_REVIEW",
+    "upperBodyPoseRescue": {
+      "metrics": {
+        "poseEvidenceStatus": null,
+        "retainedUsableShoulderCount": 0,
+        "usableShoulderCount": 0
+      },
+      "reasonCodes": [],
+      "status": "NOT_ELIGIBLE"
+    },
+    "warningCodes": []
+  },
+  "reasonCodes": [
+    "FACE_CLIPPED_BY_CROP"
+  ],
+  "retainSetAuditMetrics": {
+    "retainSetAuditCacheHits": 0,
+    "retainSetAuditProviderCalls": 1,
+    "retainSetAuditRejectedResults": 0,
+    "retainSetAuditTransportRetries": 0
+  },
+  "schemaVersion": "api_middle_frame_composition.result.v1",
+  "status": "API_COMPOSITION_RESULT_REVIEW"
+}
