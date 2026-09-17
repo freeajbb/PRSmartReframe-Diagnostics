@@ -1,0 +1,193 @@
+{
+  "batchRepeatComparison": {
+    "firstDivergenceStage": "NONE",
+    "modelRawMaxAbsDelta": 0.0,
+    "modelRawStatus": "MATCH"
+  },
+  "batchRepeatStable": true,
+  "batchSizeSweep": [
+    {
+      "batchSize": 1,
+      "evidenceVsSingle": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "firstDivergenceStageVsSingle": "NONE",
+      "modelRawMaxAbsDeltaVsSingle": 0.0,
+      "modelRawStatusVsSingle": "MATCH"
+    },
+    {
+      "batchSize": 2,
+      "evidenceVsSingle": {
+        "bboxNormalizedMaxAbsDelta": 2.6257832845044682e-05,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0013729999999999576,
+        "personCountEqual": true
+      },
+      "firstDivergenceStageVsSingle": "MODEL_RAW",
+      "modelRawMaxAbsDeltaVsSingle": 5.178888320922852,
+      "modelRawStatusVsSingle": "MISMATCH"
+    },
+    {
+      "batchSize": 4,
+      "evidenceVsSingle": {
+        "bboxNormalizedMaxAbsDelta": 8.499145507812056e-05,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0032680000000000486,
+        "personCountEqual": true
+      },
+      "firstDivergenceStageVsSingle": "MODEL_RAW",
+      "modelRawMaxAbsDeltaVsSingle": 5.271013140678406,
+      "modelRawStatusVsSingle": "MISMATCH"
+    },
+    {
+      "batchSize": 8,
+      "evidenceVsSingle": {
+        "bboxNormalizedMaxAbsDelta": 8.092244466140208e-05,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0030729999999999924,
+        "personCountEqual": true
+      },
+      "firstDivergenceStageVsSingle": "MODEL_RAW",
+      "modelRawMaxAbsDeltaVsSingle": 5.271785616874695,
+      "modelRawStatusVsSingle": "MISMATCH"
+    },
+    {
+      "batchSize": 16,
+      "evidenceVsSingle": {
+        "bboxNormalizedMaxAbsDelta": 8.738199869784413e-05,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0030240000000000267,
+        "personCountEqual": true
+      },
+      "firstDivergenceStageVsSingle": "MODEL_RAW",
+      "modelRawMaxAbsDeltaVsSingle": 5.271697402000427,
+      "modelRawStatusVsSingle": "MISMATCH"
+    }
+  ],
+  "companionImageSweep": [
+    {
+      "batchSize": 16,
+      "evidenceVsOriginal": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "modelRawMaxAbsDeltaVsOriginal": 0.0,
+      "modelRawStatusVsOriginal": "MATCH",
+      "variant": "ORIGINAL"
+    },
+    {
+      "batchSize": 16,
+      "evidenceVsOriginal": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "modelRawMaxAbsDeltaVsOriginal": 0.0,
+      "modelRawStatusVsOriginal": "MATCH",
+      "variant": "REVERSED"
+    }
+  ],
+  "contract": "DFINE_BATCH_NUMERICAL_DETERMINISM_PROBE_V1",
+  "cudaMathMode": {
+    "cudnnAllowTf32": true,
+    "deterministicAlgorithmsEnabled": false,
+    "float32MatmulPrecision": "highest",
+    "matmulAllowTf32": false
+  },
+  "deterministicAlgorithmsProbe": {
+    "evidence": {
+      "bboxNormalizedMaxAbsDelta": 8.738199869784413e-05,
+      "bboxPixelsEqual": true,
+      "confidenceMaxAbsDelta": 0.0030240000000000267,
+      "personCountEqual": true
+    },
+    "modelRawMaxAbsDelta": 5.271697402000427,
+    "restoredParity": false,
+    "status": "MISMATCH"
+  },
+  "duplicateImageControl": {
+    "batchSize": 16,
+    "evidenceVsSingle": {
+      "bboxNormalizedMaxAbsDelta": 8.738199869784413e-05,
+      "bboxPixelsEqual": true,
+      "confidenceMaxAbsDelta": 0.0030240000000000267,
+      "personCountEqual": true
+    },
+    "modelRawMaxAbsDeltaVsSingle": 5.271697402000427,
+    "modelRawStatusVsSingle": "MISMATCH"
+  },
+  "focusSampleIndex": 0,
+  "likelyCause": "BATCH_SHAPE_DEPENDENT_NUMERICAL_PATH",
+  "mustNotDriveProductionDecision": true,
+  "positionSweep": [
+    {
+      "batchSize": 16,
+      "evidenceVsPosition0": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "modelRawMaxAbsDeltaVsPosition0": 0.0,
+      "modelRawStatusVsPosition0": "MATCH",
+      "position": 0
+    },
+    {
+      "batchSize": 16,
+      "evidenceVsPosition0": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "modelRawMaxAbsDeltaVsPosition0": 0.0,
+      "modelRawStatusVsPosition0": "MATCH",
+      "position": 8
+    },
+    {
+      "batchSize": 16,
+      "evidenceVsPosition0": {
+        "bboxNormalizedMaxAbsDelta": 0.0,
+        "bboxPixelsEqual": true,
+        "confidenceMaxAbsDelta": 0.0,
+        "personCountEqual": true
+      },
+      "modelRawMaxAbsDeltaVsPosition0": 0.0,
+      "modelRawStatusVsPosition0": "MATCH",
+      "position": 15
+    }
+  ],
+  "productionParityDecisionChanged": false,
+  "release": "0.6.38",
+  "runId": "api05101_20260918_030149_342321",
+  "singleRepeatComparison": {
+    "firstDivergenceStage": "NONE",
+    "modelRawMaxAbsDelta": 0.0,
+    "modelRawStatus": "MATCH"
+  },
+  "singleRepeatStable": true,
+  "strictFp32Probe": {
+    "evidence": {
+      "bboxNormalizedMaxAbsDelta": 2.543131510379659e-07,
+      "bboxPixelsEqual": true,
+      "confidenceMaxAbsDelta": 4.000000000004e-06,
+      "personCountEqual": true
+    },
+    "mathMode": {
+      "cudnnAllowTf32": false,
+      "deterministicAlgorithmsEnabled": false,
+      "float32MatmulPrecision": "highest",
+      "matmulAllowTf32": false
+    },
+    "modelRawMaxAbsDelta": 0.7528939247131348,
+    "restoredParity": false,
+    "status": "MISMATCH"
+  },
+  "telemetryOnly": true
+}
