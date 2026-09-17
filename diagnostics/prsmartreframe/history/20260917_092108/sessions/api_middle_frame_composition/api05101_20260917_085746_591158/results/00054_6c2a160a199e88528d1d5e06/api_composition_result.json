@@ -1,0 +1,3938 @@
+{
+  "cacheHit": false,
+  "cacheKey": "1feec6fcdd5d3f62405c4634c5d0c433cf09dd7c35af41e245a40e49f3704672",
+  "candidateCompletionExpansion": {
+    "candidates": [],
+    "contract": "CANDIDATE_COMPLETION_EXPANSION_V1",
+    "expansionDigest": "fd85fcb829113266ef6d4280dd68e64a130ade6f99a6a98053a44629476b1a52",
+    "generatedCandidateCount": 0,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "triggerReasonCodes": [],
+    "triggered": false,
+    "uniqueGeneratedGeometryCount": 0
+  },
+  "canonicalCrop": {
+    "aiCenterNormalized": [
+      0.44999999999999996,
+      0.225
+    ],
+    "aiCropBoxNormalized": {
+      "bottom": 0.45,
+      "left": 0.2,
+      "right": 0.7,
+      "top": 0.0
+    },
+    "canonicalCenterNormalized": [
+      0.44999999999999996,
+      0.225
+    ],
+    "canonicalCropBoxNormalized": {
+      "bottom": 0.45,
+      "left": 0.19999999999999996,
+      "right": 0.7,
+      "top": 0.0
+    },
+    "canonicalCropDigest": "95d4b8f7a0d549997c1593b9cf5438419f94fd90a6494bcab722ffe15b252b32",
+    "canonicalHeightNormalized": 0.45,
+    "canonicalWidthNormalized": 0.5,
+    "centerClampDeltaNormalized": [
+      0.0,
+      0.0
+    ],
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_CANONICAL_CROP_V1",
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "secondApiCallRequired": false,
+    "sizeDeviationNormalized": {
+      "height": 0.0,
+      "width": 5.551115123125783e-17
+    },
+    "status": "API_COMPOSITION_CROP_CANONICAL_VERIFIED"
+  },
+  "clipInstanceId": "6c2a160a199e88528d1d5e06",
+  "deterministicFinalRasterSafety": {
+    "contract": "DETERMINISTIC_FINAL_RASTER_SAFETY_VERIFICATION_V1",
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "higherTierInfeasibilityProven": true,
+    "positionMappingVerified": true,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "primaryFaceSafe": false,
+    "productionUseAllowed": false,
+    "reasonCodes": [],
+    "selectedSafetyTier": "BROW_EYES_NOSE_MOUTH",
+    "selectedTierContained": true,
+    "selectedTierSafe": true,
+    "semanticBindingDigest": "8d4d8abc742f40387964588f140e8d303158080777d7432729669e5259059ef0",
+    "solverDigest": "69f073a9c47fcdc01415b97265a4c16d8db13fb191e74918667f63bbc37082c1",
+    "status": "PASS",
+    "verificationDigest": "c2e76d9713e557d1cfb75d49bc5183e7a012d4035c34daa9a5c0a366d04f8708"
+  },
+  "deterministicLocalFinalPosition": {
+    "contract": "DETERMINISTIC_LOCAL_FINAL_POSITION_SOLVER_V1",
+    "eyebrowEvidence": {
+      "band": {
+        "bottom": 0.36962116241455084,
+        "left": 0.5367110538482666,
+        "right": 0.692413714726766,
+        "top": 0.3021247673034668
+      },
+      "constants": {
+        "bottomRatio": 0.1,
+        "horizontalEyeMarginRatio": 0.35,
+        "topRatio": 0.55
+      },
+      "detectedLandmarkCount": 0,
+      "eyeLineY": 0.38462036132812505,
+      "provenance": "DERIVED_FROM_FACE_AND_EYE_LINE_V1"
+    },
+    "feasibleCenterInterval": {
+      "x": [
+        0.45441371472676606,
+        0.75
+      ],
+      "y": [
+        0.3377664998372396,
+        0.5151247673034668
+      ]
+    },
+    "geometricSafetyProof": {
+      "primaryFaceSafe": false,
+      "selectedEnvelopeContained": true,
+      "status": "PASS",
+      "tier": "BROW_EYES_NOSE_MOUTH"
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "guidedPositionProposal": {
+      "adapterResult": {
+        "anchorWriteAllowed": false,
+        "contract": "MIDDLE_POSITION_ADAPTER_V2",
+        "effectiveMappingEcho": {
+          "observedMotionScaleFactor": 1.0,
+          "offsetPixels": {
+            "x": 0.0,
+            "y": -60.0
+          }
+        },
+        "frozenInputEcho": {
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "currentPositionRaw": [
+            0.5,
+            0.5
+          ],
+          "rotationDegrees": 0.0,
+          "scalePercent": 200.0,
+          "uniformScale": true
+        },
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionWriteAllowed": false,
+        "premiereReadOnly": true,
+        "productionUseAllowed": false,
+        "proposedHostParameters": {
+          "POSITION": [
+            0.27087523142496744,
+            0.5751087328592935
+          ]
+        },
+        "reasonCodes": [],
+        "rotationWriteAllowed": false,
+        "roundTrip": {
+          "maxErrorPixels": 0.0,
+          "predictedSequencePosition": {
+            "x": 520.0804443359375,
+            "y": 630.1304794311523
+          },
+          "recommendedSequencePosition": {
+            "x": 520.0804443359375,
+            "y": 630.1304794311523
+          },
+          "status": "POSITION_ROUND_TRIP_VERIFIED",
+          "tolerancePixels": 1e-06
+        },
+        "scaleWriteAllowed": false,
+        "sequenceGeometryEcho": {
+          "height": 1080,
+          "width": 1920
+        },
+        "sourceGeometryEcho": {
+          "height": 1200,
+          "width": 1920
+        },
+        "status": "POSITION_ADAPTER_VERIFIED",
+        "writesPerformed": 0
+      },
+      "anchorSource": {
+        "x": 960.0,
+        "y": 600.0
+      },
+      "anchorWriteAllowed": false,
+      "canonicalCropDigest": "57550f61fff754c27261b5fbd29965339af39c6a0a3010d066c937f3bbfd1492",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+      "cropCenterSource": {
+        "x": 1179.9597778320312,
+        "y": 554.9347602844239
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 200.0,
+        "uniformScale": true
+      },
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryFactor": 2.0,
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.27087523142496744,
+          0.5751087328592935
+        ]
+      },
+      "reasonCodes": [],
+      "recommendedSequencePosition": {
+        "x": 520.0804443359375,
+        "y": 630.1304794311523
+      },
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "rotationWriteAllowed": false,
+      "scaleWriteAllowed": false,
+      "status": "API_COMPOSITION_POSITION_VERIFIED"
+    },
+    "multiPersonDegradedToSingleSurvivor": false,
+    "preferredCenter": [
+      0.6145623842875163,
+      0.46244563357035323
+    ],
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "protectedAnchorFinalRasterPosition": [
+      0.5,
+      0.41999999999999993
+    ],
+    "protectedAnchorType": "PROTECTED_FEATURE_ENVELOPE_CENTER",
+    "providerPriorCenter": [
+      0.44999999999999996,
+      0.225
+    ],
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "retainSetFeasibility": {},
+    "selectedPrimaryPersonId": "p1",
+    "selectedRetainSetPersonIds": [
+      "p1"
+    ],
+    "selectedSafetyTier": "BROW_EYES_NOSE_MOUTH",
+    "selectedSafetyTierIndex": 2,
+    "selectedSurvivorPersonId": "p1",
+    "selectedSurvivorSemanticRank": 1,
+    "semanticBindingDigest": "8d4d8abc742f40387964588f140e8d303158080777d7432729669e5259059ef0",
+    "singleSurvivor": true,
+    "solvedCenterNormalized": [
+      0.6145623842875163,
+      0.46244563357035323
+    ],
+    "solvedCropBoxNormalized": {
+      "bottom": 0.6874456335703533,
+      "left": 0.3645623842875163,
+      "right": 0.8645623842875163,
+      "top": 0.23744563357035323
+    },
+    "solverDigest": "69f073a9c47fcdc01415b97265a4c16d8db13fb191e74918667f63bbc37082c1",
+    "status": "RESOLVED",
+    "tierEvaluationTrace": [
+      {
+        "reasonCode": "ENVELOPE_TOO_TALL",
+        "status": "INFEASIBLE",
+        "tier": "FULL_HEAD",
+        "tierIndex": 0
+      },
+      {
+        "reasonCode": "ENVELOPE_TOO_TALL",
+        "status": "INFEASIBLE",
+        "tier": "FULL_FACE",
+        "tierIndex": 1
+      },
+      {
+        "feasibleCenterInterval": {
+          "x": [
+            0.45441371472676606,
+            0.75
+          ],
+          "y": [
+            0.3377664998372396,
+            0.5151247673034668
+          ]
+        },
+        "status": "SELECTED",
+        "tier": "BROW_EYES_NOSE_MOUTH",
+        "tierIndex": 2
+      }
+    ],
+    "visualPlacementPolicy": "SINGLE_SURVIVOR_VISUAL_TARGET_V1",
+    "visualPreferredBandY": [
+      0.38,
+      0.45
+    ],
+    "visualTargetFinalRasterX": 0.5,
+    "visualTargetFinalRasterY": 0.42
+  },
+  "finalCompositionArbitrationDecision": {
+    "applyAction": "SET_POSITION",
+    "arbitrationDigest": "c907b2746bc8e39a4f68007915728a2eccf03dc72bedb5c1941d8959135ea86a",
+    "bestAvailableHardFailureWinner": false,
+    "candidateCount": 7,
+    "candidateGeometryDiversityCount": 5,
+    "candidateSetDigest": "0a000c365e29d94f08c9cc62ac33ebde461b9359e3a179d9cb7070ee08ced286",
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_V1",
+    "decisionContract": "FINAL_COMPOSITION_ARBITRATION_DECISION_V2",
+    "decisionDigest": "8e5434df27a1e6d0d124a8c57947fed068a1a74fc4249ba99dcd559f99324908",
+    "decisiveDimension": "EVIDENCE_STRENGTH",
+    "eligibleSetPositionCount": 6,
+    "executableCandidateCount": 7,
+    "expansionCandidateCount": 0,
+    "expansionDigest": "fd85fcb829113266ef6d4280dd68e64a130ade6f99a6a98053a44629476b1a52",
+    "expansionTriggerReasonCodes": [],
+    "expansionTriggered": false,
+    "finalCompositionPosition": [
+      0.27087523142496744,
+      0.5751087328592935
+    ],
+    "geometryEquivalentHardFailureExclusions": [],
+    "geometryEquivalentHardFailureGroupCount": 1,
+    "geometryEquivalentHardFailurePropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagationGroupCount": 1,
+    "geometryEquivalentRiskPropagations": [],
+    "hardFailedCandidateCount": 3,
+    "hardFailureExclusionDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "hardFailureWinnerCount": 0,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "reasonCodes": [],
+    "runnerUpCandidateDigest": "960fa26f7967c276d25d761ec5ecd29945cde27179ec34ea2e3a5ed17315faed",
+    "runnerUpCandidateId": "6c2a160a199e88528d1d5e06:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:960fa26f7967c276",
+    "runnerUpRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "runnerUpRiskVectorDigest": "33ff1838e069343632769a101a7dc549da88871b835bd0b0b797cb5632d8536f",
+    "runnerUpSourceType": "CURRENT_POSITION_CANDIDATE",
+    "status": "RESOLVED",
+    "technicalInvalidCandidateCount": 0,
+    "whyWinnerIsBetter": {
+      "dimension": "EVIDENCE_STRENGTH",
+      "runnerUpValue": 1,
+      "winnerValue": 0
+    },
+    "winnerCandidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+    "winnerCandidateId": "6c2a160a199e88528d1d5e06:LOCAL_DETERMINISTIC_POSITION:SET_POSITION:c59bd511facc8a1f",
+    "winnerQualityClass": "PROVEN_SAFE",
+    "winnerQualityEvidenceDigest": "28af1519d798782b5ae056612432173c09851ae9533da6020224cd68844e9425",
+    "winnerRiskProfileDigest": "f3e3add246fe0446638a590025985e836d8b67cbbcb52b883e03daa706ea4821",
+    "winnerRiskSeverityRank": 0,
+    "winnerRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "winnerRiskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5",
+    "winnerSourceType": "LOCAL_DETERMINISTIC_POSITION"
+  },
+  "finalPositionCandidateArbitration": {
+    "applyAction": "SET_POSITION",
+    "arbitrationDigest": "c907b2746bc8e39a4f68007915728a2eccf03dc72bedb5c1941d8959135ea86a",
+    "bestAvailableHardFailureWinner": false,
+    "candidateCount": 7,
+    "candidateGeometryDiversityCount": 5,
+    "candidateSetDigest": "0a000c365e29d94f08c9cc62ac33ebde461b9359e3a179d9cb7070ee08ced286",
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_V1",
+    "decisionContract": "FINAL_COMPOSITION_ARBITRATION_DECISION_V2",
+    "decisionDigest": "8e5434df27a1e6d0d124a8c57947fed068a1a74fc4249ba99dcd559f99324908",
+    "decisiveDimension": "EVIDENCE_STRENGTH",
+    "eligibleSetPositionCount": 6,
+    "executableCandidateCount": 7,
+    "expansionCandidateCount": 0,
+    "expansionDigest": "fd85fcb829113266ef6d4280dd68e64a130ade6f99a6a98053a44629476b1a52",
+    "expansionTriggerReasonCodes": [],
+    "expansionTriggered": false,
+    "finalCompositionPosition": [
+      0.27087523142496744,
+      0.5751087328592935
+    ],
+    "geometryEquivalentHardFailureExclusions": [],
+    "geometryEquivalentHardFailureGroupCount": 1,
+    "geometryEquivalentHardFailurePropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagationGroupCount": 1,
+    "geometryEquivalentRiskPropagations": [],
+    "hardFailedCandidateCount": 3,
+    "hardFailureExclusionDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "hardFailureWinnerCount": 0,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "reasonCodes": [],
+    "runnerUpCandidateDigest": "960fa26f7967c276d25d761ec5ecd29945cde27179ec34ea2e3a5ed17315faed",
+    "runnerUpCandidateId": "6c2a160a199e88528d1d5e06:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:960fa26f7967c276",
+    "runnerUpRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "runnerUpRiskVectorDigest": "33ff1838e069343632769a101a7dc549da88871b835bd0b0b797cb5632d8536f",
+    "runnerUpSourceType": "CURRENT_POSITION_CANDIDATE",
+    "status": "RESOLVED",
+    "technicalInvalidCandidateCount": 0,
+    "whyWinnerIsBetter": {
+      "dimension": "EVIDENCE_STRENGTH",
+      "runnerUpValue": 1,
+      "winnerValue": 0
+    },
+    "winnerCandidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+    "winnerCandidateId": "6c2a160a199e88528d1d5e06:LOCAL_DETERMINISTIC_POSITION:SET_POSITION:c59bd511facc8a1f",
+    "winnerQualityClass": "PROVEN_SAFE",
+    "winnerQualityEvidenceDigest": "28af1519d798782b5ae056612432173c09851ae9533da6020224cd68844e9425",
+    "winnerRiskProfileDigest": "f3e3add246fe0446638a590025985e836d8b67cbbcb52b883e03daa706ea4821",
+    "winnerRiskSeverityRank": 0,
+    "winnerRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "winnerRiskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5",
+    "winnerSourceType": "LOCAL_DETERMINISTIC_POSITION"
+  },
+  "finalPositionCandidates": [
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "5ae44919b4dae46d3e070ce21a6da0d673489f25faa23576290f4265b5f67bb1",
+      "candidateId": "6c2a160a199e88528d1d5e06:COMPOSITION_V2_POSITION:SET_POSITION:5ae44919b4dae46d",
+      "canonicalGeometryId": "4e25932e663d119051b9e62178b3d6c67e5801f941a155af391cd22dce8457a5",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "4e25932e663d119051b9e62178b3d6c67e5801f941a155af391cd22dce8457a5",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "VERIFIED_NO_HARD_REGRESSION",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.4588240464528402,
+        0.6227592773437499
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "52a8cbe09e16c997799a0ec2dd19369ddd8abb862c22bd8258065f389924bfd1",
+          "kind": "COMPOSITION_V2"
+        },
+        {
+          "digest": "377cb9662455816ef6abedd0c2c9ac8c50a733fefee00594c25bf1d3fd0ecb47",
+          "kind": "COMPOSITION_V2_SHADOW"
+        }
+      ],
+      "qualityClass": "VERIFIED_NO_HARD_REGRESSION",
+      "qualityEvidenceDigest": "f80f1ab5ed762ee1ffb1eb655fdfe57e15a4453be395bd29ea5c2fca8a0427b3",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "5ae44919b4dae46d3e070ce21a6da0d673489f25faa23576290f4265b5f67bb1",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "NOT_APPLICABLE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 1.0,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": false,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": true,
+                "retainedLandmarkCount": 5,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 1,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.432037,
+            "minFaceRetention": 1.0,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.432037,
+            "retainedFaceLandmarkCount": 5,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [],
+          "status": "QUALITY_GATE_PASS",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.6636203613281251,
+            "left": 0.27058797677357993,
+            "right": 0.7705879767735799,
+            "top": 0.21362036132812506
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "87fc905e9b022cd968d4cfbc72dd08ac65b872c3acf32fb0e3cfbaa827db6a8d",
+        "canonicalGeometryId": "4e25932e663d119051b9e62178b3d6c67e5801f941a155af391cd22dce8457a5",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "c992c33f9ed1b38292aa442a5a386f0a95fa982e8fa58744527d10ac83d123ba",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ]
+      },
+      "riskProfileDigest": "c992c33f9ed1b38292aa442a5a386f0a95fa982e8fa58744527d10ac83d123ba",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            2,
+            258677329925096
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 129481,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "9453883773b0213f4cf35e91719882d9745fed81d1e9712e5331c1843b8bcc59"
+      },
+      "riskVectorDigest": "9453883773b0213f4cf35e91719882d9745fed81d1e9712e5331c1843b8bcc59",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": "p1",
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [
+        "p1"
+      ],
+      "sourceReasonCode": "OVERSIZED_FACE_FEATURE_PRIORITY_REFINED",
+      "sourceType": "COMPOSITION_V2_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ]
+    },
+    {
+      "applyAction": "NO_OP_CURRENT_POSITION",
+      "candidateDigest": "960fa26f7967c276d25d761ec5ecd29945cde27179ec34ea2e3a5ed17315faed",
+      "candidateId": "6c2a160a199e88528d1d5e06:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:960fa26f7967c276",
+      "canonicalGeometryId": "814d1b938ff16b9b2decb8d6c53474d11be93aad524b8893c245d97206ad66ac",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": false,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "814d1b938ff16b9b2decb8d6c53474d11be93aad524b8893c245d97206ad66ac",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.5,
+        0.5
+      ],
+      "positionMappingStatus": "CURRENT_POSITION_VERIFIED_NOOP",
+      "positiveEvidence": [
+        {
+          "digest": "e2f8f70a28b53aadf0d15ba87db844c29814b1f2511f1fbedb4f15da3007c20e",
+          "kind": "CURRENT_POSITION_IDENTITY"
+        }
+      ],
+      "qualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+      "qualityEvidenceDigest": "7661b4c2d3fdf85065e1eda0a8edcb66ebbc30e7cfc78b692d9259b353c96b41",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "960fa26f7967c276d25d761ec5ecd29945cde27179ec34ea2e3a5ed17315faed",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "NOT_APPLICABLE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.903465,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": false,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": true,
+                "retainedLandmarkCount": 5,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 1,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.432037,
+            "minFaceRetention": 0.903465,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.432037,
+            "retainedFaceLandmarkCount": 5,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [],
+          "status": "QUALITY_GATE_PASS",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.725,
+            "left": 0.25,
+            "right": 0.75,
+            "top": 0.275
+          },
+          "warningCodes": [
+            "FACE_BBOX_RETENTION_LOW"
+          ]
+        },
+        "candidateReplayDigest": "d0320dc60041338e0129b257f31e619e1d50e804a4c9b41a2a52d1afae841dd4",
+        "canonicalGeometryId": "814d1b938ff16b9b2decb8d6c53474d11be93aad524b8893c245d97206ad66ac",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "2f2661f8c14277ff81c0c4c8af6f6aa6495d8f23762bd987daa9d4c26c884e3d",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": [
+          "FACE_BBOX_RETENTION_LOW",
+          "FACE_CLIPPED_BY_CROP"
+        ]
+      },
+      "riskProfileDigest": "2f2661f8c14277ff81c0c4c8af6f6aa6495d8f23762bd987daa9d4c26c884e3d",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            15,
+            227066325279217
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 0,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "33ff1838e069343632769a101a7dc549da88871b835bd0b0b797cb5632d8536f"
+      },
+      "riskVectorDigest": "33ff1838e069343632769a101a7dc549da88871b835bd0b0b797cb5632d8536f",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [
+        "p1"
+      ],
+      "sourceReasonCode": "CURRENT_POSITION_CANDIDATE_INITIAL_POOL",
+      "sourceType": "CURRENT_POSITION_CANDIDATE",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ]
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "5424d02881bafdd1ead6a11ebd6bcc67a142e65901fb24c57f4821e864c57960",
+      "candidateId": "6c2a160a199e88528d1d5e06:GUIDED_POSITION:SET_POSITION:5424d02881bafdd1",
+      "canonicalGeometryId": "2adf725bc6ac876ba679c095e1dc49fe1e2d006e964a09aee93d46a4e73a2542",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "2adf725bc6ac876ba679c095e1dc49fe1e2d006e964a09aee93d46a4e73a2542",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "VERIFIED_NO_HARD_REGRESSION",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.6000000000000001,
+        0.71
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "48c69d3950f2c45a47a28118d8a3ce50f584c8eddf17a1c2f2d789f4e7d01648",
+          "kind": "GUIDED_POSITION"
+        },
+        {
+          "digest": "3797c76b349ea6af7ef31a6b7e20f7233bddb36324d28886e2983adc2b23c77a",
+          "kind": "GUIDED_SHADOW"
+        }
+      ],
+      "qualityClass": "VERIFIED_NO_HARD_REGRESSION",
+      "qualityEvidenceDigest": "42210e72318a491e53160f91f480c3eb998ec7ebe02110ecb04f8dd6040c5b2c",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "5424d02881bafdd1ead6a11ebd6bcc67a142e65901fb24c57f4821e864c57960",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "NOT_APPLICABLE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.921484,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": false,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": true,
+                "retainedLandmarkCount": 5,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 1,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.425387,
+            "minFaceRetention": 0.921484,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.425387,
+            "retainedFaceLandmarkCount": 5,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [],
+          "status": "QUALITY_GATE_PASS",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.62,
+            "left": 0.19999999999999993,
+            "right": 0.7,
+            "top": 0.17
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "1f4c4995b9bcf533941014ceb7072e2fe9392da03ed9d4a4535e47b64d1b7780",
+        "canonicalGeometryId": "2adf725bc6ac876ba679c095e1dc49fe1e2d006e964a09aee93d46a4e73a2542",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "52d64546ab02f32bd09ca4a3dc7d94e5a8500cec4afe923be31aebd059afdcb7",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ]
+      },
+      "riskProfileDigest": "52d64546ab02f32bd09ca4a3dc7d94e5a8500cec4afe923be31aebd059afdcb7",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            3,
+            86656310062149
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 232594,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "dc908ce887ca5312eaef03e843553ff555a471d2eb6c0b6f1501183ee54096d3"
+      },
+      "riskVectorDigest": "dc908ce887ca5312eaef03e843553ff555a471d2eb6c0b6f1501183ee54096d3",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [
+        "p1"
+      ],
+      "sourceReasonCode": "GUIDED_SHADOW_APPROVED",
+      "sourceType": "GUIDED_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ]
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+      "candidateId": "6c2a160a199e88528d1d5e06:LOCAL_DETERMINISTIC_POSITION:SET_POSITION:c59bd511facc8a1f",
+      "canonicalGeometryId": "296524e8c75015769847e8e15e0359bbd32920897617e66ea61dd869e5ec407d",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "296524e8c75015769847e8e15e0359bbd32920897617e66ea61dd869e5ec407d",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "PROVEN_SAFE",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.27087523142496744,
+        0.5751087328592935
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "c2e76d9713e557d1cfb75d49bc5183e7a012d4035c34daa9a5c0a366d04f8708",
+          "kind": "FINAL_RASTER_SAFETY"
+        },
+        {
+          "digest": "69f073a9c47fcdc01415b97265a4c16d8db13fb191e74918667f63bbc37082c1",
+          "kind": "LOCAL_SOLVER"
+        }
+      ],
+      "qualityClass": "PROVEN_SAFE",
+      "qualityEvidenceDigest": "28af1519d798782b5ae056612432173c09851ae9533da6020224cd68844e9425",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "NOT_APPLICABLE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.993263,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": false,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": true,
+                "retainedLandmarkCount": 5,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 1,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.359051,
+            "minFaceRetention": 0.993263,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.359051,
+            "retainedFaceLandmarkCount": 5,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [],
+          "status": "QUALITY_GATE_PASS",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.6874456335703533,
+            "left": 0.36456238428751625,
+            "right": 0.8645623842875163,
+            "top": 0.23744563357035323
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "0e0b387593c1553004093a9a897fce518f84c335dfeec0d03d3d0e3b608f3991",
+        "canonicalGeometryId": "296524e8c75015769847e8e15e0359bbd32920897617e66ea61dd869e5ec407d",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "f3e3add246fe0446638a590025985e836d8b67cbbcb52b883e03daa706ea4821",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ]
+      },
+      "riskProfileDigest": "f3e3add246fe0446638a590025985e836d8b67cbbcb52b883e03daa706ea4821",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            0,
+            4404309995202
+          ],
+          "EVIDENCE_STRENGTH": 0,
+          "POSITION_CHANGE_MAGNITUDE": 241121,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5"
+      },
+      "riskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5",
+      "selectedSafetyTier": "BROW_EYES_NOSE_MOUTH",
+      "selectedSurvivorPersonId": "p1",
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "GUARANTEED_COMPLETION_LOCAL_SAFE",
+      "sourceType": "LOCAL_DETERMINISTIC_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": "SINGLE_SURVIVOR_VISUAL_TARGET_V1",
+      "warningReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ]
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "9cf369e237370dc97d2df8b41b40d1a405c13d6703fdbfac868caa01a965db16",
+      "candidateId": "6c2a160a199e88528d1d5e06:MAIN_POSITION:SET_POSITION:9cf369e237370dc9",
+      "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.6000000000000001,
+        1.05
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "51780c2a2ae0e191bf39a6a2352785372efb2a323d540b4666857c0fa108ebab",
+          "kind": "MAIN_POSITION"
+        }
+      ],
+      "qualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+      "qualityEvidenceDigest": "af0eb69c1aa9a405c6aadc061c6c6f32f76e33e14890e4726cdc9a7f2d4d6f97",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "9cf369e237370dc97d2df8b41b40d1a405c13d6703fdbfac868caa01a965db16",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "PRIMARY_FACE_FAILURE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.514988,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": true,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": false,
+                "retainedLandmarkCount": 2,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [
+              "FACE_CLIPPED_BY_CROP"
+            ],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 0,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.348169,
+            "minFaceRetention": 0.514988,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.348169,
+            "retainedFaceLandmarkCount": 2,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [
+            "FACE_CLIPPED_BY_CROP"
+          ],
+          "status": "QUALITY_GATE_REVIEW",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.45,
+            "left": 0.19999999999999993,
+            "right": 0.7,
+            "top": 0.0
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "bdd7b1cca59a3caa4de4438ed22bd2129d71de64fc46b7eaef61bc91607a7373",
+        "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "1a106c1fec487c3d8d98242aeab2cc54f11f5e90d087c91902175ee9303ee4b5",
+        "riskSeverityRank": 3,
+        "riskTier": "MAJOR_SUBJECT_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "visualWarningCodes": []
+      },
+      "riskProfileDigest": "1a106c1fec487c3d8d98242aeab2cc54f11f5e90d087c91902175ee9303ee4b5",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 3,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            12,
+            278753127064625
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 559017,
+          "PRIMARY_FACE_INTEGRITY": 3,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 2,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "aa3e2a51cbcb025060d19f356b5c6e448ab19067b59b06269cda065b928c1a7b"
+      },
+      "riskVectorDigest": "aa3e2a51cbcb025060d19f356b5c6e448ab19067b59b06269cda065b928c1a7b",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "GUIDED_POSITION_INVALID_FALLBACK_MAIN",
+      "sourceType": "MAIN_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ]
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "bcc50f8e1c186e9f1c6330dea7748b0810e41e271c441802c46becf66e9b347d",
+      "candidateId": "6c2a160a199e88528d1d5e06:PROVIDER_CANONICAL_CROP_POSITION:SET_POSITION:bcc50f8e1c186e9f",
+      "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "hardFailureReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.6000000000000001,
+        1.05
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "95d4b8f7a0d549997c1593b9cf5438419f94fd90a6494bcab722ffe15b252b32",
+          "kind": "PROVIDER_CANONICAL_CROP"
+        }
+      ],
+      "qualityClass": "PROVEN_HARD_FAILURE",
+      "qualityEvidenceDigest": "fd20829735cb5c9db7597cfa4ad7ad7c95d992b68b12f43c645d23dd9cbd675d",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "bcc50f8e1c186e9f1c6330dea7748b0810e41e271c441802c46becf66e9b347d",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "PRIMARY_FACE_FAILURE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.514988,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": true,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": false,
+                "retainedLandmarkCount": 2,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [
+              "FACE_CLIPPED_BY_CROP"
+            ],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 0,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.348169,
+            "minFaceRetention": 0.514988,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.348169,
+            "retainedFaceLandmarkCount": 2,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [
+            "FACE_CLIPPED_BY_CROP"
+          ],
+          "status": "QUALITY_GATE_REVIEW",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.45,
+            "left": 0.19999999999999993,
+            "right": 0.7,
+            "top": 0.0
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "bdd7b1cca59a3caa4de4438ed22bd2129d71de64fc46b7eaef61bc91607a7373",
+        "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "e285e167b39f60e2e8f91d61bdbcc317dea3886a60bbc1396ca5766176fcc969",
+        "riskSeverityRank": 3,
+        "riskTier": "MAJOR_SUBJECT_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "visualWarningCodes": []
+      },
+      "riskProfileDigest": "e285e167b39f60e2e8f91d61bdbcc317dea3886a60bbc1396ca5766176fcc969",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 3,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            13,
+            11995557036724
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 559017,
+          "PRIMARY_FACE_INTEGRITY": 3,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 2,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "7e49a78c08bd9ceb54f6ac1be25a9b55a7c875b97eda72fb6003340738dfe6b9"
+      },
+      "riskVectorDigest": "7e49a78c08bd9ceb54f6ac1be25a9b55a7c875b97eda72fb6003340738dfe6b9",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "PROVIDER_CANONICAL_CROP_VERIFIED_MAPPING",
+      "sourceType": "PROVIDER_CANONICAL_CROP_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": []
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "93bdbf459d3c55a8e1f8f25ac69eff4a997e3436659f381a4e55cf1e50ecc8d8",
+      "candidateId": "6c2a160a199e88528d1d5e06:PROVIDER_RECOVERED_CENTER_POSITION:SET_POSITION:93bdbf459d3c55a8",
+      "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryIdentityDigest": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+      "hardFailureReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "negativeEvidence": [],
+      "position": [
+        0.6000000000000001,
+        1.05
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "95d4b8f7a0d549997c1593b9cf5438419f94fd90a6494bcab722ffe15b252b32",
+          "kind": "PROVIDER_CANONICAL_CROP"
+        },
+        {
+          "digest": "af1195bd6d1b014ba0e80862d3b1d41b56fdf31c2341c45dc321b5704d3eb6da",
+          "kind": "PROVIDER_CENTER"
+        }
+      ],
+      "qualityClass": "PROVEN_HARD_FAILURE",
+      "qualityEvidenceDigest": "f115fe0f2da6d9ee607e2399d3b08a346fe82322643cd3c97e12c7d4164a58f2",
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "riskProfile": {
+        "candidateDigest": "93bdbf459d3c55a8e1f8f25ac69eff4a997e3436659f381a4e55cf1e50ecc8d8",
+        "candidateReplay": {
+          "faceReviewAttribution": {
+            "classification": "PRIMARY_FACE_FAILURE",
+            "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+            "decisionImpact": "NONE",
+            "diagnosticCodes": [],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associatedWithPrimaryPerson": true,
+                "associationStatus": "ASSOCIATED",
+                "bboxRetention": 0.514988,
+                "centerInsideCrop": true,
+                "contributesFaceCenterOutside": false,
+                "contributesFaceClipped": true,
+                "contributesRelationshipLoss": false,
+                "faceIndex": 0,
+                "landmarkCount": 5,
+                "landmarkEvidenceComplete": true,
+                "landmarksSafe": false,
+                "retainedLandmarkCount": 2,
+                "salient": true
+              }
+            ],
+            "mustNotDriveQualityGateStatus": true,
+            "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+            "primaryPersonId": "p1",
+            "reasonCodesObserved": [
+              "FACE_CLIPPED_BY_CROP"
+            ],
+            "semanticMultiPersonRequired": false
+          },
+          "metrics": {
+            "faceCentersRetained": 1,
+            "faceCount": 1,
+            "faceLandmarkCount": 5,
+            "facesWithCompleteLandmarks": 1,
+            "facesWithSafeLandmarks": 0,
+            "localMultiPersonEvidenceCount": 2,
+            "maxPersonRetention": 0.348169,
+            "minFaceRetention": 0.514988,
+            "personCount": 2,
+            "primaryPersonId": "p1",
+            "primaryPersonRetention": 0.348169,
+            "retainedFaceLandmarkCount": 2,
+            "salientFaceCentersRetained": 1,
+            "salientFaceCount": 1,
+            "semanticMultiPersonRequired": false
+          },
+          "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+          "reasonCodes": [
+            "FACE_CLIPPED_BY_CROP"
+          ],
+          "status": "QUALITY_GATE_REVIEW",
+          "visibleSourceWindowNormalized": {
+            "bottom": 0.45,
+            "left": 0.19999999999999993,
+            "right": 0.7,
+            "top": 0.0
+          },
+          "warningCodes": []
+        },
+        "candidateReplayDigest": "bdd7b1cca59a3caa4de4438ed22bd2129d71de64fc46b7eaef61bc91607a7373",
+        "canonicalGeometryId": "9e11d74c687745bfa033ec31eddf4a4d2e0f9ca9480a0e3f5432a38bded539c9",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "106a8ff3374fee0b71b82d5bd165e9d5917d14acd8afc25d201647efa1e18c9d",
+        "riskSeverityRank": 3,
+        "riskTier": "MAJOR_SUBJECT_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "visualWarningCodes": []
+      },
+      "riskProfileDigest": "106a8ff3374fee0b71b82d5bd165e9d5917d14acd8afc25d201647efa1e18c9d",
+      "riskVector": {
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 3,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            14,
+            57176391352286
+          ],
+          "EVIDENCE_STRENGTH": 1,
+          "POSITION_CHANGE_MAGNITUDE": 559017,
+          "PRIMARY_FACE_INTEGRITY": 3,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 2,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0
+        },
+        "riskVectorDigest": "acd55ed0c414022ec00f6c759cff54746eb70519694e3b5bfd52c6b667bafef9"
+      },
+      "riskVectorDigest": "acd55ed0c414022ec00f6c759cff54746eb70519694e3b5bfd52c6b667bafef9",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "BOUND_PERSON_AND_FACE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "PROVIDER_CENTER_RECOVERED",
+      "sourceType": "PROVIDER_RECOVERED_CENTER_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": []
+    }
+  ],
+  "finalPositionResolution": {
+    "applyAction": "SET_POSITION",
+    "arbitrationContract": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_V1",
+    "arbitrationDecisionContract": "FINAL_COMPOSITION_ARBITRATION_DECISION_V2",
+    "arbitrationDigest": "c907b2746bc8e39a4f68007915728a2eccf03dc72bedb5c1941d8959135ea86a",
+    "bestAvailableFinalCompositionCompletion": {
+      "applyAction": "SET_POSITION",
+      "completionDigest": "1ec315f12f39c38e069cc068e7d2a29694385edbc05a3487b01d480a2bf242ab",
+      "completionStatus": "RESOLVED",
+      "contract": "BEST_AVAILABLE_FINAL_COMPOSITION_COMPLETION_V1",
+      "productionUseAllowed": true,
+      "winnerCandidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+      "winnerRiskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5"
+    },
+    "bestAvailableHardFailureWinner": false,
+    "candidateGeometryDiversityCount": 5,
+    "candidateSetDigest": "0a000c365e29d94f08c9cc62ac33ebde461b9359e3a179d9cb7070ee08ced286",
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "completionDigest": "1ec315f12f39c38e069cc068e7d2a29694385edbc05a3487b01d480a2bf242ab",
+    "contract": "ALL_SELECTED_FINAL_POSITION_RESOLVER_V1",
+    "decisionDigest": "8e5434df27a1e6d0d124a8c57947fed068a1a74fc4249ba99dcd559f99324908",
+    "decisiveDimension": "EVIDENCE_STRENGTH",
+    "expansionCandidateCount": 0,
+    "expansionDigest": "fd85fcb829113266ef6d4280dd68e64a130ade6f99a6a98053a44629476b1a52",
+    "expansionTriggerReasonCodes": [],
+    "expansionTriggered": false,
+    "finalCompositionPosition": [
+      0.27087523142496744,
+      0.5751087328592935
+    ],
+    "finalPositionSource": "LOCAL_DETERMINISTIC_POSITION",
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "guidedCropProposalDigest": "48c69d3950f2c45a47a28118d8a3ce50f584c8eddf17a1c2f2d789f4e7d01648",
+    "guidedShadowQualityDigest": "0b2c2f19d92853c88f40733e054c2e3ea6c193d6469ac384de2c931729d9ab59",
+    "localSafetyStatus": "PROVEN_SAFE",
+    "mainPositionDigest": "51780c2a2ae0e191bf39a6a2352785372efb2a323d540b4666857c0fa108ebab",
+    "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+    "ordinal": 54,
+    "productionUseAllowed": true,
+    "qualityClass": "PROVEN_SAFE",
+    "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "resolutionDigest": "7ed43e376c018aa0e5de25562820385040beb49186b4dedf41c08bbd91954dc4",
+    "runnerUpCandidateDigest": "960fa26f7967c276d25d761ec5ecd29945cde27179ec34ea2e3a5ed17315faed",
+    "runnerUpCandidateId": "6c2a160a199e88528d1d5e06:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:960fa26f7967c276",
+    "runnerUpRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "runnerUpRiskVectorDigest": "33ff1838e069343632769a101a7dc549da88871b835bd0b0b797cb5632d8536f",
+    "runnerUpSourceType": "CURRENT_POSITION_CANDIDATE",
+    "selectedSafetyTier": "BROW_EYES_NOSE_MOUTH",
+    "selectedSurvivorPersonId": "p1",
+    "singlePersonRepairProposalDigest": "",
+    "singlePersonRepairShadowValidationDigest": "",
+    "sourceReasonCode": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_WINNER",
+    "sourceResultDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+    "status": "RESOLVED",
+    "technicalExecutabilityStatus": "EXECUTABLE",
+    "technicalInvalidReasonCodes": [],
+    "visualPlacementPolicy": "SINGLE_SURVIVOR_VISUAL_TARGET_V1",
+    "whyWinnerIsBetter": {
+      "dimension": "EVIDENCE_STRENGTH",
+      "runnerUpValue": 1,
+      "winnerValue": 0
+    },
+    "winnerCandidateDigest": "c59bd511facc8a1f1d71311a2a5b28a204fb43fdc89d933c4875fe7abeb4338e",
+    "winnerCandidateId": "6c2a160a199e88528d1d5e06:LOCAL_DETERMINISTIC_POSITION:SET_POSITION:c59bd511facc8a1f",
+    "winnerRiskProfileDigest": "f3e3add246fe0446638a590025985e836d8b67cbbcb52b883e03daa706ea4821",
+    "winnerRiskSeverityRank": 0,
+    "winnerRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "winnerRiskVectorDigest": "4c148f767cf700dc655334f7281ef20b5cde6546dc9248f848a4053700aec4a5"
+  },
+  "finalSequenceRasterPreview": {
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "FINAL_SEQUENCE_RASTER_PREVIEW_V1",
+    "finalCompositionPosition": [
+      0.27087523142496744,
+      0.5751087328592935
+    ],
+    "finalPositionSource": "LOCAL_DETERMINISTIC_POSITION",
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "reasonCodes": [],
+    "resolutionDigest": "7ed43e376c018aa0e5de25562820385040beb49186b4dedf41c08bbd91954dc4",
+    "sequenceRaster": {
+      "height": 1080.0,
+      "width": 1920.0
+    },
+    "sourceRaster": {
+      "height": 1200.0,
+      "width": 1920.0
+    },
+    "status": "READY",
+    "visibleSourceWindowNormalized": {
+      "bottom": 0.6874456335703533,
+      "left": 0.36456238428751625,
+      "right": 0.8645623842875163,
+      "top": 0.23744563357035323
+    },
+    "visibleSourceWindowPixels": {
+      "bottom": 824.9347602844239,
+      "left": 699.9597778320312,
+      "right": 1659.9597778320312,
+      "top": 284.9347602844239
+    }
+  },
+  "fullHeadFeasibility": {
+    "axisFeasible": {
+      "x": true,
+      "y": false
+    },
+    "contract": "FULL_HEAD_FEASIBILITY_AND_PROTECTION_V1",
+    "cropSize": {
+      "height": 0.45,
+      "width": 0.5
+    },
+    "diagnosticCodes": [],
+    "expandedHeadEnvelope": {
+      "bottom": 0.7146565653483073,
+      "left": 0.46047435855865476,
+      "right": 0.7307015949885051,
+      "top": 0.1393510314941406
+    },
+    "headEnvelope": {
+      "bottom": 0.6946565653483073,
+      "left": 0.4804743585586548,
+      "right": 0.710701594988505,
+      "top": 0.1593510314941406
+    },
+    "requiredSpan": {
+      "height": 0.5753055338541667,
+      "width": 0.2702272364298503
+    },
+    "safetyInset": 0.02,
+    "status": "FULL_HEAD_INFEASIBLE_VERTICAL",
+    "validCenterInterval": {
+      "x": [
+        0.48070159498850507,
+        0.7104743585586548
+      ],
+      "y": null
+    }
+  },
+  "geometryContext": {
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_GEOMETRY_CONTEXT_V1",
+    "effectiveMapping": {
+      "observedMotionScaleFactor": 1.0,
+      "offsetPixels": {
+        "x": 0.0,
+        "y": -60.0
+      },
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED"
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+    "motion": {
+      "rotationDegrees": 0.0,
+      "scalePercent": 100.0
+    },
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "requiredCropWindowSource": {
+      "geometryFactor": 2.0,
+      "height": 540.0,
+      "heightNormalized": 0.45,
+      "observedMotionScaleFactor": 1.0,
+      "transformScaleFactor": 2.0,
+      "width": 960.0,
+      "widthNormalized": 0.5
+    },
+    "sequence": {
+      "height": 1080.0,
+      "pixelAspect": "1:1",
+      "width": 1920.0
+    },
+    "source": {
+      "height": 1200.0,
+      "pixelAspect": "1:1",
+      "width": 1920.0
+    },
+    "status": "API_COMPOSITION_GEOMETRY_CONTEXT_VERIFIED",
+    "transform": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 200.0,
+      "uniformScale": true
+    }
+  },
+  "guaranteedFinalPositionCompletion": {
+    "applyAction": "SET_POSITION",
+    "completionDigest": "e76c316717b85dfe1a179042203fb5a7f8c8e978f429ff3908c870e1e89da086",
+    "completionStatus": "RESOLVED",
+    "contract": "GUARANTEED_FINAL_POSITION_COMPLETION_V1",
+    "fallbackLevel": 1,
+    "fallbackReasonCodes": [],
+    "finalCompositionPosition": [
+      0.27087523142496744,
+      0.5751087328592935
+    ],
+    "finalPositionSource": "LOCAL_DETERMINISTIC_SAFE",
+    "hostPositionMappingStatus": "VERIFIED",
+    "localSafetyStatus": "PROVEN_SAFE",
+    "noOpReason": null,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": true,
+    "providerCenterRecovered": false,
+    "providerCropUsable": true,
+    "providerResponseUsable": true,
+    "qualityClass": "PROVEN_LOCAL_SAFE"
+  },
+  "handActionInteractionConstraintAudit": {
+    "constraintCount": 0,
+    "constraints": [],
+    "contract": "HAND_ACTION_INTERACTION_CONSTRAINT_V1",
+    "diagnosticCodes": [],
+    "preserved": true,
+    "promotionCandidate": true,
+    "selectedPersonId": "p1",
+    "status": "NOT_APPLICABLE"
+  },
+  "headPlacementAudit": {
+    "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+    "eyeMidpointFinalNormalized": [
+      0.6879488150278728,
+      0.37999999999999995
+    ],
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "headCenterFinalNormalized": [
+      0.6499999999999999,
+      0.47418541576244194
+    ],
+    "placementPenalty": 0.0,
+    "policy": "SINGLE_SUBJECT_HEAD_PLACEMENT_V1",
+    "preferredEyeLineYBand": [
+      0.28,
+      0.38
+    ],
+    "preferredHeadCenterXBand": [
+      0.35,
+      0.65
+    ],
+    "refined": true,
+    "status": "REFINED"
+  },
+  "multiPersonRetainSetAudit": {
+    "auditCacheKey": "9e2f691ff3ac63b5805b67f03bac8fa096613eddec1d20680dc56d1a34d55709",
+    "candidatePersonIds": [
+      "p1",
+      "p2"
+    ],
+    "comparisonContract": "CURRENT_CROP_VS_RETAIN_SET_AUDIT_V1",
+    "comparisonStatus": "LOWER_CARDINALITY",
+    "contract": "API_COMPOSITION_MULTI_PERSON_RETAIN_SET_AUDIT_V1",
+    "currentCropRelevantRetainedCount": 0,
+    "currentCropSafelyRetainedPersonIds": [],
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "feasibilityContract": "FIXED_WINDOW_RETAIN_SET_FEASIBILITY_V1",
+    "maxRetainableRelevantCount": 1,
+    "mustNotDriveQualityGateStatus": true,
+    "personImportance": [
+      {
+        "importanceRank": 1,
+        "importanceScore": 0.95,
+        "narrativeRelevant": true,
+        "personId": "p1",
+        "reason": "Man speaking and reacting in the foreground, central to the dialogue.",
+        "role": "PRIMARY"
+      },
+      {
+        "importanceRank": 2,
+        "importanceScore": 0.3,
+        "narrativeRelevant": false,
+        "personId": "p2",
+        "reason": "Over-the-shoulder framing of the conversational partner, face not visible.",
+        "role": "SECONDARY"
+      }
+    ],
+    "policy": "MULTI_PERSON_RETAIN_SET_PLANNER_V1",
+    "providerPrimaryComparison": "MATCH",
+    "rankingAmbiguous": false,
+    "recommendedRetainSetPersonIds": [
+      "p1"
+    ],
+    "relevantPersonIds": [
+      "p1"
+    ],
+    "selectionConfidence": "HIGH",
+    "semanticRankingDigest": "30b42d602044c6f664f976f38b0a914ba4c42bb90009fcc9d56b809ba74b6dcc",
+    "semanticRankingEvidence": {
+      "people": [
+        {
+          "importanceRank": 1,
+          "importanceScore": 0.95,
+          "narrativeRelevant": true,
+          "personId": "p1",
+          "reason": "Man speaking and reacting in the foreground, central to the dialogue.",
+          "role": "PRIMARY"
+        },
+        {
+          "importanceRank": 2,
+          "importanceScore": 0.3,
+          "narrativeRelevant": false,
+          "personId": "p2",
+          "reason": "Over-the-shoulder framing of the conversational partner, face not visible.",
+          "role": "SECONDARY"
+        }
+      ],
+      "rankingAmbiguous": false,
+      "selectionConfidence": "HIGH"
+    },
+    "status": "PLANNED"
+  },
+  "multiPersonRetainSetGuidedCropAudit": {
+    "centerDeltaSourcePixels": {
+      "x": 1.1368683772161603e-13,
+      "y": 204.0
+    },
+    "centerDistanceSourcePixels": 204.0,
+    "comparisonContract": "CURRENT_CROP_VS_RETAIN_SET_GUIDED_CROP_AUDIT_V1",
+    "comparisonStatus": "RETAIN_SET_RECOVERED_BY_REPOSITION",
+    "contract": "API_COMPOSITION_RETAIN_SET_GUIDED_CROP_AUDIT_V1",
+    "cropSizeChanged": false,
+    "currentCanonicalCropBoxNormalized": {
+      "bottom": 0.45,
+      "left": 0.19999999999999996,
+      "right": 0.7,
+      "top": 0.0
+    },
+    "currentRetainSetSatisfied": false,
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "guidedCropProposalDigest": "48c69d3950f2c45a47a28118d8a3ce50f584c8eddf17a1c2f2d789f4e7d01648",
+    "guidedPositionProposal": {
+      "adapterResult": {
+        "anchorWriteAllowed": false,
+        "contract": "MIDDLE_POSITION_ADAPTER_V2",
+        "effectiveMappingEcho": {
+          "observedMotionScaleFactor": 1.0,
+          "offsetPixels": {
+            "x": 0.0,
+            "y": -60.0
+          }
+        },
+        "frozenInputEcho": {
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "currentPositionRaw": [
+            0.5,
+            0.5
+          ],
+          "rotationDegrees": 0.0,
+          "scalePercent": 200.0,
+          "uniformScale": true
+        },
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionWriteAllowed": false,
+        "premiereReadOnly": true,
+        "productionUseAllowed": false,
+        "proposedHostParameters": {
+          "POSITION": [
+            0.6000000000000001,
+            0.71
+          ]
+        },
+        "reasonCodes": [],
+        "rotationWriteAllowed": false,
+        "roundTrip": {
+          "maxErrorPixels": 0.0,
+          "predictedSequencePosition": {
+            "x": 1152.0000000000002,
+            "y": 792.0
+          },
+          "recommendedSequencePosition": {
+            "x": 1152.0000000000002,
+            "y": 792.0
+          },
+          "status": "POSITION_ROUND_TRIP_VERIFIED",
+          "tolerancePixels": 1e-06
+        },
+        "scaleWriteAllowed": false,
+        "sequenceGeometryEcho": {
+          "height": 1080,
+          "width": 1920
+        },
+        "sourceGeometryEcho": {
+          "height": 1200,
+          "width": 1920
+        },
+        "status": "POSITION_ADAPTER_VERIFIED",
+        "writesPerformed": 0
+      },
+      "anchorSource": {
+        "x": 960.0,
+        "y": 600.0
+      },
+      "anchorWriteAllowed": false,
+      "canonicalCropDigest": "4acb54a529384443c3b93f49e69b8d2af54723b9c8e15d230b5da467a374b986",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+      "cropCenterSource": {
+        "x": 863.9999999999999,
+        "y": 474.0
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 200.0,
+        "uniformScale": true
+      },
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryFactor": 2.0,
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.6000000000000001,
+          0.71
+        ]
+      },
+      "reasonCodes": [],
+      "recommendedSequencePosition": {
+        "x": 1152.0000000000002,
+        "y": 792.0
+      },
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "rotationWriteAllowed": false,
+      "scaleWriteAllowed": false,
+      "status": "API_COMPOSITION_POSITION_VERIFIED"
+    },
+    "guidedScaleChange": 0,
+    "policy": "MINIMUM_DISPLACEMENT_FIXED_WINDOW_RETAIN_SET_CROP_V1",
+    "positionDeltaSequencePixels": {
+      "x": 0.0,
+      "y": -408.0
+    },
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "proposedCropBoxNormalized": {
+      "bottom": 0.62,
+      "left": 0.2,
+      "right": 0.7,
+      "top": 0.17
+    },
+    "proposedRetainSetSatisfied": true,
+    "recommendedRetainSetPersonIds": [
+      "p1"
+    ],
+    "singleSubjectSafePlacement": null,
+    "status": "PROPOSED"
+  },
+  "multiPersonRetainSetGuidedShadowQualityAudit": {
+    "addedReasonCodes": [],
+    "addedWarningCodes": [],
+    "baselineDecisionDigest": "227ef9bd10bde418b79e2c9d02972306e519ccc0a5d17c9a9364c66c1401088c",
+    "baselineQualityGate": {
+      "associationDiagnostics": {
+        "facePrimaryAssociationStatus": "MATCH",
+        "faceToPersonAssociation": [
+          {
+            "associatedPersonId": "p1",
+            "faceIndex": 0,
+            "status": "ASSOCIATED"
+          }
+        ],
+        "personRetentionCandidates": [
+          {
+            "centerInsideCrop": false,
+            "personId": "p1",
+            "retention": 0.348169
+          },
+          {
+            "centerInsideCrop": false,
+            "personId": "p2",
+            "retention": 0.161379
+          }
+        ],
+        "primaryPersonCandidate": "p1"
+      },
+      "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+      "detectors": {
+        "face": "YUNET_2026MAY_FROZEN_REUSE",
+        "person": "DFINE_M_COCO_FROZEN_REUSE"
+      },
+      "faceReviewAttribution": {
+        "classification": "PRIMARY_FACE_FAILURE",
+        "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+        "decisionImpact": "NONE",
+        "diagnosticCodes": [],
+        "faces": [
+          {
+            "associatedPersonId": "p1",
+            "associatedWithPrimaryPerson": true,
+            "associationStatus": "ASSOCIATED",
+            "bboxRetention": 0.514988,
+            "centerInsideCrop": true,
+            "contributesFaceCenterOutside": false,
+            "contributesFaceClipped": true,
+            "contributesRelationshipLoss": false,
+            "faceIndex": 0,
+            "landmarkCount": 5,
+            "landmarkEvidenceComplete": true,
+            "landmarksSafe": false,
+            "retainedLandmarkCount": 2,
+            "salient": true
+          }
+        ],
+        "mustNotDriveQualityGateStatus": true,
+        "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+        "primaryPersonId": "p1",
+        "reasonCodesObserved": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "semanticMultiPersonRequired": false
+      },
+      "inferenceMs": {
+        "face": 83.867,
+        "person": 51.381
+      },
+      "mainReplayDecisionDigest": "227ef9bd10bde418b79e2c9d02972306e519ccc0a5d17c9a9364c66c1401088c",
+      "mainReplayParityStatus": "PASS",
+      "metrics": {
+        "faceCentersRetained": 1,
+        "faceCount": 1,
+        "faceLandmarkCount": 5,
+        "facesWithCompleteLandmarks": 1,
+        "facesWithSafeLandmarks": 0,
+        "localMultiPersonEvidenceCount": 2,
+        "maxPersonRetention": 0.348169,
+        "minFaceRetention": 0.514988,
+        "personCount": 2,
+        "primaryPersonId": "p1",
+        "primaryPersonRetention": 0.348169,
+        "retainedFaceLandmarkCount": 2,
+        "salientFaceCentersRetained": 1,
+        "salientFaceCount": 1,
+        "semanticMultiPersonRequired": false
+      },
+      "multiPersonRetainSetCandidateEvidence": {
+        "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+        "canonicalCropBoxNormalized": {
+          "bottom": 0.45,
+          "left": 0.19999999999999996,
+          "right": 0.7,
+          "top": 0.0
+        },
+        "contract": "MULTI_PERSON_RETAIN_SET_CANDIDATE_EVIDENCE_V1",
+        "diagnosticCodes": [
+          "RETAIN_SET_DISTINCT_FACE_BACKED_PEOPLE_LT_2"
+        ],
+        "persons": [
+          {
+            "associatedFaceIndices": [
+              0
+            ],
+            "associatedSalientFaceIndices": [
+              0
+            ],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associationStatus": "ASSOCIATED",
+                "faceBoxNormalized": {
+                  "bottom": 0.6528358205159506,
+                  "left": 0.4928079605102539,
+                  "right": 0.6983679930369059,
+                  "top": 0.2346283721923828
+                },
+                "faceCenterNormalized": [
+                  0.595587977,
+                  0.443732096
+                ],
+                "faceIndex": 0,
+                "landmarkEvidenceComplete": true,
+                "landmarksNormalized": [
+                  {
+                    "name": "rightEye",
+                    "x": 0.5687674840291341,
+                    "y": 0.3672832743326823
+                  },
+                  {
+                    "name": "leftEye",
+                    "x": 0.6603572845458985,
+                    "y": 0.4019574483235677
+                  },
+                  {
+                    "name": "noseTip",
+                    "x": 0.6122626622517904,
+                    "y": 0.47773396809895835
+                  },
+                  {
+                    "name": "rightMouthCorner",
+                    "x": 0.5490463892618815,
+                    "y": 0.5204055786132813
+                  },
+                  {
+                    "name": "leftMouthCorner",
+                    "x": 0.6280934651692708,
+                    "y": 0.5507664998372396
+                  }
+                ],
+                "salient": true
+              }
+            ],
+            "personBoxNormalized": {
+              "bottom": 0.9915211995442709,
+              "left": 0.20769637425740559,
+              "right": 0.7800950368245443,
+              "top": 0.08168584187825521
+            },
+            "personCenterNormalized": [
+              0.493895706,
+              0.536603521
+            ],
+            "personDetectionConfidence": 0.960343,
+            "personId": "p1"
+          },
+          {
+            "associatedFaceIndices": [],
+            "associatedSalientFaceIndices": [],
+            "faces": [],
+            "personBoxNormalized": {
+              "bottom": 0.9908121744791667,
+              "left": 0.00016549229621887207,
+              "right": 0.3105712572733561,
+              "top": 0.0020582079887390137
+            },
+            "personCenterNormalized": [
+              0.155368375,
+              0.496435191
+            ],
+            "personDetectionConfidence": 0.945018,
+            "personId": "p2"
+          }
+        ],
+        "requiredCropWindowNormalized": {
+          "height": 0.45,
+          "width": 0.5
+        },
+        "sourceRaster": {
+          "height": 1200.0,
+          "width": 1920.0
+        },
+        "status": "APPLICABLE"
+      },
+      "mutationDispatches": 0,
+      "policyVersion": "0.5.74-interaction-target-and-hand-action-hotfix-v1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "qualityGateFrozenEvidence": {
+        "clipInstanceId": "6c2a160a199e88528d1d5e06",
+        "compositionReason": "Close-up framing focusing on the man speaking towards the left.",
+        "contract": "API_COMPOSITION_QUALITY_GATE_FROZEN_EVIDENCE_V1",
+        "evidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+        "faceDetections": [
+          {
+            "bboxNormalized": {
+              "h": 0.4182074483235677,
+              "w": 0.20556003252665203,
+              "x": 0.4928079605102539,
+              "y": 0.2346283721923828
+            },
+            "bboxPixels": {
+              "h": 502,
+              "w": 395,
+              "x": 946,
+              "y": 282
+            },
+            "confidence": 0.908691,
+            "detectionOrientation": 0,
+            "id": "f1",
+            "landmarksNormalized": [
+              {
+                "name": "rightEye",
+                "x": 0.5687674840291341,
+                "y": 0.3672832743326823
+              },
+              {
+                "name": "leftEye",
+                "x": 0.6603572845458985,
+                "y": 0.4019574483235677
+              },
+              {
+                "name": "noseTip",
+                "x": 0.6122626622517904,
+                "y": 0.47773396809895835
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 0.5490463892618815,
+                "y": 0.5204055786132813
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 0.6280934651692708,
+                "y": 0.5507664998372396
+              }
+            ],
+            "landmarksPixels": [
+              {
+                "name": "rightEye",
+                "x": 1092.034,
+                "y": 440.74
+              },
+              {
+                "name": "leftEye",
+                "x": 1267.886,
+                "y": 482.349
+              },
+              {
+                "name": "noseTip",
+                "x": 1175.544,
+                "y": 573.281
+              },
+              {
+                "name": "rightMouthCorner",
+                "x": 1054.169,
+                "y": 624.487
+              },
+              {
+                "name": "leftMouthCorner",
+                "x": 1205.939,
+                "y": 660.92
+              }
+            ],
+            "originalFrameCoordinates": true
+          }
+        ],
+        "middleFrameSha256": "91d090dd190eedab3a90574050b0ba1445d17a9bc74dae6921d99c2d393a0be8",
+        "personDetections": [
+          {
+            "bboxNormalized": {
+              "h": 0.9098353576660156,
+              "w": 0.5723986625671387,
+              "x": 0.20769637425740559,
+              "y": 0.08168584187825521
+            },
+            "bboxPixels": {
+              "h": 1092,
+              "w": 1099,
+              "x": 399,
+              "y": 98
+            },
+            "confidence": 0.960343,
+            "id": "p1"
+          },
+          {
+            "bboxNormalized": {
+              "h": 0.9887539664904277,
+              "w": 0.31040576497713723,
+              "x": 0.00016549229621887207,
+              "y": 0.0020582079887390137
+            },
+            "bboxPixels": {
+              "h": 1187,
+              "w": 596,
+              "x": 0,
+              "y": 2
+            },
+            "confidence": 0.945018,
+            "id": "p2"
+          }
+        ],
+        "poseEvidence": {
+          "detections": [],
+          "status": "NOT_RUN"
+        },
+        "primarySubject": "Man's face and upper body",
+        "requiredCropWindowNormalized": {
+          "height": 0.45,
+          "width": 0.5
+        },
+        "semanticIntent": {
+          "actionableLabels": [],
+          "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+          "labels": [
+            "FACE_PRIORITY",
+            "UPPER_BODY_PRIORITY"
+          ],
+          "sourceTextDigest": "88282a61fcc685fb4f13fbe65c1b0d771f047b226ad6af254c1641a29f5201d4"
+        },
+        "sourceRaster": {
+          "height": 1200.0,
+          "width": 1920.0
+        }
+      },
+      "reasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "secondaryAssociatedFaceRelaxation": {
+        "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+        "contract": "API_COMPOSITION_SECONDARY_FACE_RELAXATION_V1",
+        "decisionChanged": false,
+        "diagnosticCodes": [],
+        "eligible": false,
+        "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+        "originalReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "policy": "SECONDARY_ASSOCIATED_FACE_ONLY_RELAXATION_V1",
+        "primaryFaceIndex": null,
+        "removedReasonCodes": [],
+        "retainedReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "secondaryContributorFaceIndices": [],
+        "status": "NOT_ELIGIBLE",
+        "warningCodesAdded": []
+      },
+      "secondaryAssociatedRelationshipLossRelaxation": {
+        "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+        "contract": "API_COMPOSITION_SECONDARY_RELATIONSHIP_LOSS_RELAXATION_V1",
+        "decisionChanged": false,
+        "diagnosticCodes": [],
+        "eligible": false,
+        "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+        "originalReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "policy": "SECONDARY_ASSOCIATED_RELATIONSHIP_LOSS_RELAXATION_V1",
+        "primaryFaceIndex": null,
+        "removedReasonCodes": [],
+        "retainedReasonCodes": [
+          "FACE_CLIPPED_BY_CROP"
+        ],
+        "secondaryContributorFaceIndices": [],
+        "status": "NOT_ELIGIBLE",
+        "warningCodesAdded": []
+      },
+      "semanticIntent": {
+        "actionableLabels": [],
+        "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+        "labels": [
+          "FACE_PRIORITY",
+          "UPPER_BODY_PRIORITY"
+        ],
+        "metrics": {
+          "poseEvidenceStatus": null,
+          "retainedUsableWristCount": 0,
+          "usableWristCount": 0
+        },
+        "reasonCodes": [],
+        "sourceTextDigest": "88282a61fcc685fb4f13fbe65c1b0d771f047b226ad6af254c1641a29f5201d4",
+        "status": "NOT_ACTIONABLE"
+      },
+      "status": "QUALITY_GATE_REVIEW",
+      "upperBodyPoseRescue": {
+        "metrics": {
+          "poseEvidenceStatus": null,
+          "retainedUsableShoulderCount": 0,
+          "usableShoulderCount": 0
+        },
+        "reasonCodes": [],
+        "status": "NOT_ELIGIBLE"
+      },
+      "warningCodes": []
+    },
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "comparisonPolicy": "CURRENT_QUALITY_VS_GUIDED_SHADOW_QUALITY_V1",
+    "comparisonStatus": "SHADOW_IMPROVED",
+    "contract": "API_COMPOSITION_RETAIN_SET_GUIDED_SHADOW_QUALITY_V1",
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "guidedCropProposalDigest": "48c69d3950f2c45a47a28118d8a3ce50f584c8eddf17a1c2f2d789f4e7d01648",
+    "guidedShadowQualityDigest": "0b2c2f19d92853c88f40733e054c2e3ea6c193d6469ac384de2c931729d9ab59",
+    "policy": "GUIDED_SHADOW_NO_REGRESSION_CANDIDATE_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "primaryPersonComparison": {
+      "baselinePrimaryPersonId": "p1",
+      "recommendedRank1PersonId": "p1",
+      "recommendedRetainSetPersonIds": [
+        "p1"
+      ],
+      "shadowPrimaryPersonId": "p1",
+      "status": "PRIMARY_STABLE"
+    },
+    "primarySafetyDominance": {
+      "applicable": false,
+      "applied": false,
+      "diagnosticCodes": [],
+      "policy": "GUIDED_SHADOW_PRIMARY_SAFETY_DOMINANCE_V1",
+      "removedPrimarySafetyReasonCodes": [],
+      "selectedPersonId": null,
+      "toleratedAddedWarningCodes": []
+    },
+    "productionUseAllowed": false,
+    "promotionCandidate": true,
+    "promotionReasonCode": "GUIDED_SHADOW_STRICT_NO_REGRESSION_APPROVED",
+    "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+    "removedReasonCodes": [
+      "FACE_CLIPPED_BY_CROP"
+    ],
+    "removedWarningCodes": [],
+    "replayEvidenceComplete": true,
+    "retainSetBinding": {
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "diagnosticCodes": [],
+      "guidedCropProposalDigest": "48c69d3950f2c45a47a28118d8a3ce50f584c8eddf17a1c2f2d789f4e7d01648",
+      "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+      "recommendedRetainSetPersonIds": [
+        "p1"
+      ],
+      "status": "BOUND"
+    },
+    "shadowDecisionDigest": "c4aca4eb46c569c867e6d17cc571f61e1806a6a89b577db76298928d2ac0d3ee",
+    "shadowQualityGate": {
+      "associationDiagnostics": {
+        "facePrimaryAssociationStatus": "MATCH",
+        "faceToPersonAssociation": [
+          {
+            "associatedPersonId": "p1",
+            "faceIndex": 0,
+            "status": "ASSOCIATED"
+          }
+        ],
+        "personRetentionCandidates": [
+          {
+            "centerInsideCrop": true,
+            "personId": "p1",
+            "retention": 0.425387
+          },
+          {
+            "centerInsideCrop": false,
+            "personId": "p2",
+            "retention": 0.16212
+          }
+        ],
+        "primaryPersonCandidate": "p1"
+      },
+      "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+      "decisionImpact": "NONE",
+      "evaluatedCrop": "GUIDED_CROP",
+      "faceReviewAttribution": {
+        "classification": "NOT_APPLICABLE",
+        "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+        "decisionImpact": "NONE",
+        "diagnosticCodes": [],
+        "faces": [
+          {
+            "associatedPersonId": "p1",
+            "associatedWithPrimaryPerson": true,
+            "associationStatus": "ASSOCIATED",
+            "bboxRetention": 0.921484,
+            "centerInsideCrop": true,
+            "contributesFaceCenterOutside": false,
+            "contributesFaceClipped": false,
+            "contributesRelationshipLoss": false,
+            "faceIndex": 0,
+            "landmarkCount": 5,
+            "landmarkEvidenceComplete": true,
+            "landmarksSafe": true,
+            "retainedLandmarkCount": 5,
+            "salient": true
+          }
+        ],
+        "mustNotDriveQualityGateStatus": true,
+        "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+        "primaryPersonId": "p1",
+        "reasonCodesObserved": [],
+        "semanticMultiPersonRequired": false
+      },
+      "metrics": {
+        "faceCentersRetained": 1,
+        "faceCount": 1,
+        "faceLandmarkCount": 5,
+        "facesWithCompleteLandmarks": 1,
+        "facesWithSafeLandmarks": 1,
+        "localMultiPersonEvidenceCount": 2,
+        "maxPersonRetention": 0.425387,
+        "minFaceRetention": 0.921484,
+        "personCount": 2,
+        "primaryPersonId": "p1",
+        "primaryPersonRetention": 0.425387,
+        "retainedFaceLandmarkCount": 5,
+        "salientFaceCentersRetained": 1,
+        "salientFaceCount": 1,
+        "semanticMultiPersonRequired": false
+      },
+      "multiPersonRetainSetCandidateEvidence": {
+        "candidateEvidenceDigest": "5fe8eb505b45bf5a7a7863d59a1a7b49a6ee418ba333e1385b1364e74d686d80",
+        "canonicalCropBoxNormalized": {
+          "bottom": 0.62,
+          "left": 0.2,
+          "right": 0.7,
+          "top": 0.17
+        },
+        "contract": "MULTI_PERSON_RETAIN_SET_CANDIDATE_EVIDENCE_V1",
+        "diagnosticCodes": [
+          "RETAIN_SET_DISTINCT_FACE_BACKED_PEOPLE_LT_2"
+        ],
+        "persons": [
+          {
+            "associatedFaceIndices": [
+              0
+            ],
+            "associatedSalientFaceIndices": [
+              0
+            ],
+            "faces": [
+              {
+                "associatedPersonId": "p1",
+                "associationStatus": "ASSOCIATED",
+                "faceBoxNormalized": {
+                  "bottom": 0.6528358205159506,
+                  "left": 0.4928079605102539,
+                  "right": 0.6983679930369059,
+                  "top": 0.2346283721923828
+                },
+                "faceCenterNormalized": [
+                  0.595587977,
+                  0.443732096
+                ],
+                "faceIndex": 0,
+                "landmarkEvidenceComplete": true,
+                "landmarksNormalized": [
+                  {
+                    "name": "rightEye",
+                    "x": 0.5687674840291341,
+                    "y": 0.3672832743326823
+                  },
+                  {
+                    "name": "leftEye",
+                    "x": 0.6603572845458985,
+                    "y": 0.4019574483235677
+                  },
+                  {
+                    "name": "noseTip",
+                    "x": 0.6122626622517904,
+                    "y": 0.47773396809895835
+                  },
+                  {
+                    "name": "rightMouthCorner",
+                    "x": 0.5490463892618815,
+                    "y": 0.5204055786132813
+                  },
+                  {
+                    "name": "leftMouthCorner",
+                    "x": 0.6280934651692708,
+                    "y": 0.5507664998372396
+                  }
+                ],
+                "salient": true
+              }
+            ],
+            "personBoxNormalized": {
+              "bottom": 0.9915211995442709,
+              "left": 0.20769637425740559,
+              "right": 0.7800950368245443,
+              "top": 0.08168584187825521
+            },
+            "personCenterNormalized": [
+              0.493895706,
+              0.536603521
+            ],
+            "personDetectionConfidence": 0.960343,
+            "personId": "p1"
+          },
+          {
+            "associatedFaceIndices": [],
+            "associatedSalientFaceIndices": [],
+            "faces": [],
+            "personBoxNormalized": {
+              "bottom": 0.9908121744791667,
+              "left": 0.00016549229621887207,
+              "right": 0.3105712572733561,
+              "top": 0.0020582079887390137
+            },
+            "personCenterNormalized": [
+              0.155368375,
+              0.496435191
+            ],
+            "personDetectionConfidence": 0.945018,
+            "personId": "p2"
+          }
+        ],
+        "requiredCropWindowNormalized": {
+          "height": 0.45,
+          "width": 0.5
+        },
+        "sourceRaster": {
+          "height": 1200.0,
+          "width": 1920.0
+        },
+        "status": "APPLICABLE"
+      },
+      "mutationDispatches": 0,
+      "policyVersion": "0.5.74-interaction-target-and-hand-action-hotfix-v1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "qualityGateFrozenEvidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+      "reasonCodes": [],
+      "replayContract": "API_COMPOSITION_QUALITY_GATE_REPLAY_V1",
+      "replayEvidenceComplete": true,
+      "replayEvidenceMissingReasons": [],
+      "secondaryAssociatedFaceRelaxation": {
+        "baselineQualityGateStatus": "QUALITY_GATE_PASS",
+        "contract": "API_COMPOSITION_SECONDARY_FACE_RELAXATION_V1",
+        "decisionChanged": false,
+        "diagnosticCodes": [],
+        "eligible": false,
+        "finalQualityGateStatus": "QUALITY_GATE_PASS",
+        "originalReasonCodes": [],
+        "policy": "SECONDARY_ASSOCIATED_FACE_ONLY_RELAXATION_V1",
+        "primaryFaceIndex": null,
+        "removedReasonCodes": [],
+        "retainedReasonCodes": [],
+        "secondaryContributorFaceIndices": [],
+        "status": "NOT_ELIGIBLE",
+        "warningCodesAdded": []
+      },
+      "secondaryAssociatedRelationshipLossRelaxation": {
+        "baselineQualityGateStatus": "QUALITY_GATE_PASS",
+        "contract": "API_COMPOSITION_SECONDARY_RELATIONSHIP_LOSS_RELAXATION_V1",
+        "decisionChanged": false,
+        "diagnosticCodes": [],
+        "eligible": false,
+        "finalQualityGateStatus": "QUALITY_GATE_PASS",
+        "originalReasonCodes": [],
+        "policy": "SECONDARY_ASSOCIATED_RELATIONSHIP_LOSS_RELAXATION_V1",
+        "primaryFaceIndex": null,
+        "removedReasonCodes": [],
+        "retainedReasonCodes": [],
+        "secondaryContributorFaceIndices": [],
+        "status": "NOT_ELIGIBLE",
+        "warningCodesAdded": []
+      },
+      "semanticIntent": {
+        "actionableLabels": [],
+        "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+        "labels": [
+          "FACE_PRIORITY",
+          "UPPER_BODY_PRIORITY"
+        ],
+        "metrics": {
+          "poseEvidenceStatus": null,
+          "retainedUsableWristCount": 0,
+          "usableWristCount": 0
+        },
+        "reasonCodes": [],
+        "sourceTextDigest": "88282a61fcc685fb4f13fbe65c1b0d771f047b226ad6af254c1641a29f5201d4",
+        "status": "NOT_ACTIONABLE"
+      },
+      "shadowOnly": true,
+      "status": "QUALITY_GATE_PASS",
+      "upperBodyPoseRescue": {
+        "metrics": {
+          "poseEvidenceStatus": null,
+          "retainedUsableShoulderCount": 0,
+          "usableShoulderCount": 0
+        },
+        "reasonCodes": [],
+        "status": "NOT_ELIGIBLE"
+      },
+      "warningCodes": []
+    },
+    "status": "VALIDATED",
+    "unchangedReasonCodes": [],
+    "unchangedWarningCodes": []
+  },
+  "mutationDispatches": 0,
+  "ordinal": 54,
+  "ordinarySinglePersonFaceSafeRepair": {
+    "applicable": false,
+    "contract": "ORDINARY_SINGLE_PERSON_FACE_SAFE_REPAIR_V1",
+    "cropSizeChanged": false,
+    "currentPrimaryFaceSafe": false,
+    "diagnosticCodes": [],
+    "guidedPositionProposal": null,
+    "headPlacementTargetSatisfied": false,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "promotionCandidate": false,
+    "proposedCropBoxNormalized": null,
+    "proposedPrimaryFaceSafe": false,
+    "repairProposalDigest": null,
+    "repairShadowValidationDigest": null,
+    "safeInsetSatisfied": false,
+    "selectedFaceIndex": null,
+    "selectedPersonId": null,
+    "shadowValidation": null,
+    "status": "NOT_APPLICABLE"
+  },
+  "oversizedFaceFeaturePriority": {
+    "applicable": true,
+    "browProxyPoints": [
+      {
+        "name": "rightBrowProxy",
+        "proxy": true,
+        "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+        "x": 0.5687674840291341,
+        "y": 0.3286255315144857
+      },
+      {
+        "name": "leftBrowProxy",
+        "proxy": true,
+        "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+        "x": 0.6603572845458985,
+        "y": 0.375435666402181
+      }
+    ],
+    "browProxySafe": true,
+    "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+    "diagnosticCodes": [],
+    "eyesSafe": true,
+    "featureTiers": {
+      "BROWS_EYES_NOSE": [
+        {
+          "name": "rightBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.5687674840291341,
+          "y": 0.3286255315144857
+        },
+        {
+          "name": "leftBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.6603572845458985,
+          "y": 0.375435666402181
+        },
+        {
+          "name": "rightEye",
+          "proxy": false,
+          "x": 0.5687674840291341,
+          "y": 0.3672832743326823
+        },
+        {
+          "name": "leftEye",
+          "proxy": false,
+          "x": 0.6603572845458985,
+          "y": 0.4019574483235677
+        },
+        {
+          "name": "noseTip",
+          "proxy": false,
+          "x": 0.6122626622517904,
+          "y": 0.47773396809895835
+        }
+      ],
+      "BROWS_EYES_NOSE_MOUTH": [
+        {
+          "name": "rightBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.5687674840291341,
+          "y": 0.3286255315144857
+        },
+        {
+          "name": "leftBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.6603572845458985,
+          "y": 0.375435666402181
+        },
+        {
+          "name": "rightEye",
+          "proxy": false,
+          "x": 0.5687674840291341,
+          "y": 0.3672832743326823
+        },
+        {
+          "name": "leftEye",
+          "proxy": false,
+          "x": 0.6603572845458985,
+          "y": 0.4019574483235677
+        },
+        {
+          "name": "noseTip",
+          "proxy": false,
+          "x": 0.6122626622517904,
+          "y": 0.47773396809895835
+        },
+        {
+          "name": "rightMouthCorner",
+          "proxy": false,
+          "x": 0.5490463892618815,
+          "y": 0.5204055786132813
+        },
+        {
+          "name": "leftMouthCorner",
+          "proxy": false,
+          "x": 0.6280934651692708,
+          "y": 0.5507664998372396
+        }
+      ],
+      "EYES": [
+        {
+          "name": "rightEye",
+          "proxy": false,
+          "x": 0.5687674840291341,
+          "y": 0.3672832743326823
+        },
+        {
+          "name": "leftEye",
+          "proxy": false,
+          "x": 0.6603572845458985,
+          "y": 0.4019574483235677
+        }
+      ],
+      "EYES_NOSE": [
+        {
+          "name": "rightEye",
+          "proxy": false,
+          "x": 0.5687674840291341,
+          "y": 0.3672832743326823
+        },
+        {
+          "name": "leftEye",
+          "proxy": false,
+          "x": 0.6603572845458985,
+          "y": 0.4019574483235677
+        },
+        {
+          "name": "noseTip",
+          "proxy": false,
+          "x": 0.6122626622517904,
+          "y": 0.47773396809895835
+        }
+      ]
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "mouthSafe": true,
+    "noseSafe": true,
+    "policy": "OVERSIZED_FACE_FEATURE_PRIORITY_V1",
+    "proxyConstants": {
+      "browEyeToNoseVerticalRatio": 0.35
+    },
+    "safetyInsetNormalized": 0.02,
+    "selectedFeatureTier": "BROWS_EYES_NOSE_MOUTH",
+    "status": "OVERSIZED_FACE_FEATURE_TIER_SELECTED",
+    "tierEvaluations": {
+      "BROWS_EYES_NOSE": {
+        "feasible": true,
+        "validCenterInterval": {
+          "x": [
+            0.4303572845458985,
+            0.75
+          ],
+          "y": [
+            0.27273396809895833,
+            0.5336255315144857
+          ]
+        }
+      },
+      "BROWS_EYES_NOSE_MOUTH": {
+        "feasible": true,
+        "validCenterInterval": {
+          "x": [
+            0.4303572845458985,
+            0.75
+          ],
+          "y": [
+            0.3457664998372396,
+            0.5336255315144857
+          ]
+        }
+      },
+      "EYES": {
+        "feasible": true,
+        "validCenterInterval": {
+          "x": [
+            0.4303572845458985,
+            0.75
+          ],
+          "y": [
+            0.225,
+            0.5722832743326823
+          ]
+        }
+      },
+      "EYES_NOSE": {
+        "feasible": true,
+        "validCenterInterval": {
+          "x": [
+            0.4303572845458985,
+            0.75
+          ],
+          "y": [
+            0.27273396809895833,
+            0.5722832743326823
+          ]
+        }
+      }
+    },
+    "validCenterInterval": {
+      "x": [
+        0.4303572845458985,
+        0.75
+      ],
+      "y": [
+        0.3457664998372396,
+        0.5336255315144857
+      ]
+    }
+  },
+  "positionResult": {
+    "adapterResult": {
+      "anchorWriteAllowed": false,
+      "contract": "MIDDLE_POSITION_ADAPTER_V2",
+      "effectiveMappingEcho": {
+        "observedMotionScaleFactor": 1.0,
+        "offsetPixels": {
+          "x": 0.0,
+          "y": -60.0
+        }
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 200.0,
+        "uniformScale": true
+      },
+      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.6000000000000001,
+          1.05
+        ]
+      },
+      "reasonCodes": [],
+      "rotationWriteAllowed": false,
+      "roundTrip": {
+        "maxErrorPixels": 0.0,
+        "predictedSequencePosition": {
+          "x": 1152.0000000000002,
+          "y": 1200.0
+        },
+        "recommendedSequencePosition": {
+          "x": 1152.0000000000002,
+          "y": 1200.0
+        },
+        "status": "POSITION_ROUND_TRIP_VERIFIED",
+        "tolerancePixels": 1e-06
+      },
+      "scaleWriteAllowed": false,
+      "sequenceGeometryEcho": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sourceGeometryEcho": {
+        "height": 1200,
+        "width": 1920
+      },
+      "status": "POSITION_ADAPTER_VERIFIED",
+      "writesPerformed": 0
+    },
+    "anchorSource": {
+      "x": 960.0,
+      "y": 600.0
+    },
+    "anchorWriteAllowed": false,
+    "canonicalCropDigest": "95d4b8f7a0d549997c1593b9cf5438419f94fd90a6494bcab722ffe15b252b32",
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+    "cropCenterSource": {
+      "x": 863.9999999999999,
+      "y": 270.0
+    },
+    "frozenInputEcho": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "currentPositionRaw": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 200.0,
+      "uniformScale": true
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "geometryFactor": 2.0,
+    "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+    "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+    "positionWriteAllowed": false,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "proposedHostParameters": {
+      "POSITION": [
+        0.6000000000000001,
+        1.05
+      ]
+    },
+    "reasonCodes": [],
+    "recommendedSequencePosition": {
+      "x": 1152.0000000000002,
+      "y": 1200.0
+    },
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "rotationWriteAllowed": false,
+    "scaleWriteAllowed": false,
+    "status": "API_COMPOSITION_POSITION_VERIFIED"
+  },
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "productionAuthorityConsumptions": 0,
+  "productionUseAllowed": false,
+  "providerResult": {
+    "clipInstanceId": "6c2a160a199e88528d1d5e06",
+    "compositionReason": "Close-up framing focusing on the man speaking towards the left.",
+    "confidence": 0.98,
+    "cropBoxNormalized": {
+      "bottom": 0.45,
+      "left": 0.2,
+      "right": 0.7,
+      "top": 0.0
+    },
+    "primarySubject": "Man's face and upper body"
+  },
+  "qualityGate": {
+    "associationDiagnostics": {
+      "facePrimaryAssociationStatus": "MATCH",
+      "faceToPersonAssociation": [
+        {
+          "associatedPersonId": "p1",
+          "faceIndex": 0,
+          "status": "ASSOCIATED"
+        }
+      ],
+      "personRetentionCandidates": [
+        {
+          "centerInsideCrop": false,
+          "personId": "p1",
+          "retention": 0.348169
+        },
+        {
+          "centerInsideCrop": false,
+          "personId": "p2",
+          "retention": 0.161379
+        }
+      ],
+      "primaryPersonCandidate": "p1"
+    },
+    "contract": "API_COMPOSITION_LOCAL_QUALITY_GATE_V1",
+    "detectors": {
+      "face": "YUNET_2026MAY_FROZEN_REUSE",
+      "person": "DFINE_M_COCO_FROZEN_REUSE"
+    },
+    "faceReviewAttribution": {
+      "classification": "PRIMARY_FACE_FAILURE",
+      "contract": "API_COMPOSITION_FACE_REVIEW_ATTRIBUTION_V1",
+      "decisionImpact": "NONE",
+      "diagnosticCodes": [],
+      "faces": [
+        {
+          "associatedPersonId": "p1",
+          "associatedWithPrimaryPerson": true,
+          "associationStatus": "ASSOCIATED",
+          "bboxRetention": 0.514988,
+          "centerInsideCrop": true,
+          "contributesFaceCenterOutside": false,
+          "contributesFaceClipped": true,
+          "contributesRelationshipLoss": false,
+          "faceIndex": 0,
+          "landmarkCount": 5,
+          "landmarkEvidenceComplete": true,
+          "landmarksSafe": false,
+          "retainedLandmarkCount": 2,
+          "salient": true
+        }
+      ],
+      "mustNotDriveQualityGateStatus": true,
+      "policy": "PRIMARY_SUBJECT_AWARE_FACE_ATTRIBUTION_AUDIT_V1",
+      "primaryPersonId": "p1",
+      "reasonCodesObserved": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "semanticMultiPersonRequired": false
+    },
+    "inferenceMs": {
+      "face": 83.867,
+      "person": 51.381
+    },
+    "mainReplayDecisionDigest": "227ef9bd10bde418b79e2c9d02972306e519ccc0a5d17c9a9364c66c1401088c",
+    "mainReplayParityStatus": "PASS",
+    "metrics": {
+      "faceCentersRetained": 1,
+      "faceCount": 1,
+      "faceLandmarkCount": 5,
+      "facesWithCompleteLandmarks": 1,
+      "facesWithSafeLandmarks": 0,
+      "localMultiPersonEvidenceCount": 2,
+      "maxPersonRetention": 0.348169,
+      "minFaceRetention": 0.514988,
+      "personCount": 2,
+      "primaryPersonId": "p1",
+      "primaryPersonRetention": 0.348169,
+      "retainedFaceLandmarkCount": 2,
+      "salientFaceCentersRetained": 1,
+      "salientFaceCount": 1,
+      "semanticMultiPersonRequired": false
+    },
+    "multiPersonRetainSetCandidateEvidence": {
+      "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+      "canonicalCropBoxNormalized": {
+        "bottom": 0.45,
+        "left": 0.19999999999999996,
+        "right": 0.7,
+        "top": 0.0
+      },
+      "contract": "MULTI_PERSON_RETAIN_SET_CANDIDATE_EVIDENCE_V1",
+      "diagnosticCodes": [
+        "RETAIN_SET_DISTINCT_FACE_BACKED_PEOPLE_LT_2"
+      ],
+      "persons": [
+        {
+          "associatedFaceIndices": [
+            0
+          ],
+          "associatedSalientFaceIndices": [
+            0
+          ],
+          "faces": [
+            {
+              "associatedPersonId": "p1",
+              "associationStatus": "ASSOCIATED",
+              "faceBoxNormalized": {
+                "bottom": 0.6528358205159506,
+                "left": 0.4928079605102539,
+                "right": 0.6983679930369059,
+                "top": 0.2346283721923828
+              },
+              "faceCenterNormalized": [
+                0.595587977,
+                0.443732096
+              ],
+              "faceIndex": 0,
+              "landmarkEvidenceComplete": true,
+              "landmarksNormalized": [
+                {
+                  "name": "rightEye",
+                  "x": 0.5687674840291341,
+                  "y": 0.3672832743326823
+                },
+                {
+                  "name": "leftEye",
+                  "x": 0.6603572845458985,
+                  "y": 0.4019574483235677
+                },
+                {
+                  "name": "noseTip",
+                  "x": 0.6122626622517904,
+                  "y": 0.47773396809895835
+                },
+                {
+                  "name": "rightMouthCorner",
+                  "x": 0.5490463892618815,
+                  "y": 0.5204055786132813
+                },
+                {
+                  "name": "leftMouthCorner",
+                  "x": 0.6280934651692708,
+                  "y": 0.5507664998372396
+                }
+              ],
+              "salient": true
+            }
+          ],
+          "personBoxNormalized": {
+            "bottom": 0.9915211995442709,
+            "left": 0.20769637425740559,
+            "right": 0.7800950368245443,
+            "top": 0.08168584187825521
+          },
+          "personCenterNormalized": [
+            0.493895706,
+            0.536603521
+          ],
+          "personDetectionConfidence": 0.960343,
+          "personId": "p1"
+        },
+        {
+          "associatedFaceIndices": [],
+          "associatedSalientFaceIndices": [],
+          "faces": [],
+          "personBoxNormalized": {
+            "bottom": 0.9908121744791667,
+            "left": 0.00016549229621887207,
+            "right": 0.3105712572733561,
+            "top": 0.0020582079887390137
+          },
+          "personCenterNormalized": [
+            0.155368375,
+            0.496435191
+          ],
+          "personDetectionConfidence": 0.945018,
+          "personId": "p2"
+        }
+      ],
+      "requiredCropWindowNormalized": {
+        "height": 0.45,
+        "width": 0.5
+      },
+      "sourceRaster": {
+        "height": 1200.0,
+        "width": 1920.0
+      },
+      "status": "APPLICABLE"
+    },
+    "mutationDispatches": 0,
+    "policyVersion": "0.5.74-interaction-target-and-hand-action-hotfix-v1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "qualityGateFrozenEvidence": {
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "compositionReason": "Close-up framing focusing on the man speaking towards the left.",
+      "contract": "API_COMPOSITION_QUALITY_GATE_FROZEN_EVIDENCE_V1",
+      "evidenceDigest": "109f6f8cf3f1abd8f435823f3977106ebb1fbe99dd9e9c8f1c890c2e14d6de43",
+      "faceDetections": [
+        {
+          "bboxNormalized": {
+            "h": 0.4182074483235677,
+            "w": 0.20556003252665203,
+            "x": 0.4928079605102539,
+            "y": 0.2346283721923828
+          },
+          "bboxPixels": {
+            "h": 502,
+            "w": 395,
+            "x": 946,
+            "y": 282
+          },
+          "confidence": 0.908691,
+          "detectionOrientation": 0,
+          "id": "f1",
+          "landmarksNormalized": [
+            {
+              "name": "rightEye",
+              "x": 0.5687674840291341,
+              "y": 0.3672832743326823
+            },
+            {
+              "name": "leftEye",
+              "x": 0.6603572845458985,
+              "y": 0.4019574483235677
+            },
+            {
+              "name": "noseTip",
+              "x": 0.6122626622517904,
+              "y": 0.47773396809895835
+            },
+            {
+              "name": "rightMouthCorner",
+              "x": 0.5490463892618815,
+              "y": 0.5204055786132813
+            },
+            {
+              "name": "leftMouthCorner",
+              "x": 0.6280934651692708,
+              "y": 0.5507664998372396
+            }
+          ],
+          "landmarksPixels": [
+            {
+              "name": "rightEye",
+              "x": 1092.034,
+              "y": 440.74
+            },
+            {
+              "name": "leftEye",
+              "x": 1267.886,
+              "y": 482.349
+            },
+            {
+              "name": "noseTip",
+              "x": 1175.544,
+              "y": 573.281
+            },
+            {
+              "name": "rightMouthCorner",
+              "x": 1054.169,
+              "y": 624.487
+            },
+            {
+              "name": "leftMouthCorner",
+              "x": 1205.939,
+              "y": 660.92
+            }
+          ],
+          "originalFrameCoordinates": true
+        }
+      ],
+      "middleFrameSha256": "91d090dd190eedab3a90574050b0ba1445d17a9bc74dae6921d99c2d393a0be8",
+      "personDetections": [
+        {
+          "bboxNormalized": {
+            "h": 0.9098353576660156,
+            "w": 0.5723986625671387,
+            "x": 0.20769637425740559,
+            "y": 0.08168584187825521
+          },
+          "bboxPixels": {
+            "h": 1092,
+            "w": 1099,
+            "x": 399,
+            "y": 98
+          },
+          "confidence": 0.960343,
+          "id": "p1"
+        },
+        {
+          "bboxNormalized": {
+            "h": 0.9887539664904277,
+            "w": 0.31040576497713723,
+            "x": 0.00016549229621887207,
+            "y": 0.0020582079887390137
+          },
+          "bboxPixels": {
+            "h": 1187,
+            "w": 596,
+            "x": 0,
+            "y": 2
+          },
+          "confidence": 0.945018,
+          "id": "p2"
+        }
+      ],
+      "poseEvidence": {
+        "detections": [],
+        "status": "NOT_RUN"
+      },
+      "primarySubject": "Man's face and upper body",
+      "requiredCropWindowNormalized": {
+        "height": 0.45,
+        "width": 0.5
+      },
+      "semanticIntent": {
+        "actionableLabels": [],
+        "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+        "labels": [
+          "FACE_PRIORITY",
+          "UPPER_BODY_PRIORITY"
+        ],
+        "sourceTextDigest": "88282a61fcc685fb4f13fbe65c1b0d771f047b226ad6af254c1641a29f5201d4"
+      },
+      "sourceRaster": {
+        "height": 1200.0,
+        "width": 1920.0
+      }
+    },
+    "reasonCodes": [
+      "FACE_CLIPPED_BY_CROP"
+    ],
+    "secondaryAssociatedFaceRelaxation": {
+      "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "contract": "API_COMPOSITION_SECONDARY_FACE_RELAXATION_V1",
+      "decisionChanged": false,
+      "diagnosticCodes": [],
+      "eligible": false,
+      "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "originalReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "policy": "SECONDARY_ASSOCIATED_FACE_ONLY_RELAXATION_V1",
+      "primaryFaceIndex": null,
+      "removedReasonCodes": [],
+      "retainedReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "secondaryContributorFaceIndices": [],
+      "status": "NOT_ELIGIBLE",
+      "warningCodesAdded": []
+    },
+    "secondaryAssociatedRelationshipLossRelaxation": {
+      "baselineQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "contract": "API_COMPOSITION_SECONDARY_RELATIONSHIP_LOSS_RELAXATION_V1",
+      "decisionChanged": false,
+      "diagnosticCodes": [],
+      "eligible": false,
+      "finalQualityGateStatus": "QUALITY_GATE_REVIEW",
+      "originalReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "policy": "SECONDARY_ASSOCIATED_RELATIONSHIP_LOSS_RELAXATION_V1",
+      "primaryFaceIndex": null,
+      "removedReasonCodes": [],
+      "retainedReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "secondaryContributorFaceIndices": [],
+      "status": "NOT_ELIGIBLE",
+      "warningCodesAdded": []
+    },
+    "semanticIntent": {
+      "actionableLabels": [],
+      "contract": "API_COMPOSITION_SEMANTIC_INTENT_V1",
+      "labels": [
+        "FACE_PRIORITY",
+        "UPPER_BODY_PRIORITY"
+      ],
+      "metrics": {
+        "poseEvidenceStatus": null,
+        "retainedUsableWristCount": 0,
+        "usableWristCount": 0
+      },
+      "reasonCodes": [],
+      "sourceTextDigest": "88282a61fcc685fb4f13fbe65c1b0d771f047b226ad6af254c1641a29f5201d4",
+      "status": "NOT_ACTIONABLE"
+    },
+    "status": "QUALITY_GATE_REVIEW",
+    "upperBodyPoseRescue": {
+      "metrics": {
+        "poseEvidenceStatus": null,
+        "retainedUsableShoulderCount": 0,
+        "usableShoulderCount": 0
+      },
+      "reasonCodes": [],
+      "status": "NOT_ELIGIBLE"
+    },
+    "warningCodes": []
+  },
+  "reasonCodes": [
+    "FACE_CLIPPED_BY_CROP"
+  ],
+  "relevantPersonRetainSetV2": {
+    "bodyRetentionMin": 0.33,
+    "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+    "candidatePersonIds": [
+      "p1",
+      "p2"
+    ],
+    "contract": "RELEVANT_PERSON_RETAIN_SET_V2",
+    "currentCropPersonIds": [],
+    "diagnosticCodes": [],
+    "faceRetentionMin": 0.92,
+    "feasibility": {
+      "bodyRetentionMin": 0.33,
+      "contract": "RELEVANT_PERSON_RETAIN_SET_FEASIBILITY_V2",
+      "diagnosticCodes": [],
+      "faceRetentionMin": 0.92,
+      "feasibleSets": [
+        [
+          "p1"
+        ]
+      ],
+      "maxRetainableRelevantCount": 1,
+      "safetyBasisByPersonId": {
+        "p1": "FACE"
+      },
+      "status": "SOLVED",
+      "witnessCropBySet": {
+        "p1": {
+          "bottom": 0.6525,
+          "left": 0.18229166666666666,
+          "right": 0.6822916666666666,
+          "top": 0.2025
+        }
+      }
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "maxRetainableRelevantCount": 1,
+    "personImportance": [
+      {
+        "importanceRank": 1,
+        "importanceScore": 0.95,
+        "narrativeRelevant": true,
+        "personId": "p1",
+        "reason": "Man speaking and reacting in the foreground, central to the dialogue.",
+        "role": "PRIMARY"
+      },
+      {
+        "importanceRank": 2,
+        "importanceScore": 0.3,
+        "narrativeRelevant": false,
+        "personId": "p2",
+        "reason": "Over-the-shoulder framing of the conversational partner, face not visible.",
+        "role": "SECONDARY"
+      }
+    ],
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "providerRankingAmbiguous": false,
+    "rankingAmbiguous": false,
+    "recommendedRetainSetPersonIds": [
+      "p1"
+    ],
+    "relevantPersonIds": [
+      "p1"
+    ],
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "selectionConfidence": "HIGH",
+    "semanticRankingCacheKey": "9e2f691ff3ac63b5805b67f03bac8fa096613eddec1d20680dc56d1a34d55709",
+    "semanticRankingDigest": "30b42d602044c6f664f976f38b0a914ba4c42bb90009fcc9d56b809ba74b6dcc",
+    "status": "SINGLE_PRIMARY_SELECTED_BY_IMPORTANCE"
+  },
+  "retainSetAuditMetrics": {
+    "retainSetAuditCacheHits": 0,
+    "retainSetAuditProviderCalls": 0,
+    "retainSetAuditRejectedResults": 0,
+    "retainSetAuditTransportRetries": 0
+  },
+  "schemaVersion": "api_middle_frame_composition.result.v1",
+  "semanticSubjectBinding": {
+    "bindingDigest": "8d4d8abc742f40387964588f140e8d303158080777d7432729669e5259059ef0",
+    "confidence": "HIGH",
+    "contract": "SEMANTIC_SUBJECT_BINDING_V2",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "primaryFaceIndex": 0,
+    "primaryPersonId": "p1",
+    "productionUseAllowed": false,
+    "reasonCodes": [],
+    "retainSetPersonIds": [
+      "p1"
+    ],
+    "status": "BOUND_PERSON_AND_FACE"
+  },
+  "singleSubjectCompositionRefiner": {
+    "admissionPath": "RELEVANT_PERSON_RETAIN_SET_V2",
+    "anchorWriteAllowed": false,
+    "baseCropBoxNormalized": {
+      "bottom": 0.45,
+      "left": 0.19999999999999996,
+      "right": 0.7,
+      "top": 0.0
+    },
+    "candidateEvidenceDigest": "ab71fdf5a536295f07f5aa94f1e0db295f5497dd468e0aac69bdf586e57821a5",
+    "contract": "SINGLE_SUBJECT_COMPOSITION_REFINER_V1",
+    "cropSizeChanged": false,
+    "diagnosticCodes": [],
+    "displacementNormalized": 0.2249807130376872,
+    "fullHeadFeasibility": {
+      "axisFeasible": {
+        "x": true,
+        "y": false
+      },
+      "contract": "FULL_HEAD_FEASIBILITY_AND_PROTECTION_V1",
+      "cropSize": {
+        "height": 0.45,
+        "width": 0.5
+      },
+      "diagnosticCodes": [],
+      "expandedHeadEnvelope": {
+        "bottom": 0.7146565653483073,
+        "left": 0.46047435855865476,
+        "right": 0.7307015949885051,
+        "top": 0.1393510314941406
+      },
+      "headEnvelope": {
+        "bottom": 0.6946565653483073,
+        "left": 0.4804743585586548,
+        "right": 0.710701594988505,
+        "top": 0.1593510314941406
+      },
+      "requiredSpan": {
+        "height": 0.5753055338541667,
+        "width": 0.2702272364298503
+      },
+      "safetyInset": 0.02,
+      "status": "FULL_HEAD_INFEASIBLE_VERTICAL",
+      "validCenterInterval": {
+        "x": [
+          0.48070159498850507,
+          0.7104743585586548
+        ],
+        "y": null
+      }
+    },
+    "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+    "guidedPositionProposal": {
+      "adapterResult": {
+        "anchorWriteAllowed": false,
+        "contract": "MIDDLE_POSITION_ADAPTER_V2",
+        "effectiveMappingEcho": {
+          "observedMotionScaleFactor": 1.0,
+          "offsetPixels": {
+            "x": 0.0,
+            "y": -60.0
+          }
+        },
+        "frozenInputEcho": {
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "currentPositionRaw": [
+            0.5,
+            0.5
+          ],
+          "rotationDegrees": 0.0,
+          "scalePercent": 200.0,
+          "uniformScale": true
+        },
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionWriteAllowed": false,
+        "premiereReadOnly": true,
+        "productionUseAllowed": false,
+        "proposedHostParameters": {
+          "POSITION": [
+            0.4588240464528402,
+            0.6227592773437499
+          ]
+        },
+        "reasonCodes": [],
+        "rotationWriteAllowed": false,
+        "roundTrip": {
+          "maxErrorPixels": 0.0,
+          "predictedSequencePosition": {
+            "x": 880.9421691894531,
+            "y": 687.3111328124999
+          },
+          "recommendedSequencePosition": {
+            "x": 880.9421691894531,
+            "y": 687.3111328124999
+          },
+          "status": "POSITION_ROUND_TRIP_VERIFIED",
+          "tolerancePixels": 1e-06
+        },
+        "scaleWriteAllowed": false,
+        "sequenceGeometryEcho": {
+          "height": 1080,
+          "width": 1920
+        },
+        "sourceGeometryEcho": {
+          "height": 1200,
+          "width": 1920
+        },
+        "status": "POSITION_ADAPTER_VERIFIED",
+        "writesPerformed": 0
+      },
+      "anchorSource": {
+        "x": 960.0,
+        "y": 600.0
+      },
+      "anchorWriteAllowed": false,
+      "canonicalCropDigest": "279093cef6e026d1741c8bbe4571d107e6f0519770e75f82fdba32560b9a337e",
+      "clipInstanceId": "6c2a160a199e88528d1d5e06",
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+      "cropCenterSource": {
+        "x": 999.5289154052734,
+        "y": 526.3444335937501
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 200.0,
+        "uniformScale": true
+      },
+      "geometryContextDigest": "bd73eb1e80d0b41f87ace1814e22c9e8164047cd5ccd3704c00b425b7224d7f7",
+      "geometryFactor": 2.0,
+      "mappingDigest": "721b0dde536f7f0f9fb1db028accd7a9fe07e63f5e014a1afc799048da0d1d15",
+      "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.4588240464528402,
+          0.6227592773437499
+        ]
+      },
+      "reasonCodes": [],
+      "recommendedSequencePosition": {
+        "x": 880.9421691894531,
+        "y": 687.3111328124999
+      },
+      "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+      "rotationWriteAllowed": false,
+      "scaleWriteAllowed": false,
+      "status": "API_COMPOSITION_POSITION_VERIFIED"
+    },
+    "headPlacementAudit": {
+      "eyeMidpointFinalNormalized": [
+        0.6879488150278728,
+        0.37999999999999995
+      ],
+      "headCenterFinalNormalized": [
+        0.6499999999999999,
+        0.47418541576244194
+      ],
+      "placementPenalty": 0.0,
+      "policy": "SINGLE_SUBJECT_HEAD_PLACEMENT_V1",
+      "preferredEyeLineYBand": [
+        0.28,
+        0.38
+      ],
+      "preferredHeadCenterXBand": [
+        0.35,
+        0.65
+      ]
+    },
+    "interactionPreserved": true,
+    "maxFeasibleSubsetContext": {
+      "contract": "RELEVANT_PERSON_RETAIN_SET_V2",
+      "maxRetainableRelevantCount": 1,
+      "rankingAmbiguous": false,
+      "recommendedRetainSetPersonIds": [
+        "p1"
+      ],
+      "relevantPersonIds": [
+        "p1"
+      ],
+      "selectionConfidence": "HIGH",
+      "semanticRankingDigest": "30b42d602044c6f664f976f38b0a914ba4c42bb90009fcc9d56b809ba74b6dcc",
+      "status": "SINGLE_PRIMARY_SELECTED_BY_IMPORTANCE"
+    },
+    "oversizedFaceFeaturePriority": {
+      "browProxyPoints": [
+        {
+          "name": "rightBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.5687674840291341,
+          "y": 0.3286255315144857
+        },
+        {
+          "name": "leftBrowProxy",
+          "proxy": true,
+          "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+          "x": 0.6603572845458985,
+          "y": 0.375435666402181
+        }
+      ],
+      "browProxySafe": true,
+      "diagnosticCodes": [],
+      "eyesSafe": true,
+      "featureTiers": {
+        "BROWS_EYES_NOSE": [
+          {
+            "name": "rightBrowProxy",
+            "proxy": true,
+            "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+            "x": 0.5687674840291341,
+            "y": 0.3286255315144857
+          },
+          {
+            "name": "leftBrowProxy",
+            "proxy": true,
+            "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+            "x": 0.6603572845458985,
+            "y": 0.375435666402181
+          },
+          {
+            "name": "rightEye",
+            "proxy": false,
+            "x": 0.5687674840291341,
+            "y": 0.3672832743326823
+          },
+          {
+            "name": "leftEye",
+            "proxy": false,
+            "x": 0.6603572845458985,
+            "y": 0.4019574483235677
+          },
+          {
+            "name": "noseTip",
+            "proxy": false,
+            "x": 0.6122626622517904,
+            "y": 0.47773396809895835
+          }
+        ],
+        "BROWS_EYES_NOSE_MOUTH": [
+          {
+            "name": "rightBrowProxy",
+            "proxy": true,
+            "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+            "x": 0.5687674840291341,
+            "y": 0.3286255315144857
+          },
+          {
+            "name": "leftBrowProxy",
+            "proxy": true,
+            "proxySource": "EYE_TO_NOSE_VERTICAL_GEOMETRY",
+            "x": 0.6603572845458985,
+            "y": 0.375435666402181
+          },
+          {
+            "name": "rightEye",
+            "proxy": false,
+            "x": 0.5687674840291341,
+            "y": 0.3672832743326823
+          },
+          {
+            "name": "leftEye",
+            "proxy": false,
+            "x": 0.6603572845458985,
+            "y": 0.4019574483235677
+          },
+          {
+            "name": "noseTip",
+            "proxy": false,
+            "x": 0.6122626622517904,
+            "y": 0.47773396809895835
+          },
+          {
+            "name": "rightMouthCorner",
+            "proxy": false,
+            "x": 0.5490463892618815,
+            "y": 0.5204055786132813
+          },
+          {
+            "name": "leftMouthCorner",
+            "proxy": false,
+            "x": 0.6280934651692708,
+            "y": 0.5507664998372396
+          }
+        ],
+        "EYES": [
+          {
+            "name": "rightEye",
+            "proxy": false,
+            "x": 0.5687674840291341,
+            "y": 0.3672832743326823
+          },
+          {
+            "name": "leftEye",
+            "proxy": false,
+            "x": 0.6603572845458985,
+            "y": 0.4019574483235677
+          }
+        ],
+        "EYES_NOSE": [
+          {
+            "name": "rightEye",
+            "proxy": false,
+            "x": 0.5687674840291341,
+            "y": 0.3672832743326823
+          },
+          {
+            "name": "leftEye",
+            "proxy": false,
+            "x": 0.6603572845458985,
+            "y": 0.4019574483235677
+          },
+          {
+            "name": "noseTip",
+            "proxy": false,
+            "x": 0.6122626622517904,
+            "y": 0.47773396809895835
+          }
+        ]
+      },
+      "mouthSafe": true,
+      "noseSafe": true,
+      "policy": "OVERSIZED_FACE_FEATURE_PRIORITY_V1",
+      "proxyConstants": {
+        "browEyeToNoseVerticalRatio": 0.35
+      },
+      "safetyInsetNormalized": 0.02,
+      "selectedFeatureTier": "BROWS_EYES_NOSE_MOUTH",
+      "status": "OVERSIZED_FACE_FEATURE_TIER_SELECTED",
+      "tierEvaluations": {
+        "BROWS_EYES_NOSE": {
+          "feasible": true,
+          "validCenterInterval": {
+            "x": [
+              0.4303572845458985,
+              0.75
+            ],
+            "y": [
+              0.27273396809895833,
+              0.5336255315144857
+            ]
+          }
+        },
+        "BROWS_EYES_NOSE_MOUTH": {
+          "feasible": true,
+          "validCenterInterval": {
+            "x": [
+              0.4303572845458985,
+              0.75
+            ],
+            "y": [
+              0.3457664998372396,
+              0.5336255315144857
+            ]
+          }
+        },
+        "EYES": {
+          "feasible": true,
+          "validCenterInterval": {
+            "x": [
+              0.4303572845458985,
+              0.75
+            ],
+            "y": [
+              0.225,
+              0.5722832743326823
+            ]
+          }
+        },
+        "EYES_NOSE": {
+          "feasible": true,
+          "validCenterInterval": {
+            "x": [
+              0.4303572845458985,
+              0.75
+            ],
+            "y": [
+              0.27273396809895833,
+              0.5722832743326823
+            ]
+          }
+        }
+      },
+      "validCenterInterval": {
+        "x": [
+          0.4303572845458985,
+          0.75
+        ],
+        "y": [
+          0.3457664998372396,
+          0.5336255315144857
+        ]
+      }
+    },
+    "positionWriteAllowed": true,
+    "promotionCandidate": true,
+    "proposedCropBoxNormalized": {
+      "bottom": 0.6636203613281251,
+      "left": 0.27058797677357993,
+      "right": 0.7705879767735799,
+      "top": 0.21362036132812504
+    },
+    "requiredCropWindowDigest": "f0cefe5239dd1014b1cd48684b731d8a503a9b4f006b40cba33d1929ffba0d76",
+    "rotationWriteAllowed": false,
+    "scaleWriteAllowed": false,
+    "selectedFaceIndex": 0,
+    "selectedPersonId": "p1",
+    "selectedRetainSetPersonIds": [
+      "p1"
+    ],
+    "semanticRankingDigest": "30b42d602044c6f664f976f38b0a914ba4c42bb90009fcc9d56b809ba74b6dcc",
+    "shadowValidation": {
+      "addedReasonCodes": [],
+      "addedWarningCodes": [],
+      "approvalReasonCode": null,
+      "contract": "COMPOSITION_V2_SHADOW_VALIDATION_V1",
+      "contractResultValid": true,
+      "diagnosticCodes": [],
+      "fixedCropSizeUnchanged": true,
+      "headPlacementNotWorse": true,
+      "interactionPreserved": true,
+      "maxFeasibleSubsetDominance": {
+        "applicable": false,
+        "applied": false,
+        "contextDigest": "22fb06e081303d5d7428f7ba3dbb8efedf185c9736264bae7f9c7785ac36e3da",
+        "contributorFaceIndices": [],
+        "diagnosticCodes": [],
+        "excludedRelevantPersonIds": [],
+        "maxRetainableRelevantCount": 1,
+        "policy": "COMPOSITION_V2_MAX_FEASIBLE_SUBSET_DOMINANCE_V1",
+        "reasonContributorPersonIds": {},
+        "selectedFaceIndex": 0,
+        "selectedPersonId": "p1",
+        "selectionConfidence": "HIGH",
+        "toleratedAddedReasonCodes": []
+      },
+      "positionOnly": true,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "removedReasonCodes": [
+        "FACE_CLIPPED_BY_CROP"
+      ],
+      "removedWarningCodes": [],
+      "replayEvidenceComplete": true,
+      "sameRetainSetIdentity": true,
+      "sameSelectedIdentity": true,
+      "selectedPersonId": "p1",
+      "selectedRetainSetPersonIds": [
+        "p1"
+      ],
+      "sourceReasonCode": "OVERSIZED_FACE_FEATURE_PRIORITY_REFINED",
+      "status": "APPROVED",
+      "unchangedReasonCodes": [],
+      "unchangedWarningCodes": [],
+      "validationDigest": "377cb9662455816ef6abedd0c2c9ac8c50a733fefee00594c25bf1d3fd0ecb47"
+    },
+    "sourceReasonCode": "OVERSIZED_FACE_FEATURE_PRIORITY_REFINED",
+    "status": "REFINED"
+  },
+  "sourceEvidenceDigest": "c9a5ae8316df3760901d024b0bbd9702e31953cbdd47a9cc08bb9c8005247231",
+  "status": "API_COMPOSITION_RESULT_REVIEW"
+}
