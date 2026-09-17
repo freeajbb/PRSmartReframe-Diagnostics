@@ -1,0 +1,863 @@
+{
+  "contract": "DFINE_BATCH_PARITY_ROOT_CAUSE_V1",
+  "firstDivergenceStage": "MODEL_RAW",
+  "mustNotDriveProductionDecision": true,
+  "productionParityDecisionChanged": false,
+  "productionParityStatus": "FAILED_FALLBACK_SINGLE",
+  "productionParityTolerance": 1e-06,
+  "release": "0.6.33",
+  "runId": "api05101_20260917_215920_314909",
+  "sampleIndices": [
+    0,
+    5,
+    10,
+    15
+  ],
+  "samples": [
+    {
+      "clipInstanceId": "823fb2222fe69c3de3a9af8d",
+      "finalEvidence": {
+        "difference": {
+          "absDelta": 3.7801265717063437e-06,
+          "batchValue": 0.40749113480250043,
+          "field": "h",
+          "personIndex": 0,
+          "reason": "BBOX_NORMALIZED_MISMATCH",
+          "singleValue": 0.4074873546759287
+        },
+        "status": "FAIL"
+      },
+      "firstDivergenceStage": "MODEL_RAW",
+      "modelRaw": {
+        "maxAbsDelta": 5.271697402000427,
+        "status": "MISMATCH",
+        "tensors": {
+          "logits": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "7e4b1e1c18014afe71e16f9c22443650735d59382e7261b3a29d83aade6292c0",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 5.271697402000427,
+            "meanAbsDelta": 0.3643384035900235,
+            "mismatchCount": 24000,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "eb9370c52b3620d3fe3b63c95223d91c54375767c9362c9499dcf729a19228d8",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "pred_boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "f81c98fe9690cea79db64d7aa4fe0a64240e88014c592013e69d6dfa4239f4f3",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.8993731737136841,
+            "meanAbsDelta": 0.1046506075312694,
+            "mismatchCount": 1199,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "e9c2b189027c919d05396d8fe133c1163ee92cd97f883da374640fcc44979445",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "postprocess": {
+        "maxAbsDelta": 0.1048583984375,
+        "status": "MISMATCH",
+        "tensors": {
+          "boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "024222b5d0deb60c988c95e464a4fb9e5231f1dd686c37827609ef8e0d6f4fe0",
+              "shape": [
+                10,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.1048583984375,
+            "meanAbsDelta": 0.027418196201324463,
+            "mismatchCount": 40,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "67061650383d8c964cd7feecb3bd59d108cd2c2395d537a742680ea6710ced4d",
+              "shape": [
+                10,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "labels": {
+            "batch": {
+              "dtype": "int64",
+              "sha256": "43a763eab9302fea47bcf77b92bec17184d4f2e308ebf5810bfe09a2626a911d",
+              "shape": [
+                10
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "int64",
+              "sha256": "43a763eab9302fea47bcf77b92bec17184d4f2e308ebf5810bfe09a2626a911d",
+              "shape": [
+                10
+              ]
+            },
+            "status": "MATCH"
+          },
+          "scores": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "a259c7083ec0788cb534ad33dc19a9e57c6c6486bd87da9ca3be003c25df0044",
+              "shape": [
+                10
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0
+            ],
+            "maxAbsDelta": 0.003024458885192871,
+            "meanAbsDelta": 0.0009120970964431763,
+            "mismatchCount": 10,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "724f82fe105253c714496e330e7ae3cdcf76286751638461b5e1e19431350fa7",
+              "shape": [
+                10
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "preprocess": {
+        "effectiveImageRegion": {
+          "batch": null,
+          "single": null
+        },
+        "maxAbsDelta": 0.0,
+        "status": "MATCH",
+        "tensors": {
+          "pixel_values": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "624222cb7034801f6c3e01a16f6b87abbbd7047b2c469848fc5e1150f8cfc529",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "624222cb7034801f6c3e01a16f6b87abbbd7047b2c469848fc5e1150f8cfc529",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "status": "MATCH"
+          }
+        }
+      },
+      "sampleIndex": 0
+    },
+    {
+      "clipInstanceId": "46e060ea928abc0fd721a635",
+      "finalEvidence": {
+        "difference": {
+          "absDelta": 5.269050598166736e-06,
+          "batchValue": 0.39845707416534426,
+          "field": "w",
+          "personIndex": 0,
+          "reason": "BBOX_NORMALIZED_MISMATCH",
+          "singleValue": 0.3984518051147461
+        },
+        "status": "FAIL"
+      },
+      "firstDivergenceStage": "MODEL_RAW",
+      "modelRaw": {
+        "maxAbsDelta": 5.074324011802673,
+        "status": "MISMATCH",
+        "tensors": {
+          "logits": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "c71e366893be3f4e76c668ca42f9d4f321add0b12d65befcbd3d126d909a3de2",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 5.074324011802673,
+            "meanAbsDelta": 0.29671147683387,
+            "mismatchCount": 24000,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "1416a9461a3bc040e93b0bf57c7209d9080ffac96fb7f84bec722e4bd992b0a9",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "pred_boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "6d65638a87c97131d6311adb69722a078fbd8e9788183afef4867094af34acd6",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.8322860598564148,
+            "meanAbsDelta": 0.07518165726525088,
+            "mismatchCount": 1199,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "325f95c84c12c207015785583e1002201bd68b4281086802fcdc9b1480b07fec",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "postprocess": {
+        "maxAbsDelta": 0.091400146484375,
+        "status": "MISMATCH",
+        "tensors": {
+          "boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "d4a2efdfcd339ad16667fdd32377766df50209e65f7f29307f114789d1676071",
+              "shape": [
+                21,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.091400146484375,
+            "meanAbsDelta": 0.007457648004804339,
+            "mismatchCount": 83,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "273a72e4add98636bb5a9b6813abb5aeab20776aad419d25cadc1d176f9af32c",
+              "shape": [
+                21,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "labels": {
+            "batch": {
+              "dtype": "int64",
+              "sha256": "9b5356bad1d4f819a184e69b9118e94017f22aa2aa2974ae62620e1b81721bc7",
+              "shape": [
+                21
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "int64",
+              "sha256": "9b5356bad1d4f819a184e69b9118e94017f22aa2aa2974ae62620e1b81721bc7",
+              "shape": [
+                21
+              ]
+            },
+            "status": "MATCH"
+          },
+          "scores": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "c510e38b0966946813e9047b019cf0815b115f4907e4a88357b72d94aa7eb9ce",
+              "shape": [
+                21
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0
+            ],
+            "maxAbsDelta": 0.0020452141761779785,
+            "meanAbsDelta": 0.00039552365030561177,
+            "mismatchCount": 21,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "defb074193997a61b7b3b10323457510954bcb13846404c751b2d84187c1bf6f",
+              "shape": [
+                21
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "preprocess": {
+        "effectiveImageRegion": {
+          "batch": null,
+          "single": null
+        },
+        "maxAbsDelta": 0.0,
+        "status": "MATCH",
+        "tensors": {
+          "pixel_values": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "52ec80af94689f5e896031a6fa96b51fbc46a800398779a70cdec4108afb0b14",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "52ec80af94689f5e896031a6fa96b51fbc46a800398779a70cdec4108afb0b14",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "status": "MATCH"
+          }
+        }
+      },
+      "sampleIndex": 5
+    },
+    {
+      "clipInstanceId": "acd0c22ed8fac4f0989f167e",
+      "finalEvidence": {
+        "difference": {
+          "absDelta": 3.7558873494658584e-06,
+          "batchValue": 0.9878795925776164,
+          "field": "h",
+          "personIndex": 0,
+          "reason": "BBOX_NORMALIZED_MISMATCH",
+          "singleValue": 0.9878758366902669
+        },
+        "status": "FAIL"
+      },
+      "firstDivergenceStage": "MODEL_RAW",
+      "modelRaw": {
+        "maxAbsDelta": 5.204174995422363,
+        "status": "MISMATCH",
+        "tensors": {
+          "logits": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "fbda68dec58015f2012a5c2dd405f84b9a9a84f801b5a59c4da4dbf1353f9e70",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 5.204174995422363,
+            "meanAbsDelta": 0.35398605952660245,
+            "mismatchCount": 23998,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "bcfcc7abd76143a4d17fe8f86486d166f26b1dbea48cf923161dd0e8a20f46dc",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "pred_boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "d27ce801437ac58ce25184c552242c1ace5557e4367e92cd64aceeda5a404ec0",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.8455551862716675,
+            "meanAbsDelta": 0.10352265710088734,
+            "mismatchCount": 1199,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "78239f3182995e304dbd6ebcf513ab81722e8add20d9f226b04fd334d34190a2",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "postprocess": {
+        "maxAbsDelta": 0.065948486328125,
+        "status": "MISMATCH",
+        "tensors": {
+          "boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "7d16124b3b68aed3b4c2b06b9f92fa1a325866b6810199e4665aa84cb121175d",
+              "shape": [
+                3,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.065948486328125,
+            "meanAbsDelta": 0.01054851214090983,
+            "mismatchCount": 12,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "eeab47fe3865d0d66bf9dbc926d4c29018d712e1997703e0455d19832719cfb2",
+              "shape": [
+                3,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "labels": {
+            "batch": {
+              "dtype": "int64",
+              "sha256": "463df14d09ac0c022491309da8a427bcf1c85eba1b9dec46ae6503f17db8d4c8",
+              "shape": [
+                3
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "int64",
+              "sha256": "463df14d09ac0c022491309da8a427bcf1c85eba1b9dec46ae6503f17db8d4c8",
+              "shape": [
+                3
+              ]
+            },
+            "status": "MATCH"
+          },
+          "scores": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "1bc2a15195c900d248c8a4b879f3051f0fb3325934417d8b4b71d50f76b8e80b",
+              "shape": [
+                3
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0
+            ],
+            "maxAbsDelta": 0.0006513297557830811,
+            "meanAbsDelta": 0.000339438517888387,
+            "mismatchCount": 3,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "c6d7bb9193c9469f61c451fe76eb7b9f067484c837addbce61361794d5ee2ee1",
+              "shape": [
+                3
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "preprocess": {
+        "effectiveImageRegion": {
+          "batch": null,
+          "single": null
+        },
+        "maxAbsDelta": 0.0,
+        "status": "MATCH",
+        "tensors": {
+          "pixel_values": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "6a92a0d77e790f29632700e20219d0d93ce799efdaea685f5ebd82c9782e1b85",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "6a92a0d77e790f29632700e20219d0d93ce799efdaea685f5ebd82c9782e1b85",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "status": "MATCH"
+          }
+        }
+      },
+      "sampleIndex": 10
+    },
+    {
+      "clipInstanceId": "9295456bc0875414799bdd51",
+      "finalEvidence": {
+        "difference": {
+          "absDelta": 1.0899702707956038e-05,
+          "batchValue": 0.9880867799123129,
+          "field": "h",
+          "personIndex": 0,
+          "reason": "BBOX_NORMALIZED_MISMATCH",
+          "singleValue": 0.9880758802096049
+        },
+        "status": "FAIL"
+      },
+      "firstDivergenceStage": "MODEL_RAW",
+      "modelRaw": {
+        "maxAbsDelta": 4.785183310508728,
+        "status": "MISMATCH",
+        "tensors": {
+          "logits": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "e1c957631de746e3e4eae09b50e31c86a64489c38adf09d23dee105455da220f",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 4.785183310508728,
+            "meanAbsDelta": 0.32189143080015975,
+            "mismatchCount": 24000,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "0b49e14ff135a81544e21cba22095c3fac03a71c734d0a1b02d896ae20285140",
+              "shape": [
+                1,
+                300,
+                80
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "pred_boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "4b178225efac6ae057821810686961f844c69b8d54954da6e9aa6dfcf855691c",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.9106413722038269,
+            "meanAbsDelta": 0.10410183773065607,
+            "mismatchCount": 1198,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "180e1d1ac878752e3544c5b0546fa739e1c65c6b3df375a8a9c1d86f52b39dab",
+              "shape": [
+                1,
+                300,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "postprocess": {
+        "maxAbsDelta": 0.26983642578125,
+        "status": "MISMATCH",
+        "tensors": {
+          "boxes": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "4e6b5d28a623cdf8093aa6f4f7835867f2c0c931695e39a5cd6dc6c4e1bd86ea",
+              "shape": [
+                4,
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0,
+              0
+            ],
+            "maxAbsDelta": 0.26983642578125,
+            "meanAbsDelta": 0.05733364820480347,
+            "mismatchCount": 16,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "c2bfe45204974258449c3f2b1b80e5fbb0442cddf79fd587f4399ff841e9a50c",
+              "shape": [
+                4,
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          },
+          "labels": {
+            "batch": {
+              "dtype": "int64",
+              "sha256": "a57c99699f9f7e70f68d02c8c25357b9e92f1bc3d072e37244d01ca5ec112716",
+              "shape": [
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "int64",
+              "sha256": "a57c99699f9f7e70f68d02c8c25357b9e92f1bc3d072e37244d01ca5ec112716",
+              "shape": [
+                4
+              ]
+            },
+            "status": "MATCH"
+          },
+          "scores": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "80505251b0dc5a49bf1acc57963a573fe9e320098db1d57454d4e4c937824f02",
+              "shape": [
+                4
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": false,
+            "firstMismatchIndex": [
+              0
+            ],
+            "maxAbsDelta": 0.002272665500640869,
+            "meanAbsDelta": 0.0010455623269081116,
+            "mismatchCount": 4,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "84ba86c65154f143bf8d8979924e7be03b65e28e8a4817b48d956cdb482ace26",
+              "shape": [
+                4
+              ]
+            },
+            "status": "MISMATCH"
+          }
+        }
+      },
+      "preprocess": {
+        "effectiveImageRegion": {
+          "batch": null,
+          "single": null
+        },
+        "maxAbsDelta": 0.0,
+        "status": "MATCH",
+        "tensors": {
+          "pixel_values": {
+            "batch": {
+              "dtype": "float32",
+              "sha256": "8e15b2eda63c24eeed8c354b57bbe4585c45c301efd5e2b79c85d30af6cbdf56",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "dtypeEqual": true,
+            "exactEqual": true,
+            "firstMismatchIndex": null,
+            "maxAbsDelta": 0.0,
+            "meanAbsDelta": 0.0,
+            "mismatchCount": 0,
+            "shapeEqual": true,
+            "single": {
+              "dtype": "float32",
+              "sha256": "8e15b2eda63c24eeed8c354b57bbe4585c45c301efd5e2b79c85d30af6cbdf56",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            },
+            "status": "MATCH"
+          }
+        }
+      },
+      "sampleIndex": 15
+    }
+  ],
+  "telemetryOnly": true
+}
