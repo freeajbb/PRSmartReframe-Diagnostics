@@ -1,0 +1,1678 @@
+{
+  "collectorElapsedMs": 173818.902,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "APPLY",
+  "metrics": {
+    "admission": {
+      "admittedCount": 577,
+      "batchReady": true,
+      "hostProbeCount": 577,
+      "resolvedCount": 577,
+      "selectedCount": 577
+    },
+    "apply": {
+      "admittedCount": 577,
+      "duplicateDispatchCount": 0,
+      "failedCount": 0,
+      "hostWriteCount": 132,
+      "mutationRpcCount": 132,
+      "noopCount": 445,
+      "pendingCount": 0,
+      "realWriteVerifiedCount": 132,
+      "resolvedCount": 577,
+      "selectedCount": 577
+    },
+    "safety": {
+      "faceDetectorCallsDuringApply": 0,
+      "parallelHostMutationAllowed": false,
+      "peakHostMutationConcurrency": 1,
+      "personDetectorCallsDuringApply": 0,
+      "poseDetectorCallsDuringApply": 0,
+      "providerCallsDuringApply": 0
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.6.41",
+  "runId": "apply0584_20260920_015858_313530",
+  "stages": {
+    "admissionHostProbeAggregate": {
+      "callCount": 1,
+      "maxMs": 155925.784,
+      "meanMs": 155925.784,
+      "p50Ms": 155925.784,
+      "p95Ms": 155925.784,
+      "totalElapsedMs": 155925.784
+    },
+    "admissionTotal": {
+      "callCount": 1,
+      "maxMs": 158802.072,
+      "meanMs": 158802.072,
+      "p50Ms": 158802.072,
+      "p95Ms": 158802.072,
+      "totalElapsedMs": 158802.072
+    },
+    "applyTotal": {
+      "callCount": 1,
+      "maxMs": 173818.652,
+      "meanMs": 173818.652,
+      "p50Ms": 173818.652,
+      "p95Ms": 173818.652,
+      "totalElapsedMs": 173818.652
+    },
+    "hostMutationRpc": {
+      "callCount": 132,
+      "maxMs": 462.898,
+      "meanMs": 347.331,
+      "observations": [
+        {
+          "clipInstanceId": "6f6ace2011e9d290be487cd6"
+        },
+        {
+          "clipInstanceId": "b4cfab485e9c651c3c3b1025"
+        },
+        {
+          "clipInstanceId": "a604922d9345163101dac2dd"
+        },
+        {
+          "clipInstanceId": "44a960c8f552efab7968d1b2"
+        },
+        {
+          "clipInstanceId": "8a726a2e5256b586436da22f"
+        },
+        {
+          "clipInstanceId": "03d30b5701f22603a90b6c6b"
+        },
+        {
+          "clipInstanceId": "0d9b3a12099586194ece2946"
+        },
+        {
+          "clipInstanceId": "84acde1697223c38ff0ac334"
+        },
+        {
+          "clipInstanceId": "9d68da501dcb76ca5008e620"
+        },
+        {
+          "clipInstanceId": "1958120daefd3108c4111b01"
+        },
+        {
+          "clipInstanceId": "145a3b8da32d158515c0ad3b"
+        },
+        {
+          "clipInstanceId": "d4cd2cfd26574b762b394940"
+        },
+        {
+          "clipInstanceId": "113b0dfe9157358bb13818bd"
+        },
+        {
+          "clipInstanceId": "529f5652dbc184fa8acbaa04"
+        },
+        {
+          "clipInstanceId": "1c254f935cce39bb4bc6189b"
+        },
+        {
+          "clipInstanceId": "c9a84ee9362892a63d48fddb"
+        },
+        {
+          "clipInstanceId": "6dd60182a00dcb765d443554"
+        },
+        {
+          "clipInstanceId": "4a826c529ee25431e9112dc1"
+        },
+        {
+          "clipInstanceId": "557638bf1009efade6dd96de"
+        },
+        {
+          "clipInstanceId": "12f775ee2766a2ef82be1646"
+        },
+        {
+          "clipInstanceId": "aacb31b14f8142d022f8731d"
+        },
+        {
+          "clipInstanceId": "a0f651f1132a071194470013"
+        },
+        {
+          "clipInstanceId": "a7fd890d8b1dfb5a087502b9"
+        },
+        {
+          "clipInstanceId": "826d66b33ab5dd67467535e1"
+        },
+        {
+          "clipInstanceId": "10c4841a976b44e4ac923fe9"
+        },
+        {
+          "clipInstanceId": "87b1356fbc1333581e7c3320"
+        },
+        {
+          "clipInstanceId": "5449dfac29f939103e99a94e"
+        },
+        {
+          "clipInstanceId": "81f2aa42795fcaa67bf8bac6"
+        },
+        {
+          "clipInstanceId": "ecf911da1620a8ae59dcf367"
+        },
+        {
+          "clipInstanceId": "4db1efa6876cf447c3e0e3f6"
+        },
+        {
+          "clipInstanceId": "ec484257ed18a45ed22a1e6f"
+        },
+        {
+          "clipInstanceId": "3ece4ceec1c72dcecc2ac938"
+        },
+        {
+          "clipInstanceId": "119642d535ef9b336831600c"
+        },
+        {
+          "clipInstanceId": "d83726219415c29d3facc040"
+        },
+        {
+          "clipInstanceId": "c6df5239c9744fbb9e996bc5"
+        },
+        {
+          "clipInstanceId": "a87c759bec80b298f8b1dae2"
+        },
+        {
+          "clipInstanceId": "05be48a883f8318879f5d22f"
+        },
+        {
+          "clipInstanceId": "ed149dd0ba6d1d3babb76b5a"
+        },
+        {
+          "clipInstanceId": "c2434d0c056c54236c0d54b8"
+        },
+        {
+          "clipInstanceId": "d9d4a36194b54df82bca46e9"
+        },
+        {
+          "clipInstanceId": "d5edd6950166e6986d163e18"
+        },
+        {
+          "clipInstanceId": "d508d3e999f79f9c16855611"
+        },
+        {
+          "clipInstanceId": "be0f0d16cefba3386d451159"
+        },
+        {
+          "clipInstanceId": "62aed90f63ad697e6df8a1b3"
+        },
+        {
+          "clipInstanceId": "1bbc65a2eeae6e8dbaa0d7ae"
+        },
+        {
+          "clipInstanceId": "983e3612a6d5550ea0157435"
+        },
+        {
+          "clipInstanceId": "e5be18b36bcfb4457bd75754"
+        },
+        {
+          "clipInstanceId": "5915b8de740a34f2ab2f64cc"
+        },
+        {
+          "clipInstanceId": "38e33bcde0e49046ec331837"
+        },
+        {
+          "clipInstanceId": "b2286f882f296d39341c3c57"
+        },
+        {
+          "clipInstanceId": "c5dca5629246ca45a6f4ba93"
+        },
+        {
+          "clipInstanceId": "50288fbd63c170cd682d7bae"
+        },
+        {
+          "clipInstanceId": "e338993ad63eaa3e98d68805"
+        },
+        {
+          "clipInstanceId": "5c914e6f0e6e069bb4dd0de3"
+        },
+        {
+          "clipInstanceId": "ba8f91b176234b3c385fd60e"
+        },
+        {
+          "clipInstanceId": "2493ba58cfe6e02fb61ca4cd"
+        },
+        {
+          "clipInstanceId": "5d48b8a383459d67742d13d1"
+        },
+        {
+          "clipInstanceId": "f32c53353fb9ae76c34824a1"
+        },
+        {
+          "clipInstanceId": "93f19a7363c22e50fa9f9fdd"
+        },
+        {
+          "clipInstanceId": "e12631c2eb121f74e917cac8"
+        },
+        {
+          "clipInstanceId": "333edd13851d4923d8d53fa1"
+        },
+        {
+          "clipInstanceId": "961c7059ccaca471cd604b19"
+        },
+        {
+          "clipInstanceId": "bcab41a8990f5acb80935ec9"
+        },
+        {
+          "clipInstanceId": "e3593d56895be17a5eb88ddb"
+        },
+        {
+          "clipInstanceId": "810dddecd6fce1be7b40f1b3"
+        },
+        {
+          "clipInstanceId": "35a92984c4469eb7ac57d07b"
+        },
+        {
+          "clipInstanceId": "f2b041b4597b272ff27e6277"
+        },
+        {
+          "clipInstanceId": "d921c754d98bc47e54106a0b"
+        },
+        {
+          "clipInstanceId": "5cb2bafb505b49cf5e83900c"
+        },
+        {
+          "clipInstanceId": "36c36b871658b7a4a8769be5"
+        },
+        {
+          "clipInstanceId": "37c7eee637a0c1c45613f2b4"
+        },
+        {
+          "clipInstanceId": "fe9cfe525db782468f9b3dc5"
+        },
+        {
+          "clipInstanceId": "f9e165a3f85536883643b22b"
+        },
+        {
+          "clipInstanceId": "fa503c1bfa18b79bce382b2a"
+        },
+        {
+          "clipInstanceId": "a0b7cad71d33f6153d3acedb"
+        },
+        {
+          "clipInstanceId": "64a59756fe0f4dfa55c5858e"
+        },
+        {
+          "clipInstanceId": "b046bb3ee12cbbeee9528a82"
+        },
+        {
+          "clipInstanceId": "41f91c62ca3b44e275c5bc23"
+        },
+        {
+          "clipInstanceId": "46c624f7f17773c1e1233428"
+        },
+        {
+          "clipInstanceId": "dc23326aa5f0bad729d09f4a"
+        },
+        {
+          "clipInstanceId": "b37b271d4d3f1205ce7226a4"
+        },
+        {
+          "clipInstanceId": "a1a14ca44fa264ee16d39332"
+        },
+        {
+          "clipInstanceId": "f9ad764439ebd72274005525"
+        },
+        {
+          "clipInstanceId": "07e99b40354d7737cd36cc40"
+        },
+        {
+          "clipInstanceId": "e9ffad5a5fb076646321cb35"
+        },
+        {
+          "clipInstanceId": "46380cd27c8dded8a1431faa"
+        },
+        {
+          "clipInstanceId": "c3e648707a87a97dd62fd4c9"
+        },
+        {
+          "clipInstanceId": "82d977e3ad53bc4c8322f385"
+        },
+        {
+          "clipInstanceId": "796d4ad462ed9d205124774b"
+        },
+        {
+          "clipInstanceId": "960c45ce1a41ebf13742a6b7"
+        },
+        {
+          "clipInstanceId": "04ac185f1888314c9ad57e36"
+        },
+        {
+          "clipInstanceId": "262825e16568603af75eabb0"
+        },
+        {
+          "clipInstanceId": "a32f842a2988685b2b97d646"
+        },
+        {
+          "clipInstanceId": "e8836bc4e66a72a90ae2f7a6"
+        },
+        {
+          "clipInstanceId": "4c0a0edc6e02edb6d5c4d00f"
+        },
+        {
+          "clipInstanceId": "0030c541a5cb05f25024e284"
+        },
+        {
+          "clipInstanceId": "1d0eb0adc480a3f505b3a00f"
+        },
+        {
+          "clipInstanceId": "f2c52d7b1f912c4ddf070f7e"
+        },
+        {
+          "clipInstanceId": "e77ccd1781214099ddb8b8a7"
+        },
+        {
+          "clipInstanceId": "c3f8a5084695203782a7b040"
+        },
+        {
+          "clipInstanceId": "c27769189f15641329777033"
+        },
+        {
+          "clipInstanceId": "00aec83d51192ec55522d00f"
+        },
+        {
+          "clipInstanceId": "4fc30ca44ed5d1d068d26d9b"
+        },
+        {
+          "clipInstanceId": "69d447b0226633d258453e83"
+        },
+        {
+          "clipInstanceId": "44e611d6cf334aa2fbec0cb8"
+        },
+        {
+          "clipInstanceId": "c7b9c4f4d8f56d96629b3b75"
+        },
+        {
+          "clipInstanceId": "276387723c8dec6eace95cc6"
+        },
+        {
+          "clipInstanceId": "83087d52e529469c97026a39"
+        },
+        {
+          "clipInstanceId": "7dba8b5cb85644d9840e87cb"
+        },
+        {
+          "clipInstanceId": "39c72dc52a2d13e69f64e9ac"
+        },
+        {
+          "clipInstanceId": "dc409d950421de97243860ac"
+        },
+        {
+          "clipInstanceId": "1dd5a7e20b5db9ac58f1bca4"
+        },
+        {
+          "clipInstanceId": "d02c6d71d47308214db07803"
+        },
+        {
+          "clipInstanceId": "48ed2cc2be1b1991105f1276"
+        },
+        {
+          "clipInstanceId": "f4c2d2e64b582bafc1202ca3"
+        },
+        {
+          "clipInstanceId": "402887923a4cb8b68fd267a3"
+        },
+        {
+          "clipInstanceId": "13720b8383b60e351033c6a6"
+        },
+        {
+          "clipInstanceId": "4cc3424f5bcf67f892b51636"
+        },
+        {
+          "clipInstanceId": "20535982b748027f5d3bad80"
+        },
+        {
+          "clipInstanceId": "df5d834cd3b3b80f2412f53e"
+        },
+        {
+          "clipInstanceId": "4bf7dd4eec104a91e2df594d"
+        },
+        {
+          "clipInstanceId": "c603c089522ec7cc6b0be04d"
+        },
+        {
+          "clipInstanceId": "90bfd2529e60eb7d6bd17d76"
+        },
+        {
+          "clipInstanceId": "4a7805847b8839eb6e4a87c2"
+        },
+        {
+          "clipInstanceId": "0f7de80be10fcb31cd9168f7"
+        },
+        {
+          "clipInstanceId": "a87cd27b0745a18d1dcfd907"
+        },
+        {
+          "clipInstanceId": "d571a7176a306ca6fd82760e"
+        },
+        {
+          "clipInstanceId": "0d70ade5a3233fa22fba450c"
+        },
+        {
+          "clipInstanceId": "bcf8d7ee656583dddd78a736"
+        },
+        {
+          "clipInstanceId": "0699c55bbdb04b626e0858b3"
+        },
+        {
+          "clipInstanceId": "f97801b897081e654c8ba771"
+        },
+        {
+          "clipInstanceId": "6d76b5da37116e6f41cf9bc2"
+        }
+      ],
+      "p50Ms": 329.766,
+      "p95Ms": 425.858,
+      "totalElapsedMs": 45847.737
+    },
+    "hostProbe": {
+      "callCount": 264,
+      "maxMs": 439.809,
+      "meanMs": 335.375,
+      "observations": [
+        {
+          "clipInstanceId": "6f6ace2011e9d290be487cd6"
+        },
+        {
+          "clipInstanceId": "6f6ace2011e9d290be487cd6"
+        },
+        {
+          "clipInstanceId": "b4cfab485e9c651c3c3b1025"
+        },
+        {
+          "clipInstanceId": "b4cfab485e9c651c3c3b1025"
+        },
+        {
+          "clipInstanceId": "a604922d9345163101dac2dd"
+        },
+        {
+          "clipInstanceId": "a604922d9345163101dac2dd"
+        },
+        {
+          "clipInstanceId": "44a960c8f552efab7968d1b2"
+        },
+        {
+          "clipInstanceId": "44a960c8f552efab7968d1b2"
+        },
+        {
+          "clipInstanceId": "8a726a2e5256b586436da22f"
+        },
+        {
+          "clipInstanceId": "8a726a2e5256b586436da22f"
+        },
+        {
+          "clipInstanceId": "03d30b5701f22603a90b6c6b"
+        },
+        {
+          "clipInstanceId": "03d30b5701f22603a90b6c6b"
+        },
+        {
+          "clipInstanceId": "0d9b3a12099586194ece2946"
+        },
+        {
+          "clipInstanceId": "0d9b3a12099586194ece2946"
+        },
+        {
+          "clipInstanceId": "84acde1697223c38ff0ac334"
+        },
+        {
+          "clipInstanceId": "84acde1697223c38ff0ac334"
+        },
+        {
+          "clipInstanceId": "9d68da501dcb76ca5008e620"
+        },
+        {
+          "clipInstanceId": "9d68da501dcb76ca5008e620"
+        },
+        {
+          "clipInstanceId": "1958120daefd3108c4111b01"
+        },
+        {
+          "clipInstanceId": "1958120daefd3108c4111b01"
+        },
+        {
+          "clipInstanceId": "145a3b8da32d158515c0ad3b"
+        },
+        {
+          "clipInstanceId": "145a3b8da32d158515c0ad3b"
+        },
+        {
+          "clipInstanceId": "d4cd2cfd26574b762b394940"
+        },
+        {
+          "clipInstanceId": "d4cd2cfd26574b762b394940"
+        },
+        {
+          "clipInstanceId": "113b0dfe9157358bb13818bd"
+        },
+        {
+          "clipInstanceId": "113b0dfe9157358bb13818bd"
+        },
+        {
+          "clipInstanceId": "529f5652dbc184fa8acbaa04"
+        },
+        {
+          "clipInstanceId": "529f5652dbc184fa8acbaa04"
+        },
+        {
+          "clipInstanceId": "1c254f935cce39bb4bc6189b"
+        },
+        {
+          "clipInstanceId": "1c254f935cce39bb4bc6189b"
+        },
+        {
+          "clipInstanceId": "c9a84ee9362892a63d48fddb"
+        },
+        {
+          "clipInstanceId": "c9a84ee9362892a63d48fddb"
+        },
+        {
+          "clipInstanceId": "6dd60182a00dcb765d443554"
+        },
+        {
+          "clipInstanceId": "6dd60182a00dcb765d443554"
+        },
+        {
+          "clipInstanceId": "4a826c529ee25431e9112dc1"
+        },
+        {
+          "clipInstanceId": "4a826c529ee25431e9112dc1"
+        },
+        {
+          "clipInstanceId": "557638bf1009efade6dd96de"
+        },
+        {
+          "clipInstanceId": "557638bf1009efade6dd96de"
+        },
+        {
+          "clipInstanceId": "12f775ee2766a2ef82be1646"
+        },
+        {
+          "clipInstanceId": "12f775ee2766a2ef82be1646"
+        },
+        {
+          "clipInstanceId": "aacb31b14f8142d022f8731d"
+        },
+        {
+          "clipInstanceId": "aacb31b14f8142d022f8731d"
+        },
+        {
+          "clipInstanceId": "a0f651f1132a071194470013"
+        },
+        {
+          "clipInstanceId": "a0f651f1132a071194470013"
+        },
+        {
+          "clipInstanceId": "a7fd890d8b1dfb5a087502b9"
+        },
+        {
+          "clipInstanceId": "a7fd890d8b1dfb5a087502b9"
+        },
+        {
+          "clipInstanceId": "826d66b33ab5dd67467535e1"
+        },
+        {
+          "clipInstanceId": "826d66b33ab5dd67467535e1"
+        },
+        {
+          "clipInstanceId": "10c4841a976b44e4ac923fe9"
+        },
+        {
+          "clipInstanceId": "10c4841a976b44e4ac923fe9"
+        },
+        {
+          "clipInstanceId": "87b1356fbc1333581e7c3320"
+        },
+        {
+          "clipInstanceId": "87b1356fbc1333581e7c3320"
+        },
+        {
+          "clipInstanceId": "5449dfac29f939103e99a94e"
+        },
+        {
+          "clipInstanceId": "5449dfac29f939103e99a94e"
+        },
+        {
+          "clipInstanceId": "81f2aa42795fcaa67bf8bac6"
+        },
+        {
+          "clipInstanceId": "81f2aa42795fcaa67bf8bac6"
+        },
+        {
+          "clipInstanceId": "ecf911da1620a8ae59dcf367"
+        },
+        {
+          "clipInstanceId": "ecf911da1620a8ae59dcf367"
+        },
+        {
+          "clipInstanceId": "4db1efa6876cf447c3e0e3f6"
+        },
+        {
+          "clipInstanceId": "4db1efa6876cf447c3e0e3f6"
+        },
+        {
+          "clipInstanceId": "ec484257ed18a45ed22a1e6f"
+        },
+        {
+          "clipInstanceId": "ec484257ed18a45ed22a1e6f"
+        },
+        {
+          "clipInstanceId": "3ece4ceec1c72dcecc2ac938"
+        },
+        {
+          "clipInstanceId": "3ece4ceec1c72dcecc2ac938"
+        },
+        {
+          "clipInstanceId": "119642d535ef9b336831600c"
+        },
+        {
+          "clipInstanceId": "119642d535ef9b336831600c"
+        },
+        {
+          "clipInstanceId": "d83726219415c29d3facc040"
+        },
+        {
+          "clipInstanceId": "d83726219415c29d3facc040"
+        },
+        {
+          "clipInstanceId": "c6df5239c9744fbb9e996bc5"
+        },
+        {
+          "clipInstanceId": "c6df5239c9744fbb9e996bc5"
+        },
+        {
+          "clipInstanceId": "a87c759bec80b298f8b1dae2"
+        },
+        {
+          "clipInstanceId": "a87c759bec80b298f8b1dae2"
+        },
+        {
+          "clipInstanceId": "05be48a883f8318879f5d22f"
+        },
+        {
+          "clipInstanceId": "05be48a883f8318879f5d22f"
+        },
+        {
+          "clipInstanceId": "ed149dd0ba6d1d3babb76b5a"
+        },
+        {
+          "clipInstanceId": "ed149dd0ba6d1d3babb76b5a"
+        },
+        {
+          "clipInstanceId": "c2434d0c056c54236c0d54b8"
+        },
+        {
+          "clipInstanceId": "c2434d0c056c54236c0d54b8"
+        },
+        {
+          "clipInstanceId": "d9d4a36194b54df82bca46e9"
+        },
+        {
+          "clipInstanceId": "d9d4a36194b54df82bca46e9"
+        },
+        {
+          "clipInstanceId": "d5edd6950166e6986d163e18"
+        },
+        {
+          "clipInstanceId": "d5edd6950166e6986d163e18"
+        },
+        {
+          "clipInstanceId": "d508d3e999f79f9c16855611"
+        },
+        {
+          "clipInstanceId": "d508d3e999f79f9c16855611"
+        },
+        {
+          "clipInstanceId": "be0f0d16cefba3386d451159"
+        },
+        {
+          "clipInstanceId": "be0f0d16cefba3386d451159"
+        },
+        {
+          "clipInstanceId": "62aed90f63ad697e6df8a1b3"
+        },
+        {
+          "clipInstanceId": "62aed90f63ad697e6df8a1b3"
+        },
+        {
+          "clipInstanceId": "1bbc65a2eeae6e8dbaa0d7ae"
+        },
+        {
+          "clipInstanceId": "1bbc65a2eeae6e8dbaa0d7ae"
+        },
+        {
+          "clipInstanceId": "983e3612a6d5550ea0157435"
+        },
+        {
+          "clipInstanceId": "983e3612a6d5550ea0157435"
+        },
+        {
+          "clipInstanceId": "e5be18b36bcfb4457bd75754"
+        },
+        {
+          "clipInstanceId": "e5be18b36bcfb4457bd75754"
+        },
+        {
+          "clipInstanceId": "5915b8de740a34f2ab2f64cc"
+        },
+        {
+          "clipInstanceId": "5915b8de740a34f2ab2f64cc"
+        },
+        {
+          "clipInstanceId": "38e33bcde0e49046ec331837"
+        },
+        {
+          "clipInstanceId": "38e33bcde0e49046ec331837"
+        },
+        {
+          "clipInstanceId": "b2286f882f296d39341c3c57"
+        },
+        {
+          "clipInstanceId": "b2286f882f296d39341c3c57"
+        },
+        {
+          "clipInstanceId": "c5dca5629246ca45a6f4ba93"
+        },
+        {
+          "clipInstanceId": "c5dca5629246ca45a6f4ba93"
+        },
+        {
+          "clipInstanceId": "50288fbd63c170cd682d7bae"
+        },
+        {
+          "clipInstanceId": "50288fbd63c170cd682d7bae"
+        },
+        {
+          "clipInstanceId": "e338993ad63eaa3e98d68805"
+        },
+        {
+          "clipInstanceId": "e338993ad63eaa3e98d68805"
+        },
+        {
+          "clipInstanceId": "5c914e6f0e6e069bb4dd0de3"
+        },
+        {
+          "clipInstanceId": "5c914e6f0e6e069bb4dd0de3"
+        },
+        {
+          "clipInstanceId": "ba8f91b176234b3c385fd60e"
+        },
+        {
+          "clipInstanceId": "ba8f91b176234b3c385fd60e"
+        },
+        {
+          "clipInstanceId": "2493ba58cfe6e02fb61ca4cd"
+        },
+        {
+          "clipInstanceId": "2493ba58cfe6e02fb61ca4cd"
+        },
+        {
+          "clipInstanceId": "5d48b8a383459d67742d13d1"
+        },
+        {
+          "clipInstanceId": "5d48b8a383459d67742d13d1"
+        },
+        {
+          "clipInstanceId": "f32c53353fb9ae76c34824a1"
+        },
+        {
+          "clipInstanceId": "f32c53353fb9ae76c34824a1"
+        },
+        {
+          "clipInstanceId": "93f19a7363c22e50fa9f9fdd"
+        },
+        {
+          "clipInstanceId": "93f19a7363c22e50fa9f9fdd"
+        },
+        {
+          "clipInstanceId": "e12631c2eb121f74e917cac8"
+        },
+        {
+          "clipInstanceId": "e12631c2eb121f74e917cac8"
+        },
+        {
+          "clipInstanceId": "333edd13851d4923d8d53fa1"
+        },
+        {
+          "clipInstanceId": "333edd13851d4923d8d53fa1"
+        },
+        {
+          "clipInstanceId": "961c7059ccaca471cd604b19"
+        },
+        {
+          "clipInstanceId": "961c7059ccaca471cd604b19"
+        },
+        {
+          "clipInstanceId": "bcab41a8990f5acb80935ec9"
+        },
+        {
+          "clipInstanceId": "bcab41a8990f5acb80935ec9"
+        },
+        {
+          "clipInstanceId": "e3593d56895be17a5eb88ddb"
+        },
+        {
+          "clipInstanceId": "e3593d56895be17a5eb88ddb"
+        },
+        {
+          "clipInstanceId": "810dddecd6fce1be7b40f1b3"
+        },
+        {
+          "clipInstanceId": "810dddecd6fce1be7b40f1b3"
+        },
+        {
+          "clipInstanceId": "35a92984c4469eb7ac57d07b"
+        },
+        {
+          "clipInstanceId": "35a92984c4469eb7ac57d07b"
+        },
+        {
+          "clipInstanceId": "f2b041b4597b272ff27e6277"
+        },
+        {
+          "clipInstanceId": "f2b041b4597b272ff27e6277"
+        },
+        {
+          "clipInstanceId": "d921c754d98bc47e54106a0b"
+        },
+        {
+          "clipInstanceId": "d921c754d98bc47e54106a0b"
+        },
+        {
+          "clipInstanceId": "5cb2bafb505b49cf5e83900c"
+        },
+        {
+          "clipInstanceId": "5cb2bafb505b49cf5e83900c"
+        },
+        {
+          "clipInstanceId": "36c36b871658b7a4a8769be5"
+        },
+        {
+          "clipInstanceId": "36c36b871658b7a4a8769be5"
+        },
+        {
+          "clipInstanceId": "37c7eee637a0c1c45613f2b4"
+        },
+        {
+          "clipInstanceId": "37c7eee637a0c1c45613f2b4"
+        },
+        {
+          "clipInstanceId": "fe9cfe525db782468f9b3dc5"
+        },
+        {
+          "clipInstanceId": "fe9cfe525db782468f9b3dc5"
+        },
+        {
+          "clipInstanceId": "f9e165a3f85536883643b22b"
+        },
+        {
+          "clipInstanceId": "f9e165a3f85536883643b22b"
+        },
+        {
+          "clipInstanceId": "fa503c1bfa18b79bce382b2a"
+        },
+        {
+          "clipInstanceId": "fa503c1bfa18b79bce382b2a"
+        },
+        {
+          "clipInstanceId": "a0b7cad71d33f6153d3acedb"
+        },
+        {
+          "clipInstanceId": "a0b7cad71d33f6153d3acedb"
+        },
+        {
+          "clipInstanceId": "64a59756fe0f4dfa55c5858e"
+        },
+        {
+          "clipInstanceId": "64a59756fe0f4dfa55c5858e"
+        },
+        {
+          "clipInstanceId": "b046bb3ee12cbbeee9528a82"
+        },
+        {
+          "clipInstanceId": "b046bb3ee12cbbeee9528a82"
+        },
+        {
+          "clipInstanceId": "41f91c62ca3b44e275c5bc23"
+        },
+        {
+          "clipInstanceId": "41f91c62ca3b44e275c5bc23"
+        },
+        {
+          "clipInstanceId": "46c624f7f17773c1e1233428"
+        },
+        {
+          "clipInstanceId": "46c624f7f17773c1e1233428"
+        },
+        {
+          "clipInstanceId": "dc23326aa5f0bad729d09f4a"
+        },
+        {
+          "clipInstanceId": "dc23326aa5f0bad729d09f4a"
+        },
+        {
+          "clipInstanceId": "b37b271d4d3f1205ce7226a4"
+        },
+        {
+          "clipInstanceId": "b37b271d4d3f1205ce7226a4"
+        },
+        {
+          "clipInstanceId": "a1a14ca44fa264ee16d39332"
+        },
+        {
+          "clipInstanceId": "a1a14ca44fa264ee16d39332"
+        },
+        {
+          "clipInstanceId": "f9ad764439ebd72274005525"
+        },
+        {
+          "clipInstanceId": "f9ad764439ebd72274005525"
+        },
+        {
+          "clipInstanceId": "07e99b40354d7737cd36cc40"
+        },
+        {
+          "clipInstanceId": "07e99b40354d7737cd36cc40"
+        },
+        {
+          "clipInstanceId": "e9ffad5a5fb076646321cb35"
+        },
+        {
+          "clipInstanceId": "e9ffad5a5fb076646321cb35"
+        },
+        {
+          "clipInstanceId": "46380cd27c8dded8a1431faa"
+        },
+        {
+          "clipInstanceId": "46380cd27c8dded8a1431faa"
+        },
+        {
+          "clipInstanceId": "c3e648707a87a97dd62fd4c9"
+        },
+        {
+          "clipInstanceId": "c3e648707a87a97dd62fd4c9"
+        },
+        {
+          "clipInstanceId": "82d977e3ad53bc4c8322f385"
+        },
+        {
+          "clipInstanceId": "82d977e3ad53bc4c8322f385"
+        },
+        {
+          "clipInstanceId": "796d4ad462ed9d205124774b"
+        },
+        {
+          "clipInstanceId": "796d4ad462ed9d205124774b"
+        },
+        {
+          "clipInstanceId": "960c45ce1a41ebf13742a6b7"
+        },
+        {
+          "clipInstanceId": "960c45ce1a41ebf13742a6b7"
+        },
+        {
+          "clipInstanceId": "04ac185f1888314c9ad57e36"
+        },
+        {
+          "clipInstanceId": "04ac185f1888314c9ad57e36"
+        },
+        {
+          "clipInstanceId": "262825e16568603af75eabb0"
+        },
+        {
+          "clipInstanceId": "262825e16568603af75eabb0"
+        },
+        {
+          "clipInstanceId": "a32f842a2988685b2b97d646"
+        },
+        {
+          "clipInstanceId": "a32f842a2988685b2b97d646"
+        },
+        {
+          "clipInstanceId": "e8836bc4e66a72a90ae2f7a6"
+        },
+        {
+          "clipInstanceId": "e8836bc4e66a72a90ae2f7a6"
+        },
+        {
+          "clipInstanceId": "4c0a0edc6e02edb6d5c4d00f"
+        },
+        {
+          "clipInstanceId": "4c0a0edc6e02edb6d5c4d00f"
+        },
+        {
+          "clipInstanceId": "0030c541a5cb05f25024e284"
+        },
+        {
+          "clipInstanceId": "0030c541a5cb05f25024e284"
+        },
+        {
+          "clipInstanceId": "1d0eb0adc480a3f505b3a00f"
+        },
+        {
+          "clipInstanceId": "1d0eb0adc480a3f505b3a00f"
+        },
+        {
+          "clipInstanceId": "f2c52d7b1f912c4ddf070f7e"
+        },
+        {
+          "clipInstanceId": "f2c52d7b1f912c4ddf070f7e"
+        },
+        {
+          "clipInstanceId": "e77ccd1781214099ddb8b8a7"
+        },
+        {
+          "clipInstanceId": "e77ccd1781214099ddb8b8a7"
+        },
+        {
+          "clipInstanceId": "c3f8a5084695203782a7b040"
+        },
+        {
+          "clipInstanceId": "c3f8a5084695203782a7b040"
+        },
+        {
+          "clipInstanceId": "c27769189f15641329777033"
+        },
+        {
+          "clipInstanceId": "c27769189f15641329777033"
+        },
+        {
+          "clipInstanceId": "00aec83d51192ec55522d00f"
+        },
+        {
+          "clipInstanceId": "00aec83d51192ec55522d00f"
+        },
+        {
+          "clipInstanceId": "4fc30ca44ed5d1d068d26d9b"
+        },
+        {
+          "clipInstanceId": "4fc30ca44ed5d1d068d26d9b"
+        },
+        {
+          "clipInstanceId": "69d447b0226633d258453e83"
+        },
+        {
+          "clipInstanceId": "69d447b0226633d258453e83"
+        },
+        {
+          "clipInstanceId": "44e611d6cf334aa2fbec0cb8"
+        },
+        {
+          "clipInstanceId": "44e611d6cf334aa2fbec0cb8"
+        },
+        {
+          "clipInstanceId": "c7b9c4f4d8f56d96629b3b75"
+        },
+        {
+          "clipInstanceId": "c7b9c4f4d8f56d96629b3b75"
+        },
+        {
+          "clipInstanceId": "276387723c8dec6eace95cc6"
+        },
+        {
+          "clipInstanceId": "276387723c8dec6eace95cc6"
+        },
+        {
+          "clipInstanceId": "83087d52e529469c97026a39"
+        },
+        {
+          "clipInstanceId": "83087d52e529469c97026a39"
+        },
+        {
+          "clipInstanceId": "7dba8b5cb85644d9840e87cb"
+        },
+        {
+          "clipInstanceId": "7dba8b5cb85644d9840e87cb"
+        },
+        {
+          "clipInstanceId": "39c72dc52a2d13e69f64e9ac"
+        },
+        {
+          "clipInstanceId": "39c72dc52a2d13e69f64e9ac"
+        },
+        {
+          "clipInstanceId": "dc409d950421de97243860ac"
+        },
+        {
+          "clipInstanceId": "dc409d950421de97243860ac"
+        },
+        {
+          "clipInstanceId": "1dd5a7e20b5db9ac58f1bca4"
+        },
+        {
+          "clipInstanceId": "1dd5a7e20b5db9ac58f1bca4"
+        },
+        {
+          "clipInstanceId": "d02c6d71d47308214db07803"
+        },
+        {
+          "clipInstanceId": "d02c6d71d47308214db07803"
+        },
+        {
+          "clipInstanceId": "48ed2cc2be1b1991105f1276"
+        },
+        {
+          "clipInstanceId": "48ed2cc2be1b1991105f1276"
+        },
+        {
+          "clipInstanceId": "f4c2d2e64b582bafc1202ca3"
+        },
+        {
+          "clipInstanceId": "f4c2d2e64b582bafc1202ca3"
+        },
+        {
+          "clipInstanceId": "402887923a4cb8b68fd267a3"
+        },
+        {
+          "clipInstanceId": "402887923a4cb8b68fd267a3"
+        },
+        {
+          "clipInstanceId": "13720b8383b60e351033c6a6"
+        },
+        {
+          "clipInstanceId": "13720b8383b60e351033c6a6"
+        },
+        {
+          "clipInstanceId": "4cc3424f5bcf67f892b51636"
+        },
+        {
+          "clipInstanceId": "4cc3424f5bcf67f892b51636"
+        },
+        {
+          "clipInstanceId": "20535982b748027f5d3bad80"
+        },
+        {
+          "clipInstanceId": "20535982b748027f5d3bad80"
+        },
+        {
+          "clipInstanceId": "df5d834cd3b3b80f2412f53e"
+        },
+        {
+          "clipInstanceId": "df5d834cd3b3b80f2412f53e"
+        },
+        {
+          "clipInstanceId": "4bf7dd4eec104a91e2df594d"
+        },
+        {
+          "clipInstanceId": "4bf7dd4eec104a91e2df594d"
+        },
+        {
+          "clipInstanceId": "c603c089522ec7cc6b0be04d"
+        },
+        {
+          "clipInstanceId": "c603c089522ec7cc6b0be04d"
+        },
+        {
+          "clipInstanceId": "90bfd2529e60eb7d6bd17d76"
+        },
+        {
+          "clipInstanceId": "90bfd2529e60eb7d6bd17d76"
+        },
+        {
+          "clipInstanceId": "4a7805847b8839eb6e4a87c2"
+        },
+        {
+          "clipInstanceId": "4a7805847b8839eb6e4a87c2"
+        },
+        {
+          "clipInstanceId": "0f7de80be10fcb31cd9168f7"
+        },
+        {
+          "clipInstanceId": "0f7de80be10fcb31cd9168f7"
+        },
+        {
+          "clipInstanceId": "a87cd27b0745a18d1dcfd907"
+        },
+        {
+          "clipInstanceId": "a87cd27b0745a18d1dcfd907"
+        },
+        {
+          "clipInstanceId": "d571a7176a306ca6fd82760e"
+        },
+        {
+          "clipInstanceId": "d571a7176a306ca6fd82760e"
+        },
+        {
+          "clipInstanceId": "0d70ade5a3233fa22fba450c"
+        },
+        {
+          "clipInstanceId": "0d70ade5a3233fa22fba450c"
+        },
+        {
+          "clipInstanceId": "bcf8d7ee656583dddd78a736"
+        },
+        {
+          "clipInstanceId": "bcf8d7ee656583dddd78a736"
+        },
+        {
+          "clipInstanceId": "0699c55bbdb04b626e0858b3"
+        },
+        {
+          "clipInstanceId": "0699c55bbdb04b626e0858b3"
+        },
+        {
+          "clipInstanceId": "f97801b897081e654c8ba771"
+        },
+        {
+          "clipInstanceId": "f97801b897081e654c8ba771"
+        },
+        {
+          "clipInstanceId": "6d76b5da37116e6f41cf9bc2"
+        },
+        {
+          "clipInstanceId": "6d76b5da37116e6f41cf9bc2"
+        }
+      ],
+      "p50Ms": 322.847,
+      "p95Ms": 410.481,
+      "totalElapsedMs": 88538.993
+    },
+    "mutationTransaction": {
+      "callCount": 132,
+      "maxMs": 1473.732,
+      "meanMs": 1231.447,
+      "observations": [
+        {
+          "clipInstanceId": "6f6ace2011e9d290be487cd6"
+        },
+        {
+          "clipInstanceId": "b4cfab485e9c651c3c3b1025"
+        },
+        {
+          "clipInstanceId": "a604922d9345163101dac2dd"
+        },
+        {
+          "clipInstanceId": "44a960c8f552efab7968d1b2"
+        },
+        {
+          "clipInstanceId": "8a726a2e5256b586436da22f"
+        },
+        {
+          "clipInstanceId": "03d30b5701f22603a90b6c6b"
+        },
+        {
+          "clipInstanceId": "0d9b3a12099586194ece2946"
+        },
+        {
+          "clipInstanceId": "84acde1697223c38ff0ac334"
+        },
+        {
+          "clipInstanceId": "9d68da501dcb76ca5008e620"
+        },
+        {
+          "clipInstanceId": "1958120daefd3108c4111b01"
+        },
+        {
+          "clipInstanceId": "145a3b8da32d158515c0ad3b"
+        },
+        {
+          "clipInstanceId": "d4cd2cfd26574b762b394940"
+        },
+        {
+          "clipInstanceId": "113b0dfe9157358bb13818bd"
+        },
+        {
+          "clipInstanceId": "529f5652dbc184fa8acbaa04"
+        },
+        {
+          "clipInstanceId": "1c254f935cce39bb4bc6189b"
+        },
+        {
+          "clipInstanceId": "c9a84ee9362892a63d48fddb"
+        },
+        {
+          "clipInstanceId": "6dd60182a00dcb765d443554"
+        },
+        {
+          "clipInstanceId": "4a826c529ee25431e9112dc1"
+        },
+        {
+          "clipInstanceId": "557638bf1009efade6dd96de"
+        },
+        {
+          "clipInstanceId": "12f775ee2766a2ef82be1646"
+        },
+        {
+          "clipInstanceId": "aacb31b14f8142d022f8731d"
+        },
+        {
+          "clipInstanceId": "a0f651f1132a071194470013"
+        },
+        {
+          "clipInstanceId": "a7fd890d8b1dfb5a087502b9"
+        },
+        {
+          "clipInstanceId": "826d66b33ab5dd67467535e1"
+        },
+        {
+          "clipInstanceId": "10c4841a976b44e4ac923fe9"
+        },
+        {
+          "clipInstanceId": "87b1356fbc1333581e7c3320"
+        },
+        {
+          "clipInstanceId": "5449dfac29f939103e99a94e"
+        },
+        {
+          "clipInstanceId": "81f2aa42795fcaa67bf8bac6"
+        },
+        {
+          "clipInstanceId": "ecf911da1620a8ae59dcf367"
+        },
+        {
+          "clipInstanceId": "4db1efa6876cf447c3e0e3f6"
+        },
+        {
+          "clipInstanceId": "ec484257ed18a45ed22a1e6f"
+        },
+        {
+          "clipInstanceId": "3ece4ceec1c72dcecc2ac938"
+        },
+        {
+          "clipInstanceId": "119642d535ef9b336831600c"
+        },
+        {
+          "clipInstanceId": "d83726219415c29d3facc040"
+        },
+        {
+          "clipInstanceId": "c6df5239c9744fbb9e996bc5"
+        },
+        {
+          "clipInstanceId": "a87c759bec80b298f8b1dae2"
+        },
+        {
+          "clipInstanceId": "05be48a883f8318879f5d22f"
+        },
+        {
+          "clipInstanceId": "ed149dd0ba6d1d3babb76b5a"
+        },
+        {
+          "clipInstanceId": "c2434d0c056c54236c0d54b8"
+        },
+        {
+          "clipInstanceId": "d9d4a36194b54df82bca46e9"
+        },
+        {
+          "clipInstanceId": "d5edd6950166e6986d163e18"
+        },
+        {
+          "clipInstanceId": "d508d3e999f79f9c16855611"
+        },
+        {
+          "clipInstanceId": "be0f0d16cefba3386d451159"
+        },
+        {
+          "clipInstanceId": "62aed90f63ad697e6df8a1b3"
+        },
+        {
+          "clipInstanceId": "1bbc65a2eeae6e8dbaa0d7ae"
+        },
+        {
+          "clipInstanceId": "983e3612a6d5550ea0157435"
+        },
+        {
+          "clipInstanceId": "e5be18b36bcfb4457bd75754"
+        },
+        {
+          "clipInstanceId": "5915b8de740a34f2ab2f64cc"
+        },
+        {
+          "clipInstanceId": "38e33bcde0e49046ec331837"
+        },
+        {
+          "clipInstanceId": "b2286f882f296d39341c3c57"
+        },
+        {
+          "clipInstanceId": "c5dca5629246ca45a6f4ba93"
+        },
+        {
+          "clipInstanceId": "50288fbd63c170cd682d7bae"
+        },
+        {
+          "clipInstanceId": "e338993ad63eaa3e98d68805"
+        },
+        {
+          "clipInstanceId": "5c914e6f0e6e069bb4dd0de3"
+        },
+        {
+          "clipInstanceId": "ba8f91b176234b3c385fd60e"
+        },
+        {
+          "clipInstanceId": "2493ba58cfe6e02fb61ca4cd"
+        },
+        {
+          "clipInstanceId": "5d48b8a383459d67742d13d1"
+        },
+        {
+          "clipInstanceId": "f32c53353fb9ae76c34824a1"
+        },
+        {
+          "clipInstanceId": "93f19a7363c22e50fa9f9fdd"
+        },
+        {
+          "clipInstanceId": "e12631c2eb121f74e917cac8"
+        },
+        {
+          "clipInstanceId": "333edd13851d4923d8d53fa1"
+        },
+        {
+          "clipInstanceId": "961c7059ccaca471cd604b19"
+        },
+        {
+          "clipInstanceId": "bcab41a8990f5acb80935ec9"
+        },
+        {
+          "clipInstanceId": "e3593d56895be17a5eb88ddb"
+        },
+        {
+          "clipInstanceId": "810dddecd6fce1be7b40f1b3"
+        },
+        {
+          "clipInstanceId": "35a92984c4469eb7ac57d07b"
+        },
+        {
+          "clipInstanceId": "f2b041b4597b272ff27e6277"
+        },
+        {
+          "clipInstanceId": "d921c754d98bc47e54106a0b"
+        },
+        {
+          "clipInstanceId": "5cb2bafb505b49cf5e83900c"
+        },
+        {
+          "clipInstanceId": "36c36b871658b7a4a8769be5"
+        },
+        {
+          "clipInstanceId": "37c7eee637a0c1c45613f2b4"
+        },
+        {
+          "clipInstanceId": "fe9cfe525db782468f9b3dc5"
+        },
+        {
+          "clipInstanceId": "f9e165a3f85536883643b22b"
+        },
+        {
+          "clipInstanceId": "fa503c1bfa18b79bce382b2a"
+        },
+        {
+          "clipInstanceId": "a0b7cad71d33f6153d3acedb"
+        },
+        {
+          "clipInstanceId": "64a59756fe0f4dfa55c5858e"
+        },
+        {
+          "clipInstanceId": "b046bb3ee12cbbeee9528a82"
+        },
+        {
+          "clipInstanceId": "41f91c62ca3b44e275c5bc23"
+        },
+        {
+          "clipInstanceId": "46c624f7f17773c1e1233428"
+        },
+        {
+          "clipInstanceId": "dc23326aa5f0bad729d09f4a"
+        },
+        {
+          "clipInstanceId": "b37b271d4d3f1205ce7226a4"
+        },
+        {
+          "clipInstanceId": "a1a14ca44fa264ee16d39332"
+        },
+        {
+          "clipInstanceId": "f9ad764439ebd72274005525"
+        },
+        {
+          "clipInstanceId": "07e99b40354d7737cd36cc40"
+        },
+        {
+          "clipInstanceId": "e9ffad5a5fb076646321cb35"
+        },
+        {
+          "clipInstanceId": "46380cd27c8dded8a1431faa"
+        },
+        {
+          "clipInstanceId": "c3e648707a87a97dd62fd4c9"
+        },
+        {
+          "clipInstanceId": "82d977e3ad53bc4c8322f385"
+        },
+        {
+          "clipInstanceId": "796d4ad462ed9d205124774b"
+        },
+        {
+          "clipInstanceId": "960c45ce1a41ebf13742a6b7"
+        },
+        {
+          "clipInstanceId": "04ac185f1888314c9ad57e36"
+        },
+        {
+          "clipInstanceId": "262825e16568603af75eabb0"
+        },
+        {
+          "clipInstanceId": "a32f842a2988685b2b97d646"
+        },
+        {
+          "clipInstanceId": "e8836bc4e66a72a90ae2f7a6"
+        },
+        {
+          "clipInstanceId": "4c0a0edc6e02edb6d5c4d00f"
+        },
+        {
+          "clipInstanceId": "0030c541a5cb05f25024e284"
+        },
+        {
+          "clipInstanceId": "1d0eb0adc480a3f505b3a00f"
+        },
+        {
+          "clipInstanceId": "f2c52d7b1f912c4ddf070f7e"
+        },
+        {
+          "clipInstanceId": "e77ccd1781214099ddb8b8a7"
+        },
+        {
+          "clipInstanceId": "c3f8a5084695203782a7b040"
+        },
+        {
+          "clipInstanceId": "c27769189f15641329777033"
+        },
+        {
+          "clipInstanceId": "00aec83d51192ec55522d00f"
+        },
+        {
+          "clipInstanceId": "4fc30ca44ed5d1d068d26d9b"
+        },
+        {
+          "clipInstanceId": "69d447b0226633d258453e83"
+        },
+        {
+          "clipInstanceId": "44e611d6cf334aa2fbec0cb8"
+        },
+        {
+          "clipInstanceId": "c7b9c4f4d8f56d96629b3b75"
+        },
+        {
+          "clipInstanceId": "276387723c8dec6eace95cc6"
+        },
+        {
+          "clipInstanceId": "83087d52e529469c97026a39"
+        },
+        {
+          "clipInstanceId": "7dba8b5cb85644d9840e87cb"
+        },
+        {
+          "clipInstanceId": "39c72dc52a2d13e69f64e9ac"
+        },
+        {
+          "clipInstanceId": "dc409d950421de97243860ac"
+        },
+        {
+          "clipInstanceId": "1dd5a7e20b5db9ac58f1bca4"
+        },
+        {
+          "clipInstanceId": "d02c6d71d47308214db07803"
+        },
+        {
+          "clipInstanceId": "48ed2cc2be1b1991105f1276"
+        },
+        {
+          "clipInstanceId": "f4c2d2e64b582bafc1202ca3"
+        },
+        {
+          "clipInstanceId": "402887923a4cb8b68fd267a3"
+        },
+        {
+          "clipInstanceId": "13720b8383b60e351033c6a6"
+        },
+        {
+          "clipInstanceId": "4cc3424f5bcf67f892b51636"
+        },
+        {
+          "clipInstanceId": "20535982b748027f5d3bad80"
+        },
+        {
+          "clipInstanceId": "df5d834cd3b3b80f2412f53e"
+        },
+        {
+          "clipInstanceId": "4bf7dd4eec104a91e2df594d"
+        },
+        {
+          "clipInstanceId": "c603c089522ec7cc6b0be04d"
+        },
+        {
+          "clipInstanceId": "90bfd2529e60eb7d6bd17d76"
+        },
+        {
+          "clipInstanceId": "4a7805847b8839eb6e4a87c2"
+        },
+        {
+          "clipInstanceId": "0f7de80be10fcb31cd9168f7"
+        },
+        {
+          "clipInstanceId": "a87cd27b0745a18d1dcfd907"
+        },
+        {
+          "clipInstanceId": "d571a7176a306ca6fd82760e"
+        },
+        {
+          "clipInstanceId": "0d70ade5a3233fa22fba450c"
+        },
+        {
+          "clipInstanceId": "bcf8d7ee656583dddd78a736"
+        },
+        {
+          "clipInstanceId": "0699c55bbdb04b626e0858b3"
+        },
+        {
+          "clipInstanceId": "f97801b897081e654c8ba771"
+        },
+        {
+          "clipInstanceId": "6d76b5da37116e6f41cf9bc2"
+        }
+      ],
+      "p50Ms": 1223.701,
+      "p95Ms": 1379.581,
+      "totalElapsedMs": 162550.946
+    }
+  },
+  "telemetryOnly": true
+}
