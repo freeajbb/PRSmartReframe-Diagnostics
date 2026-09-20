@@ -1,0 +1,270 @@
+{
+  "collectorElapsedMs": 189850.322,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "frameExtraction": {
+      "backendActual": "GROUPED_NVDEC",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 30,
+      "uniqueSourceMediaCount": 1
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 217,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 48,
+        "maxInferenceMs": 82.189,
+        "meanInferenceMs": 31.867,
+        "p50InferenceMs": 29.178,
+        "p95InferenceMs": 69.05,
+        "runtime": {
+          "backend": "OPENCV_ONNX_RUNTIME_CPU",
+          "deviceActual": "CPU",
+          "deviceRequested": "AUTO",
+          "modelCacheRoot": "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\models\\fast-vision",
+          "modelIntegrityVerified": true,
+          "modelLoadSeconds": 0.0050346000025456306,
+          "opencvForceDnnEngine": "4",
+          "opencvVersion": "5.0.0",
+          "weightsSha256Expected": "ebafce4e3c118d6554634be5c27ab333b4c047a9a8c3faf1d7cf93101c22f0f0"
+        },
+        "totalInferenceMs": 1529.64
+      },
+      "insightface": {
+        "callCount": 217,
+        "maxInferenceMs": 696.659,
+        "meanInferenceMs": 212.182,
+        "p50InferenceMs": 207.878,
+        "p95InferenceMs": 271.539,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 46043.562
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 35,
+        "maxInferenceMs": 19.803,
+        "meanInferenceMs": 11.897,
+        "p50InferenceMs": 8.873,
+        "p95InferenceMs": 18.827,
+        "runtime": {
+          "backend": "OPENCV_DNN_CPU",
+          "deviceActual": "CPU",
+          "deviceRequested": "AUTO",
+          "modelCacheRoot": "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\models\\fast-vision",
+          "modelIntegrityVerified": true,
+          "modelLoadSeconds": 0.01648169999680249,
+          "opencvVersion": "5.0.0",
+          "weightsSha256Expected": "9d89c599319a18fb7d2e28451a883476164543182bafca5f09eb2cf767ed2f3f"
+        },
+        "totalInferenceMs": 416.409
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 8,
+      "peakObservedConcurrency": 3,
+      "providerCalls": 9,
+      "requestedConcurrency": 3,
+      "transportRetries": 0
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 1
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.6.44",
+  "runId": "api05101_20260920_185446_923995",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 189850.189,
+      "meanMs": 189850.189,
+      "p50Ms": 189850.189,
+      "p95Ms": 189850.189,
+      "totalElapsedMs": 189850.189
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 3590.077,
+      "meanMs": 3590.077,
+      "p50Ms": 3590.077,
+      "p95Ms": 3590.077,
+      "totalElapsedMs": 3590.077
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 1831.042,
+      "meanMs": 1831.042,
+      "p50Ms": 1831.042,
+      "p95Ms": 1831.042,
+      "totalElapsedMs": 1831.042
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 1001.975,
+      "meanMs": 1001.975,
+      "p50Ms": 1001.975,
+      "p95Ms": 1001.975,
+      "totalElapsedMs": 1001.975
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 1614.95,
+      "meanMs": 1614.95,
+      "p50Ms": 1614.95,
+      "p95Ms": 1614.95,
+      "totalElapsedMs": 1614.95
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 1462.706,
+      "meanMs": 1462.706,
+      "p50Ms": 1462.706,
+      "p95Ms": 1462.706,
+      "totalElapsedMs": 1462.706
+    },
+    "frameExtraction": {
+      "callCount": 1,
+      "maxMs": 27416.847,
+      "meanMs": 27416.847,
+      "observations": [
+        {
+          "backendActual": "GROUPED_NVDEC"
+        }
+      ],
+      "p50Ms": 27416.847,
+      "p95Ms": 27416.847,
+      "totalElapsedMs": 27416.847
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 1041.348,
+      "meanMs": 1041.348,
+      "p50Ms": 1041.348,
+      "p95Ms": 1041.348,
+      "totalElapsedMs": 1041.348
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 1158.018,
+      "meanMs": 1158.018,
+      "p50Ms": 1158.018,
+      "p95Ms": 1158.018,
+      "totalElapsedMs": 1158.018
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 787.414,
+      "meanMs": 787.414,
+      "p50Ms": 787.414,
+      "p95Ms": 787.414,
+      "totalElapsedMs": 787.414
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 945.919,
+      "meanMs": 945.919,
+      "p50Ms": 945.919,
+      "p95Ms": 945.919,
+      "totalElapsedMs": 945.919
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 544.971,
+      "meanMs": 544.971,
+      "p50Ms": 544.971,
+      "p95Ms": 544.971,
+      "totalElapsedMs": 544.971
+    },
+    "providerBatch": {
+      "callCount": 8,
+      "maxMs": 32098.18,
+      "meanMs": 20699.437,
+      "observations": [
+        {
+          "batchId": "batch_0001"
+        },
+        {
+          "batchId": "batch_0003"
+        },
+        {
+          "batchId": "batch_0002"
+        },
+        {
+          "batchId": "batch_0004"
+        },
+        {
+          "batchId": "batch_0005"
+        },
+        {
+          "batchId": "batch_0008"
+        },
+        {
+          "batchId": "batch_0007"
+        },
+        {
+          "batchId": "batch_0006"
+        }
+      ],
+      "p50Ms": 18976.838,
+      "p95Ms": 30490.982,
+      "totalElapsedMs": 165595.5
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 33014.48,
+      "meanMs": 33014.48,
+      "p50Ms": 33014.48,
+      "p95Ms": 33014.48,
+      "totalElapsedMs": 33014.48
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 427.252,
+      "meanMs": 427.252,
+      "p50Ms": 427.252,
+      "p95Ms": 427.252,
+      "totalElapsedMs": 427.252
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 1992.778,
+      "meanMs": 1992.778,
+      "p50Ms": 1992.778,
+      "p95Ms": 1992.778,
+      "totalElapsedMs": 1992.778
+    },
+    "sourceMediaProbe": {
+      "callCount": 1,
+      "maxMs": 32.561,
+      "meanMs": 32.561,
+      "p50Ms": 32.561,
+      "p95Ms": 32.561,
+      "totalElapsedMs": 32.561
+    }
+  },
+  "telemetryOnly": true
+}
