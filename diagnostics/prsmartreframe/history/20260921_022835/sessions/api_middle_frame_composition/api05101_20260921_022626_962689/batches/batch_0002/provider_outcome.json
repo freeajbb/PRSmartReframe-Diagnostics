@@ -1,0 +1,98 @@
+{
+  "batchId": "batch_0002",
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "providerAttempts": 1,
+  "rawResponses": [
+    "{\n  \"schemaVersion\": \"api_middle_frame_composition.response.v1\",\n  \"batchId\": \"batch_0002\",\n  \"results\": [\n    {\n      \"clipInstanceId\": \"9bb23389c23e3b91e7d4204c\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.0,\n        \"right\": 0.75,\n        \"bottom\": 0.3994082840236686\n      },\n      \"confidence\": 0.9,\n      \"primarySubject\": \"Garment skirt hem\",\n      \"compositionReason\": \"Focuses on the dress and skirt movement from a low angle interior shot.\",\n      \"primarySubjectKind\": \"OBJECT\",\n      \"primarySubjectBoxNormalized\": {\n        \"left\": 0.27,\n        \"top\": 0.0,\n        \"right\": 0.99,\n        \"bottom\": 0.23\n      }\n    },\n    {\n      \"clipInstanceId\": \"8422b9c315d12a67d469e740\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.3005917159763314,\n        \"right\": 0.75,\n        \"cannot_be_true_use_standard_bounding\": 0.7000000000000001\n      },\n      \"confidence\": 0.85,\n      \"primarySubject\": \"Hand motion in motion blur\",\n      \"compositionReason\": \"Centers on the fast-moving hand in the frame.\",\n      \"primarySubjectKind\": \"OBJECT\",\n      \"primarySubjectBoxNormalized\": {\n        \"left\": 0.13,\n        \"top\": 0.3,\n        \"right\": 0.75,\n        \"bottom\": 0.92\n      }\n    },\n    {\n      \"clipInstanceId\": \"2308514e24434f2c6f377938\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.25,\n        \"right\": 0.75,\n        \"bottom\": 0.6494082840236686\n      },\n      \"confidence\": 0.95,\n      \"primarySubject\": \"Back of person's head and hair\",\n      \"compositionReason\": \"Centers on the back of the person's head and shoulders.\",\n      \"primarySubjectKind\": \"PERSON\",\n      \"primarySubjectBoxNormalized\": {\n        \"left\": 0.15,\n        \"top\": 0.53,\n        \"right\": 0.85,\n        \"bottom\": 0.92\n      }\n    },\n    {\n      \"clipInstanceId\": \"f7214cfe9e6e62df9aef35ef\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.0,\n        \"right\": 0.75,\n        \"bottom\": 0.3994082840236686\n      },\n      \"confidence\": 0.95,\n      \"primarySubject\": \"Upper face and mouth of person speaking\",\n      \"compositionReason\": \"Centers tightly on the visible facial features while respecting face safety.\",\n      \"primarySubjectKind\": \"PERSON\",\n      \"primarySubjectBoxNormalized\": {\n        \"left\": 0.41,\n        \"top\": 0.0,\n        \"right\": 0.81,\n        \"bottom\": 0.51\n      }\n    },\n    {\n      \"clipInstanceId\": \"2672246d774e0669bd2e0da5\",\n      \"cropBoxNormalized\": {\n        \"left\": 0.25,\n        \"top\": 0.3005917159763314,\n        \"right\": 0.75,\n        \"bottom\": 0.7\n      },\n      \"confidence\": 0.85,\n      \"primarySubject\": \"Hand motion/hair accessory action\",\n      \"compositionReason\": \"Captures the blurry hand interaction near the center of the frame.\",\n      \"primarySubjectKind\": \"OBJECT\",\n      \"primarySubjectBoxNormalized\": {\n        \"left\": 0.24,\n        \"top\": 0.0,\n        \"right\": 0.88,\n        \"bottom\": 0.92\n      }\n    }\n  ]\n}"
+  ],
+  "rejectedResultCount": 1,
+  "rejectedResults": [
+    {
+      "clipInstanceId": "8422b9c315d12a67d469e740",
+      "errorCode": "API_COMPOSITION_RESPONSE_CROP_INVALID"
+    }
+  ],
+  "requestedResultCount": 5,
+  "results": [
+    {
+      "clipInstanceId": "9bb23389c23e3b91e7d4204c",
+      "compositionReason": "Focuses on the dress and skirt movement from a low angle interior shot.",
+      "confidence": 0.9,
+      "cropBoxNormalized": {
+        "bottom": 0.3994082840236686,
+        "left": 0.25,
+        "right": 0.75,
+        "top": 0.0
+      },
+      "primarySubject": "Garment skirt hem",
+      "primarySubjectBoxNormalized": {
+        "bottom": 0.23,
+        "left": 0.27,
+        "right": 0.99,
+        "top": 0.0
+      },
+      "primarySubjectKind": "OBJECT"
+    },
+    {
+      "clipInstanceId": "2308514e24434f2c6f377938",
+      "compositionReason": "Centers on the back of the person's head and shoulders.",
+      "confidence": 0.95,
+      "cropBoxNormalized": {
+        "bottom": 0.6494082840236686,
+        "left": 0.25,
+        "right": 0.75,
+        "top": 0.25
+      },
+      "primarySubject": "Back of person's head and hair",
+      "primarySubjectBoxNormalized": {
+        "bottom": 0.92,
+        "left": 0.15,
+        "right": 0.85,
+        "top": 0.53
+      },
+      "primarySubjectKind": "PERSON"
+    },
+    {
+      "clipInstanceId": "f7214cfe9e6e62df9aef35ef",
+      "compositionReason": "Centers tightly on the visible facial features while respecting face safety.",
+      "confidence": 0.95,
+      "cropBoxNormalized": {
+        "bottom": 0.3994082840236686,
+        "left": 0.25,
+        "right": 0.75,
+        "top": 0.0
+      },
+      "primarySubject": "Upper face and mouth of person speaking",
+      "primarySubjectBoxNormalized": {
+        "bottom": 0.51,
+        "left": 0.41,
+        "right": 0.81,
+        "top": 0.0
+      },
+      "primarySubjectKind": "PERSON"
+    },
+    {
+      "clipInstanceId": "2672246d774e0669bd2e0da5",
+      "compositionReason": "Captures the blurry hand interaction near the center of the frame.",
+      "confidence": 0.85,
+      "cropBoxNormalized": {
+        "bottom": 0.7,
+        "left": 0.25,
+        "right": 0.75,
+        "top": 0.3005917159763314
+      },
+      "primarySubject": "Hand motion/hair accessory action",
+      "primarySubjectBoxNormalized": {
+        "bottom": 0.92,
+        "left": 0.24,
+        "right": 0.88,
+        "top": 0.0
+      },
+      "primarySubjectKind": "OBJECT"
+    }
+  ],
+  "schemaRepairs": 0,
+  "validResultCount": 4,
+  "validationStatus": "PARTIAL_VALID"
+}

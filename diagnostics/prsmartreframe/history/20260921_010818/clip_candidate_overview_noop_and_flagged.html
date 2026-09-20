@@ -1,0 +1,2638 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>PRSmartReframe 候选裁切总览 - NOOP + 指定问题 Clip</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f5f7fb;
+    color: #1f2d3d;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 100vh;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+    background: #ffffff;
+    border-right: 1px solid #dbe3ef;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .content {
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+  }
+  .desc {
+    color: #5b6b7f;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  .stat {
+    background: #eef4ff;
+    border: 1px solid #d7e4ff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
+  .toc {
+    padding-left: 18px;
+  }
+  .toc li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .toc a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #1967d2;
+  }
+  .tagline {
+    color: #5b6b7f;
+    font-size: 12px;
+  }
+  .clip-section {
+    background: #fff;
+    border: 1px solid #dbe3ef;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 24px;
+  }
+  .clip-head {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    color: #31445c;
+  }
+  details {
+    margin-bottom: 12px;
+    background: #fbfcfe;
+    border: 1px solid #e7edf7;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  details summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 12px;
+    line-height: 1.55;
+    margin: 10px 0 0 0;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+  }
+  .img-card {
+    background: #fff;
+    border: 1px solid #e4ebf5;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .img-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    background: #f2f4f8;
+  }
+  .img-name {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #506176;
+    word-break: break-all;
+  }
+  .empty {
+    color: #8a97a8;
+    padding: 16px 0;
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h1>候选裁切总览</h1>
+    <div class="desc">
+      自动汇总：<br>
+      1）35 个 NOOP<br>
+      2）指定问题 Clip：#04 #61 #122 #134 #136 #148
+    </div>
+    <div class="stat">
+      <div><strong>Diagnostic Root</strong></div>
+      <div>C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818</div>
+      <hr>
+      <div><strong>NOOP 数量</strong>：35</div>
+      <div><strong>Flagged 数量</strong>：6</div>
+      <div><strong>总展示 Clip 数</strong>：39</div>
+    </div>
+    <ol class="toc">
+      <li><a href="#clip-4">#004</a> <span class="tagline">FLAGGED | MAIN_POSITION | API_COMPOSITION_WRITE_VERIFIED</span></li><li><a href="#clip-14">#014</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-18">#018</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-39">#039</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-44">#044</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-46">#046</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-47">#047</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-48">#048</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-49">#049</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-52">#052</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-57">#057</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-61">#061</a> <span class="tagline">NOOP,FLAGGED | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-66">#066</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-75">#075</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-77">#077</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-79">#079</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-88">#088</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-92">#092</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-109">#109</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-113">#113</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-118">#118</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-120">#120</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-121">#121</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-122">#122</a> <span class="tagline">NOOP,FLAGGED | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-127">#127</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-133">#133</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-134">#134</a> <span class="tagline">FLAGGED | MAIN_POSITION | API_COMPOSITION_WRITE_VERIFIED</span></li><li><a href="#clip-136">#136</a> <span class="tagline">FLAGGED | MAIN_POSITION | API_COMPOSITION_WRITE_VERIFIED</span></li><li><a href="#clip-139">#139</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-142">#142</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-148">#148</a> <span class="tagline">FLAGGED | EXPANSION_PRIMARY_SUBJECT_CENTERED | API_COMPOSITION_WRITE_VERIFIED</span></li><li><a href="#clip-152">#152</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-153">#153</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-164">#164</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-166">#166</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-169">#169</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-182">#182</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-184">#184</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li><li><a href="#clip-195">#195</a> <span class="tagline">NOOP | CURRENT_POSITION_CANDIDATE | API_COMPOSITION_NO_OP_VERIFIED</span></li>
+    </ol>
+  </aside>
+
+  <main class="content">
+    
+        <section id="clip-4" class="clip-section">
+          <h2>Clip #004</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> FLAGGED</div>
+            <div><strong>Final Source:</strong> MAIN_POSITION</div>
+            <div><strong>Status:</strong> API_COMPOSITION_WRITE_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00004_ef3f8814021d44aec56fb70b\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00004_ef3f8814021d44aec56fb70b</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;MAIN_POSITION&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_WRITE_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;MAIN_POSITION&quot;,
+  &quot;applyDispatches&quot;: 1,
+  &quot;applyWrites&quot;: 1,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00004_ef3f8814021d44aec56fb70b\\api_composition_apply_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_APPLY_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_WRITE_VERIFIED&quot;,
+  &quot;beforePosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;targetPosition&quot;: [
+    0.5,
+    1.1005917159763314
+  ],
+  &quot;applyDispatchCalls&quot;: 1,
+  &quot;applyWriteCalls&quot;: 1,
+  &quot;premiereWriteCalls&quot;: 1,
+  &quot;providerCalls&quot;: 0,
+  &quot;buildId&quot;: &quot;0.6.45-single-face-direct-apply-compatibility-hotfix-v1&quot;
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-14" class="clip-section">
+          <h2>Clip #014</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00014_1e2012699af325ea6c327f06\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00014_1e2012699af325ea6c327f06</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00014_1e2012699af325ea6c327f06\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-18" class="clip-section">
+          <h2>Clip #018</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00018_7322dec1c5030042e8732f24\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00018_7322dec1c5030042e8732f24</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00018_7322dec1c5030042e8732f24\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-39" class="clip-section">
+          <h2>Clip #039</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00039_8cd27ff2baafa5d34fdd9f29\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00039_8cd27ff2baafa5d34fdd9f29</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00039_8cd27ff2baafa5d34fdd9f29\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-44" class="clip-section">
+          <h2>Clip #044</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00044_6402565ddf181e90a7f9705d\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00044_6402565ddf181e90a7f9705d</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00044_6402565ddf181e90a7f9705d\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-46" class="clip-section">
+          <h2>Clip #046</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00046_70326a267db0cb65c434b454\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00046_70326a267db0cb65c434b454</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00046_70326a267db0cb65c434b454\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-47" class="clip-section">
+          <h2>Clip #047</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00047_035a185c8fe33b934580386f\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00047_035a185c8fe33b934580386f</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00047_035a185c8fe33b934580386f\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-48" class="clip-section">
+          <h2>Clip #048</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00048_f6e8254f199ed12032c7cfbb\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00048_f6e8254f199ed12032c7cfbb</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00048_f6e8254f199ed12032c7cfbb\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-49" class="clip-section">
+          <h2>Clip #049</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00049_6f5f8c5ee1401cc4797bf433\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00049_6f5f8c5ee1401cc4797bf433</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00049_6f5f8c5ee1401cc4797bf433\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-52" class="clip-section">
+          <h2>Clip #052</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00052_ed944a970c23da92c90125a0\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00052_ed944a970c23da92c90125a0</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00052_ed944a970c23da92c90125a0\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-57" class="clip-section">
+          <h2>Clip #057</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00057_8268873a7145dd88307cf91e\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00057_8268873a7145dd88307cf91e</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00057_8268873a7145dd88307cf91e\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-61" class="clip-section">
+          <h2>Clip #061</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP, FLAGGED</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00061_13803799b9380b79435567e9\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00061_13803799b9380b79435567e9</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;,
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00061_13803799b9380b79435567e9\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-66" class="clip-section">
+          <h2>Clip #066</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00066_d7412544b18779861607d04b\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00066_d7412544b18779861607d04b</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00066_d7412544b18779861607d04b\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-75" class="clip-section">
+          <h2>Clip #075</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00075_c729485bdd8c6be5eb3eb65a\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00075_c729485bdd8c6be5eb3eb65a</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00075_c729485bdd8c6be5eb3eb65a\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-77" class="clip-section">
+          <h2>Clip #077</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00077_84b7ad463d74364914352eb2\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00077_84b7ad463d74364914352eb2</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00077_84b7ad463d74364914352eb2\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-79" class="clip-section">
+          <h2>Clip #079</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00079_eceb714cbfb3f701ac80fc67\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00079_eceb714cbfb3f701ac80fc67</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00079_eceb714cbfb3f701ac80fc67\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-88" class="clip-section">
+          <h2>Clip #088</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00088_6180e3164288edbc22934907\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00088_6180e3164288edbc22934907</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00088_6180e3164288edbc22934907\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-92" class="clip-section">
+          <h2>Clip #092</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00092_ef1f9be09cab125cfef6ae95\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00092_ef1f9be09cab125cfef6ae95</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00092_ef1f9be09cab125cfef6ae95\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-109" class="clip-section">
+          <h2>Clip #109</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00109_3e519ac71bab889447bd6e92\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00109_3e519ac71bab889447bd6e92</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00109_3e519ac71bab889447bd6e92\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-113" class="clip-section">
+          <h2>Clip #113</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00113_c237fb2fc7c75d8f118ff04b\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00113_c237fb2fc7c75d8f118ff04b</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00113_c237fb2fc7c75d8f118ff04b\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-118" class="clip-section">
+          <h2>Clip #118</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00118_7acb58bbd16bc3e75fb5fde1\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00118_7acb58bbd16bc3e75fb5fde1</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00118_7acb58bbd16bc3e75fb5fde1\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-120" class="clip-section">
+          <h2>Clip #120</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00120_131c45c5bd6fc4866122b828\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00120_131c45c5bd6fc4866122b828</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00120_131c45c5bd6fc4866122b828\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-121" class="clip-section">
+          <h2>Clip #121</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00121_ccc35d426b490769f557cd1b\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00121_ccc35d426b490769f557cd1b</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00121_ccc35d426b490769f557cd1b\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-122" class="clip-section">
+          <h2>Clip #122</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP, FLAGGED</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00122_359c79ac676fff69344d4ee5\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00122_359c79ac676fff69344d4ee5</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;,
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00122_359c79ac676fff69344d4ee5\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-127" class="clip-section">
+          <h2>Clip #127</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00127_4a497eaa2ef9874de9de953a\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00127_4a497eaa2ef9874de9de953a</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00127_4a497eaa2ef9874de9de953a\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-133" class="clip-section">
+          <h2>Clip #133</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00133_63627edca0f8ef4ad52e4289\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00133_63627edca0f8ef4ad52e4289</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00133_63627edca0f8ef4ad52e4289\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-134" class="clip-section">
+          <h2>Clip #134</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> FLAGGED</div>
+            <div><strong>Final Source:</strong> MAIN_POSITION</div>
+            <div><strong>Status:</strong> API_COMPOSITION_WRITE_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00134_526123dce6978dfc768974be\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00134_526123dce6978dfc768974be</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;MAIN_POSITION&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_WRITE_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;MAIN_POSITION&quot;,
+  &quot;applyDispatches&quot;: 1,
+  &quot;applyWrites&quot;: 1,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00134_526123dce6978dfc768974be\\api_composition_apply_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_APPLY_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_WRITE_VERIFIED&quot;,
+  &quot;beforePosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;targetPosition&quot;: [
+    0.3,
+    0.8005917159763314
+  ],
+  &quot;applyDispatchCalls&quot;: 1,
+  &quot;applyWriteCalls&quot;: 1,
+  &quot;premiereWriteCalls&quot;: 1,
+  &quot;providerCalls&quot;: 0,
+  &quot;buildId&quot;: &quot;0.6.45-single-face-direct-apply-compatibility-hotfix-v1&quot;
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-136" class="clip-section">
+          <h2>Clip #136</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> FLAGGED</div>
+            <div><strong>Final Source:</strong> MAIN_POSITION</div>
+            <div><strong>Status:</strong> API_COMPOSITION_WRITE_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00136_d4f74de6575ff1bb4098f978\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00136_d4f74de6575ff1bb4098f978</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;MAIN_POSITION&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_WRITE_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;MAIN_POSITION&quot;,
+  &quot;applyDispatches&quot;: 1,
+  &quot;applyWrites&quot;: 1,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00136_d4f74de6575ff1bb4098f978\\api_composition_apply_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_APPLY_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_WRITE_VERIFIED&quot;,
+  &quot;beforePosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;targetPosition&quot;: [
+    0.3,
+    0.8005917159763314
+  ],
+  &quot;applyDispatchCalls&quot;: 1,
+  &quot;applyWriteCalls&quot;: 1,
+  &quot;premiereWriteCalls&quot;: 1,
+  &quot;providerCalls&quot;: 0,
+  &quot;buildId&quot;: &quot;0.6.45-single-face-direct-apply-compatibility-hotfix-v1&quot;
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-139" class="clip-section">
+          <h2>Clip #139</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00139_f0f76a5b68c08d573c0290e6\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00139_f0f76a5b68c08d573c0290e6</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00139_f0f76a5b68c08d573c0290e6\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-142" class="clip-section">
+          <h2>Clip #142</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00142_fb9b194131689045b051e9af\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00142_fb9b194131689045b051e9af</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00142_fb9b194131689045b051e9af\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-148" class="clip-section">
+          <h2>Clip #148</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> FLAGGED</div>
+            <div><strong>Final Source:</strong> EXPANSION_PRIMARY_SUBJECT_CENTERED</div>
+            <div><strong>Status:</strong> API_COMPOSITION_WRITE_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00148_60878a686cee0ce94fb1d11f\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00148_60878a686cee0ce94fb1d11f</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;FLAGGED&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;EXPANSION_PRIMARY_SUBJECT_CENTERED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_WRITE_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;EXPANSION_PRIMARY_SUBJECT_CENTERED&quot;,
+  &quot;applyDispatches&quot;: 1,
+  &quot;applyWrites&quot;: 1,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00148_60878a686cee0ce94fb1d11f\\api_composition_apply_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_APPLY_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_WRITE_VERIFIED&quot;,
+  &quot;beforePosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;targetPosition&quot;: [
+    1.0,
+    0.5228521108627319
+  ],
+  &quot;applyDispatchCalls&quot;: 1,
+  &quot;applyWriteCalls&quot;: 1,
+  &quot;premiereWriteCalls&quot;: 1,
+  &quot;providerCalls&quot;: 0,
+  &quot;buildId&quot;: &quot;0.6.45-single-face-direct-apply-compatibility-hotfix-v1&quot;
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-152" class="clip-section">
+          <h2>Clip #152</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00152_9d48af0d0aa474fea15ba9ff\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00152_9d48af0d0aa474fea15ba9ff</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00152_9d48af0d0aa474fea15ba9ff\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-153" class="clip-section">
+          <h2>Clip #153</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00153_4ef32d3fa552713d6a05793c\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00153_4ef32d3fa552713d6a05793c</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00153_4ef32d3fa552713d6a05793c\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-164" class="clip-section">
+          <h2>Clip #164</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00164_5b7825feadea0861a63617a6\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00164_5b7825feadea0861a63617a6</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00164_5b7825feadea0861a63617a6\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-166" class="clip-section">
+          <h2>Clip #166</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00166_9bb23389c23e3b91e7d4204c\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00166_9bb23389c23e3b91e7d4204c</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00166_9bb23389c23e3b91e7d4204c\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-169" class="clip-section">
+          <h2>Clip #169</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00169_8422b9c315d12a67d469e740\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00169_8422b9c315d12a67d469e740</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00169_8422b9c315d12a67d469e740\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-182" class="clip-section">
+          <h2>Clip #182</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00182_2308514e24434f2c6f377938\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00182_2308514e24434f2c6f377938</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00182_2308514e24434f2c6f377938\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-184" class="clip-section">
+          <h2>Clip #184</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00184_f7214cfe9e6e62df9aef35ef\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00184_f7214cfe9e6e62df9aef35ef</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00184_f7214cfe9e6e62df9aef35ef\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+        <section id="clip-195" class="clip-section">
+          <h2>Clip #195</h2>
+          <div class="clip-head">
+            <div><strong>Tags:</strong> NOOP</div>
+            <div><strong>Final Source:</strong> CURRENT_POSITION_CANDIDATE</div>
+            <div><strong>Status:</strong> API_COMPOSITION_NO_OP_VERIFIED</div>
+          </div>
+
+          <details class="path-block">
+            <summary>目录信息</summary>
+            <pre>Result Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition\api05101_20260921_005938_123614\results\00195_2672246d774e0669bd2e0da5\nApply Item Dir: C:\Users\XBS\Documents\GitHub\PRSmartReframe-Diagnostics\diagnostics\prsmartreframe\history\20260921_010818\sessions\api_middle_frame_composition_apply\apply0584_20260921_010537_718663\items\00195_2672246d774e0669bd2e0da5</pre>
+          </details>
+
+          
+            <details class="meta-block">
+              <summary>Tags</summary>
+              <pre>[
+  &quot;NOOP&quot;
+]</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Final Source</summary>
+              <pre>&quot;CURRENT_POSITION_CANDIDATE&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply/Receipt Status</summary>
+              <pre>&quot;API_COMPOSITION_NO_OP_VERIFIED&quot;</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Summary Meta</summary>
+              <pre>{
+  &quot;status&quot;: &quot;APPLIED_NO_OP_VERIFIED&quot;,
+  &quot;finalPositionSource&quot;: &quot;CURRENT_POSITION_CANDIDATE&quot;,
+  &quot;applyDispatches&quot;: 0,
+  &quot;applyWrites&quot;: 0,
+  &quot;applyReceiptPath&quot;: &quot;C:\\Users\\&lt;USER&gt;\\Desktop\\PRSmartReframe_0.6.45_Task9-12_Apply_Compatibility_Hotfix_V1\\sessions\\api_middle_frame_composition_apply\\apply0584_20260921_010537_718663\\items\\00195_2672246d774e0669bd2e0da5\\api_composition_noop_receipt.json&quot;
+}</pre>
+            </details>
+            
+            <details class="meta-block">
+              <summary>Apply Receipt Meta</summary>
+              <pre>{
+  &quot;receiptType&quot;: &quot;API_COMPOSITION_NO_OP_RECEIPT_V1&quot;,
+  &quot;receiptStatus&quot;: &quot;API_COMPOSITION_NO_OP_VERIFIED&quot;,
+  &quot;currentPosition&quot;: [
+    0.5,
+    0.5
+  ],
+  &quot;applyDispatchCalls&quot;: 0,
+  &quot;applyWriteCalls&quot;: 0,
+  &quot;premiereWriteCalls&quot;: 0
+}</pre>
+            </details>
+            
+
+          <div class="gallery">
+            <div class="empty">未在对应目录下找到图片文件。</div>
+          </div>
+        </section>
+        
+  </main>
+</div>
+</body>
+</html>
