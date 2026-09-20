@@ -1,0 +1,244 @@
+{
+  "collectorElapsedMs": 126292.268,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "frameExtraction": {
+      "backendActual": "GROUPED_NVDEC",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 30,
+      "uniqueSourceMediaCount": 1
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 217,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 1,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0.0
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 8,
+      "peakObservedConcurrency": 3,
+      "providerCalls": 9,
+      "requestedConcurrency": 3,
+      "transportRetries": 0
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 1
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.6.42",
+  "runId": "api05101_20260920_112437_311646",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 126292.091,
+      "meanMs": 126292.091,
+      "p50Ms": 126292.091,
+      "p95Ms": 126292.091,
+      "totalElapsedMs": 126292.091
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 2270.632,
+      "meanMs": 2270.632,
+      "p50Ms": 2270.632,
+      "p95Ms": 2270.632,
+      "totalElapsedMs": 2270.632
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 1470.884,
+      "meanMs": 1470.884,
+      "p50Ms": 1470.884,
+      "p95Ms": 1470.884,
+      "totalElapsedMs": 1470.884
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 805.68,
+      "meanMs": 805.68,
+      "p50Ms": 805.68,
+      "p95Ms": 805.68,
+      "totalElapsedMs": 805.68
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 1164.313,
+      "meanMs": 1164.313,
+      "p50Ms": 1164.313,
+      "p95Ms": 1164.313,
+      "totalElapsedMs": 1164.313
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 1158.021,
+      "meanMs": 1158.021,
+      "p50Ms": 1158.021,
+      "p95Ms": 1158.021,
+      "totalElapsedMs": 1158.021
+    },
+    "frameExtraction": {
+      "callCount": 1,
+      "maxMs": 29502.944,
+      "meanMs": 29502.944,
+      "observations": [
+        {
+          "backendActual": "GROUPED_NVDEC"
+        }
+      ],
+      "p50Ms": 29502.944,
+      "p95Ms": 29502.944,
+      "totalElapsedMs": 29502.944
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 1602.637,
+      "meanMs": 1602.637,
+      "p50Ms": 1602.637,
+      "p95Ms": 1602.637,
+      "totalElapsedMs": 1602.637
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 898.98,
+      "meanMs": 898.98,
+      "p50Ms": 898.98,
+      "p95Ms": 898.98,
+      "totalElapsedMs": 898.98
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 1422.66,
+      "meanMs": 1422.66,
+      "p50Ms": 1422.66,
+      "p95Ms": 1422.66,
+      "totalElapsedMs": 1422.66
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 754.764,
+      "meanMs": 754.764,
+      "p50Ms": 754.764,
+      "p95Ms": 754.764,
+      "totalElapsedMs": 754.764
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 592.419,
+      "meanMs": 592.419,
+      "p50Ms": 592.419,
+      "p95Ms": 592.419,
+      "totalElapsedMs": 592.419
+    },
+    "providerBatch": {
+      "callCount": 8,
+      "maxMs": 27377.923,
+      "meanMs": 16701.1,
+      "observations": [
+        {
+          "batchId": "batch_0002"
+        },
+        {
+          "batchId": "batch_0003"
+        },
+        {
+          "batchId": "batch_0001"
+        },
+        {
+          "batchId": "batch_0004"
+        },
+        {
+          "batchId": "batch_0005"
+        },
+        {
+          "batchId": "batch_0008"
+        },
+        {
+          "batchId": "batch_0006"
+        },
+        {
+          "batchId": "batch_0007"
+        }
+      ],
+      "p50Ms": 16535.538,
+      "p95Ms": 23972.732,
+      "totalElapsedMs": 133608.799
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 26639.225,
+      "meanMs": 26639.225,
+      "p50Ms": 26639.225,
+      "p95Ms": 26639.225,
+      "totalElapsedMs": 26639.225
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 528.617,
+      "meanMs": 528.617,
+      "p50Ms": 528.617,
+      "p95Ms": 528.617,
+      "totalElapsedMs": 528.617
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 4052.32,
+      "meanMs": 4052.32,
+      "p50Ms": 4052.32,
+      "p95Ms": 4052.32,
+      "totalElapsedMs": 4052.32
+    },
+    "sourceMediaProbe": {
+      "callCount": 1,
+      "maxMs": 179.815,
+      "meanMs": 179.815,
+      "p50Ms": 179.815,
+      "p95Ms": 179.815,
+      "totalElapsedMs": 179.815
+    }
+  },
+  "telemetryOnly": true
+}
