@@ -1,0 +1,482 @@
+{
+  "collectorElapsedMs": 49200.225,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "frameExtraction": {
+      "backendActual": "GROUPED_NVDEC",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 4,
+      "uniqueSourceMediaCount": 1
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 27,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "insightfaceFirstPass": {
+      "contract": "INSIGHTFACE_FIRST_PASS_PERFORMANCE_TELEMETRY_V1",
+      "inferenceCount": 27,
+      "inferenceMaxMs": 76.45669259255993,
+      "inferenceMeanMs": 76.45669259255993,
+      "inferenceP50Ms": 76.45669259255993,
+      "inferenceP95Ms": 76.45669259255993,
+      "inferenceTotalMs": 2064.330699999118,
+      "mustNotDriveProductionDecision": true,
+      "routingElapsedMs": 2744.9301999949967,
+      "telemetryOnly": true
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "insightface": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 1,
+      "peakObservedConcurrency": 1,
+      "providerCalls": 1,
+      "requestedConcurrency": 3,
+      "timeToFirstProviderRequestMs": 24884.619399999792,
+      "transportRetries": 0,
+      "wallClockMs": 11964.441500000248
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 1
+    },
+    "streamingProvider": {
+      "firstBatchItemCount": 12,
+      "firstBatchOrdinal": 1,
+      "routerCompletedAtFirstDispatch": 27,
+      "routerRemainingAtFirstDispatch": 0,
+      "routingProviderOverlapMs": 0.0,
+      "streamingDuplicateEnqueueCount": 0,
+      "streamingFullBatchCount": 0,
+      "streamingMissingProviderItemCount": 0,
+      "streamingOrderingViolationCount": 0,
+      "streamingProviderDispatchPolicy": "STREAMING_FULL_BATCH_IMMEDIATE_TAIL_ON_ROUTER_CLOSE_V1",
+      "streamingProviderItemCount": 12,
+      "streamingSealedBatchCount": 1,
+      "streamingTailBatchCount": 1,
+      "streamingTailBatchItemCount": 12
+    },
+    "streamingRetainSet": {
+      "eligible": true,
+      "fallbackReason": "NONE",
+      "firstRetainSetDispatchAtMs": 36909.323500003666,
+      "legacyFallbackProviderBatchCount": 0,
+      "legacyMembershipParity": true,
+      "mainProviderCompletedAtFirstRetainSetDispatch": 1,
+      "mainProviderCompletionOrder": [
+        "batch_0001"
+      ],
+      "mainProviderRemainingAtFirstRetainSetDispatch": 0,
+      "perClipIdentityParity": true,
+      "prefetchDuplicateClipCount": 0,
+      "prefetchExtraClipCount": 0,
+      "prefetchIdentityMismatchCount": 0,
+      "prefetchMissingClipCount": 0,
+      "prefetchProviderBatchCount": 1,
+      "prefetchReplayBatchCount": 1,
+      "prefetchReplayClipCount": 1,
+      "retainSetMainProviderOverlapMs": 0.0,
+      "retainSetProviderWallClockMs": 10937.751899997238,
+      "started": true,
+      "streamingRetainSetDuplicateEnqueueCount": 0,
+      "streamingRetainSetFullBatchCount": 0,
+      "streamingRetainSetItemCount": 1,
+      "streamingRetainSetOrderingViolationCount": 0,
+      "streamingRetainSetPolicy": "COMPLETION_ORDER_INDEPENDENT_RETAIN_SET_PREFETCH_V2",
+      "streamingRetainSetSealedBatchCount": 1,
+      "streamingRetainSetTailBatchCount": 1,
+      "streamingRetainSetTailBatchItemCount": 1
+    },
+    "task14d3HybridFirstPass": {
+      "cachedGeometryConsumptions": 27,
+      "certificationManifestStatus": "VERIFIED",
+      "contract": "TASK14D3_CONTROLLED_HYBRID_FIRST_PASS_V1",
+      "hybridAdmissionStatus": "ADMITTED",
+      "hybridAttempted": true,
+      "hybridFaceCount": 19,
+      "hybridFallbackActivated": false,
+      "hybridFallbackReasonCodes": [],
+      "hybridFirstPassWallMs": 2064.330699999118,
+      "hybridImageCount": 27,
+      "hybridSucceeded": true,
+      "landmarkNativeBatchCalls": 2,
+      "landmarkNativeBatchSize": 16,
+      "mutationDispatches": 0,
+      "noPartialAuthority": true,
+      "policy": "SCRFD_SAME_SESSION_WORKERS_4__2D106_NATIVE_BATCH_16_V1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "routeClipCount": 27,
+      "scrfdWorkers": 4,
+      "selectedClipCount": 27,
+      "semanticApiRequiredClipCount": 12,
+      "serialFallbackInferenceCount": 0,
+      "singleFaceDirectClipCount": 15
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.7.2",
+  "runId": "api05101_20260922_020248_656446",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 49199.958,
+      "meanMs": 49199.958,
+      "p50Ms": 49199.958,
+      "p95Ms": 49199.958,
+      "totalElapsedMs": 49199.958
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 160.479,
+      "meanMs": 160.479,
+      "p50Ms": 160.479,
+      "p95Ms": 160.479,
+      "totalElapsedMs": 160.479
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 99.622,
+      "meanMs": 99.622,
+      "p50Ms": 99.622,
+      "p95Ms": 99.622,
+      "totalElapsedMs": 99.622
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 99.262,
+      "meanMs": 99.262,
+      "p50Ms": 99.262,
+      "p95Ms": 99.262,
+      "totalElapsedMs": 99.262
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 107.768,
+      "meanMs": 107.768,
+      "p50Ms": 107.768,
+      "p95Ms": 107.768,
+      "totalElapsedMs": 107.768
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 100.354,
+      "meanMs": 100.354,
+      "p50Ms": 100.354,
+      "p95Ms": 100.354,
+      "totalElapsedMs": 100.354
+    },
+    "frameExtraction": {
+      "callCount": 1,
+      "maxMs": 21190.202,
+      "meanMs": 21190.202,
+      "observations": [
+        {
+          "backendActual": "GROUPED_NVDEC"
+        }
+      ],
+      "p50Ms": 21190.202,
+      "p95Ms": 21190.202,
+      "totalElapsedMs": 21190.202
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 169.763,
+      "meanMs": 169.763,
+      "p50Ms": 169.763,
+      "p95Ms": 169.763,
+      "totalElapsedMs": 169.763
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 100.733,
+      "meanMs": 100.733,
+      "p50Ms": 100.733,
+      "p95Ms": 100.733,
+      "totalElapsedMs": 100.733
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 83.757,
+      "meanMs": 83.757,
+      "p50Ms": 83.757,
+      "p95Ms": 83.757,
+      "totalElapsedMs": 83.757
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 84.733,
+      "meanMs": 84.733,
+      "p50Ms": 84.733,
+      "p95Ms": 84.733,
+      "totalElapsedMs": 84.733
+    },
+    "insightFaceFirstPassInference": {
+      "callCount": 27,
+      "maxMs": 76.457,
+      "meanMs": 76.457,
+      "observations": [
+        {
+          "clipInstanceId": "413d7efd6ac2223c8ba51013",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 1
+        },
+        {
+          "clipInstanceId": "57f9df61c63b5579e1b82d12",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 2
+        },
+        {
+          "clipInstanceId": "b8a6d00bf6bebd93bceb4474",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 3
+        },
+        {
+          "clipInstanceId": "78a97ff817ca04267cc44a12",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 4
+        },
+        {
+          "clipInstanceId": "a16254323ebea1a5b0a43b45",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 5
+        },
+        {
+          "clipInstanceId": "3a89da6efd067dd3ae5360e6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 6
+        },
+        {
+          "clipInstanceId": "e9d3e198b8602d43afcff693",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 7
+        },
+        {
+          "clipInstanceId": "6ec630bd22b9c21675221e9a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 8
+        },
+        {
+          "clipInstanceId": "d51dddd4b975e5766370407e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 9
+        },
+        {
+          "clipInstanceId": "3cdeb5ab0aadd762fa6db0ce",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 10
+        },
+        {
+          "clipInstanceId": "a34ee7552605505e014bb1f5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 11
+        },
+        {
+          "clipInstanceId": "eaacbe2e589c88446bf35d42",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 12
+        },
+        {
+          "clipInstanceId": "6e83790c39c6786a0ad79ff1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 13
+        },
+        {
+          "clipInstanceId": "728e1ca31cd957e51c0c433e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 14
+        },
+        {
+          "clipInstanceId": "bd4e931c82cebf81c4b23941",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 15
+        },
+        {
+          "clipInstanceId": "d0a13ac61d9bb0e4c537b3fb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 16
+        },
+        {
+          "clipInstanceId": "4720441cb01316d7e93c9f8f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 17
+        },
+        {
+          "clipInstanceId": "e813864a10a4f2a730fe4e9b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 18
+        },
+        {
+          "clipInstanceId": "582610d396a1a261a2f7bafe",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 19
+        },
+        {
+          "clipInstanceId": "20138f569f2791cf496e4f55",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 20
+        },
+        {
+          "clipInstanceId": "90c7da4f73087853b13ae08c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 21
+        },
+        {
+          "clipInstanceId": "f42684647fbadefb1cf62e5c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 22
+        },
+        {
+          "clipInstanceId": "0b775a222df1e2eb3ea33108",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 23
+        },
+        {
+          "clipInstanceId": "f74d0075112c73d0e1cc6ae4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 24
+        },
+        {
+          "clipInstanceId": "544c2acd0a208d4d625400d8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 25
+        },
+        {
+          "clipInstanceId": "9567e7c33c8f93213a393ae6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 26
+        },
+        {
+          "clipInstanceId": "daffb0b3293206f50d3aa78a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 27
+        }
+      ],
+      "p50Ms": 76.457,
+      "p95Ms": 76.457,
+      "totalElapsedMs": 2064.331
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 7.63,
+      "meanMs": 7.63,
+      "p50Ms": 7.63,
+      "p95Ms": 7.63,
+      "totalElapsedMs": 7.63
+    },
+    "providerBatch": {
+      "callCount": 1,
+      "maxMs": 11964.442,
+      "meanMs": 11964.442,
+      "observations": [
+        {
+          "batchId": "batch_0001"
+        }
+      ],
+      "p50Ms": 11964.442,
+      "p95Ms": 11964.442,
+      "totalElapsedMs": 11964.442
+    },
+    "providerWallClock": {
+      "callCount": 1,
+      "maxMs": 11964.442,
+      "meanMs": 11964.442,
+      "p50Ms": 11964.442,
+      "p95Ms": 11964.442,
+      "totalElapsedMs": 11964.442
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 122.411,
+      "meanMs": 122.411,
+      "p50Ms": 122.411,
+      "p95Ms": 122.411,
+      "totalElapsedMs": 122.411
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 72.628,
+      "meanMs": 72.628,
+      "p50Ms": 72.628,
+      "p95Ms": 72.628,
+      "totalElapsedMs": 72.628
+    },
+    "singleFaceDirectRouting": {
+      "callCount": 1,
+      "maxMs": 2744.93,
+      "meanMs": 2744.93,
+      "p50Ms": 2744.93,
+      "p95Ms": 2744.93,
+      "totalElapsedMs": 2744.93
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 81.931,
+      "meanMs": 81.931,
+      "p50Ms": 81.931,
+      "p95Ms": 81.931,
+      "totalElapsedMs": 81.931
+    },
+    "sourceMediaProbe": {
+      "callCount": 1,
+      "maxMs": 28.946,
+      "meanMs": 28.946,
+      "p50Ms": 28.946,
+      "p95Ms": 28.946,
+      "totalElapsedMs": 28.946
+    }
+  },
+  "telemetryOnly": true
+}
