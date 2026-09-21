@@ -1,0 +1,1440 @@
+{
+  "collectorElapsedMs": 133176.96,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "frameExtraction": {
+      "backendActual": "GROUPED_NVDEC",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 30,
+      "uniqueSourceMediaCount": 1
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 217,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "insightfaceFirstPass": {
+      "contract": "INSIGHTFACE_FIRST_PASS_PERFORMANCE_TELEMETRY_V1",
+      "inferenceCount": 217,
+      "inferenceMaxMs": 31.220976036858225,
+      "inferenceMeanMs": 31.220976036858225,
+      "inferenceP50Ms": 31.220976036858225,
+      "inferenceP95Ms": 31.220976036858225,
+      "inferenceTotalMs": 6774.9517999982345,
+      "mustNotDriveProductionDecision": true,
+      "routingElapsedMs": 8351.539799994498,
+      "telemetryOnly": true
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "insightface": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 1,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0.0
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 3,
+      "peakObservedConcurrency": 3,
+      "providerCalls": 3,
+      "requestedConcurrency": 3,
+      "timeToFirstProviderRequestMs": 39212.918700002774,
+      "transportRetries": 0,
+      "wallClockMs": 25996.591199997056
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 1
+    },
+    "streamingProvider": {
+      "firstBatchItemCount": 30,
+      "firstBatchOrdinal": 1,
+      "routerCompletedAtFirstDispatch": 108,
+      "routerRemainingAtFirstDispatch": 109,
+      "routingProviderOverlapMs": 411.9611999994959,
+      "streamingDuplicateEnqueueCount": 0,
+      "streamingFullBatchCount": 2,
+      "streamingMissingProviderItemCount": 0,
+      "streamingOrderingViolationCount": 0,
+      "streamingProviderDispatchPolicy": "STREAMING_FULL_BATCH_IMMEDIATE_TAIL_ON_ROUTER_CLOSE_V1",
+      "streamingProviderItemCount": 77,
+      "streamingSealedBatchCount": 3,
+      "streamingTailBatchCount": 1,
+      "streamingTailBatchItemCount": 17
+    },
+    "streamingRetainSet": {
+      "eligible": true,
+      "fallbackReason": "NONE",
+      "firstRetainSetDispatchAtMs": 53938.493499998,
+      "legacyFallbackProviderBatchCount": 0,
+      "legacyMembershipParity": false,
+      "mainProviderCompletedAtFirstRetainSetDispatch": 1,
+      "mainProviderCompletionOrder": [
+        "batch_0003",
+        "batch_0001",
+        "batch_0002"
+      ],
+      "mainProviderRemainingAtFirstRetainSetDispatch": 2,
+      "perClipIdentityParity": true,
+      "prefetchDuplicateClipCount": 0,
+      "prefetchExtraClipCount": 0,
+      "prefetchIdentityMismatchCount": 0,
+      "prefetchMissingClipCount": 0,
+      "prefetchProviderBatchCount": 3,
+      "prefetchReplayBatchCount": 2,
+      "prefetchReplayClipCount": 33,
+      "retainSetMainProviderOverlapMs": 11271.016400001827,
+      "retainSetProviderWallClockMs": 64970.810200000415,
+      "started": true,
+      "streamingRetainSetDuplicateEnqueueCount": 0,
+      "streamingRetainSetFullBatchCount": 0,
+      "streamingRetainSetItemCount": 33,
+      "streamingRetainSetOrderingViolationCount": 0,
+      "streamingRetainSetPolicy": "COMPLETION_ORDER_INDEPENDENT_RETAIN_SET_PREFETCH_V2",
+      "streamingRetainSetSealedBatchCount": 3,
+      "streamingRetainSetTailBatchCount": 3,
+      "streamingRetainSetTailBatchItemCount": 33
+    },
+    "task14d3HybridFirstPass": {
+      "cachedGeometryConsumptions": 217,
+      "certificationManifestStatus": "VERIFIED",
+      "contract": "TASK14D3_CONTROLLED_HYBRID_FIRST_PASS_V1",
+      "hybridAdmissionStatus": "ADMITTED",
+      "hybridAttempted": true,
+      "hybridFaceCount": 214,
+      "hybridFallbackActivated": false,
+      "hybridFallbackReasonCodes": [],
+      "hybridFirstPassWallMs": 6774.9517999982345,
+      "hybridImageCount": 217,
+      "hybridSucceeded": true,
+      "landmarkNativeBatchCalls": 14,
+      "landmarkNativeBatchSize": 16,
+      "mutationDispatches": 0,
+      "noPartialAuthority": true,
+      "policy": "SCRFD_SAME_SESSION_WORKERS_4__2D106_NATIVE_BATCH_16_V1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "routeClipCount": 217,
+      "scrfdWorkers": 4,
+      "selectedClipCount": 217,
+      "semanticApiRequiredClipCount": 77,
+      "serialFallbackInferenceCount": 0,
+      "singleFaceDirectClipCount": 140
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.7.1",
+  "runId": "api05101_20260922_005401_741515",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 133176.744,
+      "meanMs": 133176.744,
+      "p50Ms": 133176.744,
+      "p95Ms": 133176.744,
+      "totalElapsedMs": 133176.744
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 2001.335,
+      "meanMs": 2001.335,
+      "p50Ms": 2001.335,
+      "p95Ms": 2001.335,
+      "totalElapsedMs": 2001.335
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 1231.377,
+      "meanMs": 1231.377,
+      "p50Ms": 1231.377,
+      "p95Ms": 1231.377,
+      "totalElapsedMs": 1231.377
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 936.456,
+      "meanMs": 936.456,
+      "p50Ms": 936.456,
+      "p95Ms": 936.456,
+      "totalElapsedMs": 936.456
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 1239.738,
+      "meanMs": 1239.738,
+      "p50Ms": 1239.738,
+      "p95Ms": 1239.738,
+      "totalElapsedMs": 1239.738
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 1131.648,
+      "meanMs": 1131.648,
+      "p50Ms": 1131.648,
+      "p95Ms": 1131.648,
+      "totalElapsedMs": 1131.648
+    },
+    "frameExtraction": {
+      "callCount": 1,
+      "maxMs": 27725.968,
+      "meanMs": 27725.968,
+      "observations": [
+        {
+          "backendActual": "GROUPED_NVDEC"
+        }
+      ],
+      "p50Ms": 27725.968,
+      "p95Ms": 27725.968,
+      "totalElapsedMs": 27725.968
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 1187.335,
+      "meanMs": 1187.335,
+      "p50Ms": 1187.335,
+      "p95Ms": 1187.335,
+      "totalElapsedMs": 1187.335
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 949.761,
+      "meanMs": 949.761,
+      "p50Ms": 949.761,
+      "p95Ms": 949.761,
+      "totalElapsedMs": 949.761
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 1104.477,
+      "meanMs": 1104.477,
+      "p50Ms": 1104.477,
+      "p95Ms": 1104.477,
+      "totalElapsedMs": 1104.477
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 855.493,
+      "meanMs": 855.493,
+      "p50Ms": 855.493,
+      "p95Ms": 855.493,
+      "totalElapsedMs": 855.493
+    },
+    "insightFaceFirstPassInference": {
+      "callCount": 217,
+      "maxMs": 31.221,
+      "meanMs": 31.221,
+      "observations": [
+        {
+          "clipInstanceId": "8bc8b1710ed47abf6e17afc3",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 1
+        },
+        {
+          "clipInstanceId": "92420a0f4b334cea827bc25b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 2
+        },
+        {
+          "clipInstanceId": "4e4d311e3c51b00b91bab7e6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 3
+        },
+        {
+          "clipInstanceId": "ef3f8814021d44aec56fb70b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 4
+        },
+        {
+          "clipInstanceId": "c8468800a8fdb2ef928d57b3",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 5
+        },
+        {
+          "clipInstanceId": "3928fa2700ad5013e18adf5c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 6
+        },
+        {
+          "clipInstanceId": "716ca753f4f8a9849d91941c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 7
+        },
+        {
+          "clipInstanceId": "fea79c45b563bd4265d3d5a7",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 8
+        },
+        {
+          "clipInstanceId": "fc85073a0984a4fffae6d9b5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 9
+        },
+        {
+          "clipInstanceId": "1c8b1072e7f67549e2b7d9a0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 10
+        },
+        {
+          "clipInstanceId": "134837d6573280403e1823e5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 11
+        },
+        {
+          "clipInstanceId": "7245f0060cd478da303445e8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 12
+        },
+        {
+          "clipInstanceId": "9b352ad5499559ccd770e583",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 13
+        },
+        {
+          "clipInstanceId": "1e2012699af325ea6c327f06",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 14
+        },
+        {
+          "clipInstanceId": "290d10d93b589dd17d0c7d41",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 15
+        },
+        {
+          "clipInstanceId": "90d68e0c15738e67596cde0e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 16
+        },
+        {
+          "clipInstanceId": "0cc4e85ece573830246a160a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 17
+        },
+        {
+          "clipInstanceId": "7322dec1c5030042e8732f24",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 18
+        },
+        {
+          "clipInstanceId": "0f2cdb58a0336c2627c1ba06",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 19
+        },
+        {
+          "clipInstanceId": "11ac3acc964e4dfec4879cc5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 20
+        },
+        {
+          "clipInstanceId": "e74223df162b2eff9da0ab4f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 21
+        },
+        {
+          "clipInstanceId": "20b432e2c529353235d39662",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 22
+        },
+        {
+          "clipInstanceId": "c17e1e95070f54638ca35722",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 23
+        },
+        {
+          "clipInstanceId": "585d83df65ebca85e3e55c20",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 24
+        },
+        {
+          "clipInstanceId": "36ec12cc53b02550337285f9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 25
+        },
+        {
+          "clipInstanceId": "5a8d38604ea0a9eb831a5c6e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 26
+        },
+        {
+          "clipInstanceId": "cfa91350c360b2f77021e51e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 27
+        },
+        {
+          "clipInstanceId": "0624602b17558596fd4e92f3",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 28
+        },
+        {
+          "clipInstanceId": "a6df21b202989050089c6f34",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 29
+        },
+        {
+          "clipInstanceId": "8764e7bfccef4d6794d09a31",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 30
+        },
+        {
+          "clipInstanceId": "80a1e711668cd22ae0f2dd20",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 31
+        },
+        {
+          "clipInstanceId": "8aadc6c7b939f43f57e43162",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 32
+        },
+        {
+          "clipInstanceId": "3b19a91ea151a19aea0b6c7e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 33
+        },
+        {
+          "clipInstanceId": "c0c8e5dc4e3bedb24456d419",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 34
+        },
+        {
+          "clipInstanceId": "d3a4ac0f67b0613c5b658e5c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 35
+        },
+        {
+          "clipInstanceId": "51a32876c676a08cc2e483c5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 36
+        },
+        {
+          "clipInstanceId": "93fdb47bd9cad64d32dcf693",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 37
+        },
+        {
+          "clipInstanceId": "fe6394ecc3462bf14d637549",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 38
+        },
+        {
+          "clipInstanceId": "8cd27ff2baafa5d34fdd9f29",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 39
+        },
+        {
+          "clipInstanceId": "258f556e484f006de24f4b51",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 40
+        },
+        {
+          "clipInstanceId": "2b1e94692d9f479c5865ff2d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 41
+        },
+        {
+          "clipInstanceId": "e41eda82f9ec9bf55c594043",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 42
+        },
+        {
+          "clipInstanceId": "0d27a89a849feef3a856a59d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 43
+        },
+        {
+          "clipInstanceId": "6402565ddf181e90a7f9705d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 44
+        },
+        {
+          "clipInstanceId": "12941f6aad1fccf1df3908d0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 45
+        },
+        {
+          "clipInstanceId": "70326a267db0cb65c434b454",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 46
+        },
+        {
+          "clipInstanceId": "035a185c8fe33b934580386f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 47
+        },
+        {
+          "clipInstanceId": "f6e8254f199ed12032c7cfbb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 48
+        },
+        {
+          "clipInstanceId": "6f5f8c5ee1401cc4797bf433",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 49
+        },
+        {
+          "clipInstanceId": "858a034c85f338cb5cf22aa4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 50
+        },
+        {
+          "clipInstanceId": "6850ab98dec2d8fd99877ba8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 51
+        },
+        {
+          "clipInstanceId": "ed944a970c23da92c90125a0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 52
+        },
+        {
+          "clipInstanceId": "ad8888adbbff3d4a1e4930d5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 53
+        },
+        {
+          "clipInstanceId": "596d580e02f72df105268daa",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 54
+        },
+        {
+          "clipInstanceId": "04e1e0ac5386812d3e4d2d6c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 55
+        },
+        {
+          "clipInstanceId": "be5bca352e86e7ed15724137",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 56
+        },
+        {
+          "clipInstanceId": "8268873a7145dd88307cf91e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 57
+        },
+        {
+          "clipInstanceId": "7751e3a3f7d4815ff93da4d4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 58
+        },
+        {
+          "clipInstanceId": "8d85575de7214b4770af64bc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 59
+        },
+        {
+          "clipInstanceId": "42144860c0d92847e1a25852",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 60
+        },
+        {
+          "clipInstanceId": "13803799b9380b79435567e9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 61
+        },
+        {
+          "clipInstanceId": "9b5ecfab1801de104e76469f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 62
+        },
+        {
+          "clipInstanceId": "8cbff337b71641435cc692dd",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 63
+        },
+        {
+          "clipInstanceId": "3110b9c3dc941f67052d7ed9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 64
+        },
+        {
+          "clipInstanceId": "85f5e960862d86cf00f4150a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 65
+        },
+        {
+          "clipInstanceId": "d7412544b18779861607d04b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 66
+        },
+        {
+          "clipInstanceId": "c396b85322b6ab4725a3f982",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 67
+        },
+        {
+          "clipInstanceId": "fcecd4af3be897361bc6bff9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 68
+        },
+        {
+          "clipInstanceId": "1385bb1e465735f1d2bfcc1a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 69
+        },
+        {
+          "clipInstanceId": "6067f7aa7dec083cdd1895c5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 70
+        },
+        {
+          "clipInstanceId": "6ecbbb93afc7235543328bbe",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 71
+        },
+        {
+          "clipInstanceId": "fb75a5c35191f947dc2a5701",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 72
+        },
+        {
+          "clipInstanceId": "1efd3b96de69c3a6ecf268f4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 73
+        },
+        {
+          "clipInstanceId": "456695c3880f3832c0f0f13a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 74
+        },
+        {
+          "clipInstanceId": "c729485bdd8c6be5eb3eb65a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 75
+        },
+        {
+          "clipInstanceId": "594baebc3c4b7ed6fe347779",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 76
+        },
+        {
+          "clipInstanceId": "84b7ad463d74364914352eb2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 77
+        },
+        {
+          "clipInstanceId": "7d0a138613fe459f259e183b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 78
+        },
+        {
+          "clipInstanceId": "eceb714cbfb3f701ac80fc67",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 79
+        },
+        {
+          "clipInstanceId": "565bd790412b8c27b28cf528",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 80
+        },
+        {
+          "clipInstanceId": "a1574cf4af1e832e471b22b0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 81
+        },
+        {
+          "clipInstanceId": "867c4142e39f2b2615863b6c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 82
+        },
+        {
+          "clipInstanceId": "4a4aee75c354d0a879909244",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 83
+        },
+        {
+          "clipInstanceId": "b397fb6781eb2c2f41905578",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 84
+        },
+        {
+          "clipInstanceId": "b7081b3dab11bc0363e37910",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 85
+        },
+        {
+          "clipInstanceId": "ab29271f73d261e815bb94e5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 86
+        },
+        {
+          "clipInstanceId": "4306776c6956b31d3b970404",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 87
+        },
+        {
+          "clipInstanceId": "6180e3164288edbc22934907",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 88
+        },
+        {
+          "clipInstanceId": "1802c2aa5618b1c69d80d9e6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 89
+        },
+        {
+          "clipInstanceId": "c392513e95a90614b3c13edb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 90
+        },
+        {
+          "clipInstanceId": "bf97c75f0656371928cc93bc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 91
+        },
+        {
+          "clipInstanceId": "ef1f9be09cab125cfef6ae95",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 92
+        },
+        {
+          "clipInstanceId": "fc01fc19e5f29b5787575bb0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 93
+        },
+        {
+          "clipInstanceId": "fa150c20f00f83bb15dbbf5f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 94
+        },
+        {
+          "clipInstanceId": "04c99aab114c4282aa07fa40",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 95
+        },
+        {
+          "clipInstanceId": "e82e6f081820ba80efdbb619",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 96
+        },
+        {
+          "clipInstanceId": "1609d2163abb825f43b04801",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 97
+        },
+        {
+          "clipInstanceId": "aee18a3d445376860b973889",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 98
+        },
+        {
+          "clipInstanceId": "f17b91b503cbc1522de72495",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 99
+        },
+        {
+          "clipInstanceId": "b2ba0bcdcbaba0a7eff5330c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 100
+        },
+        {
+          "clipInstanceId": "a2b1aefe36255d87621e85af",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 101
+        },
+        {
+          "clipInstanceId": "09eb087e8bc7475a5e450018",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 102
+        },
+        {
+          "clipInstanceId": "ccaf4f37ffcbe37c6c0d76a7",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 103
+        },
+        {
+          "clipInstanceId": "9595e0b9967e5a3516f20333",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 104
+        },
+        {
+          "clipInstanceId": "9a22c119c8ea996994292fd6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 105
+        },
+        {
+          "clipInstanceId": "652bf0af9154c638663fdcbd",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 106
+        },
+        {
+          "clipInstanceId": "4fbed49c12c94cedcb8d1fe4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 107
+        },
+        {
+          "clipInstanceId": "784196ae846427493bf746da",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 108
+        },
+        {
+          "clipInstanceId": "3e519ac71bab889447bd6e92",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 109
+        },
+        {
+          "clipInstanceId": "4a9fdfa43a54a9c3841ad3cf",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 110
+        },
+        {
+          "clipInstanceId": "764b95cc884f115ebf930605",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 111
+        },
+        {
+          "clipInstanceId": "f384cec7e820bb825eb28d94",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 112
+        },
+        {
+          "clipInstanceId": "c237fb2fc7c75d8f118ff04b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 113
+        },
+        {
+          "clipInstanceId": "8ec5074c93ab93db3843f79a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 114
+        },
+        {
+          "clipInstanceId": "9a06afc60c4666bdf03cc79e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 115
+        },
+        {
+          "clipInstanceId": "967ebd7dae5333080bf3b282",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 116
+        },
+        {
+          "clipInstanceId": "9dbe1e0304f2a31a3e5572ce",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 117
+        },
+        {
+          "clipInstanceId": "7acb58bbd16bc3e75fb5fde1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 118
+        },
+        {
+          "clipInstanceId": "6b4fdc56d1bab75493257d89",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 119
+        },
+        {
+          "clipInstanceId": "131c45c5bd6fc4866122b828",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 120
+        },
+        {
+          "clipInstanceId": "ccc35d426b490769f557cd1b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 121
+        },
+        {
+          "clipInstanceId": "359c79ac676fff69344d4ee5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 122
+        },
+        {
+          "clipInstanceId": "502e83966cc5e20dc80b2972",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 123
+        },
+        {
+          "clipInstanceId": "a28fcfaf9cf28f108abfadac",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 124
+        },
+        {
+          "clipInstanceId": "b4097f57c4062e4baf8ee869",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 125
+        },
+        {
+          "clipInstanceId": "7f6a8458f368d2258ca98db6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 126
+        },
+        {
+          "clipInstanceId": "4a497eaa2ef9874de9de953a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 127
+        },
+        {
+          "clipInstanceId": "32c2a71f2e6dfa29e14dcda0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 128
+        },
+        {
+          "clipInstanceId": "aeb08ef7f7e0d85b98ef34f1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 129
+        },
+        {
+          "clipInstanceId": "9c4ef9a259601a78497f02af",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 130
+        },
+        {
+          "clipInstanceId": "3ad8dbadb3eb619c01cd7601",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 131
+        },
+        {
+          "clipInstanceId": "9da39e2312c7ac759506628f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 132
+        },
+        {
+          "clipInstanceId": "63627edca0f8ef4ad52e4289",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 133
+        },
+        {
+          "clipInstanceId": "526123dce6978dfc768974be",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 134
+        },
+        {
+          "clipInstanceId": "04b5d0c3a7ebf64875ee255e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 135
+        },
+        {
+          "clipInstanceId": "d4f74de6575ff1bb4098f978",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 136
+        },
+        {
+          "clipInstanceId": "847950de49e5a7b4d2928466",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 137
+        },
+        {
+          "clipInstanceId": "8e18efe476ab4e305ab939ea",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 138
+        },
+        {
+          "clipInstanceId": "f0f76a5b68c08d573c0290e6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 139
+        },
+        {
+          "clipInstanceId": "45750cef830ae68feb6d7987",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 140
+        },
+        {
+          "clipInstanceId": "d3ef922d51bbddd6bb28ce3b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 141
+        },
+        {
+          "clipInstanceId": "fb9b194131689045b051e9af",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 142
+        },
+        {
+          "clipInstanceId": "8086000fda1a96cf9234199c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 143
+        },
+        {
+          "clipInstanceId": "8d5e503dba6bad66fbee6bdc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 144
+        },
+        {
+          "clipInstanceId": "ad75652f78dd30372b994652",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 145
+        },
+        {
+          "clipInstanceId": "cf208b25a5a545d3a5090e30",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 146
+        },
+        {
+          "clipInstanceId": "090d1e688f9b62d4a7633d9e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 147
+        },
+        {
+          "clipInstanceId": "60878a686cee0ce94fb1d11f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 148
+        },
+        {
+          "clipInstanceId": "7e2c6bb87a85adf9116a9816",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 149
+        },
+        {
+          "clipInstanceId": "f9c0809249511e5ff788c2ca",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 150
+        },
+        {
+          "clipInstanceId": "f35c646210302dd51b103d66",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 151
+        },
+        {
+          "clipInstanceId": "9d48af0d0aa474fea15ba9ff",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 152
+        },
+        {
+          "clipInstanceId": "4ef32d3fa552713d6a05793c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 153
+        },
+        {
+          "clipInstanceId": "c5074fe6a5327eff046788ab",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 154
+        },
+        {
+          "clipInstanceId": "f3b13c6d58551e391bc49793",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 155
+        },
+        {
+          "clipInstanceId": "eb049c5e60d86973740d50af",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 156
+        },
+        {
+          "clipInstanceId": "be1814e1d36ed8127658055a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 157
+        },
+        {
+          "clipInstanceId": "8139f4f7967af35939523314",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 158
+        },
+        {
+          "clipInstanceId": "b3bc0251ce7e0b8d66a7a52d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 159
+        },
+        {
+          "clipInstanceId": "e4844b6964ee530c06adb98f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 160
+        },
+        {
+          "clipInstanceId": "e72c4896f819659cd6b61b50",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 161
+        },
+        {
+          "clipInstanceId": "e159a87ef2babbc49adc1f41",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 162
+        },
+        {
+          "clipInstanceId": "52413a30a8c5fd16b819b31a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 163
+        },
+        {
+          "clipInstanceId": "5b7825feadea0861a63617a6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 164
+        },
+        {
+          "clipInstanceId": "5cefa35e911ea5d10f78f146",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 165
+        },
+        {
+          "clipInstanceId": "9bb23389c23e3b91e7d4204c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 166
+        },
+        {
+          "clipInstanceId": "189767029b716126346d677e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 167
+        },
+        {
+          "clipInstanceId": "53f281e0419de0e81d3e96eb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 168
+        },
+        {
+          "clipInstanceId": "8422b9c315d12a67d469e740",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 169
+        },
+        {
+          "clipInstanceId": "c53fff98479675fb9be2c353",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 170
+        },
+        {
+          "clipInstanceId": "b115870555cbf46bdea7e5dc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 171
+        },
+        {
+          "clipInstanceId": "74d41ed9a725d156a632d6b5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 172
+        },
+        {
+          "clipInstanceId": "ff25b4a7239e55f1759b651a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 173
+        },
+        {
+          "clipInstanceId": "f830901392b8b9caa2cdb3cf",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 174
+        },
+        {
+          "clipInstanceId": "c9345e2862e55a93f2c5e38e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 175
+        },
+        {
+          "clipInstanceId": "8cd6128e599918a488791489",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 176
+        },
+        {
+          "clipInstanceId": "d382e413c7c199e4e861e35e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 177
+        },
+        {
+          "clipInstanceId": "03f2885cc7ddc645534d8d03",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 178
+        },
+        {
+          "clipInstanceId": "df01bd57e6f60fdac13a97cd",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 179
+        },
+        {
+          "clipInstanceId": "5d3941c1af41ea636920d33b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 180
+        },
+        {
+          "clipInstanceId": "6a029f6b51d7638adba38c94",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 181
+        },
+        {
+          "clipInstanceId": "2308514e24434f2c6f377938",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 182
+        },
+        {
+          "clipInstanceId": "a0bc14f2946ab80346c148c2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 183
+        },
+        {
+          "clipInstanceId": "f7214cfe9e6e62df9aef35ef",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 184
+        },
+        {
+          "clipInstanceId": "e73552fc48eb72d51cc88e76",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 185
+        },
+        {
+          "clipInstanceId": "14b9e2577a6b934d9ba6f07f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 186
+        },
+        {
+          "clipInstanceId": "de644d39236c7e8baf9a49cf",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 187
+        },
+        {
+          "clipInstanceId": "246f1ae70dddf033d58f4d60",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 188
+        },
+        {
+          "clipInstanceId": "d353ba79d9c4d4d9125d3c83",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 189
+        },
+        {
+          "clipInstanceId": "7f7fa6ee72e3c15d89334d75",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 190
+        },
+        {
+          "clipInstanceId": "34cedef1d1cc65b56fe5a33e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 191
+        },
+        {
+          "clipInstanceId": "2d99730a825f76f0cb5430ed",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 192
+        },
+        {
+          "clipInstanceId": "b39a07c1604f488e63807a2e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 193
+        },
+        {
+          "clipInstanceId": "e42432cfe7df550890851923",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 194
+        },
+        {
+          "clipInstanceId": "2672246d774e0669bd2e0da5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 195
+        },
+        {
+          "clipInstanceId": "5d65a603dd280bc56d52eb00",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 196
+        },
+        {
+          "clipInstanceId": "78995a2b25f8ae854553f7bc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 197
+        },
+        {
+          "clipInstanceId": "b5e578553cbb71960c761fb7",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 198
+        },
+        {
+          "clipInstanceId": "ba19374da93197cb0baaacc9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 199
+        },
+        {
+          "clipInstanceId": "706d45c249fce0c4b19be831",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 200
+        },
+        {
+          "clipInstanceId": "ff804e31c1a53a7b78673153",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 201
+        },
+        {
+          "clipInstanceId": "1ae0c7f145f4a2f2d41f5962",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 202
+        },
+        {
+          "clipInstanceId": "f9e21df725cecc8ba1ba192c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 203
+        },
+        {
+          "clipInstanceId": "9296cdf9825c904b7296a07a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 204
+        },
+        {
+          "clipInstanceId": "bb9f7553307ae22ca255eeda",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 205
+        },
+        {
+          "clipInstanceId": "f400698ddfdd35bcbaf8f764",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 206
+        },
+        {
+          "clipInstanceId": "8e9e5b4f413a490232d61f6c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 207
+        },
+        {
+          "clipInstanceId": "00e2431078d0b5e415d396ca",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 208
+        },
+        {
+          "clipInstanceId": "379685dcedd146056ad3351e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 209
+        },
+        {
+          "clipInstanceId": "246ba8ed965b971deaee8444",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 210
+        },
+        {
+          "clipInstanceId": "9f585a3a8b703b7f64c685d2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 211
+        },
+        {
+          "clipInstanceId": "c175b2100f083bd51e0ae6b8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 212
+        },
+        {
+          "clipInstanceId": "39e3542c4caf0a5006980fa9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 213
+        },
+        {
+          "clipInstanceId": "5b20894ba04fa2c852319b47",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 214
+        },
+        {
+          "clipInstanceId": "9b244fac640dff9ce4684de2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 215
+        },
+        {
+          "clipInstanceId": "40f25b7ac718889dc6a1f473",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 216
+        },
+        {
+          "clipInstanceId": "187b626d0b91a4ac89b09a12",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 217
+        }
+      ],
+      "p50Ms": 31.221,
+      "p95Ms": 31.221,
+      "totalElapsedMs": 6774.952
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 547.934,
+      "meanMs": 547.934,
+      "p50Ms": 547.934,
+      "p95Ms": 547.934,
+      "totalElapsedMs": 547.934
+    },
+    "providerBatch": {
+      "callCount": 3,
+      "maxMs": 25738.207,
+      "meanMs": 21001.527,
+      "observations": [
+        {
+          "batchId": "batch_0003"
+        },
+        {
+          "batchId": "batch_0001"
+        },
+        {
+          "batchId": "batch_0002"
+        }
+      ],
+      "p50Ms": 23099.618,
+      "p95Ms": 25474.348,
+      "totalElapsedMs": 63004.582
+    },
+    "providerWallClock": {
+      "callCount": 1,
+      "maxMs": 25996.591,
+      "meanMs": 25996.591,
+      "p50Ms": 25996.591,
+      "p95Ms": 25996.591,
+      "totalElapsedMs": 25996.591
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 1171.497,
+      "meanMs": 1171.497,
+      "p50Ms": 1171.497,
+      "p95Ms": 1171.497,
+      "totalElapsedMs": 1171.497
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 686.042,
+      "meanMs": 686.042,
+      "p50Ms": 686.042,
+      "p95Ms": 686.042,
+      "totalElapsedMs": 686.042
+    },
+    "singleFaceDirectRouting": {
+      "callCount": 1,
+      "maxMs": 8351.54,
+      "meanMs": 8351.54,
+      "p50Ms": 8351.54,
+      "p95Ms": 8351.54,
+      "totalElapsedMs": 8351.54
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 919.744,
+      "meanMs": 919.744,
+      "p50Ms": 919.744,
+      "p95Ms": 919.744,
+      "totalElapsedMs": 919.744
+    },
+    "sourceMediaProbe": {
+      "callCount": 1,
+      "maxMs": 154.893,
+      "meanMs": 154.893,
+      "p50Ms": 154.893,
+      "p95Ms": 154.893,
+      "totalElapsedMs": 154.893
+    }
+  },
+  "telemetryOnly": true
+}
