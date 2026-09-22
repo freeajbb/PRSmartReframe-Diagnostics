@@ -1,0 +1,4336 @@
+{
+  "apiBypass": true,
+  "apiBypassReason": "SINGLE_RELIABLE_INSIGHTFACE_FACE",
+  "cacheHit": false,
+  "cacheKey": null,
+  "candidateCompletionExpansion": {
+    "candidates": [],
+    "contract": "CANDIDATE_COMPLETION_EXPANSION_V1",
+    "expansionDigest": "8d5f625bdf0e1043b52c782beb1cf3ef63113f87262cedecbb0a75ad3021f52b",
+    "generatedCandidateCount": 2,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "providerCalls": 0,
+    "triggerReasonCodes": [
+      "LOW_GEOMETRY_DIVERSITY"
+    ],
+    "triggered": true,
+    "uniqueGeneratedGeometryCount": 0
+  },
+  "canonicalCrop": {
+    "aiCenterNormalized": [
+      0.70789324,
+      0.4028751076
+    ],
+    "aiCropBoxNormalized": {
+      "bottom": 0.6409703457,
+      "left": 0.4466687502,
+      "right": 0.9691177298,
+      "top": 0.1647798695
+    },
+    "canonicalCenterNormalized": [
+      0.70789324,
+      0.4028751076
+    ],
+    "canonicalCropBoxNormalized": {
+      "bottom": 0.640970345695238,
+      "left": 0.44666875020408164,
+      "right": 0.9691177297959184,
+      "top": 0.16477986950476195
+    },
+    "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+    "canonicalHeightNormalized": 0.4761904761904761,
+    "canonicalWidthNormalized": 0.5224489795918367,
+    "centerClampDeltaNormalized": [
+      0.0,
+      0.0
+    ],
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_CANONICAL_CROP_V1",
+    "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+    "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+    "secondApiCallRequired": false,
+    "sizeDeviationNormalized": {
+      "height": 9.523881683293212e-12,
+      "width": 8.163358877766314e-12
+    },
+    "status": "API_COMPOSITION_CROP_CANONICAL_VERIFIED"
+  },
+  "clipInstanceId": "dc409d950421de97243860ac",
+  "cloudSemanticAuthorityConsumed": false,
+  "deterministicFinalRasterSafety": {
+    "contract": "DETERMINISTIC_FINAL_RASTER_SAFETY_VERIFICATION_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "reasonCodes": [
+      "DETERMINISTIC_LOCAL_SOLVER_NOT_APPLICABLE"
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  "deterministicLocalFinalPosition": {
+    "contract": "DETERMINISTIC_LOCAL_FINAL_POSITION_SOLVER_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "reasonCodes": [
+      "SEMANTIC_SUBJECT_BINDING_NOT_APPLICABLE"
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  "faceFirstDirectPosition": {
+    "acceptedTier": "TOP_TRIM_ALLOWED",
+    "canonicalCrop": {
+      "aiCenterNormalized": [
+        0.70789324,
+        0.4028751076
+      ],
+      "aiCropBoxNormalized": {
+        "bottom": 0.6409703457,
+        "left": 0.4466687502,
+        "right": 0.9691177298,
+        "top": 0.1647798695
+      },
+      "canonicalCenterNormalized": [
+        0.70789324,
+        0.4028751076
+      ],
+      "canonicalCropBoxNormalized": {
+        "bottom": 0.640970345695238,
+        "left": 0.44666875020408164,
+        "right": 0.9691177297959184,
+        "top": 0.16477986950476195
+      },
+      "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+      "canonicalHeightNormalized": 0.4761904761904761,
+      "canonicalWidthNormalized": 0.5224489795918367,
+      "centerClampDeltaNormalized": [
+        0.0,
+        0.0
+      ],
+      "clipInstanceId": "dc409d950421de97243860ac",
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_CANONICAL_CROP_V1",
+      "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+      "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0,
+      "providerCalls": 0,
+      "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+      "secondApiCallRequired": false,
+      "sizeDeviationNormalized": {
+        "height": 9.523881683293212e-12,
+        "width": 8.163358877766314e-12
+      },
+      "status": "API_COMPOSITION_CROP_CANONICAL_VERIFIED"
+    },
+    "contract": "FACE_FIRST_DIRECT_POSITION_V1",
+    "criticalFeatureSafety": {
+      "contract": "CRITICAL_FACE_FEATURE_RETENTION_V1",
+      "criticalFeatureSafe": true,
+      "faceContourRetention": 1.0,
+      "groupRetention": {
+        "FACE_CONTOUR": 1.0,
+        "LEFT_EYE": 1.0,
+        "MOUTH": 1.0,
+        "NOSE": 1.0,
+        "RIGHT_EYE": 1.0
+      },
+      "leftEyeSafe": true,
+      "marginNormalized": {
+        "x": 0.01044898,
+        "y": 0.00952381
+      },
+      "mouthSafe": true,
+      "namedCriticalFeatureAuthorityEnabled": true,
+      "noseSafe": true,
+      "rightEyeSafe": true,
+      "safetyDigest": "c8f6c00fd2bb7f51c51ac0df5442b272beb916f02f53d5a018e67323b4265e58",
+      "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+      "sourceFeaturePreclipped": []
+    },
+    "faceCenterRelativeFinal": [
+      0.5,
+      0.4
+    ],
+    "finalDirectPosition": [
+      0.06342419600000013,
+      0.70396227404
+    ],
+    "idealCropWindowNormalized": {
+      "bottom": 0.6409703457,
+      "left": 0.4466687502,
+      "right": 0.9691177298,
+      "top": 0.1647798695
+    },
+    "legalCriticalCenterIntervals": {
+      "x": [
+        0.5110063,
+        0.73877551
+      ],
+      "y": [
+        0.2715833,
+        0.53270413
+      ]
+    },
+    "mutationDispatches": 0,
+    "observedFaceCenterNormalized": [
+      0.70789324,
+      0.35525606
+    ],
+    "positionMapping": {
+      "adapterResult": {
+        "anchorWriteAllowed": false,
+        "contract": "MIDDLE_POSITION_ADAPTER_V2",
+        "effectiveMappingEcho": {
+          "observedMotionScaleFactor": 1.0,
+          "offsetPixels": {
+            "x": 170.0,
+            "y": 0.0
+          }
+        },
+        "frozenInputEcho": {
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "currentPositionRaw": [
+            0.5,
+            0.5
+          ],
+          "rotationDegrees": 0.0,
+          "scalePercent": 210.0,
+          "uniformScale": true
+        },
+        "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+        "positionWriteAllowed": false,
+        "premiereReadOnly": true,
+        "productionUseAllowed": false,
+        "proposedHostParameters": {
+          "POSITION": [
+            0.06342419600000013,
+            0.70396227404
+          ]
+        },
+        "reasonCodes": [],
+        "rotationWriteAllowed": false,
+        "roundTrip": {
+          "maxErrorPixels": 2.2737367544323206e-13,
+          "predictedSequencePosition": {
+            "x": 391.98468600000047,
+            "y": 1520.5585119264001
+          },
+          "recommendedSequencePosition": {
+            "x": 391.98468600000047,
+            "y": 1520.5585119264
+          },
+          "status": "POSITION_ROUND_TRIP_VERIFIED",
+          "tolerancePixels": 1e-06
+        },
+        "scaleWriteAllowed": false,
+        "sequenceGeometryEcho": {
+          "height": 2160,
+          "width": 3840
+        },
+        "sourceGeometryEcho": {
+          "height": 2160,
+          "width": 3500
+        },
+        "status": "POSITION_ADAPTER_VERIFIED",
+        "writesPerformed": 0
+      },
+      "anchorSource": {
+        "x": 1750.0,
+        "y": 1080.0
+      },
+      "anchorWriteAllowed": false,
+      "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+      "clipInstanceId": "dc409d950421de97243860ac",
+      "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+      "cropCenterSource": {
+        "x": 2477.62634,
+        "y": 870.210232416
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 210.0,
+        "uniformScale": true
+      },
+      "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+      "geometryFactor": 2.1,
+      "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+      "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.06342419600000013,
+          0.70396227404
+        ]
+      },
+      "reasonCodes": [],
+      "recommendedSequencePosition": {
+        "x": 391.98468600000047,
+        "y": 1520.5585119264
+      },
+      "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+      "rotationWriteAllowed": false,
+      "scaleWriteAllowed": false,
+      "status": "API_COMPOSITION_POSITION_VERIFIED"
+    },
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionEligible": true,
+    "reasonCodes": [],
+    "repairDeltaNormalized": [
+      0.0,
+      0.0
+    ],
+    "repairedCropWindowNormalized": {
+      "bottom": 0.6409703457,
+      "left": 0.4466687502,
+      "right": 0.9691177298,
+      "top": 0.1647798695
+    },
+    "solverDigest": "00ea335c800e661e3e6db3b11c07cad56f079cc3995fd6623254987d1150e4fa",
+    "status": "DIRECT_POSITION_READY",
+    "targetFaceCenterNormalized": [
+      0.5,
+      0.4
+    ]
+  },
+  "finalCompositionArbitrationDecision": {
+    "applyAction": "NO_OP_CURRENT_POSITION",
+    "arbitrationDigest": "5fdaa3c80bb2bd8091b051c01dec10e1f8cb4f4a40ec662a4a074a8059703ec6",
+    "bestAvailableHardFailureWinner": false,
+    "candidateCount": 2,
+    "candidateGeometryDiversityCount": 2,
+    "candidateSetDigest": "8c9680ebc3919c45e5f39977a14faeb566bd969cacbc1e0988bee5c36526cacd",
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_V1",
+    "decisionContract": "FINAL_COMPOSITION_ARBITRATION_DECISION_V2",
+    "decisionDigest": "6ff2643f2d3da984452bc3e7608909a0394503eec9cc4aa086dd3603401ffbf2",
+    "decisiveDimension": "POSITION_CHANGE_MAGNITUDE",
+    "eligibleSetPositionCount": 1,
+    "executableCandidateCount": 2,
+    "expansionCandidateCount": 0,
+    "expansionDigest": "8d5f625bdf0e1043b52c782beb1cf3ef63113f87262cedecbb0a75ad3021f52b",
+    "expansionTriggerReasonCodes": [
+      "LOW_GEOMETRY_DIVERSITY"
+    ],
+    "expansionTriggered": true,
+    "finalCompositionPosition": [
+      0.5,
+      0.5
+    ],
+    "geometryEquivalentHardFailureExclusions": [],
+    "geometryEquivalentHardFailureGroupCount": 0,
+    "geometryEquivalentHardFailurePropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagationGroupCount": 0,
+    "geometryEquivalentRiskPropagations": [],
+    "hardFailedCandidateCount": 0,
+    "hardFailureExclusionDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "hardFailureWinnerCount": 0,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "reasonCodes": [],
+    "runnerUpCandidateDigest": "862c23bf8f6a06cc02783eae15a1dae2e9745afe25f449adff7c14ebf27c484c",
+    "runnerUpCandidateId": "dc409d950421de97243860ac:MAIN_POSITION:SET_POSITION:862c23bf8f6a06cc",
+    "runnerUpRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "runnerUpRiskVectorDigest": "52a41a03889e912e78e3764cc83a234e78ac501962668b4d1ace8d1cdf932174",
+    "runnerUpSourceType": "MAIN_POSITION",
+    "status": "RESOLVED",
+    "technicalInvalidCandidateCount": 0,
+    "twoPersonPairSymmetryDominance": {
+      "applicable": false,
+      "applied": false,
+      "contract": "TWO_PERSON_PAIR_SYMMETRY_DOMINANCE_V1",
+      "reasonCodes": [
+        "TWO_PERSON_SYMMETRIC_CANDIDATE_UNAVAILABLE"
+      ]
+    },
+    "whyWinnerIsBetter": {
+      "dimension": "POSITION_CHANGE_MAGNITUDE",
+      "runnerUpValue": 481870,
+      "winnerValue": 0
+    },
+    "winnerCandidateDigest": "9d455bfa5e04824d99a1d6485e2e38fefbda544713644be0ee343824c59caba4",
+    "winnerCandidateId": "dc409d950421de97243860ac:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:9d455bfa5e04824d",
+    "winnerQualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+    "winnerQualityEvidenceDigest": "86988505f005d5a6737bab368cda6c676a2c0ae111dfbbbb1e2b51598443e8cd",
+    "winnerRiskProfileDigest": "429e6ccfdb512cac9fdfc4626dbf19de4fd0e0173ad37a80842864bee3fafa5f",
+    "winnerRiskSeverityRank": 0,
+    "winnerRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "winnerRiskVectorDigest": "5815c424b5755732c6af7fa003f846156dc87a2197b7c7e02c2d825a5869d8c9",
+    "winnerSourceType": "CURRENT_POSITION_CANDIDATE"
+  },
+  "finalPositionAuthority": "FACE_FIRST_DIRECT_POSITION_V1",
+  "finalPositionCandidateArbitration": {
+    "applyAction": "NO_OP_CURRENT_POSITION",
+    "arbitrationDigest": "5fdaa3c80bb2bd8091b051c01dec10e1f8cb4f4a40ec662a4a074a8059703ec6",
+    "bestAvailableHardFailureWinner": false,
+    "candidateCount": 2,
+    "candidateGeometryDiversityCount": 2,
+    "candidateSetDigest": "8c9680ebc3919c45e5f39977a14faeb566bd969cacbc1e0988bee5c36526cacd",
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "BEST_AVAILABLE_FINAL_COMPOSITION_ARBITRATION_V1",
+    "decisionContract": "FINAL_COMPOSITION_ARBITRATION_DECISION_V2",
+    "decisionDigest": "6ff2643f2d3da984452bc3e7608909a0394503eec9cc4aa086dd3603401ffbf2",
+    "decisiveDimension": "POSITION_CHANGE_MAGNITUDE",
+    "eligibleSetPositionCount": 1,
+    "executableCandidateCount": 2,
+    "expansionCandidateCount": 0,
+    "expansionDigest": "8d5f625bdf0e1043b52c782beb1cf3ef63113f87262cedecbb0a75ad3021f52b",
+    "expansionTriggerReasonCodes": [
+      "LOW_GEOMETRY_DIVERSITY"
+    ],
+    "expansionTriggered": true,
+    "finalCompositionPosition": [
+      0.5,
+      0.5
+    ],
+    "geometryEquivalentHardFailureExclusions": [],
+    "geometryEquivalentHardFailureGroupCount": 0,
+    "geometryEquivalentHardFailurePropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagatedCandidateCount": 0,
+    "geometryEquivalentRiskPropagationGroupCount": 0,
+    "geometryEquivalentRiskPropagations": [],
+    "hardFailedCandidateCount": 0,
+    "hardFailureExclusionDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "hardFailureWinnerCount": 0,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "reasonCodes": [],
+    "runnerUpCandidateDigest": "862c23bf8f6a06cc02783eae15a1dae2e9745afe25f449adff7c14ebf27c484c",
+    "runnerUpCandidateId": "dc409d950421de97243860ac:MAIN_POSITION:SET_POSITION:862c23bf8f6a06cc",
+    "runnerUpRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "runnerUpRiskVectorDigest": "52a41a03889e912e78e3764cc83a234e78ac501962668b4d1ace8d1cdf932174",
+    "runnerUpSourceType": "MAIN_POSITION",
+    "status": "RESOLVED",
+    "technicalInvalidCandidateCount": 0,
+    "twoPersonPairSymmetryDominance": {
+      "applicable": false,
+      "applied": false,
+      "contract": "TWO_PERSON_PAIR_SYMMETRY_DOMINANCE_V1",
+      "reasonCodes": [
+        "TWO_PERSON_SYMMETRIC_CANDIDATE_UNAVAILABLE"
+      ]
+    },
+    "whyWinnerIsBetter": {
+      "dimension": "POSITION_CHANGE_MAGNITUDE",
+      "runnerUpValue": 481870,
+      "winnerValue": 0
+    },
+    "winnerCandidateDigest": "9d455bfa5e04824d99a1d6485e2e38fefbda544713644be0ee343824c59caba4",
+    "winnerCandidateId": "dc409d950421de97243860ac:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:9d455bfa5e04824d",
+    "winnerQualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+    "winnerQualityEvidenceDigest": "86988505f005d5a6737bab368cda6c676a2c0ae111dfbbbb1e2b51598443e8cd",
+    "winnerRiskProfileDigest": "429e6ccfdb512cac9fdfc4626dbf19de4fd0e0173ad37a80842864bee3fafa5f",
+    "winnerRiskSeverityRank": 0,
+    "winnerRiskTier": "NO_MEANINGFUL_DAMAGE",
+    "winnerRiskVectorDigest": "5815c424b5755732c6af7fa003f846156dc87a2197b7c7e02c2d825a5869d8c9",
+    "winnerSourceType": "CURRENT_POSITION_CANDIDATE"
+  },
+  "finalPositionCandidates": [
+    {
+      "applyAction": "NO_OP_CURRENT_POSITION",
+      "candidateDigest": "9d455bfa5e04824d99a1d6485e2e38fefbda544713644be0ee343824c59caba4",
+      "candidateId": "dc409d950421de97243860ac:CURRENT_POSITION_CANDIDATE:NO_OP_CURRENT_POSITION:9d455bfa5e04824d",
+      "canonicalGeometryId": "b77783488aafcc2d591453978054443b4d8ed32e68a3e9d1826c24d5dc01badb",
+      "clipInstanceId": "dc409d950421de97243860ac",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": false,
+      "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+      "geometryIdentityDigest": "b77783488aafcc2d591453978054443b4d8ed32e68a3e9d1826c24d5dc01badb",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+      "negativeEvidence": [],
+      "position": [
+        0.5,
+        0.5
+      ],
+      "positionMappingStatus": "CURRENT_POSITION_VERIFIED_NOOP",
+      "positiveEvidence": [
+        {
+          "digest": "e2f8f70a28b53aadf0d15ba87db844c29814b1f2511f1fbedb4f15da3007c20e",
+          "kind": "CURRENT_POSITION_IDENTITY"
+        }
+      ],
+      "qualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+      "qualityEvidenceDigest": "86988505f005d5a6737bab368cda6c676a2c0ae111dfbbbb1e2b51598443e8cd",
+      "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+      "riskProfile": {
+        "candidateDigest": "9d455bfa5e04824d99a1d6485e2e38fefbda544713644be0ee343824c59caba4",
+        "candidateReplay": {},
+        "candidateReplayDigest": "",
+        "canonicalGeometryId": "b77783488aafcc2d591453978054443b4d8ed32e68a3e9d1826c24d5dc01badb",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "429e6ccfdb512cac9fdfc4626dbf19de4fd0e0173ad37a80842864bee3fafa5f",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": []
+      },
+      "riskProfileDigest": "429e6ccfdb512cac9fdfc4626dbf19de4fd0e0173ad37a80842864bee3fafa5f",
+      "riskVector": {
+        "aestheticMetrics": {
+          "status": "NO_REPLAY_CROP"
+        },
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "CRITICAL_FACE_FEATURE_SAFETY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            15,
+            59833241614633
+          ],
+          "EVIDENCE_STRENGTH": 2,
+          "EYE_LINE_PLACEMENT": 0,
+          "FACE_CENTERING": 0,
+          "HEADROOM_QUALITY": 0,
+          "POSITION_CHANGE_MAGNITUDE": 0,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0,
+          "UPPER_CENTER_SINGLE_PERSON_ALIGNMENT": 0
+        },
+        "insightFaceV3Metrics": {
+          "status": "INSIGHTFACE_GEOMETRY_UNAVAILABLE"
+        },
+        "riskVectorDigest": "5815c424b5755732c6af7fa003f846156dc87a2197b7c7e02c2d825a5869d8c9"
+      },
+      "riskVectorDigest": "5815c424b5755732c6af7fa003f846156dc87a2197b7c7e02c2d825a5869d8c9",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "NOT_APPLICABLE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "CURRENT_POSITION_CANDIDATE_INITIAL_POOL",
+      "sourceType": "CURRENT_POSITION_CANDIDATE",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": []
+    },
+    {
+      "applyAction": "SET_POSITION",
+      "candidateDigest": "862c23bf8f6a06cc02783eae15a1dae2e9745afe25f449adff7c14ebf27c484c",
+      "candidateId": "dc409d950421de97243860ac:MAIN_POSITION:SET_POSITION:862c23bf8f6a06cc",
+      "canonicalGeometryId": "153041d0e7199f81186b9002e895cbad505a2b7b66af4a5df06eccc2ca03b479",
+      "clipInstanceId": "dc409d950421de97243860ac",
+      "contract": "FINAL_COMPOSITION_CANDIDATE_POOL_V2",
+      "eligibleForSetPosition": true,
+      "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+      "geometryIdentityDigest": "153041d0e7199f81186b9002e895cbad505a2b7b66af4a5df06eccc2ca03b479",
+      "hardFailureReasonCodes": [],
+      "localSafetyStatus": "UNVERIFIED",
+      "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+      "negativeEvidence": [],
+      "position": [
+        0.06342419600000013,
+        0.70396227404
+      ],
+      "positionMappingStatus": "VERIFIED",
+      "positiveEvidence": [
+        {
+          "digest": "bf2483b2dd42b5b8ad1ba98ccb686490b413b501f5f5e82220a0a48c498c2c57",
+          "kind": "MAIN_POSITION"
+        }
+      ],
+      "qualityClass": "UNVERIFIED_NOT_KNOWN_BAD",
+      "qualityEvidenceDigest": "d695ee579a6aefd308d01337aff8577b32c6919d9ebc5509ec53236eb6ff8580",
+      "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+      "riskProfile": {
+        "candidateDigest": "862c23bf8f6a06cc02783eae15a1dae2e9745afe25f449adff7c14ebf27c484c",
+        "candidateReplay": {},
+        "candidateReplayDigest": "",
+        "canonicalGeometryId": "153041d0e7199f81186b9002e895cbad505a2b7b66af4a5df06eccc2ca03b479",
+        "contract": "FINAL_COMPOSITION_RISK_PROFILE_V1",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "providerCalls": 0,
+        "riskProfileDigest": "1cffa0d1ad1df5e69b4d992052585f9c6e0c5bd1fc3fa38c5ed98b08506449f5",
+        "riskSeverityRank": 0,
+        "riskTier": "NO_MEANINGFUL_DAMAGE",
+        "technicalExecutabilityStatus": "EXECUTABLE",
+        "technicalInvalidReasonCodes": [],
+        "visualReasonCodes": [],
+        "visualWarningCodes": []
+      },
+      "riskProfileDigest": "1cffa0d1ad1df5e69b4d992052585f9c6e0c5bd1fc3fa38c5ed98b08506449f5",
+      "riskVector": {
+        "aestheticMetrics": {
+          "status": "NO_REPLAY_CROP"
+        },
+        "contract": "FINAL_COMPOSITION_RISK_VECTOR_V1",
+        "dimensions": {
+          "COMPOSITION_QUALITY": 0,
+          "CRITICAL_FACE_FEATURE_SAFETY": 0,
+          "DETERMINISTIC_FINAL_TIE_BREAK": [
+            12,
+            250306536756698
+          ],
+          "EVIDENCE_STRENGTH": 2,
+          "EYE_LINE_PLACEMENT": 0,
+          "FACE_CENTERING": 0,
+          "HEADROOM_QUALITY": 0,
+          "POSITION_CHANGE_MAGNITUDE": 481870,
+          "PRIMARY_FACE_INTEGRITY": 0,
+          "PRIMARY_SUBJECT_PRESERVATION": 0,
+          "PROTECTED_HEAD_FEATURE_SAFETY": 0,
+          "SEMANTIC_RETAIN_SET_RELATIONSHIP": 0,
+          "UPPER_CENTER_SINGLE_PERSON_ALIGNMENT": 0
+        },
+        "insightFaceV3Metrics": {
+          "status": "INSIGHTFACE_GEOMETRY_UNAVAILABLE"
+        },
+        "riskVectorDigest": "52a41a03889e912e78e3764cc83a234e78ac501962668b4d1ace8d1cdf932174"
+      },
+      "riskVectorDigest": "52a41a03889e912e78e3764cc83a234e78ac501962668b4d1ace8d1cdf932174",
+      "selectedSafetyTier": null,
+      "selectedSurvivorPersonId": null,
+      "semanticBindingStrength": "NOT_APPLICABLE",
+      "semanticRetainSet": [],
+      "sourceReasonCode": "GUIDED_NOT_APPLICABLE_FALLBACK_MAIN",
+      "sourceType": "MAIN_POSITION",
+      "technicalExecutabilityStatus": "EXECUTABLE",
+      "technicalInvalidReasonCodes": [],
+      "visualPlacementPolicy": null,
+      "warningReasonCodes": []
+    }
+  ],
+  "finalPositionResolution": {
+    "acceptedTier": "TOP_TRIM_ALLOWED",
+    "apiBypass": true,
+    "apiBypassReason": "SINGLE_RELIABLE_INSIGHTFACE_FACE",
+    "applyAction": "SET_POSITION",
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "cloudSemanticAuthorityConsumed": false,
+    "contract": "ALL_SELECTED_FINAL_POSITION_RESOLVER_V1",
+    "criticalFeatureSafety": {
+      "contract": "CRITICAL_FACE_FEATURE_RETENTION_V1",
+      "criticalFeatureSafe": true,
+      "faceContourRetention": 1.0,
+      "groupRetention": {
+        "FACE_CONTOUR": 1.0,
+        "LEFT_EYE": 1.0,
+        "MOUTH": 1.0,
+        "NOSE": 1.0,
+        "RIGHT_EYE": 1.0
+      },
+      "leftEyeSafe": true,
+      "marginNormalized": {
+        "x": 0.01044898,
+        "y": 0.00952381
+      },
+      "mouthSafe": true,
+      "namedCriticalFeatureAuthorityEnabled": true,
+      "noseSafe": true,
+      "rightEyeSafe": true,
+      "safetyDigest": "c8f6c00fd2bb7f51c51ac0df5442b272beb916f02f53d5a018e67323b4265e58",
+      "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+      "sourceFeaturePreclipped": []
+    },
+    "directRouteDigest": "220d1a8e20dc3d7cd373fe11c1b3be2a9b4ffd3c6787409f5773f2b0c988f67b",
+    "directSolverDigest": "00ea335c800e661e3e6db3b11c07cad56f079cc3995fd6623254987d1150e4fa",
+    "finalCompositionPosition": [
+      0.06342419600000013,
+      0.70396227404
+    ],
+    "finalPositionAuthority": "FACE_FIRST_DIRECT_POSITION_V1",
+    "finalPositionSource": "LOCAL_INSIGHTFACE_DIRECT",
+    "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+    "guidedCropProposalDigest": "",
+    "guidedShadowQualityDigest": "",
+    "mainPositionDigest": "bf2483b2dd42b5b8ad1ba98ccb686490b413b501f5f5e82220a0a48c498c2c57",
+    "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+    "ordinal": 485,
+    "productionUseAllowed": true,
+    "providerCallsForClip": 0,
+    "providerPayloadMembership": false,
+    "qualityGateFrozenEvidenceDigest": "",
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+    "resolutionDigest": "f8544ee70cb12b1815d06b715f7b3455be948f47570e5547939c585f0866b6b0",
+    "semanticApiSkipped": true,
+    "singlePersonRepairProposalDigest": "",
+    "singlePersonRepairShadowValidationDigest": "",
+    "sourceReasonCode": "FACE_FIRST_DIRECT_POSITION_AUTHORITY",
+    "sourceResultDigest": "00ea335c800e661e3e6db3b11c07cad56f079cc3995fd6623254987d1150e4fa",
+    "status": "RESOLVED"
+  },
+  "finalPositionSource": "LOCAL_INSIGHTFACE_DIRECT",
+  "finalSequenceRasterPreview": {
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "FINAL_SEQUENCE_RASTER_PREVIEW_V1",
+    "finalCompositionPosition": [
+      0.06342419600000013,
+      0.70396227404
+    ],
+    "finalPositionSource": "LOCAL_INSIGHTFACE_DIRECT",
+    "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "reasonCodes": [],
+    "resolutionDigest": "f8544ee70cb12b1815d06b715f7b3455be948f47570e5547939c585f0866b6b0",
+    "sequenceRaster": {
+      "height": 2160.0,
+      "width": 3840.0
+    },
+    "sourceRaster": {
+      "height": 2160.0,
+      "width": 3500.0
+    },
+    "status": "READY",
+    "visibleSourceWindowNormalized": {
+      "bottom": 0.6409703456952381,
+      "left": 0.4466687502040816,
+      "right": 0.9691177297959183,
+      "top": 0.1647798695047619
+    },
+    "visibleSourceWindowPixels": {
+      "bottom": 1384.4959467017143,
+      "left": 1563.3406257142856,
+      "right": 3391.912054285714,
+      "top": 355.9245181302857
+    }
+  },
+  "fullHeadFeasibility": {
+    "contract": "FULL_HEAD_FEASIBILITY_AND_PROTECTION_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "status": "NOT_APPLICABLE"
+  },
+  "geometryContext": {
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_GEOMETRY_CONTEXT_V1",
+    "effectiveMapping": {
+      "observedMotionScaleFactor": 1.0,
+      "offsetPixels": {
+        "x": 170.0,
+        "y": 0.0
+      },
+      "status": "EFFECTIVE_FRAME_MAPPING_VERIFIED"
+    },
+    "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+    "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+    "motion": {
+      "rotationDegrees": 0.0,
+      "scalePercent": 100.0
+    },
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerCalls": 0,
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+    "requiredCropWindowSource": {
+      "geometryFactor": 2.1,
+      "height": 1028.5714285714284,
+      "heightNormalized": 0.4761904761904761,
+      "observedMotionScaleFactor": 1.0,
+      "transformScaleFactor": 2.1,
+      "width": 1828.5714285714284,
+      "widthNormalized": 0.5224489795918367
+    },
+    "sequence": {
+      "height": 2160.0,
+      "pixelAspect": "1:1",
+      "width": 3840.0
+    },
+    "source": {
+      "height": 2160.0,
+      "pixelAspect": "1:1",
+      "width": 3500.0
+    },
+    "status": "API_COMPOSITION_GEOMETRY_CONTEXT_VERIFIED",
+    "transform": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "position": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 210.0,
+      "uniformScale": true
+    }
+  },
+  "guaranteedFinalPositionCompletion": {
+    "applyAction": null,
+    "completionDigest": "b79756ff3c63722b70300668c211f15812dce46c21494a9e2df73ec7404e63fd",
+    "completionStatus": "UNRESOLVED",
+    "contract": "GUARANTEED_FINAL_POSITION_COMPLETION_V1",
+    "fallbackLevel": null,
+    "fallbackReasonCodes": [
+      "PROVIDER_RESPONSE_UNAVAILABLE"
+    ],
+    "finalCompositionPosition": null,
+    "finalPositionSource": null,
+    "hostPositionMappingStatus": "UNAVAILABLE",
+    "localSafetyStatus": "UNAVAILABLE",
+    "noOpReason": null,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "providerCenterRecovered": false,
+    "providerCropUsable": false,
+    "providerResponseUsable": false,
+    "qualityClass": "UNAVAILABLE"
+  },
+  "headPlacementAudit": {
+    "contract": "SINGLE_SUBJECT_HEAD_PLACEMENT_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "status": "NOT_APPLICABLE"
+  },
+  "insightFaceGeometry": {
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "INSIGHTFACE_FACE_GEOMETRY_V1",
+    "evidenceDigest": "a1f9d81492bd2d4ac704f2804998591779223fd77d89d6c82c7bec7d5ee6795b",
+    "faceCount": 1,
+    "faces": [
+      {
+        "bboxNormalized": {
+          "bottom": 0.54895523,
+          "left": 0.60424393,
+          "right": 0.81154255,
+          "top": 0.16155689
+        },
+        "bboxPixels": {
+          "bottom": 296.4358,
+          "left": 528.7134,
+          "right": 710.0997,
+          "top": 87.2407
+        },
+        "confidence": 0.80560559,
+        "detectorKps5Pixels": [
+          [
+            651.948,
+            174.8506
+          ],
+          [
+            669.4389,
+            189.1723
+          ],
+          [
+            658.7485,
+            232.9347
+          ],
+          [
+            593.0056,
+            239.1738
+          ],
+          [
+            608.1976,
+            252.2171
+          ]
+        ],
+        "id": "if1",
+        "landmark106Normalized": [
+          [
+            0.6433152,
+            0.54549605
+          ],
+          [
+            0.65460271,
+            0.19203018
+          ],
+          [
+            0.57924384,
+            0.38513359
+          ],
+          [
+            0.58246291,
+            0.41177058
+          ],
+          [
+            0.58808303,
+            0.43810374
+          ],
+          [
+            0.59553897,
+            0.46356964
+          ],
+          [
+            0.6048215,
+            0.48891675
+          ],
+          [
+            0.61589587,
+            0.51227611
+          ],
+          [
+            0.62874758,
+            0.5317651
+          ],
+          [
+            0.64266425,
+            0.2083675
+          ],
+          [
+            0.63062668,
+            0.22553535
+          ],
+          [
+            0.61869794,
+            0.24356407
+          ],
+          [
+            0.60738188,
+            0.2629897
+          ],
+          [
+            0.5969547,
+            0.28423563
+          ],
+          [
+            0.58790159,
+            0.30761418
+          ],
+          [
+            0.58148551,
+            0.3325808
+          ],
+          [
+            0.57871681,
+            0.35846886
+          ],
+          [
+            0.76468557,
+            0.38178751
+          ],
+          [
+            0.70557445,
+            0.48345581
+          ],
+          [
+            0.6971035,
+            0.49282187
+          ],
+          [
+            0.6884318,
+            0.50220317
+          ],
+          [
+            0.67899513,
+            0.51019591
+          ],
+          [
+            0.67080128,
+            0.52207202
+          ],
+          [
+            0.6629644,
+            0.5341019
+          ],
+          [
+            0.65416712,
+            0.54311031
+          ],
+          [
+            0.75841743,
+            0.39214292
+          ],
+          [
+            0.75292313,
+            0.40413547
+          ],
+          [
+            0.74766546,
+            0.41708708
+          ],
+          [
+            0.74242204,
+            0.43033412
+          ],
+          [
+            0.73641264,
+            0.44275489
+          ],
+          [
+            0.7292887,
+            0.45412672
+          ],
+          [
+            0.72148716,
+            0.4642086
+          ],
+          [
+            0.7136246,
+            0.47394907
+          ],
+          [
+            0.72368836,
+            0.32655689
+          ],
+          [
+            0.72714913,
+            0.32329813
+          ],
+          [
+            0.71703988,
+            0.3041327
+          ],
+          [
+            0.71972823,
+            0.31575856
+          ],
+          [
+            0.7289266,
+            0.33524385
+          ],
+          [
+            0.72714549,
+            0.32327187
+          ],
+          [
+            0.73452806,
+            0.34133387
+          ],
+          [
+            0.73056489,
+            0.32301307
+          ],
+          [
+            0.72439075,
+            0.31282359
+          ],
+          [
+            0.73399681,
+            0.33301732
+          ],
+          [
+            0.72260052,
+            0.26436445
+          ],
+          [
+            0.73475033,
+            0.27977487
+          ],
+          [
+            0.74583441,
+            0.29591116
+          ],
+          [
+            0.76146233,
+            0.33565351
+          ],
+          [
+            0.75502545,
+            0.31482136
+          ],
+          [
+            0.73922765,
+            0.26780391
+          ],
+          [
+            0.75355524,
+            0.28331375
+          ],
+          [
+            0.76853555,
+            0.32884708
+          ],
+          [
+            0.76385224,
+            0.30621207
+          ],
+          [
+            0.66644543,
+            0.44112372
+          ],
+          [
+            0.68112457,
+            0.49855193
+          ],
+          [
+            0.6773293,
+            0.46507376
+          ],
+          [
+            0.66850936,
+            0.46230599
+          ],
+          [
+            0.67304969,
+            0.48205099
+          ],
+          [
+            0.69232029,
+            0.48721054
+          ],
+          [
+            0.69224471,
+            0.49481478
+          ],
+          [
+            0.68736076,
+            0.50015473
+          ],
+          [
+            0.68811578,
+            0.4849458
+          ],
+          [
+            0.69587672,
+            0.48744845
+          ],
+          [
+            0.6935035,
+            0.48071238
+          ],
+          [
+            0.69818234,
+            0.46739638
+          ],
+          [
+            0.68310463,
+            0.45420098
+          ],
+          [
+            0.67012221,
+            0.44741517
+          ],
+          [
+            0.68153399,
+            0.46188632
+          ],
+          [
+            0.70497644,
+            0.47814003
+          ],
+          [
+            0.70274311,
+            0.48588821
+          ],
+          [
+            0.6951977,
+            0.48676917
+          ],
+          [
+            0.69617939,
+            0.48520249
+          ],
+          [
+            0.70099235,
+            0.47462168
+          ],
+          [
+            0.75514901,
+            0.36231956
+          ],
+          [
+            0.74933887,
+            0.38997725
+          ],
+          [
+            0.74371868,
+            0.41755292
+          ],
+          [
+            0.73850131,
+            0.35208532
+          ],
+          [
+            0.71610367,
+            0.39498106
+          ],
+          [
+            0.70130855,
+            0.4088783
+          ],
+          [
+            0.70429999,
+            0.42685944
+          ],
+          [
+            0.70998102,
+            0.43735725
+          ],
+          [
+            0.71619177,
+            0.45093277
+          ],
+          [
+            0.75471187,
+            0.37681183
+          ],
+          [
+            0.7446084,
+            0.43009475
+          ],
+          [
+            0.73844725,
+            0.45390552
+          ],
+          [
+            0.73102593,
+            0.45884287
+          ],
+          [
+            0.72405797,
+            0.45682317
+          ],
+          [
+            0.73783183,
+            0.44525665
+          ],
+          [
+            0.75629181,
+            0.38872609
+          ],
+          [
+            0.75798672,
+            0.38496971
+          ],
+          [
+            0.75503361,
+            0.37831905
+          ],
+          [
+            0.75521529,
+            0.38369891
+          ],
+          [
+            0.75843173,
+            0.39211193
+          ],
+          [
+            0.75797468,
+            0.38497066
+          ],
+          [
+            0.76130396,
+            0.39383936
+          ],
+          [
+            0.76086968,
+            0.38484332
+          ],
+          [
+            0.75826347,
+            0.38058719
+          ],
+          [
+            0.76178181,
+            0.3899157
+          ],
+          [
+            0.77062839,
+            0.35866836
+          ],
+          [
+            0.77365649,
+            0.36025244
+          ],
+          [
+            0.77591383,
+            0.36397022
+          ],
+          [
+            0.77814293,
+            0.36740068
+          ],
+          [
+            0.78051633,
+            0.36935607
+          ],
+          [
+            0.77224696,
+            0.35372472
+          ],
+          [
+            0.77572846,
+            0.35408759
+          ],
+          [
+            0.77974349,
+            0.35645339
+          ],
+          [
+            0.78176367,
+            0.36219484
+          ]
+        ],
+        "landmark106Pixels": [
+          [
+            562.9008,
+            294.5679
+          ],
+          [
+            572.7773,
+            103.6963
+          ],
+          [
+            506.8383,
+            207.9721
+          ],
+          [
+            509.655,
+            222.3561
+          ],
+          [
+            514.5726,
+            236.576
+          ],
+          [
+            521.0966,
+            250.3276
+          ],
+          [
+            529.2188,
+            264.015
+          ],
+          [
+            538.9089,
+            276.6291
+          ],
+          [
+            550.1541,
+            287.1532
+          ],
+          [
+            562.3312,
+            112.5184
+          ],
+          [
+            551.7983,
+            121.7891
+          ],
+          [
+            541.3607,
+            131.5246
+          ],
+          [
+            531.4592,
+            142.0144
+          ],
+          [
+            522.3354,
+            153.4872
+          ],
+          [
+            514.4139,
+            166.1117
+          ],
+          [
+            508.7998,
+            179.5936
+          ],
+          [
+            506.3772,
+            193.5732
+          ],
+          [
+            669.0999,
+            206.1653
+          ],
+          [
+            617.3776,
+            261.0661
+          ],
+          [
+            609.9656,
+            266.1238
+          ],
+          [
+            602.3778,
+            271.1897
+          ],
+          [
+            594.1207,
+            275.5058
+          ],
+          [
+            586.9511,
+            281.9189
+          ],
+          [
+            580.0939,
+            288.415
+          ],
+          [
+            572.3962,
+            293.2796
+          ],
+          [
+            663.6152,
+            211.7572
+          ],
+          [
+            658.8077,
+            218.2332
+          ],
+          [
+            654.2073,
+            225.227
+          ],
+          [
+            649.6193,
+            232.3804
+          ],
+          [
+            644.3611,
+            239.0876
+          ],
+          [
+            638.1276,
+            245.2284
+          ],
+          [
+            631.3013,
+            250.6726
+          ],
+          [
+            624.4215,
+            255.9325
+          ],
+          [
+            633.2273,
+            176.3407
+          ],
+          [
+            636.2555,
+            174.581
+          ],
+          [
+            627.4099,
+            164.2317
+          ],
+          [
+            629.7622,
+            170.5096
+          ],
+          [
+            637.8108,
+            181.0317
+          ],
+          [
+            636.2523,
+            174.5668
+          ],
+          [
+            642.712,
+            184.3203
+          ],
+          [
+            639.2443,
+            174.4271
+          ],
+          [
+            633.8419,
+            168.9247
+          ],
+          [
+            642.2472,
+            179.8293
+          ],
+          [
+            632.2755,
+            142.7568
+          ],
+          [
+            642.9066,
+            151.0784
+          ],
+          [
+            652.6051,
+            159.792
+          ],
+          [
+            666.2795,
+            181.2529
+          ],
+          [
+            660.6473,
+            170.0035
+          ],
+          [
+            646.8242,
+            144.6141
+          ],
+          [
+            659.3608,
+            152.9894
+          ],
+          [
+            672.4686,
+            177.5774
+          ],
+          [
+            668.3707,
+            165.3545
+          ],
+          [
+            583.1398,
+            238.2068
+          ],
+          [
+            595.984,
+            269.218
+          ],
+          [
+            592.6631,
+            251.1398
+          ],
+          [
+            584.9457,
+            249.6452
+          ],
+          [
+            588.9185,
+            260.3075
+          ],
+          [
+            605.7803,
+            263.0937
+          ],
+          [
+            605.7141,
+            267.2
+          ],
+          [
+            601.4407,
+            270.0836
+          ],
+          [
+            602.1013,
+            261.8707
+          ],
+          [
+            608.8922,
+            263.2222
+          ],
+          [
+            606.8156,
+            259.5847
+          ],
+          [
+            610.9095,
+            252.394
+          ],
+          [
+            597.7166,
+            245.2685
+          ],
+          [
+            586.3569,
+            241.6042
+          ],
+          [
+            596.3422,
+            249.4186
+          ],
+          [
+            616.8544,
+            258.1956
+          ],
+          [
+            614.9002,
+            262.3796
+          ],
+          [
+            608.298,
+            262.8553
+          ],
+          [
+            609.157,
+            262.0093
+          ],
+          [
+            613.3683,
+            256.2957
+          ],
+          [
+            660.7554,
+            195.6526
+          ],
+          [
+            655.6715,
+            210.5877
+          ],
+          [
+            650.7538,
+            225.4786
+          ],
+          [
+            646.1887,
+            190.1261
+          ],
+          [
+            626.5907,
+            213.2898
+          ],
+          [
+            613.645,
+            220.7943
+          ],
+          [
+            616.2625,
+            230.5041
+          ],
+          [
+            621.2334,
+            236.1729
+          ],
+          [
+            626.6678,
+            243.5037
+          ],
+          [
+            660.3729,
+            203.4784
+          ],
+          [
+            651.5323,
+            232.2512
+          ],
+          [
+            646.1414,
+            245.109
+          ],
+          [
+            639.6477,
+            247.7751
+          ],
+          [
+            633.5507,
+            246.6845
+          ],
+          [
+            645.6028,
+            240.4386
+          ],
+          [
+            661.7553,
+            209.9121
+          ],
+          [
+            663.2384,
+            207.8836
+          ],
+          [
+            660.6544,
+            204.2923
+          ],
+          [
+            660.8134,
+            207.1974
+          ],
+          [
+            663.6277,
+            211.7404
+          ],
+          [
+            663.2278,
+            207.8842
+          ],
+          [
+            666.141,
+            212.6732
+          ],
+          [
+            665.761,
+            207.8154
+          ],
+          [
+            663.4805,
+            205.5171
+          ],
+          [
+            666.5591,
+            210.5545
+          ],
+          [
+            674.2999,
+            193.6809
+          ],
+          [
+            676.9494,
+            194.5363
+          ],
+          [
+            678.9246,
+            196.5439
+          ],
+          [
+            680.8751,
+            198.3964
+          ],
+          [
+            682.9518,
+            199.4523
+          ],
+          [
+            675.7161,
+            191.0114
+          ],
+          [
+            678.7624,
+            191.2073
+          ],
+          [
+            682.2756,
+            192.4848
+          ],
+          [
+            684.0432,
+            195.5852
+          ]
+        ],
+        "landmark106Validity": {
+          "insideFrameFraction": 1.0,
+          "reasonCodes": [],
+          "spanPixels": {
+            "x": 177.666,
+            "y": 190.8716
+          },
+          "valid": true
+        }
+      }
+    ],
+    "inferenceMs": 20.899,
+    "landmarkPreprocessing": {
+      "authority": "INSIGHTFACE_OFFICIAL_LANDMARK_PY_PARITY_V1",
+      "contract": "INSIGHTFACE_2D106_PREPROCESS_PARITY_V1",
+      "inputMean": 0.0,
+      "inputStd": 1.0,
+      "looseFaceCropScale": 1.5,
+      "mode": "OFFICIAL_PARITY",
+      "modelSha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+      "productionEligible": true,
+      "swapRB": true
+    },
+    "landmarkSemanticMap": {
+      "drivesDecision": false,
+      "status": "NOT_VALIDATED_FOR_PRODUCTION"
+    },
+    "mustNotDriveProductionDecision": true,
+    "mutationDispatches": 0,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "providerId": "INSIGHTFACE_SCRFD_2D106",
+    "providerPlan": {
+      "active": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "actualByTask": {
+        "detection": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "landmark_2d_106": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      },
+      "available": [
+        "TensorrtExecutionProvider",
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "cpuFallback": false,
+      "cudaAvailable": true,
+      "cudaRequested": true,
+      "landmark2d106Preprocessing": {
+        "authority": "INSIGHTFACE_OFFICIAL_LANDMARK_PY_PARITY_V1",
+        "contract": "INSIGHTFACE_2D106_PREPROCESS_PARITY_V1",
+        "inputMean": 0.0,
+        "inputStd": 1.0,
+        "looseFaceCropScale": 1.5,
+        "mode": "OFFICIAL_PARITY",
+        "modelSha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+        "productionEligible": true,
+        "swapRB": true
+      },
+      "registeredNvidiaDllDirectories": [
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cublas\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cuda_nvrtc\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cuda_runtime\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cudnn\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cufft\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\curand\\bin",
+        "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\nvjitlink\\bin"
+      ],
+      "requested": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ]
+    },
+    "providerVersion": "0.6.45-task1.1-official-preprocess-parity-v1",
+    "reasonCodes": [],
+    "shadowOnly": true,
+    "sourceRaster": {
+      "height": 540,
+      "width": 875
+    },
+    "status": "OK"
+  },
+  "insightFacePersonBindingV3": {
+    "ambiguousFaceCount": 0,
+    "bindingSetDigest": "1b227c464c7d07d22bf708809b06101eedb49f03b45952b84d38ce06fff3eef0",
+    "bindings": [
+      {
+        "bindingDigest": "7b7924bb94cafc7dccde55a95802a5c454ee126901d377dddb6ef8458e4c675c",
+        "candidateCount": 0,
+        "candidates": [],
+        "confidence": 0.0,
+        "faceId": "if1",
+        "personId": null,
+        "reasonCodes": [
+          "INSIGHTFACE_FACE_PERSON_NO_QUALIFIED_PERSON"
+        ],
+        "status": "UNBOUND"
+      }
+    ],
+    "boundFaceCount": 0,
+    "boundFaceIdsByPersonId": {},
+    "contract": "INSIGHTFACE_FACE_PERSON_BINDING_V3",
+    "faceCount": 1,
+    "genderAgeHeuristicUsed": false,
+    "identityRecognitionUsed": false,
+    "mutationDispatches": 0,
+    "personCount": 0,
+    "policyVersion": "0.6.44-task5-v1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "sideHeuristicUsed": false,
+    "status": "READY"
+  },
+  "multiPersonRetainSetGuidedCropAudit": {
+    "centerDeltaSourcePixels": null,
+    "centerDistanceSourcePixels": null,
+    "comparisonContract": "CURRENT_CROP_VS_RETAIN_SET_GUIDED_CROP_AUDIT_V1",
+    "comparisonStatus": "NOT_APPLICABLE",
+    "contract": "API_COMPOSITION_RETAIN_SET_GUIDED_CROP_AUDIT_V1",
+    "cropSizeChanged": false,
+    "currentCanonicalCropBoxNormalized": {
+      "bottom": 0.640970345695238,
+      "left": 0.44666875020408164,
+      "right": 0.9691177297959184,
+      "top": 0.16477986950476195
+    },
+    "currentRetainSetSatisfied": false,
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "guidedCropProposalDigest": null,
+    "guidedPositionProposal": null,
+    "guidedScaleChange": 0,
+    "policy": "MINIMUM_DISPLACEMENT_FIXED_WINDOW_RETAIN_SET_CROP_V1",
+    "positionDeltaSequencePixels": null,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "proposedCropBoxNormalized": null,
+    "proposedRetainSetSatisfied": false,
+    "recommendedRetainSetPersonIds": [],
+    "singleSubjectSafePlacement": null,
+    "status": "NOT_APPLICABLE"
+  },
+  "multiPersonRetainSetGuidedShadowQualityAudit": {
+    "addedReasonCodes": [],
+    "addedWarningCodes": [],
+    "baselineQualityGate": {},
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "comparisonPolicy": "CURRENT_QUALITY_VS_GUIDED_SHADOW_QUALITY_V1",
+    "comparisonStatus": "NOT_APPLICABLE",
+    "contract": "API_COMPOSITION_RETAIN_SET_GUIDED_SHADOW_QUALITY_V1",
+    "decisionImpact": "NONE",
+    "diagnosticCodes": [],
+    "guidedShadowQualityDigest": null,
+    "policy": "GUIDED_SHADOW_NO_REGRESSION_CANDIDATE_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "primaryPersonComparison": {},
+    "primarySafetyDominance": {
+      "applicable": false,
+      "applied": false,
+      "diagnosticCodes": [],
+      "policy": "GUIDED_SHADOW_PRIMARY_SAFETY_DOMINANCE_V1",
+      "removedPrimarySafetyReasonCodes": [],
+      "selectedPersonId": null,
+      "toleratedAddedWarningCodes": []
+    },
+    "productionUseAllowed": false,
+    "promotionCandidate": false,
+    "promotionReasonCode": null,
+    "removedReasonCodes": [],
+    "removedWarningCodes": [],
+    "retainSetBinding": {},
+    "shadowQualityGate": null,
+    "status": "NOT_APPLICABLE",
+    "unchangedReasonCodes": [],
+    "unchangedWarningCodes": []
+  },
+  "mutationDispatches": 0,
+  "ordinal": 485,
+  "ordinarySinglePersonFaceSafeRepair": {
+    "applicable": false,
+    "contract": "ORDINARY_SINGLE_PERSON_FACE_SAFE_REPAIR_V1",
+    "cropSizeChanged": false,
+    "currentPrimaryFaceSafe": false,
+    "diagnosticCodes": [],
+    "guidedPositionProposal": null,
+    "headPlacementTargetSatisfied": false,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "promotionCandidate": false,
+    "proposedCropBoxNormalized": null,
+    "proposedPrimaryFaceSafe": false,
+    "repairProposalDigest": null,
+    "repairShadowValidationDigest": null,
+    "safeInsetSatisfied": false,
+    "selectedFaceIndex": null,
+    "selectedPersonId": null,
+    "shadowValidation": null,
+    "status": "NOT_APPLICABLE"
+  },
+  "oversizedFaceFeaturePriority": {
+    "contract": "OVERSIZED_FACE_FEATURE_PRIORITY_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "status": "NOT_APPLICABLE"
+  },
+  "positionResult": {
+    "adapterResult": {
+      "anchorWriteAllowed": false,
+      "contract": "MIDDLE_POSITION_ADAPTER_V2",
+      "effectiveMappingEcho": {
+        "observedMotionScaleFactor": 1.0,
+        "offsetPixels": {
+          "x": 170.0,
+          "y": 0.0
+        }
+      },
+      "frozenInputEcho": {
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "currentPositionRaw": [
+          0.5,
+          0.5
+        ],
+        "rotationDegrees": 0.0,
+        "scalePercent": 210.0,
+        "uniformScale": true
+      },
+      "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+      "positionWriteAllowed": false,
+      "premiereReadOnly": true,
+      "productionUseAllowed": false,
+      "proposedHostParameters": {
+        "POSITION": [
+          0.06342419600000013,
+          0.70396227404
+        ]
+      },
+      "reasonCodes": [],
+      "rotationWriteAllowed": false,
+      "roundTrip": {
+        "maxErrorPixels": 2.2737367544323206e-13,
+        "predictedSequencePosition": {
+          "x": 391.98468600000047,
+          "y": 1520.5585119264001
+        },
+        "recommendedSequencePosition": {
+          "x": 391.98468600000047,
+          "y": 1520.5585119264
+        },
+        "status": "POSITION_ROUND_TRIP_VERIFIED",
+        "tolerancePixels": 1e-06
+      },
+      "scaleWriteAllowed": false,
+      "sequenceGeometryEcho": {
+        "height": 2160,
+        "width": 3840
+      },
+      "sourceGeometryEcho": {
+        "height": 2160,
+        "width": 3500
+      },
+      "status": "POSITION_ADAPTER_VERIFIED",
+      "writesPerformed": 0
+    },
+    "anchorSource": {
+      "x": 1750.0,
+      "y": 1080.0
+    },
+    "anchorWriteAllowed": false,
+    "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+    "cropCenterSource": {
+      "x": 2477.62634,
+      "y": 870.210232416
+    },
+    "frozenInputEcho": {
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "currentPositionRaw": [
+        0.5,
+        0.5
+      ],
+      "rotationDegrees": 0.0,
+      "scalePercent": 210.0,
+      "uniformScale": true
+    },
+    "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+    "geometryFactor": 2.1,
+    "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+    "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+    "positionWriteAllowed": false,
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "proposedHostParameters": {
+      "POSITION": [
+        0.06342419600000013,
+        0.70396227404
+      ]
+    },
+    "reasonCodes": [],
+    "recommendedSequencePosition": {
+      "x": 391.98468600000047,
+      "y": 1520.5585119264
+    },
+    "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+    "rotationWriteAllowed": false,
+    "scaleWriteAllowed": false,
+    "status": "API_COMPOSITION_POSITION_VERIFIED"
+  },
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "productionAuthorityConsumptions": 0,
+  "productionUseAllowed": false,
+  "providerCallsForClip": 0,
+  "providerPayloadMembership": false,
+  "reasonCodes": [],
+  "relevantPersonRetainSetV2": {
+    "contract": "RELEVANT_PERSON_RETAIN_SET_V2",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "status": "NOT_APPLICABLE"
+  },
+  "schemaVersion": "api_middle_frame_composition.result.v1",
+  "semanticApiSkipped": true,
+  "semanticSubjectBinding": {
+    "bindingDigest": "ff3c268b64e4cb185fb7091892e6bfb9ffc30d084aa937afdf29039d4986a172",
+    "confidence": null,
+    "contract": "SEMANTIC_SUBJECT_BINDING_V2",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "primaryFaceIndex": null,
+    "primaryPersonId": null,
+    "productionUseAllowed": false,
+    "reasonCodes": [
+      "SEMANTIC_PRIMARY_MISSING"
+    ],
+    "retainSetPersonIds": [],
+    "status": "NOT_APPLICABLE"
+  },
+  "singleFaceDirectLiveRoute": {
+    "apiBypass": true,
+    "apiBypassReason": "SINGLE_RELIABLE_INSIGHTFACE_FACE",
+    "clipInstanceId": "dc409d950421de97243860ac",
+    "cloudSemanticAuthorityConsumed": false,
+    "contract": "SINGLE_FACE_DIRECT_LIVE_SCHEDULER_ROUTE_V1",
+    "directPosition": {
+      "acceptedTier": "TOP_TRIM_ALLOWED",
+      "canonicalCrop": {
+        "aiCenterNormalized": [
+          0.70789324,
+          0.4028751076
+        ],
+        "aiCropBoxNormalized": {
+          "bottom": 0.6409703457,
+          "left": 0.4466687502,
+          "right": 0.9691177298,
+          "top": 0.1647798695
+        },
+        "canonicalCenterNormalized": [
+          0.70789324,
+          0.4028751076
+        ],
+        "canonicalCropBoxNormalized": {
+          "bottom": 0.640970345695238,
+          "left": 0.44666875020408164,
+          "right": 0.9691177297959184,
+          "top": 0.16477986950476195
+        },
+        "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+        "canonicalHeightNormalized": 0.4761904761904761,
+        "canonicalWidthNormalized": 0.5224489795918367,
+        "centerClampDeltaNormalized": [
+          0.0,
+          0.0
+        ],
+        "clipInstanceId": "dc409d950421de97243860ac",
+        "contract": "API_MIDDLE_FRAME_COMPOSITION_CANONICAL_CROP_V1",
+        "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+        "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "productionAuthorityConsumptions": 0,
+        "providerCalls": 0,
+        "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+        "secondApiCallRequired": false,
+        "sizeDeviationNormalized": {
+          "height": 9.523881683293212e-12,
+          "width": 8.163358877766314e-12
+        },
+        "status": "API_COMPOSITION_CROP_CANONICAL_VERIFIED"
+      },
+      "contract": "FACE_FIRST_DIRECT_POSITION_V1",
+      "criticalFeatureSafety": {
+        "contract": "CRITICAL_FACE_FEATURE_RETENTION_V1",
+        "criticalFeatureSafe": true,
+        "faceContourRetention": 1.0,
+        "groupRetention": {
+          "FACE_CONTOUR": 1.0,
+          "LEFT_EYE": 1.0,
+          "MOUTH": 1.0,
+          "NOSE": 1.0,
+          "RIGHT_EYE": 1.0
+        },
+        "leftEyeSafe": true,
+        "marginNormalized": {
+          "x": 0.01044898,
+          "y": 0.00952381
+        },
+        "mouthSafe": true,
+        "namedCriticalFeatureAuthorityEnabled": true,
+        "noseSafe": true,
+        "rightEyeSafe": true,
+        "safetyDigest": "c8f6c00fd2bb7f51c51ac0df5442b272beb916f02f53d5a018e67323b4265e58",
+        "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+        "sourceFeaturePreclipped": []
+      },
+      "faceCenterRelativeFinal": [
+        0.5,
+        0.4
+      ],
+      "finalDirectPosition": [
+        0.06342419600000013,
+        0.70396227404
+      ],
+      "idealCropWindowNormalized": {
+        "bottom": 0.6409703457,
+        "left": 0.4466687502,
+        "right": 0.9691177298,
+        "top": 0.1647798695
+      },
+      "legalCriticalCenterIntervals": {
+        "x": [
+          0.5110063,
+          0.73877551
+        ],
+        "y": [
+          0.2715833,
+          0.53270413
+        ]
+      },
+      "mutationDispatches": 0,
+      "observedFaceCenterNormalized": [
+        0.70789324,
+        0.35525606
+      ],
+      "positionMapping": {
+        "adapterResult": {
+          "anchorWriteAllowed": false,
+          "contract": "MIDDLE_POSITION_ADAPTER_V2",
+          "effectiveMappingEcho": {
+            "observedMotionScaleFactor": 1.0,
+            "offsetPixels": {
+              "x": 170.0,
+              "y": 0.0
+            }
+          },
+          "frozenInputEcho": {
+            "anchor": [
+              0.5,
+              0.5
+            ],
+            "currentPositionRaw": [
+              0.5,
+              0.5
+            ],
+            "rotationDegrees": 0.0,
+            "scalePercent": 210.0,
+            "uniformScale": true
+          },
+          "positionEncoding": "VERIFIED_SOURCE_RASTER_NORMALIZED_POINT",
+          "positionWriteAllowed": false,
+          "premiereReadOnly": true,
+          "productionUseAllowed": false,
+          "proposedHostParameters": {
+            "POSITION": [
+              0.06342419600000013,
+              0.70396227404
+            ]
+          },
+          "reasonCodes": [],
+          "rotationWriteAllowed": false,
+          "roundTrip": {
+            "maxErrorPixels": 2.2737367544323206e-13,
+            "predictedSequencePosition": {
+              "x": 391.98468600000047,
+              "y": 1520.5585119264001
+            },
+            "recommendedSequencePosition": {
+              "x": 391.98468600000047,
+              "y": 1520.5585119264
+            },
+            "status": "POSITION_ROUND_TRIP_VERIFIED",
+            "tolerancePixels": 1e-06
+          },
+          "scaleWriteAllowed": false,
+          "sequenceGeometryEcho": {
+            "height": 2160,
+            "width": 3840
+          },
+          "sourceGeometryEcho": {
+            "height": 2160,
+            "width": 3500
+          },
+          "status": "POSITION_ADAPTER_VERIFIED",
+          "writesPerformed": 0
+        },
+        "anchorSource": {
+          "x": 1750.0,
+          "y": 1080.0
+        },
+        "anchorWriteAllowed": false,
+        "canonicalCropDigest": "2b5b30d085c9bdb09f1d89669b23799b1096475ff81b63d93e533bc0c3a61ef3",
+        "clipInstanceId": "dc409d950421de97243860ac",
+        "contract": "API_MIDDLE_FRAME_COMPOSITION_POSITION_V1",
+        "cropCenterSource": {
+          "x": 2477.62634,
+          "y": 870.210232416
+        },
+        "frozenInputEcho": {
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "currentPositionRaw": [
+            0.5,
+            0.5
+          ],
+          "rotationDegrees": 0.0,
+          "scalePercent": 210.0,
+          "uniformScale": true
+        },
+        "geometryContextDigest": "096b34410b3ac853c5142f3788ef516e529ec9b6269c7c3dd7ba0d8ed08acd50",
+        "geometryFactor": 2.1,
+        "mappingDigest": "857e2f831d58a235b800e7a0b64ee3ca5db74d58da8130b94ad221975c4fa4a0",
+        "positionAdapterRoundTripStatus": "POSITION_ROUND_TRIP_VERIFIED",
+        "positionWriteAllowed": false,
+        "premiereReadOnly": true,
+        "premiereWriteCalls": 0,
+        "productionUseAllowed": false,
+        "proposedHostParameters": {
+          "POSITION": [
+            0.06342419600000013,
+            0.70396227404
+          ]
+        },
+        "reasonCodes": [],
+        "recommendedSequencePosition": {
+          "x": 391.98468600000047,
+          "y": 1520.5585119264
+        },
+        "requiredCropWindowDigest": "e746c0a702d1db77918eb95893b32fdea07964a477446cb9c17292f297d018a1",
+        "rotationWriteAllowed": false,
+        "scaleWriteAllowed": false,
+        "status": "API_COMPOSITION_POSITION_VERIFIED"
+      },
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionEligible": true,
+      "reasonCodes": [],
+      "repairDeltaNormalized": [
+        0.0,
+        0.0
+      ],
+      "repairedCropWindowNormalized": {
+        "bottom": 0.6409703457,
+        "left": 0.4466687502,
+        "right": 0.9691177298,
+        "top": 0.1647798695
+      },
+      "solverDigest": "00ea335c800e661e3e6db3b11c07cad56f079cc3995fd6623254987d1150e4fa",
+      "status": "DIRECT_POSITION_READY",
+      "targetFaceCenterNormalized": [
+        0.5,
+        0.4
+      ]
+    },
+    "fallbackReason": null,
+    "fallbackToProvider": false,
+    "finalPositionAuthority": "FACE_FIRST_DIRECT_POSITION_V1",
+    "finalPositionSource": "LOCAL_INSIGHTFACE_DIRECT",
+    "insightFaceGeometry": {
+      "clipInstanceId": "dc409d950421de97243860ac",
+      "contract": "INSIGHTFACE_FACE_GEOMETRY_V1",
+      "evidenceDigest": "a1f9d81492bd2d4ac704f2804998591779223fd77d89d6c82c7bec7d5ee6795b",
+      "faceCount": 1,
+      "faces": [
+        {
+          "bboxNormalized": {
+            "bottom": 0.54895523,
+            "left": 0.60424393,
+            "right": 0.81154255,
+            "top": 0.16155689
+          },
+          "bboxPixels": {
+            "bottom": 296.4358,
+            "left": 528.7134,
+            "right": 710.0997,
+            "top": 87.2407
+          },
+          "confidence": 0.80560559,
+          "detectorKps5Pixels": [
+            [
+              651.948,
+              174.8506
+            ],
+            [
+              669.4389,
+              189.1723
+            ],
+            [
+              658.7485,
+              232.9347
+            ],
+            [
+              593.0056,
+              239.1738
+            ],
+            [
+              608.1976,
+              252.2171
+            ]
+          ],
+          "id": "if1",
+          "landmark106Normalized": [
+            [
+              0.6433152,
+              0.54549605
+            ],
+            [
+              0.65460271,
+              0.19203018
+            ],
+            [
+              0.57924384,
+              0.38513359
+            ],
+            [
+              0.58246291,
+              0.41177058
+            ],
+            [
+              0.58808303,
+              0.43810374
+            ],
+            [
+              0.59553897,
+              0.46356964
+            ],
+            [
+              0.6048215,
+              0.48891675
+            ],
+            [
+              0.61589587,
+              0.51227611
+            ],
+            [
+              0.62874758,
+              0.5317651
+            ],
+            [
+              0.64266425,
+              0.2083675
+            ],
+            [
+              0.63062668,
+              0.22553535
+            ],
+            [
+              0.61869794,
+              0.24356407
+            ],
+            [
+              0.60738188,
+              0.2629897
+            ],
+            [
+              0.5969547,
+              0.28423563
+            ],
+            [
+              0.58790159,
+              0.30761418
+            ],
+            [
+              0.58148551,
+              0.3325808
+            ],
+            [
+              0.57871681,
+              0.35846886
+            ],
+            [
+              0.76468557,
+              0.38178751
+            ],
+            [
+              0.70557445,
+              0.48345581
+            ],
+            [
+              0.6971035,
+              0.49282187
+            ],
+            [
+              0.6884318,
+              0.50220317
+            ],
+            [
+              0.67899513,
+              0.51019591
+            ],
+            [
+              0.67080128,
+              0.52207202
+            ],
+            [
+              0.6629644,
+              0.5341019
+            ],
+            [
+              0.65416712,
+              0.54311031
+            ],
+            [
+              0.75841743,
+              0.39214292
+            ],
+            [
+              0.75292313,
+              0.40413547
+            ],
+            [
+              0.74766546,
+              0.41708708
+            ],
+            [
+              0.74242204,
+              0.43033412
+            ],
+            [
+              0.73641264,
+              0.44275489
+            ],
+            [
+              0.7292887,
+              0.45412672
+            ],
+            [
+              0.72148716,
+              0.4642086
+            ],
+            [
+              0.7136246,
+              0.47394907
+            ],
+            [
+              0.72368836,
+              0.32655689
+            ],
+            [
+              0.72714913,
+              0.32329813
+            ],
+            [
+              0.71703988,
+              0.3041327
+            ],
+            [
+              0.71972823,
+              0.31575856
+            ],
+            [
+              0.7289266,
+              0.33524385
+            ],
+            [
+              0.72714549,
+              0.32327187
+            ],
+            [
+              0.73452806,
+              0.34133387
+            ],
+            [
+              0.73056489,
+              0.32301307
+            ],
+            [
+              0.72439075,
+              0.31282359
+            ],
+            [
+              0.73399681,
+              0.33301732
+            ],
+            [
+              0.72260052,
+              0.26436445
+            ],
+            [
+              0.73475033,
+              0.27977487
+            ],
+            [
+              0.74583441,
+              0.29591116
+            ],
+            [
+              0.76146233,
+              0.33565351
+            ],
+            [
+              0.75502545,
+              0.31482136
+            ],
+            [
+              0.73922765,
+              0.26780391
+            ],
+            [
+              0.75355524,
+              0.28331375
+            ],
+            [
+              0.76853555,
+              0.32884708
+            ],
+            [
+              0.76385224,
+              0.30621207
+            ],
+            [
+              0.66644543,
+              0.44112372
+            ],
+            [
+              0.68112457,
+              0.49855193
+            ],
+            [
+              0.6773293,
+              0.46507376
+            ],
+            [
+              0.66850936,
+              0.46230599
+            ],
+            [
+              0.67304969,
+              0.48205099
+            ],
+            [
+              0.69232029,
+              0.48721054
+            ],
+            [
+              0.69224471,
+              0.49481478
+            ],
+            [
+              0.68736076,
+              0.50015473
+            ],
+            [
+              0.68811578,
+              0.4849458
+            ],
+            [
+              0.69587672,
+              0.48744845
+            ],
+            [
+              0.6935035,
+              0.48071238
+            ],
+            [
+              0.69818234,
+              0.46739638
+            ],
+            [
+              0.68310463,
+              0.45420098
+            ],
+            [
+              0.67012221,
+              0.44741517
+            ],
+            [
+              0.68153399,
+              0.46188632
+            ],
+            [
+              0.70497644,
+              0.47814003
+            ],
+            [
+              0.70274311,
+              0.48588821
+            ],
+            [
+              0.6951977,
+              0.48676917
+            ],
+            [
+              0.69617939,
+              0.48520249
+            ],
+            [
+              0.70099235,
+              0.47462168
+            ],
+            [
+              0.75514901,
+              0.36231956
+            ],
+            [
+              0.74933887,
+              0.38997725
+            ],
+            [
+              0.74371868,
+              0.41755292
+            ],
+            [
+              0.73850131,
+              0.35208532
+            ],
+            [
+              0.71610367,
+              0.39498106
+            ],
+            [
+              0.70130855,
+              0.4088783
+            ],
+            [
+              0.70429999,
+              0.42685944
+            ],
+            [
+              0.70998102,
+              0.43735725
+            ],
+            [
+              0.71619177,
+              0.45093277
+            ],
+            [
+              0.75471187,
+              0.37681183
+            ],
+            [
+              0.7446084,
+              0.43009475
+            ],
+            [
+              0.73844725,
+              0.45390552
+            ],
+            [
+              0.73102593,
+              0.45884287
+            ],
+            [
+              0.72405797,
+              0.45682317
+            ],
+            [
+              0.73783183,
+              0.44525665
+            ],
+            [
+              0.75629181,
+              0.38872609
+            ],
+            [
+              0.75798672,
+              0.38496971
+            ],
+            [
+              0.75503361,
+              0.37831905
+            ],
+            [
+              0.75521529,
+              0.38369891
+            ],
+            [
+              0.75843173,
+              0.39211193
+            ],
+            [
+              0.75797468,
+              0.38497066
+            ],
+            [
+              0.76130396,
+              0.39383936
+            ],
+            [
+              0.76086968,
+              0.38484332
+            ],
+            [
+              0.75826347,
+              0.38058719
+            ],
+            [
+              0.76178181,
+              0.3899157
+            ],
+            [
+              0.77062839,
+              0.35866836
+            ],
+            [
+              0.77365649,
+              0.36025244
+            ],
+            [
+              0.77591383,
+              0.36397022
+            ],
+            [
+              0.77814293,
+              0.36740068
+            ],
+            [
+              0.78051633,
+              0.36935607
+            ],
+            [
+              0.77224696,
+              0.35372472
+            ],
+            [
+              0.77572846,
+              0.35408759
+            ],
+            [
+              0.77974349,
+              0.35645339
+            ],
+            [
+              0.78176367,
+              0.36219484
+            ]
+          ],
+          "landmark106Pixels": [
+            [
+              562.9008,
+              294.5679
+            ],
+            [
+              572.7773,
+              103.6963
+            ],
+            [
+              506.8383,
+              207.9721
+            ],
+            [
+              509.655,
+              222.3561
+            ],
+            [
+              514.5726,
+              236.576
+            ],
+            [
+              521.0966,
+              250.3276
+            ],
+            [
+              529.2188,
+              264.015
+            ],
+            [
+              538.9089,
+              276.6291
+            ],
+            [
+              550.1541,
+              287.1532
+            ],
+            [
+              562.3312,
+              112.5184
+            ],
+            [
+              551.7983,
+              121.7891
+            ],
+            [
+              541.3607,
+              131.5246
+            ],
+            [
+              531.4592,
+              142.0144
+            ],
+            [
+              522.3354,
+              153.4872
+            ],
+            [
+              514.4139,
+              166.1117
+            ],
+            [
+              508.7998,
+              179.5936
+            ],
+            [
+              506.3772,
+              193.5732
+            ],
+            [
+              669.0999,
+              206.1653
+            ],
+            [
+              617.3776,
+              261.0661
+            ],
+            [
+              609.9656,
+              266.1238
+            ],
+            [
+              602.3778,
+              271.1897
+            ],
+            [
+              594.1207,
+              275.5058
+            ],
+            [
+              586.9511,
+              281.9189
+            ],
+            [
+              580.0939,
+              288.415
+            ],
+            [
+              572.3962,
+              293.2796
+            ],
+            [
+              663.6152,
+              211.7572
+            ],
+            [
+              658.8077,
+              218.2332
+            ],
+            [
+              654.2073,
+              225.227
+            ],
+            [
+              649.6193,
+              232.3804
+            ],
+            [
+              644.3611,
+              239.0876
+            ],
+            [
+              638.1276,
+              245.2284
+            ],
+            [
+              631.3013,
+              250.6726
+            ],
+            [
+              624.4215,
+              255.9325
+            ],
+            [
+              633.2273,
+              176.3407
+            ],
+            [
+              636.2555,
+              174.581
+            ],
+            [
+              627.4099,
+              164.2317
+            ],
+            [
+              629.7622,
+              170.5096
+            ],
+            [
+              637.8108,
+              181.0317
+            ],
+            [
+              636.2523,
+              174.5668
+            ],
+            [
+              642.712,
+              184.3203
+            ],
+            [
+              639.2443,
+              174.4271
+            ],
+            [
+              633.8419,
+              168.9247
+            ],
+            [
+              642.2472,
+              179.8293
+            ],
+            [
+              632.2755,
+              142.7568
+            ],
+            [
+              642.9066,
+              151.0784
+            ],
+            [
+              652.6051,
+              159.792
+            ],
+            [
+              666.2795,
+              181.2529
+            ],
+            [
+              660.6473,
+              170.0035
+            ],
+            [
+              646.8242,
+              144.6141
+            ],
+            [
+              659.3608,
+              152.9894
+            ],
+            [
+              672.4686,
+              177.5774
+            ],
+            [
+              668.3707,
+              165.3545
+            ],
+            [
+              583.1398,
+              238.2068
+            ],
+            [
+              595.984,
+              269.218
+            ],
+            [
+              592.6631,
+              251.1398
+            ],
+            [
+              584.9457,
+              249.6452
+            ],
+            [
+              588.9185,
+              260.3075
+            ],
+            [
+              605.7803,
+              263.0937
+            ],
+            [
+              605.7141,
+              267.2
+            ],
+            [
+              601.4407,
+              270.0836
+            ],
+            [
+              602.1013,
+              261.8707
+            ],
+            [
+              608.8922,
+              263.2222
+            ],
+            [
+              606.8156,
+              259.5847
+            ],
+            [
+              610.9095,
+              252.394
+            ],
+            [
+              597.7166,
+              245.2685
+            ],
+            [
+              586.3569,
+              241.6042
+            ],
+            [
+              596.3422,
+              249.4186
+            ],
+            [
+              616.8544,
+              258.1956
+            ],
+            [
+              614.9002,
+              262.3796
+            ],
+            [
+              608.298,
+              262.8553
+            ],
+            [
+              609.157,
+              262.0093
+            ],
+            [
+              613.3683,
+              256.2957
+            ],
+            [
+              660.7554,
+              195.6526
+            ],
+            [
+              655.6715,
+              210.5877
+            ],
+            [
+              650.7538,
+              225.4786
+            ],
+            [
+              646.1887,
+              190.1261
+            ],
+            [
+              626.5907,
+              213.2898
+            ],
+            [
+              613.645,
+              220.7943
+            ],
+            [
+              616.2625,
+              230.5041
+            ],
+            [
+              621.2334,
+              236.1729
+            ],
+            [
+              626.6678,
+              243.5037
+            ],
+            [
+              660.3729,
+              203.4784
+            ],
+            [
+              651.5323,
+              232.2512
+            ],
+            [
+              646.1414,
+              245.109
+            ],
+            [
+              639.6477,
+              247.7751
+            ],
+            [
+              633.5507,
+              246.6845
+            ],
+            [
+              645.6028,
+              240.4386
+            ],
+            [
+              661.7553,
+              209.9121
+            ],
+            [
+              663.2384,
+              207.8836
+            ],
+            [
+              660.6544,
+              204.2923
+            ],
+            [
+              660.8134,
+              207.1974
+            ],
+            [
+              663.6277,
+              211.7404
+            ],
+            [
+              663.2278,
+              207.8842
+            ],
+            [
+              666.141,
+              212.6732
+            ],
+            [
+              665.761,
+              207.8154
+            ],
+            [
+              663.4805,
+              205.5171
+            ],
+            [
+              666.5591,
+              210.5545
+            ],
+            [
+              674.2999,
+              193.6809
+            ],
+            [
+              676.9494,
+              194.5363
+            ],
+            [
+              678.9246,
+              196.5439
+            ],
+            [
+              680.8751,
+              198.3964
+            ],
+            [
+              682.9518,
+              199.4523
+            ],
+            [
+              675.7161,
+              191.0114
+            ],
+            [
+              678.7624,
+              191.2073
+            ],
+            [
+              682.2756,
+              192.4848
+            ],
+            [
+              684.0432,
+              195.5852
+            ]
+          ],
+          "landmark106Validity": {
+            "insideFrameFraction": 1.0,
+            "reasonCodes": [],
+            "spanPixels": {
+              "x": 177.666,
+              "y": 190.8716
+            },
+            "valid": true
+          }
+        }
+      ],
+      "inferenceMs": 20.899,
+      "landmarkPreprocessing": {
+        "authority": "INSIGHTFACE_OFFICIAL_LANDMARK_PY_PARITY_V1",
+        "contract": "INSIGHTFACE_2D106_PREPROCESS_PARITY_V1",
+        "inputMean": 0.0,
+        "inputStd": 1.0,
+        "looseFaceCropScale": 1.5,
+        "mode": "OFFICIAL_PARITY",
+        "modelSha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+        "productionEligible": true,
+        "swapRB": true
+      },
+      "landmarkSemanticMap": {
+        "drivesDecision": false,
+        "status": "NOT_VALIDATED_FOR_PRODUCTION"
+      },
+      "mustNotDriveProductionDecision": true,
+      "mutationDispatches": 0,
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": false,
+      "providerId": "INSIGHTFACE_SCRFD_2D106",
+      "providerPlan": {
+        "active": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "actualByTask": {
+          "detection": [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "landmark_2d_106": [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ]
+        },
+        "available": [
+          "TensorrtExecutionProvider",
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "cpuFallback": false,
+        "cudaAvailable": true,
+        "cudaRequested": true,
+        "landmark2d106Preprocessing": {
+          "authority": "INSIGHTFACE_OFFICIAL_LANDMARK_PY_PARITY_V1",
+          "contract": "INSIGHTFACE_2D106_PREPROCESS_PARITY_V1",
+          "inputMean": 0.0,
+          "inputStd": 1.0,
+          "looseFaceCropScale": 1.5,
+          "mode": "OFFICIAL_PARITY",
+          "modelSha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+          "productionEligible": true,
+          "swapRB": true
+        },
+        "registeredNvidiaDllDirectories": [
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cublas\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cuda_nvrtc\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cuda_runtime\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cudnn\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\cufft\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\curand\\bin",
+          "C:\\Users\\<USER>\\AppData\\Local\\PRSmartReframe\\runtime\\insightface-shadow-v1-py312\\Lib\\site-packages\\nvidia\\nvjitlink\\bin"
+        ],
+        "requested": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      },
+      "providerVersion": "0.6.45-task1.1-official-preprocess-parity-v1",
+      "reasonCodes": [],
+      "shadowOnly": true,
+      "sourceRaster": {
+        "height": 540,
+        "width": 875
+      },
+      "status": "OK"
+    },
+    "insightFaceGeometryAuthority": {
+      "contract": "INSIGHTFACE_SINGLE_FACE_DIRECT_GEOMETRY_AUTHORITY_V1",
+      "modelSha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+      "preprocessMode": "OFFICIAL_PARITY",
+      "preprocessProductionEligible": true,
+      "semanticMapDigest": "65ea4a9e068a06bb94bb836cd740f772a5edb9b0eb6568652cee4e06d4cdb21e",
+      "semanticMapValidationStatus": "VALIDATED_FOR_PRODUCTION",
+      "sourceLegacyShadowFlagsSupersededByValidatedPromotion": true,
+      "status": "OFFICIAL_PARITY_PROMOTED"
+    },
+    "insightFacePersonBindingV3": {
+      "ambiguousFaceCount": 0,
+      "bindingSetDigest": "1b227c464c7d07d22bf708809b06101eedb49f03b45952b84d38ce06fff3eef0",
+      "bindings": [
+        {
+          "bindingDigest": "7b7924bb94cafc7dccde55a95802a5c454ee126901d377dddb6ef8458e4c675c",
+          "candidateCount": 0,
+          "candidates": [],
+          "confidence": 0.0,
+          "faceId": "if1",
+          "personId": null,
+          "reasonCodes": [
+            "INSIGHTFACE_FACE_PERSON_NO_QUALIFIED_PERSON"
+          ],
+          "status": "UNBOUND"
+        }
+      ],
+      "boundFaceCount": 0,
+      "boundFaceIdsByPersonId": {},
+      "contract": "INSIGHTFACE_FACE_PERSON_BINDING_V3",
+      "faceCount": 1,
+      "genderAgeHeuristicUsed": false,
+      "identityRecognitionUsed": false,
+      "mutationDispatches": 0,
+      "personCount": 0,
+      "policyVersion": "0.6.44-task5-v1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "sideHeuristicUsed": false,
+      "status": "READY"
+    },
+    "mutationDispatches": 0,
+    "policyVersion": "0.6.45-task9-12-live-v1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionAuthorityConsumptions": 0,
+    "providerAdmissionGate": {
+      "apiBypassAllowed": true,
+      "apiBypassReason": "SINGLE_RELIABLE_FACE_DIRECT_COMPOSITION_V2",
+      "blockingReasonCodes": [],
+      "contract": "SINGLE_FACE_DIRECT_MODE_GATE_V1",
+      "diagnosticReasonCodes": [
+        "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+      ],
+      "facePersonBindingStatus": "FACE_ONLY_UNIQUE",
+      "gateDigest": "5a8f9922f3fbb0abd011ec85e154388df929d17c2f1f5960ca23365bec3c93e2",
+      "landmark106Status": "VALID",
+      "mutationDispatches": 0,
+      "policyVersion": "0.6.45-task8.1-v2",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "rawFaceCount": 1,
+      "reasonCodes": [
+        "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+      ],
+      "selectedFaceId": "if1",
+      "selectedPersonId": null,
+      "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+      "status": "SINGLE_FACE_DIRECT",
+      "validFaceCount": 1,
+      "validPersonCount": 0
+    },
+    "providerCallsForClip": 0,
+    "providerPayloadMembership": false,
+    "reasonCodes": [],
+    "routeDigest": "220d1a8e20dc3d7cd373fe11c1b3be2a9b4ffd3c6787409f5773f2b0c988f67b",
+    "selectedFace": {
+      "bboxNormalized": {
+        "bottom": 0.54895523,
+        "left": 0.60424393,
+        "right": 0.81154255,
+        "top": 0.16155689
+      },
+      "bboxPixels": {
+        "bottom": 296.4358,
+        "left": 528.7134,
+        "right": 710.0997,
+        "top": 87.2407
+      },
+      "confidence": 0.80560559,
+      "detectorKps5Pixels": [
+        [
+          651.948,
+          174.8506
+        ],
+        [
+          669.4389,
+          189.1723
+        ],
+        [
+          658.7485,
+          232.9347
+        ],
+        [
+          593.0056,
+          239.1738
+        ],
+        [
+          608.1976,
+          252.2171
+        ]
+      ],
+      "id": "if1",
+      "landmark106Normalized": [
+        [
+          0.6433152,
+          0.54549605
+        ],
+        [
+          0.65460271,
+          0.19203018
+        ],
+        [
+          0.57924384,
+          0.38513359
+        ],
+        [
+          0.58246291,
+          0.41177058
+        ],
+        [
+          0.58808303,
+          0.43810374
+        ],
+        [
+          0.59553897,
+          0.46356964
+        ],
+        [
+          0.6048215,
+          0.48891675
+        ],
+        [
+          0.61589587,
+          0.51227611
+        ],
+        [
+          0.62874758,
+          0.5317651
+        ],
+        [
+          0.64266425,
+          0.2083675
+        ],
+        [
+          0.63062668,
+          0.22553535
+        ],
+        [
+          0.61869794,
+          0.24356407
+        ],
+        [
+          0.60738188,
+          0.2629897
+        ],
+        [
+          0.5969547,
+          0.28423563
+        ],
+        [
+          0.58790159,
+          0.30761418
+        ],
+        [
+          0.58148551,
+          0.3325808
+        ],
+        [
+          0.57871681,
+          0.35846886
+        ],
+        [
+          0.76468557,
+          0.38178751
+        ],
+        [
+          0.70557445,
+          0.48345581
+        ],
+        [
+          0.6971035,
+          0.49282187
+        ],
+        [
+          0.6884318,
+          0.50220317
+        ],
+        [
+          0.67899513,
+          0.51019591
+        ],
+        [
+          0.67080128,
+          0.52207202
+        ],
+        [
+          0.6629644,
+          0.5341019
+        ],
+        [
+          0.65416712,
+          0.54311031
+        ],
+        [
+          0.75841743,
+          0.39214292
+        ],
+        [
+          0.75292313,
+          0.40413547
+        ],
+        [
+          0.74766546,
+          0.41708708
+        ],
+        [
+          0.74242204,
+          0.43033412
+        ],
+        [
+          0.73641264,
+          0.44275489
+        ],
+        [
+          0.7292887,
+          0.45412672
+        ],
+        [
+          0.72148716,
+          0.4642086
+        ],
+        [
+          0.7136246,
+          0.47394907
+        ],
+        [
+          0.72368836,
+          0.32655689
+        ],
+        [
+          0.72714913,
+          0.32329813
+        ],
+        [
+          0.71703988,
+          0.3041327
+        ],
+        [
+          0.71972823,
+          0.31575856
+        ],
+        [
+          0.7289266,
+          0.33524385
+        ],
+        [
+          0.72714549,
+          0.32327187
+        ],
+        [
+          0.73452806,
+          0.34133387
+        ],
+        [
+          0.73056489,
+          0.32301307
+        ],
+        [
+          0.72439075,
+          0.31282359
+        ],
+        [
+          0.73399681,
+          0.33301732
+        ],
+        [
+          0.72260052,
+          0.26436445
+        ],
+        [
+          0.73475033,
+          0.27977487
+        ],
+        [
+          0.74583441,
+          0.29591116
+        ],
+        [
+          0.76146233,
+          0.33565351
+        ],
+        [
+          0.75502545,
+          0.31482136
+        ],
+        [
+          0.73922765,
+          0.26780391
+        ],
+        [
+          0.75355524,
+          0.28331375
+        ],
+        [
+          0.76853555,
+          0.32884708
+        ],
+        [
+          0.76385224,
+          0.30621207
+        ],
+        [
+          0.66644543,
+          0.44112372
+        ],
+        [
+          0.68112457,
+          0.49855193
+        ],
+        [
+          0.6773293,
+          0.46507376
+        ],
+        [
+          0.66850936,
+          0.46230599
+        ],
+        [
+          0.67304969,
+          0.48205099
+        ],
+        [
+          0.69232029,
+          0.48721054
+        ],
+        [
+          0.69224471,
+          0.49481478
+        ],
+        [
+          0.68736076,
+          0.50015473
+        ],
+        [
+          0.68811578,
+          0.4849458
+        ],
+        [
+          0.69587672,
+          0.48744845
+        ],
+        [
+          0.6935035,
+          0.48071238
+        ],
+        [
+          0.69818234,
+          0.46739638
+        ],
+        [
+          0.68310463,
+          0.45420098
+        ],
+        [
+          0.67012221,
+          0.44741517
+        ],
+        [
+          0.68153399,
+          0.46188632
+        ],
+        [
+          0.70497644,
+          0.47814003
+        ],
+        [
+          0.70274311,
+          0.48588821
+        ],
+        [
+          0.6951977,
+          0.48676917
+        ],
+        [
+          0.69617939,
+          0.48520249
+        ],
+        [
+          0.70099235,
+          0.47462168
+        ],
+        [
+          0.75514901,
+          0.36231956
+        ],
+        [
+          0.74933887,
+          0.38997725
+        ],
+        [
+          0.74371868,
+          0.41755292
+        ],
+        [
+          0.73850131,
+          0.35208532
+        ],
+        [
+          0.71610367,
+          0.39498106
+        ],
+        [
+          0.70130855,
+          0.4088783
+        ],
+        [
+          0.70429999,
+          0.42685944
+        ],
+        [
+          0.70998102,
+          0.43735725
+        ],
+        [
+          0.71619177,
+          0.45093277
+        ],
+        [
+          0.75471187,
+          0.37681183
+        ],
+        [
+          0.7446084,
+          0.43009475
+        ],
+        [
+          0.73844725,
+          0.45390552
+        ],
+        [
+          0.73102593,
+          0.45884287
+        ],
+        [
+          0.72405797,
+          0.45682317
+        ],
+        [
+          0.73783183,
+          0.44525665
+        ],
+        [
+          0.75629181,
+          0.38872609
+        ],
+        [
+          0.75798672,
+          0.38496971
+        ],
+        [
+          0.75503361,
+          0.37831905
+        ],
+        [
+          0.75521529,
+          0.38369891
+        ],
+        [
+          0.75843173,
+          0.39211193
+        ],
+        [
+          0.75797468,
+          0.38497066
+        ],
+        [
+          0.76130396,
+          0.39383936
+        ],
+        [
+          0.76086968,
+          0.38484332
+        ],
+        [
+          0.75826347,
+          0.38058719
+        ],
+        [
+          0.76178181,
+          0.3899157
+        ],
+        [
+          0.77062839,
+          0.35866836
+        ],
+        [
+          0.77365649,
+          0.36025244
+        ],
+        [
+          0.77591383,
+          0.36397022
+        ],
+        [
+          0.77814293,
+          0.36740068
+        ],
+        [
+          0.78051633,
+          0.36935607
+        ],
+        [
+          0.77224696,
+          0.35372472
+        ],
+        [
+          0.77572846,
+          0.35408759
+        ],
+        [
+          0.77974349,
+          0.35645339
+        ],
+        [
+          0.78176367,
+          0.36219484
+        ]
+      ],
+      "landmark106Pixels": [
+        [
+          562.9008,
+          294.5679
+        ],
+        [
+          572.7773,
+          103.6963
+        ],
+        [
+          506.8383,
+          207.9721
+        ],
+        [
+          509.655,
+          222.3561
+        ],
+        [
+          514.5726,
+          236.576
+        ],
+        [
+          521.0966,
+          250.3276
+        ],
+        [
+          529.2188,
+          264.015
+        ],
+        [
+          538.9089,
+          276.6291
+        ],
+        [
+          550.1541,
+          287.1532
+        ],
+        [
+          562.3312,
+          112.5184
+        ],
+        [
+          551.7983,
+          121.7891
+        ],
+        [
+          541.3607,
+          131.5246
+        ],
+        [
+          531.4592,
+          142.0144
+        ],
+        [
+          522.3354,
+          153.4872
+        ],
+        [
+          514.4139,
+          166.1117
+        ],
+        [
+          508.7998,
+          179.5936
+        ],
+        [
+          506.3772,
+          193.5732
+        ],
+        [
+          669.0999,
+          206.1653
+        ],
+        [
+          617.3776,
+          261.0661
+        ],
+        [
+          609.9656,
+          266.1238
+        ],
+        [
+          602.3778,
+          271.1897
+        ],
+        [
+          594.1207,
+          275.5058
+        ],
+        [
+          586.9511,
+          281.9189
+        ],
+        [
+          580.0939,
+          288.415
+        ],
+        [
+          572.3962,
+          293.2796
+        ],
+        [
+          663.6152,
+          211.7572
+        ],
+        [
+          658.8077,
+          218.2332
+        ],
+        [
+          654.2073,
+          225.227
+        ],
+        [
+          649.6193,
+          232.3804
+        ],
+        [
+          644.3611,
+          239.0876
+        ],
+        [
+          638.1276,
+          245.2284
+        ],
+        [
+          631.3013,
+          250.6726
+        ],
+        [
+          624.4215,
+          255.9325
+        ],
+        [
+          633.2273,
+          176.3407
+        ],
+        [
+          636.2555,
+          174.581
+        ],
+        [
+          627.4099,
+          164.2317
+        ],
+        [
+          629.7622,
+          170.5096
+        ],
+        [
+          637.8108,
+          181.0317
+        ],
+        [
+          636.2523,
+          174.5668
+        ],
+        [
+          642.712,
+          184.3203
+        ],
+        [
+          639.2443,
+          174.4271
+        ],
+        [
+          633.8419,
+          168.9247
+        ],
+        [
+          642.2472,
+          179.8293
+        ],
+        [
+          632.2755,
+          142.7568
+        ],
+        [
+          642.9066,
+          151.0784
+        ],
+        [
+          652.6051,
+          159.792
+        ],
+        [
+          666.2795,
+          181.2529
+        ],
+        [
+          660.6473,
+          170.0035
+        ],
+        [
+          646.8242,
+          144.6141
+        ],
+        [
+          659.3608,
+          152.9894
+        ],
+        [
+          672.4686,
+          177.5774
+        ],
+        [
+          668.3707,
+          165.3545
+        ],
+        [
+          583.1398,
+          238.2068
+        ],
+        [
+          595.984,
+          269.218
+        ],
+        [
+          592.6631,
+          251.1398
+        ],
+        [
+          584.9457,
+          249.6452
+        ],
+        [
+          588.9185,
+          260.3075
+        ],
+        [
+          605.7803,
+          263.0937
+        ],
+        [
+          605.7141,
+          267.2
+        ],
+        [
+          601.4407,
+          270.0836
+        ],
+        [
+          602.1013,
+          261.8707
+        ],
+        [
+          608.8922,
+          263.2222
+        ],
+        [
+          606.8156,
+          259.5847
+        ],
+        [
+          610.9095,
+          252.394
+        ],
+        [
+          597.7166,
+          245.2685
+        ],
+        [
+          586.3569,
+          241.6042
+        ],
+        [
+          596.3422,
+          249.4186
+        ],
+        [
+          616.8544,
+          258.1956
+        ],
+        [
+          614.9002,
+          262.3796
+        ],
+        [
+          608.298,
+          262.8553
+        ],
+        [
+          609.157,
+          262.0093
+        ],
+        [
+          613.3683,
+          256.2957
+        ],
+        [
+          660.7554,
+          195.6526
+        ],
+        [
+          655.6715,
+          210.5877
+        ],
+        [
+          650.7538,
+          225.4786
+        ],
+        [
+          646.1887,
+          190.1261
+        ],
+        [
+          626.5907,
+          213.2898
+        ],
+        [
+          613.645,
+          220.7943
+        ],
+        [
+          616.2625,
+          230.5041
+        ],
+        [
+          621.2334,
+          236.1729
+        ],
+        [
+          626.6678,
+          243.5037
+        ],
+        [
+          660.3729,
+          203.4784
+        ],
+        [
+          651.5323,
+          232.2512
+        ],
+        [
+          646.1414,
+          245.109
+        ],
+        [
+          639.6477,
+          247.7751
+        ],
+        [
+          633.5507,
+          246.6845
+        ],
+        [
+          645.6028,
+          240.4386
+        ],
+        [
+          661.7553,
+          209.9121
+        ],
+        [
+          663.2384,
+          207.8836
+        ],
+        [
+          660.6544,
+          204.2923
+        ],
+        [
+          660.8134,
+          207.1974
+        ],
+        [
+          663.6277,
+          211.7404
+        ],
+        [
+          663.2278,
+          207.8842
+        ],
+        [
+          666.141,
+          212.6732
+        ],
+        [
+          665.761,
+          207.8154
+        ],
+        [
+          663.4805,
+          205.5171
+        ],
+        [
+          666.5591,
+          210.5545
+        ],
+        [
+          674.2999,
+          193.6809
+        ],
+        [
+          676.9494,
+          194.5363
+        ],
+        [
+          678.9246,
+          196.5439
+        ],
+        [
+          680.8751,
+          198.3964
+        ],
+        [
+          682.9518,
+          199.4523
+        ],
+        [
+          675.7161,
+          191.0114
+        ],
+        [
+          678.7624,
+          191.2073
+        ],
+        [
+          682.2756,
+          192.4848
+        ],
+        [
+          684.0432,
+          195.5852
+        ]
+      ],
+      "landmark106Validity": {
+        "insideFrameFraction": 1.0,
+        "reasonCodes": [],
+        "spanPixels": {
+          "x": 177.666,
+          "y": 190.8716
+        },
+        "valid": true
+      }
+    },
+    "semanticApiSkipped": true,
+    "singleFaceDirectMode": {
+      "apiBypassAllowed": true,
+      "apiBypassReason": "SINGLE_RELIABLE_FACE_DIRECT_COMPOSITION_V2",
+      "blockingReasonCodes": [],
+      "contract": "SINGLE_FACE_DIRECT_MODE_GATE_V1",
+      "diagnosticReasonCodes": [
+        "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+      ],
+      "facePersonBindingStatus": "FACE_ONLY_UNIQUE",
+      "gateDigest": "5a8f9922f3fbb0abd011ec85e154388df929d17c2f1f5960ca23365bec3c93e2",
+      "landmark106Status": "VALID",
+      "mutationDispatches": 0,
+      "policyVersion": "0.6.45-task8.1-v2",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "rawFaceCount": 1,
+      "reasonCodes": [
+        "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+      ],
+      "selectedFaceId": "if1",
+      "selectedPersonId": null,
+      "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+      "status": "SINGLE_FACE_DIRECT",
+      "validFaceCount": 1,
+      "validPersonCount": 0
+    },
+    "status": "SINGLE_FACE_DIRECT_READY"
+  },
+  "singleFaceDirectMode": {
+    "apiBypassAllowed": true,
+    "apiBypassReason": "SINGLE_RELIABLE_FACE_DIRECT_COMPOSITION_V2",
+    "blockingReasonCodes": [],
+    "contract": "SINGLE_FACE_DIRECT_MODE_GATE_V1",
+    "diagnosticReasonCodes": [
+      "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+    ],
+    "facePersonBindingStatus": "FACE_ONLY_UNIQUE",
+    "gateDigest": "5a8f9922f3fbb0abd011ec85e154388df929d17c2f1f5960ca23365bec3c93e2",
+    "landmark106Status": "VALID",
+    "mutationDispatches": 0,
+    "policyVersion": "0.6.45-task8.1-v2",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "rawFaceCount": 1,
+    "reasonCodes": [
+      "UNIQUE_RELIABLE_FACE_WITHOUT_PERSON_EVIDENCE"
+    ],
+    "selectedFaceId": "if1",
+    "selectedPersonId": null,
+    "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+    "status": "SINGLE_FACE_DIRECT",
+    "validFaceCount": 1,
+    "validPersonCount": 0
+  },
+  "singleSubjectCompositionRefiner": {
+    "contract": "SINGLE_SUBJECT_COMPOSITION_REFINER_V1",
+    "premiereReadOnly": true,
+    "premiereWriteCalls": 0,
+    "productionUseAllowed": false,
+    "status": "NOT_APPLICABLE"
+  },
+  "sourceEvidenceDigest": "3cc564cedd728f8537aca16983f0e259d6346cff8dfa3ebdd5527cbb4c41fdb1",
+  "status": "API_COMPOSITION_POSITION_VERIFIED"
+}
