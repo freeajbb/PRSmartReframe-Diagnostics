@@ -1,0 +1,330 @@
+{
+  "collectorElapsedMs": 29993.028,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "frameExtraction": {
+      "backendActual": "GROUPED_SOFTWARE_CPU",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 103,
+      "uniqueSourceMediaCount": 4
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 0,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "insightfaceFirstPass": {
+      "contract": "INSIGHTFACE_FIRST_PASS_PERFORMANCE_TELEMETRY_V1",
+      "inferenceCount": 0,
+      "inferenceMaxMs": 0.0,
+      "inferenceMeanMs": 0.0,
+      "inferenceP50Ms": 0.0,
+      "inferenceP95Ms": 0.0,
+      "inferenceTotalMs": 0.0,
+      "mustNotDriveProductionDecision": true,
+      "routingElapsedMs": 1619.203700000071,
+      "telemetryOnly": true
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "insightface": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 0,
+      "peakObservedConcurrency": 0,
+      "providerCalls": 0,
+      "requestedConcurrency": 3,
+      "transportRetries": 0,
+      "wallClockMs": 0.0
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 4
+    },
+    "streamingProvider": {
+      "firstBatchItemCount": 0,
+      "firstBatchOrdinal": null,
+      "routerCompletedAtFirstDispatch": 0,
+      "routerRemainingAtFirstDispatch": 0,
+      "routingProviderOverlapMs": 0.0,
+      "streamingDuplicateEnqueueCount": 0,
+      "streamingFullBatchCount": 0,
+      "streamingMissingProviderItemCount": 0,
+      "streamingOrderingViolationCount": 0,
+      "streamingProviderDispatchPolicy": "STREAMING_FULL_BATCH_IMMEDIATE_TAIL_ON_ROUTER_CLOSE_V1",
+      "streamingProviderItemCount": 0,
+      "streamingSealedBatchCount": 0,
+      "streamingTailBatchCount": 0,
+      "streamingTailBatchItemCount": 0
+    },
+    "streamingRetainSet": {
+      "eligible": false,
+      "fallbackReason": "NOT_STARTED",
+      "firstRetainSetDispatchAtMs": null,
+      "legacyFallbackProviderBatchCount": 0,
+      "legacyMembershipParity": false,
+      "mainProviderCompletedAtFirstRetainSetDispatch": 0,
+      "mainProviderCompletionOrder": [],
+      "mainProviderRemainingAtFirstRetainSetDispatch": 0,
+      "perClipIdentityParity": false,
+      "prefetchDuplicateClipCount": 0,
+      "prefetchExtraClipCount": 0,
+      "prefetchIdentityMismatchCount": 0,
+      "prefetchMissingClipCount": 0,
+      "prefetchProviderBatchCount": 0,
+      "prefetchReplayBatchCount": 0,
+      "prefetchReplayClipCount": 0,
+      "retainSetMainProviderOverlapMs": 0.0,
+      "retainSetProviderWallClockMs": 0.0,
+      "started": false,
+      "streamingRetainSetDuplicateEnqueueCount": 0,
+      "streamingRetainSetFullBatchCount": 0,
+      "streamingRetainSetItemCount": 0,
+      "streamingRetainSetOrderingViolationCount": 0,
+      "streamingRetainSetPolicy": "COMPLETION_ORDER_INDEPENDENT_RETAIN_SET_PREFETCH_V2",
+      "streamingRetainSetSealedBatchCount": 0,
+      "streamingRetainSetTailBatchCount": 0,
+      "streamingRetainSetTailBatchItemCount": 0
+    },
+    "task14d3HybridFirstPass": {
+      "cachedGeometryConsumptions": 0,
+      "certificationManifestStatus": "VERIFIED",
+      "contract": "TASK14D3_CONTROLLED_HYBRID_FIRST_PASS_V1",
+      "hybridAdmissionStatus": "ADMITTED",
+      "hybridAttempted": false,
+      "hybridFaceCount": 0,
+      "hybridFallbackActivated": false,
+      "hybridFallbackReasonCodes": [],
+      "hybridFirstPassWallMs": 0.0,
+      "hybridImageCount": 0,
+      "hybridSucceeded": true,
+      "landmarkNativeBatchCalls": 0,
+      "landmarkNativeBatchSize": 0,
+      "mutationDispatches": 0,
+      "noPartialAuthority": true,
+      "policy": "SCRFD_SAME_SESSION_WORKERS_4__2D106_NATIVE_BATCH_16_V1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "routeClipCount": 0,
+      "scrfdWorkers": 0,
+      "selectedClipCount": 0,
+      "semanticApiRequiredClipCount": 0,
+      "serialFallbackInferenceCount": 0,
+      "singleFaceDirectClipCount": 0
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.7.2.1",
+  "runId": "api05101_20260922_121413_739851",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 29992.869,
+      "meanMs": 29992.869,
+      "p50Ms": 29992.869,
+      "p95Ms": 29992.869,
+      "totalElapsedMs": 29992.869
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 715.078,
+      "meanMs": 715.078,
+      "p50Ms": 715.078,
+      "p95Ms": 715.078,
+      "totalElapsedMs": 715.078
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 494.38,
+      "meanMs": 494.38,
+      "p50Ms": 494.38,
+      "p95Ms": 494.38,
+      "totalElapsedMs": 494.38
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 527.759,
+      "meanMs": 527.759,
+      "p50Ms": 527.759,
+      "p95Ms": 527.759,
+      "totalElapsedMs": 527.759
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 549.493,
+      "meanMs": 549.493,
+      "p50Ms": 549.493,
+      "p95Ms": 549.493,
+      "totalElapsedMs": 549.493
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 527.462,
+      "meanMs": 527.462,
+      "p50Ms": 527.462,
+      "p95Ms": 527.462,
+      "totalElapsedMs": 527.462
+    },
+    "frameExtraction": {
+      "callCount": 4,
+      "maxMs": 5248.492,
+      "meanMs": 3754.239,
+      "observations": [
+        {
+          "backendActual": "GROUPED_SOFTWARE_CPU"
+        },
+        {
+          "backendActual": "GROUPED_SOFTWARE_CPU"
+        },
+        {
+          "backendActual": "GROUPED_SOFTWARE_CPU"
+        },
+        {
+          "backendActual": "GROUPED_SOFTWARE_CPU"
+        }
+      ],
+      "p50Ms": 3846.654,
+      "p95Ms": 5064.074,
+      "totalElapsedMs": 15016.956
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 2862.782,
+      "meanMs": 2862.782,
+      "p50Ms": 2862.782,
+      "p95Ms": 2862.782,
+      "totalElapsedMs": 2862.782
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 587.94,
+      "meanMs": 587.94,
+      "p50Ms": 587.94,
+      "p95Ms": 587.94,
+      "totalElapsedMs": 587.94
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 382.791,
+      "meanMs": 382.791,
+      "p50Ms": 382.791,
+      "p95Ms": 382.791,
+      "totalElapsedMs": 382.791
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 472.741,
+      "meanMs": 472.741,
+      "p50Ms": 472.741,
+      "p95Ms": 472.741,
+      "totalElapsedMs": 472.741
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 0.663,
+      "meanMs": 0.663,
+      "p50Ms": 0.663,
+      "p95Ms": 0.663,
+      "totalElapsedMs": 0.663
+    },
+    "providerWallClock": {
+      "callCount": 1,
+      "maxMs": 0.0,
+      "meanMs": 0.0,
+      "p50Ms": 0.0,
+      "p95Ms": 0.0,
+      "totalElapsedMs": 0.0
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 0.407,
+      "meanMs": 0.407,
+      "p50Ms": 0.407,
+      "p95Ms": 0.407,
+      "totalElapsedMs": 0.407
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 398.137,
+      "meanMs": 398.137,
+      "p50Ms": 398.137,
+      "p95Ms": 398.137,
+      "totalElapsedMs": 398.137
+    },
+    "singleFaceDirectRouting": {
+      "callCount": 1,
+      "maxMs": 1619.204,
+      "meanMs": 1619.204,
+      "p50Ms": 1619.204,
+      "p95Ms": 1619.204,
+      "totalElapsedMs": 1619.204
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 550.933,
+      "meanMs": 550.933,
+      "p50Ms": 550.933,
+      "p95Ms": 550.933,
+      "totalElapsedMs": 550.933
+    },
+    "sourceMediaProbe": {
+      "callCount": 4,
+      "maxMs": 326.725,
+      "meanMs": 102.841,
+      "p50Ms": 28.569,
+      "p95Ms": 282.162,
+      "totalElapsedMs": 411.362
+    }
+  },
+  "telemetryOnly": true
+}
