@@ -1,0 +1,1235 @@
+{
+  "collectorElapsedMs": 99902.419,
+  "contract": "PRSMARTREFRAME_PERFORMANCE_BASELINE_V1",
+  "kind": "ANALYSIS",
+  "metrics": {
+    "finalization": {
+      "cancelRequested": false,
+      "cancelled": false,
+      "completedStageCount": 13,
+      "currentStage": "freezeFinalPositionArtifacts",
+      "currentStageLabel": "冻结最终构图证据",
+      "deferredResultPersistence": true,
+      "totalStageCount": 13
+    },
+    "frameExtraction": {
+      "backendActual": "SINGLETON_NVDEC",
+      "ffmpegOutputQuality": "q:v=2",
+      "ffmpegProcessCount": 110,
+      "uniqueSourceMediaCount": 107
+    },
+    "imagePrep": {
+      "backendActual": "PILLOW_CPU",
+      "imageCount": 107,
+      "imageMaxLongEdge": 768,
+      "jpegQuality": 75
+    },
+    "insightfaceFirstPass": {
+      "contract": "INSIGHTFACE_FIRST_PASS_PERFORMANCE_TELEMETRY_V1",
+      "inferenceCount": 107,
+      "inferenceMaxMs": 33.10671308410798,
+      "inferenceMeanMs": 33.10671308410798,
+      "inferenceP50Ms": 33.10671308410798,
+      "inferenceP95Ms": 33.10671308410798,
+      "inferenceTotalMs": 3542.4182999995537,
+      "mustNotDriveProductionDecision": true,
+      "routingElapsedMs": 4494.739000001573,
+      "telemetryOnly": true
+    },
+    "localQualityGate": {
+      "face": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "insightface": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "person": {
+        "callCount": 0,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0
+      },
+      "pose": {
+        "callCount": 1,
+        "maxInferenceMs": 0.0,
+        "meanInferenceMs": 0.0,
+        "p50InferenceMs": 0.0,
+        "p95InferenceMs": 0.0,
+        "runtime": {
+          "status": "NOT_RUN"
+        },
+        "totalInferenceMs": 0.0
+      }
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 3,
+      "peakObservedConcurrency": 3,
+      "providerCalls": 4,
+      "requestedConcurrency": 3,
+      "timeToFirstProviderRequestMs": 15874.836700000742,
+      "transportRetries": 0,
+      "wallClockMs": 36888.40569999593
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "sourceMediaProbe": {
+      "ffprobeProcessCount": 107
+    },
+    "streamingProvider": {
+      "firstBatchItemCount": 30,
+      "firstBatchOrdinal": 1,
+      "routerCompletedAtFirstDispatch": 103,
+      "routerRemainingAtFirstDispatch": 4,
+      "routingProviderOverlapMs": 9.563799998431932,
+      "streamingDuplicateEnqueueCount": 0,
+      "streamingFullBatchCount": 2,
+      "streamingMissingProviderItemCount": 0,
+      "streamingOrderingViolationCount": 0,
+      "streamingProviderDispatchPolicy": "STREAMING_FULL_BATCH_IMMEDIATE_TAIL_ON_ROUTER_CLOSE_V1",
+      "streamingProviderItemCount": 71,
+      "streamingSealedBatchCount": 3,
+      "streamingTailBatchCount": 1,
+      "streamingTailBatchItemCount": 11
+    },
+    "streamingRetainSet": {
+      "eligible": true,
+      "fallbackReason": "RETAIN_SET_PREFETCH_PARTIAL_FAILURE_RECOVERED",
+      "firstRetainSetDispatchAtMs": 53206.76860000094,
+      "globalLegacyFallbackTriggered": false,
+      "initialPrefetchFailedBatchCount": 1,
+      "legacyFallbackProviderBatchCount": 0,
+      "legacyMembershipParity": false,
+      "mainProviderCompletedAtFirstRetainSetDispatch": 3,
+      "mainProviderCompletionOrder": [
+        "batch_0003",
+        "batch_0002",
+        "batch_0001"
+      ],
+      "mainProviderRemainingAtFirstRetainSetDispatch": 0,
+      "perClipIdentityParity": true,
+      "prefetchDuplicateClipCount": 0,
+      "prefetchExtraClipCount": 0,
+      "prefetchIdentityMismatchCount": 0,
+      "prefetchMissingClipCount": 0,
+      "prefetchProviderBatchCount": 2,
+      "prefetchReplayBatchCount": 2,
+      "prefetchReplayClipCount": 40,
+      "prefetchReplayEligible": true,
+      "prefetchTerminalFailureClipCount": 0,
+      "retainSetMainProviderOverlapMs": 0.0,
+      "retainSetProviderWallClockMs": 42061.727000000246,
+      "selectiveFallbackClipCount": 10,
+      "selectiveFallbackFailedBatchCount": 0,
+      "selectiveFallbackProviderBatchCount": 1,
+      "selectiveFallbackProviderCallAttempts": 1,
+      "selectiveFallbackRecoveredBatchCount": 1,
+      "selectiveFallbackTransportRetries": 0,
+      "started": true,
+      "streamingRetainSetDuplicateEnqueueCount": 0,
+      "streamingRetainSetFullBatchCount": 1,
+      "streamingRetainSetItemCount": 40,
+      "streamingRetainSetOrderingViolationCount": 0,
+      "streamingRetainSetPolicy": "COMPLETION_ORDER_INDEPENDENT_GLOBAL_FULL_BATCH_RETAIN_SET_PREFETCH_V4",
+      "streamingRetainSetSealedBatchCount": 2,
+      "streamingRetainSetTailBatchCount": 1,
+      "streamingRetainSetTailBatchItemCount": 10
+    },
+    "task14d3HybridFirstPass": {
+      "cachedGeometryConsumptions": 107,
+      "certificationManifestStatus": "VERIFIED",
+      "contract": "TASK14D3_CONTROLLED_HYBRID_FIRST_PASS_V1",
+      "hybridAdmissionStatus": "ADMITTED",
+      "hybridAttempted": true,
+      "hybridFaceCount": 242,
+      "hybridFallbackActivated": false,
+      "hybridFallbackReasonCodes": [],
+      "hybridFirstPassWallMs": 3542.4182999995537,
+      "hybridImageCount": 107,
+      "hybridSucceeded": true,
+      "landmarkNativeBatchCalls": 16,
+      "landmarkNativeBatchSize": 16,
+      "mutationDispatches": 0,
+      "noPartialAuthority": true,
+      "policy": "SCRFD_SAME_SESSION_WORKERS_4__2D106_NATIVE_BATCH_16_V1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "routeClipCount": 107,
+      "scrfdWorkers": 4,
+      "selectedClipCount": 107,
+      "semanticApiRequiredClipCount": 71,
+      "serialFallbackInferenceCount": 0,
+      "singleFaceDirectClipCount": 36
+    }
+  },
+  "mustNotDriveProductionDecision": true,
+  "release": "0.7.2.11",
+  "runId": "api05101_20260930_004540_275648",
+  "stages": {
+    "analysisTotal": {
+      "callCount": 1,
+      "maxMs": 99902.188,
+      "meanMs": 99902.188,
+      "p50Ms": 99902.188,
+      "p95Ms": 99902.188,
+      "totalElapsedMs": 99902.188
+    },
+    "candidateArbitration": {
+      "callCount": 1,
+      "maxMs": 715.142,
+      "meanMs": 715.142,
+      "p50Ms": 715.142,
+      "p95Ms": 715.142,
+      "totalElapsedMs": 715.142
+    },
+    "compositionV2": {
+      "callCount": 1,
+      "maxMs": 83.495,
+      "meanMs": 83.495,
+      "p50Ms": 83.495,
+      "p95Ms": 83.495,
+      "totalElapsedMs": 83.495
+    },
+    "deterministicRasterSafety": {
+      "callCount": 1,
+      "maxMs": 3.122,
+      "meanMs": 3.122,
+      "p50Ms": 3.122,
+      "p95Ms": 3.122,
+      "totalElapsedMs": 3.122
+    },
+    "finalPositionResolution": {
+      "callCount": 1,
+      "maxMs": 14.322,
+      "meanMs": 14.322,
+      "p50Ms": 14.322,
+      "p95Ms": 14.322,
+      "totalElapsedMs": 14.322
+    },
+    "finalSequenceRaster": {
+      "callCount": 1,
+      "maxMs": 1.437,
+      "meanMs": 1.437,
+      "p50Ms": 1.437,
+      "p95Ms": 1.437,
+      "totalElapsedMs": 1.437
+    },
+    "frameExtraction": {
+      "callCount": 107,
+      "maxMs": 373.076,
+      "meanMs": 260.608,
+      "observations": [
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        },
+        {
+          "backendActual": "SINGLETON_NVDEC"
+        }
+      ],
+      "p50Ms": 256.368,
+      "p95Ms": 329.964,
+      "totalElapsedMs": 27885.053
+    },
+    "freezeFinalPositionArtifacts": {
+      "callCount": 1,
+      "maxMs": 611.659,
+      "meanMs": 611.659,
+      "p50Ms": 611.659,
+      "p95Ms": 611.659,
+      "totalElapsedMs": 611.659
+    },
+    "guaranteedCompletion": {
+      "callCount": 1,
+      "maxMs": 10.787,
+      "meanMs": 10.787,
+      "p50Ms": 10.787,
+      "p95Ms": 10.787,
+      "totalElapsedMs": 10.787
+    },
+    "guidedCropAudit": {
+      "callCount": 1,
+      "maxMs": 164.876,
+      "meanMs": 164.876,
+      "p50Ms": 164.876,
+      "p95Ms": 164.876,
+      "totalElapsedMs": 164.876
+    },
+    "guidedShadowQuality": {
+      "callCount": 1,
+      "maxMs": 204.344,
+      "meanMs": 204.344,
+      "p50Ms": 204.344,
+      "p95Ms": 204.344,
+      "totalElapsedMs": 204.344
+    },
+    "insightFaceFirstPassInference": {
+      "callCount": 107,
+      "maxMs": 33.107,
+      "meanMs": 33.107,
+      "observations": [
+        {
+          "clipInstanceId": "2c37892840c3af0a7b1b5c39",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 1
+        },
+        {
+          "clipInstanceId": "8cb71af815fdca8d4cdb0ef5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 2
+        },
+        {
+          "clipInstanceId": "402aefaa5474a71c66257654",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 3
+        },
+        {
+          "clipInstanceId": "69671caae8419145d6baa373",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 4
+        },
+        {
+          "clipInstanceId": "0f1917700635ca3925d4de9c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 5
+        },
+        {
+          "clipInstanceId": "bdfe633ab18a6654035b9b92",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 6
+        },
+        {
+          "clipInstanceId": "e3921057c5054504126cf2a7",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 7
+        },
+        {
+          "clipInstanceId": "6be0e043f93ff04cef59379d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 8
+        },
+        {
+          "clipInstanceId": "8aa4942bacdbf1dc02239f6b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 9
+        },
+        {
+          "clipInstanceId": "fea1f744b6bb927b30b47129",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 10
+        },
+        {
+          "clipInstanceId": "a70fa9ff76bc90ab98666be6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 11
+        },
+        {
+          "clipInstanceId": "409bbdee6d3843f4f5511a25",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 12
+        },
+        {
+          "clipInstanceId": "228b848696eec8765fe43c5d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 13
+        },
+        {
+          "clipInstanceId": "a146d4c57ed4b42c894f2ab0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 14
+        },
+        {
+          "clipInstanceId": "af0ce1be7b43fcef7228b5e1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 15
+        },
+        {
+          "clipInstanceId": "aa75f6b79ffdb0324afbb803",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 16
+        },
+        {
+          "clipInstanceId": "ef133accf2113cdbfc4694f9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 17
+        },
+        {
+          "clipInstanceId": "814c9846444e8ec9fad89b59",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 18
+        },
+        {
+          "clipInstanceId": "f04f10a9b08d201b55fc1f25",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 19
+        },
+        {
+          "clipInstanceId": "966a49594394208115e1a635",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 20
+        },
+        {
+          "clipInstanceId": "2d1fc6eb5142e0d6bbae6072",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 21
+        },
+        {
+          "clipInstanceId": "8a69ae852160045de77d6e83",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 22
+        },
+        {
+          "clipInstanceId": "cc7b63f27b8a4f09fdee8534",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 23
+        },
+        {
+          "clipInstanceId": "e155f9cdd91bff32870be739",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 24
+        },
+        {
+          "clipInstanceId": "aeaf80b917bae0bdef650e54",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 25
+        },
+        {
+          "clipInstanceId": "b54166d22c7ec9cd777d7cdb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 26
+        },
+        {
+          "clipInstanceId": "9f429b40867f4b81820eee9a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 27
+        },
+        {
+          "clipInstanceId": "2fcd90c654d50f451b900988",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 28
+        },
+        {
+          "clipInstanceId": "d225f68a0e5592d96b51057c",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 29
+        },
+        {
+          "clipInstanceId": "7f12d710a614ce720b681b9f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 30
+        },
+        {
+          "clipInstanceId": "10ad562af3a96056ffa53c0a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 31
+        },
+        {
+          "clipInstanceId": "993e2e71528c926c7f711539",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 32
+        },
+        {
+          "clipInstanceId": "b4598f6b7064c14059e6c7a1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 33
+        },
+        {
+          "clipInstanceId": "027f9f63daf8e6fe90e57a95",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 34
+        },
+        {
+          "clipInstanceId": "8473ddaf61c0bf80f92bb51b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 35
+        },
+        {
+          "clipInstanceId": "ed912fd636e0e5d3f96404dc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 36
+        },
+        {
+          "clipInstanceId": "7db89d187e211f5b6f5c1c08",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 37
+        },
+        {
+          "clipInstanceId": "e8a5ea427e5d6a905085191f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 38
+        },
+        {
+          "clipInstanceId": "3f7a696e6d0c21e11929604b",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 39
+        },
+        {
+          "clipInstanceId": "1627fe17d229fc0ec9aaaae2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 40
+        },
+        {
+          "clipInstanceId": "85b23a3789d170efe30693cb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 41
+        },
+        {
+          "clipInstanceId": "c280cb2ad11bda8116afcdeb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 42
+        },
+        {
+          "clipInstanceId": "2e8f6ae6a118fe0b5d1efd22",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 43
+        },
+        {
+          "clipInstanceId": "64e42a0ee07697db983a2cbe",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 44
+        },
+        {
+          "clipInstanceId": "8a6921fc5fe9731b233f6eaa",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 45
+        },
+        {
+          "clipInstanceId": "32a4d9578746a49b23362d8a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 46
+        },
+        {
+          "clipInstanceId": "f676628c973945a2013e023e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 47
+        },
+        {
+          "clipInstanceId": "118d66c720131f3e787ed7db",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 48
+        },
+        {
+          "clipInstanceId": "dd7310340adf47378f63668e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 49
+        },
+        {
+          "clipInstanceId": "ec2407596bd0af6c15e9a301",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 50
+        },
+        {
+          "clipInstanceId": "1ac9a184079e22ef04ca5a69",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 51
+        },
+        {
+          "clipInstanceId": "b688b4f63796e471afed8210",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 52
+        },
+        {
+          "clipInstanceId": "6636a500050cd0cb9db12bad",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 53
+        },
+        {
+          "clipInstanceId": "124731644d1dbadfd3ca11b4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 54
+        },
+        {
+          "clipInstanceId": "f1c660ee21f21b9444fc2530",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 55
+        },
+        {
+          "clipInstanceId": "21ecd7e05c8edff2553727ec",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 56
+        },
+        {
+          "clipInstanceId": "d0523dafbad7a2bdd1750ed6",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 57
+        },
+        {
+          "clipInstanceId": "e2ea1466c80a714e381f409e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 58
+        },
+        {
+          "clipInstanceId": "b19b8b070a2e32fa958d6ae9",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 59
+        },
+        {
+          "clipInstanceId": "03c0836ce1f84078037e2002",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 60
+        },
+        {
+          "clipInstanceId": "2daaf9ccf229ca44fedac70a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 61
+        },
+        {
+          "clipInstanceId": "672fa33ad57e6267a46cd6ad",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 62
+        },
+        {
+          "clipInstanceId": "d83c7ecaa212da912c1acb40",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 63
+        },
+        {
+          "clipInstanceId": "76fdebdf454cc6c0ac34d373",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 64
+        },
+        {
+          "clipInstanceId": "c4fa8513b27701edb77ce6e1",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 65
+        },
+        {
+          "clipInstanceId": "ad469482c5b87eb3c8a0f16d",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 66
+        },
+        {
+          "clipInstanceId": "78fa00f53e605b6186946d5e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 67
+        },
+        {
+          "clipInstanceId": "142d5514c44d1b97c0563993",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 68
+        },
+        {
+          "clipInstanceId": "05d6a06f486f64cabbd8fd16",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 69
+        },
+        {
+          "clipInstanceId": "ebbf832bd234aae1cc5a2ce4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 70
+        },
+        {
+          "clipInstanceId": "e19fc36b16cfcb5823b550b0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 71
+        },
+        {
+          "clipInstanceId": "7ffd166bc7d38f0e70ff6fac",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 72
+        },
+        {
+          "clipInstanceId": "6d1a4ca78be57cd77a810def",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 73
+        },
+        {
+          "clipInstanceId": "71cec7175b9d1cc18c381bcf",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 74
+        },
+        {
+          "clipInstanceId": "600ef0ede3bc37a743913bc4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 75
+        },
+        {
+          "clipInstanceId": "677fed4b2df36d38d25b9598",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 76
+        },
+        {
+          "clipInstanceId": "08efc5a7be84969fb2a60ec2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 77
+        },
+        {
+          "clipInstanceId": "8a1a60f4a331f6a163b87c86",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 78
+        },
+        {
+          "clipInstanceId": "97ec10d35f2b5edc265d45c0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 79
+        },
+        {
+          "clipInstanceId": "76aaf906196d4d72806f56fc",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 80
+        },
+        {
+          "clipInstanceId": "7be21702018a4c3237f0bbd8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 81
+        },
+        {
+          "clipInstanceId": "4fe28a046cce19f7b118d52a",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 82
+        },
+        {
+          "clipInstanceId": "66517ae3339cb7d796f7946e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 83
+        },
+        {
+          "clipInstanceId": "69aa7c65ba69d48fbb1fc20e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 84
+        },
+        {
+          "clipInstanceId": "7bbd5ce1f90c4f5a124ae279",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 85
+        },
+        {
+          "clipInstanceId": "f757f62f6217fe564446c3c8",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 86
+        },
+        {
+          "clipInstanceId": "125ae1e84ed7c6a589fa83e2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 87
+        },
+        {
+          "clipInstanceId": "5de837027daa3464fad0d7a5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 88
+        },
+        {
+          "clipInstanceId": "9ccbc4727eb724c23cfd6278",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 89
+        },
+        {
+          "clipInstanceId": "325fc203790d40528f0942b5",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 90
+        },
+        {
+          "clipInstanceId": "0c1c929ad75941f5d96507a3",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 91
+        },
+        {
+          "clipInstanceId": "d9b3908a649a116efd518799",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 92
+        },
+        {
+          "clipInstanceId": "cf0a6583ac0dc863b68dfb3f",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 93
+        },
+        {
+          "clipInstanceId": "b5976c9a2ac71d6619b36933",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 94
+        },
+        {
+          "clipInstanceId": "bb27e314bbf97a602adc8d58",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 95
+        },
+        {
+          "clipInstanceId": "acd8669c5605b9aa0a327525",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 96
+        },
+        {
+          "clipInstanceId": "7dd25182a54a404f8a095e29",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 97
+        },
+        {
+          "clipInstanceId": "460eea904bd246fefd1e7983",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 98
+        },
+        {
+          "clipInstanceId": "ecd80573dd8f02d920b945eb",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 99
+        },
+        {
+          "clipInstanceId": "f3118a0469e6705aa61e27b2",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 100
+        },
+        {
+          "clipInstanceId": "45fc8b34ae37a5434fb2fd61",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 101
+        },
+        {
+          "clipInstanceId": "5fe2e3fdd39cff5580b4b302",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 102
+        },
+        {
+          "clipInstanceId": "52b6685af6703cd73523e6a0",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 103
+        },
+        {
+          "clipInstanceId": "6eb6f2e1b71ba05a94b10784",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 104
+        },
+        {
+          "clipInstanceId": "d6c64dcd1fec19a80134beb4",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 105
+        },
+        {
+          "clipInstanceId": "fb1c82b4881785c6e7073435",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 106
+        },
+        {
+          "clipInstanceId": "52bda65486a36dbedc64035e",
+          "executionMode": "HYBRID_BATCH_AMORTIZED_V1",
+          "ordinal": 107
+        }
+      ],
+      "p50Ms": 33.107,
+      "p95Ms": 33.107,
+      "totalElapsedMs": 3542.418
+    },
+    "localFinalPositionSolver": {
+      "callCount": 1,
+      "maxMs": 117.913,
+      "meanMs": 117.913,
+      "p50Ms": 117.913,
+      "p95Ms": 117.913,
+      "totalElapsedMs": 117.913
+    },
+    "persistFinalResults": {
+      "callCount": 1,
+      "maxMs": 846.06,
+      "meanMs": 846.06,
+      "p50Ms": 846.06,
+      "p95Ms": 846.06,
+      "totalElapsedMs": 846.06
+    },
+    "providerBatch": {
+      "callCount": 3,
+      "maxMs": 36888.406,
+      "meanMs": 26109.482,
+      "observations": [
+        {
+          "batchId": "batch_0003"
+        },
+        {
+          "batchId": "batch_0002"
+        },
+        {
+          "batchId": "batch_0001"
+        }
+      ],
+      "p50Ms": 29858.885,
+      "p95Ms": 36185.454,
+      "totalElapsedMs": 78328.446
+    },
+    "providerWallClock": {
+      "callCount": 1,
+      "maxMs": 36888.406,
+      "meanMs": 36888.406,
+      "p50Ms": 36888.406,
+      "p95Ms": 36888.406,
+      "totalElapsedMs": 36888.406
+    },
+    "retainSetAudit": {
+      "callCount": 1,
+      "maxMs": 1131.702,
+      "meanMs": 1131.702,
+      "p50Ms": 1131.702,
+      "p95Ms": 1131.702,
+      "totalElapsedMs": 1131.702
+    },
+    "semanticBinding": {
+      "callCount": 1,
+      "maxMs": 1.976,
+      "meanMs": 1.976,
+      "p50Ms": 1.976,
+      "p95Ms": 1.976,
+      "totalElapsedMs": 1.976
+    },
+    "singleFaceDirectRouting": {
+      "callCount": 1,
+      "maxMs": 4494.739,
+      "meanMs": 4494.739,
+      "p50Ms": 4494.739,
+      "p95Ms": 4494.739,
+      "totalElapsedMs": 4494.739
+    },
+    "singlePersonFaceRepair": {
+      "callCount": 1,
+      "maxMs": 0.893,
+      "meanMs": 0.893,
+      "p50Ms": 0.893,
+      "p95Ms": 0.893,
+      "totalElapsedMs": 0.893
+    },
+    "sourceMediaProbe": {
+      "callCount": 107,
+      "maxMs": 32.878,
+      "meanMs": 19.704,
+      "p50Ms": 19.204,
+      "p95Ms": 21.241,
+      "totalElapsedMs": 2108.275
+    }
+  },
+  "telemetryOnly": true
+}
