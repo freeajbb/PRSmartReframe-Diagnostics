@@ -1,0 +1,162 @@
+{
+  "resolution": {
+    "acceptedTier": "TOP_TRIM_ALLOWED",
+    "apiBypass": true,
+    "apiBypassReason": "SINGLE_RELIABLE_INSIGHTFACE_FACE",
+    "applyAction": "SET_POSITION",
+    "clipInstanceId": "cbae9ea9bbb2e3155c89059d",
+    "cloudSemanticAuthorityConsumed": false,
+    "contract": "ALL_SELECTED_FINAL_POSITION_RESOLVER_V1",
+    "criticalFeatureSafety": {
+      "contract": "CRITICAL_FACE_FEATURE_RETENTION_V1",
+      "criticalFeatureSafe": true,
+      "faceContourRetention": 1.0,
+      "groupRetention": {
+        "FACE_CONTOUR": 1.0,
+        "LEFT_EYE": 1.0,
+        "MOUTH": 1.0,
+        "NOSE": 1.0,
+        "RIGHT_EYE": 1.0
+      },
+      "leftEyeSafe": true,
+      "marginNormalized": {
+        "x": 0.01025641,
+        "y": 0.01025641
+      },
+      "mouthSafe": true,
+      "namedCriticalFeatureAuthorityEnabled": true,
+      "noseSafe": true,
+      "rightEyeSafe": true,
+      "safetyDigest": "f9e3693a1182c3041a12544e0d567e8b7a1123bfa068170b3823edfaf6ce6b13",
+      "semanticMapStatus": "VALIDATED_FOR_PRODUCTION",
+      "sourceFeaturePreclipped": []
+    },
+    "cropBlackEdgeGuard": {
+      "adjustedFinalCompositionPosition": null,
+      "adjustedMotionPosition": [
+        0.49895833333333334,
+        0.6773518518518518
+      ],
+      "afterVisibleWindowNormalized": null,
+      "appliedDeltaSequencePixels": {
+        "x": -2.0,
+        "y": 191.53999999999996
+      },
+      "appliedDeltaX": 0.0,
+      "appliedDeltaY": 0.0,
+      "beforeVisibleWindowNormalized": null,
+      "contract": "FOUR_SIDE_CROP_BLACK_EDGE_GUARD_V3",
+      "correctedEdges": [
+        "LEFT",
+        "BOTTOM"
+      ],
+      "cropComponentIndex": 3,
+      "cropMatchName": "AE.ADBE AECrop",
+      "cropPercent": {
+        "bottomPercent": 9.0,
+        "leftPercent": 0.0,
+        "rightPercent": 0.0,
+        "topPercent": 0.0
+      },
+      "exposedEdgesBefore": [
+        "LEFT",
+        "BOTTOM"
+      ],
+      "inputDigest": "b4fb70399ba309d046cc937fd8a4d87fad61523e9360a9ae2ce128b3642b6a56",
+      "motionComponentIndex": 1,
+      "motionPositionParamIndex": 0,
+      "motionSafeIntervalSequencePixels": {
+        "x": {
+          "max": -2.0,
+          "min": -1822.0
+        },
+        "y": {
+          "max": 1024.0,
+          "min": 191.53999999999996
+        }
+      },
+      "originalFinalCompositionPosition": [
+        0.975,
+        0.025
+      ],
+      "originalMotionPosition": [
+        0.5,
+        0.5
+      ],
+      "postCropVisibleBoundsSequencePixels": {
+        "bottom": 890.46,
+        "left": 0.0,
+        "right": 3744.0,
+        "top": -1026.0
+      },
+      "postMotionVisibleBoundsSequencePixels": {
+        "bottom": 1082.0,
+        "left": -2.0,
+        "right": 3742.0,
+        "top": -834.46
+      },
+      "preCropTransformedBoundsSequencePixels": {
+        "bottom": 1080.0,
+        "left": 0.0,
+        "right": 3744.0,
+        "top": -1026.0
+      },
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "productionUseAllowed": true,
+      "reasonCodes": [
+        "POST_CROP_MOTION_LEFT_GUARD_APPLIED",
+        "POST_CROP_MOTION_BOTTOM_GUARD_APPLIED"
+      ],
+      "renderOrderMode": "GEOMETRY2_BEFORE_CROP_BEFORE_INTRINSIC_MOTION",
+      "safeVisibleWindowNormalized": null,
+      "safetyMarginSequencePixels": 2.0,
+      "status": "APPLIED",
+      "transformComponentIndex": 2
+    },
+    "directRouteDigest": "f3b54fbab67f8698ca9bf272bc079fd8701efeb00444f77beb2825f07e87bdd2",
+    "directSolverDigest": "6690ab57fc8b26779fe0a95db80f97aae86a7c5b1d7ff588feea868c646e43b8",
+    "finalCompositionPosition": [
+      0.975,
+      0.025
+    ],
+    "finalPositionAuthority": "FACE_FIRST_DIRECT_POSITION_V1",
+    "finalPositionSource": "LOCAL_INSIGHTFACE_DIRECT",
+    "geometryContextDigest": "5c8ec491a9f3dfeba194ec50c5fe7de83ba4784f522c33c911dcc53f010711e6",
+    "guidedCropProposalDigest": "",
+    "guidedShadowQualityDigest": "",
+    "mainPositionDigest": "564c410a3eb5d9eb3e29c4b59a94e4d654c950437307a3a80db6a70d31e8389b",
+    "mappingDigest": "08d09d8970faa5fdaca1b4092dd1c5c55cfec02521667735533c1fc961bcd1a5",
+    "ordinal": 50,
+    "postCropMotionComponentIdentity": {
+      "componentIndex": 1,
+      "matchName": "AE.ADBE Motion",
+      "positionParamIndex": 0
+    },
+    "postCropMotionPosition": [
+      0.49895833333333334,
+      0.6773518518518518
+    ],
+    "postPositionSafetyAuthority": "FOUR_SIDE_CROP_BLACK_EDGE_GUARD_V3",
+    "preCropGuardMotionPosition": [
+      0.5,
+      0.5
+    ],
+    "productionUseAllowed": true,
+    "providerCallsForClip": 0,
+    "providerPayloadMembership": false,
+    "qualityGateFrozenEvidenceDigest": "",
+    "reasonCodes": [],
+    "requiredCropWindowDigest": "94833b0944218bd54ff8db5aa719ab0f348970d010ffd2111afce91476694331",
+    "resolutionDigest": "a471ee6f6b180c735559ed8f8afb778e1b4b40b972d1027fe963017422d893a8",
+    "semanticApiSkipped": true,
+    "singlePersonRepairProposalDigest": "",
+    "singlePersonRepairShadowValidationDigest": "",
+    "sourceReasonCode": "FACE_FIRST_DIRECT_POSITION_AUTHORITY",
+    "sourceResultDigest": "6690ab57fc8b26779fe0a95db80f97aae86a7c5b1d7ff588feea868c646e43b8",
+    "status": "RESOLVED"
+  },
+  "schemaVersion": "api_middle_frame_composition.final_position_resolution.v1",
+  "sourceResultPath": "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_0.7.2.14_Task14C_Stall_Diagnostics_Pose_FailClosed_Hotfix_Candidate_V1\\sessions\\api_middle_frame_composition\\api05101_20261002_175807_843432\\results\\00050_cbae9ea9bbb2e3155c89059d\\api_composition_result.json",
+  "sourceResultSha256": "8c69d3a03d3c2afa465e4da10d9bef1beeab80f53094dd7df8f0b58318554529"
+}
