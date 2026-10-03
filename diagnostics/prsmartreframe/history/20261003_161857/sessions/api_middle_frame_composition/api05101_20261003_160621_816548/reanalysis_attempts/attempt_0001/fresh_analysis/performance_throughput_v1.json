@@ -1,0 +1,284 @@
+{
+  "contract": "PRSMARTREFRAME_LOCAL_ANALYSIS_THROUGHPUT_V1",
+  "events": {
+    "dfineProfile": [
+      {
+        "executionProfile": "NORMAL_PRODUCTION",
+        "message": "[D-FINE] 本次执行模式：正常生产"
+      },
+      {
+        "executionProfile": "NORMAL_PRODUCTION",
+        "message": "[D-FINE] Production Authority：Single"
+      },
+      {
+        "executionProfile": "NORMAL_PRODUCTION",
+        "message": "[D-FINE] Batch Certification：未运行"
+      },
+      {
+        "executionProfile": "NORMAL_PRODUCTION",
+        "message": "DFINE_EXECUTION_PROFILE=NORMAL_PRODUCTION"
+      }
+    ],
+    "extraction": [
+      {
+        "backend": "SINGLETON_NVDEC",
+        "chunkIndex": 1,
+        "chunkWorkerCount": 1,
+        "commandMode": "SPARSE_MULTI_INPUT",
+        "dispatchMode": "SERIAL",
+        "elapsedMs": 659.413,
+        "estimatedDecodeWork": 0.0,
+        "eventType": "CHUNK",
+        "failureKind": "RETURN_CODE",
+        "peakRssBytes": 199090176,
+        "returnCode": 4294967274,
+        "sourceGroupId": "355ad6c8008efe2855279305258c2ed9d624481b1284049489a0d1757b9b38b9",
+        "spanSeconds": 0.0,
+        "splitReason": "END_OF_SOURCE",
+        "targetCount": 1
+      },
+      {
+        "backend": "SINGLETON_NVDEC",
+        "chunkIndex": 1,
+        "chunkWorkerCount": 1,
+        "commandMode": "SPARSE_MULTI_INPUT",
+        "dispatchMode": "SERIAL",
+        "elapsedMs": 640.269,
+        "estimatedDecodeWork": 0.0,
+        "eventType": "CHUNK",
+        "failureKind": "RETURN_CODE",
+        "peakRssBytes": 197844992,
+        "returnCode": 4294967274,
+        "sourceGroupId": "ba3e3ed2e0a845c920b67c468fced71a095f3f44c211cf8994154b9bccfe71e2",
+        "spanSeconds": 0.0,
+        "splitReason": "END_OF_SOURCE",
+        "targetCount": 1
+      },
+      {
+        "backend": "SINGLETON_NVDEC",
+        "chunkIndex": 1,
+        "chunkWorkerCount": 1,
+        "commandMode": "SPARSE_MULTI_INPUT",
+        "dispatchMode": "SERIAL",
+        "elapsedMs": 637.595,
+        "estimatedDecodeWork": 0.0,
+        "eventType": "CHUNK",
+        "failureKind": "RETURN_CODE",
+        "peakRssBytes": 199331840,
+        "returnCode": 4294967274,
+        "sourceGroupId": "c97f4780e3acf7611c59eb6d72bbb79e6c6a63e9788112c4f6b91bafc4ef47fd",
+        "spanSeconds": 0.0,
+        "splitReason": "END_OF_SOURCE",
+        "targetCount": 1
+      },
+      {
+        "auditSampleCount": 3,
+        "certified": false,
+        "remainingSourceCount": 0,
+        "singletonNvdecProfileKey": "8c2cd8623da1f665578360c7"
+      },
+      {
+        "backendActual": "LEGACY_SOFTWARE_CPU",
+        "chunkCount": 1,
+        "elapsedMs": 1215.9223999988171,
+        "fallbackReason": "LEGACY_PARTIAL_FRAME_EXTRACTION_FAILED:1",
+        "ffmpegProcessCount": 2,
+        "logicalClipCount": 1,
+        "parityStatus": "FALLBACK_LEGACY_PARTIAL",
+        "peakRssBytes": 199090176,
+        "singletonProfileKey": "8c2cd8623da1f665578360c7",
+        "sourceGroupId": "355ad6c8008efe2855279305258c2ed9d624481b1284049489a0d1757b9b38b9",
+        "uniqueTargetCount": 1
+      },
+      {
+        "backendActual": "LEGACY_SOFTWARE_CPU",
+        "chunkCount": 1,
+        "elapsedMs": 1202.1787999983644,
+        "fallbackReason": "LEGACY_PARTIAL_FRAME_EXTRACTION_FAILED:1",
+        "ffmpegProcessCount": 2,
+        "logicalClipCount": 1,
+        "parityStatus": "FALLBACK_LEGACY_PARTIAL",
+        "peakRssBytes": 197844992,
+        "singletonProfileKey": "8c2cd8623da1f665578360c7",
+        "sourceGroupId": "ba3e3ed2e0a845c920b67c468fced71a095f3f44c211cf8994154b9bccfe71e2",
+        "uniqueTargetCount": 1
+      },
+      {
+        "backendActual": "LEGACY_SOFTWARE_CPU",
+        "chunkCount": 1,
+        "elapsedMs": 1214.7434999969846,
+        "fallbackReason": "LEGACY_PARTIAL_FRAME_EXTRACTION_FAILED:1",
+        "ffmpegProcessCount": 2,
+        "logicalClipCount": 1,
+        "parityStatus": "FALLBACK_LEGACY_PARTIAL",
+        "peakRssBytes": 199331840,
+        "singletonProfileKey": "8c2cd8623da1f665578360c7",
+        "sourceGroupId": "c97f4780e3acf7611c59eb6d72bbb79e6c6a63e9788112c4f6b91bafc4ef47fd",
+        "uniqueTargetCount": 1
+      }
+    ]
+  },
+  "metrics": {
+    "analysis": {
+      "totalElapsedMs": 5986.809199999698
+    },
+    "dfineRuntime": {
+      "deviceActual": "CUDA",
+      "gpuName": "NVIDIA GeForce RTX 5090",
+      "modelInstanceCount": 1,
+      "state": "READY",
+      "warmupElapsedMs": 3832.5469000010344
+    },
+    "extraction": {
+      "backendActual": "LEGACY_SOFTWARE_CPU",
+      "ffmpegProcessCount": 6,
+      "hardwareAcceleration": "CPU_OR_MIXED",
+      "singletonNvdecParitySampleTarget": 3,
+      "singletonNvdecProfileCount": 1,
+      "sourceGroupCount": 3
+    },
+    "finalization": {
+      "cancelRequested": false,
+      "cancelled": false,
+      "completedStageCount": 13,
+      "currentStage": "freezeFinalPositionArtifacts",
+      "currentStageLabel": "冻结最终构图证据",
+      "deferredResultPersistence": true,
+      "totalStageCount": 13
+    },
+    "insightfaceFirstPass": {
+      "contract": "INSIGHTFACE_FIRST_PASS_PERFORMANCE_TELEMETRY_V1",
+      "inferenceCount": 0,
+      "inferenceMaxMs": 0.0,
+      "inferenceMeanMs": 0.0,
+      "inferenceP50Ms": 0.0,
+      "inferenceP95Ms": 0.0,
+      "inferenceTotalMs": 0.0,
+      "mustNotDriveProductionDecision": true,
+      "routingElapsedMs": 410.5392000019492,
+      "telemetryOnly": true
+    },
+    "pipeline": {
+      "precomputedLocalEvidenceUsed": false,
+      "providerLocalOverlapObserved": false
+    },
+    "provider": {
+      "cacheHits": 0,
+      "effectiveConcurrency": 3,
+      "logicalRequests": 0,
+      "peakObservedConcurrency": 0,
+      "providerCalls": 0,
+      "requestedConcurrency": 3,
+      "transportRetries": 0,
+      "wallClockMs": 0.0
+    },
+    "safety": {
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "productionAuthorityConsumptions": 0
+    },
+    "singleFaceDirect": {
+      "apiBypassedClipCount": 0,
+      "directSolverFallbackCount": 0,
+      "hardSafetyFailureCount": 0,
+      "mutationDispatches": 0,
+      "premiereWriteCalls": 0,
+      "providerCallsForDirectClip": 0,
+      "providerEligibleClipCount": 0,
+      "providerPayloadDirectClipCount": 0,
+      "routeContract": "SINGLE_FACE_DIRECT_LIVE_SCHEDULER_ROUTE_V1",
+      "runtimeStatus": "READY",
+      "semanticApiRequiredClipCount": 0,
+      "semanticMapReady": true,
+      "singleFaceDirectClipCount": 0
+    },
+    "streamingProvider": {
+      "firstBatchItemCount": 0,
+      "firstBatchOrdinal": null,
+      "legacyMembershipParity": true,
+      "routerCompletedAtFirstDispatch": 0,
+      "routerCompletedCount": 0,
+      "routerRemainingAtFirstDispatch": 0,
+      "routerTotalCount": 0,
+      "routingProviderOverlapMs": 0.0,
+      "streamingCancelledTailItemCount": 0,
+      "streamingDuplicateEnqueueCount": 0,
+      "streamingFullBatchCount": 0,
+      "streamingMissingProviderItemCount": 0,
+      "streamingOrderingViolationCount": 0,
+      "streamingProviderDispatchPolicy": "STREAMING_FULL_BATCH_IMMEDIATE_TAIL_ON_ROUTER_CLOSE_V1",
+      "streamingProviderItemCount": 0,
+      "streamingSealedBatchCount": 0,
+      "streamingTailBatchCount": 0,
+      "streamingTailBatchItemCount": 0
+    },
+    "streamingRetainSet": {
+      "eligible": false,
+      "fallbackReason": "NOT_STARTED",
+      "firstRetainSetDispatchAtMs": null,
+      "globalLegacyFallbackTriggered": false,
+      "initialPrefetchFailedBatchCount": 0,
+      "legacyFallbackProviderBatchCount": 0,
+      "legacyMembershipParity": false,
+      "mainProviderCompletedAtFirstRetainSetDispatch": 0,
+      "mainProviderCompletionOrder": [],
+      "mainProviderRemainingAtFirstRetainSetDispatch": 0,
+      "perClipIdentityParity": false,
+      "prefetchDuplicateClipCount": 0,
+      "prefetchExtraClipCount": 0,
+      "prefetchIdentityMismatchCount": 0,
+      "prefetchMissingClipCount": 0,
+      "prefetchProviderBatchCount": 0,
+      "prefetchReplayBatchCount": 0,
+      "prefetchReplayClipCount": 0,
+      "prefetchReplayEligible": false,
+      "prefetchTerminalFailureClipCount": 0,
+      "retainSetMainProviderOverlapMs": 0.0,
+      "retainSetProviderWallClockMs": 0.0,
+      "selectiveFallbackClipCount": 0,
+      "selectiveFallbackFailedBatchCount": 0,
+      "selectiveFallbackProviderBatchCount": 0,
+      "selectiveFallbackProviderCallAttempts": 0,
+      "selectiveFallbackRecoveredBatchCount": 0,
+      "selectiveFallbackTransportRetries": 0,
+      "started": false,
+      "streamingRetainSetDuplicateEnqueueCount": 0,
+      "streamingRetainSetFullBatchCount": 0,
+      "streamingRetainSetItemCount": 0,
+      "streamingRetainSetOrderingViolationCount": 0,
+      "streamingRetainSetPolicy": "COMPLETION_ORDER_INDEPENDENT_GLOBAL_FULL_BATCH_RETAIN_SET_PREFETCH_V4",
+      "streamingRetainSetSealedBatchCount": 0,
+      "streamingRetainSetTailBatchCount": 0,
+      "streamingRetainSetTailBatchItemCount": 0
+    },
+    "task14d3HybridFirstPass": {
+      "cachedGeometryConsumptions": 0,
+      "certificationManifestStatus": "VERIFIED",
+      "contract": "TASK14D3_CONTROLLED_HYBRID_FIRST_PASS_V1",
+      "hybridAdmissionStatus": "ADMITTED",
+      "hybridAttempted": false,
+      "hybridFaceCount": 0,
+      "hybridFallbackActivated": false,
+      "hybridFallbackReasonCodes": [],
+      "hybridFirstPassWallMs": 0.0,
+      "hybridImageCount": 0,
+      "hybridSucceeded": true,
+      "landmarkNativeBatchCalls": 0,
+      "landmarkNativeBatchSize": 0,
+      "mutationDispatches": 0,
+      "noPartialAuthority": true,
+      "policy": "SCRFD_SAME_SESSION_WORKERS_4__2D106_NATIVE_BATCH_16_V1",
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "routeClipCount": 0,
+      "scrfdWorkers": 0,
+      "selectedClipCount": 0,
+      "semanticApiRequiredClipCount": 0,
+      "serialFallbackInferenceCount": 0,
+      "singleFaceDirectClipCount": 0
+    }
+  },
+  "release": "0.7.2.16",
+  "runId": "attempt_0001_fresh",
+  "telemetryOnly": true
+}
