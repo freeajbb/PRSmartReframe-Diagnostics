@@ -1,0 +1,76 @@
+{
+  "contract": "API_MIDDLE_FRAME_EXTRACTION_FAILURE_INDEX_V1",
+  "status": "PARTIAL_FRAME_EXTRACTION_FAILURE",
+  "failureCount": 1,
+  "failedClipInstanceIds": [
+    "40c6e4faa27b0d280e642f90"
+  ],
+  "failures": [
+    {
+      "contract": "API_MIDDLE_FRAME_EXTRACTION_FAILURE_V1",
+      "status": "FRAME_EXTRACTION_FAILED",
+      "clipInstanceId": "40c6e4faa27b0d280e642f90",
+      "ordinal": 641,
+      "sourceGroupId": "c97f4780e3acf7611c59eb6d72bbb79e6c6a63e9788112c4f6b91bafc4ef47fd",
+      "middleTimeSeconds": 811.6833333333334,
+      "originalMediaPath": "E:\\视频\\蕉石爱追剧\\38 学会洋装的女孩，因为一场火灾发现商机.mp4",
+      "frameDecodePath": "e:\\视频\\蕉石爱追剧\\38 学会洋装的女孩，因为一场火灾发现商机.mp4",
+      "frameDecodeSourceKind": "ORIGINAL",
+      "errorCode": "FFMPEG_FRAME_EXTRACTION_FAILED",
+      "errorMessage": "ffmpeg failed to extract the MIDDLE_RAW frame.",
+      "returnCode": 4294967274,
+      "stderr": "[mjpeg @ 000001cdf6711540] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[mjpeg @ 000001cdf41f15c0] ff_frame_thread_encoder_init failed\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000001cdf412be40] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 000001cdf412be40] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 000001cdf419c2c0] Nothing was written into output file, because at least one of its streams received no packets.\n",
+      "command": [
+        "C:\\Program Files\\FFmpeg\\ffmpeg.EXE",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-ss",
+        "811.683333333",
+        "-i",
+        "E:\\视频\\蕉石爱追剧\\38 学会洋装的女孩，因为一场火灾发现商机.mp4",
+        "-map",
+        "0:v:0",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "-y",
+        "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_0.7.2.16_Frame_Extraction_Failure_Isolation_Hotfix_Candidate_V1\\sessions\\api_middle_frame_composition\\api05101_20261003_155138_210266\\grouped_sources\\c97f4780e3acf7611c59eb6d72bbb79e6c6a63e9788112c4f6b91bafc4ef47fd\\legacy\\00641_40c6e4faa27b0d280e642f90\\40c6e4faa27b0d280e642f90_middle_raw.jpg"
+      ],
+      "details": {
+        "returnCode": 4294967274,
+        "stderr": "[mjpeg @ 000001cdf6711540] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[mjpeg @ 000001cdf41f15c0] ff_frame_thread_encoder_init failed\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000001cdf412be40] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 000001cdf412be40] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 000001cdf6418ac0] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 000001cdf419c2c0] Nothing was written into output file, because at least one of its streams received no packets.\n",
+        "command": [
+          "C:\\Program Files\\FFmpeg\\ffmpeg.EXE",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-ss",
+          "811.683333333",
+          "-i",
+          "E:\\视频\\蕉石爱追剧\\38 学会洋装的女孩，因为一场火灾发现商机.mp4",
+          "-map",
+          "0:v:0",
+          "-frames:v",
+          "1",
+          "-q:v",
+          "2",
+          "-y",
+          "C:\\Users\\<USER>\\Desktop\\PRSmartReframe_0.7.2.16_Frame_Extraction_Failure_Isolation_Hotfix_Candidate_V1\\sessions\\api_middle_frame_composition\\api05101_20261003_155138_210266\\grouped_sources\\c97f4780e3acf7611c59eb6d72bbb79e6c6a63e9788112c4f6b91bafc4ef47fd\\legacy\\00641_40c6e4faa27b0d280e642f90\\40c6e4faa27b0d280e642f90_middle_raw.jpg"
+        ],
+        "middleTimeSeconds": 811.6833333333334,
+        "path": "E:\\视频\\蕉石爱追剧\\38 学会洋装的女孩，因为一场火灾发现商机.mp4",
+        "frameDecodeSourceKind": "ORIGINAL"
+      },
+      "premiereReadOnly": true,
+      "premiereWriteCalls": 0,
+      "providerCalls": 0,
+      "productionAuthorityConsumptions": 0
+    }
+  ],
+  "premiereReadOnly": true,
+  "premiereWriteCalls": 0,
+  "providerCalls": 0,
+  "productionAuthorityConsumptions": 0
+}
